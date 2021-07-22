@@ -1,0 +1,23 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{% set entryTitle = '503' %}
+
+{% extends "_/layouts/site" %}
+
+{% block content %}
+
+    <article data-router-view="default" data-handle="{{ entryTitle }}">
+
+        <div class="default-container wrapper" data-scroll-section>
+
+            <h3 class="text-center">
+                {{ entryTitle }}
+            </h3>
+            <h6 class="text-center">
+                {{ 'Service Unavailable'|t }}
+            <h6>
+
+        </div>
+
+    </article>
+
+{% endblock %}

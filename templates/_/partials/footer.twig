@@ -1,0 +1,160 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+<footer class="core-footer" data-scroll-section>
+
+    <div class="row row-1">
+
+        <div class="column">
+
+            <p>
+                <a class="core-logo no-underline" href="/">
+                    <span class="underline">euro</span>pa.museum
+                </a>
+            </p>
+
+            <p class="hide-on-mobile">
+                1 Rue de Marengo<br>
+                75001 Paris, France
+            </p>
+
+            <p class="hide-on-mobile">
+                <a class="view-map" href="https://goo.gl/maps/6U1TwPwaz8aC5hp28" target="_blank" rel="noopener">View on Map</a>
+                {% include "_/svg/mapPin" %}
+            </p>
+
+        </div>
+
+        <div class="column hide-on-mobile">
+
+            <p>
+                {{ 'Contact Us'|t }}
+            </p>
+
+            <p>
+
+                {{ 'Phone:'|t }}
+                <a href="tel:+1-888-888-8888">
+                    +1 888.888.8888
+                </a>
+
+                <br>
+
+                {{ 'Email:'|t }}
+                <a href="mailto:hello@pixelandtonic.com">
+                    hello@pixelandtonic.com
+                </a>
+
+            </p>
+
+            <p>
+                <a href="/contact" class="underline" data-router-disabled>
+                    {{ 'Contact'|t }}
+                </a>
+            </p>
+
+        </div>
+
+        <div class="column hide-on-mobile">
+
+            <p>
+                {{ 'Open Hours'|t }}
+            </p>
+
+            <p>
+                {{ 'Weekdays:'|t }} 8am - 5pm<br>
+                {{ 'Weekend:'|t }} 8am - 9pm
+            </p>
+
+        </div>
+
+        <div class="column hide-on-mobile">
+
+            <p>
+                {{ 'Follow Us'|t }}
+            </p>
+
+            <p>
+
+                <a href="https://www.facebook.com/craftcms" target="_blank" rel="noopener">
+                    Facebook
+                </a>
+
+                <br>
+
+                <a href="https://twitter.com/craftcms" target="_blank" rel="noopener">
+                    Twitter
+                </a>
+
+            </p>
+
+        </div>
+
+        <div class="column last">
+
+            <div class="scroll-top" title="{{ 'Scroll to the top'|t }}">{{ 'Top'|t }}</div>
+            {% include "_/svg/arrowUp" %}
+
+        </div>
+
+    </div>
+
+    {#  #}
+
+    <div class="row row-2">
+
+        {# <div class="column">
+
+            <p>
+                Creative Direction by <a href="https://www.behance.net/marcusbrown" target="_blank" rel="noopener">Marcus Brown</a>.
+            </p>
+
+        </div> #}
+
+        <div class="column">
+
+            <p>
+                {{ 'Development by {name}.'|t({
+                    name: tag('a', {
+                        href: 'https://vanholtz.co',
+                        target: '_blank',
+                        rel: 'noopener',
+                        text: 'Van Holtz Co',
+                    })
+                })|raw }}
+            </p>
+
+        </div>
+
+        <div class="column">
+
+            <p>
+                <a href="#">{{ 'Terms of Use'|t }}</a>
+                /
+                <a href="#">{{ 'Privacy Policy'|t }}</a>
+            </p>
+
+        </div>
+
+        <div class="column">
+
+            <p class="copyright">
+                &copy; {{ now|date('Y') }} Pixel &amp; Tonic, Inc.
+            </p>
+
+        </div>
+
+        <div class="column">
+
+
+
+        </div>
+
+        <div class="column last">
+
+
+
+        </div>
+
+    </div>
+
+</footer>

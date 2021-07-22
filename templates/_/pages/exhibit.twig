@@ -1,0 +1,81 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% extends "_/layouts/site" %}
+
+{% block inline_css %}
+    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
+{% endblock %}
+
+{% set contentBlocks = entry.contentBlocks.all() | default([]) %}
+
+{% block content %}
+
+    <article class="{% if contentBlocks|length == 0 %}no-blocks{% endif %}" data-router-view="exhibit" data-handle="{{ entry.type.handle }}">
+
+        <div class="exhibit-container" data-scroll-section>
+
+            <h1 class="heading">
+                {{ entry.title }}
+            </h1>
+
+            {% set heroImage = entry.heroImage.one() ?? null %}
+
+            {% if heroImage %}
+
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        {% include "_/components/picture" with {
+                            asset: heroImage,
+                            transform: 'base',
+                            sizes: sizes ?? '100vw',
+                            lazytransition: 'lazyfade'
+                        } %}
+                    </div>
+                </div>
+
+                <div class="hero-info">
+
+                    {% set imageCaption = heroImage.imageCaption | default('') %}
+
+                    {% if imageCaption|length %}
+                        <div class="caption">
+                            {{ imageCaption | typogrify }}
+                        </div>
+                    {% endif %}
+
+                    {% set startDate = entry.postDate|date('m.y') | default('') %}
+                    {% set endDate = entry.expiryDate|date('m.y') | default('') %}
+
+                    {% if startDate|length %}
+                        <div class="dates">
+                            {{ startDate }} &mdash; {{ endDate }}
+                        </div>
+                    {% endif %}
+
+                    {% if imageCaption|length %}
+                        <div class="tickets">
+                            {% filter typogrify %}
+                                Tickets are purchased at the Museum
+                            {% endfilter %}
+                        </div>
+                    {% endif %}
+
+                </div>
+
+            {% endif %}
+
+        </div>
+
+        {% if contentBlocks|length %}
+
+            {% include "_/components/block-matrix" with {contentBlocks: contentBlocks} %}
+
+        {% else %}
+
+            {% include "_/components/blocks/heading" with {altText: 'Coming soon…'|t} %}
+
+        {% endif %}
+
+    </article>
+
+{% endblock %}

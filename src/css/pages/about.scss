@@ -1,0 +1,141 @@
+[data-page="about"] {
+
+    [data-router-view="about"] {
+
+        .about-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-heading {
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+            user-select: none;
+        }
+
+        .about-container:not(.no-hero-image) .hero-heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            z-index: 1;
+            margin-bottom: 0;
+        }
+
+        .hero-image-container {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        .hero-image {
+
+            position: relative;
+            @include aspect-ratio(16 9);
+
+            picture,
+            picture img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            picture img {
+                object-fit: cover;
+            }
+
+        }
+
+        // Block Overrides
+
+        .image-and-headings-block {
+            margin-top: -75px;
+
+            .lazyfadeDelay {
+                transition-delay: 0s;
+            }
+        }
+
+        .heading-block {
+
+            .heading {
+                padding-bottom: 100px;
+                @include responsive-font(9vw, 9vw, 130px);
+                letter-spacing: -0.02em;
+            }
+
+            @media screen and (max-width: 767px) {
+
+                padding-left: 30px;
+                padding-right: 30px;
+
+                .heading {
+                    padding-bottom: 60px;
+                }
+
+            }
+
+        }
+
+        .rich-text-block {
+
+            h1, h2, h3, h4, h5, h6 {
+                margin-bottom: 30px;
+                font-family: 'SteradianRegular', sans-serif;
+                text-transform: none;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        [data-router-view="about"] {
+
+            .about-container {
+                padding-top: 150px;
+                padding-bottom: 100px;
+            }
+
+            .hero-image-container {
+                margin-top: -35px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        [data-router-view="about"] {
+
+            .hero-image-container {
+                margin-top: -34px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        [data-router-view="about"] {
+
+            .about-container {
+                padding: 0 30px 60px;
+            }
+
+            .hero-image-container {
+                margin-top: -15px;
+            }
+
+        }
+
+    }
+
+}

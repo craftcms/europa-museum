@@ -1,0 +1,42 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Craft Aliases</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" integrity="sha256-vK3UTo/8wHbaUn+dTQD0X6dzidqc5l7gczvH+Bnowwk=" crossorigin="anonymous" />
+</head>
+<body class="content">
+    <div class="container">
+        <h1>Predefined Aliases</h1>
+
+        <p></p>
+
+        {%  set aliases = ['@app',
+            '@config',
+            '@contentMigrations',
+            '@craft',
+            '@lib',
+            '@root',
+            '@runtime',
+            '@storage',
+            '@templates',
+            '@translations',
+            '@vendor',
+            '@web',
+            '@webroot'
+        ] %}
+
+        <table class="table is-family-monospace">
+            {% for aliasName in aliases %}
+                <tr>
+                    <td>{{ aliasName }}</td>
+                    <td>{{ alias(aliasName) }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+</html>

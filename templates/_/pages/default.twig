@@ -1,0 +1,21 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% extends "_/layouts/site" %}
+
+{% block inline_css %}
+    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
+{% endblock %}
+
+{% block content %}
+
+    <article data-router-view="default" data-handle="{{ entry.type.handle }}">
+
+        <div class="default-container wrapper min-vh-100" data-scroll-section>
+
+
+
+        </div>
+
+    </article>
+
+{% endblock %}

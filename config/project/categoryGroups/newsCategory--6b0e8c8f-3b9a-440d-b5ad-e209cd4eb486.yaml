@@ -1,0 +1,45 @@
+defaultPlacement: end
+fieldLayouts:
+  98cfb40e-e148-4f7a-9fc3-8d62399a5f5a:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: newsCategory
+name: 'News Category'
+siteSettings:
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+    hasUrls: true
+    template: _/pages/news
+    uriFormat: 'news/category/{slug}'
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    hasUrls: true
+    template: _/pages/news
+    uriFormat: 'news/category/{slug}'
+structure:
+  maxLevels: null
+  uid: 7e72aa7b-bf24-45c1-96f8-48a62b753660

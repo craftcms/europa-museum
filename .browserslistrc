@@ -1,0 +1,10 @@
+# Browsers we support via Babel, Autoprefixer etc.
+# https://github.com/ai/browserslist
+
+last 2 versions
+> 1%
+Firefox ESR
+not ie <= 10
+not ie_mob <= 10
+not bb <= 10
+not op_mob <= 12.1

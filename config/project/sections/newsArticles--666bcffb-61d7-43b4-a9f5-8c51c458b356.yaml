@@ -1,0 +1,40 @@
+defaultPlacement: end
+enableVersioning: true
+handle: newsArticles
+name: 'News Articles'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+  -
+    __assoc__:
+      -
+        - label
+        - 'Listing page'
+      -
+        - urlFormat
+        - news
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news-article
+    uriFormat: 'news/{slug}'
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news-article
+    uriFormat: 'news/{slug}'
+type: channel

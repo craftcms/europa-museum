@@ -1,0 +1,223 @@
+field: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+fieldLayouts:
+  e8d49680-7ba8-48aa-83b6-01f3ddbfe9c4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f668aa75-41bb-4309-9114-26d72e1547ff # CTA Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b7672c12-833b-4554-afc9-ec3d68dbd78d # CTA Link Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 11b555a2-89cb-434c-a97c-8bf858a76326 # Slide Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 13b529cb-1236-4eb5-95a0-e20c2358385e # Slide Entries
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e6e6fbf0-a370-48de-b635-6f31bece3c9d # Slide Layout Centered
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 85241ed2-6bbd-4dd0-af5c-07842116ccf3 # Dark UI
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d: # Heading
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: ''
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  11b555a2-89cb-434c-a97c-8bf858a76326: # Slide Images
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: slideImages
+    instructions: ''
+    name: 'Slide Images'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+      singleUploadLocationSubpath: ''
+      source: null
+      sources: '*'
+      targetSiteId: null
+      useSingleFolder: true
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  13b529cb-1236-4eb5-95a0-e20c2358385e: # Slide Entries
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: slideEntries
+    instructions: ''
+    name: 'Slide Entries'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: ''
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  85241ed2-6bbd-4dd0-af5c-07842116ccf3: # Dark UI
+    columnSuffix: null
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: darkUI
+    instructions: ''
+    name: 'Dark UI'
+    searchable: true
+    settings:
+      default: false
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  b7672c12-833b-4554-afc9-ec3d68dbd78d: # CTA Link Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: ctaLinkText
+    instructions: ''
+    name: 'CTA Link Text'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e6e6fbf0-a370-48de-b635-6f31bece3c9d: # Slide Layout Centered
+    columnSuffix: null
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: slideLayoutCentered
+    instructions: 'When enabled it''s best to have 6+ Slide Images/Entries so that the slider will wrap nicely on wide screens.'
+    name: 'Slide Layout Centered'
+    searchable: true
+    settings:
+      default: true
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  f668aa75-41bb-4309-9114-26d72e1547ff: # CTA Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: ctaLink
+    instructions: ''
+    name: 'CTA Link'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: slider
+name: Slider
+sortOrder: 4

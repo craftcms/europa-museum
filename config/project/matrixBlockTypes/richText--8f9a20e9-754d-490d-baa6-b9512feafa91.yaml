@@ -1,0 +1,154 @@
+field: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+fieldLayouts:
+  b7542268-90e7-488e-aaf2-8c6695a2948c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # __blank__
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Top Border
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Layout
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7 # Narrow Width
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  aa1aa6b7-0e81-4b68-8694-ed5f543f38bc: # __blank__
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: richText
+    instructions: ''
+    name: __blank__
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: VHC.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: true
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  cdc345f6-dec9-46b7-80b5-6de7918fcdf3: # Layout
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: layout
+    instructions: ''
+    name: Layout
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'Image Left'
+            -
+              - value
+              - imageLeft
+        -
+          __assoc__:
+            -
+              - default
+              - '1'
+            -
+              - label
+              - 'Image Full Width'
+            -
+              - value
+              - imageFullWidth
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'Image Right'
+            -
+              - value
+              - imageRight
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+  eb910859-8baf-408a-ae9a-3af97b637806: # Top Border
+    columnSuffix: null
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: topBorder
+    instructions: ''
+    name: 'Top Border'
+    searchable: true
+    settings:
+      default: true
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7: # Narrow Width
+    columnSuffix: null
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: narrowWidth
+    instructions: ''
+    name: 'Narrow Width'
+    searchable: true
+    settings:
+      default: true
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+handle: richText
+name: 'Rich Text'
+sortOrder: 5

@@ -1,0 +1,19 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+<div class="content-block google-map-embed-block {{ isFirst }}" data-scroll-section>
+
+	<div class="google-map-embed-container">
+
+        {% if theBlock.embedCode | trim | slice(0, 46) == '<iframe src="https://www.google.com/maps/embed' or theBlock.embedCode | trim | slice(0, 42) == '<iframe src="https://snazzymaps.com/embed/' %}
+
+            {{ theBlock.embedCode | raw }}
+
+        {% else %}
+            <p>
+                Error: Invalid Maps embed code.
+            </p>
+        {% endif %}
+
+	</div>
+
+</div>

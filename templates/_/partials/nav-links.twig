@@ -1,0 +1,11 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+<nav class="core-nav-links">
+
+    {% for link in navigation.linksRight.all() %}
+
+        <a href="{{ link.url }}" {% if link.url == url('contact') %}data-router-disabled{% endif %}>{{ link.title }}</a>
+
+    {% endfor %}
+
+</nav>

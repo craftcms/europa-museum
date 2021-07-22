@@ -1,0 +1,131 @@
+[data-page="contact"] {
+
+    [data-router-wrapper] {
+        padding-top: 0 !important;
+    }
+
+    [data-router-view="contact"] {
+
+        .contact-container {
+            position: relative;
+            padding: 200px 60px 100px;
+        }
+
+        .hero-heading {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+            user-select: none;
+        }
+
+        .hero-image-container {
+            width: 100%;
+            max-width: 1440px;
+            margin-top: -50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        .hero-image {
+
+            position: relative;
+            @include aspect-ratio(3 1);
+
+            picture {
+                height: auto;
+            }
+
+        }
+
+        // Block Overrides
+
+        .heading-block {
+
+            margin-top: 0;
+            margin-bottom: 0;
+
+            .heading {
+                font-family: 'DomaineDisplayRegular', serif;
+                line-height: 1.2em;
+            }
+
+            @media screen and (max-width: 767px) {
+
+                padding-left: 30px;
+                padding-right: 30px;
+
+            }
+
+        }
+
+        .rich-text-block {
+
+            h1, h2, h3, h4, h5, h6 {
+                margin-bottom: 30px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        .hero-image-container {
+            margin-top: -50px;
+        }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        [data-router-view="contact"] {
+
+            .contact-container {
+                padding-top: 150px;
+                padding-bottom: 100px;
+            }
+
+            .hero-image-container {
+                margin-top: -35px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        [data-router-view="contact"] {
+
+            .hero-image-container {
+                margin-top: -34px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        [data-router-view="contact"] {
+
+            .contact-container {
+                padding: 120px 30px 60px;
+            }
+
+            .hero-image-container {
+                margin-top: -15px;
+            }
+
+            .hero-image {
+                padding-bottom: 50%;
+            }
+
+        }
+
+    }
+
+}

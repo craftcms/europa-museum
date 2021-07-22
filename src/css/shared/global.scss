@@ -1,0 +1,353 @@
+:root {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+[data-router-wrapper] {
+    padding-top: 200px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 143px;
+    }
+}
+
+// wrapper
+
+.wrapper {
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+// Cover
+
+.cover {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	opacity: 1;
+    transition: opacity 0.5s 0.1s;
+}
+
+// Loading
+
+body.loading {
+    cursor: wait;
+}
+
+body:not(.loading) {
+
+	.cover {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+}
+
+// Lazyload
+
+.lazypicture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+        display: block;
+        object-fit: contain;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+.lazyfade {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.lazyfade.lazyloaded {
+    opacity: 1;
+}
+
+.lazyfadeDelay {
+    opacity: 0;
+    transition: opacity 2s 0.5s;
+}
+
+.lazyfadeDelay.lazyloaded {
+    opacity: 1;
+}
+
+.lazyblur {
+    opacity: 0.5;
+    filter: blur(10px);
+    transition: opacity 0.4s;
+}
+
+.lazyblur.lazyloaded {
+    opacity: 1;
+    filter: blur(0);
+}
+
+// Locomotive Scroll
+
+html.has-scroll-smooth:not(.has-scroll-init) {
+    cursor: wait;
+    overflow: hidden;
+}
+
+html.has-scroll-smooth {
+    overflow: hidden;
+}
+
+html.has-scroll-dragging {
+    user-select: none;
+}
+
+.has-scroll-smooth body {
+    overflow: hidden;
+}
+
+.c-scrollbar {
+    position: absolute;
+    top: 0;
+    right: -2px;
+    z-index: 4;
+    width: 11px;
+    height: 100vh;
+    transform-origin: center right;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 0;
+}
+
+.c-scrollbar:hover {
+    transform: scaleX(2);
+}
+
+.c-scrollbar:hover,
+.has-scroll-dragging .c-scrollbar,
+.has-scroll-scrolling .c-scrollbar {
+    opacity: 1;
+}
+
+.c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 1;
+    width: 3px;
+    margin: 2px;
+    cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+    cursor: grabbing;
+}
+
+// Lazyload
+
+.lazypicture {
+    display: block;
+    width: 100%;
+
+    img {
+        display: block;
+        width: 100%;
+        object-fit: contain;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+.lazyfade {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.lazyfade.lazyloaded {
+    opacity: 1;
+}
+
+.lazyblur {
+    opacity: 0.5;
+    filter: blur(10px);
+    transition: opacity 0.4s;
+}
+
+.lazyblur.lazyloaded {
+    opacity: 1;
+    filter: blur(0);
+}
+
+// Class Helpers
+
+@media screen and (max-width: 1024px) {
+    .hide-on-tablet {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.select-none {
+    user-select: none;
+}
+
+.block {
+    display: block;
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.letter-spacing-normal {
+    letter-spacing: normal;
+}
+
+.image-left {
+    clear: both;
+    float: left;
+    margin-right: 30px;
+}
+
+.image-right {
+    clear: both;
+    float: right;
+    margin-left: 30px;
+}
+
+.image-center {
+    text-align: center;
+}
+
+[data-router-view] {
+    width: 100%;
+}
+
+.word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1em);
+}
+
+.is-inview {
+
+    .word {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 2s, transform 1.5s $ease-out-2;
+    }
+
+    @for $i from 1 through 20 {
+        .word:nth-of-type(#{$i}) {
+            transition-delay: 0.2s + 0.1s * $i;
+        }
+    }
+}
+
+// Themes
+
+body.theme-dark {
+
+    background-color: #000;
+
+    // Cover
+    .cover {
+        background-color: #000;
+    }
+
+    // Locomotive Scroll
+
+    .c-scrollbar_thumb {
+        background-color: #fff;
+    }
+
+    // Class Helpers
+
+    .underline {
+        &:before {
+            background-color: #fff;
+        }
+    }
+
+}

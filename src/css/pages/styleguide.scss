@@ -1,0 +1,29 @@
+[data-page="styleguide"] {
+
+    [data-router-view="styleguide"] {
+        width: 100%;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 60px;
+        padding-right: 60px;
+
+        .page-heading {
+            padding-bottom: 100px;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        [data-router-view="styleguide"] {
+            padding-left: 30px;
+            padding-right: 30px;
+
+            .page-heading {
+                padding-bottom: 50px;
+            }
+        }
+
+    }
+
+}

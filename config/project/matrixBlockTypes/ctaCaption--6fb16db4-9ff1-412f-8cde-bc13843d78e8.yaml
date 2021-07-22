@@ -1,0 +1,290 @@
+field: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+fieldLayouts:
+  e65bd1e5-abf6-43e6-a3f0-2fbb329e35c4:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 24bd1247-7ed2-48e8-af76-5b8ffc486ef6 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8c274864-9cf0-4ef9-b4bd-88da544515ad # Information
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6ee9b9a7-d12d-4c9b-b069-586609cb5ea9 # Link Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 3b1b9f85-3554-4b4a-8d39-467bf5e4a35d # Internal Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # External Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8 # Link Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Narrow Width
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0ba28a66-d3aa-4c97-ad77-8e26087b3d70: # Narrow Width
+    columnSuffix: null
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: narrowWidth
+    instructions: ''
+    name: 'Narrow Width'
+    searchable: true
+    settings:
+      default: true
+      offLabel: null
+      onLabel: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
+  3b1b9f85-3554-4b4a-8d39-467bf5e4a35d: # Internal Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: internalLink
+    instructions: ''
+    name: 'Internal Link'
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  6ee9b9a7-d12d-4c9b-b069-586609cb5ea9: # Link Label
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: linkLabel
+    instructions: ''
+    name: 'Link Label'
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8c274864-9cf0-4ef9-b4bd-88da544515ad: # Information
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: information
+    instructions: 'Allows HTML & Twig syntax.'
+    name: Information
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  24bd1247-7ed2-48e8-af76-5b8ffc486ef6: # Heading
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: 'Allows HTML & Twig syntax.'
+    name: Heading
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8: # Link Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: linkIcon
+    instructions: ''
+    name: 'Link Icon'
+    searchable: true
+    settings:
+      optgroups: true
+      options:
+        -
+          __assoc__:
+            -
+              - default
+              - '1'
+            -
+              - label
+              - None
+            -
+              - value
+              - none
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'Arrow - Left'
+            -
+              - value
+              - arrowLeft
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'Arrow - Right'
+            -
+              - value
+              - arrowRight
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'Arrow - Up'
+            -
+              - value
+              - arrowUp
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'Arrow - Down'
+            -
+              - value
+              - arrowDown
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - Brochure
+            -
+              - value
+              - brochure
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'Map Pin'
+            -
+              - value
+              - mapPin
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - News
+            -
+              - value
+              - news
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Dropdown
+  55c6cb51-defc-4e30-bc18-e524de65b7b7: # External Link
+    columnSuffix: null
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: externalLink
+    instructions: ''
+    name: 'External Link'
+    searchable: true
+    settings:
+      maxLength: '255'
+      placeholder: ''
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: ctaCaption
+name: 'CTA Caption'
+sortOrder: 6

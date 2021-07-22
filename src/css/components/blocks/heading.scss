@@ -1,0 +1,31 @@
+.heading-block {
+
+    width: 100%;
+    max-width: 1024px;
+    margin: 120px auto;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    .heading {
+        @include responsive-font(4vw, 24px, 52px);
+        font-family: 'SteradianLight', sans-serif;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        margin-top: 90px;
+        margin-bottom: 90px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        margin-top: 60px;
+        margin-bottom: 0;
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+
+}

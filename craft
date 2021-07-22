@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+/**
+ * Craft console bootstrap file
+ */
+
+use craft\helpers\App;
+
+define('CRAFT_BASE_PATH', __DIR__);
+define('CRAFT_VENDOR_PATH', CRAFT_BASE_PATH.'/vendor');
+
+// Composer autoloader
+require_once CRAFT_VENDOR_PATH.'/autoload.php';
+
+// dotenv
+if (file_exists(CRAFT_BASE_PATH.'/.env')) {
+    Dotenv\Dotenv::create(CRAFT_BASE_PATH)->load();
+}
+
+define('CRAFT_STREAM_LOG', true);
+define('CRAFT_ENVIRONMENT', App::env('ENVIRONMENT') ?: 'production');
+
+// Craft
+$app = require CRAFT_VENDOR_PATH.'/craftcms/cms/bootstrap/console.php';
+$exitCode = $app->run();
+exit($exitCode);

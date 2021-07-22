@@ -1,0 +1,33 @@
+.google-map-embed-block {
+
+    width: 100%;
+    max-width: 1024px;
+    margin: 120px auto;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    .google-map-embed-container {
+        box-shadow: 0px 70px 50px -50px rgba(0,0,0,0.2);
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        margin-top: 90px;
+        margin-bottom: 90px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        margin-top: 60px;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+}

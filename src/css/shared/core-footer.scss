@@ -1,0 +1,199 @@
+// Core Footer
+
+.core-footer {
+
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+    padding: 100px 60px;
+    border-top: 2px solid #000;
+
+    .core-logo {
+        display: inline-block;
+        font-family: 'SteradianRegular', sans-serif;
+        line-height: 1.3em;
+
+        .underline:before {
+            width: calc(100% + 2px);
+        }
+    }
+
+    .row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .row-1 {
+
+        p {
+            line-height: 1.6em;
+            margin-bottom: 30px;
+        }
+
+        p:first-of-type {
+            margin-bottom: 40px;
+        }
+    }
+
+    .row-2 {
+        margin-top: 30px;
+        font-family: 'DomaineDisplayRegular', serif;
+        font-size: 13px;
+
+        a:before {
+            height: 1px;
+        }
+    }
+
+    .column {
+        width: calc(25% - 50px);
+        padding-right: 30px;
+
+        &.last {
+            width: 55px;
+            padding-right: 0;
+        }
+    }
+
+    .view-map,
+    .scroll-top {
+        + svg {
+            position: relative;
+            top: 2px;
+            margin-left: 10px;
+        }
+    }
+
+    .scroll-top {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .hide {
+        visibility: hidden;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    // Responsive
+
+    @media screen and (min-width: 768px) {
+        body.has-scroll-smooth:not(.scrolled) & {
+            visibility: hidden !important;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        body.has-scroll-smooth.scrolled & {
+            visibility: visible;
+            pointer-events: auto;
+            user-select: auto;
+        }
+    }
+
+    @media screen and (max-width: 1050px) {
+
+        padding: 60px;
+
+        .column {
+            width: 100%;
+        }
+
+        .row-1 {
+            flex-wrap: wrap;
+
+            .column {
+                width: 50%;
+                margin-bottom: 30px;
+            }
+
+            p:first-of-type {
+                margin-bottom: 30px;
+            }
+        }
+
+        .row-2 {
+            flex-wrap: wrap;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .row-1 {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .row-2 {
+            margin-top: 0;
+        }
+
+    }
+}
+
+// Themes
+
+body.theme-dark {
+
+    .core-footer {
+
+        border-color: #555;
+
+        a:before {
+            background-color: #777;
+        }
+
+        .row-1 {
+            a.core-logo,
+            a.core-logo span,
+            p:first-of-type {
+                color: #ccc;
+            }
+
+            a.core-logo span:before {
+                background-color: #ccc;
+            }
+
+            a:not(.core-logo),
+            p:not(:first-of-type) {
+                color: #777;
+            }
+
+            .column.last a {
+                color: #ccc;
+            }
+        }
+
+        .row-2 {
+            a,
+            p,
+            .copyright {
+                color: #555;
+            }
+        }
+
+        .view-map + svg path {
+            fill: #777;
+        }
+
+        .scroll-top + svg path {
+            fill: #fff;
+        }
+
+    }
+
+}

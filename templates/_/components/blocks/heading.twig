@@ -1,0 +1,14 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% set heading = theBlock.heading ?? altText|default('') %}
+{% set isFirst = isFirst ?? false %}
+
+{% if heading|length %}
+
+    <div class="content-block heading-block{{ isFirst ? ' isFirst' : '' }}" data-scroll-section>
+        <div class="heading">
+            {{ heading | typogrify }}
+        </div>
+    </div>
+
+{% endif %}

@@ -1,0 +1,207 @@
+[data-page="exhibitions"] {
+
+    [data-router-view="exhibit"] {
+
+        &.no-blocks {
+
+            padding-bottom: 100px;
+
+            .hero-info {
+                justify-content: center;
+                border-bottom: 0;
+            }
+
+        }
+
+        .exhibit-container {
+            padding-top: 200px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .heading {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 100px;
+            font-family: 'SteradianLight', sans-serif;
+            text-align: center;
+            user-select: none;
+        }
+
+        .hero-image-container {
+            width: 100%;
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 45px;
+            box-shadow: 0 10px 70px -40px rgba(0,0,0,1);
+            overflow: hidden;
+        }
+
+        .hero-image {
+
+            position: relative;
+            @include aspect-ratio(16 9);
+
+            picture,
+            picture img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            picture img {
+                object-fit: cover;
+            }
+
+        }
+
+        .hero-info {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1024px;
+            margin-top: -42px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #000;
+        }
+
+        .caption {
+            font-size: 12px;
+        }
+
+        .dates {
+            margin-bottom: 20px;
+            font-family: 'SteradianLight', sans-serif;
+            font-size: 58px;
+            text-align: center;
+        }
+
+        .tickets {
+            font-size: 12px;
+            text-align: right;
+        }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        [data-router-view="exhibit"] {
+
+            .exhibit-container {
+                padding-top: 150px;
+                padding-bottom: 100px;
+            }
+
+            .heading {
+                margin-bottom: 60px;
+            }
+
+            .caption {
+                width: 33%;
+            }
+
+            .dates {
+                width: 54%;
+            }
+
+            .tickets {
+                width: 33%;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 930px) {
+
+        [data-router-view="exhibit"] {
+
+            .hero-image-container {
+                padding: 30px;
+            }
+
+            .hero-info {
+                margin-top: -26px;
+            }
+
+            .dates {
+                margin-bottom: 40px;
+                font-size: 36px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        [data-router-view="exhibit"] {
+
+            .exhibit-container {
+                padding: 120px 30px 0;
+            }
+
+            .hero-image-container {
+                padding: 5px;
+            }
+
+            .hero-info {
+                flex-wrap: wrap;
+                margin-top: 20px;
+            }
+
+            .heading {
+                margin-bottom: 30px;
+            }
+
+            .caption {
+                order: 2;
+                width: 100%;
+                text-align: center;
+            }
+
+            .dates {
+                order: 1;
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .tickets {
+                order: 3;
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+    }
+
+}
+
+// Theme Dark
+body.theme-dark {
+
+    [data-router-view="exhibit"] {
+
+        .hero-image-container {
+            box-shadow: 0 10px 70px -40px rgba(255,255,255,0.4);
+            background-color: #fff;
+        }
+
+        .hero-info {
+            border-bottom-color: #fff;
+        }
+
+    }
+
+}

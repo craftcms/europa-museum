@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+handle: exhibitions
+name: Exhibitions
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/exhibitions
+    uriFormat: exhibitions
+type: single

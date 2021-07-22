@@ -1,0 +1,100 @@
+.form-block {
+
+    width: 100%;
+    max-width: 1024px;
+    margin: 120px auto;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    .freeform-row {
+        display: block;
+    }
+
+    .freeform-label {
+        margin-bottom: 15px;
+        font-family: 'SteradianRegular', sans-serif;
+        font-size: 18px;
+    }
+
+    .freeform-row .freeform-column .freeform-input {
+        margin-bottom: 30px;
+        border: 2px solid #000;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .freeform-row button {
+        border: 2px solid #000;
+        padding: 10px 30px;
+        color: #fff;
+        font-family: 'SteradianRegular', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+        background-color: #000;
+        transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+        cursor: pointer;
+
+        &:hover {
+            color: #000;
+            background-color: #fff;
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        .freeform-row {
+            display: flex;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        margin-top: 90px;
+        margin-bottom: 90px;
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        margin-top: 30px;
+        margin-bottom: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+}
+
+// Themes
+
+body.theme-dark {
+
+    .form-block {
+
+        .ff-form-errors {
+            background-color: #fff;
+
+            p {
+                color: #000;
+            }
+        }
+
+        .freeform-row .freeform-column .freeform-input {
+            border-color: #fff;
+        }
+
+        .freeform-row button {
+            border-color: #fff;
+            color: #000;
+            background-color: #fff;
+
+            &:hover {
+                color: #fff;
+                background-color: #000;
+            }
+        }
+
+    }
+
+}

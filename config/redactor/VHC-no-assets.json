@@ -1,0 +1,29 @@
+{
+    "buttons": [
+        "html",
+        "formatting",
+        "bold",
+        "italic",
+        "unorderedlist",
+        "orderedlist",
+        "link"
+    ],
+    "formatting": [
+        "p",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "pre",
+        "blockquote"
+    ],
+    "plugins": [
+        "fullscreen"
+    ],
+    "pastePlainText": true,
+    "toolbarFixed": true,
+    "source": true,
+    "linkNewTab": true
+}

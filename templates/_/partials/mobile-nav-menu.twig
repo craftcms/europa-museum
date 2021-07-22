@@ -1,0 +1,23 @@
+<div class="mobile-nav-menu">
+
+    {% for link in navigation.linksMiddle.all() %}
+
+        <a class="link" href="{{ link.url }}" {% if link.title == 'Contact' %}data-router-disabled{% endif %}>
+            <span class="link-text">
+                {{ link.title }}
+            </span>
+        </a>
+
+    {% endfor %}
+
+    {% for link in navigation.linksRight.all() %}
+
+        <a class="link" href="{{ link.url }}" {% if link.title == 'Contact' %}data-router-disabled{% endif %}>
+            <span class="link-text">
+                {{ link.title }}
+            </span>
+        </a>
+
+    {% endfor %}
+
+</div>

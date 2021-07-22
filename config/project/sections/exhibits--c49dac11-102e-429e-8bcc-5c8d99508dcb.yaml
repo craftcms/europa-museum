@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: exhibits
+name: Exhibits
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/exhibit
+    uriFormat: 'exhibitions/{slug}'
+structure:
+  maxLevels: 1
+  uid: 0410f32e-7831-41b2-bd6f-cb90cc47e1aa
+type: structure

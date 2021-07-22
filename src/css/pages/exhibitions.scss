@@ -1,0 +1,263 @@
+[data-page="exhibitions"] {
+
+    [data-router-wrapper] {
+        padding-top: 0 !important;
+    }
+
+    .core-footer {
+        margin-top: 0;
+    }
+
+    [data-router-view="exhibitions"] {
+
+        .exhibitions-container {
+            position: relative;
+            padding: 200px 60px 150px;
+            color: #fff;
+            background-color: #000;
+        }
+
+        .hero-heading {
+            position: relative;
+            z-index: 1;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+            user-select: none;
+        }
+
+        .hero-image-container {
+            width: 100%;
+            max-width: 1440px;
+            margin-top: -75px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        .hero-image {
+
+            position: relative;
+            @include aspect-ratio(16 9);
+
+            picture,
+            picture img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            picture img {
+                object-fit: cover;
+            }
+
+        }
+
+        .btn-down {
+            position: absolute;
+            bottom: -25px;
+            left: calc(50% - 25px);
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            border: 0;
+            border-radius: 100%;
+            padding: 15px;
+            background-color: #fff;
+            outline: none;
+            cursor: pointer;
+
+            svg {
+                vertical-align: middle;
+            }
+        }
+
+        // Block Overrides
+
+        .heading-block {
+
+            max-width: 1280px;
+
+            .heading {
+                border-bottom: 2px solid #000;
+                padding-bottom: 100px;
+                font-family: 'DomaineDisplayRegular', serif;
+            }
+
+            @media screen and (max-width: 767px) {
+
+                padding-left: 30px;
+                padding-right: 30px;
+
+                .heading {
+                    padding-bottom: 60px;
+                }
+
+            }
+
+        }
+
+        .rich-text-block {
+
+            max-width: 1280px;
+            text-align: center;
+
+            .rich-text {
+                border-top: 0;
+                padding-top: 0;
+            }
+
+            h4 {
+                font-family: 'DomaineDisplayRegular', serif;
+                @include responsive-font(7vw, 7vw, 100px);
+                line-height: 1em;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        [data-router-view="exhibitions"] {
+
+            .hero-image-container {
+                margin-top: -50px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        [data-router-view="exhibitions"] {
+
+            .exhibitions-container {
+                padding-top: 150px;
+                padding-bottom: 100px;
+            }
+
+            .hero-image-container {
+                margin-top: -35px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+
+        [data-router-view="exhibitions"] {
+
+            .hero-image-container {
+                margin-top: -34px;
+            }
+
+        }
+
+    }
+
+    @media screen and (max-width: 767px) {
+
+        [data-router-view="exhibitions"] {
+
+            .exhibitions-container {
+                padding: 120px 30px 60px;
+            }
+
+            .hero-image-container {
+                margin-top: -15px;
+            }
+
+        }
+
+    }
+
+    // Dark
+
+    // Scrolled
+    &.scrolled .core-header-content {
+        background-color: rgba(0,0,0,0.95);
+    }
+
+    &.scrolled .core-header,
+    .core-header {
+
+        color: #fff;
+        background-color: #000;
+
+        .core-logo {
+            color: #fff;
+
+            .underline:before {
+                background-color: #fff;
+            }
+        }
+
+        .core-header-content {
+            background-color: #000;
+
+            &:before {
+                background-color: rgba(255,255,255,0.1);
+            }
+        }
+
+        .core-quick-links,
+        .core-nav-links {
+
+            a {
+                color: #fff;
+
+                &:before {
+                    background-color: #fff;
+                }
+            }
+
+        }
+
+        .btn-mobile-nav {
+
+            .line {
+                background-color: #fff;
+            }
+
+        }
+
+        .mobile-nav-menu {
+            background-color: #000;
+
+            .link {
+                color: #fff;
+            }
+        }
+
+        #dark-toggle {
+            background: #555;
+        }
+
+    }
+
+}
+
+// Themes
+
+body.theme-dark {
+
+    &[data-page="exhibitions"] {
+
+        [data-router-view="exhibitions"] {
+
+            // Block Overrides
+
+            .heading-block .heading {
+                border-bottom-color: #fff;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,9 @@
+baseUrl: '@web/fr/'
+enabled: true
+handle: french
+hasUrls: true
+language: fr
+name: French
+primary: false
+siteGroup: 20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b # Europa Museum
+sortOrder: 2

@@ -1,0 +1,47 @@
+# CRAFT ENVIRONMENT
+.env
+
+# COMPOSER
+/vendor
+
+# CRAFT STORAGE
+!/storage/
+/storage/*
+!/storage/rebrand/
+
+# WEB
+/web/cpresources
+/web/assets
+/web/css
+/web/images
+/web/js
+/web/fonts
+/web/mix-manifest.json
+/web/favicon.ico
+/web/manifest.json
+/web/browserconfig.xml
+
+# BUILD FILES
+/node_modules
+/yarn-error.log
+/npm-debug.log
+
+# MISC FILES
+.cache
+.DS_Store
+.vscode
+.idea
+/web/css/site.css.map
+/web/js/site.js.map
+
+# For demo infrastucture only
+!seed.sql
+!/web/assets
+!/web/css
+!/web/images
+!/web/js
+!/web/fonts
+!/web/mix-manifest.json
+!/web/favicon.ico
+!/web/manifest.json
+!/web/browserconfig.xml

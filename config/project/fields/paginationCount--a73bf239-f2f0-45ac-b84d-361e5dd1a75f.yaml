@@ -1,0 +1,46 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: d6f9a9b8-5dea-469a-af3d-b81ba7040f67 # News
+handle: paginationCount
+instructions: 'The max number of news articles to display per page.'
+name: 'Pagination Count'
+searchable: true
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - '2'
+        -
+          - value
+          - '2'
+    -
+      __assoc__:
+        -
+          - default
+          - '1'
+        -
+          - label
+          - '5'
+        -
+          - value
+          - '5'
+    -
+      __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - '10'
+        -
+          - value
+          - '10'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown
