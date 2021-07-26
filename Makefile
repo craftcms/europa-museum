@@ -1,13 +1,16 @@
 DUMPFILE?=seed.sql
-PHP_BINARY?=php
-COMPOSER_BINARY?=composer
+CRAFT_BIN?=php craft
+COMPOSER_BIN?=composer
 
 .PHONY: update
 
 update:
-	${COMPOSER_BINARY} update
-	${PHP_BINARY} craft db/restore ${DUMPFILE}
-	${PHP_BINARY} craft migrate/all
-	${PHP_BINARY} craft project-config/apply --force
+	${COMPOSER_BIN} update
+	${CRAFT_BIN} db/restore ${DUMPFILE}
+	${CRAFT_BIN} migrate/all
+	${CRAFT_BIN} project-config/apply --force
+	${CRAFT_BIN} queue/run
+	${CRAFT_BIN} gc --delete-all-trashed
+	${CRAFT_BIN} db/backup ${DUMPFILE} --overwrite
 	git add ${DUMPFILE} composer.lock config/project
 	git commit -m "Update Composer & seed data."
