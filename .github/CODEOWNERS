@@ -1,0 +1,5 @@
+* @craftcms/devops
+/src/ @craftcms/documenteering
+/templates/ @craftcms/documenteering
+/web/dist/ @craftcms/documenteering
+README.md @craftcms/documenteering
