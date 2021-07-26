@@ -29,7 +29,7 @@
         "nystudio107/craft-seomatic": "^3.3.44",
         "nystudio107/craft-typogrify": "^1.1.18",
         "sebastianlenz/linkfield": "^1.0.19",
-        "solspace/craft-freeform": "3.11.9",
+        "solspace/craft-freeform": "^3.11.9",
         "spacecatninja/imager-x": "^3.3",
         "verbb/default-dashboard": "^1.0",
         "vlucas/phpdotenv": "^3.4.0",
