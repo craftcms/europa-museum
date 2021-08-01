@@ -33,7 +33,7 @@
         <meta name="msapplication-config" content="{{ baseUrl }}browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         {# Project JS #}
-        {{ craft.vite.script("/src/js/app.ts", false) }}
+            {{ craft.vite.script("/src/js/site.js", true) }}
         {# /Project JS #}
         {{ craft.vite.includeCriticalCssTags('index') }}
 

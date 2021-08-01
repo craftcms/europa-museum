@@ -3,6 +3,7 @@ import legacy from '@vitejs/plugin-legacy'
 import ViteRestart from 'vite-plugin-restart';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import critical from 'rollup-plugin-critical';
+import commonjs from '@rollup/plugin-commonjs';
 import path from 'path';
 
 // https://vitejs.dev/config/
@@ -10,6 +11,12 @@ export default ({ command }) => ({
   base: command === 'serve' ? '' : '/dist/',
   build: {
     emptyOutDir: true,
+    commonjsOptions: {
+      include: [
+        'tiny-emitter',
+
+      ],
+    },
     manifest: true,
     outDir: '../cms/web/dist',
     rollupOptions: {
@@ -31,6 +38,7 @@ export default ({ command }) => ({
       criticalConfig: {
       }
     }),
+    commonjs(),
     legacy({
       targets: ['defaults', 'not IE 11']
     }),

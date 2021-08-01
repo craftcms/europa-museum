@@ -11,7 +11,6 @@ const main = async () => {
     // Mount the app
     const root = app.mount('#component-container');
 
-    await import('./site.js')
     return root;
 };
 

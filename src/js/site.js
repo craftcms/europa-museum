@@ -1,7 +1,11 @@
+// Import our CSS
+import '@/css/site.scss';
+
 // Plugins
-//import * as  sniffer from 'sniffer';
-import Highway from '@dogstudio/highway/src/highway';
-import * as  lazysizes from 'lazysizes';
+import * as  sniffer from 'sniffer';
+import * as Highway from '@dogstudio/highway/src/highway';
+
+import lazysizes from 'lazysizes';
 import { gsap } from "gsap";
 
 // Core
