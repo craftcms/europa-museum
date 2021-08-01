@@ -1,0 +1,49 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% set isFirst = isFirst ? 'isFirst' : '' %}
+
+{% set image = theBlock.image.one() ?? null %}
+{% set textColor = theBlock.textColor | default('#000') %}
+{% set preHeading = theBlock.preHeading | default('') %}
+{% set heading = theBlock.heading | default('') %}
+{% set subHeading = theBlock.subHeading | default('') %}
+{% set highlightText = theBlock.highlightText ? 'is-highlighted' : '' %}
+
+{% set hasHeroImage = entry.heroImage|length ? true : false %}
+
+<div class="content-block image-and-headings-block {{ isFirst }} {{ textColor }} {{ highlightText }}" data-scroll-section>
+
+    <div class="image-and-headings-container">
+
+        <div class="title-container" data-scroll data-scroll-speed="1">
+            <h3 class="title">
+                <span class="pre-heading">
+                    {{ preHeading }}
+                </span>
+                <span class="main-heading">
+                    {{ heading | typogrify }}
+                </span>
+            </h3>
+        </div>
+
+        {% if subHeading %}
+            <div class="sub-heading" data-scroll>
+                {{ subHeading }}
+            </div>
+        {% endif %}
+
+        {% if image %}
+            <div class="image" data-scroll data-scroll-speed="-1" {% if not hasHeroImage and isFirst %} data-scroll-position="top"{% endif %}>
+                {# with, classes: 'example' #}
+                {% include "_/components/picture" with {
+                    asset: image,
+                    transform: 'base',
+                    sizes: sizes ?? '100vw',
+                    lazytransition: 'lazyfadeDelay'
+                } %}
+            </div>
+        {% endif %}
+
+    </div>
+
+</div>

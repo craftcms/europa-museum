@@ -1,0 +1,55 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% set isFirst = isFirst ? 'isFirst' : '' %}
+
+{% set heading = theBlock.heading %}
+{% set information = theBlock.information %}
+{% set linkLabel = theBlock.linkLabel %}
+{% set internalLink = theBlock.internalLink.one().url | default('') %}
+{% set externalLink = theBlock.externalLink %}
+{% set linkIcon = theBlock.linkIcon %}
+{% set narrowWidth = theBlock.narrowWidth ? "narrowWidth" : "" %}
+
+<div class="content-block cta-caption-block {{ isFirst }} {% if linkIcon %}has-icon{% endif %} {{ narrowWidth }}" data-scroll-section>
+
+    <div class="caption-container">
+
+        <div class="text">
+
+            {% if heading %}
+                <span class="caption-heading">
+                    {{ include(template_from_string(heading)|raw) }}
+                </span>
+            {% endif %}
+
+            {% if heading and information %}
+                &mdash;
+            {% endif %}
+
+            {% if information %}
+                <span class="information">
+                    {{ include(template_from_string(information)|raw) | typogrify }}
+                </span>
+            {% endif %}
+
+        </div>
+
+        <div class="link">
+
+            {% if internalLink %}
+                <a href="{{ internalLink }}">{{ linkLabel }}</a>
+            {% elseif externalLink %}
+                <a href="{{ externalLink }}" target="_blank" rel="noopener">{{ linkLabel }}</a>
+            {% endif %}
+
+            {% if linkIcon %}
+                <span>
+                    {% include "_/svg/" ~ linkIcon ignore missing %}
+                </span>
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>

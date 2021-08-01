@@ -1,3 +1,3 @@
-import Emitter from 'tiny-emitter';
+import * as Emitter from 'tiny-emitter';
 
 export default new Emitter();

@@ -1,0 +1,25 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% extends "_/layouts/base" %}
+
+{# Add a dns prefetch header #}
+{% set baseUrl = url() %}
+{% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
+
+{% block body %}
+
+    <div id="loco-scroll" class="min-vh-100">
+
+        {% include "_/partials/header" %}
+
+        <main data-router-wrapper>
+            {% block content %}{% endblock %}
+        </main>
+
+        {% include "_/partials/footer" %}
+
+    </div>
+
+    <div class="cover"></div>
+
+{% endblock %}

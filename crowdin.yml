@@ -1,3 +1,0 @@
-files:
-  - source: /translations/en/site.php
-    translation: /translations/%two_letters_code%/site.php

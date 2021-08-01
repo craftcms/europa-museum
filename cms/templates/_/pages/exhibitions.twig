@@ -1,0 +1,46 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% extends "_/layouts/site" %}
+
+{% block inline_css %}
+    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
+{% endblock %}
+
+{% block content %}
+
+        <article data-router-view="exhibitions" data-handle="{{ entry.type.handle }}">
+
+            <div class="exhibitions-container" data-scroll-section>
+
+                <h1 class="hero-heading">
+                    {{ entry.title }}
+                </h1>
+
+                {% set heroImage = entry.heroImage.one() ?? null %}
+
+                {% if heroImage %}
+
+                    <div class="hero-image-container" data-scroll data-scroll-speed="1" data-scroll-position="top">
+                        <div class="hero-image">
+                            {% include "_/components/picture" with {
+                                asset: heroImage,
+                                transform: 'base',
+                                sizes: sizes ?? '100vw',
+                                lazytransition: 'lazyfade'
+                            } %}
+                        </div>
+                    </div>
+
+                {% endif %}
+
+                <button class="btn-down" aria-label="Scroll Down">
+                    {% include "_/svg/arrowDown" %}
+                </button>
+
+            </div>
+
+            {% include "_/components/block-matrix" %}
+
+        </article>
+
+{% endblock %}

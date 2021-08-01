@@ -1,0 +1,40 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% set featuredEntry = theBlock.entry.one() ?? null %}
+{% set textColor = theBlock.textColor | default('#000') %}
+{% set title = featuredEntry.title %}
+{% set heroImage = featuredEntry.heroImage.one() ?? null %}
+
+{% if featuredEntry %}
+
+    <div class="content-block featured-entry-block {{ isFirst }}" data-scroll-section>
+
+        <div class="featured-entry-container">
+
+            <a class="link no-underline" href="{{ featuredEntry.url }}" data-scroll data-scroll-speed="-3">
+
+                <div class="title-container" data-scroll data-scroll-speed="2">
+                    <h3 class="title {{ textColor }} underline">
+                        {{ title }}
+                    </h3>
+                </div>
+
+                {% if heroImage %}
+                    <div class="hero-image" data-scroll data-scroll-speed="1">
+                        {# with, classes: 'example' #}
+                        {% include "_/components/picture" with {
+                            asset: heroImage,
+                            transform: 'base',
+                            sizes: sizes ?? '100vw',
+                            lazytransition: 'none'
+                        } %}
+                    </div>
+                {% endif %}
+
+            </a>
+
+        </div>
+
+    </div>
+
+{% endif %}

@@ -1,0 +1,63 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{#
+    Override freeform's styles to make fields render top-to-bottom on mobile.
+
+    When forms are created in the Control Panel, the "Flexbox" option should
+    be selected by default and left on that setting.
+#}
+{% css %}
+    .freeform-row .freeform-column .freeform-input {
+        margin-bottom: 30px;
+        border: 2px solid #000;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    body.theme-black .freeform-row .freeform-column .freeform-input {
+        border-color: #fff;
+    }
+
+    body.theme-black .ff-form-errors {
+        background-color: #fff;
+    }
+
+    body.theme-black .ff-form-errors p {
+        color: #000;
+    }
+{% endcss %}
+
+{# If there are more than Freeform forms on a page, this lets us target them. #}
+{% set freeformId = 'freeform-' ~ seq('freeform') %}
+{% set templateId = 'template-' ~ freeformId %}
+
+<div id="{{ freeformId }}" class="content-block form-block {{ isFirst }}" data-scroll-section>
+
+	{{ theBlock.form.render() }}
+
+    <template id="{{ templateId }}">
+        {{ theBlock.successMessage | default("Form submitted successfully!") | typogrify | raw }}
+    </template>
+
+</div>
+
+{#
+    Customization:
+        - Allow custom success message from the Matrix block
+
+    See: https://docs.solspace.com/craft/freeform/v3/templating/ajax-forms.html#customization
+#}
+<script>
+    document.getElementById('{{ freeformId }}').addEventListener('freeform-ready', function(event) {
+        const freeform = event.target.freeform;
+
+        freeform.setOption('renderSuccess', function() {
+            const templateClone = document.getElementById('{{ templateId }}').content.cloneNode(true)
+            const successMessage = document.createElement("div");
+
+            successMessage.classList.add("ff-form-success");
+            successMessage.appendChild(templateClone);
+            this.form.insertBefore(successMessage, this.form.childNodes[0]);
+        });
+    });
+</script>

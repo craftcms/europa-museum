@@ -1,0 +1,63 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% set internalLink = theBlock.internalLink.one().url|default('') %}
+{% set externalLink = theBlock.externalLink|default('') %}
+
+{% set linkUrl = internalLink ? internalLink : externalLink %}
+
+{% set image = theBlock.image.one() ?? null %}
+
+<div class="content-block stats-and-image-block {{ isFirst }}" data-scroll-section>
+
+    <div class="relative">
+
+        <div class="text-container">
+
+            <div class="stat-left {% if theBlock.rightStatValue|length == 0 %}hide-on-mobile{% endif %}">
+                <div class="stat-value">
+                    {{ theBlock.leftStatValue }}
+                </div>
+                <div class="stat-label">
+                    {{ theBlock.leftStatLabel }}
+                </div>
+            </div>
+
+            <div class="info">
+                <h4 class="heading">
+                    {{ theBlock.heading | typogrify }}
+                </h4>
+                <div class="description">
+                    {{ theBlock.description }}
+                </div>
+                <div class="link">
+                    <a class="active" href="{{ linkUrl }}" {% if not internalLink %}target="_blank" noopener{% endif %}>
+                        {{ theBlock.linkLabel }}
+                    </a>
+                </div>
+            </div>
+
+            <div class="stat-right {% if theBlock.rightStatValue|length == 0 %}hide-on-mobile{% endif %}">
+                <div class="stat-value">
+                    {{ theBlock.rightStatValue }}
+                </div>
+                <div class="stat-label">
+                    {{ theBlock.rightStatLabel }}
+                </div>
+            </div>
+
+        </div>
+
+        {% if image %}
+            <div class="image-container w-full">
+                {% include "_/components/picture" with {
+                    asset: image,
+                    transform: 'base',
+                    sizes: sizes ?? '100vw',
+                    lazytransition: 'lazyfade'
+                } %}
+            </div>
+        {% endif %}
+
+    </div>
+
+</div>

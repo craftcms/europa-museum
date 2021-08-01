@@ -1,0 +1,12 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+<nav class="core-quick-links">
+
+    {% for link in navigation.linksMiddle.all() %}
+
+        <a href="{{ link.url }}" {% if link.url == url('contact') %}data-router-disabled{% endif %}>{{ link.title }}</a>
+        {% if not loop.last %} / {% endif %}
+
+    {% endfor %}
+
+</nav>

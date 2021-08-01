@@ -1,0 +1,51 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{%- minify -%}
+
+{% set env = getenv('ENVIRONMENT') %}
+{% set baseUrl = url() %}
+
+{% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
+<!DOCTYPE html>
+
+{%- endminify -%}
+
+<html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+
+    <head>
+        {%- minify -%}
+        <link rel="dns-prefetch" href="{{ baseUrl }}" crossorigin>
+        <link rel="preconnect" href="{{ baseUrl }}" crossorigin>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,minimum-scale=1">
+        <meta name="csrf-token-name" content="{{ craft.app.config.general.csrfTokenName }}">
+        <meta name="csrf-token" content="{{ craft.app.request.csrfToken() }}">
+
+        {#-- Favicons --#}
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ baseUrl }}images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ baseUrl }}images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ baseUrl }}images/icons/favicon-16x16.png">
+        <link rel="manifest" href="{{ baseUrl }}manifest.json">
+        <link rel="mask-icon" href="{{ baseUrl }}images/icons/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" href="{{ baseUrl }}favicon.ico">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-config" content="{{ baseUrl }}browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        {# Project JS #}
+        {{ craft.vite.script("/src/js/app.ts", false) }}
+        {# /Project JS #}
+        {{ craft.vite.includeCriticalCssTags('index') }}
+
+        {%- endminify -%}
+    </head>
+
+    <body class="first-load loading {% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
+    <div id="component-container">
+    </div>
+
+        {% block body %}{% endblock %}
+
+    </body>
+
+</html>

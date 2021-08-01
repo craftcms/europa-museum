@@ -1,0 +1,89 @@
+field: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+fieldLayouts:
+  317b7d36-2f97-4ffa-846f-0404ab3c6df8:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Text Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6c31cab7-7f79-4628-b345-9a700a16a726: # Entry
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: entry
+    instructions: ''
+    name: Entry
+    searchable: true
+    settings:
+      allowSelfRelations: false
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: null
+      sources:
+        - 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+        - 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  8df6d29d-59a0-44ee-80e5-f69849956547: # Text Color
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: textColor
+    instructions: ''
+    name: 'Text Color'
+    searchable: true
+    settings:
+      options:
+        -
+          __assoc__:
+            -
+              - default
+              - '1'
+            -
+              - label
+              - 'Black Text'
+            -
+              - value
+              - blackText
+        -
+          __assoc__:
+            -
+              - default
+              - ''
+            -
+              - label
+              - 'White Text'
+            -
+              - value
+              - whiteText
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\RadioButtons
+handle: featuredEntry
+name: 'Featured Entry'
+sortOrder: 7

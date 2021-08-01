@@ -1,7 +1,7 @@
 // Plugins
-import sniffer from 'sniffer';
-import Highway from '@dogstudio/highway/build/highway';
-import lazysizes from 'lazysizes';
+//import * as  sniffer from 'sniffer';
+import Highway from '@dogstudio/highway/src/highway';
+import * as  lazysizes from 'lazysizes';
 import { gsap } from "gsap";
 
 // Core

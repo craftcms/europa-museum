@@ -1,47 +1,48 @@
+# Craft 3 .gitignore
+#
+# Example .gitignore file for Craft 3 CMS projects
+#
+# @author    nystudio107
+# @copyright Copyright (c) 2017 nystudio107
+# @link      https://nystudio107.com/
+# @package   nystudio107/craft
+# @since     1.0.0
+# @license   MIT
+
+# This file should be placed in your Craft 3 CMS project root directory
+
 # CRAFT ENVIRONMENT
-.env
+.env*
 
 # COMPOSER
-/vendor
+*/vendor/*
 
 # CRAFT STORAGE
-!/storage/
-/storage/*
-!/storage/rebrand/
+*/storage/*
 
-# WEB
-/web/cpresources
-/web/assets
-/web/css
-/web/images
-/web/js
-/web/fonts
-/web/mix-manifest.json
-/web/favicon.ico
-/web/manifest.json
-/web/browserconfig.xml
+# ASSETS
+/cms/web/cpresources/*
 
 # BUILD FILES
-/node_modules
-/yarn-error.log
-/npm-debug.log
+node_modules
+yarn-error.log
+npm-debug.log
 
 # MISC FILES
 .cache
 .DS_Store
-.vscode
 .idea
-/web/css/site.css.map
-/web/js/site.js.map
-
-# For demo infrastucture only
-!seed.sql
-!/web/assets
-!/web/css
-!/web/images
-!/web/js
-!/web/fonts
-!/web/mix-manifest.json
-!/web/favicon.ico
-!/web/manifest.json
-!/web/browserconfig.xml
+.project
+.settings
+*.esproj
+*.sublime-workspace
+*.sublime-project
+*.tmproj
+*.tmproject
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+config.codekit3
+prepros-6.config

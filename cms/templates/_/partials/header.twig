@@ -1,0 +1,28 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+<header class="core-header">
+
+    <div class="core-header-content">
+
+        <a class="core-logo no-underline" href="{{ siteUrl }}">
+            <span class="underline">euro</span>pa.museum
+        </a>
+
+        {% include "_/partials/quick-links" %}
+
+        {% include "_/partials/nav-links" %}
+
+        <button class="btn-mobile-nav" aria-label="Navigation">
+            <span class="lines">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
+            </span>
+        </button>
+
+    </div>
+
+    {% include "_/partials/mobile-nav-menu" %}
+
+    <div id="dark-toggle"></div>
+
+</header>

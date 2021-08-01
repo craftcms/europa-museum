@@ -1,0 +1,19 @@
+{% set contentBlocks = contentBlocks ?? null ? contentBlocks : entry.contentBlocks.all() | default([]) %}
+
+{% if contentBlocks | length %}
+
+    <section class="content-blocks">
+
+        {% for theBlock in contentBlocks %}
+            {% set theBlockName =  theBlock.type.handle %}
+            {% set isFirst = loop.index == 1 %}
+
+            {% include "_/components/blocks/" ~ theBlockName ignore missing with {
+                'theBlock' : theBlock,
+                "isFirst" : isFirst
+            } %}
+        {% endfor %}
+
+    </section>
+
+{% endif %}

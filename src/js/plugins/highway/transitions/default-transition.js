@@ -1,4 +1,4 @@
-import Highway from '@dogstudio/highway/build/highway';
+import * as  Highway from '@dogstudio/highway/build/highway';
 
 class DefaultTransition extends Highway.Transition {
 
