@@ -1,5 +1,5 @@
-import * as  Flickity from 'flickity';
-import * as  imagesLoaded from 'flickity-imagesloaded';
+import Flickity from 'flickity';
+import imagesLoaded from 'flickity-imagesloaded';
 
 import store from '../store';
 import bindAll from '../utils/bindAll';

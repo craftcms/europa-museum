@@ -1,5 +1,5 @@
 // Plugins
-import * as  Highway from '@dogstudio/highway/build/highway';
+import Highway from '@dogstudio/highway/build/highway';
 import { H } from '../../../site';
 import LocomotiveScroll from 'locomotive-scroll';
 
