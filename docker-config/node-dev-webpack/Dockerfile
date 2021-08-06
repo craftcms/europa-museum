@@ -22,4 +22,4 @@ RUN set -eux; \
 # when working with teams or multiple environments
 CMD npm install \
     && \
-    npm run dev
+    npm run debug

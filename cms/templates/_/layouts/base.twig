@@ -32,10 +32,30 @@
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="msapplication-config" content="{{ baseUrl }}browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        {# Project JS #}
-            {{ craft.vite.script("/src/js/site.js", true) }}
+
+        {# -- Favicons, webapp manifests, etc. -- #}
+        {{ craft.twigpack.includeFile("@webroot/dist/webapp.html") }}
+
+            {# Project JS #}
+        {{ craft.twigpack.includeSafariNomoduleFix() }}
+        {{ craft.twigpack.includeJsModule("runtime.js", true) }}
+        {{ craft.twigpack.includeJsModule("app.js", true) }}
         {# /Project JS #}
-        {{ craft.vite.includeCriticalCssTags('index') }}
+
+        {# -- Critical CSS -- #}
+        {% set cssHash = craft.twigpack.getModuleHash("styles.css", "legacy") %}
+
+        <!--# if expr="$HTTP_COOKIE=/critical\-css\={{ cssHash }}/" -->
+        {{ craft.twigpack.includeCssModule("styles.css", false) }}
+        <!--# else -->
+        <script>
+            Cookie.set("critical-css", "{{ cssHash }}", { expires: "7D", secure: true });
+        </script>
+
+        {{ craft.twigpack.includeCriticalCssTags() }}
+
+        {{ craft.twigpack.includeCssModule("styles.css", true) }}
+        <!--# endif -->
 
         {%- endminify -%}
     </head>

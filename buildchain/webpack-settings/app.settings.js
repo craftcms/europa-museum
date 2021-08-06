@@ -13,10 +13,8 @@ module.exports = {
     entry: {
         'app': [
             '@/js/app.ts',
-            '@/css/app.pcss',
-        ],
-        'lazysizes-wrapper': [
-            '@/js/utils/lazysizes-wrapper.ts',
+            '@/js/site.js',
+            '@/css/site.scss',
         ],
     },
     extensions: ['.ts', '.js', '.vue', '.json'],

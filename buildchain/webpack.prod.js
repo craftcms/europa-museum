@@ -30,7 +30,6 @@ module.exports = [
         'manifest',
         'babel-loader',
         'image-loader',
-        'imagemin-webp',
         'font-loader',
         'postcss-loader',
         'typescript-loader',

@@ -1,4 +1,4 @@
-dateModified: 1627768567
+dateModified: 1628211070
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -126,7 +126,7 @@ plugins:
   freeform:
     edition: lite
     enabled: true
-    licenseKey: Z6HTSHFS6CC905HPKFD1ZJ3E
+    licenseKey: 12RUVCIJKE1OYMTORHHE9C0O
     schemaVersion: 3.3.2
     settings:
       ajaxByDefault: '1'
@@ -189,9 +189,13 @@ plugins:
   imager-x:
     edition: pro
     enabled: true
-    licenseKey: L5A3GXGBYULYKCP9H1AI2SJK
+    licenseKey: K03H5FZDDC10P9SPFH42ZAKV
     schemaVersion: 3.0.0
   minify:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  mix:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
@@ -210,8 +214,12 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: 95WU19FC2SB01I1F6V5IT4OQ
+    licenseKey: JDDAJ40R4MI7NJ5P49Q2G0K8
     schemaVersion: 3.0.10
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   typedlinkfield:
     edition: standard
     enabled: true
@@ -220,13 +228,9 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
-  vite:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
 system:
   edition: pro
-  live: true
+  live: false
   name: 'Europa Museum'
   retryDuration: null
   schemaVersion: 3.7.7

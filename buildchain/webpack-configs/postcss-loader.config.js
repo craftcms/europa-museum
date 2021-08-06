@@ -6,7 +6,6 @@ const path = require('path');
 
 // webpack plugins
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const TailwindCss = require('tailwindcss');
 
 // return a webpack config
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -16,7 +15,7 @@ module.exports = (type = 'modern', settings) => {
         module: {
             rules: [
                 {
-                    test: /\.(pcss|css)$/,
+                    test: /\.(pcss|css|scss)$/,
                     use: [
                         ...loaders,
                         {
@@ -33,11 +32,11 @@ module.exports = (type = 'modern', settings) => {
                                 sourceMap: false,
                                 postcssOptions: {
                                     path: path.resolve(__dirname),
+                                    parser: 'postcss-scss',
                                     plugins: [
                                         ['postcss-import', {
                                             path: ['./node_modules'],
                                         }],
-                                        TailwindCss('./tailwind.config.js'),
                                         ['postcss-mixins', {
                                         }],
                                         ['postcss-nested', {

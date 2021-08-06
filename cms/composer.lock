@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7cac00eea25104c0a05324963b34a9fc",
+    "content-hash": "927a7125cde8b37340f953f19f9f5541",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.186.3",
+            "version": "3.187.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "037fd80e421b1dde4d32ec16d0f79c61bbee1605"
+                "reference": "b661446e7fc2a3b5fcede4e65a58c2acb9743a1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/037fd80e421b1dde4d32ec16d0f79c61bbee1605",
-                "reference": "037fd80e421b1dde4d32ec16d0f79c61bbee1605",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b661446e7fc2a3b5fcede4e65a58c2acb9743a1c",
+                "reference": "b661446e7fc2a3b5fcede4e65a58c2acb9743a1c",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.186.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.187.3"
             },
-            "time": "2021-07-30T18:30:36+00:00"
+            "time": "2021-08-05T18:14:30+00:00"
         },
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -901,16 +901,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.8.7",
+            "version": "2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "dd70560df56ec7aef87fe52115fa571d13468714"
+                "reference": "c0272678a9d9bdc3990b36079e42667acdcd7016"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/dd70560df56ec7aef87fe52115fa571d13468714",
-                "reference": "dd70560df56ec7aef87fe52115fa571d13468714",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/c0272678a9d9bdc3990b36079e42667acdcd7016",
+                "reference": "c0272678a9d9bdc3990b36079e42667acdcd7016",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +952,7 @@
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
                 "source": "https://github.com/craftcms/redactor"
             },
-            "time": "2021-05-01T18:13:34+00:00"
+            "time": "2021-08-02T08:18:53+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -2616,24 +2616,23 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "e89c2268c9cad25099f562f7f015c28c5dd383c9"
+                "reference": "c8ac6a76a133e682acfabc821d4a2ec646934b12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/e89c2268c9cad25099f562f7f015c28c5dd383c9",
-                "reference": "e89c2268c9cad25099f562f7f015c28c5dd383c9",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/c8ac6a76a133e682acfabc821d4a2ec646934b12",
+                "reference": "c8ac6a76a133e682acfabc821d4a2ec646934b12",
                 "shasum": ""
             },
             "require": {
-                "laminas/laminas-zendframework-bridge": "^1.0",
                 "php": "^7.3 || ^8.0"
             },
-            "replace": {
-                "zendframework/zend-stdlib": "^3.2.1"
+            "conflict": {
+                "zendframework/zend-stdlib": "*"
             },
             "require-dev": {
                 "laminas/laminas-coding-standard": "~2.3.0",
@@ -2672,7 +2671,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2021-06-28T21:37:31+00:00"
+            "time": "2021-08-03T13:40:40+00:00"
         },
         {
             "name": "laminas/laminas-zendframework-bridge",
@@ -4156,58 +4155,6 @@
             "time": "2021-07-13T16:06:23+00:00"
         },
         {
-            "name": "nystudio107/craft-plugin-vite",
-            "version": "1.0.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87",
-                "reference": "3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\pluginvite\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "Plugin Vite is the conduit between Craft CMS plugins and Vite, with manifest.json & HMR support",
-            "keywords": [
-                "craftcms",
-                "plugin",
-                "vite"
-            ],
-            "support": {
-                "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.10"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-07-15T03:47:31+00:00"
-        },
-        {
             "name": "nystudio107/craft-seomatic",
             "version": "3.3.46",
             "source": {
@@ -4283,6 +4230,68 @@
             "time": "2021-07-27T15:06:08+00:00"
         },
         {
+            "name": "nystudio107/craft-twigpack",
+            "version": "1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-twigpack.git",
+                "reference": "b6fbb07ab1fb84d7bcc90995275b35e529827426"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/b6fbb07ab1fb84d7bcc90995275b35e529827426",
+                "reference": "b6fbb07ab1fb84d7bcc90995275b35e529827426",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Twigpack",
+                "handle": "twigpack",
+                "changelogUrl": "https://raw.githubusercontent.com/craft-nystudio107/twigpack/v1/CHANGELOG.md",
+                "class": "nystudio107\\twigpack\\Twigpack"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\twigpack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Twigpack is a bridge between Twig and webpack, with manifest.json & webpack-dev-server HMR support",
+            "keywords": [
+                "craft-plugin",
+                "craftcms",
+                "hmr-support",
+                "manifest-json",
+                "twig",
+                "webpack",
+                "webpack-dev-server"
+            ],
+            "support": {
+                "docs": "https://nystudio107.com/plugins/twigpack/documentation",
+                "issues": "https://nystudio107.com/plugins/twigpack/support",
+                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-12T02:46:01+00:00"
+        },
+        {
             "name": "nystudio107/craft-typogrify",
             "version": "1.1.18",
             "source": {
@@ -4343,70 +4352,6 @@
                 "source": "https://github.com/nystudio107/craft-typogrify/tree/v1"
             },
             "time": "2019-04-30T21:24:04+00:00"
-        },
-        {
-            "name": "nystudio107/craft-vite",
-            "version": "1.0.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "75be08f87fb0f1c321e6407d12e841b9b6630b2b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/75be08f87fb0f1c321e6407d12e841b9b6630b2b",
-                "reference": "75be08f87fb0f1c321e6407d12e841b9b6630b2b",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-plugin-vite": "^1.0.10"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Vite",
-                "handle": "vite",
-                "developer": "nystudio107",
-                "developerUrl": "https://nystudio107.com",
-                "documentationUrl": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/master/CHANGELOG.md",
-                "class": "nystudio107\\vite\\Vite"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\vite\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "Allows the use of the Vite.js next generation frontend tooling with Craft CMS",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "vite"
-            ],
-            "support": {
-                "docs": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
-                "issues": "https://github.com/nystudio107/craft-vite/issues",
-                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.13"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/khalwat",
-                    "type": "github"
-                }
-            ],
-            "time": "2021-07-15T03:49:18+00:00"
         },
         {
             "name": "opis/closure",
@@ -9069,16 +9014,16 @@
         },
         {
             "name": "wrav/oembed",
-            "version": "1.3.11",
+            "version": "1.3.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wrav/oembed.git",
-                "reference": "3d011b4b2d0fd5152dceedc448ef04da752f3e60"
+                "reference": "40e5aaaf0a96432203ac089962daecbef58b67ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wrav/oembed/zipball/3d011b4b2d0fd5152dceedc448ef04da752f3e60",
-                "reference": "3d011b4b2d0fd5152dceedc448ef04da752f3e60",
+                "url": "https://api.github.com/repos/wrav/oembed/zipball/40e5aaaf0a96432203ac089962daecbef58b67ea",
+                "reference": "40e5aaaf0a96432203ac089962daecbef58b67ea",
                 "shasum": ""
             },
             "require": {
@@ -9132,9 +9077,9 @@
             "support": {
                 "docs": "https://github.com/wrav/oembed/blob/master/README.md",
                 "issues": "https://github.com/wrav/oembed/issues",
-                "source": "https://github.com/wrav/oembed/tree/1.3.11"
+                "source": "https://github.com/wrav/oembed/tree/1.3.12"
             },
-            "time": "2021-07-21T01:21:37+00:00"
+            "time": "2021-08-05T00:23:01+00:00"
         },
         {
             "name": "yii2tech/ar-softdelete",

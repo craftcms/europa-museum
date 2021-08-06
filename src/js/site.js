@@ -27,6 +27,8 @@ import { GlobalMobileNavMenu } from './components/mobileNavMenu';
 
 window.firstLoad = true;
 
+lazysizes.init();
+
 // Highway
 let H;
 
