@@ -9,7 +9,7 @@ module.exports = {
     alias: {
         '@': path.resolve('../src'),
     },
-    copyright: 'Example Company, Inc.',
+    copyright: 'Europa Museum.',
     entry: {
         'app': [
             '@/js/app.ts',
@@ -23,7 +23,7 @@ module.exports = {
         dist: path.resolve('../cms/web/dist/'),
     },
     urls: {
-        criticalCss: 'http://example.test/',
+        criticalCss: 'http://nginx/',
         publicPath: () => process.env.PUBLIC_PATH || '/dist/',
     },
 };

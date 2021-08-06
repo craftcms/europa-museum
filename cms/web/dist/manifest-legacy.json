@@ -1,0 +1,9 @@
+{
+  "app.css": "/dist/css/app.8181baa921f16fa69d60.css",
+  "app.js": "/dist/js/app-legacy.721cdb246311ad672cd3.js",
+  "runtime.js": "/dist/js/runtime-legacy.57b559ee247836957230.js",
+  "confetti.js": "/dist/js/confetti-legacy.15e8b549c1e89de6212e.js",
+  "app-legacy.js.map": "/dist/js/app-legacy.721cdb246311ad672cd3.js.map",
+  "runtime-legacy.js.map": "/dist/js/runtime-legacy.57b559ee247836957230.js.map",
+  "confetti-legacy.js.map": "/dist/js/confetti-legacy.15e8b549c1e89de6212e.js.map"
+}

@@ -15,22 +15,6 @@ module.exports = {
                 uri: '',
                 template: 'index'
             },
-            {
-                uri: 'errors/offline',
-                template: 'errors/offline'
-            },
-            {
-                uri: 'errors/error',
-                template: 'errors/error'
-            },
-            {
-                uri: 'errors/503',
-                template: 'errors/503'
-            },
-            {
-                uri: 'errors/404',
-                template: 'errors/404'
-            },
         ]
     },
 };

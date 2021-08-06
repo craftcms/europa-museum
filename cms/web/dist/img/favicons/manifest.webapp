@@ -1,0 +1,14 @@
+{
+  "version": "1.1.3",
+  "name": "europe-museum",
+  "description": "Europa Museum Craft CMS demo site.\n\n",
+  "icons": {
+    "60": "/dist/img/favicons/firefox_app_60x60.png",
+    "128": "/dist/img/favicons/firefox_app_128x128.png",
+    "512": "/dist/img/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Europe Museum",
+    "url": "https://craftcms.com/demo"
+  }
+}

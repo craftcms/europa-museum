@@ -22,17 +22,6 @@
         <meta name="csrf-token-name" content="{{ craft.app.config.general.csrfTokenName }}">
         <meta name="csrf-token" content="{{ craft.app.request.csrfToken() }}">
 
-        {#-- Favicons --#}
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ baseUrl }}images/icons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ baseUrl }}images/icons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ baseUrl }}images/icons/favicon-16x16.png">
-        <link rel="manifest" href="{{ baseUrl }}manifest.json">
-        <link rel="mask-icon" href="{{ baseUrl }}images/icons/safari-pinned-tab.svg" color="#000000">
-        <link rel="shortcut icon" href="{{ baseUrl }}favicon.ico">
-        <meta name="msapplication-TileColor" content="#000000">
-        <meta name="msapplication-config" content="{{ baseUrl }}browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-
         {# -- Favicons, webapp manifests, etc. -- #}
         {{ craft.twigpack.includeFile("@webroot/dist/webapp.html") }}
 
@@ -42,11 +31,16 @@
         {{ craft.twigpack.includeJsModule("app.js", true) }}
         {# /Project JS #}
 
+        {# -- Tiny Cookie JavaScript -- #}
+        <script>
+            {{ source("_inline-js/tiny-cookie.min.js") }}
+        </script>
+
         {# -- Critical CSS -- #}
-        {% set cssHash = craft.twigpack.getModuleHash("styles.css", "legacy") %}
+        {% set cssHash = craft.twigpack.getModuleHash("app.css", "legacy") %}
 
         <!--# if expr="$HTTP_COOKIE=/critical\-css\={{ cssHash }}/" -->
-        {{ craft.twigpack.includeCssModule("styles.css", false) }}
+        {{ craft.twigpack.includeCssModule("app.css", false) }}
         <!--# else -->
         <script>
             Cookie.set("critical-css", "{{ cssHash }}", { expires: "7D", secure: true });
@@ -54,7 +48,7 @@
 
         {{ craft.twigpack.includeCriticalCssTags() }}
 
-        {{ craft.twigpack.includeCssModule("styles.css", true) }}
+        {{ craft.twigpack.includeCssModule("app.css", true) }}
         <!--# endif -->
 
         {%- endminify -%}

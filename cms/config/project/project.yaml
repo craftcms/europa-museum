@@ -1,4 +1,4 @@
-dateModified: 1628211070
+dateModified: 1628225494
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -230,7 +230,7 @@ plugins:
     schemaVersion: 1.0.0
 system:
   edition: pro
-  live: false
+  live: true
   name: 'Europa Museum'
   retryDuration: null
   schemaVersion: 3.7.7

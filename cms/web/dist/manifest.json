@@ -1,0 +1,9 @@
+{
+  "app.js": "/dist/js/app.8e2fb4830b7fb55cb488.js",
+  "runtime.js": "/dist/js/runtime.23d9172d678d9f51e8fd.js",
+  "confetti.js": "/dist/js/confetti.eba64b6094295b2e1f2b.js",
+  "../sw.js": "/dist/../sw.js",
+  "app.js.map": "/dist/js/app.8e2fb4830b7fb55cb488.js.map",
+  "runtime.js.map": "/dist/js/runtime.23d9172d678d9f51e8fd.js.map",
+  "confetti.js.map": "/dist/js/confetti.eba64b6094295b2e1f2b.js.map"
+}
