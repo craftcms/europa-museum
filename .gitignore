@@ -22,7 +22,6 @@
 
 # ASSETS
 /cms/web/cpresources/*
-/cms/web/assets/imager/*
 
 # BUILD FILES
 node_modules
