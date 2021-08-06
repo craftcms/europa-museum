@@ -1,6 +1,6 @@
 ## About nystudio107/Europa Museum
 
-This is conversion of the Craft CMS demo site [Europa Museum](https://craftcms.com/demo) to a Docker-ized setup that uses a modularized [webpack 5](https://webpack.js.org/) setup for frontend tooling.
+This is conversion of the Craft CMS marketing demo site [Europa Museum](https://craftcms.com/demo) to a Docker-ized setup that uses a modularized [webpack 5](https://webpack.js.org/) setup for frontend tooling.
 
 [![Click to Play Video](https://img.youtube.com/vi/ICDwX5_QRjo/0.jpg)](https://www.youtube.com/watch?v=ICDwX5_QRjo)
 
