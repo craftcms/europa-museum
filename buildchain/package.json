@@ -1,8 +1,8 @@
 {
   "author": {
     "email": "someone@example-developer.com",
-    "name": "Example Developer",
-    "url": "https://example-developer.com"
+    "name": "Europe Museum",
+    "url": "https://craftcms.com/demo"
   },
   "browser": "/web/index.php",
   "browserslist": {
@@ -31,7 +31,7 @@
   },
   "bugs": {
     "email": "someone@example-developer.com",
-    "url": "https://github.com/example-developer/example-project/issues"
+    "url": "https://github.com/nystudio107/europa-museum/issues"
   },
   "dependencies": {
     "@dogstudio/highway": "^2.1.3",
@@ -54,7 +54,7 @@
     "vue": "^3.0.0",
     "vue-confetti": "^2.0.8"
   },
-  "description": "Example Project brand website",
+  "description": "Europa Museum Craft CMS demo site.\n\n",
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
@@ -118,17 +118,18 @@
     "webpack-merge": "^5.7.0",
     "workbox-webpack-plugin": "^6.0.0"
   },
-  "homepage": "https://github.com/example-developer/example-project",
+  "homepage": "https://github.com/nystudio107/europa-museum",
   "keywords": [
-    "Example",
-    "Keywords"
+    "Craft",
+    "CMS",
+    "demo"
   ],
   "license": "SEE LICENSE IN LICENSE.md",
-  "name": "example-project",
+  "name": "europe-museum",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/example-developer/example-project.git"
+    "url": "git+https://github.com/nystudio107/europa-museum.git"
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js --progress",

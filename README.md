@@ -1,18 +1,17 @@
 ## About nystudio107/Europa Museum
 
-This is conversion of the Craft CMS demo site [Europa Museum](https://craftcms.com/demo) to a Docker-ized setup that uses [Vite.js](https://vitejs.dev/) modern frontend tooling.
+This is conversion of the Craft CMS demo site [Europa Museum](https://craftcms.com/demo) to a Docker-ized setup that uses [webpack 5](https://webpack.js.org/) modern frontend tooling.
 
-[![Click to Play Video](https://img.youtube.com/vi/_ShZxcXLeXc/0.jpg)](https://www.youtube.com/watch?v=_ShZxcXLeXc)
+[![Click to Play Video](https://img.youtube.com/vi/ICDwX5_QRjo/0.jpg)](https://www.youtube.com/watch?v=ICDwX5_QRjo)
 
 (Click to Play Video)
 
 Related articles & podcasts:
 
-* [Vite.js Next Generation Frontend Tooling + Craft CMS](https://nystudio107.com/blog/using-vite-js-next-generation-frontend-tooling-with-craft-cms) article
+* [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development) article
 * [An Annotated Docker Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-docker-config-for-frontend-web-development) article
 * [Using Make & Makefiles to Automate your Frontend Workflow](https://nystudio107.com/blog/using-make-makefiles-to-automate-your-frontend-workflow) article
-* [Vite.js modern frontend tooling](https://devmode.fm/episodes/vite-js-modern-frontend-tooling) podcast
-* [Introduction to Vite in Craft CMS](https://craftquest.io/livestreams/introduction-to-vite-in-craft-cms) video
+* [webpack inside & out with Sean Larkin](https://devmode.fm/episodes/webpack-inside-out-with-sean-larkin) podcast
 
 ## Try It Yourself!
 
@@ -45,9 +44,9 @@ If it appears to hang at `Building php_xdebug`, your PhpStorm or other IDE is li
 http://localhost:8000
 ```
 
-The Vite dev server for Hot Module Replacement (HMR) serving of static resources runs off of `http://localhost:3000`
+The webpack 5 dev server for Hot Module Replacement (HMR) serving of static resources runs off of `http://localhost:8080`
 
-🎉 You're now up and running Nginx, PHP, MySQL 8, Redis, Xdebug, & Vite without having to do any devops!
+🎉 You're now up and running Nginx, PHP, MySQL 8, Redis, Xdebug, & webpack 5 without having to do any devops!
 
 The first time you do `make dev` it will be slow, because it has to build all of the Docker images.
 
@@ -62,15 +61,13 @@ php_1         | [01-Dec-2020 18:38:46] NOTICE: fpm is running, pid 22
 php_1         | [01-Dec-2020 18:38:46] NOTICE: ready to handle connections
 ```
 
-...and the following to indicate that the Vite container is ready:
+...and the following to indicate that the webpack 5 container is ready:
 ```
-vite_1        |   > Local:    http://localhost:3000/
-vite_1        |   > Network:  http://172.28.0.3:3000/
-vite_1        | 
-vite_1        |   ready in 10729ms.
+webpack_1     | <i> europe-museum (webpack 5.9.0) compiled successfully in 12097 ms
+webpack_1     | <i> [webpack-dev-middleware] Child "europe-museum": Compiled successfully.
 ```
 
-All of the Twig files, JavaScript, Vue components, CSS, and even the Vite config itself will relfect changes immediately Hot Module Replacement, so feel free to edit things and play around.
+All of the Twig files, JavaScript, Vue components, CSS, and even the webpack 5 config itself will reflect changes immediately Hot Module Replacement, so feel free to edit things and play around.
 
 A password-scrubbed seed database will automatically be installed; you can log into the CP at `http://localhost:8000/admin` via these credentials:
 
@@ -84,7 +81,7 @@ This project uses Docker to shrink-wrap the devops it needs to run around the pr
 To make using it easier, we're using a Makefile and the built-in `make` utility to create local aliases. You can run the following from terminal in the project directory:
 
 - `make dev` - starts up the local dev server listening on `http://localhost:8000/`
-- `make build` - builds the static assets via the Vite buildchain
+- `make build` - builds the static assets via the webpack 5 buildchain
 - `make clean` - shuts down the Docker containers, removes any mounted volumes (including the database), and then rebuilds the containers from scratch
 - `make update` - causes the project to update to the latest Composer and NPM dependencies
 - `make update-clean` - completely removes `node_modules/` & `vendor/`, then causes the project to update to the latest Composer and NPM dependencies
