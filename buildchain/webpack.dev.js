@@ -15,7 +15,7 @@ module.exports = modernWebpackConfigs(
     'babel-loader',
     'image-loader',
     'font-loader',
-    'postcss-loader',
+    'sass-loader',
     'typescript-loader',
     'vue-loader',
 );

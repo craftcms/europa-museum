@@ -1,39 +1,39 @@
 @charset "UTF-8";
 
 // Plugin
-@import './plugins/flickity.scss';
+@import './plugins/flickity';
 
 // Shared
-@import './shared/reset.scss';
-@import './shared/vars.scss';
-@import './shared/mixins.scss';
-@import './shared/typography.scss';
-@import './shared/global.scss';
-@import './shared/core-header.scss';
-@import './shared/core-footer.scss';
+@import './shared/reset';
+@import './shared/vars';
+@import './shared/mixins';
+@import './shared/typography';
+@import './shared/global';
+@import './shared/core-header';
+@import './shared/core-footer';
 
 // Pages
-@import './pages/styleguide.scss';
-@import './pages/home.scss';
-@import './pages/exhibitions.scss';
-@import './pages/exhibit.scss';
-@import './pages/visit.scss';
-@import './pages/news.scss';
-@import './pages/news-article.scss';
-@import './pages/about.scss';
-@import './pages/contact.scss';
-@import './pages/page-error.scss';
+@import './pages/styleguide';
+@import './pages/home';
+@import './pages/exhibitions';
+@import './pages/exhibit';
+@import './pages/visit';
+@import './pages/news';
+@import './pages/news-article';
+@import './pages/about';
+@import './pages/contact';
+@import './pages/page-error';
 
 // Blocks
-@import './components/blocks/heading.scss';
-@import './components/blocks/image-and-headings.scss';
-@import './components/blocks/stats-and-image.scss';
-@import './components/blocks/slider.scss';
-@import './components/blocks/rich-text.scss';
-@import './components/blocks/cta-caption.scss';
-@import './components/blocks/featured-entry.scss';
-@import './components/blocks/form.scss';
-@import './components/blocks/google-map-embed.scss';
+@import './components/blocks/heading';
+@import './components/blocks/image-and-headings';
+@import './components/blocks/stats-and-image';
+@import './components/blocks/slider';
+@import './components/blocks/rich-text';
+@import './components/blocks/cta-caption';
+@import './components/blocks/featured-entry';
+@import './components/blocks/form';
+@import './components/blocks/google-map-embed';
 
 // Partials
 

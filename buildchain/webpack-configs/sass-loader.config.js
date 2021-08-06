@@ -11,11 +11,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 module.exports = (type = 'modern', settings) => {
 // common config
-    const common = (loaders, postCssPlugins) => ({
+    const common = (loaders) => ({
         module: {
             rules: [
                 {
-                    test: /\.(pcss|css|scss)$/,
+                    test: /\.(scss|sass|css)$/,
                     use: [
                         ...loaders,
                         {
@@ -27,25 +27,9 @@ module.exports = (type = 'modern', settings) => {
                             },
                         },
                         {
-                            loader: 'postcss-loader',
+                            loader: 'sass-loader',
                             options: {
                                 sourceMap: false,
-                                postcssOptions: {
-                                    path: path.resolve(__dirname),
-                                    parser: 'postcss-scss',
-                                    plugins: [
-                                        ['postcss-import', {
-                                            path: ['./node_modules'],
-                                        }],
-                                        ['postcss-mixins', {
-                                        }],
-                                        ['postcss-nested', {
-                                        }],
-                                        ['postcss-hexrgba', {
-                                        }],
-                                        ...postCssPlugins,
-                                    ],
-                                }
                             }
                         }
                     ]
@@ -62,10 +46,11 @@ module.exports = (type = 'modern', settings) => {
             },
             // modern development config
             modern: {
-                ...common([{
+                ...common(
+                    [{
                     loader: 'style-loader',
-                }], [
-                ]),
+                    }]
+                ),
             },
         },
         // production configs
@@ -76,17 +61,13 @@ module.exports = (type = 'modern', settings) => {
                     [
                         MiniCssExtractPlugin.loader
                     ],
-                    [
-                        ['autoprefixer', {
-                        }]
-                    ],
                 ),
             },
             // modern production config
             modern: {
                 module: {
                     rules: [{
-                        test: /\.(pcss|css)$/,
+                        test: /\.(scss|sass|css)$/,
                         loader: 'ignore-loader'
                     }],
                 },
