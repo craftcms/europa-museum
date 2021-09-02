@@ -7,9 +7,9 @@ services:
       - "${HOST_WEB_PORT}:8080"
     env_file: .env
     depends_on:
-      db:
+      postgres:
         condition: service_healthy
-  db:
+  postgres:
     image: postgres:10.7-alpine
     environment:
       POSTGRES_DB: ${DB_DATABASE}
