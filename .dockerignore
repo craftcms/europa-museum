@@ -1,4 +1,3 @@
-/vendor
-/node_modules
-*.env
-/*.sql
+vendor
+node_modules
+.env
