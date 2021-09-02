@@ -126,7 +126,6 @@ plugins:
   freeform:
     edition: lite
     enabled: true
-    licenseKey: Z6HTSHFS6CC905HPKFD1ZJ3E
     schemaVersion: 3.3.2
     settings:
       ajaxByDefault: '1'
@@ -189,7 +188,6 @@ plugins:
   imager-x:
     edition: pro
     enabled: true
-    licenseKey: L5A3GXGBYULYKCP9H1AI2SJK
     schemaVersion: 3.0.0
   minify:
     edition: standard
@@ -214,7 +212,6 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
-    licenseKey: 95WU19FC2SB01I1F6V5IT4OQ
     schemaVersion: 3.0.11
   typedlinkfield:
     edition: standard
