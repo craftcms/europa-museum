@@ -1,0 +1,26 @@
+version: "3.6"
+services:
+  web:
+    build:
+      context: .
+    ports:
+      - "${HOST_WEB_PORT}:8080"
+    env_file: .env
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:10.7-alpine
+    environment:
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready"]
+      interval: 5s
+      retries: 3
+
+volumes:
+  db_data:
