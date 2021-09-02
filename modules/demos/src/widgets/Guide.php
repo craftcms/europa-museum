@@ -4,7 +4,6 @@ namespace modules\demos\widgets;
 
 use Craft;
 use craft\base\Widget;
-use craft\web\assets\craftsupport\CraftSupportAsset;
 
 /**
  * Adds a custom “Guide” widget that feels at home in the dashboard.
