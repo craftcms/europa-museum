@@ -1,10 +1,10 @@
 # use a multi-stage build for dependencies
-FROM composer as vendor
+FROM composer as composer
 COPY composer.json composer.json
 COPY composer.lock composer.lock
 RUN composer install --ignore-platform-reqs --no-interaction --prefer-dist
 
-FROM craftcms/nginx:8.0 as web
+FROM craftcms/nginx:8.0
 
 USER root
 RUN apk add --no-cache postgresql-client
