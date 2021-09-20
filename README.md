@@ -13,7 +13,7 @@ Europa shows off many of Craft’s core features and includes a guided tour cour
 ### Development Technologies
 
 - [Craft CMS 3](https://craftcms.com/docs/3.x/)
-- PostgreSQL (11.5+) / MySQL (5.7+)
+- PostgreSQL (13)
 - PHP (7.2.5+), built on the [Yii 2 framework](https://www.yiiframework.com/)
 - Native Twig templates
 
