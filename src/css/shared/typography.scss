@@ -1,9 +1,9 @@
-// Web Font - Steradian
+// Web Font - Poppins Variable Font Beta
 
 // Light
 @font-face {
     font-display: swap;
-    font-family: 'SteradianLight';
+    font-family: 'EuropaSansLight';
     src: url('../../fonts/poppins/Poppins-VariableFont_wght.woff2') format('woff2-variations'),
          url('../../fonts/poppins/Poppins-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
@@ -15,7 +15,7 @@
 // Light - Italic
 @font-face {
     font-display: swap;
-    font-family: 'SteradianLightItalic';
+    font-family: 'EuropaSansLightItalic';
     src: url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.woff2') format('woff2-variations'),
          url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
@@ -27,7 +27,7 @@
 // Regular
 @font-face {
     font-display: swap;
-    font-family: 'SteradianRegular';
+    font-family: 'EuropaSansRegular';
     src: url('../../fonts/poppins/Poppins-VariableFont_wght.woff2') format('woff2-variations'),
          url('../../fonts/poppins/Poppins-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
@@ -39,7 +39,7 @@
 // Regular - Italic
 @font-face {
     font-display: swap;
-    font-family: 'SteradianRegularItalic';
+    font-family: 'EuropaSansRegularItalic';
     src: url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.woff2') format('woff2-variations'),
          url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
@@ -48,12 +48,12 @@
     text-rendering: optimizeLegibility;
 }
 
-// Web Font - Domaine Display
+// Web Font - Noto Serif Display
 
 // Regular
 @font-face {
     font-display: swap;
-    font-family: 'DomaineDisplayRegular';
+    font-family: 'EuropaSerifDisplayRegular';
     src: url('../../fonts/noto-serif-display/NotoSerifDisplay-Regular.woff2') format('woff2'),
          url('../../fonts/noto-serif-display/NotoSerifDisplay-Regular.woff') format('woff');
     font-style: normal;
@@ -64,7 +64,7 @@
 // Regular - Italic
 @font-face {
     font-display: swap;
-    font-family: 'DomaineDisplayRegularItalic';
+    font-family: 'EuropaSerifDisplayRegularItalic';
     src: url('../../fonts/noto-serif-display/NotoSerifDisplay-Italic.woff2') format('woff2'),
          url('../../fonts/noto-serif-display/NotoSerifDisplay-Italic.woff') format('woff');
     font-style: normal;
@@ -72,33 +72,33 @@
     text-rendering: optimizeLegibility;
 }
 
-.steradian-light {
-    font-family: 'SteradianLight', sans-serif !important;
+.sans-light {
+    font-family: 'EuropaSansLight', sans-serif !important;
     font-feature-settings: "ss02";
 }
 
-.steradian-light-italic {
-    font-family: 'SteradianLightItalic', sans-serif !important;
+.sans-light-italic {
+    font-family: 'EuropaSansLightItalic', sans-serif !important;
     font-feature-settings: "ss02";
 }
 
-.steradian-regular {
-    font-family: 'SteradianRegular', sans-serif !important;
+.sans-regular {
+    font-family: 'EuropaSansRegular', sans-serif !important;
     font-feature-settings: "ss02";
 }
 
-.steradian-regular-italic {
-    font-family: 'SteradianRegularItalic', sans-serif !important;
+.sans-regular-italic {
+    font-family: 'EuropaSansRegularItalic', sans-serif !important;
     font-feature-settings: "ss02";
 }
 
-.domaine-display-regular {
-    font-family: 'DomaineDisplayRegular', serif !important;
+.serif-display-regular {
+    font-family: 'EuropaSerifDisplayRegular', serif !important;
     letter-spacing: -0.02em;
 }
 
-.domaine-display-regular-italic {
-    font-family: 'DomaineDisplayRegularItalic', serif !important;
+.serif-display-regular-italic {
+    font-family: 'EuropaSerifDisplayRegularItalic', serif !important;
 }
 
 // Global
@@ -108,7 +108,7 @@ input,
 button,
 textarea,
 select {
-	font-family: 'SteradianRegular', sans-serif;
+	font-family: 'EuropaSansRegular', sans-serif;
     font-feature-settings: "ss02";
 	font-size: 16px;
     letter-spacing: -0.01em;
@@ -124,7 +124,7 @@ select {
 // Headings
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'DomaineDisplayRegular', serif;
+    font-family: 'EuropaSerifDisplayRegular', serif;
     font-weight: normal;
     letter-spacing: -0.02em;
     line-height: 1.2em;
@@ -201,7 +201,7 @@ form {
 
     label {
         margin-bottom: 15px;
-        font-family: 'SteradianRegular', sans-serif;
+        font-family: 'EuropaSansRegular', sans-serif;
         font-feature-settings: "ss02";
         font-size: 18px;
     }
@@ -219,7 +219,7 @@ form {
         border: 2px solid #000;
         padding: 10px 30px;
         color: #fff;
-        font-family: 'SteradianRegular', sans-serif;
+        font-family: 'EuropaSansRegular', sans-serif;
         font-feature-settings: "ss02";
         font-size: 18px;
         text-transform: uppercase;
