@@ -12,9 +12,10 @@
         display: inline-block;
         font-family: 'SteradianRegular', sans-serif;
         line-height: 1.3em;
+        letter-spacing: 0;
 
         .underline:before {
-            width: calc(100% + 2px);
+            width: calc(100% + 3px);
         }
     }
 
