@@ -4,10 +4,11 @@
 @font-face {
     font-display: swap;
     font-family: 'SteradianLight';
-            src: url('../../fonts/steradian/St100100-Lt.woff2') format('woff2'),
-                 url('../../fonts/steradian/St100100-Lt.woff') format('woff');
+    src: url('../../fonts/poppins/Poppins-VariableFont_wght.woff2') format('woff2-variations'),
+         url('../../fonts/poppins/Poppins-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
-    font-weight: normal;
+    font-variation-settings: "wght" 320;
+    font-weight: 320;
     text-rendering: optimizeLegibility;
 }
 
@@ -15,10 +16,11 @@
 @font-face {
     font-display: swap;
     font-family: 'SteradianLightItalic';
-            src: url('../../fonts/steradian/St100100-LtIt.woff2') format('woff2'),
-                 url('../../fonts/steradian/St100100-LtIt.woff') format('woff');
+    src: url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.woff2') format('woff2-variations'),
+         url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
-    font-weight: normal;
+    font-variation-settings: "wght" 320;
+    font-weight: 320;
     text-rendering: optimizeLegibility;
 }
 
@@ -26,10 +28,11 @@
 @font-face {
     font-display: swap;
     font-family: 'SteradianRegular';
-            src: url('../../fonts/steradian/St100100-Rg.woff2') format('woff2'),
-                 url('../../fonts/steradian/St100100-Rg.woff') format('woff');
+    src: url('../../fonts/poppins/Poppins-VariableFont_wght.woff2') format('woff2-variations'),
+         url('../../fonts/poppins/Poppins-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
-    font-weight: normal;
+    font-variation-settings: "wght" 400;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
@@ -37,10 +40,11 @@
 @font-face {
     font-display: swap;
     font-family: 'SteradianRegularItalic';
-            src: url('../../fonts/steradian/St100100-RgIt.woff2') format('woff2'),
-                 url('../../fonts/steradian/St100100-RgIt.woff') format('woff');
+    src: url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.woff2') format('woff2-variations'),
+         url('../../fonts/poppins/Poppins-Italic-VariableFont_wght.ttf') format('truetype-variations');
     font-style: normal;
-    font-weight: normal;
+    font-variation-settings: "wght" 400;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
 }
 
@@ -50,8 +54,8 @@
 @font-face {
     font-display: swap;
     font-family: 'DomaineDisplayRegular';
-            src: url('../../fonts/domaine-display/DomaineDisplayWeb-Regular.woff2') format('woff2'),
-                 url('../../fonts/domaine-display/DomaineDisplayWeb-Regular.woff') format('woff');
+    src: url('../../fonts/noto-serif-display/NotoSerifDisplay-Regular.woff2') format('woff2'),
+         url('../../fonts/noto-serif-display/NotoSerifDisplay-Regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -61,8 +65,8 @@
 @font-face {
     font-display: swap;
     font-family: 'DomaineDisplayRegularItalic';
-            src: url('../../fonts/domaine-display/DomaineDisplayWeb-RegularItalic.woff2') format('woff2'),
-                 url('../../fonts/domaine-display/DomaineDisplayWeb-RegularItalic.woff') format('woff');
+    src: url('../../fonts/noto-serif-display/NotoSerifDisplay-Italic.woff2') format('woff2'),
+         url('../../fonts/noto-serif-display/NotoSerifDisplay-Italic.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -70,22 +74,27 @@
 
 .steradian-light {
     font-family: 'SteradianLight', sans-serif !important;
+    font-feature-settings: "ss02";
 }
 
 .steradian-light-italic {
     font-family: 'SteradianLightItalic', sans-serif !important;
+    font-feature-settings: "ss02";
 }
 
 .steradian-regular {
     font-family: 'SteradianRegular', sans-serif !important;
+    font-feature-settings: "ss02";
 }
 
 .steradian-regular-italic {
     font-family: 'SteradianRegularItalic', sans-serif !important;
+    font-feature-settings: "ss02";
 }
 
 .domaine-display-regular {
     font-family: 'DomaineDisplayRegular', serif !important;
+    letter-spacing: -0.02em;
 }
 
 .domaine-display-regular-italic {
@@ -100,7 +109,9 @@ button,
 textarea,
 select {
 	font-family: 'SteradianRegular', sans-serif;
+    font-feature-settings: "ss02";
 	font-size: 16px;
+    letter-spacing: -0.01em;
     font-weight: normal;
     font-feature-settings: "liga", "kern";
 	-webkit-text-size-adjust: 100%;
@@ -115,6 +126,7 @@ select {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'DomaineDisplayRegular', serif;
     font-weight: normal;
+    letter-spacing: -0.02em;
     line-height: 1.2em;
     margin-top: 0;
     margin-bottom: 30px;
@@ -190,6 +202,7 @@ form {
     label {
         margin-bottom: 15px;
         font-family: 'SteradianRegular', sans-serif;
+        font-feature-settings: "ss02";
         font-size: 18px;
     }
 
@@ -207,6 +220,7 @@ form {
         padding: 10px 30px;
         color: #fff;
         font-family: 'SteradianRegular', sans-serif;
+        font-feature-settings: "ss02";
         font-size: 18px;
         text-transform: uppercase;
         background-color: #000;
