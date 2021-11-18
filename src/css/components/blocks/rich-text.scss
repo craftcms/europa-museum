@@ -60,19 +60,19 @@
     }
 
     p {
-        font-family: 'SteradianLight', sans-serif;
+        font-family: 'EuropaSansLight', sans-serif;
         @include responsive-font(1.6vw, 16px, 18px);
         line-height: 1.8em;
     }
 
     strong {
-        font-family: 'Steradian', sans-serif;
+        font-family: 'EuropaSans', sans-serif;
         font-weight: 500;
     }
 
     ul {
         text-indent: 45px;
-        font-family: 'SteradianLight', sans-serif;
+        font-family: 'EuropaSansLight', sans-serif;
         @include responsive-font(1.6vw, 16px, 18px);
         line-height: 1.8em;
     }

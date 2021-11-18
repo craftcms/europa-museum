@@ -35,10 +35,11 @@
         position: relative;
         z-index: 1;
         display: inline-block;
-        font-family: 'SteradianRegular', sans-serif;
+        font-family: 'EuropaSansRegular', sans-serif;
+        letter-spacing: 0;
 
         .underline:before {
-            width: calc(100% + 2px);
+            width: calc(100% + 3px);
         }
     }
 
