@@ -38,6 +38,7 @@ jobs:
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
   build-and-push:
+    needs: update
     uses: craftcms/europa-museum/.github/workflows/build-and-push.yml@main
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
