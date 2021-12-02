@@ -6,7 +6,7 @@ on:
     branches:
       - staging
   release:
-    types: [published]
+    # types: [published]
 
 jobs:
   build:
