@@ -9,6 +9,7 @@ on:
         type: boolean
   schedule:
     - cron: "0 */12 * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   update:

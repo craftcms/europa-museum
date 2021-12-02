@@ -37,15 +37,17 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build craftcms/demo-europa:staging
+        if: github.ref == 'refs/heads/staging'
         uses: docker/build-push-action@v2
         with:
-          push: ${{ github.ref == 'refs/heads/staging' && (github.event.inputs.dockerhub_push || github.event_name == 'push') }}
+          push: ${{ github.event.inputs.dockerhub_push || github.event_name == 'push' }}
           platforms: linux/amd64,linux/arm64
           tags: craftcms/demo-europa:staging
 
       - name: Build craftcms/demo-europa:latest
+        if: github.ref == 'refs/heads/main'
         uses: docker/build-push-action@v2
         with:
-          push: ${{ github.ref == 'refs/heads/main' && (github.event.inputs.dockerhub_push || github.event_name == 'release') }}
+          push: ${{ github.event.inputs.dockerhub_push || github.event_name == 'release' }}
           platforms: linux/amd64,linux/arm64
           tags: craftcms/demo-europa:latest
