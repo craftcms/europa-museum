@@ -38,5 +38,5 @@ jobs:
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
 
-      - uses: ./.github/workflow/build-and-push.yml@main
+      - uses: craftcms/europa-museum/.github/workflow/build-and-push.yml@main
         if: steps.auto_commit.outputs.changes_detected == 'true'
