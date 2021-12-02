@@ -50,4 +50,4 @@ jobs:
         with:
           workflow: Build and push docker images
           token: ${{ secrets.PAT }}
-          inputs: toJSON(github.event.inputs)
+          inputs: '{ "dockerhub_push": ${{ github.event.inputs.dockerhub_push }} }'
