@@ -38,9 +38,5 @@ jobs:
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
 
-      # - name: Invoke workflow without inputs
-      #   if: steps.auto_commit.outputs.changes_detected == 'true'
-      #   uses: benc-uk/workflow-dispatch@v1
-      #   with:
-      #     workflow: Build and push docker images
-      #     token: ${{ secrets.PAT }}
+      - uses: ./.github/workflow/build-and-push.yml@main
+        if: steps.auto_commit.outputs.changes_detected == 'true'
