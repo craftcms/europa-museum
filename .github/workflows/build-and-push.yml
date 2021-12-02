@@ -2,11 +2,11 @@ name: Build and push docker images
 
 on:
   workflow_dispatch:
-    dockerhub_push:
-      default: false
-      required: true
-      type: boolean
-
+    inputs:
+      dockerhub_push:
+        default: false
+        required: true
+        type: boolean
   push:
     branches:
       - staging
