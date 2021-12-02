@@ -39,6 +39,7 @@ jobs:
           body: ${{ steps.tag_version.outputs.changelog }}
   build-and-push:
     needs: update
+    if: jobs.update.steps.auto_commit.outputs.changes_detected == 'true'
     uses: craftcms/europa-museum/.github/workflows/build-and-push.yml@main
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
