@@ -39,3 +39,6 @@ jobs:
           body: ${{ steps.tag_version.outputs.changelog }}
   build-and-push:
     uses: craftcms/europa-museum/.github/workflows/build-and-push.yml@main
+    secrets:
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
