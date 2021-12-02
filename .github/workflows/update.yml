@@ -46,8 +46,7 @@ jobs:
           body: ${{ steps.tag_version.outputs.changelog }}
 
       - uses: benc-uk/workflow-dispatch@v1
-        if: steps.auto_commit.outputs.changes_detected == 'true'
+        if: ${{ steps.auto_commit.outputs.changes_detected == 'true' && github.event.inputs.dockerhub_push }}
         with:
           workflow: Build and push docker images
           token: ${{ secrets.PAT }}
-          inputs: '{ "dockerhub_push": ${{ github.event.inputs.dockerhub_push }} }'
