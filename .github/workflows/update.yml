@@ -9,6 +9,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     name: Update dependencies
+    outputs:
+      changes_detected: ${{ steps.auto_commit.outputs.changes_detected == 'true' }}
     steps:
       - uses: actions/checkout@v2
 
@@ -40,7 +42,7 @@ jobs:
 
   build-and-push:
     needs: update
-    if: ${{ jobs.update.steps.auto_commit.outputs.changes_detected == 'true' }}
+    if: needs.update.outputs.changes_detected
     uses: craftcms/europa-museum/.github/workflows/build-and-push.yml@main
     with:
       push_to_dockerhub: true
