@@ -2,11 +2,12 @@ name: Build and push docker images
 
 on:
   workflow_dispatch:
+  repository_dispatch:
   push:
     branches:
       - staging
   release:
-    # types: [published]
+    types: [published]
 
 jobs:
   build:
