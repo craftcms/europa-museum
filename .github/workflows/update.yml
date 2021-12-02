@@ -40,7 +40,7 @@ jobs:
 
   build-and-push:
     needs: update
-    if: jobs.update.steps.auto_commit.outputs.changes_detected == 'true'
+    if: ${{ jobs.update.steps.auto_commit.outputs.changes_detected == 'true' }}
     uses: craftcms/europa-museum/.github/workflows/build-and-push.yml@main
     with:
       push_to_dockerhub: true
