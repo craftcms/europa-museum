@@ -41,6 +41,8 @@ jobs:
     needs: update
     if: jobs.update.steps.auto_commit.outputs.changes_detected == 'true'
     uses: craftcms/europa-museum/.github/workflows/build-and-push.yml@main
+    inputs:
+      push_to_dockerhub: true
     secrets:
       DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
       DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
