@@ -17,18 +17,21 @@ jobs:
       - run: make test
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        id: auto_commit
         with:
           commit_user_name: shinybrad
           commit_user_email: shinybrad@users.noreply.github.com
           commit_author: shinybrad <shinybrad@users.noreply.github.com>
 
       - name: Bump version and push tag
+        if: steps.auto_commit.outputs.changes_detected == 'true'
         id: tag_version
         uses: mathieudutour/github-tag-action@v6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create a GitHub release
+        if: steps.auto_commit.outputs.changes_detected == 'true'
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ steps.tag_version.outputs.new_tag }}
