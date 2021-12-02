@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       dockerhub_push:
-        default: false
+        default: true
         required: true
         type: boolean
   push:
@@ -45,7 +45,7 @@ jobs:
           tags: craftcms/demo-europa:staging
 
       - name: Build craftcms/demo-europa:latest
-        if: ${{ github.event_name == 'release' || inputs.push_to_dockerhub }}
+        if: ${{ github.event_name == 'release' || inputs.dockerhub_push }}
         uses: docker/build-push-action@v2
         with:
           push: true
