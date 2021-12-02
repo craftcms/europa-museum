@@ -46,7 +46,7 @@ jobs:
           tags: craftcms/demo-europa:staging
 
       - name: Build craftcms/demo-europa:latest
-        if: ${{ github.event_name == 'release' }}
+        if: ${{ github.event_name == 'release' || github.event_name == 'workflow_call' }}
         uses: docker/build-push-action@v2
         with:
           push: true
