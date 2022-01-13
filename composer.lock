@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.209.3",
+            "version": "3.209.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1c351046d8fd46961f4d020d38624d46065134cf"
+                "reference": "784e5ccc1b544db5018a41fc4dbfeda4c7d436b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1c351046d8fd46961f4d020d38624d46065134cf",
-                "reference": "1c351046d8fd46961f4d020d38624d46065134cf",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/784e5ccc1b544db5018a41fc4dbfeda4c7d436b3",
+                "reference": "784e5ccc1b544db5018a41fc4dbfeda4c7d436b3",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.209.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.209.4"
             },
-            "time": "2022-01-11T19:13:42+00:00"
+            "time": "2022-01-12T19:14:37+00:00"
         },
         {
             "name": "carlcs/craft-redactorcustomstyles",
@@ -1807,16 +1807,16 @@
         },
         {
             "name": "google/cloud-core",
-            "version": "v1.43.1",
+            "version": "v1.43.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-core.git",
-                "reference": "60b47793e0c83f0e02a8197ef11ab1f599c348da"
+                "reference": "93fc44af3ebf60a35fbc70e13e6113b1122ba495"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/60b47793e0c83f0e02a8197ef11ab1f599c348da",
-                "reference": "60b47793e0c83f0e02a8197ef11ab1f599c348da",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-core/zipball/93fc44af3ebf60a35fbc70e13e6113b1122ba495",
+                "reference": "93fc44af3ebf60a35fbc70e13e6113b1122ba495",
                 "shasum": ""
             },
             "require": {
@@ -1865,22 +1865,22 @@
             ],
             "description": "Google Cloud PHP shared dependency, providing functionality useful to all components.",
             "support": {
-                "source": "https://github.com/googleapis/google-cloud-php-core/tree/v1.43.1"
+                "source": "https://github.com/googleapis/google-cloud-php-core/tree/v1.43.2"
             },
-            "time": "2021-10-20T17:52:15+00:00"
+            "time": "2022-01-12T16:19:20+00:00"
         },
         {
             "name": "google/cloud-storage",
-            "version": "v1.25.2",
+            "version": "v1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-cloud-php-storage.git",
-                "reference": "d040368605ce3b8c2e6f2f7c03eb4046e9e0b951"
+                "reference": "c84c8c08bfe6e02e9a611d27d3eca79eaefcaa92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-cloud-php-storage/zipball/d040368605ce3b8c2e6f2f7c03eb4046e9e0b951",
-                "reference": "d040368605ce3b8c2e6f2f7c03eb4046e9e0b951",
+                "url": "https://api.github.com/repos/googleapis/google-cloud-php-storage/zipball/c84c8c08bfe6e02e9a611d27d3eca79eaefcaa92",
+                "reference": "c84c8c08bfe6e02e9a611d27d3eca79eaefcaa92",
                 "shasum": ""
             },
             "require": {
@@ -1919,9 +1919,9 @@
             ],
             "description": "Cloud Storage Client for PHP",
             "support": {
-                "source": "https://github.com/googleapis/google-cloud-php-storage/tree/v1.25.2"
+                "source": "https://github.com/googleapis/google-cloud-php-storage/tree/v1.26.0"
             },
-            "time": "2021-10-20T17:52:15+00:00"
+            "time": "2022-01-12T16:19:20+00:00"
         },
         {
             "name": "google/crc32",
@@ -4240,16 +4240,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.4.21",
+            "version": "3.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "cab8c6dc3190092918b5899ace67101fb596c3a4"
+                "reference": "8ff2e5735bc72b73a346c70a0c1a371a832d1a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/cab8c6dc3190092918b5899ace67101fb596c3a4",
-                "reference": "cab8c6dc3190092918b5899ace67101fb596c3a4",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8ff2e5735bc72b73a346c70a0c1a371a832d1a1b",
+                "reference": "8ff2e5735bc72b73a346c70a0c1a371a832d1a1b",
                 "shasum": ""
             },
             "require": {
@@ -4303,7 +4303,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.21"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.22"
             },
             "funding": [
                 {
@@ -4311,7 +4311,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-13T20:08:46+00:00"
+            "time": "2022-01-12T18:24:39+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -5976,16 +5976,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.108.0",
+            "version": "v7.109.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "81524a3087612f1b41846b9cd6deb80150af985b"
+                "reference": "01d53390c0628cb2c702131f1854d76d2022fd25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/81524a3087612f1b41846b9cd6deb80150af985b",
-                "reference": "81524a3087612f1b41846b9cd6deb80150af985b",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/01d53390c0628cb2c702131f1854d76d2022fd25",
+                "reference": "01d53390c0628cb2c702131f1854d76d2022fd25",
                 "shasum": ""
             },
             "require": {
@@ -6030,9 +6030,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.108.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.109.0"
             },
-            "time": "2021-12-22T16:40:02+00:00"
+            "time": "2022-01-12T16:19:43+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
