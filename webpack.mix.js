@@ -7,13 +7,13 @@ require('laravel-mix-purgecss');
 
 mix
     .setPublicPath('./web')
-    .sass('src/css/site.scss', './web/css/')
-    .js('src/js/site.js', './web/js/')
-    .copy('src/images', './web/images/')
-    .copy('src/fonts', './web/fonts/')
-    .copy('src/favicon.ico', './web/')
-    .copy('src/manifest.json', './web/')
-    .copy('src/browserconfig.xml', './web/')
+    .sass('src/css/site.scss', './web/assets/css/')
+    .js('src/js/site.js', './web/assets/js/')
+    .copy('src/images', './web/assets/images/')
+    .copy('src/fonts', './web/assets/fonts/')
+    .copy('src/favicon.ico', './web/assets')
+    .copy('src/manifest.json', './web/assets')
+    .copy('src/browserconfig.xml', './web/assets')
 
     .options({
         autoprefixer: false,
@@ -74,8 +74,8 @@ if (mix.inProduction()) {
             proxy: new URL(process.env.DEFAULT_SITE_URL).hostname,
             port: 3000,
             files: [
-                './web/css/{*,**/*}.css',
-                './web/js/{*,**/*}.js',
+                './web/assets/css/{*,**/*}.css',
+                './web/assets/js/{*,**/*}.js',
                 './templates/{*,**/*}.{html,twig}',
             ],
         });

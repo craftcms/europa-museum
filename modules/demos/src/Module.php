@@ -2,13 +2,13 @@
 
 namespace modules\demos;
 
-use modules\demos\widgets\Guide;
-
 use Craft;
+
 use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
 use craft\services\Dashboard;
 use craft\web\View;
+use modules\demos\widgets\Guide;
 use yii\base\Event;
 
 class Module extends \yii\base\Module
@@ -28,7 +28,7 @@ class Module extends \yii\base\Module
         Event::on(
             View::class,
             View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
-            function(RegisterTemplateRootsEvent $event) {
+            function (RegisterTemplateRootsEvent $event) {
                 $event->roots['modules'] = __DIR__ . '/templates';
             }
         );
@@ -36,9 +36,32 @@ class Module extends \yii\base\Module
         Event::on(
             Dashboard::class,
             Dashboard::EVENT_REGISTER_WIDGET_TYPES,
-            static function(RegisterComponentTypesEvent $event) {
+            static function (RegisterComponentTypesEvent $event) {
                 $event->types[] = Guide::class;
             }
         );
+    }
+
+    private function _useLocalVolumes()
+    {
+        Craft::$container->set(AwsVolume::class, function ($container, $params, $config) {
+            if (empty($config['id'])) {
+                return new AwsVolume($config);
+            }
+
+            return new LocalVolume([
+                'id' => $config['id'],
+                'uid' => $config['uid'],
+                'name' => $config['name'],
+                'handle' => $config['handle'],
+                'hasUrls' => $config['hasUrls'],
+                'url' => "@web/{$config['subfolder']}",
+                'path' => "@webroot/{$config['subfolder']}",
+                'sortOrder' => $config['sortOrder'],
+                'dateCreated' => $config['dateCreated'],
+                'dateUpdated' => $config['dateUpdated'],
+                'fieldLayoutId' => $config['fieldLayoutId'],
+            ]);
+        });
     }
 }

@@ -1,4 +1,4 @@
-dateModified: 1644970269
+dateModified: 1645544307
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -126,6 +126,7 @@ plugins:
   freeform:
     edition: lite
     enabled: true
+    licenseKey: VKEWWWS910PS87ALDS4HIVX8
     schemaVersion: 3.5.1
     settings:
       ajaxByDefault: '1'
@@ -188,6 +189,7 @@ plugins:
   imager-x:
     edition: pro
     enabled: true
+    licenseKey: 921AV00SG3ZDR1HG4V4K6GSC
     schemaVersion: 3.0.0
   minify:
     edition: standard
@@ -212,6 +214,7 @@ plugins:
   seomatic:
     edition: standard
     enabled: true
+    licenseKey: F05LKTHK735ZMFRL0LNY2YWC
     schemaVersion: 3.0.11
   typedlinkfield:
     edition: standard
