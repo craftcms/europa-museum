@@ -4,8 +4,11 @@ namespace modules\demos;
 
 use Craft;
 
+use craft\awss3\Volume as AwsVolume;
+use craft\volumes\Local as LocalVolume;
 use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
+use craft\helpers\App;
 use craft\services\Dashboard;
 use craft\web\View;
 use modules\demos\widgets\Guide;
@@ -24,6 +27,10 @@ class Module extends \yii\base\Module
         }
 
         parent::init();
+
+        if (App::env('CRAFT_USE_LOCAL_VOLUMES')) {
+            $this->_useLocalVolumes();
+        }
 
         Event::on(
             View::class,

@@ -67,4 +67,4 @@ sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 type: craft\awss3\Volume
-url: '@assetBaseUrl'
+url: $S3_BASE_URL
