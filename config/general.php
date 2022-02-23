@@ -43,7 +43,7 @@ return [
         'maxSlugIncrement' => 100,
         'aliases' => [
             '@web' => App::env('DEFAULT_SITE_URL'),
-            '@distBaseUrl' => (App::env('S3_BASE_URL') ?: App::env('DEFAULT_SITE_URL')) . '/dist',
+            '@assetBaseUrl' => App::env('S3_BASE_URL') ?: App::env('DEFAULT_SITE_URL'),
         ],
     ],
     'dev' => [
