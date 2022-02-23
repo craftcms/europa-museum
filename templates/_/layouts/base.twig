@@ -4,8 +4,8 @@
 
 {% set env = getenv('ENVIRONMENT') %}
 {% set baseUrl = url() %}
-{% set cssUrl = url(alias(['@distBaseUrl', mix('css/site.css')|trim('/')]|join('/'))) %}
-{% set jsUrl = url(alias(['@distBaseUrl', mix('js/site.js')|trim('/')]|join('/'))) %}
+{% set cssUrl = url(alias(['@assetBaseUrl', mix('assets/dist/css/site.css')|trim('/')]|join('/'))) %}
+{% set jsUrl = url(alias(['@assetBaseUrl', mix('assets/dist/js/site.js')|trim('/')]|join('/'))) %}
 {% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
 <!DOCTYPE html>
 
