@@ -4323,16 +4323,16 @@
         },
         {
             "name": "nystudio107/craft-minify",
-            "version": "1.2.10",
+            "version": "1.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-minify.git",
-                "reference": "01d5de3f016c9c4a1e62c17e9f3ed981099c3927"
+                "reference": "992402df6f5f893b41fc9ba7755ced94b07bf5bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/01d5de3f016c9c4a1e62c17e9f3ed981099c3927",
-                "reference": "01d5de3f016c9c4a1e62c17e9f3ed981099c3927",
+                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/992402df6f5f893b41fc9ba7755ced94b07bf5bf",
+                "reference": "992402df6f5f893b41fc9ba7755ced94b07bf5bf",
                 "shasum": ""
             },
             "require": {
@@ -4378,9 +4378,15 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/minify/documentation",
                 "issues": "https://nystudio107.com/plugins/minify/support",
-                "source": "https://github.com/nystudio107/craft-minify/tree/1.2.10"
+                "source": "https://github.com/nystudio107/craft-minify/tree/1.2.11"
             },
-            "time": "2020-04-02T21:20:01+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-23T03:31:18+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
@@ -4511,16 +4517,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.18",
+            "version": "1.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "28896d37f184cef87d2bbd84833565d0d732e331"
+                "reference": "10e7da358c3ff46a8217ed9f714d504597897e76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/28896d37f184cef87d2bbd84833565d0d732e331",
-                "reference": "28896d37f184cef87d2bbd84833565d0d732e331",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/10e7da358c3ff46a8217ed9f714d504597897e76",
+                "reference": "10e7da358c3ff46a8217ed9f714d504597897e76",
                 "shasum": ""
             },
             "require": {
@@ -4565,11 +4571,17 @@
                 "typogrify"
             ],
             "support": {
-                "docs": "https://github.com/nystudio107/craft-typogrify/blob/v1/README.md",
-                "issues": "https://github.com/nystudio107/craft-typogrify/issues",
-                "source": "https://github.com/nystudio107/craft-typogrify/tree/v1"
+                "docs": "https://nystudio107.com/plugins/typogrify/documentation",
+                "issues": "https://nystudio107.com/plugins/typogrify/support",
+                "source": "https://github.com/nystudio107/craft-typogrify/tree/1.1.19"
             },
-            "time": "2019-04-30T21:24:04+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-02-23T04:16:36+00:00"
         },
         {
             "name": "opis/closure",
