@@ -1,6 +1,6 @@
 <h1 align="center">Europa Museum Craft CMS Demo</h1>
 
-![Europa Museum homepage](https://raw.githubusercontent.com/craftcms/europa-museum/HEAD/web/guide/homepage.png)
+![Europa Museum homepage](https://raw.githubusercontent.com/craftcms/europa-museum/main/web/assets/guide/homepage.png)
 
 ## Overview
 
