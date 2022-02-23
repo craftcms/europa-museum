@@ -4,8 +4,11 @@ namespace modules\demos;
 
 use Craft;
 
+use craft\anchors\TwigExtension;
 use craft\awss3\Volume as AwsVolume;
 use craft\volumes\Local as LocalVolume;
+use craft\web\UrlManager;
+use craft\events\RegisterUrlRulesEvent;
 use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
 use craft\helpers\App;
@@ -35,8 +38,17 @@ class Module extends \yii\base\Module
         Event::on(
             View::class,
             View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
-            function (RegisterTemplateRootsEvent $event) {
+            static function (RegisterTemplateRootsEvent $event) {
                 $event->roots['modules'] = __DIR__ . '/templates';
+            }
+        );
+
+        Event::on(
+            UrlManager::class,
+            UrlManager::EVENT_REGISTER_CP_URL_RULES,
+            static function (RegisterUrlRulesEvent $event) {
+                $event->rules['guide'] = ['template' => 'modules/guide/_page'];
+                $event->rules['guide/<slug:{slug}>'] = ['template' => 'modules/guide/_page'];
             }
         );
 
@@ -47,6 +59,10 @@ class Module extends \yii\base\Module
                 $event->types[] = Guide::class;
             }
         );
+
+        if (Craft::$app->getRequest()->getIsCpRequest()) {
+            Craft::$app->getView()->registerTwigExtension(new TwigExtension());
+        }
     }
 
     private function _useLocalVolumes()

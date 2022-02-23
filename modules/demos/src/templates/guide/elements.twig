@@ -6,7 +6,7 @@ Let’s take a look at the main places you can organize content in Craft CMS. (M
 
 ![]({{ alias('@assetBaseUrl/assets/guide/common-elements.png') }})
 
-This site doesn’t have a lot of content, but these are the main types you might utilize in your own project.  
+This site doesn’t have a lot of content, but these are the main types you might utilize in your own project.
 It’s where most editors would spend their time in the control panel managing content.
 
 ### Entries
@@ -83,7 +83,7 @@ You can double-click an asset anywhere in Craft CMS to jump to the editor, and a
 
 ![]({{ alias('@assetBaseUrl/assets/guide/users.png') }})
 
-[Users]({{ cpUrl('users') }}) are the last major content type, even though it might seem odd to think of people as content.  
+[Users]({{ cpUrl('users') }}) are the last major content type, even though it might seem odd to think of people as content.
 Click **Users** in the main navigation to see the “All users” list with a submenu of admins and groups.
 
 A user is a person with a name and an email address. A user’s permissions determine what they’re able to access, which could range from nothing at all (with no control panel access) to an admin that has every available permission by default.
@@ -133,9 +133,5 @@ The bottom right of each listing table has an **Export...** button you can use t
 This can be useful for content audits and planning where you might need to take a step back from your content and see it in a spreadsheet or another tool.
 {% endset %}
 
-{{ content|markdown }}
+{{ content|markdown|anchors }}
 
-{% include "guide_template_path/_next" with {
-  label: "Authoring",
-  url: cpUrl('guide/page/authoring')
-} %}

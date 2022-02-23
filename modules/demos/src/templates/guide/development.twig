@@ -50,9 +50,5 @@ The complete control over the software stack and data ownership can offer critic
 Craft has [extensive documentation](https://craftcms.com/docs/), first-party [support options](https://craftcms.com/support-services), and a vibrant, friendly professional community. But don’t take our word for it! Check out [some popular resources](https://craftcms.com/docs/#explore-popular-resources), ask a question on [Twitter](https://twitter.com/craftcms) or [Discord](https://craftcms.com/discord), and see for yourself.
 {% endset %}
 
-{{ content|markdown }}
+{{ content|markdown|anchors }}
 
-{% include "guide_template_path/_next" with {
-  label: "Going Further",
-  url: cpUrl('guide/page/going-further')
-} %}

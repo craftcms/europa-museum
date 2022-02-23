@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7fc7c4994ecc5a4957003858acdd29b7",
+    "content-hash": "3f1167a8d39cff78f46fa79d7b6dab0e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -838,6 +838,61 @@
             },
             "abandoned": "psr/container",
             "time": "2014-12-30T15:22:37+00:00"
+        },
+        {
+            "name": "craftcms/anchors",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/anchors.git",
+                "reference": "5b3e473385de6382aa7cfe5e30b39f33214dcc59"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/anchors/zipball/5b3e473385de6382aa7cfe5e30b39f33214dcc59",
+                "reference": "5b3e473385de6382aa7cfe5e30b39f33214dcc59",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.6.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Anchors",
+                "handle": "anchors",
+                "documentationUrl": "https://github.com/craftcms/anchors/blob/v2/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\anchors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Add anchor links to headings in your Craft CMS website content.",
+            "keywords": [
+                "anchors",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/craftcms/anchors/blob/v2/README.md",
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/anchors/issues?state=open",
+                "rss": "https://github.com/craftcms/anchors/commits/v2.atom",
+                "source": "https://github.com/craftcms/anchors"
+            },
+            "time": "2021-04-15T18:49:59+00:00"
         },
         {
             "name": "craftcms/aws-s3",
@@ -9799,5 +9854,5 @@
     "platform-overrides": {
         "php": "8.0.2"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.0.0"
 }

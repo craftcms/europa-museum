@@ -116,9 +116,5 @@ If the content editor needs to further control whether a specific entry appears 
 
 {% endset %}
 
-{{ content|markdown }}
+{{ content|markdown|anchors }}
 
-{% include "guide_template_path/_next" with {
-  label: "Development",
-  url: cpUrl('guide/page/development')
-} %}

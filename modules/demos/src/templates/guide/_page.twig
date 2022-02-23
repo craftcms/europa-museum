@@ -1,0 +1,118 @@
+{% extends '_layouts/cp' %}
+
+{% set currentPage = null %}
+{% set nextPage = null %}
+{% set slug = slug ?? 'welcome' %}
+
+{% set pages = [
+    {
+        slug: 'welcome',
+        title: 'Welcome',
+        template: 'welcome.twig'
+    },
+    {
+        slug: 'elements',
+        title: 'Content in Craft',
+        template: 'elements.twig'
+    },
+    {
+        slug: 'editing',
+        title: 'Authoring',
+        template: 'editing.twig'
+    },
+    {
+        slug: 'development',
+        title: 'Development',
+        template: 'development.twig'
+    },
+    {
+        slug: 'further',
+        title: 'Going Further',
+        template: 'further.twig'
+    },
+] %}
+
+{% for page in pages %}
+    {% if page.slug == slug %}
+        {% set currentPage = page %}
+        {% set nextPage = pages[loop.index0 + 1] ?? null %}
+    {% endif %}
+{% endfor %}
+
+{% if currentPage is empty %}
+    {% exit 404 %}
+{% endif %}
+
+{% set title = systemName ~ ' Guide: ' ~ currentPage.title %}
+
+{% block sidebar %}
+    <nav id="guide-subnav">
+        <ul>
+            {% for page in pages %}
+                <li class="{{ page.slug == slug ? 'active' }}">
+                    {{ tag('a', {
+                        class: page.slug == slug ? 'sel',
+                        href: cpUrl('guide/' ~ page.slug),
+                        text: page.title|t
+                    }) }}
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
+{% endblock %}
+
+{% block content %}
+    <div id="guide-content">
+        {% include 'modules/guide/' ~ currentPage.template %}
+    </div>
+
+    {% if nextPage %}
+        {% include 'modules/guide/_next' with {
+            label: nextPage.title,
+            url: cpUrl('guide/' ~ nextPage.slug)
+        } %}
+    {% endif %}
+
+<style>
+#guide-content {
+    max-width: 800px;
+}
+#guide-subnav .active .subnav {
+    display: block;
+}
+</style>
+{% endblock %}
+
+{% js %}
+const content = document.getElementById('guide-content');
+const subnav = document.getElementById('guide-subnav');
+const contentAnchorNodes = content.querySelectorAll("h2");
+const activeNavItem = subnav.querySelector('.active');
+
+let titles = [];
+
+contentAnchorNodes.forEach((node) => {
+    titles.push({
+        text: node.textContent.replace(' #', ''),
+        href: node.querySelector('a').getAttribute('href')
+    });
+});
+
+if (titles.length > 0) {
+    let ul = document.createElement('ul');
+    ul.className = 'subnav';
+
+    titles.forEach((item) => {
+        let li = document.createElement('li');
+        let a = document.createElement('a');
+        let text = document.createTextNode(item.text);
+        a.href = item.href;
+
+        a.appendChild(text);
+        li.appendChild(a);
+        ul.appendChild(li);
+    });
+
+    activeNavItem.appendChild(ul);
+}
+{% endjs %}

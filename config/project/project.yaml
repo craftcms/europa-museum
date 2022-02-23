@@ -1,4 +1,4 @@
-dateModified: 1645545302
+dateModified: 1645640395
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -113,6 +113,10 @@ meta:
     f668aa75-41bb-4309-9114-26d72e1547ff: 'CTA Link' # CTA Link
     fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7: 'Narrow Width' # Narrow Width
 plugins:
+  anchors:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   aws-s3:
     edition: standard
     enabled: true
@@ -181,15 +185,6 @@ plugins:
       spamProtectionBehaviour: simulate_success
       submissionThrottlingCount: null
       submissionThrottlingTimeFrame: null
-  guide:
-    edition: lite
-    enabled: true
-    schemaVersion: 2.0.0
-    settings:
-      assetVolume: a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
-      clientName: 'Europa Museum'
-      myCompanyName: 'Pixel & Tonic'
-      templatePath: _guide
   imager-x:
     edition: pro
     enabled: true
