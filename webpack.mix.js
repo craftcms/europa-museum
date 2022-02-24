@@ -6,14 +6,12 @@ require('laravel-mix-criticalcss');
 require('laravel-mix-purgecss');
 
 mix
-    .setPublicPath('./web')
+    .setPublicPath('./web/assets/dist')
     .sass('src/css/site.scss', './web/assets/dist/css')
     .js('src/js/site.js', './web/assets/dist/js')
     .copy('src/images', './web/assets/dist/images')
     .copy('src/fonts', './web/assets/dist/fonts')
     .copy('src/favicon.ico', './web/assets/dist')
-    .copy('src/manifest.json', './web/assets/dist')
-    .copy('src/browserconfig.xml', './web/assets/dist')
 
     .options({
         autoprefixer: false,
