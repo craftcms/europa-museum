@@ -2,12 +2,9 @@
 
 namespace modules\demos\console\controllers;
 
-use Composer\Util\Platform;
 use Craft;
 use craft\console\Controller;
 use craft\elements\Entry;
-use craft\elements\User;
-use craft\helpers\App;
 use craft\helpers\Console;
 use craft\helpers\Db;
 use craft\helpers\FileHelper;
@@ -52,6 +49,40 @@ class SeedController extends Controller
         $this->_cleanup();
         $this->stdout('Seed complete.' . PHP_EOL . PHP_EOL, Console::FG_GREEN);
         return ExitCode::OK;
+    }
+
+    public function actionClean(): int
+    {
+        $this->runAction('delete-freeform-data');
+        return ExitCode::OK;
+    }
+
+    public function actionDeleteFreeformData(): int
+    {
+        $submissions = (Submission::find())->isSpam(null);
+        $submissionCount = $submissions->count();
+        $errorCount = 0;
+        $this->stdout("Deleting Freeform data ..." . PHP_EOL);
+
+        foreach ($submissions as $submission) {
+            $i = isset($i) ? $i + 1 : 1;
+            $this->stdout("    - [{$i}/{$submissionCount}] Deleting submission {$submission->title} ... ");
+            try {
+               $success = Craft::$app->getElements()->deleteElement($submission, true);
+               if ($success) {
+                   $this->stdout('done' . PHP_EOL, Console::FG_GREEN);
+               } else {
+                   $this->stderr('failed: ' . implode(', ', $submission->getErrorSummary(true)) . PHP_EOL, Console::FG_RED);
+                   $errorCount++;
+               }
+            } catch (\Throwable $e) {
+                $this->stderr('error: ' . $e->getMessage() . PHP_EOL, Console::FG_RED);
+                $errorCount++;
+            }
+        }
+
+        $this->stdout('Done deleting Freeform data.' . PHP_EOL . PHP_EOL, Console::FG_GREEN);
+        return $errorCount ? ExitCode::UNSPECIFIED_ERROR : ExitCode::OK;
     }
 
     private function _cleanup()
