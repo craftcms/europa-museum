@@ -1,7 +1,5 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{%- minify -%}
-
 {% set env = getenv('ENVIRONMENT') %}
 {% set baseUrl = url() %}
 {% set cssUrl = url(alias(['@assetBaseUrl', mix('css/site.css')|trim('/')]|join('/'))) %}
@@ -9,12 +7,9 @@
 {% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
 <!DOCTYPE html>
 
-{%- endminify -%}
-
 <html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 
     <head>
-        {%- minify -%}
         <link rel="dns-prefetch" href="{{ baseUrl }}" crossorigin>
         <link rel="preconnect" href="{{ baseUrl }}" crossorigin>
 
@@ -48,7 +43,6 @@
         {% else %}
             <link rel="stylesheet" href="{{ cssUrl }}">
         {% endif %}
-        {%- endminify -%}
     </head>
 
     <body class="first-load loading {% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
