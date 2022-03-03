@@ -5,7 +5,7 @@ use craft\helpers\App;
 return [
     'transformer' => 'craft',
     'imagerSystemPath' => '@webroot/assets/imager/',
-    'imagerUrl' => '@web/assets/imager/',
+    'imagerUrl' => getenv('S3_BASE_URL') . '/assets/imager/',
     'cacheEnabled' => true,
     'cacheRemoteFiles' => true,
     'cacheDuration' => 31536000,
@@ -48,7 +48,7 @@ return [
     'clearKey' => '',
 
     'useForNativeTransforms' => true,
-    'useForCpThumbs' => false,
+    'useForCpThumbs' => true,
 
     'imgixProfile' => 'default',
     'imgixConfig' => [
@@ -62,4 +62,13 @@ return [
             'defaultParams' => [],
         ]
     ],
+    'storages' => ['aws'],
+    'storageConfig' => [
+        'aws'  => [
+            'region' => getenv('AWS_REGION'),
+            'bucket' => getenv('S3_BUCKET'),
+            'folder' => 'assets/imager',
+            'storageType' => 'standard',
+        ],
+    ]
 ];
