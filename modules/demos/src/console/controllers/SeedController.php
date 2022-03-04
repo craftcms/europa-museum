@@ -64,7 +64,7 @@ class SeedController extends Controller
         $errorCount = 0;
         $this->stdout("Deleting Freeform data ..." . PHP_EOL);
 
-        foreach ($submissions as $submission) {
+        foreach ($submissions->all() as $submission) {
             $i = isset($i) ? $i + 1 : 1;
             $this->stdout("    - [{$i}/{$submissionCount}] Deleting submission {$submission->title} ... ");
             try {
