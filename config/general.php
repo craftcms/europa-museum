@@ -34,7 +34,7 @@ return [
         ],
         'disallowRobots' => true,
         'enableCsrfProtection' => true,
-        'useEmailAsUsername' => false,
+        'useEmailAsUsername' => true,
         'generateTransformsBeforePageLoad' => true,
         'omitScriptNameInUrls' => true,
         'securityKey' => App::env('SECURITY_KEY'),
