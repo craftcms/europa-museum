@@ -2,7 +2,7 @@
 
 use craft\helpers\App;
 
-return [
+$config = [
     'transformer' => 'craft',
     'imagerSystemPath' => '@webroot/assets/imager/',
     'imagerUrl' => '@assetBaseUrl/assets/imager/',
@@ -48,7 +48,7 @@ return [
     'clearKey' => '',
 
     'useForNativeTransforms' => true,
-    'useForCpThumbs' => true,
+    'useForCpThumbs' => false,
 
     'imgixProfile' => 'default',
     'imgixConfig' => [
@@ -62,13 +62,18 @@ return [
             'defaultParams' => [],
         ]
     ],
-    'storages' => App::env('S3_BUCKET') ? ['aws'] : null,
-    'storageConfig' => [
+];
+
+if (App::env('S3_BUCKET')) {
+    $config['storages'] = ['aws'];
+    $config['storageConfig'] = [
         'aws'  => [
             'region' => App::env('AWS_REGION'),
             'bucket' => App::env('S3_BUCKET'),
             'folder' => 'assets/imager',
             'storageType' => 'standard',
         ],
-    ]
-];
+    ];
+}
+
+return $config;
