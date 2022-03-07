@@ -5,7 +5,7 @@ use craft\helpers\App;
 return [
     'transformer' => 'craft',
     'imagerSystemPath' => '@webroot/assets/imager/',
-    'imagerUrl' => getenv('S3_BASE_URL') . '/assets/imager/',
+    'imagerUrl' => '@assetBaseUrl/assets/imager/',
     'cacheEnabled' => true,
     'cacheRemoteFiles' => true,
     'cacheDuration' => 31536000,
