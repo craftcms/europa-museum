@@ -62,11 +62,11 @@ return [
             'defaultParams' => [],
         ]
     ],
-    'storages' => ['aws'],
+    'storages' => App::env('S3_BUCKET') ? ['aws'] : null,
     'storageConfig' => [
         'aws'  => [
-            'region' => getenv('AWS_REGION'),
-            'bucket' => getenv('S3_BUCKET'),
+            'region' => App::env('AWS_REGION'),
+            'bucket' => App::env('S3_BUCKET'),
             'folder' => 'assets/imager',
             'storageType' => 'standard',
         ],
