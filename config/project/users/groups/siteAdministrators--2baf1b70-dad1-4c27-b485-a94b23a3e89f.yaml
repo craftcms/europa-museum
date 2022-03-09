@@ -78,7 +78,6 @@ permissions:
   - 'saveassetinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'createfoldersinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'deletefilesandfoldersinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-  - 'replacefilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'editimagesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'editpeerfilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'replacepeerfilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
@@ -106,8 +105,9 @@ permissions:
   - freeform-fieldsaccess
   - freeform-notificationsmanage
   - freeform-notificationsaccess
-  - freeform-access-quick-export
-  - freeform-pro-exportprofilesmanage
-  - freeform-pro-exportprofilesaccess
   - freeform-settingsaccess
   - freeform-resources
+  - freeform-pro-exportprofilesmanage
+  - freeform-pro-exportprofilesaccess
+  - 'replacefilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - freeform-access-quick-export
