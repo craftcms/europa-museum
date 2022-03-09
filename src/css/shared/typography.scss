@@ -4,10 +4,10 @@
 @font-face {
     font-display: swap;
     font-family: 'EuropaSansLight';
-    src: url('../../fonts/poppins/Poppins-VariableFont_wght-subset.woff2') format('woff2-variations'),
-         url('../../fonts/poppins/Poppins-VariableFont_wght-subset.ttf') format('truetype-variations');
+    src: url('/assets/dist/fonts/poppins/Poppins-VariableFont_wght-subset.woff2') format('woff2-variations'),
+        url('/assets/dist/fonts/poppins/Poppins-VariableFont_wght-subset.ttf') format('truetype-variations');
     font-style: normal;
-    font-variation-settings: "wght" 320;
+    font-variation-settings: 'wght' 320;
     font-weight: 320;
     text-rendering: optimizeLegibility;
 }
@@ -16,10 +16,12 @@
 @font-face {
     font-display: swap;
     font-family: 'EuropaSansLightItalic';
-    src: url('../../fonts/poppins/Poppins-Italic-VariableFont_wght-subset.woff2') format('woff2-variations'),
-         url('../../fonts/poppins/Poppins-Italic-VariableFont_wght-subset.ttf') format('truetype-variations');
+    src: url('/assets/dist/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.woff2')
+            format('woff2-variations'),
+        url('/assets/dist/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.ttf')
+            format('truetype-variations');
     font-style: normal;
-    font-variation-settings: "wght" 320;
+    font-variation-settings: 'wght' 320;
     font-weight: 320;
     text-rendering: optimizeLegibility;
 }
@@ -28,10 +30,10 @@
 @font-face {
     font-display: swap;
     font-family: 'EuropaSansRegular';
-    src: url('../../fonts/poppins/Poppins-VariableFont_wght-subset.woff2') format('woff2-variations'),
-         url('../../fonts/poppins/Poppins-VariableFont_wght-subset.ttf') format('truetype-variations');
+    src: url('/assets/dist/fonts/poppins/Poppins-VariableFont_wght-subset.woff2') format('woff2-variations'),
+        url('/assets/dist/fonts/poppins/Poppins-VariableFont_wght-subset.ttf') format('truetype-variations');
     font-style: normal;
-    font-variation-settings: "wght" 400;
+    font-variation-settings: 'wght' 400;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
@@ -40,10 +42,12 @@
 @font-face {
     font-display: swap;
     font-family: 'EuropaSansRegularItalic';
-    src: url('../../fonts/poppins/Poppins-Italic-VariableFont_wght-subset.woff2') format('woff2-variations'),
-         url('../../fonts/poppins/Poppins-Italic-VariableFont_wght-subset.ttf') format('truetype-variations');
+    src: url('/assets/dist/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.woff2')
+            format('woff2-variations'),
+        url('/assets/dist/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.ttf')
+            format('truetype-variations');
     font-style: normal;
-    font-variation-settings: "wght" 400;
+    font-variation-settings: 'wght' 400;
     font-weight: 400;
     text-rendering: optimizeLegibility;
 }
@@ -54,8 +58,8 @@
 @font-face {
     font-display: swap;
     font-family: 'EuropaSerifDisplayRegular';
-    src: url('../../fonts/noto-serif-display/NotoSerifDisplay-Regular.woff2') format('woff2'),
-         url('../../fonts/noto-serif-display/NotoSerifDisplay-Regular.woff') format('woff');
+    src: url('/assets/dist/fonts/noto-serif-display/NotoSerifDisplay-Regular.woff2') format('woff2'),
+        url('/assets/dist/fonts/noto-serif-display/NotoSerifDisplay-Regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -65,8 +69,8 @@
 @font-face {
     font-display: swap;
     font-family: 'EuropaSerifDisplayRegularItalic';
-    src: url('../../fonts/noto-serif-display/NotoSerifDisplay-Italic.woff2') format('woff2'),
-         url('../../fonts/noto-serif-display/NotoSerifDisplay-Italic.woff') format('woff');
+    src: url('/assets/dist/fonts/noto-serif-display/NotoSerifDisplay-Italic.woff2') format('woff2'),
+        url('/assets/dist/fonts/noto-serif-display/NotoSerifDisplay-Italic.woff') format('woff');
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
@@ -74,22 +78,22 @@
 
 .sans-light {
     font-family: 'EuropaSansLight', sans-serif !important;
-    font-feature-settings: "ss02";
+    font-feature-settings: 'ss02';
 }
 
 .sans-light-italic {
     font-family: 'EuropaSansLightItalic', sans-serif !important;
-    font-feature-settings: "ss02";
+    font-feature-settings: 'ss02';
 }
 
 .sans-regular {
     font-family: 'EuropaSansRegular', sans-serif !important;
-    font-feature-settings: "ss02";
+    font-feature-settings: 'ss02';
 }
 
 .sans-regular-italic {
     font-family: 'EuropaSansRegularItalic', sans-serif !important;
-    font-feature-settings: "ss02";
+    font-feature-settings: 'ss02';
 }
 
 .serif-display-regular {
@@ -108,22 +112,27 @@ input,
 button,
 textarea,
 select {
-	font-family: 'EuropaSansRegular', sans-serif;
-    font-feature-settings: "ss02";
-	font-size: 16px;
+    font-family: 'EuropaSansRegular', sans-serif;
+    font-feature-settings: 'ss02';
+    font-size: 16px;
     letter-spacing: -0.01em;
     font-weight: normal;
-    font-feature-settings: "liga", "kern";
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-webkit-font-smoothing: subpixel-antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga', 'kern';
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 // Headings
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'EuropaSerifDisplayRegular', serif;
     font-weight: normal;
     letter-spacing: -0.02em;
@@ -198,11 +207,10 @@ a {
 // Forms
 
 form {
-
     label {
         margin-bottom: 15px;
         font-family: 'EuropaSansRegular', sans-serif;
-        font-feature-settings: "ss02";
+        font-feature-settings: 'ss02';
         font-size: 18px;
     }
 
@@ -220,7 +228,7 @@ form {
         padding: 10px 30px;
         color: #fff;
         font-family: 'EuropaSansRegular', sans-serif;
-        font-feature-settings: "ss02";
+        font-feature-settings: 'ss02';
         font-size: 18px;
         text-transform: uppercase;
         background-color: #000;
@@ -232,13 +240,11 @@ form {
             background-color: #fff;
         }
     }
-
 }
 
 // Themes
 
 body.theme-dark {
-
     // Global
 
     color: #fff;
@@ -265,5 +271,4 @@ body.theme-dark {
             background-color: #ccc;
         }
     }
-
 }

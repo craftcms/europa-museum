@@ -25,6 +25,7 @@ $backupCommand = 'PGPASSWORD="{password}" pg_dump' .
 return [
     '*' => [
         'allowAdminChanges' => true,
+        'allowUpdates' => false,
         'backupOnUpdate' => false,
         'backupCommand' => $backupCommand,
         'defaultSearchTermOptions' => [

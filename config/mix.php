@@ -14,6 +14,6 @@ return [
      *
      * @var string
      */
-    'assetPath' => '',
+    'assetPath' => 'assets/dist',
 
 ];

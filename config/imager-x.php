@@ -2,10 +2,10 @@
 
 use craft\helpers\App;
 
-return [
+$config = [
     'transformer' => 'craft',
     'imagerSystemPath' => '@webroot/assets/imager/',
-    'imagerUrl' => '@web/assets/imager/',
+    'imagerUrl' => '@assetBaseUrl/assets/imager/',
     'cacheEnabled' => true,
     'cacheRemoteFiles' => true,
     'cacheDuration' => 31536000,
@@ -63,3 +63,17 @@ return [
         ]
     ],
 ];
+
+if (App::env('S3_BUCKET')) {
+    $config['storages'] = ['aws'];
+    $config['storageConfig'] = [
+        'aws'  => [
+            'region' => App::env('AWS_REGION'),
+            'bucket' => App::env('S3_BUCKET'),
+            'folder' => 'assets/imager',
+            'storageType' => 'standard',
+        ],
+    ];
+}
+
+return $config;

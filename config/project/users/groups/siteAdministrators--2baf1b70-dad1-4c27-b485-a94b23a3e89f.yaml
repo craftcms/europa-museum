@@ -78,6 +78,7 @@ permissions:
   - 'saveassetinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'createfoldersinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'deletefilesandfoldersinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'replacefilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'editimagesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'editpeerfilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'replacepeerfilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
@@ -105,35 +106,8 @@ permissions:
   - freeform-fieldsaccess
   - freeform-notificationsmanage
   - freeform-notificationsaccess
-  - freeform-settingsaccess
-  - freeform-resources
+  - freeform-access-quick-export
   - freeform-pro-exportprofilesmanage
   - freeform-pro-exportprofilesaccess
-  - 'seomatic:dashboard'
-  - 'seomatic:global-meta:general'
-  - 'seomatic:global-meta:twitter'
-  - 'seomatic:global-meta:facebook'
-  - 'seomatic:global-meta:robots'
-  - 'seomatic:global-meta:humans'
-  - 'seomatic:global-meta:ads'
-  - 'seomatic:global-meta'
-  - 'seomatic:content-meta:general'
-  - 'seomatic:content-meta:twitter'
-  - 'seomatic:content-meta:facebook'
-  - 'seomatic:content-meta:sitemap'
-  - 'seomatic:content-meta'
-  - 'seomatic:site-settings:identity'
-  - 'seomatic:site-settings:creator'
-  - 'seomatic:site-settings:social'
-  - 'seomatic:site-settings:sitemap'
-  - 'seomatic:site-settings:miscellaneous'
-  - 'seomatic:site-settings'
-  - 'seomatic:tracking-scripts:googleanalytics'
-  - 'seomatic:tracking-scripts:gtag'
-  - 'seomatic:tracking-scripts:googletagmanager'
-  - 'seomatic:tracking-scripts:facebookpixel'
-  - 'seomatic:tracking-scripts:linkedininsight'
-  - 'seomatic:tracking-scripts:hubspot'
-  - 'seomatic:tracking-scripts'
-  - 'seomatic:plugin-settings'
-  - 'replacefilesinvolume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - freeform-settingsaccess
+  - freeform-resources
