@@ -1,4 +1,4 @@
-dateModified: 1646439236
+dateModified: 1646843579
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -134,21 +134,33 @@ plugins:
     schemaVersion: 3.6.3
     settings:
       ajaxByDefault: '1'
+      alertNotificationRecipients: ''
+      autoScroll: true
       autoScrollToErrors: ''
+      badgeType: ''
       blockedEmails: null
       blockedEmailsError: 'Invalid Email Address'
       blockedIpAddresses: null
       blockedKeywords: null
       blockedKeywordsError: 'Invalid Entry Data'
+      bypassSpamCheckOnLoggedInUsers: false
+      clientDigestFrequency: '1'
+      clientDigestRecipients: ''
       customErrorMessage: null
       customHoneypotName: null
       defaultTemplates: '1'
       defaultView: dashboard
+      digestFrequency: '1'
+      digestOnlyOnProduction: ''
+      digestRecipients: ''
+      displayFeed: ''
       emailTemplateDirectory: null
       emailTemplateStorage: db
+      exportLabels: ''
       fieldDisplayOrder: name
       fillWithGet: '1'
       footerScripts: false
+      formFieldShowOnlyAllowedForms: ''
       formSubmitDisable: '1'
       formSubmitExpiration: null
       formTemplateDirectory: ''
@@ -161,19 +173,34 @@ plugins:
       pluginName: null
       purgableSpamAgeInDays: null
       purgableSubmissionAgeInDays: null
+      purgableUnfinalizedAssetAgeInMinutes: 180
       recaptchaBehaviour: display_error
       recaptchaEnabled: false
+      recaptchaErrorMessage: 'Please verify that you are not a robot.'
       recaptchaKey: null
+      recaptchaLazyLoad: false
       recaptchaMinScore: 0.5
       recaptchaSecret: null
+      recaptchaSize: normal
+      recaptchaTheme: light
       recaptchaType: v2_checkbox
+      rememberPageSubmitOrder: true
       removeNewlines: ''
       renderFormHtmlInCpViews: '1'
       salesforce_client_id: null
       salesforce_client_secret: null
       salesforce_password: null
       salesforce_username: null
+      saveFormSessionLimit: 10
+      saveFormTtl: 30
       scriptInsertLocation: footer
+      scriptInsertType: pointers
+      sessionContext: payload
+      sessionContextCount: 100
+      sessionContextSecret: ''
+      sessionContextTimeToLiveMinutes: 180
+      sessionEntryMaxCount: 50
+      sessionEntryTTL: 10800
       showErrorsForBlockedEmails: false
       showErrorsForBlockedKeywords: false
       showTutorial: ''
@@ -181,6 +208,10 @@ plugins:
       spamProtectionBehaviour: simulate_success
       submissionThrottlingCount: null
       submissionThrottlingTimeFrame: null
+      successTemplateDirectory: null
+      twigInHtml: true
+      twigInHtmlIsolatedMode: true
+      updateSearchIndexes: '1'
   guide:
     edition: lite
     enabled: true
@@ -195,10 +226,6 @@ plugins:
     enabled: true
     licenseKey: 921AV00SG3ZDR1HG4V4K6GSC
     schemaVersion: 3.0.0
-  minify:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   mix:
     edition: standard
     enabled: true
@@ -211,10 +238,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
-  redactor-custom-styles:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   seomatic:
     edition: standard
     enabled: true

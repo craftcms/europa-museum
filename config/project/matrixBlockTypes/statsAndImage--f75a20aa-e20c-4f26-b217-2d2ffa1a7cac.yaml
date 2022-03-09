@@ -278,7 +278,6 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: ''
-      cleanupHtml: true
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
