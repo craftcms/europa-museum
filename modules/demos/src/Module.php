@@ -43,14 +43,6 @@ class Module extends \yii\base\Module
         );
 
         Event::on(
-            Dashboard::class,
-            Dashboard::EVENT_REGISTER_WIDGET_TYPES,
-            static function (RegisterComponentTypesEvent $event) {
-                $event->types[] = Guide::class;
-            }
-        );
-
-        Event::on(
             Response::class,
             Response::EVENT_BEFORE_SEND,
             static function ($event) {
