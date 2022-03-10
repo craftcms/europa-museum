@@ -10,8 +10,10 @@ use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
 use craft\helpers\App;
 use craft\services\Dashboard;
+use yii\web\Response;
 use craft\web\View;
 use modules\demos\widgets\Guide;
+use voku\helper\UTF8;
 use yii\base\Event;
 
 class Module extends \yii\base\Module
@@ -45,6 +47,20 @@ class Module extends \yii\base\Module
             Dashboard::EVENT_REGISTER_WIDGET_TYPES,
             static function (RegisterComponentTypesEvent $event) {
                 $event->types[] = Guide::class;
+            }
+        );
+
+        Event::on(
+            Response::class,
+            Response::EVENT_BEFORE_SEND,
+            static function ($event) {
+                /* @var Response */
+                $response = $event->sender;
+                $request = Craft::$app->getRequest();
+
+                if (preg_match('/\.gif$/', $request->getFullPath())) {
+                    $response->clear();
+                }
             }
         );
     }

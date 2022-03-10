@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac3dcaf93a3586ca238fcfa6e142debf",
+    "content-hash": "e264a2a81c69f20ac5a3e1b97db0aa72",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.212.4",
+            "version": "3.212.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4961e8b34fab8b92a459067f264b4dc66f969a57"
+                "reference": "fcb57b1f840938813e83f521e169914a076b3be9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4961e8b34fab8b92a459067f264b4dc66f969a57",
-                "reference": "4961e8b34fab8b92a459067f264b4dc66f969a57",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fcb57b1f840938813e83f521e169914a076b3be9",
+                "reference": "fcb57b1f840938813e83f521e169914a076b3be9",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.212.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.212.6"
             },
-            "time": "2022-03-08T19:19:48+00:00"
+            "time": "2022-03-10T19:14:38+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -923,23 +923,23 @@
         },
         {
             "name": "craftcms/html-field",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/html-field.git",
-                "reference": "d8ae4e3e4862a008ce50589eb7c90caf4fc0e2a2"
+                "reference": "fd3d400643fccbe27583102f581640f465987a06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/html-field/zipball/d8ae4e3e4862a008ce50589eb7c90caf4fc0e2a2",
-                "reference": "d8ae4e3e4862a008ce50589eb7c90caf4fc0e2a2",
+                "url": "https://api.github.com/repos/craftcms/html-field/zipball/fd3d400643fccbe27583102f581640f465987a06",
+                "reference": "fd3d400643fccbe27583102f581640f465987a06",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.6.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "^0.12.96"
+                "craftcms/phpstan": "dev-main"
             },
             "type": "library",
             "autoload": {
@@ -965,7 +965,7 @@
                 "rss": "https://github.com/craftcms/html-field/commits/main.atom",
                 "source": "https://github.com/craftcms/html-field"
             },
-            "time": "2022-02-16T09:33:08+00:00"
+            "time": "2022-03-10T14:39:24+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -3491,70 +3491,6 @@
             "time": "2021-03-17T06:54:33+00:00"
         },
         {
-            "name": "misterbk/mix",
-            "version": "1.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mister-bk/craft-plugin-mix.git",
-                "reference": "c30704f07f84d81f018fbbc4c617eb8652ee2d48"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mister-bk/craft-plugin-mix/zipball/c30704f07f84d81f018fbbc4c617eb8652ee2d48",
-                "reference": "c30704f07f84d81f018fbbc4c617eb8652ee2d48",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Mix",
-                "handle": "mix",
-                "schemaVersion": "1.0.0",
-                "developerEmail": "dev@mister-bk.de",
-                "documentationUrl": "https://github.com/mister-bk/craft-plugin-mix/blob/master/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/mister-bk/craft-plugin-mix/master/CHANGELOG.md",
-                "downloadUrl": "https://github.com/mister-bk/craft-plugin-mix/archive/master.zip",
-                "hasCpSettings": true,
-                "hasCpSection": false,
-                "components": {
-                    "mix": "misterbk\\mix\\services\\MixService"
-                },
-                "class": "misterbk\\mix\\Mix"
-            },
-            "autoload": {
-                "psr-4": {
-                    "misterbk\\mix\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "mister bk! GmbH",
-                    "email": "info@mister-bk.de",
-                    "homepage": "https://www.mister-bk.de/"
-                }
-            ],
-            "description": "Helper plugin for Laravel Mix in Craft CMS templates",
-            "keywords": [
-                "Craft",
-                "craft-plugin",
-                "craft3",
-                "craftcms",
-                "laravel-mix",
-                "mix"
-            ],
-            "support": {
-                "issues": "https://github.com/mister-bk/craft-plugin-mix/issues",
-                "source": "https://github.com/mister-bk/craft-plugin-mix/tree/master"
-            },
-            "time": "2018-07-20T14:32:06+00:00"
-        },
-        {
             "name": "monolog/monolog",
             "version": "2.3.5",
             "source": {
@@ -4063,6 +3999,68 @@
                 }
             ],
             "time": "2022-02-21T17:14:20+00:00"
+        },
+        {
+            "name": "nystudio107/craft-twigpack",
+            "version": "1.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-twigpack.git",
+                "reference": "b6fbb07ab1fb84d7bcc90995275b35e529827426"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/b6fbb07ab1fb84d7bcc90995275b35e529827426",
+                "reference": "b6fbb07ab1fb84d7bcc90995275b35e529827426",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Twigpack",
+                "handle": "twigpack",
+                "changelogUrl": "https://raw.githubusercontent.com/craft-nystudio107/twigpack/v1/CHANGELOG.md",
+                "class": "nystudio107\\twigpack\\Twigpack"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\twigpack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Twigpack is a bridge between Twig and webpack, with manifest.json & webpack-dev-server HMR support",
+            "keywords": [
+                "craft-plugin",
+                "craftcms",
+                "hmr-support",
+                "manifest-json",
+                "twig",
+                "webpack",
+                "webpack-dev-server"
+            ],
+            "support": {
+                "docs": "https://nystudio107.com/plugins/twigpack/documentation",
+                "issues": "https://nystudio107.com/plugins/twigpack/support",
+                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.15"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-12T02:46:01+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
