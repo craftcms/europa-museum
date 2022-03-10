@@ -21,7 +21,7 @@
     },
     "require": {
         "craftcms/aws-s3": "^1.3",
-        "craftcms/cms": "dev-feature/base64-resources as 3.7.36",
+        "craftcms/cms": "^3.7",
         "craftcms/redactor": "^2.5.0",
         "fakerphp/faker": "^1.14",
         "nystudio107/craft-seomatic": "^3.3.44",
