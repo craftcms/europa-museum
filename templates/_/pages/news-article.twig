@@ -11,12 +11,10 @@
     {% if entry.heroImage|length %}
         {% set heroImage = entry.heroImage[0] %}
 
-        {% set heroImageTransformed = craft.imager.transformImage(heroImage, {
+        {% do heroImage.setTransform({
             width: 1024,
-            allowUpscale: false,
+            quality: 80,
             format: 'jpg',
-            jpegQuality: 80,
-            interlace: true
         }) %}
     {% endif %}
 
@@ -29,7 +27,7 @@
 
             <h5 class="hero-heading">{{ entry.title |typogrify }}</h5>
 
-            <img class="hero-image" src="{{ heroImageTransformed.url }}" alt="{{ heroImage.title }}">
+            <img class="hero-image" src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
 
         </div>
 

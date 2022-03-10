@@ -55,12 +55,10 @@
                     {% set exhibitEndDate = exhibit.expiryDate|date('m.y') | default('') %}
                     {% set exhibitHeroImage = exhibit.heroImage.one() %}
 
-                    {% set exhibitHeroImageTransformed = craft.imager.transformImage(exhibitHeroImage, {
+                    {% do exhibitHeroImage.setTransform({
                         width: 650,
-                        allowUpscale: false,
+                        quality: 80,
                         format: 'jpg',
-                        jpegQuality: 80,
-                        interlace: true
                     }) %}
 
                     {% set speed = [3, 1, 5, 2] %}
@@ -72,7 +70,7 @@
                             <a class="exhibit-link no-underline" href="{{ exhibitUrl }}">
 
                                 <div class="exhibit-image">
-                                    <img class="lazyfade lazyload" data-src="{{ exhibitHeroImageTransformed.url }}" alt="">
+                                    <img class="lazyfade lazyload" data-src="{{ exhibitHeroImage.url }}" alt="">
                                 </div>
 
                                 <div class="exhibit-info">
