@@ -49,20 +49,6 @@ class Module extends \yii\base\Module
                 $event->types[] = Guide::class;
             }
         );
-
-        Event::on(
-            Response::class,
-            Response::EVENT_BEFORE_SEND,
-            static function ($event) {
-                /* @var Response */
-                $response = $event->sender;
-                $request = Craft::$app->getRequest();
-
-                if (preg_match('/\.gif$/', $request->getFullPath())) {
-                    $response->clear();
-                }
-            }
-        );
     }
 
     private function _useLocalVolumes()
