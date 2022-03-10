@@ -23,16 +23,9 @@
 {# update srcset #}
 {% set srcset = srcset | join(', ') %}
 
-{% set placeholderOptions = {
-    width: 256,
-    effects: {
-        blur: 1,
-    }
-} %}
-
 <picture class="lazypicture {{ classes ?? '' }}">
 
-    {% if craft.imager.isAnimated(asset) or asset.extension == 'svg' %}
+    {% if asset.extension == 'gif' or asset.extension == 'svg' %}
 
         <img class="{{ lazytransition }} lazyload"
             data-src="{{ asset.url }}"
@@ -41,10 +34,7 @@
 
     {% else %}
 
-        {% set placeholder = craft.imager.transformImage(asset, placeholderOptions) %}
-
         <img class="{{ lazytransition }} lazyload"
-            src="{{ placeholder.url }}"
             data-srcset="{{ srcset }}"
             sizes="{{ sizes }}"
             alt="{{ alt }}"

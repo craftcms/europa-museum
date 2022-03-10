@@ -64,12 +64,10 @@
 
                 {% set articleImage = newsEntry.heroImage[0] %}
 
-                {% set articleImageTransformed = craft.imager.transformImage(articleImage, {
+                {% do articleImage.setTransform({
                     width: 440,
-                    allowUpscale: false,
+                    quality: 80,
                     format: 'jpg',
-                    jpegQuality: 80,
-                    interlace: true
                 }) %}
 
                 <article class="news-article">
@@ -78,7 +76,7 @@
 
                         {% if newsEntry.heroImage | length %}
                             <a class="article-image-link no-underline" href="{{ newsEntry.url }}">
-                                <img src="{{ articleImageTransformed }}" alt="{{ articleImage.title }}">
+                                <img src="{{ articleImage.url }}" alt="{{ articleImage.title }}">
                             </a>
                         {% endif %}
 

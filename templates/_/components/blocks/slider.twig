@@ -51,15 +51,12 @@
                     {% for slideImage in slideImages %}
 
                         {% set image = slideImage | default('') %}
-
-                        {% set imageTransformed = craft.imager.transformImage(image, {
+                        {% do image.setTransform({
                             width: 500,
                             height: 500,
-                            mode: 'crop',
-                            allowUpscale: false,
+                            quality: 80,
                             format: 'jpg',
-                            jpegQuality: 80,
-                            interlace: true
+                            mode: 'crop',
                         }) %}
 
                         {% set slideCaption = image.imageCaption | default('') %}
@@ -69,7 +66,7 @@
                             <div class="slide no-underline">
 
                                 <div class="slide-image-container">
-                                    <img class="slide-image" src="{{ imageTransformed }}" alt="{{ image.title }}">
+                                    <img class="slide-image" src="{{ image.url }}" alt="{{ image.title }}">
                                 </div>
 
                                 <div class="slide-info">
@@ -90,15 +87,12 @@
                     {% for entry in slideEntries %}
 
                         {% set heroImage = entry.heroImage.one() | default('') %}
-
-                        {% set heroImageTransformed = craft.imager.transformImage(heroImage, {
+                        {% do heroImage.setTransform({
                             width: 500,
                             height: 500,
-                            mode: 'crop',
-                            allowUpscale: false,
+                            quality: 80,
                             format: 'jpg',
-                            jpegQuality: 80,
-                            interlace: true
+                            mode: 'crop',
                         }) %}
 
                         {% set slideTitle = entry.title %}
@@ -110,7 +104,7 @@
                             <a class="slide no-underline" href="{{ slideUrl }}">
 
                                 <div class="slide-image-container">
-                                    <img class="slide-image" src="{{ heroImageTransformed }}" alt="{{ heroImage.title }}">
+                                    <img class="slide-image" src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
                                 </div>
 
                                 <div class="slide-info">
