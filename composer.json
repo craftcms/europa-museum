@@ -42,6 +42,10 @@
         "optimize-autoloader": true,
         "platform": {
             "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
         }
     },
     "scripts": {
@@ -68,5 +72,6 @@
             "type": "git",
             "url": "https://github.com/brandonkelly/craft3-freeform"
         }
-    ]
+    ],
+    "prefer-stable": true
 }
