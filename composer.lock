@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33a7901cc09b5ca93ca48041865d527c",
+    "content-hash": "df0a33fe15953b739bc0274816d94436",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4671,25 +4671,62 @@
             "time": "2022-02-11T10:27:51+00:00"
         },
         {
-            "name": "sebastianlenz/linkfield",
-            "version": "1.0.25",
+            "name": "sebastianlenz/craft-utils",
+            "version": "2.3.4.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
-                "reference": "a29f328fe41248e9b1722c52f68e435f53c241d3"
+                "url": "https://github.com/sebastian-lenz/craft-utils.git",
+                "reference": "496f3da9aaf401c6dea925c4eccfe9b961067b0c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/a29f328fe41248e9b1722c52f68e435f53c241d3",
-                "reference": "a29f328fe41248e9b1722c52f68e435f53c241d3",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/496f3da9aaf401c6dea925c4eccfe9b961067b0c",
+                "reference": "496f3da9aaf401c6dea925c4eccfe9b961067b0c",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1",
-                "php": "^7.0 || ^8.0"
+                "craftcms/cms": "^3.6.0",
+                "php": ">=7.2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "lenz\\craft\\utils\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A collection of utility classes for Craft CMS development",
+            "support": {
+                "source": "https://github.com/sebastian-lenz/craft-utils/tree/2.3.4.1"
+            },
+            "time": "2022-01-10T15:41:38+00:00"
+        },
+        {
+            "name": "sebastianlenz/linkfield",
+            "version": "2.0.0-rc.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
+                "reference": "5a5d072417542352f136022b8ff1539a040155e4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/5a5d072417542352f136022b8ff1539a040155e4",
+                "reference": "5a5d072417542352f136022b8ff1539a040155e4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.6.0",
+                "php": "^7.2.5 || ^8.0",
+                "sebastianlenz/craft-utils": "^2.3.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7.5 || ^8.0"
+                "craftcms/feed-me": "4.3.5.1",
+                "phpunit/phpunit": "^7.5 || ^8.0",
+                "verbb/super-table": "^2.3"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4700,8 +4737,11 @@
             },
             "autoload": {
                 "psr-4": {
-                    "typedlinkfield\\": "src/"
-                }
+                    "lenz\\linkfield\\": "src/"
+                },
+                "classmap": [
+                    "legacy"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4710,9 +4750,9 @@
             "description": "A Craft field type for selecting links",
             "support": {
                 "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
-                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/1.0.25"
+                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.0.0-rc.2"
             },
-            "time": "2021-02-23T20:55:03+00:00"
+            "time": "2022-02-26T16:13:17+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -8454,7 +8494,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "sebastianlenz/linkfield": 5
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
