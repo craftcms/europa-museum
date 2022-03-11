@@ -16,10 +16,12 @@
 use craft\helpers\App;
 use \pixelandtonic\dynamodb\drivers\DynamoDbSession;
 use \pixelandtonic\dynamodb\drivers\DynamoDbCache;
+use yii\web\DbSession;
 
 $components = [
     'mailer' => null,
 ];
+
 if ($table = App::env('DYNAMODB_TABLE_CACHE')) {
     $components['cache'] = [
         'class' => DynamoDbCache::class,
@@ -27,12 +29,13 @@ if ($table = App::env('DYNAMODB_TABLE_CACHE')) {
         'region' => App::env('AWS_REGION'),
     ];
 }
+
 if ($table = App::env('DYNAMODB_TABLE_SESSION')) {
-    $components['session'] = [
-        'class' => DynamoDbSession::class,
-        'table' => $table,
-        'region' => App::env('AWS_REGION'),
-    ];
+    $components['session'] = static function() {
+        return Craft::createObject(
+            ['class' => DbSession::class] + App::sessionConfig(),
+        );
+    };
 }
 
 return [
