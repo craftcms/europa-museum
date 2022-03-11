@@ -12,7 +12,6 @@ use craft\helpers\App;
 use craft\services\Dashboard;
 use yii\web\Response;
 use craft\web\View;
-use modules\demos\widgets\Guide;
 use voku\helper\UTF8;
 use yii\base\Event;
 
@@ -39,14 +38,6 @@ class Module extends \yii\base\Module
             View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
             function (RegisterTemplateRootsEvent $event) {
                 $event->roots['modules'] = __DIR__ . '/templates';
-            }
-        );
-
-        Event::on(
-            Dashboard::class,
-            Dashboard::EVENT_REGISTER_WIDGET_TYPES,
-            static function (RegisterComponentTypesEvent $event) {
-                $event->types[] = Guide::class;
             }
         );
     }
