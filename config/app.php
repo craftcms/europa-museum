@@ -24,12 +24,14 @@ if ($table = App::env('DYNAMODB_TABLE_CACHE')) {
     $components['cache'] = [
         'class' => DynamoDbCache::class,
         'table' => $table,
+        'region' => App::env('AWS_REGION'),
     ];
 }
 if ($table = App::env('DYNAMODB_TABLE_SESSION')) {
     $components['session'] = [
         'class' => DynamoDbSession::class,
         'table' => $table,
+        'region' => App::env('AWS_REGION'),
     ];
 }
 
