@@ -48,6 +48,6 @@ return [
         ],
     ],
     'dev' => [
-
+        'devMode' => true,
     ],
 ];
