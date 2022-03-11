@@ -13,17 +13,38 @@
  * built-in system components.
  */
 
+use craft\helpers\App;
+use \pixelandtonic\dynamodb\drivers\DynamoDbSession;
+use \pixelandtonic\dynamodb\drivers\DynamoDbCache;
+
+$components = [
+    'mailer' => null,
+];
+if ($table = App::env('DYNAMODB_TABLE_CACHE')) {
+    $components['cache'] = [
+        'class' => DynamoDbCache::class,
+        'table' => $table,
+    ];
+}
+if ($table = App::env('DYNAMODB_TABLE_SESSION')) {
+    $components['session'] = [
+        'class' => DynamoDbSession::class,
+        'table' => $table,
+    ];
+}
+
 return [
     '*' => [
+        'id' => App::env('CRAFT_CLOUD_ID') ?: 'CraftCMS',
         'modules'   => [
             'demos' => \modules\demos\Module::class,
         ],
         'bootstrap' => ['demos'],
         'components' => [
             'mailer' => null,
-        ],
+        ] + $components,
     ],
     'dev' => [
-        'components' => [],
+        'components' => $components,
     ]
 ];

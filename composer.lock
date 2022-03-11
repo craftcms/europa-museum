@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df0a33fe15953b739bc0274816d94436",
+    "content-hash": "1a5f3ba5a5785542583e489dc758a057",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4235,6 +4235,61 @@
                 "source": "https://github.com/pixelandtonic/Imagine/tree/1.2.4.2"
             },
             "time": "2021-06-22T18:26:46+00:00"
+        },
+        {
+            "name": "pixelandtonic/yii2-dynamodb",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pixelandtonic/yii2-dynamodb.git",
+                "reference": "043fe55183b4704886419bc59b07d575dee57435"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pixelandtonic/yii2-dynamodb/zipball/043fe55183b4704886419bc59b07d575dee57435",
+                "reference": "043fe55183b4704886419bc59b07d575dee57435",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": ">=2.4",
+                "ext-json": "*",
+                "yiisoft/yii2": "~2.0.14",
+                "yiisoft/yii2-queue": "^2.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pixelandtonic\\dynamodb\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Yii2 implementation of a cache, session, and queue driver for DynamoDB",
+            "keywords": [
+                "cache",
+                "dynamodb",
+                "queue",
+                "session",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/pixelandtonic/yii2-dynamodb/blob/README.md",
+                "email": "support@pixelandtonic.com",
+                "issues": "https://github.com/pixelandtonic/yii2-dynamodb/issues?state=open",
+                "source": "https://github.com/pixelandtonic/yii2-dynamodb"
+            },
+            "time": "2020-11-03T20:42:53+00:00"
         },
         {
             "name": "psr/container",
