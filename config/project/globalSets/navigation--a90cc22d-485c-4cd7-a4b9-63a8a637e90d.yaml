@@ -10,6 +10,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f6c30a81-8019-4056-bae6-eff3e62efa2e
             warning: null
             width: 100
           -
@@ -19,10 +20,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 856cf459-c3d2-44e7-9a00-bd2f8318076a
             warning: null
             width: 100
         name: 'Navigation Links'
-        sortOrder: 1
+        uid: f84cf6b3-3af0-4efa-8335-3d948640d582
 handle: navigation
 name: Navigation
 sortOrder: 1

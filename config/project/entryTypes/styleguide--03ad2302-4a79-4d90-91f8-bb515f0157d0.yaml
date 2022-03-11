@@ -23,11 +23,12 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8358a3f8-354c-4117-9346-7b203b4bd2e4
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 7d0ce740-63aa-4423-8607-285d117e1193
 handle: styleguide
 hasTitleField: false
 name: Styleguide

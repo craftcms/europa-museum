@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 242e0e5b-1a38-4ac1-9799-ec159f11b9ff
             warning: null
             width: 100
           -
@@ -20,6 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 254c6308-6a4a-4c97-b455-92208117209d
             warning: null
             width: 100
           -
@@ -29,6 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3da2eb88-49f2-43f2-941e-784a89d520e9
             warning: null
             width: 100
           -
@@ -38,6 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 4a79c153-3215-4d4c-8d21-4de5707648a1
             warning: null
             width: 100
           -
@@ -47,6 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e664ea70-6eb4-4b59-855d-006785c381db
             warning: null
             width: 100
           -
@@ -56,6 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bd5488f4-d61b-42c0-aaeb-56645cc2db94
             warning: null
             width: 100
           -
@@ -65,6 +71,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 947ecc95-c90a-4075-9b4f-c0a21a97b069
             warning: null
             width: 100
           -
@@ -74,6 +81,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2b3d17c8-4595-4726-8f68-622ff72515f7
             warning: null
             width: 100
           -
@@ -83,6 +91,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5d41e49a-a8bb-404e-a36d-5a687a0bb8cb
             warning: null
             width: 100
           -
@@ -92,26 +101,27 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 74bf588a-7119-4d19-b468-353cfb5a6691
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 31b86478-b2de-4194-b7d1-91b6c0434033
 fields:
   00f86307-b225-423b-bd34-b70af6632cf2: # Link Label
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: linkLabel
-    instructions: ''
+    instructions: null
     name: 'Link Label'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -122,30 +132,33 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: ''
+    instructions: null
     name: Image
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-      singleUploadLocationSubpath: ''
       source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -156,16 +169,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: leftStatLabel
-    instructions: ''
+    instructions: null
     name: 'Left Stat Label'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -176,16 +189,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: rightStatLabel
-    instructions: ''
+    instructions: null
     name: 'Right Stat Label'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -196,16 +209,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: rightStatValue
-    instructions: ''
+    instructions: null
     name: 'Right Stat Value'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -216,16 +229,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: leftStatValue
-    instructions: ''
+    instructions: null
     name: 'Left Stat Value'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -236,12 +249,11 @@ fields:
     contentColumnType: string(255)
     fieldGroup: null
     handle: externalLink
-    instructions: ''
+    instructions: null
     name: 'External Link'
     searchable: true
     settings:
-      maxLength: '255'
-      placeholder: ''
+      maxLength: 255
       types:
         - url
     translationKeyFormat: null
@@ -252,16 +264,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: heading
-    instructions: ''
+    instructions: null
     name: Heading
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -272,7 +284,7 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: description
-    instructions: ''
+    instructions: null
     name: Description
     searchable: true
     settings:
@@ -282,12 +294,12 @@ fields:
       configSelectionMode: choose
       defaultTransform: ''
       manualConfig: ''
-      purifierConfig: ''
-      purifyHtml: '1'
+      purifierConfig: null
+      purifyHtml: true
       redactorConfig: VHC-no-assets.json
-      removeEmptyTags: '1'
-      removeInlineStyles: '1'
-      removeNbsp: '1'
+      removeEmptyTags: true
+      removeInlineStyles: true
+      removeNbsp: true
       showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
@@ -305,9 +317,10 @@ fields:
     searchable: true
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: true
       source: null
       sources: '*'

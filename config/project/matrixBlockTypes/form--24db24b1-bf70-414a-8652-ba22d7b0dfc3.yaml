@@ -11,6 +11,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 56148128-96bc-4a82-bd9e-79c2e3d0c819
             warning: null
             width: 100
           -
@@ -20,10 +21,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b126236b-0d40-4260-bc17-a9e3bffa8b9e
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 0c40cfb4-32d4-4f05-8813-99b00af4d589
 fields:
   a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee: # Success Message
     columnSuffix: null
@@ -36,10 +38,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -47,15 +49,19 @@ fields:
     type: craft\fields\PlainText
   e44383bb-8f5a-4b3b-9114-30a955feb64c: # Form
     columnSuffix: null
-    contentColumnType: integer
+    contentColumnType: string
     fieldGroup: null
     handle: form
-    instructions: ''
+    instructions: null
     name: Form
     searchable: true
+    settings:
+      errorMessage: 'Unable to find component class ''Solspace\Freeform\FieldTypes\FormFieldType''.'
+      expectedType: Solspace\Freeform\FieldTypes\FormFieldType
+      settings: null
     translationKeyFormat: null
     translationMethod: none
-    type: Solspace\Freeform\FieldTypes\FormFieldType
+    type: craft\fields\MissingField
 handle: form
 name: Form
 sortOrder: 8

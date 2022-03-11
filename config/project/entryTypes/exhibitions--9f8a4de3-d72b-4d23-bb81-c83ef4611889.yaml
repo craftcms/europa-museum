@@ -11,7 +11,7 @@ fieldLayouts:
             disabled: false
             id: null
             instructions: null
-            label: ''
+            label: null
             max: null
             min: null
             name: null
@@ -23,7 +23,8 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d90e1927-8d4f-4bea-8d18-cfce0c99fb88
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 84b9b673-0a4f-47a9-b4ea-3a7070c3ee16
             warning: null
             width: 100
           -
@@ -42,23 +44,59 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2e2b4b8c-c70d-4b9d-b182-c35dbf96b9a4
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 8ca7b550-bb6c-44f2-a215-2672205a2c09
       -
         elements:
           -
-            fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 59b929ed-92cf-4c3e-90f0-7462a094b8d5
+            warning: null
+            width: 100
+          -
+            fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6f540559-480a-481c-8831-c513757766e0
             warning: null
             width: 100
-        name: SEO
-        sortOrder: 2
+          -
+            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 587cbb36-08ba-4e75-b9c1-14004d5a9d8c
+            warning: null
+            width: 100
+        name: Content
+        uid: e04d0c40-58a5-414a-822b-abefcf9cd582
 handle: exhibitions
 hasTitleField: false
 name: Exhibitions

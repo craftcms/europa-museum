@@ -23,7 +23,8 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: c551bb45-d1b7-4771-b83b-3f09873964e2
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2198fb68-6a27-4abb-8b41-caaac72a895d
             warning: null
             width: 100
           -
@@ -42,29 +44,15 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5076c968-98ab-49e8-babd-4f6aac52ea87
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 64b711a5-b7a8-4dea-a6a9-4a8788e9a310
+fs: images
 handle: images
-hasUrls: true
 name: Images
-settings:
-  addSubfolderToRootUrl: '1'
-  autoFocalPoint: ''
-  bucket: $S3_BUCKET
-  bucketSelectionMode: manual
-  cfDistributionId: ''
-  cfPrefix: ''
-  expires: ''
-  keyId: ''
-  makeUploadsPublic: '1'
-  region: $AWS_REGION
-  secret: ''
-  storageClass: ''
-  subfolder: assets/volumes/images
 sortOrder: 1
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-type: craft\awss3\Volume
-url: $S3_BASE_URL
+transformFs: null

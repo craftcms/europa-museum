@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 8f273b7f-79d4-4739-9d25-7b8412b4946c
             warning: null
             width: 100
           -
@@ -20,6 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: c4acaa92-22cd-48ef-baa3-f4621130ac77
             warning: null
             width: 100
           -
@@ -29,6 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1d859196-b889-4127-bcbc-3dcbee616394
             warning: null
             width: 100
           -
@@ -38,6 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1ab52350-6442-4381-9859-89a83962b703
             warning: null
             width: 100
           -
@@ -47,6 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5cfb2aa7-674b-4124-9965-b3da66892e67
             warning: null
             width: 100
           -
@@ -56,17 +61,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 63d4d63c-9e39-4289-935b-073a5cf7d39f
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: c7e1b071-3935-47c7-9acf-9c6f3d7f595e
 fields:
   3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f: # Text Color
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: textColor
-    instructions: ''
+    instructions: null
     name: 'Text Color'
     searchable: true
     settings:
@@ -101,16 +107,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: subHeading
-    instructions: ''
+    instructions: null
     name: 'Sub Heading'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -136,16 +142,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: preHeading
-    instructions: ''
+    instructions: null
     name: 'Pre Heading'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -156,30 +162,33 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: image
-    instructions: ''
+    instructions: null
     name: Image
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-      defaultUploadLocationSubpath: ''
-      limit: '1'
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: 1
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      singleUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-      singleUploadLocationSubpath: ''
       source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -190,16 +199,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: heading
-    instructions: ''
+    instructions: null
     name: Heading
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

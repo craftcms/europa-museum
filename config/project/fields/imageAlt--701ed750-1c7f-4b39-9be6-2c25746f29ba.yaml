@@ -2,16 +2,16 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 1bff9c9f-5c93-4679-967d-0f9095c856fa # Common
 handle: imageAlt
-instructions: ''
+instructions: null
 name: 'Image Alt'
 searchable: false
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: text
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

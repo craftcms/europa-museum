@@ -1,4 +1,4 @@
-dateModified: 1646843579
+dateModified: 1646972827
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -13,6 +13,26 @@ email:
     useAuthentication: ''
     username: ''
   transportType: craft\mail\transportadapters\Smtp
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: ''
+      cfPrefix: ''
+      expires: ''
+      keyId: ''
+      makeUploadsPublic: true
+      region: $AWS_REGION
+      secret: ''
+      storageClass: ''
+      subfolder: assets/volumes/images
+    type: craft\awss3\Fs
+    url: $S3_BASE_URL
 meta:
   __names__:
     0b3ab84a-728c-4dfa-b505-ee524b9631d9: Home # Home
@@ -116,7 +136,7 @@ plugins:
   aws-s3:
     edition: standard
     enabled: true
-    schemaVersion: '1.2'
+    schemaVersion: '2.0'
   default-dashboard:
     edition: standard
     enabled: true
@@ -246,7 +266,7 @@ plugins:
   typedlinkfield:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 2.0.0
   typogrify:
     edition: standard
     enabled: true
@@ -256,5 +276,5 @@ system:
   live: true
   name: 'Europa Museum'
   retryDuration: null
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.5
   timeZone: America/Los_Angeles

@@ -24,9 +24,10 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\TitleField
+            uid: 1b73d6e4-5373-4655-89da-9743f41255ec
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 6fcf2489-8132-41b3-a21e-f5408389ccea
 handle: demoTags
 name: 'Demo Tags'

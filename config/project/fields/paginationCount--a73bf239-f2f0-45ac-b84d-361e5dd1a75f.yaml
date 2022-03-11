@@ -6,7 +6,6 @@ instructions: 'The max number of news articles to display per page.'
 name: 'Pagination Count'
 searchable: true
 settings:
-  optgroups: true
   options:
     -
       __assoc__:

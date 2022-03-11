@@ -7,9 +7,10 @@ name: 'Featured Exhibits'
 searchable: true
 settings:
   allowSelfRelations: false
-  limit: '4'
   localizeRelations: false
-  selectionLabel: ''
+  maxRelations: 4
+  minRelations: null
+  selectionLabel: null
   showSiteMenu: true
   source: null
   sources:

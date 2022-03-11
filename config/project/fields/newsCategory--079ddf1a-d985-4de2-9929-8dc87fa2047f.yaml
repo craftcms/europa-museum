@@ -2,17 +2,18 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: c0ba2861-5497-46d7-86b4-71dcb76f2a16 # News Articles
 handle: newsCategory
-instructions: ''
+instructions: null
 name: 'News Category'
 searchable: true
 settings:
   allowLimit: false
   allowMultipleSources: false
   allowSelfRelations: false
-  branchLimit: '1'
-  limit: null
+  branchLimit: 1
   localizeRelations: false
-  selectionLabel: ''
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
   showSiteMenu: true
   source: 'group:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
   sources: '*'

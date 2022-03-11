@@ -11,26 +11,27 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 6e2b7c6a-268f-4e5e-8937-fc17c5b5e38e
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: f6fd8c78-a3eb-4219-8c73-55c6c89c190c
 fields:
   b28c567f-a9f9-4d96-848b-1de28c643417: # __blank__
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: heading
-    instructions: ''
+    instructions: null
     name: __blank__
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null

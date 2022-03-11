@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 09fd8132-5639-4a40-9e20-286d85d3b031
             warning: null
             width: 100
           -
@@ -20,6 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 279a182a-5491-4d0b-8fa5-9574c8cec914
             warning: null
             width: 100
           -
@@ -29,6 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d82a3af3-21ff-411a-ba0e-cb274e6ae98e
             warning: null
             width: 100
           -
@@ -38,6 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5425b8f2-a1aa-4706-9b8e-2a4c3462a4b3
             warning: null
             width: 100
           -
@@ -47,6 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: fba6ff79-8b37-45fe-9b22-cec340091674
             warning: null
             width: 100
           -
@@ -56,6 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2d87841c-b748-4950-8f6b-b820557a4520
             warning: null
             width: 100
           -
@@ -65,26 +71,27 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ce69f27e-93e6-46f4-a337-36a15cf3b3ec
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 3c0a0d72-a79a-47de-adc1-9b60d82ca555
 fields:
   4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d: # Heading
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: heading
-    instructions: ''
+    instructions: null
     name: Heading
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -95,30 +102,33 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: slideImages
-    instructions: ''
+    instructions: null
     name: 'Slide Images'
     searchable: true
     settings:
       allowSelfRelations: false
+      allowSubfolders: false
       allowUploads: true
       allowedKinds:
         - image
       defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-      defaultUploadLocationSubpath: ''
-      limit: ''
+      defaultUploadLocationSubpath: null
       localizeRelations: false
+      maxRelations: null
+      minRelations: null
       previewMode: full
-      restrictFiles: '1'
-      selectionLabel: ''
+      restrictFiles: true
+      restrictLocation: true
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+      restrictedLocationSubpath: null
+      selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
-      singleUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-      singleUploadLocationSubpath: ''
       source: null
       sources: '*'
       targetSiteId: null
-      useSingleFolder: true
       validateRelatedElements: false
       viewMode: large
     translationKeyFormat: null
@@ -129,14 +139,15 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: slideEntries
-    instructions: ''
+    instructions: null
     name: 'Slide Entries'
     searchable: true
     settings:
       allowSelfRelations: false
-      limit: ''
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: null
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: true
       source: null
       sources: '*'
@@ -151,7 +162,7 @@ fields:
     contentColumnType: boolean
     fieldGroup: null
     handle: darkUI
-    instructions: ''
+    instructions: null
     name: 'Dark UI'
     searchable: true
     settings:
@@ -166,16 +177,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: ctaLinkText
-    instructions: ''
+    instructions: null
     name: 'CTA Link Text'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -201,14 +212,15 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: ctaLink
-    instructions: ''
+    instructions: null
     name: 'CTA Link'
     searchable: true
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: true
       source: null
       sources: '*'

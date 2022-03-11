@@ -2,16 +2,16 @@ columnSuffix: null
 contentColumnType: text
 fieldGroup: 71a8e9e8-3d7d-4ceb-91f8-482de5453eab # Home
 handle: heading
-instructions: ''
+instructions: null
 name: Heading
 searchable: true
 settings:
   byteLimit: null
   charLimit: null
-  code: ''
+  code: false
   columnType: null
-  initialRows: '4'
-  multiline: ''
+  initialRows: 4
+  multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null

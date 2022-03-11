@@ -11,6 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 869ad838-a932-449d-a9e1-61f1101eb885
             warning: null
             width: 100
           -
@@ -20,6 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: aa1c0a22-7b56-4fd7-b38a-ae97b38fced1
             warning: null
             width: 100
           -
@@ -29,6 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 28389f4b-62e5-4a4f-9c48-dbc416e775b4
             warning: null
             width: 100
           -
@@ -38,6 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e4b01aa3-24b9-426c-a20d-e0a3be927724
             warning: null
             width: 100
           -
@@ -47,6 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3c46fc65-3773-4b43-a30c-76dcc9b2b073
             warning: null
             width: 100
           -
@@ -56,6 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 83db703f-b719-4d8f-853c-5ce2b0f3a2be
             warning: null
             width: 100
           -
@@ -65,17 +71,18 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e7c57ca7-5f3b-42e3-9c33-18e9573fad1a
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 8e6c3502-8203-4d4f-a932-fa343b17b998
 fields:
   0ba28a66-d3aa-4c97-ad77-8e26087b3d70: # Narrow Width
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
     handle: narrowWidth
-    instructions: ''
+    instructions: null
     name: 'Narrow Width'
     searchable: true
     settings:
@@ -90,14 +97,15 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: internalLink
-    instructions: ''
+    instructions: null
     name: 'Internal Link'
     searchable: true
     settings:
       allowSelfRelations: false
-      limit: '1'
       localizeRelations: false
-      selectionLabel: ''
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
       showSiteMenu: true
       source: null
       sources: '*'
@@ -112,16 +120,16 @@ fields:
     contentColumnType: text
     fieldGroup: null
     handle: linkLabel
-    instructions: ''
+    instructions: null
     name: 'Link Label'
     searchable: true
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -138,10 +146,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -158,10 +166,10 @@ fields:
     settings:
       byteLimit: null
       charLimit: null
-      code: ''
+      code: false
       columnType: null
-      initialRows: '4'
-      multiline: ''
+      initialRows: 4
+      multiline: false
       placeholder: null
       uiMode: normal
     translationKeyFormat: null
@@ -172,11 +180,10 @@ fields:
     contentColumnType: string
     fieldGroup: null
     handle: linkIcon
-    instructions: ''
+    instructions: null
     name: 'Link Icon'
     searchable: true
     settings:
-      optgroups: true
       options:
         -
           __assoc__:
@@ -274,12 +281,11 @@ fields:
     contentColumnType: string(255)
     fieldGroup: null
     handle: externalLink
-    instructions: ''
+    instructions: null
     name: 'External Link'
     searchable: true
     settings:
-      maxLength: '255'
-      placeholder: ''
+      maxLength: 255
       types:
         - url
     translationKeyFormat: null

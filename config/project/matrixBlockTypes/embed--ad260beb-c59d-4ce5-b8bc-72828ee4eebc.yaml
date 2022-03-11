@@ -11,24 +11,27 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 728454ec-f7c5-4150-b280-3824ff557e01
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 97892947-fde5-4846-8b20-a07b4c84206f
 fields:
   c88dc31c-dfde-42c6-93df-6af9d0c907b8: # URL
     columnSuffix: null
-    contentColumnType: text
+    contentColumnType: string
     fieldGroup: null
     handle: embed
     instructions: 'Enter a URL link to Twitter tweet, Instagram post, YouTube video, and more.'
     name: URL
     searchable: false
     settings:
-      url: ''
+      errorMessage: 'Unable to find component class ''wrav\oembed\fields\OembedField''.'
+      expectedType: wrav\oembed\fields\OembedField
+      settings: '{"url":""}'
     translationKeyFormat: null
     translationMethod: none
-    type: wrav\oembed\fields\OembedField
+    type: craft\fields\MissingField
 handle: embed
 name: 'Social Embed'
 sortOrder: 9

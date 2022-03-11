@@ -2,31 +2,34 @@ columnSuffix: null
 contentColumnType: string
 fieldGroup: 1bff9c9f-5c93-4679-967d-0f9095c856fa # Common
 handle: heroImage
-instructions: ''
+instructions: null
 name: 'Hero Image'
 searchable: true
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds:
     - image
   defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maxRelations: 1
+  minRelations: null
   previewMode: full
-  restrictFiles: '1'
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  restrictedLocationSubpath: null
   selectionLabel: 'Add an image'
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
-  singleUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-  singleUploadLocationSubpath: ''
   source: null
   sources:
     - 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   targetSiteId: null
-  useSingleFolder: false
   validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null

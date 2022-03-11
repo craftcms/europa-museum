@@ -23,7 +23,8 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\EntryTitleField
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 686f451a-6e36-49dc-8f55-4a151f13b881
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e5a21f51-f455-4e85-9c1d-62ef4fe7d4e1
             warning: null
             width: 100
           -
@@ -42,6 +44,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ac3ebe84-524f-4c71-aa8f-01341cff2135
             warning: null
             width: 100
           -
@@ -51,6 +54,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 2cc8df8d-6e02-41ab-b74d-40fe13d9fcf4
             warning: null
             width: 100
           -
@@ -60,6 +64,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 576f4008-5939-48d5-a334-b91d5f797159
             warning: null
             width: 100
           -
@@ -69,23 +74,89 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: bdb08d6e-0fa6-45f8-99b7-b4842722e2b6
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: cbd49574-dbbb-4022-bf6a-e0fd5fdf168d
       -
         elements:
           -
-            fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b37a2acc-5174-45e5-b2cc-cdffe271ce11
+            warning: null
+            width: 100
+          -
+            fieldUid: c3286b59-368a-4fdf-8dbe-48084247c9e2 # Featured Exhibits
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e7a9521f-f8f1-48fd-8898-fa7a58b4fce4
             warning: null
             width: 100
-        name: SEO
-        sortOrder: 2
+          -
+            fieldUid: 079ddf1a-d985-4de2-9929-8dc87fa2047f # News Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89d87cce-a1a7-4641-a92b-fa1959da14ba
+            warning: null
+            width: 100
+          -
+            fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 52064706-b3e7-4452-abb1-122e60c84415
+            warning: null
+            width: 100
+          -
+            fieldUid: 59eb8fe2-8081-44bc-82ee-b7bc5f91c4ec # Summary
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 063bcfb9-9aa8-430d-8a0e-215a56d8aa49
+            warning: null
+            width: 100
+          -
+            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a1b38e9b-6c3f-4818-bc2e-f14dc8001fe7
+            warning: null
+            width: 100
+        name: Content
+        uid: 51600b4d-93ee-4ae9-ba59-ad0aca7ac509
 handle: newsArticle
 hasTitleField: true
 name: 'News Article'
