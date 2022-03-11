@@ -1,4 +1,4 @@
-dateModified: 1647008438
+dateModified: 1647020438
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -270,6 +270,10 @@ plugins:
     enabled: true
     licenseKey: F05LKTHK735ZMFRL0LNY2YWC
     schemaVersion: 3.0.11
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   typedlinkfield:
     edition: standard
     enabled: true
