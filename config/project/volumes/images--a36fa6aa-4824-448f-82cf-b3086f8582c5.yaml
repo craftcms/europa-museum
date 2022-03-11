@@ -24,7 +24,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
-            uid: c551bb45-d1b7-4771-b83b-3f09873964e2
+            uid: 1870920a-f914-44ad-84a9-4776221a20cb
             warning: null
             width: 100
           -
@@ -34,7 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2198fb68-6a27-4abb-8b41-caaac72a895d
+            uid: 598c94f7-e776-4d48-9ff9-f1b651322382
             warning: null
             width: 100
           -
@@ -44,12 +44,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5076c968-98ab-49e8-babd-4f6aac52ea87
+            uid: d49ce2f7-c5a1-462e-94c3-450511885b4e
             warning: null
             width: 100
         name: Content
         uid: 64b711a5-b7a8-4dea-a6a9-4a8788e9a310
-fs: images
+fs: $FS_HANDLE
 handle: images
 name: Images
 sortOrder: 1

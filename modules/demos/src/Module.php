@@ -26,6 +26,10 @@ class Module extends \yii\base\Module
 
         parent::init();
 
+        if (!App::env('FS_HANDLE') && !App::env('S3_BUCKET')) {
+            putenv('FS_HANDLE=imagesLocal');
+        }
+
         Event::on(
             View::class,
             View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,

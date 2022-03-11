@@ -1,4 +1,4 @@
-dateModified: 1646972951
+dateModified: 1647008438
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -35,7 +35,7 @@ fs:
     url: $S3_BASE_URL
   imagesLocal:
     hasUrls: true
-    name: Images
+    name: 'Images (local)'
     settings:
       path: '@webroot/assets/volumes/images'
     type: craft\fs\Local
