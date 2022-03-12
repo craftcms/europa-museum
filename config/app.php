@@ -27,13 +27,19 @@ if ($table = App::env('DYNAMODB_TABLE_CACHE')) {
         'class' => DynamoDbCache::class,
         'table' => $table,
         'region' => App::env('AWS_REGION'),
+        'endpoint' => App::env('DYNAMODB_ENDPOINT') ?: null,
     ];
 }
 
 if ($table = App::env('DYNAMODB_TABLE_SESSION')) {
-    $components['session'] = static function() {
+    $components['session'] = static function() use ($table) {
         return Craft::createObject(
-            ['class' => DbSession::class] + App::sessionConfig(),
+            [
+                'class' => DynamoDbSession::class,
+                'table' => $table,
+                'region' => App::env('AWS_REGION'),
+                'endpoint' => App::env('DYNAMODB_ENDPOINT') ?: null,
+            ] + App::sessionConfig(),
         );
     };
 }
