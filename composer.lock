@@ -4242,12 +4242,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pixelandtonic/yii2-dynamodb.git",
-                "reference": "2a76b18e4933c31c66adc727f6fc5688a641e46c"
+                "reference": "ef109632a2f939bcd454c6602aec9c512fefa97e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pixelandtonic/yii2-dynamodb/zipball/2a76b18e4933c31c66adc727f6fc5688a641e46c",
-                "reference": "2a76b18e4933c31c66adc727f6fc5688a641e46c",
+                "url": "https://api.github.com/repos/pixelandtonic/yii2-dynamodb/zipball/ef109632a2f939bcd454c6602aec9c512fefa97e",
+                "reference": "ef109632a2f939bcd454c6602aec9c512fefa97e",
                 "shasum": ""
             },
             "require": {
@@ -4289,7 +4289,7 @@
                 "issues": "https://github.com/pixelandtonic/yii2-dynamodb/issues?state=open",
                 "source": "https://github.com/pixelandtonic/yii2-dynamodb"
             },
-            "time": "2022-03-12T01:50:49+00:00"
+            "time": "2022-03-13T16:14:00+00:00"
         },
         {
             "name": "psr/container",

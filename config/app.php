@@ -16,7 +16,6 @@
 use craft\helpers\App;
 use \pixelandtonic\dynamodb\drivers\DynamoDbSession;
 use \pixelandtonic\dynamodb\drivers\DynamoDbCache;
-use yii\web\DbSession;
 
 $components = [
     'mailer' => null,
