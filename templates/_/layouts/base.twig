@@ -34,7 +34,7 @@
             {% set inline_css =  block("inline_css") is defined ? block("inline_css") : "" %}
         {% endif %}
         {% if inline_css|trim is not empty %}
-            <style>{{ inline_css | raw }}</style>
+            <style>{{ inline_css | raw | replace({'/assets/dist/': alias('@assetBaseUrl/assets/dist/')}) }}</style>
             {{ craft.twigpack.includeCssModule('/css/site.css', true) }}
         {% else %}
             {{ craft.twigpack.includeCssModule('/css/site.css', false) }}
