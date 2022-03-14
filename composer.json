@@ -24,12 +24,12 @@
         "craftcms/cms": "4.0.x-dev",
         "craftcms/redactor": "3.0.x-dev",
         "fakerphp/faker": "^1.14",
-        "misterbk/mix": "^1.5.2",
         "nystudio107/craft-seomatic": "^3.3.44",
+        "nystudio107/craft-twigpack": "^1.2",
         "nystudio107/craft-typogrify": "^1.1.18",
-        "sebastianlenz/linkfield": "^1.0.19",
+        "pixelandtonic/yii2-dynamodb": "dev-develop",
+        "sebastianlenz/linkfield": "^2.0.0-rc.2",
         "solspace/craft-freeform": "^3.11.9",
-        "spacecatninja/imager-x": "^3.3",
         "verbb/default-dashboard": "^1.0",
         "vlucas/phpdotenv": "^3.4.0",
         "wbrowar/guide": "^2.2",
@@ -45,6 +45,10 @@
         "optimize-autoloader": true,
         "platform": {
             "php": "8.0.2"
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
         }
     },
     "scripts": {
