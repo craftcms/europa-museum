@@ -3,12 +3,8 @@
 namespace modules\demos;
 
 use Craft;
-
-use craft\awss3\Volume as AwsVolume;
-use craft\volumes\Local as LocalVolume;
 use craft\events\RegisterTemplateRootsEvent;
 use craft\helpers\App;
-use yii\web\Response;
 use craft\web\View;
 use yii\base\Event;
 

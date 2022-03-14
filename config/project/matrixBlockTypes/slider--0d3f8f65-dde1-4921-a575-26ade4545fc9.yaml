@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: da45dac8-cc77-4f5f-bcd1-54511bdd90dd
+            uid: b07a2cc5-1456-407e-9226-bf0cad7d11d6
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1885a237-dd57-4f40-bdf9-4c87e4534bb0
+            uid: 77903208-295b-47e4-9f4c-b4f9e6baa95f
             warning: null
             width: 100
           -
@@ -31,7 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: cf1e9a09-de8c-450b-b7bd-d8e409d25bbd
+            uid: c5bd4d07-14e2-46a6-af0e-bcfe74fabe8b
             warning: null
             width: 100
           -
@@ -41,7 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0c2f383a-89b6-4d1f-9fca-933e6333ed87
+            uid: b8be8189-563c-449a-a7cf-bc40d8cc6421
             warning: null
             width: 100
           -
@@ -51,7 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b916a4da-0b04-4d1d-ab37-9478a48fcb3c
+            uid: 9f3861bd-a0ce-4e70-a654-6b532f640ca6
             warning: null
             width: 100
           -
@@ -61,7 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 24a931fd-05fe-4305-b154-a9a777170333
+            uid: 24d017d2-0892-4d77-8e37-8e6bb2a7141f
             warning: null
             width: 100
           -
@@ -71,7 +71,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1279c2dd-cab6-4db5-81df-456f8d01e7ac
+            uid: 33eca5a4-b557-4128-8cc8-02c375be3778
             warning: null
             width: 100
         name: Content
