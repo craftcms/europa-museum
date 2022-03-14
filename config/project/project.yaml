@@ -1,4 +1,4 @@
-dateModified: 1647024485
+dateModified: 1647277489
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -250,7 +250,7 @@ plugins:
   typedlinkfield:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
+    schemaVersion: 2.0.0
   typogrify:
     edition: standard
     enabled: true
