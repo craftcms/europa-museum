@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 819a2e23-0d42-4aa1-9e3e-a3f25f5c3c7a
+            uid: 3a71e096-656b-4144-a583-770635c2ffb0
             warning: null
             width: 100
         name: Content
@@ -39,4 +39,4 @@ fields:
     type: craft\fields\PlainText
 handle: googleMapEmbed
 name: 'Google Map Embed'
-sortOrder: 10
+sortOrder: 9

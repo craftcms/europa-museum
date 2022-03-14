@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 66703fca-9778-486d-9d74-872f766cf5ee
+            uid: edcbd4b7-074b-4dc9-a32c-502e0901ee22
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6b745a70-edca-4526-88d4-4f62b502a66c
+            uid: 38292e97-1655-44c7-8586-71f94097db49
             warning: null
             width: 100
         name: Content
@@ -40,6 +40,17 @@ fields:
       localizeRelations: false
       maxRelations: 1
       minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: true
       source: null
@@ -65,25 +76,25 @@ fields:
         -
           __assoc__:
             -
-              - default
-              - '1'
-            -
               - label
               - 'Black Text'
             -
               - value
               - blackText
-        -
-          __assoc__:
             -
               - default
-              - ''
+              - '1'
+        -
+          __assoc__:
             -
               - label
               - 'White Text'
             -
               - value
               - whiteText
+            -
+              - default
+              - ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons

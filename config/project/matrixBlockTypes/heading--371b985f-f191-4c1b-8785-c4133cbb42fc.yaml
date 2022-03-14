@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6e2b7c6a-268f-4e5e-8937-fc17c5b5e38e
+            uid: 3ed14108-cae0-420a-9e20-6667bbce1cbb
             warning: null
             width: 100
         name: Content

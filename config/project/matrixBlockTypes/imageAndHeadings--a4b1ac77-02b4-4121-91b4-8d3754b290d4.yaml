@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8f273b7f-79d4-4739-9d25-7b8412b4946c
+            uid: d930a07e-fec8-4a39-b8d8-67afa68cf216
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c4acaa92-22cd-48ef-baa3-f4621130ac77
+            uid: 66e560be-0404-4eb3-908b-9afc28a87dc0
             warning: null
             width: 100
           -
@@ -31,7 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1d859196-b889-4127-bcbc-3dcbee616394
+            uid: 2e71131f-4a96-432a-9eae-a000a328b656
             warning: null
             width: 100
           -
@@ -41,7 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 1ab52350-6442-4381-9859-89a83962b703
+            uid: fe51f04f-6e8e-4100-8c74-aefea8cf3693
             warning: null
             width: 100
           -
@@ -51,7 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5cfb2aa7-674b-4124-9965-b3da66892e67
+            uid: 9d1bac0d-6972-4d13-a5db-adab5eafa175
             warning: null
             width: 100
           -
@@ -61,7 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 63d4d63c-9e39-4289-935b-073a5cf7d39f
+            uid: f918c10d-a96d-4e9b-afc6-2559fe2f22b7
             warning: null
             width: 100
         name: Content
@@ -80,25 +80,25 @@ fields:
         -
           __assoc__:
             -
-              - default
-              - '1'
-            -
               - label
               - 'Black Text'
             -
               - value
               - blackText
-        -
-          __assoc__:
             -
               - default
-              - ''
+              - '1'
+        -
+          __assoc__:
             -
               - label
               - 'White Text'
             -
               - value
               - whiteText
+            -
+              - default
+              - ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons
@@ -182,6 +182,17 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
       restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false

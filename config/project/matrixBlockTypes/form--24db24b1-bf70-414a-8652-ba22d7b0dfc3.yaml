@@ -11,7 +11,7 @@ fieldLayouts:
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 56148128-96bc-4a82-bd9e-79c2e3d0c819
+            uid: 66b48375-8ebc-4ac1-a90f-1612a796123d
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b126236b-0d40-4260-bc17-a9e3bffa8b9e
+            uid: fefcdc15-6b14-41a2-9120-f76bfe2267cf
             warning: null
             width: 100
         name: Content
@@ -49,19 +49,15 @@ fields:
     type: craft\fields\PlainText
   e44383bb-8f5a-4b3b-9114-30a955feb64c: # Form
     columnSuffix: null
-    contentColumnType: string
+    contentColumnType: integer
     fieldGroup: null
     handle: form
     instructions: null
     name: Form
     searchable: true
-    settings:
-      errorMessage: 'Unable to find component class ''Solspace\Freeform\FieldTypes\FormFieldType''.'
-      expectedType: Solspace\Freeform\FieldTypes\FormFieldType
-      settings: null
     translationKeyFormat: null
     translationMethod: none
-    type: craft\fields\MissingField
+    type: Solspace\Freeform\FieldTypes\FormFieldType
 handle: form
 name: Form
 sortOrder: 8

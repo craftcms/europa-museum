@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 85b05ca9-ec1e-45e0-b7f2-747be498de2a
+            uid: 4c2be6ea-2a09-44df-9be8-f475bd0eb058
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a8a128dc-8e50-4ac0-8325-6a11440c3ef7
+            uid: 0d4ec1e0-8c6a-40a9-b6b9-372cbd4f4d8e
             warning: null
             width: 100
           -
@@ -31,7 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4870ff22-b392-4a99-a5d2-34321d2cc011
+            uid: 49187e0a-e841-4b32-a971-9a3fc3c04f56
             warning: null
             width: 100
           -
@@ -41,7 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f543d55a-941f-4a04-9b09-84b754ba482d
+            uid: fdbb6fae-bcb2-407a-88ca-bc8e5f090636
             warning: null
             width: 100
         name: Content
@@ -57,8 +57,7 @@ fields:
     searchable: true
     settings:
       availableTransforms: '*'
-      availableVolumes:
-        - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
+      availableVolumes: '*'
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
@@ -89,36 +88,36 @@ fields:
         -
           __assoc__:
             -
-              - default
-              - ''
-            -
               - label
               - 'Image Left'
             -
               - value
               - imageLeft
-        -
-          __assoc__:
             -
               - default
-              - '1'
+              - ''
+        -
+          __assoc__:
             -
               - label
               - 'Image Full Width'
             -
               - value
               - imageFullWidth
-        -
-          __assoc__:
             -
               - default
-              - ''
+              - '1'
+        -
+          __assoc__:
             -
               - label
               - 'Image Right'
             -
               - value
               - imageRight
+            -
+              - default
+              - ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons

@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 869ad838-a932-449d-a9e1-61f1101eb885
+            uid: 861464a8-1c62-49d2-a00d-21d6afaf0543
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: aa1c0a22-7b56-4fd7-b38a-ae97b38fced1
+            uid: 9df8c6ea-a79d-41ae-9b12-4bb93ddc58ea
             warning: null
             width: 100
           -
@@ -31,7 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 28389f4b-62e5-4a4f-9c48-dbc416e775b4
+            uid: 276aebab-9b58-4ee8-98f5-7796a6e268dc
             warning: null
             width: 100
           -
@@ -41,7 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e4b01aa3-24b9-426c-a20d-e0a3be927724
+            uid: cdada8b0-1a18-425d-9067-58cda4dc2808
             warning: null
             width: 100
           -
@@ -51,7 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3c46fc65-3773-4b43-a30c-76dcc9b2b073
+            uid: cd7d43c9-cb06-4f79-af1d-092c64ce3781
             warning: null
             width: 100
           -
@@ -61,7 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 83db703f-b719-4d8f-853c-5ce2b0f3a2be
+            uid: 714c728f-23a0-44b3-a897-348e177d760f
             warning: null
             width: 100
           -
@@ -71,7 +71,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e7c57ca7-5f3b-42e3-9c33-18e9573fad1a
+            uid: fd374c3f-1e43-4faf-830c-3f4190f1d6f4
             warning: null
             width: 100
         name: Content
@@ -105,6 +105,17 @@ fields:
       localizeRelations: false
       maxRelations: 1
       minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: true
       source: null
@@ -188,91 +199,91 @@ fields:
         -
           __assoc__:
             -
-              - default
-              - '1'
-            -
               - label
               - None
             -
               - value
               - none
-        -
-          __assoc__:
             -
               - default
-              - ''
+              - '1'
+        -
+          __assoc__:
             -
               - label
               - 'Arrow - Left'
             -
               - value
               - arrowLeft
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - 'Arrow - Right'
             -
               - value
               - arrowRight
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - 'Arrow - Up'
             -
               - value
               - arrowUp
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - 'Arrow - Down'
             -
               - value
               - arrowDown
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - Brochure
             -
               - value
               - brochure
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - 'Map Pin'
             -
               - value
               - mapPin
-        -
-          __assoc__:
             -
               - default
               - ''
+        -
+          __assoc__:
             -
               - label
               - News
             -
               - value
               - news
+            -
+              - default
+              - ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown

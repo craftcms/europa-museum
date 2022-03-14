@@ -28,6 +28,7 @@
         "nystudio107/craft-twigpack": "^4.0.0-beta.2",
         "nystudio107/craft-typogrify": "^4.0.0-beta.2",
         "sebastianlenz/linkfield": "dev-craft4 as 2.0",
+        "solspace/craft-freeform": "dev-craft4 as 3.11.9",
         "verbb/default-dashboard": "dev-craft-4",
         "vlucas/phpdotenv": "^3.4.0"
     },

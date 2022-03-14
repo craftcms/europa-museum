@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 242e0e5b-1a38-4ac1-9799-ec159f11b9ff
+            uid: cb8ce267-9141-498f-be49-f8b54766e7fc
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 254c6308-6a4a-4c97-b455-92208117209d
+            uid: 1cdc7051-0341-4be2-a768-2f99f3357c16
             warning: null
             width: 100
           -
@@ -31,7 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3da2eb88-49f2-43f2-941e-784a89d520e9
+            uid: 642ac5be-2bb1-4d99-bd10-5b5e8d3d646e
             warning: null
             width: 100
           -
@@ -41,7 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4a79c153-3215-4d4c-8d21-4de5707648a1
+            uid: 9b8c4a42-98a8-407f-b9dd-a61ad4fde8ed
             warning: null
             width: 100
           -
@@ -51,7 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e664ea70-6eb4-4b59-855d-006785c381db
+            uid: 4048f0b9-e7ff-4afa-8449-3e4f75b0c017
             warning: null
             width: 100
           -
@@ -61,7 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: bd5488f4-d61b-42c0-aaeb-56645cc2db94
+            uid: 746f5e2a-0f47-425d-ac49-a8700397ff48
             warning: null
             width: 100
           -
@@ -71,7 +71,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 947ecc95-c90a-4075-9b4f-c0a21a97b069
+            uid: a86c8ccb-2322-4516-b763-15bff9733473
             warning: null
             width: 100
           -
@@ -81,7 +81,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2b3d17c8-4595-4726-8f68-622ff72515f7
+            uid: 904565f8-62be-4817-b758-cdbbb59c7aab
             warning: null
             width: 100
           -
@@ -91,7 +91,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5d41e49a-a8bb-404e-a36d-5a687a0bb8cb
+            uid: 4bec4ef8-2562-40e4-a452-e42c4f0fe779
             warning: null
             width: 100
           -
@@ -101,7 +101,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 74bf588a-7119-4d19-b468-353cfb5a6691
+            uid: 9bb2b23a-8bbb-441e-966e-bc0392489f40
             warning: null
             width: 100
         name: Content
@@ -152,6 +152,17 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
       restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
@@ -289,7 +300,7 @@ fields:
     searchable: true
     settings:
       availableTransforms: '*'
-      availableVolumes: ''
+      availableVolumes: '*'
       columnType: text
       configSelectionMode: choose
       defaultTransform: ''
@@ -320,6 +331,17 @@ fields:
       localizeRelations: false
       maxRelations: 1
       minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: true
       source: null

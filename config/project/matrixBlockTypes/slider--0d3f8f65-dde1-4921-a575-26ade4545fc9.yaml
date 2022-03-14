@@ -11,7 +11,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 09fd8132-5639-4a40-9e20-286d85d3b031
+            uid: da45dac8-cc77-4f5f-bcd1-54511bdd90dd
             warning: null
             width: 100
           -
@@ -21,7 +21,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 279a182a-5491-4d0b-8fa5-9574c8cec914
+            uid: 1885a237-dd57-4f40-bdf9-4c87e4534bb0
             warning: null
             width: 100
           -
@@ -31,7 +31,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d82a3af3-21ff-411a-ba0e-cb274e6ae98e
+            uid: cf1e9a09-de8c-450b-b7bd-d8e409d25bbd
             warning: null
             width: 100
           -
@@ -41,7 +41,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5425b8f2-a1aa-4706-9b8e-2a4c3462a4b3
+            uid: 0c2f383a-89b6-4d1f-9fca-933e6333ed87
             warning: null
             width: 100
           -
@@ -51,7 +51,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fba6ff79-8b37-45fe-9b22-cec340091674
+            uid: b916a4da-0b04-4d1d-ab37-9478a48fcb3c
             warning: null
             width: 100
           -
@@ -61,7 +61,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2d87841c-b748-4950-8f6b-b820557a4520
+            uid: 24a931fd-05fe-4305-b154-a9a777170333
             warning: null
             width: 100
           -
@@ -71,7 +71,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ce69f27e-93e6-46f4-a337-36a15cf3b3ec
+            uid: 1279c2dd-cab6-4db5-81df-456f8d01e7ac
             warning: null
             width: 100
         name: Content
@@ -122,6 +122,17 @@ fields:
       restrictedDefaultUploadSubpath: null
       restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
       restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
       selectionLabel: null
       showSiteMenu: true
       showUnpermittedFiles: false
@@ -147,6 +158,17 @@ fields:
       localizeRelations: false
       maxRelations: null
       minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: true
       source: null
@@ -220,6 +242,17 @@ fields:
       localizeRelations: false
       maxRelations: 1
       minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
       showSiteMenu: true
       source: null
