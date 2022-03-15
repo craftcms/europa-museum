@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83bad1b3302c119ca27493cae0944e84",
+    "content-hash": "b9f4618a0414b03173527ff5522773fb",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -814,16 +814,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.36",
+            "version": "dev-remove-thumb-catch",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "4bb6e9ec02077d18f8692bf50d26afc51596e4b9"
+                "reference": "17cca22013d03e400bd708704f72b9d6c507cd39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/4bb6e9ec02077d18f8692bf50d26afc51596e4b9",
-                "reference": "4bb6e9ec02077d18f8692bf50d26afc51596e4b9",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/17cca22013d03e400bd708704f72b9d6c507cd39",
+                "reference": "17cca22013d03e400bd708704f72b9d6c507cd39",
                 "shasum": ""
             },
             "require": {
@@ -877,6 +877,7 @@
                 "codeception/module-phpbrowser": "^1.0.0",
                 "codeception/module-rest": "^1.0.0",
                 "codeception/module-yii2": "^1.0.0",
+                "craftcms/ecs": "dev-main",
                 "fzaninotto/faker": "^1.8",
                 "league/factory-muffin": "^3.0",
                 "vlucas/phpdotenv": "^3.0"
@@ -919,7 +920,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-03-03T17:34:56+00:00"
+            "time": "2022-03-14T22:08:30+00:00"
         },
         {
             "name": "craftcms/html-field",
@@ -8547,9 +8548,17 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cms",
+            "version": "dev-remove-thumb-catch",
+            "alias": "3.7.36",
+            "alias_normalized": "3.7.36.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
+        "craftcms/cms": 20,
         "pixelandtonic/yii2-dynamodb": 20,
         "sebastianlenz/linkfield": 5
     },
