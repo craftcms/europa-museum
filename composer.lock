@@ -2289,7 +2289,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.5.0",
+            "version": "v9.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -2344,7 +2344,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.5.0",
+            "version": "v9.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2390,7 +2390,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.5.0",
+            "version": "v9.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2438,7 +2438,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.5.0",
+            "version": "v9.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
