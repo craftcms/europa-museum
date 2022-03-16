@@ -5,8 +5,6 @@ namespace modules\demos;
 use Craft;
 
 use craft\awss3\Volume as AwsVolume;
-use craft\events\AssetThumbEvent;
-use craft\services\Assets;
 use craft\volumes\Local as LocalVolume;
 use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
@@ -42,16 +40,6 @@ class Module extends \yii\base\Module
                 $event->roots['modules'] = __DIR__ . '/templates';
             }
         );
-
-        Event::on(
-            Assets::class,
-            Assets::EVENT_GET_THUMB_PATH,
-            function (AssetThumbEvent $event) {
-                Craft::error('disk_free_space: ' . disk_free_space('/tmp'));
-                Craft::error('disk_total_space: ' . disk_total_space('/tmp'));
-            }
-        );
-
     }
 
     private function _useLocalVolumes()
