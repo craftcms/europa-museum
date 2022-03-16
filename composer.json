@@ -27,6 +27,7 @@
         "nystudio107/craft-seomatic": "dev-develop-v4 as 4.0.0-beta.4",
         "nystudio107/craft-twigpack": "^4.0.0-beta.2",
         "nystudio107/craft-typogrify": "^4.0.0-beta.2",
+        "pixelandtonic/yii2-dynamodb": "dev-develop",
         "sebastianlenz/linkfield": "dev-craft4 as 2.0",
         "solspace/craft-freeform": "dev-craft4 as 3.11.9",
         "verbb/default-dashboard": "dev-craft-4",

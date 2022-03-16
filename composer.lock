@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3291c1408435ec5b99b4cac07866e8db",
+    "content-hash": "2aa57028048b5be3a0761be8a89c5366",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -885,12 +885,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "24a6a122126d0474f28ea05611e68dc231de5475"
+                "reference": "b80433aac6a85f762fa4977e5f14924495a1f02c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/24a6a122126d0474f28ea05611e68dc231de5475",
-                "reference": "24a6a122126d0474f28ea05611e68dc231de5475",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/b80433aac6a85f762fa4977e5f14924495a1f02c",
+                "reference": "b80433aac6a85f762fa4977e5f14924495a1f02c",
                 "shasum": ""
             },
             "require": {
@@ -995,7 +995,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-03-16T14:35:50+00:00"
+            "time": "2022-03-16T15:03:59+00:00"
         },
         {
             "name": "craftcms/craft-flysystem",
@@ -4459,6 +4459,61 @@
                 "source": "https://github.com/pixelandtonic/Imagine/tree/1.2.4.2"
             },
             "time": "2021-06-22T18:26:46+00:00"
+        },
+        {
+            "name": "pixelandtonic/yii2-dynamodb",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pixelandtonic/yii2-dynamodb.git",
+                "reference": "ef109632a2f939bcd454c6602aec9c512fefa97e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pixelandtonic/yii2-dynamodb/zipball/ef109632a2f939bcd454c6602aec9c512fefa97e",
+                "reference": "ef109632a2f939bcd454c6602aec9c512fefa97e",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": ">=2.4",
+                "ext-json": "*",
+                "yiisoft/yii2": "~2.0.14",
+                "yiisoft/yii2-queue": "^2.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "pixelandtonic\\dynamodb\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Yii2 implementation of a cache, session, and queue driver for DynamoDB",
+            "keywords": [
+                "cache",
+                "dynamodb",
+                "queue",
+                "session",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/pixelandtonic/yii2-dynamodb/blob/README.md",
+                "email": "support@pixelandtonic.com",
+                "issues": "https://github.com/pixelandtonic/yii2-dynamodb/issues?state=open",
+                "source": "https://github.com/pixelandtonic/yii2-dynamodb"
+            },
+            "time": "2022-03-13T16:14:00+00:00"
         },
         {
             "name": "psr/container",
@@ -9260,6 +9315,7 @@
         "craftcms/cms": 20,
         "craftcms/redactor": 20,
         "nystudio107/craft-seomatic": 20,
+        "pixelandtonic/yii2-dynamodb": 20,
         "sebastianlenz/linkfield": 20,
         "solspace/craft-freeform": 20,
         "verbb/default-dashboard": 20
