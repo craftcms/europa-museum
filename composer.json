@@ -33,7 +33,8 @@
         "verbb/default-dashboard": "^1.0",
         "vlucas/phpdotenv": "^3.4.0",
         "wbrowar/guide": "^2.2",
-        "wrav/oembed": "^1.3.9"
+        "wrav/oembed": "^1.3.9",
+        "league/flysystem-aws-s3-v3": "dev-hack-in-exception as 1.0.29"
     },
     "autoload": {
         "psr-4": {
@@ -51,6 +52,12 @@
             "craftcms/plugin-installer": true
         }
     },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/timkelty/flysystem-aws-s3-v3"
+        }
+    ],
     "scripts": {
         "post-create-project-cmd": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",

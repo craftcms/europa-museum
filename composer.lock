@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "83bad1b3302c119ca27493cae0944e84",
+    "content-hash": "7cb8c0522de76f87a6aefce830a75085",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2506,17 +2506,11 @@
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-            "version": "1.0.29",
+            "version": "dev-hack-in-exception",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4e25cc0582a36a786c31115e419c6e40498f6972",
-                "reference": "4e25cc0582a36a786c31115e419c6e40498f6972",
-                "shasum": ""
+                "url": "https://github.com/timkelty/flysystem-aws-s3-v3",
+                "reference": "6a0ea4beb8f9ea9ebec50897e70196b44c8f7eb9"
             },
             "require": {
                 "aws/aws-sdk-php": "^3.20.0",
@@ -2538,7 +2532,11 @@
                     "League\\Flysystem\\AwsS3v3\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "League\\Flysystem\\AwsS3v3\\Stub\\": "stub"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -2549,11 +2547,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "support": {
-                "issues": "https://github.com/thephpleague/flysystem-aws-s3-v3/issues",
-                "source": "https://github.com/thephpleague/flysystem-aws-s3-v3/tree/1.0.29"
-            },
-            "time": "2020-10-08T18:58:37+00:00"
+            "time": "2022-03-16T01:20:11+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -8547,11 +8541,19 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "league/flysystem-aws-s3-v3",
+            "version": "dev-hack-in-exception",
+            "alias": "1.0.29",
+            "alias_normalized": "1.0.29.0"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
         "pixelandtonic/yii2-dynamodb": 20,
-        "sebastianlenz/linkfield": 5
+        "sebastianlenz/linkfield": 5,
+        "league/flysystem-aws-s3-v3": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
