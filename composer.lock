@@ -885,12 +885,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d7cb7978bbe7a4c7fdf062f48e7e95add660ef08"
+                "reference": "24a6a122126d0474f28ea05611e68dc231de5475"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d7cb7978bbe7a4c7fdf062f48e7e95add660ef08",
-                "reference": "d7cb7978bbe7a4c7fdf062f48e7e95add660ef08",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/24a6a122126d0474f28ea05611e68dc231de5475",
+                "reference": "24a6a122126d0474f28ea05611e68dc231de5475",
                 "shasum": ""
             },
             "require": {
@@ -995,7 +995,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-03-16T12:47:07+00:00"
+            "time": "2022-03-16T14:35:50+00:00"
         },
         {
             "name": "craftcms/craft-flysystem",

@@ -13,29 +13,11 @@
  * built-in system components.
  */
 
-use craft\helpers\App;
-use yii\web\DbSession;
 use modules\demos\Module;
 
-$components = [
-    'mailer' => null,
-    'session' => static function() use ($table) {
-        return Craft::createObject([
-            'class' => DbSession::class,
-        ] + App::sessionConfig());
-    }
-];
-
 return [
-    '*' => [
-        'id' => App::env('CRAFT_CLOUD_ID') ?: 'CraftCMS',
-        'modules'   => [
-            'demos' => Module::class,
-        ],
-        'bootstrap' => ['demos'],
-        'components' => $components,
+    'modules'   => [
+        'demos' => Module::class,
     ],
-    'dev' => [
-
-    ],
+    'bootstrap' => ['demos'],
 ];
