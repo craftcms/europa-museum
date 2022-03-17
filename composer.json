@@ -24,7 +24,7 @@
         "craftcms/cms": "^4.0.0-beta",
         "craftcms/redactor": "^3.0.0-beta",
         "fakerphp/faker": "^1.14",
-        "nystudio107/craft-seomatic": "dev-develop-v4 as 4.0.0-beta.4",
+        "nystudio107/craft-seomatic": "dev-develop-v4 as 4.0.0-beta.5",
         "nystudio107/craft-twigpack": "^4.0.0-beta.2",
         "nystudio107/craft-typogrify": "^4.0.0-beta.2",
         "pixelandtonic/yii2-dynamodb": "dev-develop",
