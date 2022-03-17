@@ -20,9 +20,9 @@
         "docs": "https://github.com/craftcms/demo-europa-museum"
     },
     "require": {
-        "craftcms/aws-s3": "2.0.x-dev",
-        "craftcms/cms": "4.0.x-dev",
-        "craftcms/redactor": "3.0.x-dev",
+        "craftcms/aws-s3": "^2.0.0-beta",
+        "craftcms/cms": "^4.0.0-beta",
+        "craftcms/redactor": "^3.0.0-beta",
         "fakerphp/faker": "^1.14",
         "nystudio107/craft-seomatic": "dev-develop-v4 as 4.0.0-beta.4",
         "nystudio107/craft-twigpack": "^4.0.0-beta.2",
