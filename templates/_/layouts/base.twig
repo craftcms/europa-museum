@@ -20,11 +20,11 @@
         <link rel="apple-touch-icon" sizes="180x180" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/apple-touch-icon.png') }}">
         <link rel="icon" type="image/png" sizes="32x32" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/favicon-32x32.png') }}">
         <link rel="icon" type="image/png" sizes="16x16" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/favicon-16x16.png') }}">
-        <link rel="manifest" href="{{ baseUrl }}manifest.json">
-        <link rel="mask-icon" href="{{ alias('@assetBaseUrl/images/icons/safari-pinned-tab.svg') }}" color="#000000">
-        <link rel="shortcut icon" href="{{ baseUrl }}favicon.ico">
+        <link rel="manifest" href="{{ alias('@assetBaseUrl/assets/dist/manifest.json') }}">
+        <link rel="mask-icon" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/safari-pinned-tab.svg') }}" color="#000000">
+        <link rel="shortcut icon" href="{{ alias('@assetBaseUrl/assets/dist/favicon.ico') }}">
         <meta name="msapplication-TileColor" content="#000000">
-        <meta name="msapplication-config" content="{{ baseUrl }}browserconfig.xml">
+        <meta name="msapplication-config" content="{{ url('browserconfig.xml') }}">
         <meta name="theme-color" content="#ffffff">
 
         {# -- Inline CSS block used by templates for Critical CSS #}
