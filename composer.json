@@ -21,7 +21,7 @@
     },
     "require": {
         "craftcms/aws-s3": "^2.0.0-beta",
-        "craftcms/cms": "^4.0.0-beta",
+        "craftcms/cms": "4.0.x-dev",
         "craftcms/redactor": "^3.0.0-beta",
         "fakerphp/faker": "^1.14",
         "nystudio107/craft-seomatic": "dev-develop-v4 as 4.0.0-beta.5",
