@@ -13,6 +13,11 @@
  * built-in system components.
  */
 
+use Bugsnag\Client;
+use craft\helpers\App;
+use MeadSteve\MonoSnag\BugsnagHandler;
+use samdark\log\PsrTarget;
+
 return [
     '*' => [
         'modules'   => [
@@ -21,6 +26,15 @@ return [
         'bootstrap' => ['demos'],
         'components' => [
             'mailer' => null,
+            'log' => [
+                'targets' => App::env('BUGSNAG_API_KEY') ? [
+                    [
+                        'class' => PsrTarget::class,
+                        'logger' => (new Monolog\Logger('bugsnag'))
+                            ->pushHandler(new BugsnagHandler(Client::make(App::env('BUGSNAG_API_KEY')))),
+                    ]
+                ] : [],
+            ],
         ],
     ],
     'dev' => [
