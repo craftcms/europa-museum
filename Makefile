@@ -9,6 +9,7 @@ WEB_CONTAINER = docker-compose ps -q web
 init:
 	cp .env.docker .env
 	${COMPOSE} up -d
+	${EXEC} composer install
 update:
 	${EXEC} composer update --no-interaction
 	${EXEC} php craft up --interactive=0
