@@ -6,6 +6,8 @@ services:
     ports:
       - "${HOST_WEB_PORT}:8080"
     env_file: .env
+    volumes:
+      - ./:/app
     depends_on:
       postgres:
         condition: service_healthy
