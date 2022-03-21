@@ -2,11 +2,6 @@ name: Update dependencies
 
 on:
   workflow_dispatch:
-    inputs:
-      dockerhub_push:
-        default: true
-        required: true
-        type: boolean
   schedule:
     - cron: "0 */12 * * *"
 
