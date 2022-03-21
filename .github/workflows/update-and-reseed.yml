@@ -1,19 +1,14 @@
-name: Update dependencies
+name: Update dependencies and reseed
 
 on:
   workflow_dispatch:
-    inputs:
-      dockerhub_push:
-        default: true
-        required: true
-        type: boolean
   schedule:
     - cron: "0 */12 * * *"
 
 jobs:
-  update:
+  update_and_reseed:
     runs-on: ubuntu-latest
-    name: Update dependencies
+    name: Update dependencies and reseed
     outputs:
       changes_detected: ${{ steps.auto_commit.outputs.changes_detected == 'true' }}
     steps:
