@@ -54,6 +54,7 @@ class SeedController extends Controller
     public function actionClean(): int
     {
         $this->runAction('delete-freeform-data');
+        $this->_cleanup();
         return ExitCode::OK;
     }
 
@@ -68,13 +69,13 @@ class SeedController extends Controller
             $i = isset($i) ? $i + 1 : 1;
             $this->stdout("    - [{$i}/{$submissionCount}] Deleting submission {$submission->title} ... ");
             try {
-               $success = Craft::$app->getElements()->deleteElement($submission, true);
-               if ($success) {
-                   $this->stdout('done' . PHP_EOL, Console::FG_GREEN);
-               } else {
-                   $this->stderr('failed: ' . implode(', ', $submission->getErrorSummary(true)) . PHP_EOL, Console::FG_RED);
-                   $errorCount++;
-               }
+                $success = Craft::$app->getElements()->deleteElement($submission, true);
+                if ($success) {
+                    $this->stdout('done' . PHP_EOL, Console::FG_GREEN);
+                } else {
+                    $this->stderr('failed: ' . implode(', ', $submission->getErrorSummary(true)) . PHP_EOL, Console::FG_RED);
+                    $errorCount++;
+                }
             } catch (\Throwable $e) {
                 $this->stderr('error: ' . $e->getMessage() . PHP_EOL, Console::FG_RED);
                 $errorCount++;
@@ -99,10 +100,6 @@ class SeedController extends Controller
 
         $this->stdout('Clearing compiled classes ... ');
         FileHelper::removeDirectory($compiledClassesPath);
-        $this->stdout('done' . PHP_EOL, Console::FG_GREEN);
-
-        $this->stdout('Setting system status to online ... ');
-        Craft::$app->projectConfig->set('system.live', true, null, false);
         $this->stdout('done' . PHP_EOL, Console::FG_GREEN);
     }
 
