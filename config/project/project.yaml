@@ -1,4 +1,4 @@
-dateModified: 1647974464
+dateModified: 1647974952
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -268,6 +268,51 @@ plugins:
     enabled: true
     licenseKey: F05LKTHK735ZMFRL0LNY2YWC
     schemaVersion: 3.0.11
+    settings:
+      addHrefLang: true
+      addPaginatedHreflang: true
+      addXDefaultHrefLang: true
+      alwaysIncludeCanonicalUrls: false
+      cpTitlePrefix: '⚙ '
+      cspNonce: ''
+      cspScriptSrcPolicies:
+        -
+          __assoc__:
+            -
+              - policy
+              - '''self'''
+      devModeCpTitlePrefix: '🚧⚙ '
+      devModeTitlePrefix: '🚧 '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      enableJsonLdEndpoint: false
+      enableMetaContainerEndpoint: false
+      enableSeoFileLinkEndpoint: false
+      environment: live
+      excludeNonCanonicalUrls: false
+      generatorEnabled: true
+      headersEnabled: true
+      includeHomepageInBreadcrumbs: true
+      lowercaseCanonicalUrl: true
+      manuallySetEnvironment: false
+      maxDescriptionLength: 155
+      maxTitleLength: 70
+      metaCacheDuration: 0
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: false
+      renderEnabled: true
+      separatorChar: '|'
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: '1'
+      siteUrlOverride: ''
+      sitemapsEnabled: false
+      socialMediaPreviewTarget: true
+      submitSitemaps: false
+      truncateDescriptionTags: '1'
+      truncateTitleTags: '1'
   twigpack:
     edition: standard
     enabled: true
