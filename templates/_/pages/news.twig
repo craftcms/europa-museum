@@ -62,7 +62,7 @@
 
             {% for newsEntry in pageEntries %}
 
-                {% set articleImage = newsEntry.heroImage[0] %}
+                {% set articleImage = newsEntry.heroImage.one() %}
 
                 {% do articleImage.setTransform({
                     width: 440,
@@ -92,7 +92,7 @@
                             {{ newsEntry.postDate|date('m.d.Y') }}
                             {% if newsEntry.newsCategory | length %}
                                 <span class="divider">|</span>
-                                {{ newsEntry.newsCategory[0].getLink() }}
+                                {{ newsEntry.newsCategory.one().getLink() }}
                             {% endif %}
                         </div>
 

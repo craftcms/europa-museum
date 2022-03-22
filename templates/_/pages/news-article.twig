@@ -9,7 +9,7 @@
 {% block content %}
 
     {% if entry.heroImage|length %}
-        {% set heroImage = entry.heroImage[0] %}
+        {% set heroImage = entry.heroImage.one() %}
 
         {% do heroImage.setTransform({
             width: 1024,
