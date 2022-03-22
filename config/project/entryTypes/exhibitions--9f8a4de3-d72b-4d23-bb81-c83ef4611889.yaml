@@ -11,7 +11,7 @@ fieldLayouts:
             disabled: false
             id: null
             instructions: null
-            label: null
+            label: ''
             max: null
             min: null
             name: null
@@ -24,7 +24,6 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 4aa0c2ec-f623-41f0-b073-183cb85f3e2f
             warning: null
             width: 100
           -
@@ -34,7 +33,6 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 8be826fa-d47a-4826-824d-6716278a3da2
             warning: null
             width: 100
           -
@@ -44,59 +42,23 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0b9e2780-1a76-49b1-a044-090eee2777a6
             warning: null
             width: 100
         name: Content
-        uid: 8ca7b550-bb6c-44f2-a215-2672205a2c09
+        sortOrder: 1
       -
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            id: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 93dd96a0-203c-40b1-9445-3782ae033cee
-            warning: null
-            width: 100
-          -
-            fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
+            fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b00476e4-8812-48b4-a03c-233608980384
             warning: null
             width: 100
-          -
-            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 0b28c307-fd2d-46c0-a9de-385f45ec0a73
-            warning: null
-            width: 100
-        name: Content
-        uid: e04d0c40-58a5-414a-822b-abefcf9cd582
+        name: SEO
+        sortOrder: 2
 handle: exhibitions
 hasTitleField: false
 name: Exhibitions

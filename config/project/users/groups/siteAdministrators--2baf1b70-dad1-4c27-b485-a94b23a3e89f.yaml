@@ -74,28 +74,20 @@ permissions:
   - 'viewpeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
   - 'savepeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
   - 'deletepeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
-  - 'viewentries:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
-  - 'saveentries:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
-  - 'viewpeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
-  - 'savepeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
-  - 'viewentries:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
-  - 'saveentries:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
-  - 'viewpeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
-  - 'savepeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
-  - 'viewentries:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
-  - 'saveentries:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
-  - 'viewpeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
-  - 'savepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'viewentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'saveentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'viewpeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'savepeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'viewentries:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'saveentries:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'viewpeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'savepeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
   - 'viewentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
   - 'saveentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
   - 'viewpeerentrydrafts:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
   - 'savepeerentrydrafts:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
   - 'viewpeerentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
   - 'savepeerentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
-  - 'viewentries:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
-  - 'saveentries:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
-  - 'viewpeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
-  - 'savepeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
   - 'viewentries:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
   - 'saveentries:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
   - 'viewpeerentrydrafts:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
@@ -106,12 +98,20 @@ permissions:
   - 'savepeerentrydrafts:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
   - 'viewpeerentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
   - 'savepeerentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'viewentries:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'saveentries:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'viewpeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'savepeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'viewentries:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'saveentries:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'viewpeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'savepeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
   - 'viewentries:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
   - 'saveentries:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
   - 'viewpeerentrydrafts:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
   - 'savepeerentrydrafts:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
-  - 'viewentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
-  - 'saveentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
-  - 'viewpeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
-  - 'savepeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'viewentries:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'saveentries:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'viewpeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'savepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
   - 'assignusergroup:2baf1b70-dad1-4c27-b485-a94b23a3e89f' # Site Administrators

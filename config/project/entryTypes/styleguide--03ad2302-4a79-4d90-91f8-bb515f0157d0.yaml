@@ -24,11 +24,10 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 9a2e5001-6edc-4b54-a747-4cad85ba376b
             warning: null
             width: 100
         name: Content
-        uid: 7d0ce740-63aa-4423-8607-285d117e1193
+        sortOrder: 1
 handle: styleguide
 hasTitleField: false
 name: Styleguide
