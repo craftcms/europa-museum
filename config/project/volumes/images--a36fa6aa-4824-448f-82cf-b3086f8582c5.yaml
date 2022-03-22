@@ -46,7 +46,7 @@ fieldLayouts:
             width: 100
         name: Content
         sortOrder: 1
-fs: images
+fs: $FS_HANDLE
 handle: images
 hasUrls: true
 name: Images

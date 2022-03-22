@@ -1,4 +1,4 @@
-dateModified: 1647973786
+dateModified: 1647974464
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -107,7 +107,6 @@ meta:
     a73bf239-f2f0-45ac-b84d-361e5dd1a75f: 'Pagination Count' # Pagination Count
     a90cc22d-485c-4cd7-a4b9-63a8a637e90d: Navigation # Navigation
     aa1aa6b7-0e81-4b68-8694-ed5f543f38bc: __blank__ # __blank__
-    ad260beb-c59d-4ce5-b8bc-72828ee4eebc: 'Social Embed' # Social Embed
     b28c567f-a9f9-4d96-848b-1de28c643417: __blank__ # __blank__
     b39c0003-6393-4175-8698-6edef920f7fd: Exhibitions # Exhibitions
     b7672c12-833b-4554-afc9-ec3d68dbd78d: 'CTA Link Text' # CTA Link Text
@@ -157,7 +156,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: VKEWWWS910PS87ALDS4HIVX8
-    schemaVersion: 3.6.3
+    schemaVersion: 3.6.2
     settings:
       ajaxByDefault: '1'
       alertNotificationRecipients: ''
