@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7fcaaaa1ca279e9f778bd96f3d50c18",
+    "content-hash": "105c8b94c1d242c5885667e48a99c6c4",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.215.0",
+            "version": "3.215.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "79c4ffdf93cdcc7be9196ae2e22f0d0323cb2557"
+                "reference": "32cb9c6ac53ef7eb773d645ce6eda308ff069c5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/79c4ffdf93cdcc7be9196ae2e22f0d0323cb2557",
-                "reference": "79c4ffdf93cdcc7be9196ae2e22f0d0323cb2557",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/32cb9c6ac53ef7eb773d645ce6eda308ff069c5e",
+                "reference": "32cb9c6ac53ef7eb773d645ce6eda308ff069c5e",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.215.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.215.1"
             },
-            "time": "2022-03-18T18:16:01+00:00"
+            "time": "2022-03-21T18:18:55+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -944,16 +944,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.0.x-dev",
+            "version": "4.0.0-beta.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "6ca50577a07de543b68ed141d9fd5b24f61b968b"
+                "reference": "e8bf3d348fac4cf1a2999ff09b1317ff4f1cd5f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/6ca50577a07de543b68ed141d9fd5b24f61b968b",
-                "reference": "6ca50577a07de543b68ed141d9fd5b24f61b968b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/e8bf3d348fac4cf1a2999ff09b1317ff4f1cd5f7",
+                "reference": "e8bf3d348fac4cf1a2999ff09b1317ff4f1cd5f7",
                 "shasum": ""
             },
             "require": {
@@ -1058,7 +1058,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-03-18T19:15:59+00:00"
+            "time": "2022-03-22T16:31:09+00:00"
         },
         {
             "name": "craftcms/craft-flysystem",
@@ -1959,16 +1959,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.1",
+            "version": "7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79"
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
@@ -2063,7 +2063,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
             },
             "funding": [
                 {
@@ -2079,7 +2079,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-06T18:43:05+00:00"
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2167,16 +2167,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -2200,7 +2200,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -2262,7 +2262,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -2278,7 +2278,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "hashids/hashids",
@@ -3816,12 +3816,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "0c2cacb890f60e498a44015c530386e875d1f291"
+                "reference": "e9e2e5744be838e2d7c54d535b4a4362e77a5087"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/0c2cacb890f60e498a44015c530386e875d1f291",
-                "reference": "0c2cacb890f60e498a44015c530386e875d1f291",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e9e2e5744be838e2d7c54d535b4a4362e77a5087",
+                "reference": "e9e2e5744be838e2d7c54d535b4a4362e77a5087",
                 "shasum": ""
             },
             "require": {
@@ -3883,7 +3883,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-18T17:12:09+00:00"
+            "time": "2022-03-22T17:20:02+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
