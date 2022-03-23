@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.215.1",
+            "version": "3.215.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "32cb9c6ac53ef7eb773d645ce6eda308ff069c5e"
+                "reference": "8ddbc5242ec59a22b2c4704867e028343c6d8ade"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/32cb9c6ac53ef7eb773d645ce6eda308ff069c5e",
-                "reference": "32cb9c6ac53ef7eb773d645ce6eda308ff069c5e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8ddbc5242ec59a22b2c4704867e028343c6d8ade",
+                "reference": "8ddbc5242ec59a22b2c4704867e028343c6d8ade",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.215.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.215.2"
             },
-            "time": "2022-03-21T18:18:55+00:00"
+            "time": "2022-03-22T19:02:23+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -3816,12 +3816,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "e9e2e5744be838e2d7c54d535b4a4362e77a5087"
+                "reference": "fd16071efa71e7672536db3b642f1c99a222a798"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e9e2e5744be838e2d7c54d535b4a4362e77a5087",
-                "reference": "e9e2e5744be838e2d7c54d535b4a4362e77a5087",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/fd16071efa71e7672536db3b642f1c99a222a798",
+                "reference": "fd16071efa71e7672536db3b642f1c99a222a798",
                 "shasum": ""
             },
             "require": {
@@ -3883,7 +3883,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-22T17:20:02+00:00"
+            "time": "2022-03-22T20:04:58+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -5419,7 +5419,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/brandonkelly/craft3-freeform",
-                "reference": "bc62e27cd59bf7fd13df69727de3d342a3a4c13f"
+                "reference": "544941f0843216253ebfaa493a4f865337788b93"
             },
             "require": {
                 "composer/composer": "^1.0|^2.0.13",
@@ -5502,7 +5502,7 @@
                 }
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
-            "time": "2022-03-14T14:30:06+00:00"
+            "time": "2022-03-23T12:34:49+00:00"
         },
         {
             "name": "solspace/craft3-commons",
