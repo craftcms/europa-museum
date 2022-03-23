@@ -45,3 +45,5 @@
 !/web/favicon.ico
 !/web/manifest.json
 !/web/browserconfig.xml
+
+/submodules
