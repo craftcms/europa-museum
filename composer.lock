@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.215.2",
+            "version": "3.216.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8ddbc5242ec59a22b2c4704867e028343c6d8ade"
+                "reference": "e283b3210fcef6a60e686a68b92c4e81d34bb021"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8ddbc5242ec59a22b2c4704867e028343c6d8ade",
-                "reference": "8ddbc5242ec59a22b2c4704867e028343c6d8ade",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e283b3210fcef6a60e686a68b92c4e81d34bb021",
+                "reference": "e283b3210fcef6a60e686a68b92c4e81d34bb021",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.215.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.0"
             },
-            "time": "2022-03-22T19:02:23+00:00"
+            "time": "2022-03-23T18:16:07+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -4975,12 +4975,12 @@
             "version": "3.13.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/solspace/craft3-freeform.git",
+                "url": "https://github.com/solspace/craft-freeform.git",
                 "reference": "839e67f99157dea1bdfcf8e12d3130252aca40c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft3-freeform/zipball/839e67f99157dea1bdfcf8e12d3130252aca40c8",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/839e67f99157dea1bdfcf8e12d3130252aca40c8",
                 "reference": "839e67f99157dea1bdfcf8e12d3130252aca40c8",
                 "shasum": ""
             },
@@ -5045,8 +5045,8 @@
             ],
             "description": "The most reliable, intuitive and powerful form builder for Craft.",
             "support": {
-                "issues": "https://github.com/solspace/craft3-freeform/issues",
-                "source": "https://github.com/solspace/craft3-freeform/tree/v3.13.6"
+                "issues": "https://github.com/solspace/craft-freeform/issues",
+                "source": "https://github.com/solspace/craft-freeform/tree/v3.13.6"
             },
             "time": "2022-03-16T19:41:24+00:00"
         },
@@ -5086,16 +5086,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.117.0",
+            "version": "v7.118.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "c9d40524c63f3c5042d704f88a60f49a349b1221"
+                "reference": "4ab7c6b496892073d8b8e2ef945485e68a97d7f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/c9d40524c63f3c5042d704f88a60f49a349b1221",
-                "reference": "c9d40524c63f3c5042d704f88a60f49a349b1221",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/4ab7c6b496892073d8b8e2ef945485e68a97d7f6",
+                "reference": "4ab7c6b496892073d8b8e2ef945485e68a97d7f6",
                 "shasum": ""
             },
             "require": {
@@ -5140,9 +5140,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.117.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.118.0"
             },
-            "time": "2022-03-18T18:16:15+00:00"
+            "time": "2022-03-23T19:01:34+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
