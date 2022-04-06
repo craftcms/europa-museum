@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.218.3",
+            "version": "3.218.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a1bd2174db1255598344570e88c864cb18ab84f7"
+                "reference": "db59241a678720d50deb166d7bfe332100898964"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a1bd2174db1255598344570e88c864cb18ab84f7",
-                "reference": "a1bd2174db1255598344570e88c864cb18ab84f7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/db59241a678720d50deb166d7bfe332100898964",
+                "reference": "db59241a678720d50deb166d7bfe332100898964",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.218.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.218.4"
             },
-            "time": "2022-04-05T18:15:32+00:00"
+            "time": "2022-04-06T18:16:53+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -814,16 +814,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.37",
+            "version": "3.7.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "1bcf1e9170f0024b888251dd204958989aca296b"
+                "reference": "7e5b2ee7be865ec223c8e0923f41b17c21f07766"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/1bcf1e9170f0024b888251dd204958989aca296b",
-                "reference": "1bcf1e9170f0024b888251dd204958989aca296b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/7e5b2ee7be865ec223c8e0923f41b17c21f07766",
+                "reference": "7e5b2ee7be865ec223c8e0923f41b17c21f07766",
                 "shasum": ""
             },
             "require": {
@@ -891,7 +891,6 @@
             "autoload": {
                 "psr-4": {
                     "craft\\": "src/",
-                    "crafttests\\fixtures\\": "tests/fixtures/",
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
                 }
             },
@@ -920,7 +919,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-03-16T18:56:11+00:00"
+            "time": "2022-04-06T18:24:35+00:00"
         },
         {
             "name": "craftcms/html-field",
