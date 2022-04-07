@@ -11,7 +11,7 @@ fieldLayouts:
             disabled: false
             id: null
             instructions: null
-            label: ''
+            label: null
             max: null
             min: null
             name: null
@@ -24,6 +24,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1fd34966-3f04-4530-9990-611cfa0a6146
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 56b8cad3-9e11-4ed2-97df-9d4f36987e99
             warning: null
             width: 100
           -
@@ -42,6 +44,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 466f81a5-985f-49bd-9b5d-dddb9b387404
             warning: null
             width: 100
           -
@@ -51,10 +54,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 21356ca6-832a-4ae2-b3d2-408e1b3b48c6
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: dac52723-1ad1-4b0d-b305-9d19f173d0fe
       -
         elements:
           -
@@ -64,10 +68,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: ca8cf6d9-94bf-485d-83a2-bf7e7643a506
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: f97dcab3-7e40-44ac-ab40-127a80609f54
 handle: home
 hasTitleField: false
 name: Home

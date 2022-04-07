@@ -11,7 +11,7 @@ fieldLayouts:
             disabled: false
             id: null
             instructions: null
-            label: ''
+            label: null
             max: null
             min: null
             name: null
@@ -24,6 +24,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: aae6af5b-82b3-4f79-817f-30bfec1f4e21
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 74c8ae95-63df-4c9f-9e97-f829e255cd00
             warning: null
             width: 100
           -
@@ -42,10 +44,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e3dec697-6b03-4e67-a4c7-474c792a9d40
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 35d12579-7f0d-433b-9c7c-129a57527f59
       -
         elements:
           -
@@ -55,10 +58,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b6d67d15-f61e-418b-9e47-07b2f5364a0f
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: e56c297f-2cfb-4e67-b952-d4d0a95a80a9
 handle: exhibitions
 hasTitleField: false
 name: Exhibitions

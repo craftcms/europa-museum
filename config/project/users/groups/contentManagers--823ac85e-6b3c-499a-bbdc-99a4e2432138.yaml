@@ -8,6 +8,7 @@ permissions:
   - accessplugin-freeform
   - accessplugin-seomatic
   - accesscp
+  - 'assignusergroup:823ac85e-6b3c-499a-bbdc-99a4e2432138' # Content Managers
   - 'deletepeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
   - 'deletepeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
   - 'deletepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
@@ -80,4 +81,3 @@ permissions:
   - 'saveentries:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
   - 'viewpeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
   - 'savepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
-  - 'assignusergroup:823ac85e-6b3c-499a-bbdc-99a4e2432138' # Content Managers

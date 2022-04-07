@@ -24,6 +24,7 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 175c3492-224d-4668-8ad9-a288233d6053
             warning: null
             width: 100
           -
@@ -33,6 +34,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5bd524ab-c96d-487a-9479-867646501e95
             warning: null
             width: 100
           -
@@ -42,6 +44,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 871a3951-38e5-44cc-8b2a-ef805ab21cd4
             warning: null
             width: 100
           -
@@ -51,6 +54,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 5b0bca29-968a-4bba-b621-dd839742da31
             warning: null
             width: 100
           -
@@ -60,6 +64,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 81699a5d-8d5f-4e26-8301-0c3da3d53770
             warning: null
             width: 100
           -
@@ -69,10 +74,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 03bb6cbc-7430-43ce-bd65-eac867237a7b
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: d1fc188f-f98d-423b-82b2-8080912beb4e
       -
         elements:
           -
@@ -82,10 +88,11 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: d93b9b73-2e95-44ea-afee-db408cc226e1
             warning: null
             width: 100
         name: SEO
-        sortOrder: 2
+        uid: 3f132cfb-49a0-4aae-b6bf-25fc2666d98a
 handle: newsArticle
 hasTitleField: true
 name: 'News Article'
