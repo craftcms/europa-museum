@@ -12,9 +12,9 @@ services:
   postgres:
     image: postgres:10.7-alpine
     environment:
-      POSTGRES_DB: ${DB_DATABASE}
-      POSTGRES_USER: ${DB_USER}
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${CRAFT_DB_DATABASE}
+      POSTGRES_USER: ${CRAFT_DB_USER}
+      POSTGRES_PASSWORD: ${CRAFT_DB_PASSWORD}
     volumes:
       - db_data:/var/lib/postgresql/data
     healthcheck:

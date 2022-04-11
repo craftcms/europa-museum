@@ -11,11 +11,11 @@ use craft\helpers\App;
 
 return [
     'driver' => Connection::DRIVER_PGSQL,
-    'server' => App::env('DB_SERVER'),
-    'user' => App::env('DB_USER'),
-    'password' => App::env('DB_PASSWORD'),
-    'database' => App::env('DB_DATABASE'),
-    'schema' => App::env('DB_SCHEMA') ?: 'public',
-    'tablePrefix' => App::env('DB_TABLE_PREFIX'),
-    'port' => App::env('DB_PORT') ?: 5432,
+    'server' => App::env('CRAFT_DB_SERVER'),
+    'user' => App::env('CRAFT_DB_USER'),
+    'password' => App::env('CRAFT_DB_PASSWORD'),
+    'database' => App::env('CRAFT_DB_DATABASE'),
+    'schema' => App::env('CRAFT_DB_SCHEMA') ?: 'public',
+    'tablePrefix' => App::env('CRAFT_DB_TABLE_PREFIX'),
+    'port' => App::env('CRAFT_DB_PORT') ?: 5432,
 ];
