@@ -36,7 +36,7 @@ return [
         'enableCsrfProtection' => true,
         'useEmailAsUsername' => true,
         'omitScriptNameInUrls' => true,
-        'securityKey' => App::env('SECURITY_KEY'),
+        'securityKey' => App::env('CRAFT_SECURITY_KEY'),
         'maxInvalidLogins' => 1000,
         'maxUploadFileSize' => 20000000,
         'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',

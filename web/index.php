@@ -20,7 +20,7 @@ if (file_exists(CRAFT_BASE_PATH.'/.env')) {
 }
 
 define('CRAFT_STREAM_LOG', true);
-define('CRAFT_ENVIRONMENT', getenv('ENVIRONMENT') ?: 'production');
+define('CRAFT_ENVIRONMENT', getenv('CRAFT_ENVIRONMENT') ?: 'production');
 
 if ($storagePath = getenv('CRAFT_STORAGE_PATH')) {
     define('CRAFT_STORAGE_PATH', $storagePath);
