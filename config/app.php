@@ -68,5 +68,5 @@ return [
         'dynamoDb' => $dynamoDb,
         'session' => $session,
         'cache' => $cache,
-    ]
+    ],
 ];
