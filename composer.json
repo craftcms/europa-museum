@@ -28,7 +28,7 @@
         "nystudio107/craft-seomatic": "dev-develop-v4 as 4.0.0-beta.5",
         "nystudio107/craft-twigpack": "^4.0.0-beta.2",
         "nystudio107/craft-typogrify": "^4.0.0-beta.2",
-        "pixelandtonic/yii2-dynamodb": "dev-cloud-refactor",
+        "pixelandtonic/yii2-dynamodb": "*@dev",
         "sebastianlenz/linkfield": "dev-craft4 as 2.0",
         "solspace/craft-freeform": "dev-craft4 as 3.11.9",
         "verbb/default-dashboard": "dev-craft-4",
@@ -74,6 +74,10 @@
         {
             "type": "git",
             "url": "https://github.com/brandonkelly/craft3-freeform"
+        },
+        {
+            "type": "path",
+            "url": "./submodules/yii2-dynamodb"
         }
     ],
     "prefer-stable": true

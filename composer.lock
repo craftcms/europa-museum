@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2993d9ab5a41a024b1e7edc1cf38b83",
+    "content-hash": "cd90ae7ebf2ef6c8e33b98685242aac3",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2549,16 +2549,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.11",
+            "version": "5.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa"
+                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ab6744b7296ded80f8cc4f9509abbff393399aa",
-                "reference": "2ab6744b7296ded80f8cc4f9509abbff393399aa",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
                 "shasum": ""
             },
             "require": {
@@ -2613,9 +2613,9 @@
             ],
             "support": {
                 "issues": "https://github.com/justinrainbow/json-schema/issues",
-                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.11"
+                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.12"
             },
-            "time": "2021-07-22T09:24:00+00:00"
+            "time": "2022-04-13T08:02:27+00:00"
         },
         {
             "name": "league/flysystem",
@@ -3818,12 +3818,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "746025278fe04fff969f747d0c26f3c43f6c4524"
+                "reference": "cb0a882762314a1c571655c5c1c637de5d5e4bbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/746025278fe04fff969f747d0c26f3c43f6c4524",
-                "reference": "746025278fe04fff969f747d0c26f3c43f6c4524",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/cb0a882762314a1c571655c5c1c637de5d5e4bbd",
+                "reference": "cb0a882762314a1c571655c5c1c637de5d5e4bbd",
                 "shasum": ""
             },
             "require": {
@@ -3885,7 +3885,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-08T22:49:14+00:00"
+            "time": "2022-04-13T13:57:16+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -4514,17 +4514,11 @@
         },
         {
             "name": "pixelandtonic/yii2-dynamodb",
-            "version": "dev-cloud-refactor",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pixelandtonic/yii2-dynamodb.git",
-                "reference": "905e2cb2d5101b99fade04441b43d6ff74561e87"
-            },
+            "version": "v1.0.0",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pixelandtonic/yii2-dynamodb/zipball/905e2cb2d5101b99fade04441b43d6ff74561e87",
-                "reference": "905e2cb2d5101b99fade04441b43d6ff74561e87",
-                "shasum": ""
+                "type": "path",
+                "url": "./submodules/yii2-dynamodb",
+                "reference": "0d0f4689d76e8e93a0e76bbf44c29aad0b7f2338"
             },
             "require": {
                 "aws/aws-sdk-php": ">=2.4",
@@ -4541,7 +4535,26 @@
                     "pixelandtonic\\dynamodb\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "setup": [
+                    "@docker",
+                    "@tables"
+                ],
+                "docker": [
+                    "docker-compose up -d dynamodb"
+                ],
+                "test": [
+                    "vendor/bin/phpunit --testdox"
+                ],
+                "tables": [
+                    "make tables"
+                ]
+            },
             "license": [
                 "MIT"
             ],
@@ -4560,12 +4573,14 @@
                 "yii2"
             ],
             "support": {
-                "docs": "https://github.com/pixelandtonic/yii2-dynamodb/blob/README.md",
                 "email": "support@pixelandtonic.com",
                 "issues": "https://github.com/pixelandtonic/yii2-dynamodb/issues?state=open",
-                "source": "https://github.com/pixelandtonic/yii2-dynamodb"
+                "source": "https://github.com/pixelandtonic/yii2-dynamodb",
+                "docs": "https://github.com/pixelandtonic/yii2-dynamodb/blob/README.md"
             },
-            "time": "2022-04-12T17:36:18+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "psr/container",
