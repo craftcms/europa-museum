@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "467e42be3d1fe17a340a5d17fbd6642e",
+    "content-hash": "63d4df453a4d80744f7c7e670b708b39",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.219.3",
+            "version": "3.220.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2bbafacd922391077b9dcf40d57fc33ad9759e33"
+                "reference": "fbb2d7349916c15758ee02dfd001a714883a9adf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2bbafacd922391077b9dcf40d57fc33ad9759e33",
-                "reference": "2bbafacd922391077b9dcf40d57fc33ad9759e33",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fbb2d7349916c15758ee02dfd001a714883a9adf",
+                "reference": "fbb2d7349916c15758ee02dfd001a714883a9adf",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.219.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.220.3"
             },
-            "time": "2022-04-13T18:15:40+00:00"
+            "time": "2022-04-22T18:18:31+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -1336,16 +1336,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "2.1.3",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "1e052b2a4dc5751b7fe6f96fff5b89e4b1bba9d9"
+                "reference": "c262ebd39572902bdf4fe3ea570e11cd6725b381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/1e052b2a4dc5751b7fe6f96fff5b89e4b1bba9d9",
-                "reference": "1e052b2a4dc5751b7fe6f96fff5b89e4b1bba9d9",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/c262ebd39572902bdf4fe3ea570e11cd6725b381",
+                "reference": "c262ebd39572902bdf4fe3ea570e11cd6725b381",
                 "shasum": ""
             },
             "type": "library",
@@ -1374,7 +1374,72 @@
                 "rss": "https://github.com/craftcms/server-check/releases.atom",
                 "source": "https://github.com/craftcms/server-check"
             },
-            "time": "2022-02-15T17:25:51+00:00"
+            "time": "2022-04-17T02:14:46+00:00"
+        },
+        {
+            "name": "craftcms/yii2-dynamodb",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/yii2-dynamodb.git",
+                "reference": "baf3a30ab24007317b43dd2f3f5faba1a399d566"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/yii2-dynamodb/zipball/baf3a30ab24007317b43dd2f3f5faba1a399d566",
+                "reference": "baf3a30ab24007317b43dd2f3f5faba1a399d566",
+                "shasum": ""
+            },
+            "require": {
+                "aws/aws-sdk-php": ">=2.4",
+                "ext-json": "*",
+                "yiisoft/yii2": "~2.0.45.0",
+                "yiisoft/yii2-queue": "~2.3.2"
+            },
+            "provide": {
+                "bower-asset/bootstrap": "*",
+                "bower-asset/inputmask": "*",
+                "bower-asset/jquery": "*",
+                "bower-asset/punycode": "*",
+                "bower-asset/typeahead.js": "*",
+                "bower-asset/yii2-pjax": "*"
+            },
+            "require-dev": {
+                "craftcms/ecs": "dev-main",
+                "craftcms/phpstan": "dev-main",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "craftcms\\dynamodb\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Yii2 implementation of a cache, session, and queue driver for DynamoDB",
+            "keywords": [
+                "cache",
+                "dynamodb",
+                "queue",
+                "session",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/craftcms/yii2-dynamodb/blob/README.md",
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/yii2-dynamodb/issues?state=open",
+                "source": "https://github.com/craftcms/yii2-dynamodb"
+            },
+            "time": "2022-04-25T03:32:27+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -2354,7 +2419,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.8.1",
+            "version": "v9.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -2409,7 +2474,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.8.1",
+            "version": "v9.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2455,7 +2520,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.8.1",
+            "version": "v9.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2503,7 +2568,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.8.1",
+            "version": "v9.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -2765,16 +2830,16 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/mime-type-detection.git",
-                "reference": "3e4a35d756eedc67096f30240a68a3149120dae7"
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/3e4a35d756eedc67096f30240a68a3149120dae7",
-                "reference": "3e4a35d756eedc67096f30240a68a3149120dae7",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
+                "reference": "ff6248ea87a9f116e78edd6002e39e5128a0d4dd",
                 "shasum": ""
             },
             "require": {
@@ -2805,7 +2870,7 @@
             "description": "Mime-type detection for Flysystem",
             "support": {
                 "issues": "https://github.com/thephpleague/mime-type-detection/issues",
-                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.10.0"
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.11.0"
             },
             "funding": [
                 {
@@ -2817,7 +2882,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-11T12:49:04+00:00"
+            "time": "2022-04-17T13:12:02+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -3762,16 +3827,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "4.0.0-beta.1",
+            "version": "4.0.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
-                "reference": "3947e52f2cdbdc8ba5cdc13ac0907a439c2ee1d3"
+                "reference": "42aa882a91c1e05b17428e66637fab7341685ef8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/3947e52f2cdbdc8ba5cdc13ac0907a439c2ee1d3",
-                "reference": "3947e52f2cdbdc8ba5cdc13ac0907a439c2ee1d3",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/42aa882a91c1e05b17428e66637fab7341685ef8",
+                "reference": "42aa882a91c1e05b17428e66637fab7341685ef8",
                 "shasum": ""
             },
             "require": {
@@ -3802,7 +3867,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v4/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/4.0.0-beta.1"
+                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/4.0.0-beta.2"
             },
             "funding": [
                 {
@@ -3810,20 +3875,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-02-24T05:46:09+00:00"
+            "time": "2022-04-17T16:42:21+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "dev-develop-v4",
+            "version": "4.0.0-beta.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "38ea2a524b50c0dc9fe4ea7eb863118f1f2386c1"
+                "reference": "d084081d3735108bfe4762217ee0424248806d37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/38ea2a524b50c0dc9fe4ea7eb863118f1f2386c1",
-                "reference": "38ea2a524b50c0dc9fe4ea7eb863118f1f2386c1",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d084081d3735108bfe4762217ee0424248806d37",
+                "reference": "d084081d3735108bfe4762217ee0424248806d37",
                 "shasum": ""
             },
             "require": {
@@ -3885,24 +3950,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-14T00:51:26+00:00"
+            "time": "2022-04-18T22:18:58+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "4.0.0-beta.2",
+            "version": "4.0.0-beta.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "338f6befb0bbc21c3cb388b9cee5a76e128c1b42"
+                "reference": "7213a563965a2def5b0f357cc3c7137fcc119572"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/338f6befb0bbc21c3cb388b9cee5a76e128c1b42",
-                "reference": "338f6befb0bbc21c3cb388b9cee5a76e128c1b42",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/7213a563965a2def5b0f357cc3c7137fcc119572",
+                "reference": "7213a563965a2def5b0f357cc3c7137fcc119572",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^4.0.0-alpha"
+                "craftcms/cms": "^4.0.0-beta.1"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3946,7 +4011,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-09T03:49:46+00:00"
+            "time": "2022-04-17T16:51:41+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -4278,16 +4343,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.22.0",
+            "version": "1.23.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "3a9e29b4f386a08a151a33578e80ef1747037a48"
+                "reference": "21e4cf62699eebf007db28775f7d1554e612ed9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/3a9e29b4f386a08a151a33578e80ef1747037a48",
-                "reference": "3a9e29b4f386a08a151a33578e80ef1747037a48",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/21e4cf62699eebf007db28775f7d1554e612ed9e",
+                "reference": "21e4cf62699eebf007db28775f7d1554e612ed9e",
                 "shasum": ""
             },
             "require": {
@@ -4311,7 +4376,7 @@
                 "php": "^7.3 || ^8.0",
                 "psr/http-client": "^1.0",
                 "psr/http-factory": "^1.0",
-                "psr/simple-cache": "^1.0"
+                "psr/simple-cache": "^1.0 || ^2.0"
             },
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "dev-master",
@@ -4376,9 +4441,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHPOffice/PhpSpreadsheet/issues",
-                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.22.0"
+                "source": "https://github.com/PHPOffice/PhpSpreadsheet/tree/1.23.0"
             },
-            "time": "2022-02-18T12:57:07+00:00"
+            "time": "2022-04-24T13:53:10+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -4511,61 +4576,6 @@
                 "source": "https://github.com/pixelandtonic/Imagine/tree/1.2.4.2"
             },
             "time": "2021-06-22T18:26:46+00:00"
-        },
-        {
-            "name": "pixelandtonic/yii2-dynamodb",
-            "version": "dev-cloud-refactor",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pixelandtonic/yii2-dynamodb.git",
-                "reference": "dc1f9e817c0ee79e9f5c0edab03a6bfb7247c720"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pixelandtonic/yii2-dynamodb/zipball/dc1f9e817c0ee79e9f5c0edab03a6bfb7247c720",
-                "reference": "dc1f9e817c0ee79e9f5c0edab03a6bfb7247c720",
-                "shasum": ""
-            },
-            "require": {
-                "aws/aws-sdk-php": ">=2.4",
-                "ext-json": "*",
-                "yiisoft/yii2": "~2.0.14",
-                "yiisoft/yii2-queue": "^2.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "pixelandtonic\\dynamodb\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pixel & Tonic",
-                    "homepage": "https://pixelandtonic.com/"
-                }
-            ],
-            "description": "Yii2 implementation of a cache, session, and queue driver for DynamoDB",
-            "keywords": [
-                "cache",
-                "dynamodb",
-                "queue",
-                "session",
-                "yii2"
-            ],
-            "support": {
-                "docs": "https://github.com/pixelandtonic/yii2-dynamodb/blob/README.md",
-                "email": "support@pixelandtonic.com",
-                "issues": "https://github.com/pixelandtonic/yii2-dynamodb/issues?state=open",
-                "source": "https://github.com/pixelandtonic/yii2-dynamodb"
-            },
-            "time": "2022-04-13T15:45:14+00:00"
         },
         {
             "name": "psr/container",
@@ -4882,25 +4892,25 @@
         },
         {
             "name": "psr/simple-cache",
-            "version": "1.0.1",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/simple-cache.git",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
-                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/8707bf3cea6f710bf6ef05491234e3ab06f6432a",
+                "reference": "8707bf3cea6f710bf6ef05491234e3ab06f6432a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": ">=8.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -4915,7 +4925,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interfaces for simple caching",
@@ -4927,9 +4937,9 @@
                 "simple-cache"
             ],
             "support": {
-                "source": "https://github.com/php-fig/simple-cache/tree/master"
+                "source": "https://github.com/php-fig/simple-cache/tree/2.0.0"
             },
-            "time": "2017-10-23T01:57:42+00:00"
+            "time": "2021-10-29T13:22:09+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -5115,15 +5125,24 @@
         },
         {
             "name": "sebastianlenz/craft-utils",
-            "version": "dev-craft4",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/timkelty/craft-utils",
-                "reference": "5f720c2ded2ae8f726015eb8190dafb9ffd66fb7"
+                "url": "https://github.com/sebastian-lenz/craft-utils.git",
+                "reference": "34c7d9b765e5a941dee802541a369f7f99c688f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/34c7d9b765e5a941dee802541a369f7f99c688f1",
+                "reference": "34c7d9b765e5a941dee802541a369f7f99c688f1",
+                "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.6.0|^4.0.0-beta",
-                "php": ">=7.2.5|^8.0"
+                "craftcms/cms": "^4.0.0-beta",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.5"
             },
             "type": "library",
             "autoload": {
@@ -5131,29 +5150,41 @@
                     "lenz\\craft\\utils\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "A collection of utility classes for Craft CMS development",
-            "time": "2022-03-11T17:05:41+00:00"
+            "support": {
+                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.1"
+            },
+            "time": "2022-04-14T12:00:07+00:00"
         },
         {
             "name": "sebastianlenz/linkfield",
-            "version": "dev-craft4",
+            "version": "2.1.1-rc",
             "source": {
                 "type": "git",
-                "url": "https://github.com/timkelty/craft-linkfield",
-                "reference": "89e843ba4a3c001f809608572a1a6cefb4087cc8"
+                "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
+                "reference": "9867dd1575401dbe733d8f2e4de6cac96bedccba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/9867dd1575401dbe733d8f2e4de6cac96bedccba",
+                "reference": "9867dd1575401dbe733d8f2e4de6cac96bedccba",
+                "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.6.0 || ^4.0.0-beta",
-                "php": "^7.2.5 || ^8.0",
-                "sebastianlenz/craft-utils": "dev-craft4"
+                "craftcms/cms": "^4.0.0-beta",
+                "php": "^8.0",
+                "sebastianlenz/craft-utils": "^3.0.1"
             },
             "require-dev": {
-                "craftcms/feed-me": "4.3.5.1",
+                "craftcms/feed-me": "^5.0-dev",
+                "craftcms/phpstan": "dev-main",
+                "phpstan/phpstan": "^1.5",
                 "phpunit/phpunit": "^7.5 || ^8.0",
-                "verbb/super-table": "^2.3"
+                "verbb/super-table": "^3.0.0-beta"
             },
             "type": "craft-plugin",
             "extra": {
@@ -5163,26 +5194,23 @@
                 "developerUrl": "https://github.com/sebastian-lenz/"
             },
             "autoload": {
-                "classmap": [
-                    "legacy"
-                ],
                 "psr-4": {
                     "lenz\\linkfield\\": "src/"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "./vendor/bin/phpunit ./tests"
-                ],
-                "testWithCoverage": [
-                    "./vendor/bin/phpunit --coverage-html ./tests/coverage --whitelist ./src  ./tests"
+                },
+                "classmap": [
+                    "legacy"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "A Craft field type for selecting links",
-            "time": "2022-03-11T17:18:48+00:00"
+            "support": {
+                "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
+                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.1-rc"
+            },
+            "time": "2022-04-21T18:03:35+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -5478,16 +5506,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.123.0",
+            "version": "v7.125.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "4e44559275eb66dc44f14c4c8dd3fedf9ed33ef9"
+                "reference": "822c00aa380c10c2a3c55d105c5da72ad577b7c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/4e44559275eb66dc44f14c4c8dd3fedf9ed33ef9",
-                "reference": "4e44559275eb66dc44f14c4c8dd3fedf9ed33ef9",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/822c00aa380c10c2a3c55d105c5da72ad577b7c4",
+                "reference": "822c00aa380c10c2a3c55d105c5da72ad577b7c4",
                 "shasum": ""
             },
             "require": {
@@ -5532,9 +5560,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.123.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.125.0"
             },
-            "time": "2022-04-13T23:12:59+00:00"
+            "time": "2022-04-21T22:31:37+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -7970,16 +7998,16 @@
         },
         {
             "name": "verbb/default-dashboard",
-            "version": "dev-craft-4",
+            "version": "2.0.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/default-dashboard.git",
-                "reference": "609575c19d66cde6fb5d27ec53d88a7e67321263"
+                "reference": "aa4f8d352b204e7f569f047d6a1905626749e0ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/default-dashboard/zipball/609575c19d66cde6fb5d27ec53d88a7e67321263",
-                "reference": "609575c19d66cde6fb5d27ec53d88a7e67321263",
+                "url": "https://api.github.com/repos/verbb/default-dashboard/zipball/aa4f8d352b204e7f569f047d6a1905626749e0ee",
+                "reference": "aa4f8d352b204e7f569f047d6a1905626749e0ee",
                 "shasum": ""
             },
             "require": {
@@ -8029,7 +8057,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-12T12:37:47+00:00"
+            "time": "2022-03-09T21:22:35+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -9344,18 +9372,6 @@
     "packages-dev": [],
     "aliases": [
         {
-            "package": "nystudio107/craft-seomatic",
-            "version": "dev-develop-v4",
-            "alias": "4.0.0-beta.5",
-            "alias_normalized": "4.0.0.0-beta5"
-        },
-        {
-            "package": "sebastianlenz/linkfield",
-            "version": "dev-craft4",
-            "alias": "2.0",
-            "alias_normalized": "2.0.0.0"
-        },
-        {
             "package": "solspace/craft-freeform",
             "version": "dev-craft4",
             "alias": "3.11.9",
@@ -9364,11 +9380,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nystudio107/craft-seomatic": 20,
-        "pixelandtonic/yii2-dynamodb": 20,
-        "sebastianlenz/linkfield": 20,
-        "solspace/craft-freeform": 20,
-        "verbb/default-dashboard": 20
+        "solspace/craft-freeform": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

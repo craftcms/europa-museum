@@ -25,13 +25,13 @@
         "craftcms/redactor": "^3.0.0-beta",
         "fakerphp/faker": "^1.14",
         "mead-steve/mono-snag": "^4.1",
-        "nystudio107/craft-seomatic": "dev-develop-v4 as 4.0.0-beta.5",
+        "nystudio107/craft-seomatic": "^4.0.0-beta.8",
         "nystudio107/craft-twigpack": "^4.0.0-beta.2",
         "nystudio107/craft-typogrify": "^4.0.0-beta.2",
-        "pixelandtonic/yii2-dynamodb": "dev-cloud-refactor",
-        "sebastianlenz/linkfield": "dev-craft4 as 2.0",
+        "craftcms/yii2-dynamodb": "^2.0.0",
+        "sebastianlenz/linkfield": "^2.1.1-rc",
         "solspace/craft-freeform": "dev-craft4 as 3.11.9",
-        "verbb/default-dashboard": "dev-craft-4",
+        "verbb/default-dashboard": "^2.0.0-beta.1",
         "vlucas/phpdotenv": "^3.4.0"
     },
     "minimum-stability": "dev",
@@ -59,18 +59,6 @@
         ]
     },
     "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/timkelty/craft-imager-x"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/timkelty/craft-linkfield"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/timkelty/craft-utils"
-        },
         {
             "type": "git",
             "url": "https://github.com/brandonkelly/craft3-freeform"
