@@ -1,4 +1,4 @@
-dateModified: 1649290385
+dateModified: 1650904554
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -40,6 +40,25 @@ fs:
       path: '@webroot/assets/volumes/images'
     type: craft\fs\Local
     url: '@web/assets/volumes/images'
+  runtime:
+    hasUrls: false
+    name: Runtime
+    settings:
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: ''
+      cfPrefix: ''
+      expires: ''
+      keyId: ''
+      makeUploadsPublic: false
+      region: $AWS_REGION
+      secret: ''
+      storageClass: ''
+      subfolder: runtime
+    type: craft\awss3\Fs
+    url: null
 meta:
   __names__:
     0b3ab84a-728c-4dfa-b505-ee524b9631d9: Home # Home
