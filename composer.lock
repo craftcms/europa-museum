@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f50effd4be5a939e19809eb644891b87",
+    "content-hash": "cb3656b47924c9b374ee547c63e27ff3",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -946,16 +946,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "dev-release/4.0.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "57d839898e122f91c3a8f69a65be1010cbfed3c5"
+                "reference": "982efcd14d7e93a1a54f0905b61f242de6b53d8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/57d839898e122f91c3a8f69a65be1010cbfed3c5",
-                "reference": "57d839898e122f91c3a8f69a65be1010cbfed3c5",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/982efcd14d7e93a1a54f0905b61f242de6b53d8a",
+                "reference": "982efcd14d7e93a1a54f0905b61f242de6b53d8a",
                 "shasum": ""
             },
             "require": {
@@ -1060,7 +1060,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-05-04T14:30:14+00:00"
+            "time": "2022-05-04T17:13:57+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -9458,12 +9458,6 @@
     "packages-dev": [],
     "aliases": [
         {
-            "package": "craftcms/cms",
-            "version": "dev-release/4.0.0",
-            "alias": "4.0.0",
-            "alias_normalized": "4.0.0.0"
-        },
-        {
             "package": "solspace/craft-freeform",
             "version": "dev-craft4",
             "alias": "3.11.9",
@@ -9472,7 +9466,6 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "craftcms/cms": 20,
         "solspace/craft-freeform": 20
     },
     "prefer-stable": true,
