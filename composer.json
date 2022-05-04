@@ -20,8 +20,8 @@
         "docs": "https://github.com/craftcms/demo-europa-museum"
     },
     "require": {
-        "craftcms/aws-s3": "^2.0.0-beta",
-        "craftcms/cms": "^4.0.0-beta",
+        "craftcms/aws-s3": "^2.0.0",
+        "craftcms/cms": "dev-release/4.0.0 as 4.0.0",
         "craftcms/redactor": "^3.0.0-beta",
         "fakerphp/faker": "^1.14",
         "mead-steve/mono-snag": "^4.1",
