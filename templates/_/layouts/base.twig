@@ -45,8 +45,7 @@
 
         {% block body %}{% endblock %}
 
-        {{ craft.twigpack.includeSafariNomoduleFix() }}
-        {{ craft.twigpack.includeJsModule("/js/site.js", true) }}
+        {{ craft.twigpack.includeJsModule("/js/site.js") }}
 
     </body>
 
