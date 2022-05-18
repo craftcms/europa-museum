@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30048208e24a24974286b775e84d91d2",
+    "content-hash": "b7952872c3a6065926615b0ecda4cd6d",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.222.13",
+            "version": "3.222.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "007ddbbded7b753c2ceda61f3648774597a2615f"
+                "reference": "d9f586558a2f3313c34f34f4a01c5ddbbbcfb3c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/007ddbbded7b753c2ceda61f3648774597a2615f",
-                "reference": "007ddbbded7b753c2ceda61f3648774597a2615f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d9f586558a2f3313c34f34f4a01c5ddbbbcfb3c0",
+                "reference": "d9f586558a2f3313c34f34f4a01c5ddbbbcfb3c0",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.222.13"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.222.14"
             },
-            "time": "2022-05-16T18:15:06+00:00"
+            "time": "2022-05-17T18:14:21+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2421,16 +2421,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "32badf046bfc187afacbee37b9820c5e200285d0"
+                "reference": "7d7617afdca6f15c881856c679da4e76820e7674"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/32badf046bfc187afacbee37b9820c5e200285d0",
-                "reference": "32badf046bfc187afacbee37b9820c5e200285d0",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/7d7617afdca6f15c881856c679da4e76820e7674",
+                "reference": "7d7617afdca6f15c881856c679da4e76820e7674",
                 "shasum": ""
             },
             "require": {
@@ -2472,11 +2472,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-05-02T14:05:19+00:00"
+            "time": "2022-05-16T15:20:45+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2522,7 +2522,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2570,7 +2570,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.12.2",
+            "version": "v9.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -5047,16 +5047,16 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "4.0.0-beta.7",
+            "version": "dev-v4.0/master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "7dc9cb71d6b6c3bc7f360b36adb6a94171c889a5"
+                "reference": "cf4dc6731bb51510fa041d756c600d1de3f1ec6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/7dc9cb71d6b6c3bc7f360b36adb6a94171c889a5",
-                "reference": "7dc9cb71d6b6c3bc7f360b36adb6a94171c889a5",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/cf4dc6731bb51510fa041d756c600d1de3f1ec6d",
+                "reference": "cf4dc6731bb51510fa041d756c600d1de3f1ec6d",
                 "shasum": ""
             },
             "require": {
@@ -5121,9 +5121,9 @@
             "description": "Reliable form builder that's ready for wherever your project takes you.",
             "support": {
                 "issues": "https://github.com/solspace/craft-freeform/issues",
-                "source": "https://github.com/solspace/craft-freeform/tree/v4.0.0-beta.7"
+                "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-05-10T17:21:12+00:00"
+            "time": "2022-05-18T05:37:52+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -9103,9 +9103,18 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "solspace/craft-freeform",
+            "version": "dev-v4.0/master",
+            "alias": "4.0.0-beta.7",
+            "alias_normalized": "4.0.0.0-beta7"
+        }
+    ],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "solspace/craft-freeform": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
