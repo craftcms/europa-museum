@@ -87,7 +87,7 @@ class DefaultRenderer extends Highway.Renderer {
 
         this.locoScroll = new LocomotiveScroll({
             el: document.querySelector('#loco-scroll'),
-            smooth: true,
+            smooth: false,
             // inertia: 1,
             // smoothMobile: true,
         });

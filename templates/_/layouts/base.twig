@@ -41,7 +41,7 @@
         {% endif %}
     </head>
 
-    <body class="first-load loading {% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
+    <body class="first-load {% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
 
         {% block body %}{% endblock %}
 
