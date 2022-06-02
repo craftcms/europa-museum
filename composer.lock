@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.224.1",
+            "version": "3.224.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "97bbc5682472883233e4b6a1184e2da8755c5b38"
+                "reference": "a2e6461261a92570128e6c2b6fb1896f3d16b424"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/97bbc5682472883233e4b6a1184e2da8755c5b38",
-                "reference": "97bbc5682472883233e4b6a1184e2da8755c5b38",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a2e6461261a92570128e6c2b6fb1896f3d16b424",
+                "reference": "a2e6461261a92570128e6c2b6fb1896f3d16b424",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.224.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.224.2"
             },
-            "time": "2022-05-31T18:45:52+00:00"
+            "time": "2022-06-01T18:17:06+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
