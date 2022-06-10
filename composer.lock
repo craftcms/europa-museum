@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.225.0",
+            "version": "3.225.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5a5f99a528d741820a77f0fc19c54ac7eca72d80"
+                "reference": "b795c9c14997dac771f66d1f6cbadb62c742373a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5a5f99a528d741820a77f0fc19c54ac7eca72d80",
-                "reference": "5a5f99a528d741820a77f0fc19c54ac7eca72d80",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b795c9c14997dac771f66d1f6cbadb62c742373a",
+                "reference": "b795c9c14997dac771f66d1f6cbadb62c742373a",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.225.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.225.1"
             },
-            "time": "2022-06-08T19:56:56+00:00"
+            "time": "2022-06-09T18:19:43+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2028,16 +2028,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.3",
+            "version": "7.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "74a8602c6faec9ef74b7a9391ac82c5e65b1cdab"
+                "reference": "e3ff079b22820c2029d4c2a87796b6a0b8716ad8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/74a8602c6faec9ef74b7a9391ac82c5e65b1cdab",
-                "reference": "74a8602c6faec9ef74b7a9391ac82c5e65b1cdab",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/e3ff079b22820c2029d4c2a87796b6a0b8716ad8",
+                "reference": "e3ff079b22820c2029d4c2a87796b6a0b8716ad8",
                 "shasum": ""
             },
             "require": {
@@ -2132,7 +2132,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.3"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.4"
             },
             "funding": [
                 {
@@ -2148,7 +2148,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-25T13:24:33+00:00"
+            "time": "2022-06-09T21:39:15+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -4790,16 +4790,16 @@
         },
         {
             "name": "sebastianlenz/craft-utils",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastian-lenz/craft-utils.git",
-                "reference": "cf2d77ca5f55f34fa8e70ca8594a67bc9f6f3056"
+                "reference": "043a2971c4fb8a3775f9a65502ca11db66b628a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/cf2d77ca5f55f34fa8e70ca8594a67bc9f6f3056",
-                "reference": "cf2d77ca5f55f34fa8e70ca8594a67bc9f6f3056",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/043a2971c4fb8a3775f9a65502ca11db66b628a2",
+                "reference": "043a2971c4fb8a3775f9a65502ca11db66b628a2",
                 "shasum": ""
             },
             "require": {
@@ -4821,9 +4821,9 @@
             ],
             "description": "A collection of utility classes for Craft CMS development",
             "support": {
-                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.2"
+                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.3"
             },
-            "time": "2022-04-26T18:38:28+00:00"
+            "time": "2022-05-18T10:09:29+00:00"
         },
         {
             "name": "sebastianlenz/linkfield",
