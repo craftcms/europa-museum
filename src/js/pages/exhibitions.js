@@ -24,13 +24,17 @@ class Exhibitions {
     addListeners() {
         const _this = this;
 
-        this.btnDown.addEventListener('click', _this.scrollDown);
+        if (this.btnDown) {
+            this.btnDown.addEventListener('click', _this.scrollDown);
+        }
     }
 
     removeListeners() {
         const _this = this;
 
-        this.btnDown.removeEventListener('click', _this.scrollDown);
+        if (this.btnDown) {
+            this.btnDown.removeEventListener('click', _this.scrollDown);
+        }
     }
 
     // Stop Page
