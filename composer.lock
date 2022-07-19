@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b7952872c3a6065926615b0ecda4cd6d",
+    "content-hash": "80c61c4a33c11e6a8ed2871105ca4a39",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -880,6 +880,67 @@
                 }
             ],
             "time": "2022-02-25T21:32:43+00:00"
+        },
+        {
+            "name": "craftcms/anchors",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/anchors.git",
+                "reference": "90667a0f110204f7003473aa1b74a9fb97abcc6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/anchors/zipball/90667a0f110204f7003473aa1b74a9fb97abcc6f",
+                "reference": "90667a0f110204f7003473aa1b74a9fb97abcc6f",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^4.0.0-RC2",
+                "php": "^8.0.2"
+            },
+            "require-dev": {
+                "craftcms/ecs": "*",
+                "craftcms/phpstan": "dev-main",
+                "craftcms/rector": "dev-main"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Anchors",
+                "handle": "anchors",
+                "documentationUrl": "https://github.com/craftcms/anchors/blob/v2/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\anchors\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Add anchor links to headings in your Craft CMS website content.",
+            "keywords": [
+                "anchors",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "support": {
+                "docs": "https://github.com/craftcms/anchors/blob/v2/README.md",
+                "email": "support@craftcms.com",
+                "issues": "https://github.com/craftcms/anchors/issues?state=open",
+                "rss": "https://github.com/craftcms/anchors/commits/v2.atom",
+                "source": "https://github.com/craftcms/anchors"
+            },
+            "time": "2022-05-03T20:46:19+00:00"
         },
         {
             "name": "craftcms/aws-s3",
@@ -9202,5 +9263,5 @@
     "platform-overrides": {
         "php": "8.0.2"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.2.0"
 }

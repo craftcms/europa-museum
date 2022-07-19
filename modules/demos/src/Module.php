@@ -3,9 +3,15 @@
 namespace modules\demos;
 
 use Craft;
+use craft\anchors\TwigExtension;
+use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
+use craft\events\RegisterUrlRulesEvent;
 use craft\helpers\App;
+use craft\services\Dashboard;
+use craft\web\UrlManager;
 use craft\web\View;
+use modules\demos\widgets\Guide;
 use yii\base\Event;
 
 class Module extends \yii\base\Module
@@ -30,9 +36,33 @@ class Module extends \yii\base\Module
         Event::on(
             View::class,
             View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
-            function (RegisterTemplateRootsEvent $event) {
+            static function (RegisterTemplateRootsEvent $event) {
                 $event->roots['modules'] = __DIR__ . '/templates';
             }
         );
+
+        // Register routes for guide
+        Event::on(
+            UrlManager::class,
+            UrlManager::EVENT_REGISTER_CP_URL_RULES,
+            static function (RegisterUrlRulesEvent $event) {
+                $event->rules['guide'] = ['template' => 'modules/guide/_page'];
+                $event->rules['guide/<slug:{slug}>'] = ['template' => 'modules/guide/_page'];
+            }
+        );
+
+        // Register guide dashboard widget
+        Event::on(
+            Dashboard::class,
+            Dashboard::EVENT_REGISTER_WIDGET_TYPES,
+            static function (RegisterComponentTypesEvent $event) {
+                $event->types[] = Guide::class;
+            }
+        );
+
+        // Register anchors extension for guide template views
+        if (Craft::$app->getRequest()->getIsCpRequest()) {
+            Craft::$app->getView()->registerTwigExtension(new TwigExtension());
+        }
     }
 }

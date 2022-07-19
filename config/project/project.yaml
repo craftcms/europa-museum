@@ -1,4 +1,4 @@
-dateModified: 1653912405
+dateModified: 1658263063
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -158,6 +158,10 @@ meta:
     f668aa75-41bb-4309-9114-26d72e1547ff: 'CTA Link' # CTA Link
     fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7: 'Narrow Width' # Narrow Width
 plugins:
+  anchors:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   aws-s3:
     edition: standard
     enabled: true
