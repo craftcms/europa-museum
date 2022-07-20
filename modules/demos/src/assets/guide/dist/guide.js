@@ -4,6 +4,18 @@ const contentAnchorNodes = content.querySelectorAll("h2");
 const activeNavItem = subnav.querySelector('.active');
 
 let titles = [];
+let subnavItems = [];
+
+const updateSubnavHighlight = () => {
+    contentAnchorNodes.forEach((v,i)=> {
+        let rect = v.getBoundingClientRect().y
+
+        if (rect < ((window.innerHeight / 2) - 100)){
+            subnavItems.forEach(v=> v.classList.remove('active'))
+            subnavItems[i].classList.add('active')
+        }
+    })
+}
 
 contentAnchorNodes.forEach((node) => {
     titles.push({
@@ -25,7 +37,14 @@ if (titles.length > 0) {
         a.appendChild(text);
         li.appendChild(a);
         ul.appendChild(li);
+
+        subnavItems.push(li);
     });
 
     activeNavItem.appendChild(ul);
+
+    window.addEventListener('scroll', updateSubnavHighlight);
+    updateSubnavHighlight();
 }
+
+

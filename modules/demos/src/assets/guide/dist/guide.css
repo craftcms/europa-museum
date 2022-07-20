@@ -46,3 +46,7 @@
 #guide-subnav .active .subnav {
     display: block;
 }
+
+#guide-subnav .subnav .active {
+    font-weight: bold;
+}
