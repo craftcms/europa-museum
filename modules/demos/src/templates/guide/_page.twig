@@ -1,5 +1,7 @@
 {% extends '_layouts/cp' %}
 
+{% do craft.app.getView().registerAssetBundle('modules\\demos\\assets\\guide\\GuideAsset') %}
+
 {% set currentPage = null %}
 {% set nextPage = null %}
 {% set slug = slug ?? 'welcome' %}
@@ -72,79 +74,4 @@
     url: cpUrl('guide/' ~ nextPage.slug)
   } %}
 {% endif %}
-
-<style>
-#guide-content {
-  max-width: 800px;
-}
-#guide-content .intro {
-  font-size: 120%;
-  line-height: 150%;
-}
-#guide-content h2 {
-  margin-top: 2.5rem;
-}
-#guide-content h3 {
-  margin-top: 2rem;
-}
-#guide-content h4 {
-  margin-top: 2rem;
-}
-#guide-content ol {
-  padding-left: 1.25rem;
-}
-#guide-content ol li {
-  list-style-type: decimal;
-  margin: 0.25rem 0;
-}
-#guide-content ul {
-  padding-left: 1.25rem;
-}
-#guide-content ul li {
-  list-style-type: disc;
-  margin: 0.25rem 0;
-}
-#guide-content img {
-  /*border: 1px solid rgba(243,247,252,1);*/
-    box-shadow: rgba(6, 67, 117, 0.2) 0px 0px 2px 0px, rgba(6, 67, 117, 0.1) 0px 10px 34px 0px;
-    margin: 1.5rem 0;
-}
-#guide-subnav .active .subnav {
-  display: block;
-}
-</style>
 {% endblock %}
-
-{% js %}
-const content = document.getElementById('guide-content');
-const subnav = document.getElementById('guide-subnav');
-const contentAnchorNodes = content.querySelectorAll("h2");
-const activeNavItem = subnav.querySelector('.active');
-
-let titles = [];
-
-contentAnchorNodes.forEach((node) => {
-  titles.push({
-    text: node.textContent.replace(' #', ''),
-    href: node.querySelector('a').getAttribute('href')
-  });
-});
-
-if (titles.length > 0) {
-  let ul = document.createElement('ul');
-  ul.className = 'subnav';
-
-  titles.forEach((item) => {
-    let li = document.createElement('li');
-    let a = document.createElement('a');
-    let text = document.createTextNode(item.text);
-    a.href = item.href;
-
-    a.appendChild(text);
-    li.appendChild(a);
-    ul.appendChild(li);
-  });
-
-  activeNavItem.appendChild(ul);
-}
-{% endjs %}

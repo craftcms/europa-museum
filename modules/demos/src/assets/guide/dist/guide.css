@@ -1,0 +1,48 @@
+#guide-content {
+    max-width: 800px;
+}
+
+#guide-content .intro {
+    font-size: 120%;
+    line-height: 150%;
+}
+
+#guide-content h2 {
+    margin-top: 2.5rem;
+}
+
+#guide-content h3 {
+    margin-top: 2rem;
+}
+
+#guide-content h4 {
+    margin-top: 2rem;
+}
+
+#guide-content ol {
+    padding-left: 1.25rem;
+}
+
+#guide-content ol li {
+    list-style-type: decimal;
+    margin: 0.25rem 0;
+}
+
+#guide-content ul {
+    padding-left: 1.25rem;
+}
+
+#guide-content ul li {
+    list-style-type: disc;
+    margin: 0.25rem 0;
+}
+
+#guide-content img {
+    /*border: 1px solid rgba(243,247,252,1);*/
+    box-shadow: rgba(6, 67, 117, 0.2) 0px 0px 2px 0px, rgba(6, 67, 117, 0.1) 0px 10px 34px 0px;
+    margin: 1.5rem 0;
+}
+
+#guide-subnav .active .subnav {
+    display: block;
+}
