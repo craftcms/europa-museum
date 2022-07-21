@@ -8,7 +8,9 @@
 }
 
 #guide-content h2 {
-    margin-top: 2.5rem;
+    /* padding: 2rem offset + 2.5rem intended top gap */
+    padding-top: 4.5rem;
+    margin-top: -2rem;
 }
 
 #guide-content h3 {
