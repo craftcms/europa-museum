@@ -5133,12 +5133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "e65d021d11ee91d7886a9b0e58ed0fb31b0072d3"
+                "reference": "9d01ad302465217693479b73da4b4847bd8ac05f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/e65d021d11ee91d7886a9b0e58ed0fb31b0072d3",
-                "reference": "e65d021d11ee91d7886a9b0e58ed0fb31b0072d3",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/9d01ad302465217693479b73da4b4847bd8ac05f",
+                "reference": "9d01ad302465217693479b73da4b4847bd8ac05f",
                 "shasum": ""
             },
             "require": {
@@ -5205,7 +5205,7 @@
                 "issues": "https://github.com/solspace/craft-freeform/issues",
                 "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-08-05T09:17:54+00:00"
+            "time": "2022-08-05T20:27:53+00:00"
         },
         {
             "name": "solspace/craft3-commons",
