@@ -277,16 +277,16 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.4.0",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "0478e6015472ad0b4e6c27d34ed9a8f0dbc4dfd3"
+                "reference": "8b1bcd45971733e8f4224e539cb92838f18c4d06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/0478e6015472ad0b4e6c27d34ed9a8f0dbc4dfd3",
-                "reference": "0478e6015472ad0b4e6c27d34ed9a8f0dbc4dfd3",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/8b1bcd45971733e8f4224e539cb92838f18c4d06",
+                "reference": "8b1bcd45971733e8f4224e539cb92838f18c4d06",
                 "shasum": ""
             },
             "require": {
@@ -335,9 +335,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.4.0"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.4.1"
             },
-            "time": "2022-08-08T15:05:58+00:00"
+            "time": "2022-08-09T11:42:51+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5133,12 +5133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "9d01ad302465217693479b73da4b4847bd8ac05f"
+                "reference": "12e13c3f86ee3398c39974817b61b8e3fb5aa984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/9d01ad302465217693479b73da4b4847bd8ac05f",
-                "reference": "9d01ad302465217693479b73da4b4847bd8ac05f",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/12e13c3f86ee3398c39974817b61b8e3fb5aa984",
+                "reference": "12e13c3f86ee3398c39974817b61b8e3fb5aa984",
                 "shasum": ""
             },
             "require": {
@@ -5205,7 +5205,7 @@
                 "issues": "https://github.com/solspace/craft-freeform/issues",
                 "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-08-05T20:27:53+00:00"
+            "time": "2022-08-09T10:41:25+00:00"
         },
         {
             "name": "solspace/craft3-commons",
