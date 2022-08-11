@@ -3194,16 +3194,16 @@
         },
         {
             "name": "moneyphp/money",
-            "version": "v4.0.4",
+            "version": "v4.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moneyphp/money.git",
-                "reference": "efe904ab6109d87046eb624d5dff7d270fd0cca5"
+                "reference": "cee58435ff82a5de252c516e6a31beb674898985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moneyphp/money/zipball/efe904ab6109d87046eb624d5dff7d270fd0cca5",
-                "reference": "efe904ab6109d87046eb624d5dff7d270fd0cca5",
+                "url": "https://api.github.com/repos/moneyphp/money/zipball/cee58435ff82a5de252c516e6a31beb674898985",
+                "reference": "cee58435ff82a5de252c516e6a31beb674898985",
                 "shasum": ""
             },
             "require": {
@@ -3276,9 +3276,9 @@
             ],
             "support": {
                 "issues": "https://github.com/moneyphp/money/issues",
-                "source": "https://github.com/moneyphp/money/tree/v4.0.4"
+                "source": "https://github.com/moneyphp/money/tree/v4.0.5"
             },
-            "time": "2022-05-18T19:32:15+00:00"
+            "time": "2022-08-11T09:12:20+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -5133,12 +5133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "aae5d716286e82062885711022dc926e2167925f"
+                "reference": "33eb70f21f8397e1072596702a900b00bd21ab78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/aae5d716286e82062885711022dc926e2167925f",
-                "reference": "aae5d716286e82062885711022dc926e2167925f",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/33eb70f21f8397e1072596702a900b00bd21ab78",
+                "reference": "33eb70f21f8397e1072596702a900b00bd21ab78",
                 "shasum": ""
             },
             "require": {
@@ -5205,7 +5205,7 @@
                 "issues": "https://github.com/solspace/craft-freeform/issues",
                 "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-08-10T12:56:52+00:00"
+            "time": "2022-08-11T07:36:18+00:00"
         },
         {
             "name": "solspace/craft3-commons",
