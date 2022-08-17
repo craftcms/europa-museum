@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.233.1",
+            "version": "3.233.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1eeac24f921f146b7cef5beb61375d7852df7cf8"
+                "reference": "0b9277a5c3d2fbccafc16b05a1b53404c9b67d1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1eeac24f921f146b7cef5beb61375d7852df7cf8",
-                "reference": "1eeac24f921f146b7cef5beb61375d7852df7cf8",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0b9277a5c3d2fbccafc16b05a1b53404c9b67d1b",
+                "reference": "0b9277a5c3d2fbccafc16b05a1b53404c9b67d1b",
                 "shasum": ""
             },
             "require": {
@@ -144,9 +144,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.233.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.233.3"
             },
-            "time": "2022-08-12T18:18:34+00:00"
+            "time": "2022-08-16T18:14:59+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2422,7 +2422,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.24.0",
+            "version": "v9.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -2477,7 +2477,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.24.0",
+            "version": "v9.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2523,7 +2523,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.24.0",
+            "version": "v9.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2571,7 +2571,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.24.0",
+            "version": "v9.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -5133,12 +5133,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "33eb70f21f8397e1072596702a900b00bd21ab78"
+                "reference": "326c56c9e33e284b7865f2d8737714bc23f5b249"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/33eb70f21f8397e1072596702a900b00bd21ab78",
-                "reference": "33eb70f21f8397e1072596702a900b00bd21ab78",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/326c56c9e33e284b7865f2d8737714bc23f5b249",
+                "reference": "326c56c9e33e284b7865f2d8737714bc23f5b249",
                 "shasum": ""
             },
             "require": {
@@ -5205,7 +5205,7 @@
                 "issues": "https://github.com/solspace/craft-freeform/issues",
                 "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-08-11T07:36:18+00:00"
+            "time": "2022-08-16T16:20:22+00:00"
         },
         {
             "name": "solspace/craft3-commons",
