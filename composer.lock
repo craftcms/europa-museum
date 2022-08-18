@@ -4910,16 +4910,16 @@
         },
         {
             "name": "sebastianlenz/linkfield",
-            "version": "2.1.3-rc",
+            "version": "2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
-                "reference": "ac11c92df2049f8192327944b9c21449a464be55"
+                "reference": "0648b7f8a8f970b029ab20b9a2e7805756f0e97c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/ac11c92df2049f8192327944b9c21449a464be55",
-                "reference": "ac11c92df2049f8192327944b9c21449a464be55",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/0648b7f8a8f970b029ab20b9a2e7805756f0e97c",
+                "reference": "0648b7f8a8f970b029ab20b9a2e7805756f0e97c",
                 "shasum": ""
             },
             "require": {
@@ -4956,9 +4956,9 @@
             "description": "A Craft field type for selecting links",
             "support": {
                 "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
-                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.3-rc"
+                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.4"
             },
-            "time": "2022-05-09T08:35:20+00:00"
+            "time": "2022-08-18T08:23:15+00:00"
         },
         {
             "name": "seld/cli-prompt",
