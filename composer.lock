@@ -3564,16 +3564,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.62.0",
+            "version": "2.62.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "7507aec3d626797ce2123cf6c6556683be22b5f8"
+                "reference": "01bc4cdefe98ef58d1f9cb31bdbbddddf2a88f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/7507aec3d626797ce2123cf6c6556683be22b5f8",
-                "reference": "7507aec3d626797ce2123cf6c6556683be22b5f8",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/01bc4cdefe98ef58d1f9cb31bdbbddddf2a88f7a",
+                "reference": "01bc4cdefe98ef58d1f9cb31bdbbddddf2a88f7a",
                 "shasum": ""
             },
             "require": {
@@ -3662,7 +3662,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-28T19:48:05+00:00"
+            "time": "2022-09-02T07:48:13+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
@@ -5185,12 +5185,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "ae4605a3a3c9efea39803e5522d9a2789160b342"
+                "reference": "cad7e526b8179aa50be72e7374e5d3ee735f4364"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/ae4605a3a3c9efea39803e5522d9a2789160b342",
-                "reference": "ae4605a3a3c9efea39803e5522d9a2789160b342",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/cad7e526b8179aa50be72e7374e5d3ee735f4364",
+                "reference": "cad7e526b8179aa50be72e7374e5d3ee735f4364",
                 "shasum": ""
             },
             "require": {
@@ -5257,7 +5257,7 @@
                 "issues": "https://github.com/solspace/craft-freeform/issues",
                 "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-08-31T14:13:22+00:00"
+            "time": "2022-09-02T07:14:50+00:00"
         },
         {
             "name": "solspace/craft3-commons",
