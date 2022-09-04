@@ -9167,16 +9167,16 @@
         },
         {
             "name": "yiisoft/yii2-symfonymailer",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-symfonymailer.git",
-                "reference": "77baddfd806005604624ec58e6b55b18f31eeaaf"
+                "reference": "82f5902551a160633c4734b5096977ce76a809d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-symfonymailer/zipball/77baddfd806005604624ec58e6b55b18f31eeaaf",
-                "reference": "77baddfd806005604624ec58e6b55b18f31eeaaf",
+                "url": "https://api.github.com/repos/yiisoft/yii2-symfonymailer/zipball/82f5902551a160633c4734b5096977ce76a809d9",
+                "reference": "82f5902551a160633c4734b5096977ce76a809d9",
                 "shasum": ""
             },
             "require": {
@@ -9238,7 +9238,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-10T13:42:46+00:00"
+            "time": "2022-09-04T10:48:21+00:00"
         }
     ],
     "packages-dev": [],
