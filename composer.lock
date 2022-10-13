@@ -5198,12 +5198,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "50e97e1c3bdda7a99e685ead3aed3197bb097379"
+                "reference": "61fea6c4ffbd6535fcc15e6ff50e5e7eeff22de3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/50e97e1c3bdda7a99e685ead3aed3197bb097379",
-                "reference": "50e97e1c3bdda7a99e685ead3aed3197bb097379",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/61fea6c4ffbd6535fcc15e6ff50e5e7eeff22de3",
+                "reference": "61fea6c4ffbd6535fcc15e6ff50e5e7eeff22de3",
                 "shasum": ""
             },
             "require": {
@@ -5268,9 +5268,9 @@
             "description": "Reliable form builder that's ready for wherever your project takes you.",
             "support": {
                 "issues": "https://github.com/solspace/craft-freeform/issues",
-                "source": "https://github.com/solspace/craft-freeform/tree/v4.0.6"
+                "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-10-12T14:46:21+00:00"
+            "time": "2022-10-13T10:02:11+00:00"
         },
         {
             "name": "solspace/craft3-commons",
@@ -8052,16 +8052,16 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "7.9.4",
+            "version": "7.9.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "4a995937b91f15b95d9a170f803951069b2f0fa0"
+                "reference": "4635acfab7d1451124039a88fd5c700b28ee3906"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/4a995937b91f15b95d9a170f803951069b2f0fa0",
-                "reference": "4a995937b91f15b95d9a170f803951069b2f0fa0",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/4635acfab7d1451124039a88fd5c700b28ee3906",
+                "reference": "4635acfab7d1451124039a88fd5c700b28ee3906",
                 "shasum": ""
             },
             "require": {
@@ -8131,7 +8131,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-06T20:07:10+00:00"
+            "time": "2022-10-13T00:27:25+00:00"
         },
         {
             "name": "voku/email-check",
