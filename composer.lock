@@ -3798,16 +3798,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.13",
+            "version": "4.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "137530b22c198c8800bc26d881471e78deccda1e"
+                "reference": "c50aa876818f60484820f196cc46ef84db259ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/137530b22c198c8800bc26d881471e78deccda1e",
-                "reference": "137530b22c198c8800bc26d881471e78deccda1e",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c50aa876818f60484820f196cc46ef84db259ab1",
+                "reference": "c50aa876818f60484820f196cc46ef84db259ab1",
                 "shasum": ""
             },
             "require": {
@@ -3875,7 +3875,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-11-11T20:54:16+00:00"
+            "time": "2022-11-21T04:04:51+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -5215,12 +5215,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "3e6a13f25c14d45d31e29027dc9b425b2e3c5bb6"
+                "reference": "9cf2c54624c1a158869055f1e031a490fcc67acb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/3e6a13f25c14d45d31e29027dc9b425b2e3c5bb6",
-                "reference": "3e6a13f25c14d45d31e29027dc9b425b2e3c5bb6",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/9cf2c54624c1a158869055f1e031a490fcc67acb",
+                "reference": "9cf2c54624c1a158869055f1e031a490fcc67acb",
                 "shasum": ""
             },
             "require": {
@@ -5287,7 +5287,7 @@
                 "issues": "https://github.com/solspace/craft-freeform/issues",
                 "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2022-11-15T12:04:17+00:00"
+            "time": "2022-11-21T07:27:46+00:00"
         },
         {
             "name": "solspace/craft3-commons",
