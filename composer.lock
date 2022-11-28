@@ -3940,16 +3940,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "082b0f3ed7abc68c859571ce9f4e8e84696b7bdb"
+                "reference": "facdf5205fee16cbaba446b4a1f18ab42a50bb26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/082b0f3ed7abc68c859571ce9f4e8e84696b7bdb",
-                "reference": "082b0f3ed7abc68c859571ce9f4e8e84696b7bdb",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/facdf5205fee16cbaba446b4a1f18ab42a50bb26",
+                "reference": "facdf5205fee16cbaba446b4a1f18ab42a50bb26",
                 "shasum": ""
             },
             "require": {
@@ -3997,7 +3997,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-24T15:42:40+00:00"
+            "time": "2022-11-27T18:11:56+00:00"
         },
         {
             "name": "paragonie/random_compat",
