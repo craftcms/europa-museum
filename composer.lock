@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.248.0",
+            "version": "3.249.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "69a49ff367447d9753c068326b4ac0d437a230dd"
+                "reference": "ec9108e2540167cbd7a524031a4b31b6fc0d857d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/69a49ff367447d9753c068326b4ac0d437a230dd",
-                "reference": "69a49ff367447d9753c068326b4ac0d437a230dd",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec9108e2540167cbd7a524031a4b31b6fc0d857d",
+                "reference": "ec9108e2540167cbd7a524031a4b31b6fc0d857d",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.248.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.249.0"
             },
-            "time": "2022-11-28T02:55:22+00:00"
+            "time": "2022-11-29T04:55:41+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -4955,16 +4955,16 @@
         },
         {
             "name": "sebastianlenz/craft-utils",
-            "version": "3.0.5",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastian-lenz/craft-utils.git",
-                "reference": "3665b66968ccedb7105eb70c3c0ddaf9dc478db7"
+                "reference": "86403435fdfcab499edd1b363bafc46cf4c1fb4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/3665b66968ccedb7105eb70c3c0ddaf9dc478db7",
-                "reference": "3665b66968ccedb7105eb70c3c0ddaf9dc478db7",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/86403435fdfcab499edd1b363bafc46cf4c1fb4d",
+                "reference": "86403435fdfcab499edd1b363bafc46cf4c1fb4d",
                 "shasum": ""
             },
             "require": {
@@ -4986,35 +4986,35 @@
             ],
             "description": "A collection of utility classes for Craft CMS development",
             "support": {
-                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.5"
+                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.6"
             },
-            "time": "2022-11-02T14:57:28+00:00"
+            "time": "2022-11-29T09:29:26+00:00"
         },
         {
             "name": "sebastianlenz/linkfield",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastian-lenz/craft-linkfield.git",
-                "reference": "0648b7f8a8f970b029ab20b9a2e7805756f0e97c"
+                "reference": "b82fb1a8f94861f08c8b119758606a2a2172aef9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/0648b7f8a8f970b029ab20b9a2e7805756f0e97c",
-                "reference": "0648b7f8a8f970b029ab20b9a2e7805756f0e97c",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-linkfield/zipball/b82fb1a8f94861f08c8b119758606a2a2172aef9",
+                "reference": "b82fb1a8f94861f08c8b119758606a2a2172aef9",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^4.0.0-beta",
+                "craftcms/cms": "^4.0.0",
                 "php": "^8.0",
-                "sebastianlenz/craft-utils": "^3.0.2"
+                "sebastianlenz/craft-utils": "^3.0.5"
             },
             "require-dev": {
-                "craftcms/feed-me": "^5.0-dev",
+                "craftcms/feed-me": "^5.0",
                 "craftcms/phpstan": "dev-main",
-                "phpstan/phpstan": "^1.5",
+                "phpstan/phpstan": "^1.8.5",
                 "phpunit/phpunit": "^7.5 || ^8.0",
-                "verbb/super-table": "^3.0.0-beta"
+                "verbb/super-table": "^3.0.5"
             },
             "type": "craft-plugin",
             "extra": {
@@ -5038,9 +5038,9 @@
             "description": "A Craft field type for selecting links",
             "support": {
                 "issues": "https://github.com/sebastian-lenz/craft-linkfield/issues",
-                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.4"
+                "source": "https://github.com/sebastian-lenz/craft-linkfield/tree/2.1.5"
             },
-            "time": "2022-08-18T08:23:15+00:00"
+            "time": "2022-11-29T09:36:26+00:00"
         },
         {
             "name": "seld/cli-prompt",
