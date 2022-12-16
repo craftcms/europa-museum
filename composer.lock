@@ -3930,16 +3930,16 @@
         },
         {
             "name": "nystudio107/craft-code-editor",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-code-editor.git",
-                "reference": "f9e18aa59f6180792723c66e0d38e13cb528fe87"
+                "reference": "68ddd78f0988d6702b5849ae69241a473a58f08c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/f9e18aa59f6180792723c66e0d38e13cb528fe87",
-                "reference": "f9e18aa59f6180792723c66e0d38e13cb528fe87",
+                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/68ddd78f0988d6702b5849ae69241a473a58f08c",
+                "reference": "68ddd78f0988d6702b5849ae69241a473a58f08c",
                 "shasum": ""
             },
             "require": {
@@ -3991,7 +3991,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-06T19:43:38+00:00"
+            "time": "2022-12-16T03:52:43+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
@@ -8656,16 +8656,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "6.0.10",
+            "version": "6.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "35b21539c309cbc4697266591f3a4ae9ce4e029c"
+                "reference": "a768656da0b8e42d236b325a4ebfc56ad6d0e111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/35b21539c309cbc4697266591f3a4ae9ce4e029c",
-                "reference": "35b21539c309cbc4697266591f3a4ae9ce4e029c",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/a768656da0b8e42d236b325a4ebfc56ad6d0e111",
+                "reference": "a768656da0b8e42d236b325a4ebfc56ad6d0e111",
                 "shasum": ""
             },
             "require": {
@@ -8731,7 +8731,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-utf8/issues",
-                "source": "https://github.com/voku/portable-utf8/tree/6.0.10"
+                "source": "https://github.com/voku/portable-utf8/tree/6.0.11"
             },
             "funding": [
                 {
@@ -8755,7 +8755,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-05T23:42:43+00:00"
+            "time": "2022-12-16T00:56:34+00:00"
         },
         {
             "name": "voku/stop-words",
