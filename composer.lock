@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.255.3",
+            "version": "3.255.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0530f0679d7b4809c9500c2332a4d7e9f770f47a"
+                "reference": "56fe0ef4f192536daa7c301b731559fb275aed84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0530f0679d7b4809c9500c2332a4d7e9f770f47a",
-                "reference": "0530f0679d7b4809c9500c2332a4d7e9f770f47a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/56fe0ef4f192536daa7c301b731559fb275aed84",
+                "reference": "56fe0ef4f192536daa7c301b731559fb275aed84",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.255.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.255.4"
             },
-            "time": "2022-12-23T19:26:27+00:00"
+            "time": "2022-12-27T19:22:28+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -8424,16 +8424,16 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "7.9.5",
+            "version": "7.9.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "4635acfab7d1451124039a88fd5c700b28ee3906"
+                "reference": "0e20b8c6eef7fc46694a2906e0eae2f9fc11cade"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/4635acfab7d1451124039a88fd5c700b28ee3906",
-                "reference": "4635acfab7d1451124039a88fd5c700b28ee3906",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/0e20b8c6eef7fc46694a2906e0eae2f9fc11cade",
+                "reference": "0e20b8c6eef7fc46694a2906e0eae2f9fc11cade",
                 "shasum": ""
             },
             "require": {
@@ -8477,7 +8477,7 @@
                 "utils"
             ],
             "support": {
-                "docs": "http://voku.github.io/Arrayy/index.html",
+                "docs": "https://voku.github.io/Arrayy/",
                 "issues": "https://github.com/voku/Arrayy/issues",
                 "source": "https://github.com/voku/Arrayy"
             },
@@ -8503,7 +8503,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-13T00:27:25+00:00"
+            "time": "2022-12-27T12:58:32+00:00"
         },
         {
             "name": "voku/email-check",
