@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.256.0",
+            "version": "3.256.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "99d254413e0b4899feb53d4ad373fc630a9e089a"
+                "reference": "d993c3aa72233186375f3ceb5811a30982fbcad8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/99d254413e0b4899feb53d4ad373fc630a9e089a",
-                "reference": "99d254413e0b4899feb53d4ad373fc630a9e089a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d993c3aa72233186375f3ceb5811a30982fbcad8",
+                "reference": "d993c3aa72233186375f3ceb5811a30982fbcad8",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.256.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.256.1"
             },
-            "time": "2023-01-09T19:23:53+00:00"
+            "time": "2023-01-10T19:20:06+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2488,16 +2488,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.46.0",
+            "version": "v9.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "03777893d04776c2491c7b85fff3e4dd6723d928"
+                "reference": "9668ef5b1cc13cbc0a57a5208417dce2be66a3d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/03777893d04776c2491c7b85fff3e4dd6723d928",
-                "reference": "03777893d04776c2491c7b85fff3e4dd6723d928",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/9668ef5b1cc13cbc0a57a5208417dce2be66a3d4",
+                "reference": "9668ef5b1cc13cbc0a57a5208417dce2be66a3d4",
                 "shasum": ""
             },
             "require": {
@@ -2539,11 +2539,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-12-24T19:41:01+00:00"
+            "time": "2023-01-06T14:14:06+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.46.0",
+            "version": "v9.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2589,7 +2589,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.46.0",
+            "version": "v9.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2637,7 +2637,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.46.0",
+            "version": "v9.47.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -4049,16 +4049,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.17",
+            "version": "4.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "d8660d561636ae883d2adb7f02f4fe922310896b"
+                "reference": "419152e776557929c88ffbe7789f4dda781d0961"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d8660d561636ae883d2adb7f02f4fe922310896b",
-                "reference": "d8660d561636ae883d2adb7f02f4fe922310896b",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/419152e776557929c88ffbe7789f4dda781d0961",
+                "reference": "419152e776557929c88ffbe7789f4dda781d0961",
                 "shasum": ""
             },
             "require": {
@@ -4126,7 +4126,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-10T03:56:39+00:00"
+            "time": "2023-01-10T17:38:06+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -5571,12 +5571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "370e281a64af83434004966c2efe5c2fed627f36"
+                "reference": "a7d81863dfe349393ced63eb157c5a1519451aea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/370e281a64af83434004966c2efe5c2fed627f36",
-                "reference": "370e281a64af83434004966c2efe5c2fed627f36",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/a7d81863dfe349393ced63eb157c5a1519451aea",
+                "reference": "a7d81863dfe349393ced63eb157c5a1519451aea",
                 "shasum": ""
             },
             "require": {
@@ -5644,7 +5644,7 @@
                 "issues": "https://github.com/solspace/craft-freeform/issues",
                 "source": "https://github.com/solspace/craft-freeform/tree/v4.0/master"
             },
-            "time": "2023-01-10T11:57:34+00:00"
+            "time": "2023-01-10T20:37:44+00:00"
         },
         {
             "name": "solspace/craft3-commons",
