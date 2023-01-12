@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.256.1",
+            "version": "3.256.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d993c3aa72233186375f3ceb5811a30982fbcad8"
+                "reference": "a72094f7d968bdc743839e309087d51f868ba26c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d993c3aa72233186375f3ceb5811a30982fbcad8",
-                "reference": "d993c3aa72233186375f3ceb5811a30982fbcad8",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a72094f7d968bdc743839e309087d51f868ba26c",
+                "reference": "a72094f7d968bdc743839e309087d51f868ba26c",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.256.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.256.2"
             },
-            "time": "2023-01-10T19:20:06+00:00"
+            "time": "2023-01-11T20:12:50+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -4049,16 +4049,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.18",
+            "version": "4.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "419152e776557929c88ffbe7789f4dda781d0961"
+                "reference": "d0162e1b19e77877def4038ff6c0a39d5821a795"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/419152e776557929c88ffbe7789f4dda781d0961",
-                "reference": "419152e776557929c88ffbe7789f4dda781d0961",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d0162e1b19e77877def4038ff6c0a39d5821a795",
+                "reference": "d0162e1b19e77877def4038ff6c0a39d5821a795",
                 "shasum": ""
             },
             "require": {
@@ -4126,7 +4126,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-10T17:38:06+00:00"
+            "time": "2023-01-11T15:07:16+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -8658,16 +8658,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "6.0.11",
+            "version": "6.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "a768656da0b8e42d236b325a4ebfc56ad6d0e111"
+                "reference": "db0583727bb17666bbd2ba238c85babb973fd165"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/a768656da0b8e42d236b325a4ebfc56ad6d0e111",
-                "reference": "a768656da0b8e42d236b325a4ebfc56ad6d0e111",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/db0583727bb17666bbd2ba238c85babb973fd165",
+                "reference": "db0583727bb17666bbd2ba238c85babb973fd165",
                 "shasum": ""
             },
             "require": {
@@ -8680,7 +8680,7 @@
                 "voku/portable-ascii": "~2.0.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "1.8.*@dev",
+                "phpstan/phpstan": "1.9.*@dev",
                 "phpstan/phpstan-strict-rules": "1.4.*@dev",
                 "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0",
                 "thecodingmachine/phpstan-strict-rules": "1.0.*@dev",
@@ -8733,7 +8733,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/portable-utf8/issues",
-                "source": "https://github.com/voku/portable-utf8/tree/6.0.11"
+                "source": "https://github.com/voku/portable-utf8/tree/6.0.12"
             },
             "funding": [
                 {
@@ -8757,7 +8757,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-12-16T00:56:34+00:00"
+            "time": "2023-01-11T12:26:16+00:00"
         },
         {
             "name": "voku/stop-words",
