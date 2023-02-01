@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.257.11",
+            "version": "3.258.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3c26d5d82120bcb8845f70f8f63c37cbc9d65b51"
+                "reference": "96ed88ca45e54f74a158002411966a92891e8ead"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3c26d5d82120bcb8845f70f8f63c37cbc9d65b51",
-                "reference": "3c26d5d82120bcb8845f70f8f63c37cbc9d65b51",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/96ed88ca45e54f74a158002411966a92891e8ead",
+                "reference": "96ed88ca45e54f74a158002411966a92891e8ead",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.257.11"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.258.0"
             },
-            "time": "2023-01-30T19:45:18+00:00"
+            "time": "2023-01-31T19:33:16+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -2488,16 +2488,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.48.0",
+            "version": "v9.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "56c63a83d985a3bc6db31f4bd8b3b297dc40284e"
+                "reference": "4e3421032c61ad887a7a45ef4878d7bc91e2ffee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/56c63a83d985a3bc6db31f4bd8b3b297dc40284e",
-                "reference": "56c63a83d985a3bc6db31f4bd8b3b297dc40284e",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/4e3421032c61ad887a7a45ef4878d7bc91e2ffee",
+                "reference": "4e3421032c61ad887a7a45ef4878d7bc91e2ffee",
                 "shasum": ""
             },
             "require": {
@@ -2539,11 +2539,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-01-16T20:40:21+00:00"
+            "time": "2023-01-30T15:03:14+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.48.0",
+            "version": "v9.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2589,16 +2589,16 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.48.0",
+            "version": "v9.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
-                "reference": "4b79cdbda0a6e8fe520fccc0e8c4ba1fed2a2d07"
+                "reference": "d731949dd1deff07c5a9d01379b1c1918bfd0672"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/contracts/zipball/4b79cdbda0a6e8fe520fccc0e8c4ba1fed2a2d07",
-                "reference": "4b79cdbda0a6e8fe520fccc0e8c4ba1fed2a2d07",
+                "url": "https://api.github.com/repos/illuminate/contracts/zipball/d731949dd1deff07c5a9d01379b1c1918bfd0672",
+                "reference": "d731949dd1deff07c5a9d01379b1c1918bfd0672",
                 "shasum": ""
             },
             "require": {
@@ -2633,11 +2633,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-01-16T17:30:57+00:00"
+            "time": "2023-01-27T22:43:58+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.48.0",
+            "version": "v9.49.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
