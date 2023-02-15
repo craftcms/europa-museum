@@ -279,20 +279,20 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.4.1",
+            "version": "v1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "8b1bcd45971733e8f4224e539cb92838f18c4d06"
+                "reference": "406c7b5f0fbe4f6a64155c0fe03b1adb34d01308"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/8b1bcd45971733e8f4224e539cb92838f18c4d06",
-                "reference": "8b1bcd45971733e8f4224e539cb92838f18c4d06",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/406c7b5f0fbe4f6a64155c0fe03b1adb34d01308",
+                "reference": "406c7b5f0fbe4f6a64155c0fe03b1adb34d01308",
                 "shasum": ""
             },
             "require": {
-                "doctrine/collections": "^1.2",
+                "doctrine/collections": "^1.2 || ^2.0",
                 "php": ">=7.3"
             },
             "require-dev": {
@@ -337,9 +337,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.4.1"
+                "source": "https://github.com/commerceguys/addressing/tree/v1.4.2"
             },
-            "time": "2022-08-09T11:42:51+00:00"
+            "time": "2023-02-15T10:11:14+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -5567,16 +5567,16 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "4.0.14",
+            "version": "4.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "aa45c9793285a528af1bd758f74d84fbe2fcfee4"
+                "reference": "d5e4baac441a11ff6a98dd1388b7de084024ada5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/aa45c9793285a528af1bd758f74d84fbe2fcfee4",
-                "reference": "aa45c9793285a528af1bd758f74d84fbe2fcfee4",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/d5e4baac441a11ff6a98dd1388b7de084024ada5",
+                "reference": "d5e4baac441a11ff6a98dd1388b7de084024ada5",
                 "shasum": ""
             },
             "require": {
@@ -5642,9 +5642,9 @@
             "description": "Reliable form builder that's ready for wherever your project takes you.",
             "support": {
                 "issues": "https://github.com/solspace/craft-freeform/issues",
-                "source": "https://github.com/solspace/craft-freeform/tree/v4.0.14"
+                "source": "https://github.com/solspace/craft-freeform/tree/v4.0.15"
             },
-            "time": "2023-02-08T17:33:19+00:00"
+            "time": "2023-02-15T05:54:05+00:00"
         },
         {
             "name": "solspace/craft3-commons",
