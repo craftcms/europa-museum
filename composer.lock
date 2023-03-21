@@ -5618,16 +5618,16 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "4.0.18",
+            "version": "4.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "17af1a6a21d0f963ef4c275d54071ee05fa389fb"
+                "reference": "68187d5ca507bcf51cababbfc449ce4d37969c05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/17af1a6a21d0f963ef4c275d54071ee05fa389fb",
-                "reference": "17af1a6a21d0f963ef4c275d54071ee05fa389fb",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/68187d5ca507bcf51cababbfc449ce4d37969c05",
+                "reference": "68187d5ca507bcf51cababbfc449ce4d37969c05",
                 "shasum": ""
             },
             "require": {
@@ -5693,9 +5693,9 @@
             "description": "Reliable form builder that's ready for wherever your project takes you.",
             "support": {
                 "issues": "https://github.com/solspace/craft-freeform/issues",
-                "source": "https://github.com/solspace/craft-freeform/tree/v4.0.18"
+                "source": "https://github.com/solspace/craft-freeform/tree/v4.0.19"
             },
-            "time": "2023-03-10T16:56:03+00:00"
+            "time": "2023-03-21T05:32:29+00:00"
         },
         {
             "name": "solspace/craft3-commons",
