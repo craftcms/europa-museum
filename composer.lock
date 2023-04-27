@@ -5784,16 +5784,16 @@
         },
         {
             "name": "sebastianlenz/craft-utils",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastian-lenz/craft-utils.git",
-                "reference": "b94cf8d8af09beb74942b01f9849bd7b90f069ac"
+                "reference": "da8ba656ea96938cde69aa893962e1781e19c12e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/b94cf8d8af09beb74942b01f9849bd7b90f069ac",
-                "reference": "b94cf8d8af09beb74942b01f9849bd7b90f069ac",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/da8ba656ea96938cde69aa893962e1781e19c12e",
+                "reference": "da8ba656ea96938cde69aa893962e1781e19c12e",
                 "shasum": ""
             },
             "require": {
@@ -5815,9 +5815,9 @@
             ],
             "description": "A collection of utility classes for Craft CMS development",
             "support": {
-                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.8"
+                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.9"
             },
-            "time": "2023-04-21T13:14:45+00:00"
+            "time": "2023-04-27T10:28:57+00:00"
         },
         {
             "name": "sebastianlenz/linkfield",
