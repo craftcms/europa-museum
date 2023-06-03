@@ -1,4 +1,4 @@
-dateModified: 1684282609
+dateModified: 1685751333
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -286,7 +286,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: F05LKTHK735ZMFRL0LNY2YWC
-    schemaVersion: 3.0.11
+    schemaVersion: 3.0.12
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
