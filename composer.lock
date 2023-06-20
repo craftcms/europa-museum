@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.273.2",
+            "version": "3.273.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "10631467bdf9869a45197a25b490948af2ef7acd"
+                "reference": "fc2995defbfa0e113a30d02b7b0ff52d8056841c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/10631467bdf9869a45197a25b490948af2ef7acd",
-                "reference": "10631467bdf9869a45197a25b490948af2ef7acd",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fc2995defbfa0e113a30d02b7b0ff52d8056841c",
+                "reference": "fc2995defbfa0e113a30d02b7b0ff52d8056841c",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.273.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.273.3"
             },
-            "time": "2023-06-16T18:53:48+00:00"
+            "time": "2023-06-19T18:21:47+00:00"
         },
         {
             "name": "bref/bref",
@@ -4122,16 +4122,16 @@
         },
         {
             "name": "nystudio107/craft-code-editor",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-code-editor.git",
-                "reference": "ed82bebd043245173c187b8c16434bf93e179406"
+                "reference": "da48a7f7738442c629a43e8d41f458d6774aae53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/ed82bebd043245173c187b8c16434bf93e179406",
-                "reference": "ed82bebd043245173c187b8c16434bf93e179406",
+                "url": "https://api.github.com/repos/nystudio107/craft-code-editor/zipball/da48a7f7738442c629a43e8d41f458d6774aae53",
+                "reference": "da48a7f7738442c629a43e8d41f458d6774aae53",
                 "shasum": ""
             },
             "require": {
@@ -4183,7 +4183,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-17T03:53:23+00:00"
+            "time": "2023-06-19T22:09:46+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
