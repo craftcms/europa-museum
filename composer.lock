@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.273.8",
+            "version": "3.274.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4013e1fd2e84ebba548c0158fd3e7ca0c0346b43"
+                "reference": "b2f37a49ca40bce633323a6988477c22be562c37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4013e1fd2e84ebba548c0158fd3e7ca0c0346b43",
-                "reference": "4013e1fd2e84ebba548c0158fd3e7ca0c0346b43",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b2f37a49ca40bce633323a6988477c22be562c37",
+                "reference": "b2f37a49ca40bce633323a6988477c22be562c37",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.273.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.274.0"
             },
-            "time": "2023-06-26T18:21:57+00:00"
+            "time": "2023-06-27T18:32:17+00:00"
         },
         {
             "name": "bref/bref",
@@ -2619,16 +2619,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.52.9",
+            "version": "v9.52.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "0168d0e44ea0c4fe5451fe08cde7049b9e9f9741"
+                "reference": "d3710b0b244bfc62c288c1a87eaa62dd28352d1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/0168d0e44ea0c4fe5451fe08cde7049b9e9f9741",
-                "reference": "0168d0e44ea0c4fe5451fe08cde7049b9e9f9741",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/d3710b0b244bfc62c288c1a87eaa62dd28352d1f",
+                "reference": "d3710b0b244bfc62c288c1a87eaa62dd28352d1f",
                 "shasum": ""
             },
             "require": {
@@ -2670,11 +2670,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-02-22T11:32:27+00:00"
+            "time": "2023-06-11T21:17:10+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.52.9",
+            "version": "v9.52.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2720,7 +2720,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.52.9",
+            "version": "v9.52.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2768,7 +2768,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.52.9",
+            "version": "v9.52.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
