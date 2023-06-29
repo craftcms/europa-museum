@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.274.0",
+            "version": "3.274.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b2f37a49ca40bce633323a6988477c22be562c37"
+                "reference": "92907084c3b71859672ef6399194ef9c1f772b1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b2f37a49ca40bce633323a6988477c22be562c37",
-                "reference": "b2f37a49ca40bce633323a6988477c22be562c37",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/92907084c3b71859672ef6399194ef9c1f772b1a",
+                "reference": "92907084c3b71859672ef6399194ef9c1f772b1a",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.274.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.274.1"
             },
-            "time": "2023-06-27T18:32:17+00:00"
+            "time": "2023-06-28T18:21:54+00:00"
         },
         {
             "name": "bref/bref",
@@ -5915,16 +5915,16 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "4.1.2",
+            "version": "4.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "c89e16b00f83a92dbb1176bb14c2cc43b513acb0"
+                "reference": "5ee44a2318dfc0c5a88b95405f59959742a3ab1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/c89e16b00f83a92dbb1176bb14c2cc43b513acb0",
-                "reference": "c89e16b00f83a92dbb1176bb14c2cc43b513acb0",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/5ee44a2318dfc0c5a88b95405f59959742a3ab1b",
+                "reference": "5ee44a2318dfc0c5a88b95405f59959742a3ab1b",
                 "shasum": ""
             },
             "require": {
@@ -5990,9 +5990,9 @@
             "description": "Reliable form builder that's ready for wherever your project takes you.",
             "support": {
                 "issues": "https://github.com/solspace/craft-freeform/issues",
-                "source": "https://github.com/solspace/craft-freeform/tree/v4.1.2"
+                "source": "https://github.com/solspace/craft-freeform/tree/v4.1.3"
             },
-            "time": "2023-06-26T17:07:20+00:00"
+            "time": "2023-06-28T14:59:56+00:00"
         },
         {
             "name": "solspace/craft3-commons",
