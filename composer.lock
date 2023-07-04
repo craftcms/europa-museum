@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.275.1",
+            "version": "3.275.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "6cf6aacecda1dec52bf4a70d8e1503b5bc56e924"
+                "reference": "4506d631caf6097fd73009d57707e61b95efe92c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6cf6aacecda1dec52bf4a70d8e1503b5bc56e924",
-                "reference": "6cf6aacecda1dec52bf4a70d8e1503b5bc56e924",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4506d631caf6097fd73009d57707e61b95efe92c",
+                "reference": "4506d631caf6097fd73009d57707e61b95efe92c",
                 "shasum": ""
             },
             "require": {
@@ -151,22 +151,22 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.2"
             },
-            "time": "2023-06-30T18:23:40+00:00"
+            "time": "2023-07-03T18:27:31+00:00"
         },
         {
             "name": "bref/bref",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brefphp/bref.git",
-                "reference": "11cf2fe95ab68ce50e0394e826f6884d070f33d8"
+                "reference": "7adb96556f5b23acecddf109326df03570859c9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brefphp/bref/zipball/11cf2fe95ab68ce50e0394e826f6884d070f33d8",
-                "reference": "11cf2fe95ab68ce50e0394e826f6884d070f33d8",
+                "url": "https://api.github.com/repos/brefphp/bref/zipball/7adb96556f5b23acecddf109326df03570859c9c",
+                "reference": "7adb96556f5b23acecddf109326df03570859c9c",
                 "shasum": ""
             },
             "require": {
@@ -219,7 +219,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brefphp/bref/issues",
-                "source": "https://github.com/brefphp/bref/tree/2.0.9"
+                "source": "https://github.com/brefphp/bref/tree/2.0.10"
             },
             "funding": [
                 {
@@ -231,7 +231,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-06-12T13:41:36+00:00"
+            "time": "2023-07-03T12:16:28+00:00"
         },
         {
             "name": "bugsnag/bugsnag",
@@ -1032,16 +1032,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.4.14",
+            "version": "4.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "31c6d400ca40f72062e8e7a00d31e1bfd462597d"
+                "reference": "273dfd3dadbb404f69ffd6d7f93451497bbd811c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/31c6d400ca40f72062e8e7a00d31e1bfd462597d",
-                "reference": "31c6d400ca40f72062e8e7a00d31e1bfd462597d",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/273dfd3dadbb404f69ffd6d7f93451497bbd811c",
+                "reference": "273dfd3dadbb404f69ffd6d7f93451497bbd811c",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2023-06-13T23:08:33+00:00"
+            "time": "2023-07-03T17:32:53+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -8696,16 +8696,16 @@
         },
         {
             "name": "voku/anti-xss",
-            "version": "4.1.41",
+            "version": "4.1.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/anti-xss.git",
-                "reference": "55a403436494e44a2547a8d42de68e6cad4bca1d"
+                "reference": "bca1f8607e55a3c5077483615cd93bd8f11bd675"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/55a403436494e44a2547a8d42de68e6cad4bca1d",
-                "reference": "55a403436494e44a2547a8d42de68e6cad4bca1d",
+                "url": "https://api.github.com/repos/voku/anti-xss/zipball/bca1f8607e55a3c5077483615cd93bd8f11bd675",
+                "reference": "bca1f8607e55a3c5077483615cd93bd8f11bd675",
                 "shasum": ""
             },
             "require": {
@@ -8751,7 +8751,7 @@
             ],
             "support": {
                 "issues": "https://github.com/voku/anti-xss/issues",
-                "source": "https://github.com/voku/anti-xss/tree/4.1.41"
+                "source": "https://github.com/voku/anti-xss/tree/4.1.42"
             },
             "funding": [
                 {
@@ -8775,7 +8775,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-12T15:56:55+00:00"
+            "time": "2023-07-03T14:40:46+00:00"
         },
         {
             "name": "voku/arrayy",
