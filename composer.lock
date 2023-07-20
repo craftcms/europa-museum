@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.275.9",
+            "version": "3.276.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1ef08ba5109591751257ad1eaa52c2e2fbd53cf1"
+                "reference": "ae3ea70a1e189501ef3d1e923b9eb8ae2525c365"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1ef08ba5109591751257ad1eaa52c2e2fbd53cf1",
-                "reference": "1ef08ba5109591751257ad1eaa52c2e2fbd53cf1",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ae3ea70a1e189501ef3d1e923b9eb8ae2525c365",
+                "reference": "ae3ea70a1e189501ef3d1e923b9eb8ae2525c365",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.275.9"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.276.0"
             },
-            "time": "2023-07-18T18:20:13+00:00"
+            "time": "2023-07-19T18:24:20+00:00"
         },
         {
             "name": "bref/bref",
@@ -1032,16 +1032,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.4.16",
+            "version": "4.4.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "7a89c833b8a53dc899ec5ac16a7215dcbcd7ec51"
+                "reference": "d2f4a215a1e2320841773c50e680509d4a3a5769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/7a89c833b8a53dc899ec5ac16a7215dcbcd7ec51",
-                "reference": "7a89c833b8a53dc899ec5ac16a7215dcbcd7ec51",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/d2f4a215a1e2320841773c50e680509d4a3a5769",
+                "reference": "d2f4a215a1e2320841773c50e680509d4a3a5769",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2023-07-18T16:57:32+00:00"
+            "time": "2023-07-19T14:56:36+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -4239,16 +4239,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.29",
+            "version": "4.0.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "da51e070b19cb50cc152369617cf9cc2bcefd35c"
+                "reference": "698ce2b226b7bc0bd67e2d87a6011d138912f017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/da51e070b19cb50cc152369617cf9cc2bcefd35c",
-                "reference": "da51e070b19cb50cc152369617cf9cc2bcefd35c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/698ce2b226b7bc0bd67e2d87a6011d138912f017",
+                "reference": "698ce2b226b7bc0bd67e2d87a6011d138912f017",
                 "shasum": ""
             },
             "require": {
@@ -4316,7 +4316,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-07-18T20:58:52+00:00"
+            "time": "2023-07-19T16:06:37+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
