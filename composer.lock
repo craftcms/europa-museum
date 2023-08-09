@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.277.10",
+            "version": "3.277.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "efb08ad9e89946eb124ec8f6e9852ac1da6d324c"
+                "reference": "c34f137abd571a9a19e290ce0b6fc6fc80f559b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/efb08ad9e89946eb124ec8f6e9852ac1da6d324c",
-                "reference": "efb08ad9e89946eb124ec8f6e9852ac1da6d324c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c34f137abd571a9a19e290ce0b6fc6fc80f559b6",
+                "reference": "c34f137abd571a9a19e290ce0b6fc6fc80f559b6",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.277.10"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.277.11"
             },
-            "time": "2023-08-07T18:11:45+00:00"
+            "time": "2023-08-08T18:06:20+00:00"
         },
         {
             "name": "bref/bref",
@@ -1032,16 +1032,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.4.16.1",
+            "version": "4.4.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d2f4a215a1e2320841773c50e680509d4a3a5769"
+                "reference": "75cb07ccf7af7fef379fa6f115027535e0f40aee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d2f4a215a1e2320841773c50e680509d4a3a5769",
-                "reference": "d2f4a215a1e2320841773c50e680509d4a3a5769",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/75cb07ccf7af7fef379fa6f115027535e0f40aee",
+                "reference": "75cb07ccf7af7fef379fa6f115027535e0f40aee",
                 "shasum": ""
             },
             "require": {
@@ -1144,7 +1144,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2023-07-19T14:56:36+00:00"
+            "time": "2023-08-08T15:54:07+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -2619,7 +2619,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.52.14",
+            "version": "v9.52.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -2674,7 +2674,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.52.14",
+            "version": "v9.52.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2720,7 +2720,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.52.14",
+            "version": "v9.52.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2768,7 +2768,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.52.14",
+            "version": "v9.52.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
