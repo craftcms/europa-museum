@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66b4d8c32a853e5e14582dfae4313e3e",
+    "content-hash": "94f894994d760fa0dd9d594fd0808a75",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -911,11 +911,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.5.8",
+            "version": "dev-4.5.8-cloud-hotfix",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/cms.git",
+                "reference": "86f1ff5a2c9acff70dc913ffa4fe11406f02d6cc"
+            },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/8dc4521a7f8dcabfe935811f5d884b140ebbfd41",
-                "reference": "8dc4521a7f8dcabfe935811f5d884b140ebbfd41",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/86f1ff5a2c9acff70dc913ffa4fe11406f02d6cc",
+                "reference": "86f1ff5a2c9acff70dc913ffa4fe11406f02d6cc",
                 "shasum": ""
             },
             "require": {
@@ -967,6 +972,20 @@
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "yii2tech/ar-softdelete": "1.0.4"
             },
+            "require-dev": {
+                "codeception/codeception": "^4.1.29",
+                "codeception/module-asserts": "^1.3.1",
+                "codeception/module-datafactory": "^1.1.0",
+                "codeception/module-phpbrowser": "^1.0.2",
+                "codeception/module-rest": "^1.4.2",
+                "codeception/module-yii2": "^1.1.5",
+                "craftcms/ecs": "dev-main",
+                "fakerphp/faker": "^1.19.0",
+                "league/factory-muffin": "^3.3.0",
+                "phpstan/phpstan": "^1.8.5",
+                "vlucas/phpdotenv": "^5.4.1",
+                "yiisoft/yii2-redis": "^2.0"
+            },
             "suggest": {
                 "ext-exif": "Adds support for parsing image EXIF data.",
                 "ext-iconv": "Adds support for more character encodings than PHP’s built-in mb_convert_encoding() function, which Craft will take advantage of when converting strings to UTF-8.",
@@ -979,6 +998,7 @@
                     "yii2tech\\ar\\softdelete\\": "lib/ar-softdelete/src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -996,14 +1016,14 @@
                 "yii2"
             ],
             "support": {
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/cms/issues?state=open",
-                "forum": "https://craftcms.stackexchange.com/",
-                "source": "https://github.com/craftcms/cms",
                 "docs": "https://craftcms.com/docs/4.x/",
-                "rss": "https://github.com/craftcms/cms/releases.atom"
+                "email": "support@craftcms.com",
+                "forum": "https://craftcms.stackexchange.com/",
+                "issues": "https://github.com/craftcms/cms/issues?state=open",
+                "rss": "https://github.com/craftcms/cms/releases.atom",
+                "source": "https://github.com/craftcms/cms"
             },
-            "time": "2023-10-20T19:14:45+00:00"
+            "time": "2023-10-21T02:36:24+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -7595,9 +7615,18 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cms",
+            "version": "dev-4.5.8-cloud-hotfix",
+            "alias": "4.5.8",
+            "alias_normalized": "4.5.8.0"
+        }
+    ],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "craftcms/cms": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

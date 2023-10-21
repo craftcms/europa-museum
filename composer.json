@@ -23,7 +23,7 @@
         "bref/bref": "^2.0",
         "craftcms/aws-s3": "^2.0.0",
         "craftcms/cloud": "^1.0.0",
-        "craftcms/cms": "^4.0.0",
+        "craftcms/cms": "dev-4.5.8-cloud-hotfix as 4.5.8",
         "craftcms/redactor": "^3.0.0",
         "craftcms/yii2-dynamodb": "^2.0.0",
         "fakerphp/faker": "^1.14",
