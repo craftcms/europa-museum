@@ -48,16 +48,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.285.2",
+            "version": "3.285.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "93165f8e241678b17f15212523dfe96f50307af1"
+                "reference": "afa1e722f1b2c95644f375dc1a19072e4daf67be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/93165f8e241678b17f15212523dfe96f50307af1",
-                "reference": "93165f8e241678b17f15212523dfe96f50307af1",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/afa1e722f1b2c95644f375dc1a19072e4daf67be",
+                "reference": "afa1e722f1b2c95644f375dc1a19072e4daf67be",
                 "shasum": ""
             },
             "require": {
@@ -137,9 +137,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.285.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.285.3"
             },
-            "time": "2023-11-09T01:20:37+00:00"
+            "time": "2023-11-09T19:07:19+00:00"
         },
         {
             "name": "bref/bref",
@@ -864,16 +864,16 @@
         },
         {
             "name": "craftcms/cloud",
-            "version": "1.16.5",
+            "version": "1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cloud-extension-yii2.git",
-                "reference": "a5c14c169413f42fcbd5d2e369485f5cc6781c11"
+                "reference": "13c4bc47b87fb7794d429c69b4065438852ec821"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/a5c14c169413f42fcbd5d2e369485f5cc6781c11",
-                "reference": "a5c14c169413f42fcbd5d2e369485f5cc6781c11",
+                "url": "https://api.github.com/repos/craftcms/cloud-extension-yii2/zipball/13c4bc47b87fb7794d429c69b4065438852ec821",
+                "reference": "13c4bc47b87fb7794d429c69b4065438852ec821",
                 "shasum": ""
             },
             "require": {
@@ -906,9 +906,9 @@
             "notification-url": "https://packagist.org/downloads/",
             "support": {
                 "issues": "https://github.com/craftcms/cloud-extension-yii2/issues",
-                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.16.5"
+                "source": "https://github.com/craftcms/cloud-extension-yii2/tree/1.17.1"
             },
-            "time": "2023-11-09T16:08:48+00:00"
+            "time": "2023-11-09T20:11:33+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -4876,11 +4876,11 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "4.1.11",
+            "version": "4.1.12",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/2e3c97fe98014c4f34f7425e0175cd34a73af349",
-                "reference": "2e3c97fe98014c4f34f7425e0175cd34a73af349",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/c4cc2fc2b8a1ccd4adaf17ed1089033d4482db89",
+                "reference": "c4cc2fc2b8a1ccd4adaf17ed1089033d4482db89",
                 "shasum": ""
             },
             "require": {
@@ -4937,7 +4937,7 @@
                 }
             ],
             "description": "Reliable form builder that's ready for wherever your project takes you.",
-            "time": "2023-10-24T15:48:46+00:00"
+            "time": "2023-11-09T19:48:04+00:00"
         },
         {
             "name": "solspace/craft3-commons",
