@@ -19,8 +19,8 @@ fs:
     name: Images
     settings:
         expires: '1 years'
-        localFsPath: '@webroot/craft-cloud/{handle}'
-        localFsUrl: '@web/craft-cloud/{handle}'
+        localFsPath: '@webroot/craft-cloud'
+        localFsUrl: '@web/craft-cloud'
         subpath: images
         url: __URL__
     type: craft\cloud\fs\AssetsFs

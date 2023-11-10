@@ -88,7 +88,7 @@ if (mix.inProduction()) {
     mix
         .sourceMaps(true, 'source-map')
         .browserSync({
-            proxy: new URL(process.env.DEFAULT_SITE_URL).hostname,
+            proxy: new URL(process.env.PRIMARY_SITE_URL).hostname,
             port: 3000,
             files: [
                 './web/dist/css/{*,**/*}.css',
