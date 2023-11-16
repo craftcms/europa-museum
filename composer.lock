@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.286.1",
+            "version": "3.286.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f3276ecb6e5202452d4b64237e6dc1bc9d350ae6"
+                "reference": "33a763586e840e5162ff8144a9532aa43172e11c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f3276ecb6e5202452d4b64237e6dc1bc9d350ae6",
-                "reference": "f3276ecb6e5202452d4b64237e6dc1bc9d350ae6",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/33a763586e840e5162ff8144a9532aa43172e11c",
+                "reference": "33a763586e840e5162ff8144a9532aa43172e11c",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.286.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.286.2"
             },
-            "time": "2023-11-14T19:09:59+00:00"
+            "time": "2023-11-15T19:19:39+00:00"
         },
         {
             "name": "bref/bref",
@@ -4343,16 +4343,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "4.0.33",
+            "version": "4.0.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "d8270c406d0771802eb93069c0afd9910b27872e"
+                "reference": "679c9ad427f92807ccbc74eb768896f6a1edc58e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d8270c406d0771802eb93069c0afd9910b27872e",
-                "reference": "d8270c406d0771802eb93069c0afd9910b27872e",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/679c9ad427f92807ccbc74eb768896f6a1edc58e",
+                "reference": "679c9ad427f92807ccbc74eb768896f6a1edc58e",
                 "shasum": ""
             },
             "require": {
@@ -4420,7 +4420,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-22T22:35:59+00:00"
+            "time": "2023-11-15T21:43:28+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -6129,16 +6129,16 @@
         },
         {
             "name": "solspace/craft-freeform",
-            "version": "4.1.12",
+            "version": "4.1.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/solspace/craft-freeform.git",
-                "reference": "c4cc2fc2b8a1ccd4adaf17ed1089033d4482db89"
+                "reference": "43312736306bebf4e4a5b28fd653b75d1115df25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/c4cc2fc2b8a1ccd4adaf17ed1089033d4482db89",
-                "reference": "c4cc2fc2b8a1ccd4adaf17ed1089033d4482db89",
+                "url": "https://api.github.com/repos/solspace/craft-freeform/zipball/43312736306bebf4e4a5b28fd653b75d1115df25",
+                "reference": "43312736306bebf4e4a5b28fd653b75d1115df25",
                 "shasum": ""
             },
             "require": {
@@ -6204,9 +6204,9 @@
             "description": "Reliable form builder that's ready for wherever your project takes you.",
             "support": {
                 "issues": "https://github.com/solspace/craft-freeform/issues",
-                "source": "https://github.com/solspace/craft-freeform/tree/v4.1.12"
+                "source": "https://github.com/solspace/craft-freeform/tree/v4.1.12.1"
             },
-            "time": "2023-11-09T19:48:04+00:00"
+            "time": "2023-11-15T15:48:23+00:00"
         },
         {
             "name": "solspace/craft3-commons",
