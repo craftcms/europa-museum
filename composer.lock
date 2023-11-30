@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.291.0",
+            "version": "3.292.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c114ca013dd99d79d61914def93ecf80665b6df9"
+                "reference": "99105bc4617ff6c6113d413b94b596ad6645ffff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c114ca013dd99d79d61914def93ecf80665b6df9",
-                "reference": "c114ca013dd99d79d61914def93ecf80665b6df9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/99105bc4617ff6c6113d413b94b596ad6645ffff",
+                "reference": "99105bc4617ff6c6113d413b94b596ad6645ffff",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.291.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.292.0"
             },
-            "time": "2023-11-28T20:23:07+00:00"
+            "time": "2023-11-29T18:47:15+00:00"
         },
         {
             "name": "bref/bref",
@@ -5811,16 +5811,16 @@
         },
         {
             "name": "sebastianlenz/craft-utils",
-            "version": "3.0.11",
+            "version": "3.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastian-lenz/craft-utils.git",
-                "reference": "2b43a4b876cf463dedd7ab837675a879752d9d2c"
+                "reference": "3abd09bd950dda67926f537b0d9b4b922c205c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/2b43a4b876cf463dedd7ab837675a879752d9d2c",
-                "reference": "2b43a4b876cf463dedd7ab837675a879752d9d2c",
+                "url": "https://api.github.com/repos/sebastian-lenz/craft-utils/zipball/3abd09bd950dda67926f537b0d9b4b922c205c4d",
+                "reference": "3abd09bd950dda67926f537b0d9b4b922c205c4d",
                 "shasum": ""
             },
             "require": {
@@ -5842,9 +5842,9 @@
             ],
             "description": "A collection of utility classes for Craft CMS development",
             "support": {
-                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.11"
+                "source": "https://github.com/sebastian-lenz/craft-utils/tree/3.0.12"
             },
-            "time": "2023-07-28T10:29:44+00:00"
+            "time": "2023-11-29T19:19:14+00:00"
         },
         {
             "name": "sebastianlenz/linkfield",
