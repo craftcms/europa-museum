@@ -28,7 +28,7 @@
 
             {% if information %}
                 <span class="information">
-                    {{ include(template_from_string(information) | raw) | typogrify }}
+                    {{ include(template_from_string(information) | raw) }}
                 </span>
             {% endif %}
 

@@ -36,7 +36,7 @@
     {{ theBlock.form.render() }}
 
     <template id="{{ templateId }}">
-        {{ theBlock.successMessage | default("Form submitted successfully!") | typogrify | raw }}
+        {{ theBlock.successMessage | default("Form submitted successfully!") | raw }}
     </template>
 
 </div>

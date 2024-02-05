@@ -58,23 +58,17 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Vhc
       columnType: text
-      configSelectionMode: choose
       defaultTransform: ''
-      manualConfig: ''
+      enableSourceEditingForNonAdmins: true
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: VHC.json
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   cdc345f6-dec9-46b7-80b5-6de7918fcdf3: # Layout
     columnSuffix: null
     contentColumnType: string

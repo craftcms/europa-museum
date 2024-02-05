@@ -39,7 +39,7 @@
 
                     {% if imageCaption | length %}
                         <div class="caption">
-                            {{ imageCaption | typogrify }}
+                            {{ imageCaption }}
                         </div>
                     {% endif %}
 
@@ -54,9 +54,7 @@
 
                     {% if imageCaption | length %}
                         <div class="tickets">
-                            {% apply typogrify %}
-                                Tickets are purchased at the Museum
-                            {% endapply %}
+                            Tickets are purchased at the Museum
                         </div>
                     {% endif %}
 

@@ -301,23 +301,17 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
+      ckeConfig: 40bfb363-8740-499a-82f2-6eda20cb6025 # Vhc No Assets
       columnType: text
-      configSelectionMode: choose
       defaultTransform: ''
-      manualConfig: ''
+      enableSourceEditingForNonAdmins: true
       purifierConfig: null
       purifyHtml: true
-      redactorConfig: VHC-no-assets.json
-      removeEmptyTags: true
-      removeInlineStyles: true
-      removeNbsp: true
-      showHtmlButtonForNonAdmins: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: true
-      uiMode: enlarged
     translationKeyFormat: null
     translationMethod: none
-    type: craft\redactor\Field
+    type: craft\ckeditor\Field
   f466ab59-2e29-4cce-85b8-f9ebe7000b03: # Internal Link
     columnSuffix: null
     contentColumnType: string

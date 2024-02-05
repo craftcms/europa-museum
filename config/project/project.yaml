@@ -1,4 +1,4 @@
-dateModified: 1707163930
+dateModified: 1707167647
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -103,6 +103,7 @@ meta:
     20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b: 'Europa Museum' # Europa Museum
     24bd1247-7ed2-48e8-af76-5b8ffc486ef6: Heading # Heading
     24db24b1-bf70-414a-8652-ba22d7b0dfc3: Form # Form
+    40bfb363-8740-499a-82f2-6eda20cb6025: 'Vhc No Assets' # Vhc No Assets
     42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8: 'Link Icon' # Link Icon
     52ff2568-6318-44d5-a130-818c19f83360: 'External Link' # External Link
     55c6cb51-defc-4e30-bc18-e524de65b7b7: 'External Link' # External Link
@@ -119,9 +120,11 @@ meta:
     913eb47c-ce43-4325-bb3a-1f5d99065038: 'Highlight Text' # Highlight Text
     977f4737-eaaa-4d0f-aadb-10251ee1c4ff: About # About
     27881ad3-1379-497a-91a6-d495b2bbc7d1: 'Hero Title' # Hero Title
+    67193fb0-26c1-4f39-ad77-c119711a4e4a: Simple # Simple
     85241ed2-6bbd-4dd0-af5c-07842116ccf3: 'Dark UI' # Dark UI
     a4b1ac77-02b4-4121-91b4-8d3754b290d4: 'Image and Headings' # Image and Headings
     a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee: 'Success Message' # Success Message
+    a6cb7c13-e866-45ba-ad8e-a44c552ff6c1: Vhc # Vhc
     a36fa6aa-4824-448f-82cf-b3086f8582c5: Images # Images
     a65ec270-2111-40c2-bf47-f3d6d929603a: 'Pre Heading' # Pre Heading
     a73bf239-f2f0-45ac-b84d-361e5dd1a75f: 'Pagination Count' # Pagination Count
@@ -162,16 +165,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: '2.0'
-  default-dashboard:
+  ckeditor:
     edition: standard
     enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      excludeAdmin: ''
-      logErrors: false
-      logInfo: false
-      override: ''
-      userDashboard: '879'
+    schemaVersion: 3.0.0.0
   freeform:
     edition: lite
     enabled: true
@@ -278,10 +275,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
-  redactor:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.3.0
   seomatic:
     edition: standard
     enabled: true
@@ -333,14 +326,6 @@ plugins:
       truncateDescriptionTags: '1'
       truncateTitleTags: '1'
   twigpack:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-  typedlinkfield:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.0.0
-  typogrify:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
