@@ -22,14 +22,14 @@
 
             {% if category is defined %}
                 {% include '_/svg/arrowLeft' %}
-                <a class="link-back" href="{{ url('news') }}">{{ 'Back to News'|t }}</a>
+                <a class="link-back" href="{{ url('news') }}">{{ 'Back to News' | t }}</a>
             {% endif %}
 
             {% if category is defined %}
-                <div class="hero-category">{{ 'Category:'|t }}</div>
+                <div class="hero-category">{{ 'Category:' | t }}</div>
                 <h5 class="hero-category-heading">{{ category.title }}</h5>
             {% else %}
-                <h1 class="hero-heading">{{ 'News'|t }}</h1>
+                <h1 class="hero-heading">{{ 'News' | t }}</h1>
             {% endif %}
 
         </div>
@@ -62,7 +62,7 @@
 
             {% for newsEntry in pageEntries %}
 
-                {% set articleImage = newsEntry.heroImage|first %}
+                {% set articleImage = newsEntry.heroImage | first %}
 
                 {% do articleImage.setTransform({
                     width: 440,
@@ -89,10 +89,10 @@
                         </h6>
 
                         <div class="article-category-date">
-                            {{ newsEntry.postDate|date('m.d.Y') }}
+                            {{ newsEntry.postDate | date('m.d.Y') }}
                             {% if newsEntry.newsCategory | length %}
                                 <span class="divider">|</span>
-                                {{ (newsEntry.newsCategory|first).getLink() }}
+                                {{ (newsEntry.newsCategory | first).getLink() }}
                             {% endif %}
                         </div>
 

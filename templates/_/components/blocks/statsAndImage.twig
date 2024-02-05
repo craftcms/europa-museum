@@ -1,7 +1,7 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set internalLink = theBlock.internalLink.one().url|default('') %}
-{% set externalLink = theBlock.externalLink|default('') %}
+{% set internalLink = theBlock.internalLink.one().url | default('') %}
+{% set externalLink = theBlock.externalLink | default('') %}
 
 {% set linkUrl = internalLink ? internalLink : externalLink %}
 
@@ -13,7 +13,7 @@
 
         <div class="text-container">
 
-            <div class="stat-left {% if theBlock.rightStatValue|length == 0 %}hide-on-mobile{% endif %}">
+            <div class="stat-left {% if theBlock.rightStatValue | length == 0 %}hide-on-mobile{% endif %}">
                 <div class="stat-value">
                     {{ theBlock.leftStatValue }}
                 </div>

@@ -9,7 +9,7 @@
 {% block content %}
 
     {% set heading = entry.heading | default('') %}
-    {% set headingWords = heading | split(" ") %}
+    {% set headingWords = heading | split(' ') %}
 
     <article data-router-view="home">
 
@@ -39,7 +39,7 @@
 
                     <div class="exhibitions-title-container">
                         <h6 class="title" data-scroll data-scroll-speed="" data-scroll-delay="">
-                            {{ 'Featured Exhibits'|t|replace(' ', '<br>')|raw }}
+                            {{ 'Featured Exhibits' | t | replace(' ', '<br>') | raw }}
                         </h6>
                     </div>
 
@@ -51,8 +51,8 @@
 
                     {% set exhibitUrl = exhibit.url %}
                     {% set exhibitTitle = exhibit.title %}
-                    {% set exhibitStartDate = exhibit.postDate|date('m.y') | default('') %}
-                    {% set exhibitEndDate = exhibit.expiryDate|date('m.y') | default('') %}
+                    {% set exhibitStartDate = exhibit.postDate | date('m.y') | default('') %}
+                    {% set exhibitEndDate = exhibit.expiryDate | date('m.y') | default('') %}
                     {% set exhibitHeroImage = exhibit.heroImage.one() %}
 
                     {% do exhibitHeroImage.setTransform({

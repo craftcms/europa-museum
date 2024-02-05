@@ -10,7 +10,7 @@
 
 {# {% if exhibit %} #}
 
-    <div class="content-block slider-block {{ isFirst }} {% if slideImages|length %}is-image{% else %}is-entry{% endif %} {% if darkUI %}dark-ui{% endif %}" data-scroll-section>
+    <div class="content-block slider-block {{ isFirst }} {% if slideImages | length %}is-image{% else %}is-entry{% endif %} {% if darkUI %}dark-ui{% endif %}" data-scroll-section>
 
         <div class="slider-info">
 
@@ -20,7 +20,7 @@
                 </a>
             </div>
 
-            <h4 class="slider-heading {% if heading|length == 0 %}hide-on-tablet{% endif %}">
+            <h4 class="slider-heading {% if heading | length == 0 %}hide-on-tablet{% endif %}">
                 {{ heading }}
             </h4>
 
@@ -30,7 +30,7 @@
                     {% include "_/svg/arrowLeft" %}
                 </button>
 
-                {% if slideEntries|length and slideImages|length == 0 %}
+                {% if slideEntries | length and slideImages | length == 0 %}
                     <span class="divider">|</span>
                 {% endif %}
 
@@ -97,7 +97,7 @@
 
                         {% set slideTitle = entry.title %}
                         {% set slideNewsCategory = entry.newsCategory.one() | default('') %}
-                        {% set slideDate = entry.postDate|date('m.y') | default('') %}
+                        {% set slideDate = entry.postDate | date('m.y') | default('') %}
                         {% set slideUrl = entry.url %}
 
                         {% if heroImage %}

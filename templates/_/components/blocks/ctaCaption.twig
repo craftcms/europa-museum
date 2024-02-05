@@ -18,7 +18,7 @@
 
             {% if heading %}
                 <span class="caption-heading">
-                    {{ include(template_from_string(heading)|raw) }}
+                    {{ include(template_from_string(heading) | raw) }}
                 </span>
             {% endif %}
 
@@ -28,7 +28,7 @@
 
             {% if information %}
                 <span class="information">
-                    {{ include(template_from_string(information)|raw) | typogrify }}
+                    {{ include(template_from_string(information) | raw) | typogrify }}
                 </span>
             {% endif %}
 

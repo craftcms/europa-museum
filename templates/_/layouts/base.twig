@@ -5,7 +5,7 @@
 {% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
 <!DOCTYPE html>
 
-<html lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<html lang="{{ craft.app.language | slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 
     <head>
         <link rel="dns-prefetch" href="{{ baseUrl }}" crossorigin>
@@ -33,7 +33,7 @@
         {% if env != "local" %}
             {% set inline_css =  block("inline_css") is defined ? block("inline_css") : "" %}
         {% endif %}
-        {% if inline_css|trim is not empty %}
+        {% if inline_css | trim is not empty %}
             <style>{{ inline_css | raw | replace({'/assets/dist/': alias('@assetBaseUrl/assets/dist/')}) }}</style>
             {{ craft.twigpack.includeCssModule('/css/site.css', true) }}
         {% else %}

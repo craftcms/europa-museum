@@ -27,19 +27,19 @@
         <div class="column hide-on-mobile">
 
             <p>
-                {{ 'Contact Us'|t }}
+                {{ 'Contact Us' | t }}
             </p>
 
             <p>
 
-                {{ 'Phone:'|t }}
+                {{ 'Phone:' | t }}
                 <a href="tel:+1-888-888-8888">
                     +1 888.888.8888
                 </a>
 
                 <br>
 
-                {{ 'Email:'|t }}
+                {{ 'Email:' | t }}
                 <a href="mailto:hello@pixelandtonic.com">
                     hello@pixelandtonic.com
                 </a>
@@ -48,7 +48,7 @@
 
             <p>
                 <a href="/contact" class="underline" data-router-disabled>
-                    {{ 'Contact'|t }}
+                    {{ 'Contact' | t }}
                 </a>
             </p>
 
@@ -57,12 +57,12 @@
         <div class="column hide-on-mobile">
 
             <p>
-                {{ 'Open Hours'|t }}
+                {{ 'Open Hours' | t }}
             </p>
 
             <p>
-                {{ 'Weekdays:'|t }} 8am - 5pm<br>
-                {{ 'Weekend:'|t }} 8am - 9pm
+                {{ 'Weekdays:' | t }} 8am - 5pm<br>
+                {{ 'Weekend:' | t }} 8am - 9pm
             </p>
 
         </div>
@@ -70,7 +70,7 @@
         <div class="column hide-on-mobile">
 
             <p>
-                {{ 'Follow Us'|t }}
+                {{ 'Follow Us' | t }}
             </p>
 
             <p>
@@ -91,7 +91,7 @@
 
         <div class="column last">
 
-            <div class="scroll-top" title="{{ 'Scroll to the top'|t }}">{{ 'Top'|t }}</div>
+            <div class="scroll-top" title="{{ 'Scroll to the top' | t }}">{{ 'Top' | t }}</div>
             {% include "_/svg/arrowUp" %}
 
         </div>
@@ -113,14 +113,14 @@
         <div class="column">
 
             <p>
-                {{ 'Development by {name}.'|t({
+                {{ 'Development by {name}.' | t({
                     name: tag('a', {
                         href: 'https://vanholtz.co',
                         target: '_blank',
                         rel: 'noopener',
                         text: 'Van Holtz Co',
                     })
-                })|raw }}
+                }) | raw }}
             </p>
 
         </div>
@@ -128,9 +128,9 @@
         <div class="column">
 
             <p>
-                <a href="#">{{ 'Terms of Use'|t }}</a>
+                <a href="#">{{ 'Terms of Use' | t }}</a>
                 /
-                <a href="#">{{ 'Privacy Policy'|t }}</a>
+                <a href="#">{{ 'Privacy Policy' | t }}</a>
             </p>
 
         </div>
@@ -138,7 +138,7 @@
         <div class="column">
 
             <p class="copyright">
-                &copy; {{ now|date('Y') }} Pixel &amp; Tonic, Inc.
+                &copy; {{ now | date('Y') }} Pixel &amp; Tonic, Inc.
             </p>
 
         </div>

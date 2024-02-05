@@ -33,7 +33,7 @@
 
 <div id="{{ freeformId }}" class="content-block form-block {{ isFirst }}" data-scroll-section>
 
-	{{ theBlock.form.render() }}
+    {{ theBlock.form.render() }}
 
     <template id="{{ templateId }}">
         {{ theBlock.successMessage | default("Form submitted successfully!") | typogrify | raw }}
@@ -48,11 +48,11 @@
     See: https://docs.solspace.com/craft/freeform/v3/templating/ajax-forms.html#customization
 #}
 <script>
-    document.getElementById('{{ freeformId }}').addEventListener('freeform-ready', function(event) {
+    document.getElementById("{{ freeformId | e('js') }}").addEventListener('freeform-ready', function(event) {
         const freeform = event.target.freeform;
 
         freeform.setOption('renderSuccess', function() {
-            const templateClone = document.getElementById('{{ templateId }}').content.cloneNode(true)
+            const templateClone = document.getElementById("{{ templateId | e('js') }}").content.cloneNode(true)
             const successMessage = document.createElement("div");
 
             successMessage.classList.add("ff-form-success");
