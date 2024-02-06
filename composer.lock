@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bef877f194ae30cc3aba564a4562fe1",
+    "content-hash": "716ae920aa1a9ebab7daef2bad00e5fc",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.298.3",
+            "version": "3.298.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "70fde185df4a8dd99983a308b823991fb5b39060"
+                "reference": "c61e8f8640352c4cad1ec364c0801b8adae8adb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/70fde185df4a8dd99983a308b823991fb5b39060",
-                "reference": "70fde185df4a8dd99983a308b823991fb5b39060",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c61e8f8640352c4cad1ec364c0801b8adae8adb9",
+                "reference": "c61e8f8640352c4cad1ec364c0801b8adae8adb9",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.298.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.298.4"
             },
-            "time": "2024-02-05T19:05:28+00:00"
+            "time": "2024-02-06T19:09:25+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -211,16 +211,16 @@
         },
         {
             "name": "bref/bref",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brefphp/bref.git",
-                "reference": "535ad5f035d16892dbccbb785be2333f987a81e3"
+                "reference": "4a991a0a9bb02c910432a1b2a3e26af651cd038b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brefphp/bref/zipball/535ad5f035d16892dbccbb785be2333f987a81e3",
-                "reference": "535ad5f035d16892dbccbb785be2333f987a81e3",
+                "url": "https://api.github.com/repos/brefphp/bref/zipball/4a991a0a9bb02c910432a1b2a3e26af651cd038b",
+                "reference": "4a991a0a9bb02c910432a1b2a3e26af651cd038b",
                 "shasum": ""
             },
             "require": {
@@ -274,7 +274,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brefphp/bref/issues",
-                "source": "https://github.com/brefphp/bref/tree/2.1.13"
+                "source": "https://github.com/brefphp/bref/tree/2.1.14"
             },
             "funding": [
                 {
@@ -286,7 +286,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-01T15:29:14+00:00"
+            "time": "2024-02-06T10:59:20+00:00"
         },
         {
             "name": "brick/math",
@@ -1241,20 +1241,20 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.0.x-dev",
+            "version": "4.0.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "6df5ba0a6eb9b2ff3902735c1cf0eef075cad863"
+                "reference": "fbb7f1d8e91e9d08690fa6bb5998d86ef5375672"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/6df5ba0a6eb9b2ff3902735c1cf0eef075cad863",
-                "reference": "6df5ba0a6eb9b2ff3902735c1cf0eef075cad863",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/fbb7f1d8e91e9d08690fa6bb5998d86ef5375672",
+                "reference": "fbb7f1d8e91e9d08690fa6bb5998d86ef5375672",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.0.0-alpha.12",
+                "craftcms/cms": "^5.0.0-beta.1",
                 "craftcms/html-field": "^3.0.0-alpha",
                 "nystudio107/craft-code-editor": ">=1.0.8 <=1.0.13 || ^1.0.16",
                 "php": "^8.2"
@@ -1301,20 +1301,20 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2024-02-03T02:06:02+00:00"
+            "time": "2024-02-06T20:05:36+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "5.0.0-alpha.12",
+            "version": "5.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "0a85d84166d4afdfda875b3e64ef60223eadc6f2"
+                "reference": "4bba68bce2e83e2ad4f4718f0223a4ea901ba690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/0a85d84166d4afdfda875b3e64ef60223eadc6f2",
-                "reference": "0a85d84166d4afdfda875b3e64ef60223eadc6f2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/4bba68bce2e83e2ad4f4718f0223a4ea901ba690",
+                "reference": "4bba68bce2e83e2ad4f4718f0223a4ea901ba690",
                 "shasum": ""
             },
             "require": {
@@ -1423,7 +1423,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2024-02-05T20:14:29+00:00"
+            "time": "2024-02-06T20:29:57+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -11141,6 +11141,12 @@
     "packages-dev": [],
     "aliases": [
         {
+            "package": "craftcms/cms",
+            "version": "5.0.9999999.9999999-dev",
+            "alias": "5.0.0-beta.1",
+            "alias_normalized": "5.0.0.0-beta1"
+        },
+        {
             "package": "solspace/craft3-commons",
             "version": "dev-dev-craft5",
             "alias": "2.0.3",
@@ -11150,7 +11156,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "craftcms/aws-s3": 20,
-        "craftcms/ckeditor": 20,
+        "craftcms/cms": 20,
         "nystudio107/craft-twigpack": 20,
         "solspace/craft-freeform": 20,
         "solspace/craft3-commons": 20
