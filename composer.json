@@ -25,7 +25,6 @@
         "craftcms/cms": "^4.0.0",
         "craftcms/yii2-dynamodb": "^2.0.0",
         "fakerphp/faker": "^1.14",
-        "mead-steve/mono-snag": "^4.1",
         "nystudio107/craft-seomatic": "^4.0.0-beta.8",
         "nystudio107/craft-twigpack": "^4.0.0-beta.1",
         "solspace/craft-freeform": "^5.0.0",
