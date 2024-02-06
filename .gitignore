@@ -14,7 +14,6 @@
 
 # WEB
 /web/cpresources
-/web/assets
 /web/css
 /web/images
 /web/js
@@ -50,3 +49,6 @@
 !/web/browserconfig.xml
 
 /submodules
+
+# LOCAL DEVELOPMENT
+docker-compose.override.yml
