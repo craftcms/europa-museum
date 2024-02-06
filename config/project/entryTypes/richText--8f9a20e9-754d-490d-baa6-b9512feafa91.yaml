@@ -6,6 +6,35 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: d537c056-dd51-4aeb-a79c-3d6d993a0af1
+            userCondition: null
+            warning: null
+            width: 100
+          -
             elementCondition: null
             fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # Content Blocks - Rich Text - Rich Text
             handle: null
@@ -70,12 +99,12 @@ fieldLayouts:
         userCondition: null
 handle: richText
 hasTitleField: false
-icon: null
+icon: paragraph
 name: 'Rich Text'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

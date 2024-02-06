@@ -6,6 +6,35 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5a14bd05-9494-4838-b58a-84fa6f99f52b
+            userCondition: null
+            warning: null
+            width: 100
+          -
             elementCondition: null
             fieldUid: b28c567f-a9f9-4d96-848b-1de28c643417 # Content Blocks - Heading - Heading
             handle: heading
@@ -25,12 +54,12 @@ fieldLayouts:
         userCondition: null
 handle: heading
 hasTitleField: false
-icon: null
+icon: text
 name: Heading
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

@@ -1,10 +1,39 @@
-color: null
+color: sky
 fieldLayouts:
   2e620162-c9b6-427b-8b34-01749ceed604:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 62979f13-ef64-4048-8ef0-aaa7d6da4287
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: e44383bb-8f5a-4b3b-9114-30a955feb64c # Content Blocks - Form - Form
@@ -40,12 +69,12 @@ fieldLayouts:
         userCondition: null
 handle: form
 hasTitleField: false
-icon: null
+icon: paper-plane
 name: Form
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

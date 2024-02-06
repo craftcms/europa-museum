@@ -1,10 +1,39 @@
-color: null
+color: blue
 fieldLayouts:
   74ad9d74-87f7-47ce-979e-cd93cc0f6002:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c115ea50-c3c2-4866-8add-8ebdd0510a40
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: 2d7b7e2f-71b1-4b25-8501-c8edc07a7f18 # Content Blocks - Google Map Embed - Embed Code
@@ -25,12 +54,12 @@ fieldLayouts:
         userCondition: null
 handle: googleMapEmbed
 hasTitleField: false
-icon: null
+icon: map-location
 name: 'Google Map Embed'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

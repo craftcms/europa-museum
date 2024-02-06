@@ -1,10 +1,39 @@
-color: null
+color: orange
 fieldLayouts:
   317b7d36-2f97-4ffa-846f-0404ab3c6df8:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 345595f4-45af-48ce-b525-ab343fec0496
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Content Blocks - Featured Entry - Entry
@@ -40,12 +69,12 @@ fieldLayouts:
         userCondition: null
 handle: featuredEntry
 hasTitleField: false
-icon: null
+icon: newspaper
 name: 'Featured Entry'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

@@ -1,10 +1,39 @@
-color: null
+color: teal
 fieldLayouts:
   e8d49680-7ba8-48aa-83b6-01f3ddbfe9c4:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7a1d2432-c937-41f7-b915-2e1e70183c92
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: 4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d # Content Blocks - Slider - Heading
@@ -115,12 +144,12 @@ fieldLayouts:
         userCondition: null
 handle: slider
 hasTitleField: false
-icon: null
+icon: images
 name: Slider
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

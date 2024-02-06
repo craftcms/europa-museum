@@ -1,10 +1,39 @@
-color: null
+color: yellow
 fieldLayouts:
   e65bd1e5-abf6-43e6-a3f0-2fbb329e35c4:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 07fcab86-634c-47e8-98a6-6ebae07eae20
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: 24bd1247-7ed2-48e8-af76-5b8ffc486ef6 # Content Blocks - CTA Caption - Heading
@@ -115,12 +144,12 @@ fieldLayouts:
         userCondition: null
 handle: ctaCaption
 hasTitleField: false
-icon: null
+icon: megaphone
 name: 'CTA Caption'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site

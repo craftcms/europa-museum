@@ -1,10 +1,39 @@
-color: null
+color: violet
 fieldLayouts:
   b00121d3-e692-4fad-9a4d-14069ec52bf4:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 8427f4b1-91a8-451b-9447-0e3021769cf7
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: d10684d5-bcd7-4e35-b0be-69377f981c39 # Content Blocks - Stats and Image - Heading
@@ -160,12 +189,12 @@ fieldLayouts:
         userCondition: null
 handle: statsAndImage
 hasTitleField: false
-icon: null
+icon: projector
 name: 'Stats and Image'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: null
+slugTranslationKeyFormat: ''
 slugTranslationMethod: site
-titleFormat: null
-titleTranslationKeyFormat: null
+titleFormat: ''
+titleTranslationKeyFormat: ''
 titleTranslationMethod: site
