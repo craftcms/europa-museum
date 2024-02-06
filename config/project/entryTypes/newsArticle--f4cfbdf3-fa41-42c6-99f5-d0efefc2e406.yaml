@@ -96,7 +96,6 @@ fieldLayouts:
 handle: newsArticle
 hasTitleField: true
 name: 'News Article'
-section: 666bcffb-61d7-43b4-a9f5-8c51c458b356 # News Articles
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

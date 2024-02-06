@@ -76,7 +76,6 @@ fieldLayouts:
 handle: about
 hasTitleField: false
 name: About
-section: 977f4737-eaaa-4d0f-aadb-10251ee1c4ff # About
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

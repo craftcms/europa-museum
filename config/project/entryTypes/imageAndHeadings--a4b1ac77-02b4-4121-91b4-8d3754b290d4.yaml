@@ -1,0 +1,111 @@
+color: null
+fieldLayouts:
+  6f1b2935-dba4-460d-be70-b29a7aa0aa60:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Content Blocks - Image and Headings - Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 016d6fd9-8677-47f0-8771-a220936b734b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a65ec270-2111-40c2-bf47-f3d6d929603a # Content Blocks - Image and Headings - Pre Heading
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Pre Heading'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 056f209b-7979-4291-8553-6faa4b0e49a1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f109ee5b-bb41-47ce-aaa0-53b5304e0e22 # Content Blocks - Image and Headings - Heading
+            handle: heading
+            includeInCards: false
+            instructions: null
+            label: Heading
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11fe54a4-5984-413c-95c8-900925b8a814
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3b943244-76d1-4973-9d71-6ec6c109e255 # Content Blocks - Image and Headings - Sub Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Sub Heading'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 123f3984-590d-41e3-a874-2c477b21c0e0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f # Content Blocks - Image and Headings - Text Color
+            handle: textColor
+            includeInCards: false
+            instructions: null
+            label: 'Text Color'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 86f23cc1-2e98-47e1-9a05-ba947ade11f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 913eb47c-ce43-4325-bb3a-1f5d99065038 # Content Blocks - Image and Headings - Highlight Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Highlight Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7c92a655-fcc1-4f32-abb6-86ef8213a8d1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c7e1b071-3935-47c7-9acf-9c6f3d7f595e
+        userCondition: null
+handle: imageAndHeadings
+hasTitleField: false
+icon: null
+name: 'Image and Headings'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

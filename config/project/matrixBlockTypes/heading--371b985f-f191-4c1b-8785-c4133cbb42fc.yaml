@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: b28c567f-a9f9-4d96-848b-1de28c643417 # __blank__
+            fieldUid: b28c567f-a9f9-4d96-848b-1de28c643417 # Content Blocks - Heading - Heading
             instructions: null
             label: null
             required: false
@@ -17,7 +17,7 @@ fieldLayouts:
         name: Content
         uid: f6fd8c78-a3eb-4219-8c73-55c6c89c190c
 fields:
-  b28c567f-a9f9-4d96-848b-1de28c643417: # __blank__
+  b28c567f-a9f9-4d96-848b-1de28c643417: # Content Blocks - Heading - Heading
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null

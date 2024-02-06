@@ -1,16 +1,25 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 1bff9c9f-5c93-4679-967d-0f9095c856fa # Common
 handle: contentBlocks
 instructions: null
 name: 'Content Blocks'
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_contentblocks}}'
-  maxBlocks: null
-  minBlocks: null
+  entryTypes:
+    - 0d3f8f65-dde1-4921-a575-26ade4545fc9 # Slider
+    - 6fb16db4-9ff1-412f-8cde-bc13843d78e8 # CTA Caption
+    - 8f9a20e9-754d-490d-baa6-b9512feafa91 # Rich Text
+    - 9ba346ec-12cc-4b07-9a30-677efc6e97c1 # Google Map Embed
+    - 24db24b1-bf70-414a-8652-ba22d7b0dfc3 # Form
+    - 83ef9ed9-6360-4f64-abbb-920baeb2048e # Featured Entry
+    - 371b985f-f191-4c1b-8785-c4133cbb42fc # Heading
+    - a4b1ac77-02b4-4121-91b4-8d3754b290d4 # Image and Headings
+    - f75a20aa-e20c-4f26-b217-2d2ffa1a7cac # Stats and Image
+  maxEntries: null
+  minEntries: null
   propagationKeyFormat: null
   propagationMethod: all
+  viewMode: blocks
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix

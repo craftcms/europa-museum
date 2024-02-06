@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 9f8a4de3-d72b-4d23-bb81-c83ef4611889 # Exhibitions
 handle: exhibitions
 name: Exhibitions
 previewTargets:

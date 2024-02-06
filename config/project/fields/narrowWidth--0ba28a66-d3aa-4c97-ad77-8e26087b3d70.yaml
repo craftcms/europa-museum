@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: narrowWidth
+instructions: null
+name: 'Content Blocks - CTA Caption - Narrow Width'
+searchable: true
+settings:
+  default: true
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

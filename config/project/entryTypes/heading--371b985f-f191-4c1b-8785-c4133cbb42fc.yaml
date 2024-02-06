@@ -1,0 +1,36 @@
+color: null
+fieldLayouts:
+  43071b8b-6243-4eea-b70b-e6122dd5a909:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b28c567f-a9f9-4d96-848b-1de28c643417 # Content Blocks - Heading - Heading
+            handle: heading
+            includeInCards: true
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db91b6bf-05af-4356-b713-a66592a119bd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f6fd8c78-a3eb-4219-8c73-55c6c89c190c
+        userCondition: null
+handle: heading
+hasTitleField: false
+icon: null
+name: Heading
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

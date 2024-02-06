@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e # Visit
 handle: visit
 name: Visit
 previewTargets:

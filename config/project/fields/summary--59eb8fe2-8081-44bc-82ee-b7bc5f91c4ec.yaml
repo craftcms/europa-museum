@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: text
-fieldGroup: c0ba2861-5497-46d7-86b4-71dcb76f2a16 # News Articles
 handle: summary
 instructions: 'Short summary for News page and RSS feed.'
 name: Summary

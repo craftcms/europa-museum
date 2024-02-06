@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 13b5cd9c-c5b1-40bb-8a8a-dc14815aabad # Exhibit
 handle: exhibits
 name: Exhibits
 previewTargets:

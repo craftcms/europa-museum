@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 2d7b7e2f-71b1-4b25-8501-c8edc07a7f18 # Embed Code
+            fieldUid: 2d7b7e2f-71b1-4b25-8501-c8edc07a7f18 # Content Blocks - Google Map Embed - Embed Code
             instructions: null
             label: null
             required: false
@@ -17,7 +17,7 @@ fieldLayouts:
         name: Content
         uid: 1bda72d4-5ac2-4da7-80b2-e764095687ce
 fields:
-  2d7b7e2f-71b1-4b25-8501-c8edc07a7f18: # Embed Code
+  2d7b7e2f-71b1-4b25-8501-c8edc07a7f18: # Content Blocks - Google Map Embed - Embed Code
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null

@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: d6f9a9b8-5dea-469a-af3d-b81ba7040f67 # News
 handle: paginationCount
 instructions: 'The max number of news articles to display per page.'
 name: 'Pagination Count'

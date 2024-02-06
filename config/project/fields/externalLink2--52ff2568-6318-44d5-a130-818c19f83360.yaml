@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: externalLink2
+instructions: null
+name: 'Content Blocks - Stats and Image - External Link'
+searchable: true
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

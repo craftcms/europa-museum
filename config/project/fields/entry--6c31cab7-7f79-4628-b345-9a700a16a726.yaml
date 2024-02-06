@@ -1,0 +1,24 @@
+columnSuffix: null
+handle: entry
+instructions: null
+name: 'Content Blocks - Featured Entry - Entry'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSiteMenu: true
+  sources:
+    - 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+    - 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

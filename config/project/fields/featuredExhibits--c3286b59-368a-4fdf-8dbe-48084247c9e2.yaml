@@ -1,6 +1,5 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: 71a8e9e8-3d7d-4ceb-91f8-482de5453eab # Home
 handle: featuredExhibits
 instructions: 'Will be displayed in a random order.'
 name: 'Featured Exhibits'

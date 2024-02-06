@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: topBorder
+instructions: null
+name: 'Content Blocks - Rich Text - Top Border'
+searchable: true
+settings:
+  default: true
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

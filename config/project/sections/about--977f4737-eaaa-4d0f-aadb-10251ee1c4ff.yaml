@@ -1,5 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  - 5bd803f3-dec3-41e6-b829-f90b49ac8dd3 # About
 handle: about
 name: About
 previewTargets:

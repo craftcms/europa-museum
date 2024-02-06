@@ -66,7 +66,6 @@ fieldLayouts:
 handle: exhibitions
 hasTitleField: false
 name: Exhibitions
-section: b39c0003-6393-4175-8698-6edef920f7fd # Exhibitions
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

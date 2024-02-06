@@ -66,7 +66,6 @@ fieldLayouts:
 handle: exhibit
 hasTitleField: true
 name: Exhibit
-section: c49dac11-102e-429e-8bcc-5c8d99508dcb # Exhibits
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

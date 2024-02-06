@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Image
+            fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Content Blocks - Image and Headings - Image
             instructions: null
             label: null
             required: false
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a65ec270-2111-40c2-bf47-f3d6d929603a # Pre Heading
+            fieldUid: a65ec270-2111-40c2-bf47-f3d6d929603a # Content Blocks - Image and Headings - Pre Heading
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f109ee5b-bb41-47ce-aaa0-53b5304e0e22 # Heading
+            fieldUid: f109ee5b-bb41-47ce-aaa0-53b5304e0e22 # Content Blocks - Image and Headings - Heading
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3b943244-76d1-4973-9d71-6ec6c109e255 # Sub Heading
+            fieldUid: 3b943244-76d1-4973-9d71-6ec6c109e255 # Content Blocks - Image and Headings - Sub Heading
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f # Text Color
+            fieldUid: 3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f # Content Blocks - Image and Headings - Text Color
             instructions: null
             label: null
             required: false
@@ -55,7 +55,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 913eb47c-ce43-4325-bb3a-1f5d99065038 # Highlight Text
+            fieldUid: 913eb47c-ce43-4325-bb3a-1f5d99065038 # Content Blocks - Image and Headings - Highlight Text
             instructions: null
             label: null
             required: false
@@ -67,7 +67,7 @@ fieldLayouts:
         name: Content
         uid: c7e1b071-3935-47c7-9acf-9c6f3d7f595e
 fields:
-  3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f: # Text Color
+  3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f: # Content Blocks - Image and Headings - Text Color
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -102,7 +102,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons
-  3b943244-76d1-4973-9d71-6ec6c109e255: # Sub Heading
+  3b943244-76d1-4973-9d71-6ec6c109e255: # Content Blocks - Image and Headings - Sub Heading
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -122,7 +122,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  913eb47c-ce43-4325-bb3a-1f5d99065038: # Highlight Text
+  913eb47c-ce43-4325-bb3a-1f5d99065038: # Content Blocks - Image and Headings - Highlight Text
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
@@ -137,7 +137,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  a65ec270-2111-40c2-bf47-f3d6d929603a: # Pre Heading
+  a65ec270-2111-40c2-bf47-f3d6d929603a: # Content Blocks - Image and Headings - Pre Heading
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -157,7 +157,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  dad3b3bd-ab3c-486d-a552-b3cc718f8e1c: # Image
+  dad3b3bd-ab3c-486d-a552-b3cc718f8e1c: # Content Blocks - Image and Headings - Image
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -205,7 +205,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  f109ee5b-bb41-47ce-aaa0-53b5304e0e22: # Heading
+  f109ee5b-bb41-47ce-aaa0-53b5304e0e22: # Content Blocks - Image and Headings - Heading
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null

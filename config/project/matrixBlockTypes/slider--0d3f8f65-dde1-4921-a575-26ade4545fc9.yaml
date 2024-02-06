@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d # Heading
+            fieldUid: 4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d # Content Blocks - Slider - Heading
             instructions: null
             label: null
             required: false
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: f668aa75-41bb-4309-9114-26d72e1547ff # CTA Link
+            fieldUid: f668aa75-41bb-4309-9114-26d72e1547ff # Content Blocks - Slider - CTA Link
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: b7672c12-833b-4554-afc9-ec3d68dbd78d # CTA Link Text
+            fieldUid: b7672c12-833b-4554-afc9-ec3d68dbd78d # Content Blocks - Slider - CTA Link Text
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 11b555a2-89cb-434c-a97c-8bf858a76326 # Slide Images
+            fieldUid: 11b555a2-89cb-434c-a97c-8bf858a76326 # Content Blocks - Slider - Slide Images
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 13b529cb-1236-4eb5-95a0-e20c2358385e # Slide Entries
+            fieldUid: 13b529cb-1236-4eb5-95a0-e20c2358385e # Content Blocks - Slider - Slide Entries
             instructions: null
             label: null
             required: false
@@ -55,7 +55,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: e6e6fbf0-a370-48de-b635-6f31bece3c9d # Slide Layout Centered
+            fieldUid: e6e6fbf0-a370-48de-b635-6f31bece3c9d # Content Blocks - Slider - Slide Layout Centered
             instructions: null
             label: null
             required: false
@@ -65,7 +65,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 85241ed2-6bbd-4dd0-af5c-07842116ccf3 # Dark UI
+            fieldUid: 85241ed2-6bbd-4dd0-af5c-07842116ccf3 # Content Blocks - Slider - Dark UI
             instructions: null
             label: null
             required: false
@@ -77,7 +77,7 @@ fieldLayouts:
         name: Content
         uid: 3c0a0d72-a79a-47de-adc1-9b60d82ca555
 fields:
-  4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d: # Heading
+  4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d: # Content Blocks - Slider - Heading
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -97,7 +97,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  11b555a2-89cb-434c-a97c-8bf858a76326: # Slide Images
+  11b555a2-89cb-434c-a97c-8bf858a76326: # Content Blocks - Slider - Slide Images
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -145,7 +145,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
-  13b529cb-1236-4eb5-95a0-e20c2358385e: # Slide Entries
+  13b529cb-1236-4eb5-95a0-e20c2358385e: # Content Blocks - Slider - Slide Entries
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -179,7 +179,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  85241ed2-6bbd-4dd0-af5c-07842116ccf3: # Dark UI
+  85241ed2-6bbd-4dd0-af5c-07842116ccf3: # Content Blocks - Slider - Dark UI
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
@@ -194,7 +194,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  b7672c12-833b-4554-afc9-ec3d68dbd78d: # CTA Link Text
+  b7672c12-833b-4554-afc9-ec3d68dbd78d: # Content Blocks - Slider - CTA Link Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -214,7 +214,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  e6e6fbf0-a370-48de-b635-6f31bece3c9d: # Slide Layout Centered
+  e6e6fbf0-a370-48de-b635-6f31bece3c9d: # Content Blocks - Slider - Slide Layout Centered
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
@@ -229,7 +229,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  f668aa75-41bb-4309-9114-26d72e1547ff: # CTA Link
+  f668aa75-41bb-4309-9114-26d72e1547ff: # Content Blocks - Slider - CTA Link
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null

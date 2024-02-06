@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: narrowWidth2
+instructions: null
+name: 'Content Blocks - Rich Text - Narrow Width'
+searchable: true
+settings:
+  default: true
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

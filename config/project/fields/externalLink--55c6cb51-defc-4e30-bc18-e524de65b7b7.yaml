@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: externalLink
+instructions: null
+name: 'Content Blocks - CTA Caption - External Link'
+searchable: true
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

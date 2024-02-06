@@ -1,0 +1,51 @@
+color: null
+fieldLayouts:
+  2e620162-c9b6-427b-8b34-01749ceed604:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e44383bb-8f5a-4b3b-9114-30a955feb64c # Content Blocks - Form - Form
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Form
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1da2001e-b1d4-4216-ba64-afa70351c1a2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee # Content Blocks - Form - Success Message
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: 'Success Message'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ec58db74-50a6-4093-8292-d0c5ab60f6ef
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0c40cfb4-32d4-4f05-8813-99b00af4d589
+        userCondition: null
+handle: form
+hasTitleField: false
+icon: null
+name: Form
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

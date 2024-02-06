@@ -32,7 +32,6 @@ fieldLayouts:
 handle: styleguide
 hasTitleField: false
 name: Styleguide
-section: 0edb3240-3f53-4f13-a789-2bd0b6cae755 # Styleguide
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

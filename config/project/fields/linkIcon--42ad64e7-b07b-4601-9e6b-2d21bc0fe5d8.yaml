@@ -1,0 +1,98 @@
+columnSuffix: null
+handle: linkIcon
+instructions: null
+name: 'Content Blocks - CTA Caption - Link Icon'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - none
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Arrow - Left'
+        -
+          - value
+          - arrowLeft
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Arrow - Right'
+        -
+          - value
+          - arrowRight
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Arrow - Up'
+        -
+          - value
+          - arrowUp
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Arrow - Down'
+        -
+          - value
+          - arrowDown
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Brochure
+        -
+          - value
+          - brochure
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Map Pin'
+        -
+          - value
+          - mapPin
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - News
+        -
+          - value
+          - news
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

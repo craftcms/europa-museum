@@ -1,0 +1,126 @@
+color: null
+fieldLayouts:
+  e8d49680-7ba8-48aa-83b6-01f3ddbfe9c4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d # Content Blocks - Slider - Heading
+            handle: heading
+            includeInCards: true
+            instructions: null
+            label: Heading
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b07a2cc5-1456-407e-9226-bf0cad7d11d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f668aa75-41bb-4309-9114-26d72e1547ff # Content Blocks - Slider - CTA Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'CTA Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 77903208-295b-47e4-9f4c-b4f9e6baa95f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b7672c12-833b-4554-afc9-ec3d68dbd78d # Content Blocks - Slider - CTA Link Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'CTA Link Text'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c5bd4d07-14e2-46a6-af0e-bcfe74fabe8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 11b555a2-89cb-434c-a97c-8bf858a76326 # Content Blocks - Slider - Slide Images
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Slide Images'
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b8be8189-563c-449a-a7cf-bc40d8cc6421
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 13b529cb-1236-4eb5-95a0-e20c2358385e # Content Blocks - Slider - Slide Entries
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Slide Entries'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f3861bd-a0ce-4e70-a654-6b532f640ca6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e6e6fbf0-a370-48de-b635-6f31bece3c9d # Content Blocks - Slider - Slide Layout Centered
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Slide Layout Centered'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24d017d2-0892-4d77-8e37-8e6bb2a7141f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 85241ed2-6bbd-4dd0-af5c-07842116ccf3 # Content Blocks - Slider - Dark UI
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Dark UI'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 33eca5a4-b557-4128-8cc8-02c375be3778
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3c0a0d72-a79a-47de-adc1-9b60d82ca555
+        userCondition: null
+handle: slider
+hasTitleField: false
+icon: null
+name: Slider
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

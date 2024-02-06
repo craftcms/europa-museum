@@ -1,0 +1,81 @@
+color: null
+fieldLayouts:
+  b7542268-90e7-488e-aaf2-8c6695a2948c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # Content Blocks - Rich Text - Rich Text
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: __blank__
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 88b22500-1a2a-4744-be8c-2e6020bb4cdf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Content Blocks - Rich Text - Top Border
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Top Border'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 691cb210-126a-4a63-a5bb-ebe3e414160d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Content Blocks - Rich Text - Layout
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Layout
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7 # Content Blocks - Rich Text - Narrow Width
+            handle: narrowWidth
+            includeInCards: false
+            instructions: null
+            label: 'Narrow Width'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a23485b0-fc56-44e9-870e-51520b2e3073
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a3ac54c2-d758-450a-9127-4ae990c8f440
+        userCondition: null
+handle: richText
+hasTitleField: false
+icon: null
+name: 'Rich Text'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

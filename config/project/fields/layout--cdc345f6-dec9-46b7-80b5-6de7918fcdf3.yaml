@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: layout
+instructions: null
+name: 'Content Blocks - Rich Text - Layout'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Image Left'
+        -
+          - value
+          - imageLeft
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - 'Image Full Width'
+        -
+          - value
+          - imageFullWidth
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Image Right'
+        -
+          - value
+          - imageRight
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 24bd1247-7ed2-48e8-af76-5b8ffc486ef6 # Heading
+            fieldUid: 24bd1247-7ed2-48e8-af76-5b8ffc486ef6 # Content Blocks - CTA Caption - Heading
             instructions: null
             label: null
             required: false
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8c274864-9cf0-4ef9-b4bd-88da544515ad # Information
+            fieldUid: 8c274864-9cf0-4ef9-b4bd-88da544515ad # Content Blocks - CTA Caption - Information
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 6ee9b9a7-d12d-4c9b-b069-586609cb5ea9 # Link Label
+            fieldUid: 6ee9b9a7-d12d-4c9b-b069-586609cb5ea9 # Content Blocks - CTA Caption - Link Label
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 3b1b9f85-3554-4b4a-8d39-467bf5e4a35d # Internal Link
+            fieldUid: 3b1b9f85-3554-4b4a-8d39-467bf5e4a35d # Content Blocks - CTA Caption - Internal Link
             instructions: null
             label: null
             required: false
@@ -45,7 +45,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # External Link
+            fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Content Blocks - CTA Caption - External Link
             instructions: null
             label: null
             required: false
@@ -55,7 +55,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8 # Link Icon
+            fieldUid: 42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8 # Content Blocks - CTA Caption - Link Icon
             instructions: null
             label: null
             required: false
@@ -65,7 +65,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Narrow Width
+            fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Content Blocks - CTA Caption - Narrow Width
             instructions: null
             label: null
             required: false
@@ -77,7 +77,7 @@ fieldLayouts:
         name: Content
         uid: 8e6c3502-8203-4d4f-a932-fa343b17b998
 fields:
-  0ba28a66-d3aa-4c97-ad77-8e26087b3d70: # Narrow Width
+  0ba28a66-d3aa-4c97-ad77-8e26087b3d70: # Content Blocks - CTA Caption - Narrow Width
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
@@ -92,7 +92,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  3b1b9f85-3554-4b4a-8d39-467bf5e4a35d: # Internal Link
+  3b1b9f85-3554-4b4a-8d39-467bf5e4a35d: # Content Blocks - CTA Caption - Internal Link
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -126,7 +126,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  6ee9b9a7-d12d-4c9b-b069-586609cb5ea9: # Link Label
+  6ee9b9a7-d12d-4c9b-b069-586609cb5ea9: # Content Blocks - CTA Caption - Link Label
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -146,7 +146,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  8c274864-9cf0-4ef9-b4bd-88da544515ad: # Information
+  8c274864-9cf0-4ef9-b4bd-88da544515ad: # Content Blocks - CTA Caption - Information
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -166,7 +166,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  24bd1247-7ed2-48e8-af76-5b8ffc486ef6: # Heading
+  24bd1247-7ed2-48e8-af76-5b8ffc486ef6: # Content Blocks - CTA Caption - Heading
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -186,7 +186,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8: # Link Icon
+  42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8: # Content Blocks - CTA Caption - Link Icon
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -287,7 +287,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  55c6cb51-defc-4e30-bc18-e524de65b7b7: # External Link
+  55c6cb51-defc-4e30-bc18-e524de65b7b7: # Content Blocks - CTA Caption - External Link
     columnSuffix: null
     contentColumnType: string(255)
     fieldGroup: null

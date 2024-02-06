@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: successMessage
+instructions: 'Optional success message for this specific form.'
+name: 'Content Blocks - Form - Success Message'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

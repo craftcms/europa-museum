@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: highlightText
+instructions: 'Will apply a background for the text to increase contrast from the background.'
+name: 'Content Blocks - Image and Headings - Highlight Text'
+searchable: true
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -1,0 +1,8 @@
+columnSuffix: null
+handle: form
+instructions: null
+name: 'Content Blocks - Form - Form'
+searchable: true
+translationKeyFormat: null
+translationMethod: none
+type: Solspace\Freeform\FieldTypes\FormFieldType

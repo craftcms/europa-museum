@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # __blank__
+            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # Content Blocks - Rich Text - Rich Text
             instructions: null
             label: null
             required: false
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Top Border
+            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Content Blocks - Rich Text - Top Border
             instructions: null
             label: null
             required: false
@@ -25,7 +25,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Layout
+            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Content Blocks - Rich Text - Layout
             instructions: null
             label: null
             required: false
@@ -35,7 +35,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7 # Narrow Width
+            fieldUid: fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7 # Content Blocks - Rich Text - Narrow Width
             instructions: null
             label: null
             required: false
@@ -47,7 +47,7 @@ fieldLayouts:
         name: Content
         uid: a3ac54c2-d758-450a-9127-4ae990c8f440
 fields:
-  aa1aa6b7-0e81-4b68-8694-ed5f543f38bc: # __blank__
+  aa1aa6b7-0e81-4b68-8694-ed5f543f38bc: # Content Blocks - Rich Text - Rich Text
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -69,7 +69,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
-  cdc345f6-dec9-46b7-80b5-6de7918fcdf3: # Layout
+  cdc345f6-dec9-46b7-80b5-6de7918fcdf3: # Content Blocks - Rich Text - Layout
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -115,7 +115,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\RadioButtons
-  eb910859-8baf-408a-ae9a-3af97b637806: # Top Border
+  eb910859-8baf-408a-ae9a-3af97b637806: # Content Blocks - Rich Text - Top Border
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null
@@ -130,7 +130,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Lightswitch
-  fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7: # Narrow Width
+  fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7: # Content Blocks - Rich Text - Narrow Width
     columnSuffix: null
     contentColumnType: boolean
     fieldGroup: null

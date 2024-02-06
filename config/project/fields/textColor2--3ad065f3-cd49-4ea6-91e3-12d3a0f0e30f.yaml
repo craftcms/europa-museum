@@ -1,0 +1,32 @@
+columnSuffix: null
+handle: textColor2
+instructions: null
+name: 'Content Blocks - Image and Headings - Text Color'
+searchable: true
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Black Text'
+        -
+          - value
+          - blackText
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'White Text'
+        -
+          - value
+          - whiteText
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\RadioButtons

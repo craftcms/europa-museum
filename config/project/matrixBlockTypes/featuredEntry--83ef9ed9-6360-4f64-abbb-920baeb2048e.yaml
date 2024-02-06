@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Entry
+            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Content Blocks - Featured Entry - Entry
             instructions: null
             label: null
             required: false
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Text Color
+            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Content Blocks - Featured Entry - Text Color
             instructions: null
             label: null
             required: false
@@ -27,7 +27,7 @@ fieldLayouts:
         name: Content
         uid: 37762363-6e7a-4b70-a451-e81c935a203c
 fields:
-  6c31cab7-7f79-4628-b345-9a700a16a726: # Entry
+  6c31cab7-7f79-4628-b345-9a700a16a726: # Content Blocks - Featured Entry - Entry
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -63,7 +63,7 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Entries
-  8df6d29d-59a0-44ee-80e5-f69849956547: # Text Color
+  8df6d29d-59a0-44ee-80e5-f69849956547: # Content Blocks - Featured Entry - Text Color
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null

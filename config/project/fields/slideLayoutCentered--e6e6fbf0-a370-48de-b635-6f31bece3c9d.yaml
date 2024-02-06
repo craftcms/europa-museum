@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: slideLayoutCentered
+instructions: 'When enabled it''s best to have 6+ Slide Images/Entries so that the slider will wrap nicely on wide screens.'
+name: 'Content Blocks - Slider - Slide Layout Centered'
+searchable: true
+settings:
+  default: true
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

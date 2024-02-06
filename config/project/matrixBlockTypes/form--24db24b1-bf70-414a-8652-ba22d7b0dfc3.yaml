@@ -5,7 +5,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: e44383bb-8f5a-4b3b-9114-30a955feb64c # Form
+            fieldUid: e44383bb-8f5a-4b3b-9114-30a955feb64c # Content Blocks - Form - Form
             instructions: null
             label: null
             required: true
@@ -15,7 +15,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee # Success Message
+            fieldUid: a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee # Content Blocks - Form - Success Message
             instructions: null
             label: null
             required: false
@@ -27,7 +27,7 @@ fieldLayouts:
         name: Content
         uid: 0c40cfb4-32d4-4f05-8813-99b00af4d589
 fields:
-  a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee: # Success Message
+  a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee: # Content Blocks - Form - Success Message
     columnSuffix: null
     contentColumnType: text
     fieldGroup: null
@@ -47,7 +47,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\PlainText
-  e44383bb-8f5a-4b3b-9114-30a955feb64c: # Form
+  e44383bb-8f5a-4b3b-9114-30a955feb64c: # Content Blocks - Form - Form
     columnSuffix: null
     contentColumnType: integer
     fieldGroup: null

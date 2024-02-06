@@ -1,0 +1,20 @@
+columnSuffix: null
+handle: richText
+instructions: null
+name: 'Content Blocks - Rich Text - Rich Text'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Vhc
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: true
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,0 +1,171 @@
+color: null
+fieldLayouts:
+  b00121d3-e692-4fad-9a4d-14069ec52bf4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d10684d5-bcd7-4e35-b0be-69377f981c39 # Content Blocks - Stats and Image - Heading
+            handle: heading
+            includeInCards: true
+            instructions: null
+            label: Heading
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c1bc74c3-49bc-4f9c-8fec-5a73f3526e49
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eb7b8bc9-c07a-4a25-9201-8174bd70fcb9 # Content Blocks - Stats and Image - Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: Description
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56ef9542-a4c8-4d4d-8550-5ed52750e8ae
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 00f86307-b225-423b-bd34-b70af6632cf2 # Content Blocks - Stats and Image - Link Label
+            handle: linkLabel
+            includeInCards: false
+            instructions: null
+            label: 'Link Label'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9db55a82-a2a1-4de1-8592-8d1e21931340
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f466ab59-2e29-4cce-85b8-f9ebe7000b03 # Content Blocks - Stats and Image - Internal Link
+            handle: internalLink
+            includeInCards: false
+            instructions: null
+            label: 'Internal Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 968ff62d-f499-47d0-a78d-1c673957b01e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 52ff2568-6318-44d5-a130-818c19f83360 # Content Blocks - Stats and Image - External Link
+            handle: externalLink
+            includeInCards: false
+            instructions: null
+            label: 'External Link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71306902-1f79-4286-a4bc-77778f2a5c32
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7cce3872-9055-454a-8fdc-45cbccec785b # Content Blocks - Stats and Image - Left Stat Value
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Left Stat Value'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6978fbab-a7bb-48b0-9bff-28027d87682c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c127ec9-df18-4d62-bd02-cf8b5044f7ea # Content Blocks - Stats and Image - Left Stat Label
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Left Stat Label'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 675e92cb-65e0-414e-873c-b8d2dfd898d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5f06df0c-02b7-4b2d-9b75-4b22a09c3a12 # Content Blocks - Stats and Image - Right Stat Value
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Right Stat Value'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d71530d9-7dcd-499a-a414-55c578362a4c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5ccbb75b-a9e9-455a-baf9-60aaa799d452 # Content Blocks - Stats and Image - Right Stat Label
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: 'Right Stat Label'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 580f7c2b-26fb-45b7-bc28-57fd026a7285
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2b1996eb-1a60-4257-b4ab-2e41c49fbd06 # Content Blocks - Stats and Image - Image
+            handle: image
+            includeInCards: false
+            instructions: null
+            label: Image
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 290ed74f-8e1a-4f1c-854a-a04e25db912b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 31b86478-b2de-4194-b7d1-91b6c0434033
+        userCondition: null
+handle: statsAndImage
+hasTitleField: false
+icon: null
+name: 'Stats and Image'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
