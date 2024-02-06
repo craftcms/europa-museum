@@ -9,6 +9,9 @@
 /storage/*
 !/storage/rebrand/
 
+# UPLOADS
+/web/assets/volumes
+
 # WEB
 /web/cpresources
 /web/assets
