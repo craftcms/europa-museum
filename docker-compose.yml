@@ -10,7 +10,7 @@ services:
       postgres:
         condition: service_healthy
   postgres:
-    image: postgres:10.7-alpine
+    image: postgres:13-alpine
     environment:
       POSTGRES_DB: ${CRAFT_DB_DATABASE}
       POSTGRES_USER: ${CRAFT_DB_USER}
