@@ -2,7 +2,7 @@
 
 {% set isFirst = isFirst ? 'isFirst' : '' %}
 
-{% set image = theBlock.image.eagerly().one() ?? null %}
+{% set image = theBlock.image.eagerly().one() %}
 {% set textColor = theBlock.textColor | default('#000') %}
 {% set highlightText = theBlock.highlightText ? 'is-highlighted' : '' %}
 

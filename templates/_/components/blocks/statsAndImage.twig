@@ -1,6 +1,6 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set image = theBlock.image.one() ?? null %}
+{% set image = theBlock.image.eagerly().one() %}
 
 <div class="content-block stats-and-image-block {{ isFirst }}" data-scroll-section>
 

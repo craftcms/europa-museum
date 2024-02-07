@@ -16,7 +16,7 @@
                 {{ entry.title }}
             </h1>
 
-            {% set heroImage = entry.heroImage.one() ?? null %}
+            {% set heroImage = entry.heroImage.one() %}
 
             {% if heroImage %}
 

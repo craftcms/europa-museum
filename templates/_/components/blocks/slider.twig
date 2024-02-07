@@ -1,7 +1,7 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
 {% set ctaLinkText = theBlock.ctaLinkText %}
-{% set ctaLink = theBlock.ctaLink.eagerly().one().url ?? null %}
+{% set ctaLink = theBlock.ctaLink.eagerly().one() %}
 {% set slideImages = theBlock.slideImages.eagerly().all() %}
 {% set slideEntries = theBlock.slideEntries.eagerly().all() %}
 {% set slideLayoutCentered = theBlock.slideLayoutCentered %}
@@ -12,9 +12,9 @@
     <div class="slider-info">
 
         <div class="slider-link-container hide-on-tablet">
-            <a class="slider-link active" href="{{ ctaLink }}">
-                {{ ctaLinkText }}
-            </a>
+            {% if ctaLink %}
+                <a class="slider-link active" href="{{ ctaLink.url }}">{{ ctaLinkText }}</a>
+            {% endif %}
         </div>
 
         <h4 class="slider-heading {% if not theBlock.heading %}hide-on-tablet{% endif %}">

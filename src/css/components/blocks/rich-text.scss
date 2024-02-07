@@ -78,10 +78,21 @@
     }
 
     figure {
+        margin: 10px 0 30px 0;
         width: 100%;
-        margin: 10px 0 30px;
-        background-color: #f7f7f7;
-        box-shadow: 0px 70px 50px -50px rgba(0,0,0,0.2);
+
+        img, picture {
+            background-color: #f7f7f7;
+            box-shadow: 0px 70px 50px -50px rgba(0,0,0,0.2);
+        }
+
+        figcaption {
+            font-family: 'EuropaSansRegular', sans-serif;
+            font-size: 12px;
+            margin: 10px auto 0 auto;
+            max-width: 500px;
+            text-align: center;
+        }
     }
 
     &.layout-imageFullWidth figure {
