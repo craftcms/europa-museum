@@ -60,13 +60,12 @@ docker-compose exec web php craft users/create --admin
 
 ### DDEV
 
-[DDEV](https://ddev.com/) is our recommended local development environment, for Craft developers at any level of experience. Our [quick-start guide](https://craftcms.com/docs/5.x/install.html) covers this process in detail—but here are the commands adapted for this project:
+[DDEV](https://ddev.com/) is our recommended local development environment, for Craft developers at any level of experience. Our [quick-start guide](https://craftcms.com/docs/5.x/install.html) covers this process in detail—but we’ve done the config for you, so all that’s required is…
 
 ```bash
 git clone https://github.com/craftcms/europa-museum.git
 cd europa-museum
-ddev config --project-type=craftcms --docroot=web --database=postgres:13
-ddev composer install
+ddev start
 ddev craft db/restore seed.sql
 ```
 
