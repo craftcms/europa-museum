@@ -4,11 +4,13 @@ instructions: null
 name: 'Content Blocks - Rich Text - Rich Text'
 searchable: true
 settings:
-  availableTransforms: '*'
+  availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Vhc
+  ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Rich Text
   defaultTransform: null
   enableSourceEditingForNonAdmins: true
+  entryTypes:
+    - 386be967-b947-414c-8ea0-824e977d04ad # Embed
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false

@@ -5,8 +5,7 @@ headingLevels:
   - 4
   - 5
   - 6
-listPlugin: List
-name: Vhc
+name: 'Rich Text'
 options:
   code:
     indentSequence: '  '
@@ -15,7 +14,6 @@ toolbar:
   - '|'
   - heading
   - '|'
-  - codeBlock
   - blockQuote
   - bold
   - italic
@@ -23,3 +21,4 @@ toolbar:
   - numberedList
   - link
   - insertImage
+  - createEntry

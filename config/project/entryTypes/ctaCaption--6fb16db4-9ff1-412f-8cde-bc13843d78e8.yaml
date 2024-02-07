@@ -1,4 +1,4 @@
-color: yellow
+color: orange
 fieldLayouts:
   e65bd1e5-abf6-43e6-a3f0-2fbb329e35c4:
     tabs:
@@ -53,7 +53,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 8c274864-9cf0-4ef9-b4bd-88da544515ad # Content Blocks - CTA Caption - Information
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: Information
             providesThumbs: false
@@ -81,13 +81,40 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
+                  layoutElementUid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
+                  operator: in
+                  uid: d6cdef82-32eb-4c74-8f85-78cd69f5cdbf
+                  values:
+                    - internal
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 3b1b9f85-3554-4b4a-8d39-467bf5e4a35d # Content Blocks - CTA Caption - Internal Link
             handle: null
             includeInCards: false
             instructions: null
             label: 'Internal Link'
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 79e1cd1c-b273-4ae7-91d1-ca890d25eaf6
@@ -95,14 +122,26 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
+                  layoutElementUid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
+                  operator: in
+                  uid: ae802f13-9046-48ca-bb8e-1d02ec8eacf4
+                  values:
+                    - external
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Content Blocks - CTA Caption - External Link
             handle: null
             includeInCards: false
             instructions: null
             label: 'External Link'
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 82dcbab5-40bc-4e35-b60c-5c82732a9e90

@@ -1,36 +1,36 @@
 columnSuffix: null
-handle: slideImages
+handle: representativeImage
 instructions: null
-name: 'Content Blocks - Slider - Slide Images'
-searchable: true
+name: 'Representative Image'
+searchable: false
 settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: true
-  allowedKinds:
-    - image
+  allowedKinds: null
   branchLimit: null
   defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   defaultUploadLocationSubpath: null
   localizeRelations: false
   maintainHierarchy: false
-  maxRelations: null
-  minRelations: null
+  maxRelations: 1
+  minRelations: 1
   previewMode: full
-  restrictFiles: true
-  restrictLocation: true
+  restrictFiles: false
+  restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   restrictedLocationSubpath: null
-  selectionLabel: null
-  showCardsInGrid: true
-  showSiteMenu: true
+  selectionLabel: 'Choose Image'
+  showCardsInGrid: false
+  showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: cards
+  viewMode: large
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Assets

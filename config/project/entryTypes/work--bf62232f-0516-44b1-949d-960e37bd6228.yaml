@@ -1,6 +1,6 @@
-color: orange
+color: null
 fieldLayouts:
-  317b7d36-2f97-4ffa-846f-0404ab3c6df8:
+  2d8e6b8a-86f4-4aa6-9395-a77ea8005a01:
     tabs:
       -
         elementCondition: null
@@ -30,51 +30,66 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 345595f4-45af-48ce-b525-ab343fec0496
+            uid: ab04437e-59dc-4f4b-84f6-50190d151c26
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Content Blocks - Featured Entry - Entry
+            fieldUid: 4e1408af-3452-4723-828d-1c779542492d # Artist
             handle: null
             includeInCards: true
             instructions: null
-            label: Entry
+            label: null
             providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f2f6cc8c-4b5e-408c-96cb-402677285f65
+            uid: 5e7bb16f-be3b-45e3-b2f2-be7ea021d78a
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Content Blocks - Featured Entry - Text Color
+            fieldUid: 71424eae-6314-46d2-8aff-8fe8be940860 # Representative Image
             handle: null
             includeInCards: false
             instructions: null
-            label: 'Text Color'
-            providesThumbs: false
-            required: false
+            label: null
+            providesThumbs: true
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c48002d6-a933-4e50-9036-a2749de05ae3
+            uid: f57b2cdc-4eba-498a-85e8-195325569989
             userCondition: null
             warning: null
             width: 100
-        name: Content
-        uid: 37762363-6e7a-4b70-a451-e81c935a203c
+          -
+            elementCondition: null
+            fieldUid: 547be893-d407-44df-9142-f0ba630ce0cb # Year
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 16443aa1-ee0e-471f-9fa3-f4c81a04844f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Attributes
+        uid: 4a828e53-e15e-46a4-b7d1-bd2f93dc97c7
         userCondition: null
-handle: featuredEntry
-hasTitleField: false
-icon: newspaper
-name: 'Featured Entry'
-showSlugField: true
-showStatusField: true
+handle: work
+hasTitleField: true
+icon: paintbrush
+name: Work
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: ''
-slugTranslationMethod: site
+slugTranslationMethod: none
 titleFormat: ''
 titleTranslationKeyFormat: ''
-titleTranslationMethod: site
+titleTranslationMethod: none

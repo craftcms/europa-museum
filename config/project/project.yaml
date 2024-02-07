@@ -1,4 +1,67 @@
-dateModified: 1707253438
+dateModified: 1707288734
+elementSources:
+  craft\elements\Asset:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      disabled: false
+      key: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+      tableAttributes:
+        - filename
+        - size
+        - kind
+        - imageSize
+        - link
+      type: native
+    -
+      key: 'folder:f790cfd4-904c-41ca-b5e1-861cd0620736'
+      type: native
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Programming
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      disabled: false
+      key: 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+      tableAttributes:
+        - authors
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+      tableAttributes:
+        - postDate
+        - authors
+        - link
+      type: native
+    -
+      heading: Library
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      disabled: false
+      key: 'section:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+      tableAttributes:
+        - dateCreated
+        - dateUpdated
+        - revisionNotes
+      type: native
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -75,6 +138,7 @@ meta:
     3b1b9f85-3554-4b4a-8d39-467bf5e4a35d: 'Content Blocks - CTA Caption - Internal Link' # Content Blocks - CTA Caption - Internal Link
     3b943244-76d1-4973-9d71-6ec6c109e255: 'Content Blocks - Image and Headings - Sub Heading' # Content Blocks - Image and Headings - Sub Heading
     4c127ec9-df18-4d62-bd02-cf8b5044f7ea: 'Content Blocks - Stats and Image - Left Stat Label' # Content Blocks - Stats and Image - Left Stat Label
+    4e1408af-3452-4723-828d-1c779542492d: Artist # Artist
     4e48185d-8e74-4fa1-b4b4-fdac5ceddf6d: 'Content Blocks - Slider - Heading' # Content Blocks - Slider - Heading
     5bd803f3-dec3-41e6-b829-f90b49ac8dd3: About # About
     5ccbb75b-a9e9-455a-baf9-60aaa799d452: 'Content Blocks - Stats and Image - Right Stat Label' # Content Blocks - Stats and Image - Right Stat Label
@@ -83,6 +147,7 @@ meta:
     6c31cab7-7f79-4628-b345-9a700a16a726: 'Content Blocks - Featured Entry - Entry' # Content Blocks - Featured Entry - Entry
     6ee9b9a7-d12d-4c9b-b069-586609cb5ea9: 'Content Blocks - CTA Caption - Link Label' # Content Blocks - CTA Caption - Link Label
     6fb16db4-9ff1-412f-8cde-bc13843d78e8: 'CTA Caption' # CTA Caption
+    7aecb4af-681c-47ff-9160-2cc0fbddcd4e: Attribution # Attribution
     7cce3872-9055-454a-8fdc-45cbccec785b: 'Content Blocks - Stats and Image - Left Stat Value' # Content Blocks - Stats and Image - Left Stat Value
     8a02b167-35d9-4c71-bc4b-59ee401246e3: Visit # Visit
     8b592bee-c976-4c83-be76-d749cc991410: 'Image Caption' # Image Caption
@@ -102,6 +167,7 @@ meta:
     20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b: 'Europa Museum' # Europa Museum
     24bd1247-7ed2-48e8-af76-5b8ffc486ef6: 'Content Blocks - CTA Caption - Heading' # Content Blocks - CTA Caption - Heading
     24db24b1-bf70-414a-8652-ba22d7b0dfc3: Form # Form
+    24f81c6e-6793-446c-8e1c-a00518b79160: 'Link Destination' # Link Destination
     40bfb363-8740-499a-82f2-6eda20cb6025: 'Vhc No Assets' # Vhc No Assets
     42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8: 'Content Blocks - CTA Caption - Link Icon' # Content Blocks - CTA Caption - Link Icon
     52ff2568-6318-44d5-a130-818c19f83360: 'Content Blocks - Stats and Image - External Link' # Content Blocks - Stats and Image - External Link
@@ -110,7 +176,10 @@ meta:
     079ddf1a-d985-4de2-9929-8dc87fa2047f: 'News Category' # News Category
     83ef9ed9-6360-4f64-abbb-920baeb2048e: 'Featured Entry' # Featured Entry
     371b985f-f191-4c1b-8785-c4133cbb42fc: Heading # Heading
+    386be967-b947-414c-8ea0-824e977d04ad: Embed # Embed
+    547be893-d407-44df-9142-f0ba630ce0cb: Year # Year
     599f0646-f724-4ce4-a810-a8eaf7798b2d: 'Links - Right' # Links - Right
+    647de63e-c78e-4d05-b61d-013120b49d5d: Collection # Collection
     666bcffb-61d7-43b4-a9f5-8c51c458b356: 'News Articles' # News Articles
     701ed750-1c7f-4b39-9be6-2c25746f29ba: 'Image Alt' # Image Alt
     778abb42-18bd-447c-99ae-483c775ed3bd: 'Content Blocks' # Content Blocks
@@ -119,10 +188,11 @@ meta:
     977f4737-eaaa-4d0f-aadb-10251ee1c4ff: About # About
     27881ad3-1379-497a-91a6-d495b2bbc7d1: 'Hero Title' # Hero Title
     67193fb0-26c1-4f39-ad77-c119711a4e4a: Simple # Simple
+    71424eae-6314-46d2-8aff-8fe8be940860: 'Representative Image' # Representative Image
     85241ed2-6bbd-4dd0-af5c-07842116ccf3: 'Content Blocks - Slider - Dark UI' # Content Blocks - Slider - Dark UI
     a4b1ac77-02b4-4121-91b4-8d3754b290d4: 'Image and Headings' # Image and Headings
     a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee: 'Content Blocks - Form - Success Message' # Content Blocks - Form - Success Message
-    a6cb7c13-e866-45ba-ad8e-a44c552ff6c1: Vhc # Vhc
+    a6cb7c13-e866-45ba-ad8e-a44c552ff6c1: 'Rich Text' # Rich Text
     a36fa6aa-4824-448f-82cf-b3086f8582c5: Images # Images
     a65ec270-2111-40c2-bf47-f3d6d929603a: 'Content Blocks - Image and Headings - Pre Heading' # Content Blocks - Image and Headings - Pre Heading
     a73bf239-f2f0-45ac-b84d-361e5dd1a75f: 'Pagination Count' # Pagination Count
@@ -133,6 +203,7 @@ meta:
     b7672c12-833b-4554-afc9-ec3d68dbd78d: 'Content Blocks - Slider - CTA Link Text' # Content Blocks - Slider - CTA Link Text
     beb1c87a-67bb-421f-933f-4bc3d1e125e3: 'Hero Image' # Hero Image
     beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: French # French
+    bf62232f-0516-44b1-949d-960e37bd6228: Work # Work
     c8da1bd9-67c9-402f-8a95-aeaec337e207: SEO # SEO
     c49dac11-102e-429e-8bcc-5c8d99508dcb: Exhibits # Exhibits
     c88dc31c-dfde-42c6-93df-6af9d0c907b8: URL # URL
@@ -154,6 +225,7 @@ meta:
     f109ee5b-bb41-47ce-aaa0-53b5304e0e22: 'Content Blocks - Image and Headings - Heading' # Content Blocks - Image and Headings - Heading
     f466ab59-2e29-4cce-85b8-f9ebe7000b03: 'Content Blocks - Stats and Image - Internal Link' # Content Blocks - Stats and Image - Internal Link
     f668aa75-41bb-4309-9114-26d72e1547ff: 'Content Blocks - Slider - CTA Link' # Content Blocks - Slider - CTA Link
+    f36520a3-472b-40e0-8895-6f577f213037: Attachment # Attachment
     fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7: 'Content Blocks - Rich Text - Narrow Width' # Content Blocks - Rich Text - Narrow Width
 plugins:
   aws-s3:
@@ -329,5 +401,5 @@ system:
   live: true
   name: 'Europa Museum'
   retryDuration: null
-  schemaVersion: 5.0.0.17
+  schemaVersion: 5.0.0.18
   timeZone: America/Los_Angeles

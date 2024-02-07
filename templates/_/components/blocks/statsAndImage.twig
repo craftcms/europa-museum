@@ -1,10 +1,5 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set internalLink = theBlock.internalLink.one().url | default('') %}
-{% set externalLink = theBlock.externalLink | default('') %}
-
-{% set linkUrl = internalLink ? internalLink : externalLink %}
-
 {% set image = theBlock.image.one() ?? null %}
 
 <div class="content-block stats-and-image-block {{ isFirst }}" data-scroll-section>
@@ -30,9 +25,13 @@
                     {{ theBlock.description }}
                 </div>
                 <div class="link">
-                    <a class="active" href="{{ linkUrl }}" {% if not internalLink %}target="_blank" noopener{% endif %}>
-                        {{ theBlock.linkLabel }}
-                    </a>
+                    {% if theBlock.linkDestination == 'internal' %}
+                        {% set target = theBlock.internalLink.one() %}
+
+                        <a class="active" href="{{ target.url }}">{{ theBlock.linkLabel }}</a>
+                    {% else %}
+                        <a class="active" href="{{ theBlock.externalLink }}">{{ theBlock.linkLabel }}</a>
+                    {% endif %}
                 </div>
             </div>
 

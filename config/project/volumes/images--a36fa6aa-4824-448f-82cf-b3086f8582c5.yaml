@@ -2,6 +2,7 @@ fieldLayouts:
   73319165-f289-4758-a3f8-a617823df46f:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,7 +10,10 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,6 +21,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -25,35 +30,73 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
             uid: 707869c0-c835-4d01-b039-4790688afa3a
+            userCondition: null
             warning: null
             width: 100
           -
-            fieldUid: 701ed750-1c7f-4b39-9be6-2c25746f29ba # Image Alt
+            attribute: alt
+            class: null
+            cols: null
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
             instructions: null
             label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
             required: false
+            rows: null
             tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a6f4031e-dcbb-406f-9dcc-cc48e1d05728
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: 5fe8996a-1e60-46c2-86a1-f2fe887a383c
+            userCondition: null
             warning: null
             width: 100
           -
+            elementCondition: null
             fieldUid: 8b592bee-c976-4c83-be76-d749cc991410 # Image Caption
+            handle: null
+            includeInCards: true
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: d67bb30f-1456-486a-991d-618c2abe2c36
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7aecb4af-681c-47ff-9160-2cc0fbddcd4e # Attribution
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31c9ee1b-2972-4e0e-8996-72fce12f51e7
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 4137e69d-a442-464d-8260-f253f42201c5
+        userCondition: null
 fs: $FS_HANDLE
 handle: images
 name: Images
 sortOrder: 1
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-transformFs: null
+transformFs: ''
 transformSubpath: ''

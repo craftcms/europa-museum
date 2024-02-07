@@ -1,0 +1,32 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - bf62232f-0516-44b1-949d-960e37bd6228 # Work
+handle: collection
+maxAuthors: 1
+name: Collection
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

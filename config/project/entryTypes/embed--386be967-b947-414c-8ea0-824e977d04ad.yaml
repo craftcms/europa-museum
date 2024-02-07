@@ -1,6 +1,6 @@
-color: orange
+color: null
 fieldLayouts:
-  317b7d36-2f97-4ffa-846f-0404ab3c6df8:
+  5bb81956-9103-4bdb-99ce-02ab032ec5f5:
     tabs:
       -
         elementCondition: null
@@ -30,49 +30,34 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 345595f4-45af-48ce-b525-ab343fec0496
+            uid: 71e35861-1096-4d5b-b5e8-47ad200b20c4
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Content Blocks - Featured Entry - Entry
+            fieldUid: f36520a3-472b-40e0-8895-6f577f213037 # Attachment
             handle: null
             includeInCards: true
             instructions: null
-            label: Entry
+            label: null
             providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f2f6cc8c-4b5e-408c-96cb-402677285f65
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Content Blocks - Featured Entry - Text Color
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'Text Color'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: c48002d6-a933-4e50-9036-a2749de05ae3
+            uid: 03178f87-bb08-47b2-9bdb-fb5d23d2827d
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 37762363-6e7a-4b70-a451-e81c935a203c
+        uid: e2c0abf4-734d-4c22-bde5-d4c88e065840
         userCondition: null
-handle: featuredEntry
+handle: embed
 hasTitleField: false
-icon: newspaper
-name: 'Featured Entry'
-showSlugField: true
-showStatusField: true
+icon: cubes
+name: Embed
+showSlugField: false
+showStatusField: false
 slugTranslationKeyFormat: ''
 slugTranslationMethod: site
 titleFormat: ''

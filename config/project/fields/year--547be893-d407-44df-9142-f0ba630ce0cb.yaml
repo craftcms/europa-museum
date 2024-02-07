@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: year
+instructions: 'What year was the work produced?'
+name: Year
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: none
+  size: 6
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

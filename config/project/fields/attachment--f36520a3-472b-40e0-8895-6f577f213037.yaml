@@ -1,24 +1,26 @@
 columnSuffix: null
-handle: entry
-instructions: null
-name: 'Content Blocks - Featured Entry - Entry'
-searchable: true
+handle: attachment
+instructions: 'What would you like to embed? The front-end presentation may differ based on the type of entry selected.'
+name: Attachment
+searchable: false
 settings:
   allowSelfRelations: false
   branchLimit: null
   localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
-  minRelations: null
+  minRelations: 1
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: true
+  showSiteMenu: false
   sources:
+    - 'section:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
     - 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
     - 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+    - singles
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: cards
+  viewMode: list
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Entries

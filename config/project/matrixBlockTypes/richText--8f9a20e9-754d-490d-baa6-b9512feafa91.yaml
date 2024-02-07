@@ -58,7 +58,7 @@ fields:
     settings:
       availableTransforms: '*'
       availableVolumes: '*'
-      ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Vhc
+      ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Rich Text
       columnType: text
       defaultTransform: ''
       enableSourceEditingForNonAdmins: true

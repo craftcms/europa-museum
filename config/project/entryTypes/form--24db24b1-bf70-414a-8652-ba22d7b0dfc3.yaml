@@ -1,4 +1,4 @@
-color: sky
+color: blue
 fieldLayouts:
   2e620162-c9b6-427b-8b34-01749ceed604:
     tabs:
@@ -53,7 +53,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee # Content Blocks - Form - Success Message
             handle: null
-            includeInCards: true
+            includeInCards: false
             instructions: null
             label: 'Success Message'
             providesThumbs: false

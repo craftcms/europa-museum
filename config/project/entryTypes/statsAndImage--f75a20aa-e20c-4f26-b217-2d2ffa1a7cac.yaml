@@ -1,4 +1,4 @@
-color: violet
+color: teal
 fieldLayouts:
   b00121d3-e692-4fad-9a4d-14069ec52bf4:
     tabs:
@@ -81,13 +81,40 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 679d878e-d3fb-40e8-9039-042ba1d76067
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
+                  layoutElementUid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
+                  operator: in
+                  uid: b5c1272d-9d50-4bc7-9db2-38ac3bec70c0
+                  values:
+                    - internal
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: f466ab59-2e29-4cce-85b8-f9ebe7000b03 # Content Blocks - Stats and Image - Internal Link
             handle: internalLink
             includeInCards: false
             instructions: null
             label: 'Internal Link'
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 968ff62d-f499-47d0-a78d-1c673957b01e
@@ -95,14 +122,26 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
+                  layoutElementUid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
+                  operator: in
+                  uid: 339bb47f-64b0-4dc7-af3b-d7342b84d916
+                  values:
+                    - external
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 52ff2568-6318-44d5-a130-818c19f83360 # Content Blocks - Stats and Image - External Link
             handle: externalLink
             includeInCards: false
             instructions: null
             label: 'External Link'
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 71306902-1f79-4286-a4bc-77778f2a5c32
