@@ -6,11 +6,11 @@
     {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
 {% endblock %}
 
+{% set heroImage = entry.heroImage.one() %}
+
 {% block content %}
 
-    {% if entry.heroImage | length %}
-        {% set heroImage = entry.heroImage.one() %}
-
+    {% if heroImage %}
         {% do heroImage.setTransform({
             width: 1024,
             quality: 80,

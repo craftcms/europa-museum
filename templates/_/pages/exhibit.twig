@@ -6,11 +6,11 @@
     {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
 {% endblock %}
 
-{% set contentBlocks = entry.contentBlocks.all() | default([]) %}
+{% set contentBlocks = entry.contentBlocks.all() %}
 
 {% block content %}
 
-    <article class="{% if contentBlocks | length == 0 %}no-blocks{% endif %}" data-router-view="exhibit" data-handle="{{ entry.type.handle }}">
+    <article class="{% if contentBlocks is empty %}no-blocks{% endif %}" data-router-view="exhibit" data-handle="{{ entry.type.handle }}">
 
         <div class="exhibit-container" data-scroll-section>
 
@@ -18,7 +18,7 @@
                 {{ entry.title }}
             </h1>
 
-            {% set heroImage = entry.heroImage.one() ?? null %}
+            {% set heroImage = entry.heroImage.one() %}
 
             {% if heroImage %}
 

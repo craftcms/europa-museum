@@ -1,9 +1,9 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set featuredEntry = theBlock.entry.one() ?? null %}
+{% set featuredEntry = theBlock.entry.eagerly().one() %}
 {% set textColor = theBlock.textColor | default('#000') %}
 {% set title = featuredEntry.title %}
-{% set heroImage = featuredEntry.heroImage.one() ?? null %}
+{% set heroImage = featuredEntry.heroImage.eagerly().one() %}
 
 {% if featuredEntry %}
 

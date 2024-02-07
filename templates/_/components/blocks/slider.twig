@@ -1,141 +1,136 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set heading = theBlock.heading | default('') %}
-{% set ctaLinkText = theBlock.ctaLinkText | default('') %}
-{% set ctaLink = theBlock.ctaLink.one().url | default('') %}
-{% set slideImages = theBlock.slideImages.all() | default('') %}
-{% set slideEntries = theBlock.slideEntries.all() | default('') %}
+{% set ctaLinkText = theBlock.ctaLinkText %}
+{% set ctaLink = theBlock.ctaLink.eagerly().one().url ?? null %}
+{% set slideImages = theBlock.slideImages.eagerly().all() %}
+{% set slideEntries = theBlock.slideEntries.eagerly().all() %}
 {% set slideLayoutCentered = theBlock.slideLayoutCentered %}
 {% set darkUI = theBlock.darkUI %}
 
-{# {% if exhibit %} #}
+<div class="content-block slider-block {{ isFirst }} {% if slideImages | length %}is-image{% else %}is-entry{% endif %} {% if darkUI %}dark-ui{% endif %}" data-scroll-section>
 
-    <div class="content-block slider-block {{ isFirst }} {% if slideImages | length %}is-image{% else %}is-entry{% endif %} {% if darkUI %}dark-ui{% endif %}" data-scroll-section>
+    <div class="slider-info">
 
-        <div class="slider-info">
-
-            <div class="slider-link-container hide-on-tablet">
-                <a class="slider-link active" href="{{ ctaLink }}">
-                    {{ ctaLinkText }}
-                </a>
-            </div>
-
-            <h4 class="slider-heading {% if heading | length == 0 %}hide-on-tablet{% endif %}">
-                {{ heading }}
-            </h4>
-
-            <div class="slider-arrows hide-on-tablet">
-
-                <button class="btn-slider-prev" aria-label="Previous">
-                    {% include "_/svg/arrowLeft" %}
-                </button>
-
-                {% if slideEntries | length and slideImages | length == 0 %}
-                    <span class="divider">|</span>
-                {% endif %}
-
-                <button class="btn-slider-next" aria-label="Next">
-                    {% include "_/svg/arrowRight" %}
-                </button>
-
-            </div>
-
+        <div class="slider-link-container hide-on-tablet">
+            <a class="slider-link active" href="{{ ctaLink }}">
+                {{ ctaLinkText }}
+            </a>
         </div>
 
-        <div class="slider-container">
+        <h4 class="slider-heading {% if not theBlock.heading %}hide-on-tablet{% endif %}">
+            {{ theBlock.heading }}
+        </h4>
 
-            <div class="slider {{ slideLayoutCentered }} {% if slideLayoutCentered %}slide-wrap{% endif %}">
+        <div class="slider-arrows hide-on-tablet">
 
-                {% if slideImages | length %}
+            <button class="btn-slider-prev" aria-label="Previous">
+                {% include "_/svg/arrowLeft" %}
+            </button>
 
-                    {% for slideImage in slideImages %}
+            {% if slideEntries | length and slideImages | length == 0 %}
+                <span class="divider">|</span>
+            {% endif %}
 
-                        {% set image = slideImage | default('') %}
-                        {% do image.setTransform({
-                            width: 500,
-                            height: 500,
-                            quality: 80,
-                            format: 'jpg',
-                            mode: 'crop',
-                        }) %}
-
-                        {% set slideCaption = image.imageCaption | default('') %}
-                        {% set slideUrl = image.url %}
-
-                        {% if image %}
-                            <div class="slide no-underline">
-
-                                <div class="slide-image-container">
-                                    <img class="slide-image" src="{{ image.url }}" alt="{{ image.title }}">
-                                </div>
-
-                                <div class="slide-info">
-
-                                    <div class="slide-caption">
-                                        {{ slideCaption }}
-                                    </div>
-
-                                </div>
-
-                            </div>
-                        {% endif %}
-
-                    {% endfor %}
-
-                {% elseif slideEntries | length %}
-
-                    {% for entry in slideEntries %}
-
-                        {% set heroImage = entry.heroImage.one() | default('') %}
-                        {% do heroImage.setTransform({
-                            width: 500,
-                            height: 500,
-                            quality: 80,
-                            format: 'jpg',
-                            mode: 'crop',
-                        }) %}
-
-                        {% set slideTitle = entry.title %}
-                        {% set slideNewsCategory = entry.newsCategory.one() | default('') %}
-                        {% set slideDate = entry.postDate | date('m.y') | default('') %}
-                        {% set slideUrl = entry.url %}
-
-                        {% if heroImage %}
-                            <a class="slide no-underline" href="{{ slideUrl }}">
-
-                                <div class="slide-image-container">
-                                    <img class="slide-image" src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
-                                </div>
-
-                                <div class="slide-info">
-
-                                    <div class="slide-title">
-                                        {{ slideTitle }}
-                                    </div>
-
-                                    {% if slideNewsCategory %}
-                                        <div class="slide-news-category">
-                                            {{ slideNewsCategory }}
-                                        </div>
-                                    {% endif %}
-
-                                    <div class="slide-date">
-                                        {{ slideDate }}
-                                    </div>
-
-                                </div>
-
-                            </a>
-                        {% endif %}
-
-                    {% endfor %}
-
-                {% endif %}
-
-            </div>
+            <button class="btn-slider-next" aria-label="Next">
+                {% include "_/svg/arrowRight" %}
+            </button>
 
         </div>
 
     </div>
 
-{# {% endif %} #}
+    <div class="slider-container">
+
+        <div class="slider {{ slideLayoutCentered }} {% if slideLayoutCentered %}slide-wrap{% endif %}">
+
+            {% if slideImages | length %}
+
+                {% for slideImage in slideImages %}
+
+                    {% set image = slideImage | default('') %}
+                    {% do image.setTransform({
+                        width: 500,
+                        height: 500,
+                        quality: 80,
+                        format: 'jpg',
+                        mode: 'crop',
+                    }) %}
+
+                    {% set slideCaption = image.imageCaption | default('') %}
+                    {% set slideUrl = image.url %}
+
+                    {% if image %}
+                        <div class="slide no-underline">
+
+                            <div class="slide-image-container">
+                                <img class="slide-image" src="{{ image.url }}" alt="{{ image.title }}">
+                            </div>
+
+                            <div class="slide-info">
+
+                                <div class="slide-caption">
+                                    {{ slideCaption }}
+                                </div>
+
+                            </div>
+
+                        </div>
+                    {% endif %}
+
+                {% endfor %}
+
+            {% elseif slideEntries | length %}
+
+                {% for entry in slideEntries %}
+
+                    {% set heroImage = entry.heroImage.one() | default('') %}
+                    {% do heroImage.setTransform({
+                        width: 500,
+                        height: 500,
+                        quality: 80,
+                        format: 'jpg',
+                        mode: 'crop',
+                    }) %}
+
+                    {% set slideTitle = entry.title %}
+                    {% set slideNewsCategory = entry.newsCategory.one() | default('') %}
+                    {% set slideDate = entry.postDate | date('m.y') | default('') %}
+                    {% set slideUrl = entry.url %}
+
+                    {% if heroImage %}
+                        <a class="slide no-underline" href="{{ slideUrl }}">
+
+                            <div class="slide-image-container">
+                                <img class="slide-image" src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
+                            </div>
+
+                            <div class="slide-info">
+
+                                <div class="slide-title">
+                                    {{ slideTitle }}
+                                </div>
+
+                                {% if slideNewsCategory %}
+                                    <div class="slide-news-category">
+                                        {{ slideNewsCategory }}
+                                    </div>
+                                {% endif %}
+
+                                <div class="slide-date">
+                                    {{ slideDate }}
+                                </div>
+
+                            </div>
+
+                        </a>
+                    {% endif %}
+
+                {% endfor %}
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>

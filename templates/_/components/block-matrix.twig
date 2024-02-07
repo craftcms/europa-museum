@@ -1,4 +1,4 @@
-{% set contentBlocks = contentBlocks ?? null ? contentBlocks : entry.contentBlocks.all() | default([]) %}
+{% set contentBlocks = contentBlocks ?? null ? contentBlocks : entry.contentBlocks.all() %}
 
 {% if contentBlocks | length %}
 
