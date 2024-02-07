@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.298.4",
+            "version": "3.298.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c61e8f8640352c4cad1ec364c0801b8adae8adb9"
+                "reference": "b9bc34a8702a37a6151d843af966bf3b36aaaae3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c61e8f8640352c4cad1ec364c0801b8adae8adb9",
-                "reference": "c61e8f8640352c4cad1ec364c0801b8adae8adb9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b9bc34a8702a37a6151d843af966bf3b36aaaae3",
+                "reference": "b9bc34a8702a37a6151d843af966bf3b36aaaae3",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.298.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.298.5"
             },
-            "time": "2024-02-06T19:09:25+00:00"
+            "time": "2024-02-07T19:05:01+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -483,28 +483,28 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.4.2",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "406c7b5f0fbe4f6a64155c0fe03b1adb34d01308"
+                "reference": "d7faef18fc7110b233b81c8d18006e74c6c49a52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/406c7b5f0fbe4f6a64155c0fe03b1adb34d01308",
-                "reference": "406c7b5f0fbe4f6a64155c0fe03b1adb34d01308",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/d7faef18fc7110b233b81c8d18006e74c6c49a52",
+                "reference": "d7faef18fc7110b233b81c8d18006e74c6c49a52",
                 "shasum": ""
             },
             "require": {
-                "doctrine/collections": "^1.2 || ^2.0",
-                "php": ">=7.3"
+                "doctrine/collections": "^1.6 || ^2.0",
+                "php": ">=8.0"
             },
             "require-dev": {
                 "ext-json": "*",
-                "mikey179/vfsstream": "^1.6.10",
-                "phpunit/phpunit": "^9.5",
-                "squizlabs/php_codesniffer": "^3.6",
-                "symfony/validator": "^4.4 || ^5.4 || ^6.0"
+                "mikey179/vfsstream": "^1.6.11",
+                "phpunit/phpunit": "^9.6",
+                "squizlabs/php_codesniffer": "^3.7",
+                "symfony/validator": "^5.4 || ^6.3 || ^7.0"
             },
             "suggest": {
                 "symfony/validator": "to validate addresses"
@@ -512,7 +512,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.x-dev"
+                    "dev-master": "2.x-dev"
                 }
             },
             "autoload": {
@@ -541,9 +541,9 @@
             ],
             "support": {
                 "issues": "https://github.com/commerceguys/addressing/issues",
-                "source": "https://github.com/commerceguys/addressing/tree/v1.4.2"
+                "source": "https://github.com/commerceguys/addressing/tree/v2.1.1"
             },
-            "time": "2023-02-15T10:11:14+00:00"
+            "time": "2023-11-28T18:04:35+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -1241,16 +1241,16 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.0.0-beta.1",
+            "version": "4.0.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "fbb7f1d8e91e9d08690fa6bb5998d86ef5375672"
+                "reference": "d6277fabac5906944de4aafc5215b1b70e45baef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/fbb7f1d8e91e9d08690fa6bb5998d86ef5375672",
-                "reference": "fbb7f1d8e91e9d08690fa6bb5998d86ef5375672",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/d6277fabac5906944de4aafc5215b1b70e45baef",
+                "reference": "d6277fabac5906944de4aafc5215b1b70e45baef",
                 "shasum": ""
             },
             "require": {
@@ -1301,7 +1301,7 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2024-02-06T20:05:36+00:00"
+            "time": "2024-02-07T20:11:03+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -1309,17 +1309,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "eeb80ff010d870032cf78eccddc27100331ce9b3"
+                "reference": "77d059aace7c2ece7f9b1a556f2695053835400a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/eeb80ff010d870032cf78eccddc27100331ce9b3",
-                "reference": "eeb80ff010d870032cf78eccddc27100331ce9b3",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/77d059aace7c2ece7f9b1a556f2695053835400a",
+                "reference": "77d059aace7c2ece7f9b1a556f2695053835400a",
                 "shasum": ""
             },
             "require": {
                 "bacon/bacon-qr-code": "^2.0",
-                "commerceguys/addressing": "^1.2",
+                "commerceguys/addressing": "^2.1.1",
                 "composer/semver": "^3.3.2",
                 "craftcms/plugin-installer": "~1.6.0",
                 "craftcms/server-check": "~5.0.1",
@@ -1423,7 +1423,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2024-02-07T01:04:43+00:00"
+            "time": "2024-02-07T19:28:50+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -6190,16 +6190,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.10.1",
+            "version": "1.10.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "76d449a358ece77d6f1d6331c68453e657172202"
+                "reference": "9bb7db07b5d66d90f6ebf542f09fc67d800e5259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/76d449a358ece77d6f1d6331c68453e657172202",
-                "reference": "76d449a358ece77d6f1d6331c68453e657172202",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9bb7db07b5d66d90f6ebf542f09fc67d800e5259",
+                "reference": "9bb7db07b5d66d90f6ebf542f09fc67d800e5259",
                 "shasum": ""
             },
             "require": {
@@ -6238,7 +6238,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/jsonlint/issues",
-                "source": "https://github.com/Seldaek/jsonlint/tree/1.10.1"
+                "source": "https://github.com/Seldaek/jsonlint/tree/1.10.2"
             },
             "funding": [
                 {
@@ -6250,7 +6250,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-18T13:03:25+00:00"
+            "time": "2024-02-07T12:57:50+00:00"
         },
         {
             "name": "seld/phar-utils",
