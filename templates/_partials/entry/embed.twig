@@ -1,0 +1,40 @@
+{#
+    This template is rendered whenever a CKEditor field’s content is output in
+    the front-end. The `entry` variable here is the element you created inside
+    CKEditor. You can access the element that CKEditor field is attached to via
+    the `owner` attribute.
+
+    For performance, consider using `.eagerly()` when accessing relational
+    fields off of the embedded entry. This will allow Craft to lazily eager-load
+    other nested entries inside of the CKEditor field
+
+    Each embedded/nested entry type gets its own template, named the same as its
+    entry type. This one will only be rendered for CKEditor fields that allow
+    creation of nested `embed` entries.
+#}
+
+{% set attachment = entry.attachment.eagerly().one() %}
+
+<div class="embedded-entry">
+    {# We’ll want to handle each type of attachment differently! #}
+    {% switch attachment.type.handle %}
+        {% case 'work' %}
+            {# Ok, they’ve embedded something from the “Collection” section! #}
+            <figure>
+                {% include '_/components/picture' with {
+                    asset: attachment.representativeImage.one(),
+                    transform: 'base',
+                    sizes: sizes ?? '100vw',
+                    lazytransition: 'lazyfadeDelay'
+                } %}
+
+                <figcaption>
+                    {# Auto-format a caption with the work’s metadata: #}
+                    “{{ attachment.title }}” — {{ attachment.artist }} ({{ attachment.year }})
+                </figcaption>
+            </figure>
+        {% default %}
+            {# Just let it handle rendering itself by calling another of these partials: #}
+            {{ attachment.render() }}
+    {% endswitch %}
+</div>
