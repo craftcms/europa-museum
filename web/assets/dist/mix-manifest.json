@@ -1,5 +1,7 @@
 {
-    "/js/site.js": "/js/site.js?id=b45ed987e0999f7fe381",
-    "/css/site.css": "/css/site.css?id=c662e2d1a23bb2bb893d",
-    "/favicon.ico": "/favicon.ico?id=117ee451892ed795062f"
+    "/js/site.js": "/js/site.js",
+    "/css/site.css": "/css/site.css",
+    "/js/site.js.map": "/js/site.js.map",
+    "/css/site.css.map": "/css/site.css.map",
+    "/favicon.ico": "/favicon.ico"
 }
