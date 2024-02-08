@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "716ae920aa1a9ebab7daef2bad00e5fc",
+    "content-hash": "fc05a90df6a961eafabde3c4a77d5d92",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -696,16 +696,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.6.6",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "683557bd2466072777309d039534bb1332d0dda5"
+                "reference": "96d107e2bfe61bb9eafe55a9d45bd7faed1dd461"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/683557bd2466072777309d039534bb1332d0dda5",
-                "reference": "683557bd2466072777309d039534bb1332d0dda5",
+                "url": "https://api.github.com/repos/composer/composer/zipball/96d107e2bfe61bb9eafe55a9d45bd7faed1dd461",
+                "reference": "96d107e2bfe61bb9eafe55a9d45bd7faed1dd461",
                 "shasum": ""
             },
             "require": {
@@ -723,7 +723,7 @@
                 "seld/jsonlint": "^1.4",
                 "seld/phar-utils": "^1.2",
                 "seld/signal-handler": "^2.0",
-                "symfony/console": "^5.4.11 || ^6.0.11",
+                "symfony/console": "^5.4.11 || ^6.0.11 || ^7",
                 "symfony/filesystem": "^5.4 || ^6.0 || ^7",
                 "symfony/finder": "^5.4 || ^6.0 || ^7",
                 "symfony/polyfill-php73": "^1.24",
@@ -737,7 +737,7 @@
                 "phpstan/phpstan-phpunit": "^1.0",
                 "phpstan/phpstan-strict-rules": "^1",
                 "phpstan/phpstan-symfony": "^1.2.10",
-                "symfony/phpunit-bridge": "^6.0 || ^7"
+                "symfony/phpunit-bridge": "^6.4.1 || ^7.0.1"
             },
             "suggest": {
                 "ext-openssl": "Enabling the openssl extension allows you to access https URLs for repositories and packages",
@@ -750,7 +750,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.6-dev"
+                    "dev-main": "2.7-dev"
                 },
                 "phpstan": {
                     "includes": [
@@ -790,7 +790,7 @@
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
                 "security": "https://github.com/composer/composer/security/policy",
-                "source": "https://github.com/composer/composer/tree/2.6.6"
+                "source": "https://github.com/composer/composer/tree/2.7.0"
             },
             "funding": [
                 {
@@ -806,7 +806,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-08T17:32:26+00:00"
+            "time": "2024-02-08T14:09:19+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -1181,16 +1181,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/aws-s3.git",
-                "reference": "55742ee337bc0aa8b26c056a36862606c8244a51"
+                "reference": "1b298bfd066113713d9ddd0b3f18c904af58f5ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/55742ee337bc0aa8b26c056a36862606c8244a51",
-                "reference": "55742ee337bc0aa8b26c056a36862606c8244a51",
+                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/1b298bfd066113713d9ddd0b3f18c904af58f5ca",
+                "reference": "1b298bfd066113713d9ddd0b3f18c904af58f5ca",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.0.0-alpha.1",
+                "craftcms/cms": "^5.0.0-beta.1",
                 "craftcms/flysystem": "^2.0.0",
                 "league/flysystem-aws-s3-v3": "^3.0.0",
                 "php": "^8.0.2"
@@ -1237,20 +1237,20 @@
                 "rss": "https://github.com/craftcms/aws-s3/commits/master.atom",
                 "source": "https://github.com/craftcms/aws-s3"
             },
-            "time": "2024-02-05T23:38:33+00:00"
+            "time": "2024-02-08T17:05:08+00:00"
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.0.0-beta.2",
+            "version": "4.0.0-beta.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "d6277fabac5906944de4aafc5215b1b70e45baef"
+                "reference": "eab913353f01ae43339c895f2d135be8da611426"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/d6277fabac5906944de4aafc5215b1b70e45baef",
-                "reference": "d6277fabac5906944de4aafc5215b1b70e45baef",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/eab913353f01ae43339c895f2d135be8da611426",
+                "reference": "eab913353f01ae43339c895f2d135be8da611426",
                 "shasum": ""
             },
             "require": {
@@ -1301,20 +1301,20 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2024-02-07T20:11:03+00:00"
+            "time": "2024-02-08T15:02:28+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "5.0.x-dev",
+            "version": "5.0.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "77d059aace7c2ece7f9b1a556f2695053835400a"
+                "reference": "a054af1909583a068bae036e3464a27cdcd98e84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/77d059aace7c2ece7f9b1a556f2695053835400a",
-                "reference": "77d059aace7c2ece7f9b1a556f2695053835400a",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a054af1909583a068bae036e3464a27cdcd98e84",
+                "reference": "a054af1909583a068bae036e3464a27cdcd98e84",
                 "shasum": ""
             },
             "require": {
@@ -1423,7 +1423,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2024-02-07T19:28:50+00:00"
+            "time": "2024-02-08T16:52:23+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -4514,16 +4514,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AugustMiller/craft-twigpack.git",
-                "reference": "35fc19e016e2c6546cd26fab424e41430ed84f3c"
+                "reference": "1d317631c21c892f8488d52cd27497ca98ae6684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AugustMiller/craft-twigpack/zipball/35fc19e016e2c6546cd26fab424e41430ed84f3c",
-                "reference": "35fc19e016e2c6546cd26fab424e41430ed84f3c",
+                "url": "https://api.github.com/repos/AugustMiller/craft-twigpack/zipball/1d317631c21c892f8488d52cd27497ca98ae6684",
+                "reference": "1d317631c21c892f8488d52cd27497ca98ae6684",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.0.0-alpha.1"
+                "craftcms/cms": "^5.0.0-beta.1"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4560,7 +4560,7 @@
                 "issues": "https://nystudio107.com/plugins/twigpack/support",
                 "source": "https://github.com/nystudio107/craft-twigpack"
             },
-            "time": "2024-02-05T23:21:20+00:00"
+            "time": "2024-02-08T17:00:19+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -6816,47 +6816,46 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.4.3",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "2aaf83b4de5b9d43b93e4aec6f2f8b676f7c567e"
+                "reference": "c5010d50f1ee4b25cfa0201d9915cf1b14071456"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/2aaf83b4de5b9d43b93e4aec6f2f8b676f7c567e",
-                "reference": "2aaf83b4de5b9d43b93e4aec6f2f8b676f7c567e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/c5010d50f1ee4b25cfa0201d9915cf1b14071456",
+                "reference": "c5010d50f1ee4b25cfa0201d9915cf1b14071456",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
-                "symfony/deprecation-contracts": "^2.5|^3",
+                "php": ">=8.2",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/service-contracts": "^2.5|^3",
-                "symfony/string": "^5.4|^6.0|^7.0"
+                "symfony/string": "^6.4|^7.0"
             },
             "conflict": {
-                "symfony/dependency-injection": "<5.4",
-                "symfony/dotenv": "<5.4",
-                "symfony/event-dispatcher": "<5.4",
-                "symfony/lock": "<5.4",
-                "symfony/process": "<5.4"
+                "symfony/dependency-injection": "<6.4",
+                "symfony/dotenv": "<6.4",
+                "symfony/event-dispatcher": "<6.4",
+                "symfony/lock": "<6.4",
+                "symfony/process": "<6.4"
             },
             "provide": {
                 "psr/log-implementation": "1.0|2.0|3.0"
             },
             "require-dev": {
                 "psr/log": "^1|^2|^3",
-                "symfony/config": "^5.4|^6.0|^7.0",
-                "symfony/dependency-injection": "^5.4|^6.0|^7.0",
-                "symfony/event-dispatcher": "^5.4|^6.0|^7.0",
+                "symfony/config": "^6.4|^7.0",
+                "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/event-dispatcher": "^6.4|^7.0",
                 "symfony/http-foundation": "^6.4|^7.0",
                 "symfony/http-kernel": "^6.4|^7.0",
-                "symfony/lock": "^5.4|^6.0|^7.0",
-                "symfony/messenger": "^5.4|^6.0|^7.0",
-                "symfony/process": "^5.4|^6.0|^7.0",
-                "symfony/stopwatch": "^5.4|^6.0|^7.0",
-                "symfony/var-dumper": "^5.4|^6.0|^7.0"
+                "symfony/lock": "^6.4|^7.0",
+                "symfony/messenger": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0",
+                "symfony/stopwatch": "^6.4|^7.0",
+                "symfony/var-dumper": "^6.4|^7.0"
             },
             "type": "library",
             "autoload": {
@@ -6890,7 +6889,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.4.3"
+                "source": "https://github.com/symfony/console/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -6906,7 +6905,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-23T14:51:35+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -11141,12 +11140,6 @@
     "packages-dev": [],
     "aliases": [
         {
-            "package": "craftcms/cms",
-            "version": "5.0.9999999.9999999-dev",
-            "alias": "5.0.0-beta.1",
-            "alias_normalized": "5.0.0.0-beta1"
-        },
-        {
             "package": "solspace/craft3-commons",
             "version": "dev-dev-craft5",
             "alias": "2.0.3",
@@ -11156,7 +11149,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "craftcms/aws-s3": 20,
-        "craftcms/cms": 20,
         "nystudio107/craft-twigpack": 20,
         "solspace/craft-freeform": 20,
         "solspace/craft3-commons": 20
