@@ -20,6 +20,9 @@ _Europa_ shows off many of Craft’s [core features](https://craftcms.com/featur
 
 Read more about Craft’s [technical requirements](https://craftcms.com/docs/5.x/requirements.html) in the official documentation.
 
+> [!WARNING]
+> This branch uses a beta version of Craft 5. Use it to [explore the new features](https://craftcms.com/blog/craft-5-beta-released) ahead of a stable release!
+
 ### Front End Dependencies
 
 _Europa_’s front-end was built with modern Javascript and CSS tools. Craft itself has no rules about how you structure your front-end code—so we’ve taken the opportunity to share a handful of techniques that couple Twig templates with front-end interactivity.
@@ -56,7 +59,8 @@ You can use the CLI to create a new user, as well:
 docker-compose exec web php craft users/create --admin
 ```
 
-:sparkle: Visit the control panel in your running project `http://localhost:8080/admin`!
+> [!TIP]
+> Visit the control panel in your running project `http://localhost:8080/admin`!
 
 ### DDEV
 
