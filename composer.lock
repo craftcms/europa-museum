@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.300.16",
+            "version": "3.300.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d6afaeaa0c0e2c3be5f5223f72c0b5e2b2667b67"
+                "reference": "ddd93079be1646e7db727d078f4c5beee1ddb052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d6afaeaa0c0e2c3be5f5223f72c0b5e2b2667b67",
-                "reference": "d6afaeaa0c0e2c3be5f5223f72c0b5e2b2667b67",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ddd93079be1646e7db727d078f4c5beee1ddb052",
+                "reference": "ddd93079be1646e7db727d078f4c5beee1ddb052",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.16"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.17"
             },
-            "time": "2024-03-12T18:04:55+00:00"
+            "time": "2024-03-13T18:08:32+00:00"
         },
         {
             "name": "bref/bref",
@@ -1130,12 +1130,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/aws-s3.git",
-                "reference": "8076618b18c5617560b2c19d3eb2f296ad0cf098"
+                "reference": "dd1d643e15303a6bd9d4c3d0dddbf007396e9939"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/8076618b18c5617560b2c19d3eb2f296ad0cf098",
-                "reference": "8076618b18c5617560b2c19d3eb2f296ad0cf098",
+                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/dd1d643e15303a6bd9d4c3d0dddbf007396e9939",
+                "reference": "dd1d643e15303a6bd9d4c3d0dddbf007396e9939",
                 "shasum": ""
             },
             "require": {
@@ -1186,7 +1186,7 @@
                 "rss": "https://github.com/craftcms/aws-s3/commits/master.atom",
                 "source": "https://github.com/craftcms/aws-s3"
             },
-            "time": "2024-03-13T11:57:06+00:00"
+            "time": "2024-03-13T13:25:09+00:00"
         },
         {
             "name": "craftcms/cms",
@@ -8853,16 +8853,16 @@
         },
         {
             "name": "verbb/base",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/verbb/verbb-base.git",
-                "reference": "1cd36eeea2448793d0e77b652801c27272c803c5"
+                "reference": "d8bf72792c826fe4f3785c0942f7f74adb5c2670"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/1cd36eeea2448793d0e77b652801c27272c803c5",
-                "reference": "1cd36eeea2448793d0e77b652801c27272c803c5",
+                "url": "https://api.github.com/repos/verbb/verbb-base/zipball/d8bf72792c826fe4f3785c0942f7f74adb5c2670",
+                "reference": "d8bf72792c826fe4f3785c0942f7f74adb5c2670",
                 "shasum": ""
             },
             "require": {
@@ -8899,7 +8899,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-03T04:45:09+00:00"
+            "time": "2024-03-13T23:35:14+00:00"
         },
         {
             "name": "verbb/default-dashboard",
