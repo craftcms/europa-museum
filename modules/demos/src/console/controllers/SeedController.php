@@ -10,8 +10,8 @@ use craft\helpers\Db;
 use craft\helpers\FileHelper;
 use Faker\Generator as FakerGenerator;
 use Solspace\Freeform\Elements\Submission;
+use Solspace\Freeform\Form\Form;
 use Solspace\Freeform\Freeform;
-use Solspace\Freeform\Library\Composer\Components\Form;
 use yii\console\ExitCode;
 
 class SeedController extends Controller
@@ -44,7 +44,8 @@ class SeedController extends Controller
     public function actionIndex(): int
     {
         $this->stdout('Beginning seed ... ' . PHP_EOL . PHP_EOL);
-        $this->runAction('freeform-data', ['contact']);
+        // TODO: get this to work with v5
+        // $this->runAction('freeform-data', ['contact']);
         $this->runAction('refresh-news');
         $this->_cleanup();
         $this->stdout('Seed complete.' . PHP_EOL . PHP_EOL, Console::FG_GREEN);
@@ -114,7 +115,7 @@ class SeedController extends Controller
         $this->stdout("Seeding Freeform data ..." . PHP_EOL);
 
         $freeform = Freeform::getInstance();
-        $form = $freeform->forms->getFormByHandle($formHandle)->getForm();
+        $form = $freeform->forms->getFormByHandle($formHandle);
         $submissionCount = $this->_faker->numberBetween(self::FREEFORM_SUBMISSION_MIN, self::FREEFORM_SUBMISSION_MAX);
         $errorCount = 0;
 
@@ -156,14 +157,13 @@ class SeedController extends Controller
 
     private function _createFormSubmission(Form $form): Submission
     {
-        /** @var Submission $submission */
-        $submission = Freeform::getInstance()->submissions->createSubmissionFromForm($form);
+        $submission = Submission::create($form);
         $submission->dateCreated = $submission->dateUpdated = $this->_faker->dateTimeThisMonth();
 
         // Reparse the title with the fake date
         $submission->title = Craft::$app->view->renderString(
-            $form->getSubmissionTitleFormat(),
-            $form->getLayout()->getFieldsByHandle() + [
+            $form->getSubmission()->title,
+            $form->getLayout()->getFields()->getListByHandle() + [
                 'dateCreated' => $submission->dateCreated,
                 'form' => $form,
             ]
