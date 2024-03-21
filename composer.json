@@ -28,8 +28,7 @@
         "fakerphp/faker": "^1.14",
         "nystudio107/craft-seomatic": "^5.0.0-beta.1",
         "nystudio107/craft-twigpack": "v5.x-dev",
-        "solspace/craft-freeform": "dev-v5-craft5",
-        "solspace/craft3-commons": "dev-dev-craft5 as 2.0.3",
+        "solspace/craft-freeform": "^5",
         "vlucas/phpdotenv": "^5.6.0"
     },
     "minimum-stability": "dev",
@@ -57,14 +56,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/AugustMiller/craft-twigpack"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/craftcms/craft-freeform"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/craftcms/craft3-commons"
         }
     ],
     "prefer-stable": true
