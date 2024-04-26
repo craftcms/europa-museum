@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.305.2",
+            "version": "3.305.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c553a07fab74348517e72a0ccc02a612cbf4688b"
+                "reference": "b190e24bd6568713436e1f13f9022bf28f491fc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c553a07fab74348517e72a0ccc02a612cbf4688b",
-                "reference": "c553a07fab74348517e72a0ccc02a612cbf4688b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b190e24bd6568713436e1f13f9022bf28f491fc1",
+                "reference": "b190e24bd6568713436e1f13f9022bf28f491fc1",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.305.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.305.3"
             },
-            "time": "2024-04-24T18:07:47+00:00"
+            "time": "2024-04-25T18:07:15+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -836,16 +836,16 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.0.3",
+            "version": "4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "3634a067a3f72c54dce3ead6ef5047d375b9c8dd"
+                "reference": "292041545298e467f47166c58661d305c498d90d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/3634a067a3f72c54dce3ead6ef5047d375b9c8dd",
-                "reference": "3634a067a3f72c54dce3ead6ef5047d375b9c8dd",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/292041545298e467f47166c58661d305c498d90d",
+                "reference": "292041545298e467f47166c58661d305c498d90d",
                 "shasum": ""
             },
             "require": {
@@ -896,7 +896,7 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2024-03-28T19:55:45+00:00"
+            "time": "2024-04-25T18:37:15+00:00"
         },
         {
             "name": "craftcms/cms",
