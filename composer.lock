@@ -900,16 +900,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.1.6",
+            "version": "5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "916d3185a79a940d0d5d11adcf8b86c973a065ca"
+                "reference": "9d48deb548e0e7ec3aff78c7a9b4cc3bfe1c9092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/916d3185a79a940d0d5d11adcf8b86c973a065ca",
-                "reference": "916d3185a79a940d0d5d11adcf8b86c973a065ca",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/9d48deb548e0e7ec3aff78c7a9b4cc3bfe1c9092",
+                "reference": "9d48deb548e0e7ec3aff78c7a9b4cc3bfe1c9092",
                 "shasum": ""
             },
             "require": {
@@ -1022,7 +1022,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2024-05-23T23:17:09+00:00"
+            "time": "2024-05-25T18:49:03+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -3628,16 +3628,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.3.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8ff64b92c1b1ec84fcde9f8bb9ff2ca34cb8a77a"
+                "reference": "8eab8983c83c30e0bacbef8d311e3f3b8172727f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8ff64b92c1b1ec84fcde9f8bb9ff2ca34cb8a77a",
-                "reference": "8ff64b92c1b1ec84fcde9f8bb9ff2ca34cb8a77a",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8eab8983c83c30e0bacbef8d311e3f3b8172727f",
+                "reference": "8eab8983c83c30e0bacbef8d311e3f3b8172727f",
                 "shasum": ""
             },
             "require": {
@@ -3730,7 +3730,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-01T06:54:22+00:00"
+            "time": "2024-05-24T14:26:34+00:00"
         },
         {
             "name": "nyholm/psr7",
