@@ -900,16 +900,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.2.5",
+            "version": "5.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "00bf0ea4dfff9ddf812053224244f196804e65b1"
+                "reference": "6540a0611a8cfee78f0d511fe600d09a2fbbb549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/00bf0ea4dfff9ddf812053224244f196804e65b1",
-                "reference": "00bf0ea4dfff9ddf812053224244f196804e65b1",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6540a0611a8cfee78f0d511fe600d09a2fbbb549",
+                "reference": "6540a0611a8cfee78f0d511fe600d09a2fbbb549",
                 "shasum": ""
             },
             "require": {
@@ -1025,7 +1025,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2024-07-02T16:28:41+00:00"
+            "time": "2024-07-11T15:43:50+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -9951,6 +9951,7 @@
                     "type": "patreon"
                 }
             ],
+            "abandoned": "web-auth/webauthn-lib",
             "time": "2024-06-15T07:18:26+00:00"
         },
         {
