@@ -1,14 +1,13 @@
 DUMPFILE ?= seed.sql
-COMPOSE ?= docker-compose
-EXEC ?= ${COMPOSE} exec -T web
-RUN ?= ${COMPOSE} run --rm web
-WEB_CONTAINER = docker-compose ps -q web
+EXEC ?= docker compose exec -T web
+RUN ?= docker compose run --rm web
+WEB_CONTAINER = docker compose ps -q web
 
 .PHONY: init update restore backup seed clean test
 
 init:
 	cp .env.docker .env
-	${COMPOSE} up -d
+	docker compose up -d
 	${EXEC} composer install
 update:
 	${EXEC} composer update --no-interaction
