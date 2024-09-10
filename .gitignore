@@ -9,19 +9,9 @@
 /storage/*
 !/storage/rebrand/
 
-# UPLOADS
-# /web/assets/volumes
-
 # WEB
 /web/cpresources
-/web/css
-/web/images
-/web/js
-/web/fonts
-/web/mix-manifest.json
-/web/favicon.ico
-/web/manifest.json
-/web/browserconfig.xml
+/web/assets
 
 # BUILD FILES
 /node_modules
@@ -33,22 +23,9 @@
 .DS_Store
 .vscode
 .idea
-/web/css/site.css.map
-/web/js/site.js.map
 
 # For demo infrastucture only
 !seed.sql
-!/web/assets
-!/web/css
-!/web/images
-!/web/js
-!/web/fonts
-!/web/mix-manifest.json
-!/web/favicon.ico
-!/web/manifest.json
-!/web/browserconfig.xml
+#!/web/assets
 
 /submodules
-
-# LOCAL DEVELOPMENT
-docker-compose.override.yml
