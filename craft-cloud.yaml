@@ -2,4 +2,4 @@
 # https://craftcms.com/knowledge-base/cloud-config
 php-version: '8.2'
 npm-script: production
-node-version: '14'
+node-version: '16'
