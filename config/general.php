@@ -40,10 +40,6 @@ return [
         'maxUploadFileSize' => 20000000,
         'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',
         'maxSlugIncrement' => 100,
-        'aliases' => [
-            '@web' => App::env('DEFAULT_SITE_URL'),
-            '@assetBaseUrl' => App::env('S3_BASE_URL') ?: App::env('DEFAULT_SITE_URL'),
-        ],
     ],
     'dev' => [
         'devMode' => true,

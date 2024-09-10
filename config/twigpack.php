@@ -44,6 +44,6 @@ return [
     // Development environment
     'dev' => [
         // If `devMode` is on, use webpack-dev-server to all for HMR (hot module reloading)
-        'useDevServer' => true,
+        // 'useDevServer' => true,
     ],
 ];

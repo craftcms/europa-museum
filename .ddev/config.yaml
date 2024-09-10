@@ -4,7 +4,8 @@ docroot: web
 php_version: "8.2"
 webserver_type: nginx-fpm
 xdebug_enabled: false
-additional_hostnames: []
+additional_hostnames:
+    - fr.europa-museum
 additional_fqdns: []
 database:
     type: postgres

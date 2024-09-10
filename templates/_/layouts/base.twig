@@ -17,28 +17,15 @@
         <meta name="csrf-token" content="{{ craft.app.request.csrfToken() }}">
 
         {#-- Favicons --#}
-        <link rel="apple-touch-icon" sizes="180x180" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/apple-touch-icon.png') }}">
-        <link rel="icon" type="image/png" sizes="32x32" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/favicon-32x32.png') }}">
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/favicon-16x16.png') }}">
-        <link rel="manifest" href="{{ alias('@assetBaseUrl/assets/dist/manifest.json') }}">
-        <link rel="mask-icon" href="{{ alias('@assetBaseUrl/assets/dist/images/icons/safari-pinned-tab.svg') }}" color="#000000">
-        <link rel="shortcut icon" href="{{ alias('@assetBaseUrl/assets/dist/favicon.ico') }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ artifactUrl('assets/dist/images/icons/apple-touch-icon.png') }}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ artifactUrl('assets/dist/images/icons/favicon-32x32.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ artifactUrl('assets/dist/images/icons/favicon-16x16.png') }}">
+        <link rel="mask-icon" href="{{ artifactUrl('assets/dist/images/icons/safari-pinned-tab.svg') }}" color="#000000">
+        <link rel="shortcut icon" href="{{ artifactUrl('assets/dist/favicon.ico') }}">
         <meta name="msapplication-TileColor" content="#000000">
-        <meta name="msapplication-config" content="{{ url('browserconfig.xml') }}">
         <meta name="theme-color" content="#ffffff">
 
-        {# -- Inline CSS block used by templates for Critical CSS #}
-        {# -- Only use Critical CSS & LoadCSS when we have it available to prevent flashing #}
-        {% set inline_css = "" %}
-        {% if env != "local" %}
-            {% set inline_css =  block("inline_css") is defined ? block("inline_css") : "" %}
-        {% endif %}
-        {% if inline_css | trim is not empty %}
-            <style>{{ inline_css | raw | replace({'/assets/dist/': alias('@assetBaseUrl/assets/dist/')}) }}</style>
-            {{ craft.twigpack.includeCssModule('/css/site.css', true) }}
-        {% else %}
-            {{ craft.twigpack.includeCssModule('/css/site.css', false) }}
-        {% endif %}
+        {{ craft.twigpack.includeCssModule('/css/site.css') }}
     </head>
 
     <body class="first-load loading {% if bodyClass is defined %}{{ bodyClass }}{% endif %}">
