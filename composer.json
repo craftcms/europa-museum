@@ -20,9 +20,9 @@
         "docs": "https://github.com/craftcms/demo-europa-museum"
     },
     "require": {
-        "bref/bref": "^2.0",
         "craftcms/aws-s3": "^2.2.0",
         "craftcms/ckeditor": "^4.0.0-beta.4",
+        "craftcms/cloud": "*",
         "craftcms/cms": "^5.0.0-beta.1",
         "craftcms/yii2-dynamodb": "^2.0.0",
         "fakerphp/faker": "^1.14",
@@ -56,6 +56,11 @@
         {
             "type": "vcs",
             "url": "https://github.com/AugustMiller/craft-twigpack"
+        },
+        {
+            "type": "composer",
+            "url": "https://composer.craftcms.com",
+            "canonical": false
         }
     ],
     "prefer-stable": true
