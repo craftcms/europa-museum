@@ -1,3 +1,5 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   73319165-f289-4758-a3f8-a617823df46f:
     tabs:
@@ -9,6 +11,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2024-09-10T17:36:57+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -37,6 +40,7 @@ fieldLayouts:
             attribute: alt
             class: null
             cols: null
+            dateAdded: '2024-09-10T17:36:57+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -59,6 +63,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-09-10T17:36:57+00:00'
             elementCondition: null
             fieldUid: 8b592bee-c976-4c83-be76-d749cc991410 # Image Caption
             handle: null
@@ -74,6 +79,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2024-09-10T17:36:57+00:00'
             elementCondition: null
             fieldUid: 7aecb4af-681c-47ff-9160-2cc0fbddcd4e # Attribution
             handle: null
@@ -91,7 +97,7 @@ fieldLayouts:
         name: Content
         uid: 4137e69d-a442-464d-8260-f253f42201c5
         userCondition: null
-fs: $FS_HANDLE
+fs: images
 handle: images
 name: Images
 sortOrder: 1

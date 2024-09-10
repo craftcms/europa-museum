@@ -45,7 +45,7 @@
 
                 </div>
 
-                {% set exhibits = entry.featuredExhibits.orderBy('random()').all() %}
+                {% set exhibits = entry.featuredExhibits.site('english').orderBy('random()').all() %}
 
                 {% for exhibit in exhibits %}
 

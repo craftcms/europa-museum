@@ -8,26 +8,11 @@
 
 use craft\helpers\App;
 
-// Removed --column-inserts to reduce size and prevent OOM errors
-$backupCommand = 'PGPASSWORD="{password}" pg_dump' .
-' --dbname={database}' .
-' --host={server}' .
-' --port={port}' .
-' --username={user}' .
-' --if-exists' .
-' --clean' .
-' --no-owner' .
-' --no-privileges' .
-' --no-acl' .
-' --file="{file}"' .
-' --schema={schema}';
-
 return [
     '*' => [
         'allowAdminChanges' => true,
         'allowUpdates' => false,
         'backupOnUpdate' => false,
-        'backupCommand' => $backupCommand,
         'defaultSearchTermOptions' => [
             'subLeft' => true,
             'subRight' => true,
@@ -40,6 +25,7 @@ return [
         'maxUploadFileSize' => 20000000,
         'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',
         'maxSlugIncrement' => 100,
+        'backupCommandFormat' => 'custom',
     ],
     'dev' => [
         'devMode' => true,

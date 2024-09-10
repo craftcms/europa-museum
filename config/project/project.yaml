@@ -1,4 +1,4 @@
-dateModified: 1724099451
+dateModified: 1725990352
 elementSources:
   craft\elements\Asset:
     -
@@ -81,47 +81,12 @@ fs:
     hasUrls: true
     name: Images
     settings:
-      addSubfolderToRootUrl: true
-      autoFocalPoint: false
-      bucket: $S3_BUCKET
-      bucketSelectionMode: manual
-      cfDistributionId: ''
-      cfPrefix: ''
-      expires: ''
-      keyId: ''
-      makeUploadsPublic: true
-      region: $AWS_REGION
-      secret: ''
-      storageClass: ''
-      subfolder: assets/volumes/images
-    type: craft\awss3\Fs
-    url: $S3_BASE_URL
-  imagesLocal:
-    hasUrls: true
-    name: 'Images (local)'
-    settings:
-      path: '@webroot/assets/volumes/images'
-    type: craft\fs\Local
-    url: '@web/assets/volumes/images'
-  runtime:
-    hasUrls: false
-    name: Runtime
-    settings:
-      addSubfolderToRootUrl: true
-      autoFocalPoint: false
-      bucket: $S3_BUCKET
-      bucketSelectionMode: manual
-      cfDistributionId: ''
-      cfPrefix: ''
-      expires: ''
-      keyId: ''
-      makeUploadsPublic: false
-      region: $AWS_REGION
-      secret: ''
-      storageClass: ''
-      subfolder: runtime
-    type: craft\awss3\Fs
-    url: null
+      expires: '1 years'
+      hasUrls: true
+      localFsPath: '@webroot/assets/volumes'
+      localFsUrl: '@web/assets/volumes'
+      subpath: images
+    type: craft\cloud\fs\AssetsFs
 meta:
   __names__:
     0b3ab84a-728c-4dfa-b505-ee524b9631d9: Home # Home

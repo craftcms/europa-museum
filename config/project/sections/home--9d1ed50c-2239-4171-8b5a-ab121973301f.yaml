@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - 0b3ab84a-728c-4dfa-b505-ee524b9631d9 # Home
 handle: home
+maxAuthors: 1
 name: Home
 previewTargets:
   -
@@ -13,11 +14,19 @@ previewTargets:
       -
         - urlFormat
         - '{url}'
+      -
+        - refresh
+        - '1'
 propagationMethod: all
 siteSettings:
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/home.twig
+    uriFormat: __home__
   c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
     enabledByDefault: true
     hasUrls: true
-    template: _/pages/home
+    template: _/pages/home.twig
     uriFormat: __home__
 type: single
