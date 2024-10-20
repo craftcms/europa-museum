@@ -847,16 +847,16 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "07d72b9d05c8f6383086c598c8d555752b72d797"
+                "reference": "49ea9012558cf78e5195b8e1769d6d2f90779d29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/07d72b9d05c8f6383086c598c8d555752b72d797",
-                "reference": "07d72b9d05c8f6383086c598c8d555752b72d797",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/49ea9012558cf78e5195b8e1769d6d2f90779d29",
+                "reference": "49ea9012558cf78e5195b8e1769d6d2f90779d29",
                 "shasum": ""
             },
             "require": {
@@ -907,7 +907,7 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2024-08-15T15:05:08+00:00"
+            "time": "2024-10-19T14:28:02+00:00"
         },
         {
             "name": "craftcms/cms",
