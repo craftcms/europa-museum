@@ -1,40 +1,14 @@
 color: null
 fieldLayouts:
   5bb81956-9103-4bdb-99ce-02ab032ec5f5:
+    cardView:
+      - 'layoutElement:03178f87-bb08-47b2-9bdb-fb5d23d2827d'
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 71e35861-1096-4d5b-b5e8-47ad200b20c4
-            userCondition: null
-            warning: null
-            width: 100
-          -
+            dateAdded: '2024-11-11T05:09:42+00:00'
             elementCondition: null
             fieldUid: f36520a3-472b-40e0-8895-6f577f213037 # Attachment
             handle: null
@@ -54,7 +28,7 @@ fieldLayouts:
         userCondition: null
 handle: embed
 hasTitleField: false
-icon: cubes
+icon: ''
 name: Embed
 showSlugField: false
 showStatusField: false

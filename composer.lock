@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "79220f824698b4cd32e280ea65d1433d",
+    "content-hash": "5b5628cb2fcaabeda55ba8651204b2c3",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -847,20 +847,20 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.3.1",
+            "version": "4.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "42325ca2cbc79787ff03ae15db417deb73359dce"
+                "reference": "e8b3fa23e1f6bd4e1eb32051b6dfa27a0afd8920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/42325ca2cbc79787ff03ae15db417deb73359dce",
-                "reference": "42325ca2cbc79787ff03ae15db417deb73359dce",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/e8b3fa23e1f6bd4e1eb32051b6dfa27a0afd8920",
+                "reference": "e8b3fa23e1f6bd4e1eb32051b6dfa27a0afd8920",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^5.3.0",
+                "craftcms/cms": "^5.5.0",
                 "craftcms/html-field": "^3.1.0",
                 "nystudio107/craft-code-editor": ">=1.0.8 <=1.0.13 || ^1.0.16",
                 "php": "^8.2"
@@ -907,20 +907,20 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2024-10-21T03:16:03+00:00"
+            "time": "2024-11-11T05:45:03+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "5.4.10.1",
+            "version": "5.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "a6e788cd77c3df0f19944dceda507a7c359992d3"
+                "reference": "1279d75569624af9488887f9ea187746e11776c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a6e788cd77c3df0f19944dceda507a7c359992d3",
-                "reference": "a6e788cd77c3df0f19944dceda507a7c359992d3",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/1279d75569624af9488887f9ea187746e11776c8",
+                "reference": "1279d75569624af9488887f9ea187746e11776c8",
                 "shasum": ""
             },
             "require": {
@@ -1033,7 +1033,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2024-11-08T06:04:48+00:00"
+            "time": "2024-11-11T05:44:44+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -10934,9 +10934,18 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cms",
+            "version": "5.5.9999999.9999999-dev",
+            "alias": "5.5.0",
+            "alias_normalized": "5.5.0.0"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "craftcms/ckeditor": 20,
+        "craftcms/cms": 20,
         "nystudio107/craft-twigpack": 20
     },
     "prefer-stable": true,
