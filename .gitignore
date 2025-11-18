@@ -36,7 +36,7 @@
 /web/css/site.css.map
 /web/js/site.js.map
 
-# For demo infrastucture only
+# For demo infrastructure only
 !seed.sql
 !/web/assets
 !/web/css
