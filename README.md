@@ -37,7 +37,7 @@ _Europa_’s front-end was built with modern Javascript and CSS tools. Craft its
 This repository is ready to use with [DDEV](#ddev) and [Docker Compose](#docker-compose).
 
 > [!TIP]
-> If you’re using a different local environment, see Craft’s [Server Requirements](https://craftcms.com/docs/5.x/requirements.html) and [Installation Instructions](https://craftcms.com/docs/5.x/install.html).
+> If you’re using a different local environment, refer to Craft’s [requirements](https://craftcms.com/docs/5.x/requirements.html) and our [installation instructions](https://craftcms.com/docs/5.x/install.html).
 
 ### DDEV
 
