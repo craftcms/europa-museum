@@ -13,10 +13,7 @@
  * built-in system components.
  */
 
-use Bugsnag\Client;
-use craft\helpers\App;
 use modules\demos\Module;
-use samdark\log\PsrTarget;
 
 return [
     'modules'   => [
