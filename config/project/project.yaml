@@ -1,4 +1,4 @@
-dateModified: 1763428093
+dateModified: 1763428205
 elementSources:
   craft\elements\Asset:
     -
@@ -133,8 +133,15 @@ elementSources:
         - 'field:71424eae-6314-46d2-8aff-8fe8be940860' # Representative Image
       type: native
     -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
       page: Categories
+      tableAttributes:
+        - dateCreated
       type: native
 elementSourcesPages:
   craft\elements\Entry:
