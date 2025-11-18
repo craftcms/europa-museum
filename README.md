@@ -1,6 +1,6 @@
 <h1 align="center">Europa Museum — Craft CMS Demo</h1>
 
-![Europa Museum homepage](homepage.png)
+![Europa Museum homepage](screenshot.png)
 
 ## Overview
 
