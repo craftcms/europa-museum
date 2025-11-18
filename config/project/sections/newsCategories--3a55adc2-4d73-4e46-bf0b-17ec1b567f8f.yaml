@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: bd9a6c80-1abe-4747-bb3e-f5e376171eb0 # News Category
+handle: newsCategories
+maxAuthors: 1
+name: 'News Categories'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news
+    uriFormat: 'news/category/{slug}'
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news
+    uriFormat: 'news/category/{slug}'
+structure:
+  maxLevels: null
+  uid: 44c3ca82-15ec-469e-b2a0-c73515d607ea
+type: structure

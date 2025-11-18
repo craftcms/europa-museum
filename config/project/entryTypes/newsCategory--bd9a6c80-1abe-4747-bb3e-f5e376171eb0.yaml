@@ -1,16 +1,23 @@
-defaultPlacement: end
+color: null
+description: null
 fieldLayouts:
-  98cfb40e-e148-4f7a-9fc3-8d62399a5f5a:
+  e80a0f08-da8a-4d90-98bc-ca1a1cd3376f:
+    cardThumbAlignment: end
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -18,6 +25,7 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -26,21 +34,21 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\TitleField
             uid: f1a0bf84-c804-4a36-b0be-8058429671c8
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 75f49f5a-f102-49d0-b187-23d7cc25df13
+        userCondition: null
 handle: newsCategory
+hasTitleField: true
+icon: null
 name: 'News Category'
-siteSettings:
-  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
-    hasUrls: true
-    template: _/pages/news
-    uriFormat: 'news/category/{slug}'
-  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
-    hasUrls: true
-    template: _/pages/news
-    uriFormat: 'news/category/{slug}'
-structure:
-  maxLevels: null
-  uid: 7e72aa7b-bf24-45c1-96f8-48a62b753660
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -35,7 +35,7 @@ mix
     .criticalCss({
         enabled: mix.inProduction(),
         paths: {
-            base: process.env.DEFAULT_SITE_URL,
+            base: process.env.PRIMARY_SITE_URL,
             templates: './templates/_/',
             suffix: '-critical.min'
         },
@@ -69,7 +69,7 @@ if (mix.inProduction()) {
     mix
         .sourceMaps(true, 'source-map')
         .browserSync({
-            proxy: new URL(process.env.DEFAULT_SITE_URL).hostname,
+            proxy: new URL(process.env.PRIMARY_SITE_URL).hostname,
             port: 3000,
             files: [
                 './web/assets/dist/css/{*,**/*}.css',

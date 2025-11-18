@@ -68,12 +68,12 @@ permissions:
   - 'deletepeerassets:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'editpeerimages:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   - 'createfolders:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
-  - 'viewcategories:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
-  - 'savecategories:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
-  - 'deletecategories:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
-  - 'viewpeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
-  - 'savepeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
-  - 'deletepeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486' # News Category
+  - 'viewcategories:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486'
+  - 'savecategories:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486'
+  - 'deletecategories:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486'
+  - 'viewpeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486'
+  - 'savepeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486'
+  - 'deletepeercategorydrafts:6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486'
   - 'viewentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
   - 'saveentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
   - 'viewpeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
@@ -116,3 +116,13 @@ permissions:
   - 'savepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
   - 'assignusergroup:2baf1b70-dad1-4c27-b485-a94b23a3e89f' # Site Administrators
   - viewusers
+  - 'viewentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'viewpeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'createentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'saveentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'savepeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'deleteentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'deletepeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'viewpeerentrydrafts:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'savepeerentrydrafts:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'deletepeerentrydrafts:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories

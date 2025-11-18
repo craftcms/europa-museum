@@ -1,4 +1,4 @@
-dateModified: 1763159427
+dateModified: 1763426110
 elementSources:
   craft\elements\Asset:
     -
@@ -19,49 +19,133 @@ elementSources:
       type: native
   craft\elements\Entry:
     -
-      key: '*'
-      type: native
-    -
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: cards
+      disabled: true
       key: singles
+      page: 'Landing Pages'
+      tableAttributes:
+        - dateUpdated
+        - revisionCreator
+        - link
       type: native
     -
-      heading: Programming
-      type: heading
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\SectionConditionRule
+            operator: in
+            uid: aa445e89-a60f-41c4-bfef-b5f9cf2bd6a7
+            values:
+              - 8f6c3046-e9ee-4df9-af84-6dc0199f01da # Contact
+              - 977f4737-eaaa-4d0f-aadb-10251ee1c4ff # About
+              - 9d1ed50c-2239-4171-8b5a-ab121973301f # Home
+              - 8a02b167-35d9-4c71-bc4b-59ee401246e3 # Visit
+              - 0edb3240-3f53-4f13-a789-2bd0b6cae755 # Styleguide
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: cards
+      key: 'custom:63fcf928-a2ee-40a8-b65f-8159db404ba9'
+      label: Main
+      page: 'Landing Pages'
+      tableAttributes: '-'
+      type: custom
+    -
+      condition:
+        class: craft\elements\conditions\entries\EntryCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\entries\SectionConditionRule
+            operator: in
+            uid: 409caec8-2587-4a23-8bd9-3611af8ce672
+            values:
+              - 9b80c4d3-7a27-4bc4-af25-742e6cf5f77a # News
+              - b39c0003-6393-4175-8698-6edef920f7fd # Exhibitions
+        elementType: craft\elements\Entry
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: cards
+      key: 'custom:675fd404-9708-4dda-9073-80fb3db21ac1'
+      label: Feeds
+      page: 'Landing Pages'
+      tableAttributes: '-'
+      type: custom
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: true
+      key: '*'
+      page: Programming
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+      page: Programming
+      tableAttributes:
+        - postDate
+        - authors
+        - link
+      type: native
     -
       defaultSort:
         - structure
         - asc
+      defaultViewMode: ''
       disabled: false
       key: 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+      page: Programming
       tableAttributes:
-        - authors
+        - dateUpdated
         - link
       type: native
     -
       defaultSort:
         - postDate
         - desc
-      disabled: false
-      key: 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
-      tableAttributes:
-        - postDate
-        - authors
-        - link
-      type: native
-    -
-      heading: Library
-      type: heading
-    -
-      defaultSort:
-        - postDate
-        - desc
+      defaultViewMode: ''
       disabled: false
       key: 'section:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+      page: Library
       tableAttributes:
-        - dateCreated
-        - dateUpdated
-        - revisionNotes
+        - 'field:4e1408af-3452-4723-828d-1c779542492d' # Artist
+        - 'field:547be893-d407-44df-9142-f0ba630ce0cb' # Year
+        - 'field:71424eae-6314-46d2-8aff-8fe8be940860' # Representative Image
       type: native
+    -
+      key: 'section:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+      page: Categories
+      type: native
+elementSourcesPages:
+  craft\elements\Entry:
+    Categories:
+      icon: sitemap
+    'Landing Pages':
+      icon: diagram-subtask
+    Library:
+      icon: books
+    Programming:
+      icon: calendar-lines-pen
 email:
   fromEmail: support@craftcms.com
   fromName: 'Europa Museum'
@@ -77,9 +161,16 @@ email:
     username: ''
   transportType: craft\mail\transportadapters\Smtp
 fs:
-  images:
+  disk:
     hasUrls: true
-    name: Images
+    name: Disk
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@uploads'
+  remote:
+    hasUrls: true
+    name: 'Remote Storage'
     settings:
       addSubfolderToRootUrl: true
       autoFocalPoint: false
@@ -93,16 +184,9 @@ fs:
       region: $AWS_REGION
       secret: ''
       storageClass: ''
-      subfolder: assets/volumes/images
+      subfolder: ''
     type: craft\awss3\Fs
-    url: $S3_BASE_URL
-  imagesLocal:
-    hasUrls: true
-    name: 'Images (local)'
-    settings:
-      path: '@webroot/assets/volumes/images'
-    type: craft\fs\Local
-    url: '@web/assets/volumes/images'
+    url: '@uploads'
   runtime:
     hasUrls: false
     name: Runtime
@@ -133,6 +217,7 @@ meta:
     2b1996eb-1a60-4257-b4ab-2e41c49fbd06: 'Content Blocks - Stats and Image - Image' # Content Blocks - Stats and Image - Image
     2baf1b70-dad1-4c27-b485-a94b23a3e89f: 'Site Administrators' # Site Administrators
     2d7b7e2f-71b1-4b25-8501-c8edc07a7f18: 'Content Blocks - Google Map Embed - Embed Code' # Content Blocks - Google Map Embed - Embed Code
+    3a55adc2-4d73-4e46-bf0b-17ec1b567f8f: 'News Categories' # News Categories
     3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f: 'Content Blocks - Image and Headings - Text Color' # Content Blocks - Image and Headings - Text Color
     03ad2302-4a79-4d90-91f8-bb515f0157d0: Styleguide # Styleguide
     3b1b9f85-3554-4b4a-8d39-467bf5e4a35d: 'Content Blocks - CTA Caption - Internal Link' # Content Blocks - CTA Caption - Internal Link
@@ -143,7 +228,6 @@ meta:
     5bd803f3-dec3-41e6-b829-f90b49ac8dd3: About # About
     5ccbb75b-a9e9-455a-baf9-60aaa799d452: 'Content Blocks - Stats and Image - Right Stat Label' # Content Blocks - Stats and Image - Right Stat Label
     5f06df0c-02b7-4b2d-9b75-4b22a09c3a12: 'Content Blocks - Stats and Image - Right Stat Value' # Content Blocks - Stats and Image - Right Stat Value
-    6b0e8c8f-3b9a-440d-b5ad-e209cd4eb486: 'News Category' # News Category
     6c31cab7-7f79-4628-b345-9a700a16a726: 'Content Blocks - Featured Entry - Entry' # Content Blocks - Featured Entry - Entry
     6ee9b9a7-d12d-4c9b-b069-586609cb5ea9: 'Content Blocks - CTA Caption - Link Label' # Content Blocks - CTA Caption - Link Label
     6fb16db4-9ff1-412f-8cde-bc13843d78e8: 'CTA Caption' # CTA Caption
@@ -201,6 +285,7 @@ meta:
     b28c567f-a9f9-4d96-848b-1de28c643417: 'Content Blocks - Heading - Heading' # Content Blocks - Heading - Heading
     b39c0003-6393-4175-8698-6edef920f7fd: Exhibitions # Exhibitions
     b7672c12-833b-4554-afc9-ec3d68dbd78d: 'Content Blocks - Slider - CTA Link Text' # Content Blocks - Slider - CTA Link Text
+    bd9a6c80-1abe-4747-bb3e-f5e376171eb0: 'News Category' # News Category
     beb1c87a-67bb-421f-933f-4bc3d1e125e3: 'Hero Image' # Hero Image
     beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: French # French
     bf62232f-0516-44b1-949d-960e37bd6228: Work # Work
@@ -402,5 +487,5 @@ system:
   live: true
   name: 'Europa Museum'
   retryDuration: null
-  schemaVersion: 5.8.0.3
+  schemaVersion: 5.9.0.2
   timeZone: America/Los_Angeles
