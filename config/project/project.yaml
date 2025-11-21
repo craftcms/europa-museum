@@ -1,4 +1,4 @@
-dateModified: 1763684458
+dateModified: 1763746640
 elementSources:
   craft\elements\Asset:
     -
@@ -268,7 +268,6 @@ meta:
     9d1ed50c-2239-4171-8b5a-ab121973301f: Home # Home
     9f8a4de3-d72b-4d23-bb81-c83ef4611889: Exhibitions # Exhibitions
     11b555a2-89cb-434c-a97c-8bf858a76326: 'Image Slides' # Image Slides
-    011d792e-37cb-488e-a6e1-1b1800027fe9: 'Demo Tags' # Demo Tags
     13b5cd9c-c5b1-40bb-8a8a-dc14815aabad: Exhibit # Exhibit
     13b529cb-1236-4eb5-95a0-e20c2358385e: 'Entry Slides' # Entry Slides
     19f3873e-d59d-48d0-bbee-1c25acd90c6c: News # News
