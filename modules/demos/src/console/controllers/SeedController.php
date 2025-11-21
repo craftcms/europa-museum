@@ -45,8 +45,7 @@ class SeedController extends Controller
     public function actionIndex(): int
     {
         $this->stdout('Beginning seed ... ' . PHP_EOL . PHP_EOL);
-        // TODO: get this to work with v5
-        // $this->runAction('freeform-data', ['contact']);
+        $this->runAction('freeform-data', ['contact']);
         $this->runAction('refresh-news');
         $this->_cleanup();
         $this->stdout('Seed complete.' . PHP_EOL . PHP_EOL, Console::FG_GREEN);
