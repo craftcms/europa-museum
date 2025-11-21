@@ -1,11 +1,11 @@
 {% set contentBlocks = contentBlocks ?? entry.contentBlocks.all() ?? [] %}
 
-{% if contentBlocks | length %}
+{% if contentBlocks is not empty %}
 
     <section class="content-blocks">
 
         {% for theBlock in contentBlocks %}
-            {% set theBlockName =  theBlock.type.handle %}
+            {% set theBlockName = theBlock.type.handle %}
             {% set isFirst = loop.index == 1 %}
 
             {% include "_/components/blocks/" ~ theBlockName ignore missing with {

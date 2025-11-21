@@ -2,54 +2,88 @@
 
 {% extends "_/layouts/site" %}
 
+{% set indexType = entry.type.handle %}
+{% set isCategory = indexType == 'newsCategory' %}
+
 {% block inline_css %}
-    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
+    {{ source ("_/#{indexType}-critical.min.css", ignore_missing = true) }}
 {% endblock %}
 
 {% block content %}
 
     {#
-        This template is shared by both the News single section and the News category.
-        If there is a `category` variable defined then we got here from a category
-        route. Otherwise, we got here from the news route.
+        This template is shared by both the News single section and entries in the News Categories section.
     #}
-
-    {# {% set handle = category is defined ? category.slug : entry.type.handle %} #}
 
     <article data-router-view="news" data-handle="news">
 
-        <div class="news-container narrowWidth" data-scroll-section>
+        <div class="news-container width-narrow" data-scroll-section>
 
-            {% if category is defined %}
+            {% if isCategory %}
                 {% include '_/svg/arrowLeft' %}
                 <a class="link-back" href="{{ url('news') }}">{{ 'Back to News' | t }}</a>
             {% endif %}
 
-            {% if category is defined %}
+            {% if isCategory %}
                 <div class="hero-category">{{ 'Category:' | t }}</div>
-                <h5 class="hero-category-heading">{{ category.title }}</h5>
+                <h5 class="hero-category-heading">{{ entry.title }}</h5>
             {% else %}
                 <h1 class="hero-heading">{{ 'News' | t }}</h1>
             {% endif %}
 
         </div>
 
-        {% include "_/components/block-matrix" %}
+        {# On the news index page, mimic the output of a "content blocks" field, with a single "CTA" block: #}
+
+        {% if not isCategory %}
+
+            <section class="content-blocks">
+
+                <div class="content-block cta-caption-block isFirst has-icon width-narrow" data-scroll-section>
+
+                    <div class="caption-container">
+
+                        <div class="text">
+
+                            <span class="caption-heading">
+                                Today
+                            </span>
+
+                            &mdash;
+
+                            <span class="information">
+                                {{ now | date('d F Y') }}
+                            </span>
+
+                        </div>
+
+                        <div class="link">
+
+                            <a href="{{ url('news.rss') }}" target="_blank" rel="noopener">RSS FEED</a>
+
+                            <span>
+                                {% include '_/svg/news' %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        {% endif %}
 
         <div class="news-container" data-scroll-section>
 
-            {#
-                We'll also eagerload categories and hero images. Eagerloaded fields
-                are then arrays; empty arrays if no category or image.
-            #}
-
+            {# This field is only present on the news landing entry; for category pages, we fall back to a static limit: #}
             {% set paginationCount = entry.paginationCount.value ?? 10 %}
 
-            {% if category is defined %}
+            {% if isCategory %}
                 {% set query = craft.entries.section('newsArticles')
                     .with(['heroImage', 'newsCategory'])
-                    .relatedTo(category)
-                    .limit(paginationCount)
+                    .relatedTo(entry)
                 %}
             {% else %}
                 {% set query = craft.entries().section('newsArticles')
@@ -90,9 +124,11 @@
 
                         <div class="article-category-date">
                             {{ newsEntry.postDate | date('m.d.Y') }}
-                            {% if newsEntry.newsCategory | length %}
+                            {% set newsCategory = newsEntry.newsCategory.one() %}
+
+                            {% if newsCategory %}
                                 <span class="divider">|</span>
-                                {{ (newsEntry.newsCategory | first).getLink() }}
+                                {{ newsCategory.link }}
                             {% endif %}
                         </div>
 

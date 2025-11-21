@@ -1,22 +1,24 @@
 columnSuffix: null
 handle: slideEntries
 instructions: null
-name: 'Content Blocks - Slider - Slide Entries'
+name: 'Entry Slides'
 searchable: true
 settings:
   allowSelfRelations: false
   branchLimit: null
-  localizeRelations: false
+  defaultPlacement: end
   maintainHierarchy: false
   maxRelations: null
-  minRelations: null
+  minRelations: 1
   selectionLabel: null
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: true
+  showUnpermittedEntries: true
+  showUnpermittedSections: true
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
   viewMode: cards
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Entries

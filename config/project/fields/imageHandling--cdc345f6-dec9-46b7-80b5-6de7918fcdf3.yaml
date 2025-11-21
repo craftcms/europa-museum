@@ -1,0 +1,54 @@
+columnSuffix: null
+handle: imageHandling
+instructions: 'How do you want to treat embedded images?'
+name: 'Image Handling'
+searchable: true
+settings:
+  customOptions: false
+  iconsOnly: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Left
+        -
+          - value
+          - left
+        -
+          - icon
+          - objects-align-left
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Full
+        -
+          - value
+          - full
+        -
+          - icon
+          - distribute-spacing-vertical
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Right
+        -
+          - value
+          - right
+        -
+          - icon
+          - objects-align-right
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

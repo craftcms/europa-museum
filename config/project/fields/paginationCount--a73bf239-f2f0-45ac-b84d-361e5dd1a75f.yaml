@@ -1,10 +1,10 @@
 columnSuffix: null
-contentColumnType: string
 handle: paginationCount
 instructions: 'The max number of news articles to display per page.'
 name: 'Pagination Count'
 searchable: true
 settings:
+  customOptions: false
   options:
     -
       __assoc__:

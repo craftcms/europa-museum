@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: layoutWidth
+instructions: null
+name: 'Layout Width'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - 'Normal (No restrictions)'
+        -
+          - value
+          - normal
+        -
+          - icon
+          - distribute-spacing-vertical
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Narrow
+        -
+          - value
+          - narrow
+        -
+          - icon
+          - distribute-spacing-horizontal
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

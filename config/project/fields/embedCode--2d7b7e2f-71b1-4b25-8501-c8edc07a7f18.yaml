@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: embedCode
-instructions: 'Go to Google Maps, find a location, click the "Share" button, click "Embed a map", click "Copy HTML", then paste into the text box below.'
-name: 'Content Blocks - Google Map Embed - Embed Code'
+instructions: 'Paste your HTML here.'
+name: 'Embed Code'
 searchable: true
 settings:
   byteLimit: null

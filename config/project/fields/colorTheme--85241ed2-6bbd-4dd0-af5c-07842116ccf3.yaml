@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: colorTheme
+instructions: 'This section supports light and dark themes. It can help to break up a page (or group adjacent sections) by periodically inverting the theme.'
+name: 'Color Theme'
+searchable: true
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Light
+        -
+          - value
+          - light
+        -
+          - icon
+          - sun
+        -
+          - color
+          - '#ffffff'
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Dark
+        -
+          - value
+          - dark
+        -
+          - icon
+          - moon-stars
+        -
+          - color
+          - '#000000'
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

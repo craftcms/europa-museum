@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: sliderMode
+instructions: 'By default, slides are presented in a horizontal list, beginning at the left edge of the screen. When selecting many visually-distinct items, or items whose order is not vital, consider using the **Wrap** mode.'
+name: Mode
+searchable: true
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Normal
+        -
+          - value
+          - normal
+        -
+          - icon
+          - arrow-right-from-bracket
+        -
+          - color
+          - ''
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Wrap
+        -
+          - value
+          - wrap
+        -
+          - icon
+          - arrows-repeat
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

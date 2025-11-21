@@ -1,21 +1,30 @@
 columnSuffix: null
 handle: richText
 instructions: null
-name: 'Content Blocks - Rich Text - Rich Text'
+name: 'Rich Text'
 searchable: true
 settings:
   availableTransforms: ''
   availableVolumes: '*'
+  characterLimit: null
   ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Rich Text
+  createButtonLabel: null
   defaultTransform: null
-  enableSourceEditingForNonAdmins: true
   entryTypes:
-    - 386be967-b947-414c-8ea0-824e977d04ad # Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - 386be967-b947-414c-8ea0-824e977d04ad # Embed
+  expandEntryButtons: false
+  fullGraphqlData: false
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
   showWordCount: false
+  sourceEditingGroups: null
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

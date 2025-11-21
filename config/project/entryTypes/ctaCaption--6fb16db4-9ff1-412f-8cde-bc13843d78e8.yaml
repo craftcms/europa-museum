@@ -1,46 +1,21 @@
 color: orange
+description: null
 fieldLayouts:
   e65bd1e5-abf6-43e6-a3f0-2fbb329e35c4:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
+            dateAdded: '2025-11-18T22:28:44+00:00'
+            editCondition: null
             elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 07fcab86-634c-47e8-98a6-6ebae07eae20
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 24bd1247-7ed2-48e8-af76-5b8ffc486ef6 # Content Blocks - CTA Caption - Heading
-            handle: heading
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: null
             includeInCards: true
-            instructions: null
-            label: Heading
+            instructions: 'Allows HTML & Twig syntax.'
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -50,8 +25,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-18T22:28:44+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 8c274864-9cf0-4ef9-b4bd-88da544515ad # Content Blocks - CTA Caption - Information
+            fieldUid: 8c274864-9cf0-4ef9-b4bd-88da544515ad # Details
             handle: null
             includeInCards: true
             instructions: null
@@ -65,81 +42,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-18T22:28:44+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 6ee9b9a7-d12d-4c9b-b069-586609cb5ea9 # Content Blocks - CTA Caption - Link Label
+            fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Link Destination
             handle: null
             includeInCards: false
-            instructions: null
-            label: 'Link Label'
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7b81b8ef-34cb-4cb8-9355-666bc5398c21
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
-            handle: null
-            includeInCards: true
             instructions: null
             label: null
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
-                  layoutElementUid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
-                  operator: in
-                  uid: d6cdef82-32eb-4c74-8f85-78cd69f5cdbf
-                  values:
-                    - internal
-              elementType: craft\elements\Entry
-              fieldContext: global
-            fieldUid: 3b1b9f85-3554-4b4a-8d39-467bf5e4a35d # Content Blocks - CTA Caption - Internal Link
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'Internal Link'
-            providesThumbs: false
-            required: true
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 79e1cd1c-b273-4ae7-91d1-ca890d25eaf6
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition:
-              class: craft\elements\conditions\entries\EntryCondition
-              conditionRules:
-                -
-                  class: craft\fields\conditions\OptionsFieldConditionRule
-                  fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
-                  layoutElementUid: b58e08c1-f2a7-4568-bafd-9ff27dd29945
-                  operator: in
-                  uid: ae802f13-9046-48ca-bb8e-1d02ec8eacf4
-                  values:
-                    - external
-              elementType: craft\elements\Entry
-              fieldContext: global
-            fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Content Blocks - CTA Caption - External Link
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: 'External Link'
             providesThumbs: false
             required: true
             tip: null
@@ -149,12 +59,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-18T22:28:44+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8 # Content Blocks - CTA Caption - Link Icon
+            fieldUid: 42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8 # Link Icon
             handle: null
             includeInCards: false
             instructions: null
-            label: 'Link Icon'
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -164,12 +76,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-18T22:28:44+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Content Blocks - CTA Caption - Narrow Width
+            fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Layout Width
             handle: null
             includeInCards: false
             instructions: null
-            label: 'Narrow Width'
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -187,8 +101,9 @@ icon: megaphone
 name: 'CTA Caption'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

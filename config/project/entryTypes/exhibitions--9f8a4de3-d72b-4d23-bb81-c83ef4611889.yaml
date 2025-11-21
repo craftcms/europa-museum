@@ -1,72 +1,81 @@
+color: null
+description: null
 fieldLayouts:
   3a8c8c59-0ff6-482b-b984-2c5956ebfa9f:
+    cardThumbAlignment: end
     tabs:
       -
+        elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
-            id: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: aae6af5b-82b3-4f79-817f-30bfec1f4e21
-            warning: null
-            width: 100
-          -
+            dateAdded: '2025-11-18T21:26:50+00:00'
+            editCondition: null
+            elementCondition: null
             fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 74c8ae95-63df-4c9f-9e97-f829e255cd00
+            userCondition: null
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-18T21:26:50+00:00'
+            editCondition: null
+            elementCondition: null
             fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: e3dec697-6b03-4e67-a4c7-474c792a9d40
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: 35d12579-7f0d-433b-9c7c-129a57527f59
+        userCondition: null
       -
+        elementCondition: null
         elements:
           -
+            dateAdded: '2025-11-18T21:26:50+00:00'
+            editCondition: null
+            elementCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
+            handle: null
+            includeInCards: false
             instructions: null
             label: null
+            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: b6d67d15-f61e-418b-9e47-07b2f5364a0f
+            userCondition: null
             warning: null
             width: 100
         name: SEO
         uid: e56c297f-2cfb-4e67-b952-d4d0a95a80a9
+        userCondition: null
 handle: exhibitions
 hasTitleField: false
+icon: window-frame
 name: Exhibitions
-sortOrder: 1
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
-titleTranslationMethod: ''
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

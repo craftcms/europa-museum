@@ -1,0 +1,98 @@
+description: 'Staff and collaborators who provide day-to-day content operations.'
+handle: editors
+name: Editors
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accessplugin-freeform
+  - accessplugin-seomatic
+  - accesssitewhensystemisoff
+  - 'createentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'createentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'createentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'createentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'createfolders:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'deleteassets:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'deleteentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'deleteentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'deleteentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'deleteentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'deletepeerassets:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'deletepeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'deletepeerentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'deletepeerentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'deletepeerentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'deletepeerentrydrafts:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
+  - 'deletepeerentrydrafts:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'deletepeerentrydrafts:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'deletepeerentrydrafts:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'deletepeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'deletepeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'deletepeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'deletepeerentrydrafts:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
+  - 'deletepeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'deletepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'deletepeerentrydrafts:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'editimages:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'editpeerimages:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'editsite:beffd6f6-3f04-4ae0-b2c6-71a4e419ab57' # French
+  - 'editsite:c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9' # English
+  - performupdates
+  - 'replacefiles:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'replacepeerfiles:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'saveassets:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'saveentries:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
+  - 'saveentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'saveentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'saveentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'saveentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'saveentries:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'saveentries:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'saveentries:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
+  - 'saveentries:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'saveentries:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'saveentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'savepeerassets:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'savepeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'savepeerentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'savepeerentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'savepeerentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'savepeerentrydrafts:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
+  - 'savepeerentrydrafts:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'savepeerentrydrafts:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'savepeerentrydrafts:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'savepeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'savepeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'savepeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'savepeerentrydrafts:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
+  - 'savepeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'savepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'savepeerentrydrafts:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'viewassets:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'viewentries:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
+  - 'viewentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'viewentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'viewentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'viewentries:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'viewentries:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'viewentries:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'viewentries:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
+  - 'viewentries:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'viewentries:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'viewentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'viewpeerassets:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  - 'viewpeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'viewpeerentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'viewpeerentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'viewpeerentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'viewpeerentrydrafts:0edb3240-3f53-4f13-a789-2bd0b6cae755' # Styleguide
+  - 'viewpeerentrydrafts:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  - 'viewpeerentrydrafts:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'viewpeerentrydrafts:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'viewpeerentrydrafts:8a02b167-35d9-4c71-bc4b-59ee401246e3' # Visit
+  - 'viewpeerentrydrafts:8f6c3046-e9ee-4df9-af84-6dc0199f01da' # Contact
+  - 'viewpeerentrydrafts:977f4737-eaaa-4d0f-aadb-10251ee1c4ff' # About
+  - 'viewpeerentrydrafts:9b80c4d3-7a27-4bc4-af25-742e6cf5f77a' # News
+  - 'viewpeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
+  - 'viewpeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
+  - 'viewpeerentrydrafts:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits

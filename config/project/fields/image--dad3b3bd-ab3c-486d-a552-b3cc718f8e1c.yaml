@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: image
 instructions: null
-name: 'Content Blocks - Image and Headings - Image'
+name: Image
 searchable: true
 settings:
   allowSelfRelations: false
@@ -10,9 +10,9 @@ settings:
   allowedKinds:
     - image
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   defaultUploadLocationSubpath: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
@@ -23,14 +23,14 @@ settings:
   restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   restrictedLocationSubpath: null
   selectionLabel: null
-  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: large
+  viewMode: thumbs
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets

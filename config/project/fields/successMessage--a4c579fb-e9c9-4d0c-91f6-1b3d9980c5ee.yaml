@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: successMessage
-instructions: 'Optional success message for this specific form.'
-name: 'Content Blocks - Form - Success Message'
+instructions: 'Optional success message displayed when the attached form is submitted.'
+name: 'Success Message'
 searchable: true
 settings:
   byteLimit: null

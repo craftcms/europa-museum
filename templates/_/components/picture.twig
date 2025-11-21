@@ -1,46 +1,30 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set alt = alt ?? asset.title %}
-
 {% set sizes = sizes ?? '100vw' %}
-
 {% set lazytransition = lazytransition ?? 'lazyfade' %}
-
-{# srcset widths #}
-{% set outputWidths = [375, 768, 1024, 1440] %}
-{% set srcset = [] %}
-
-{# if output width is smaller than or equal to the original image width #}
-{% for outputWidth in outputWidths %}
-    {% if outputWidth <= asset.width %}
-        {% set srcset = srcset | merge([asset.url({ width: outputWidth }) ~ ' ' ~ outputWidth ~ 'w']) %}
-    {% elseif loop.index == outputWidths|length %}
-        {% set srcset = srcset | merge([asset.url({ width: asset.width }) ~ ' ' ~ asset.width ~ 'w']) %}
-        {% set datasrc = asset.url({ width: asset.width }) %}
-    {% endif %}
-{% endfor %}
-
-{# update srcset #}
-{% set srcset = srcset | join(', ') %}
+{% set altText = asset.alt ?: asset.title %}
 
 <picture class="lazypicture {{ classes ?? '' }}">
-
     {% if asset.extension == 'gif' or asset.extension == 'svg' %}
-
-        <img class="{{ lazytransition }} lazyload"
-            data-src="{{ asset.url }}"
-            alt="{{ alt }}"
-        />
-
+        {{ tag('img', {
+            class: ['lazyload', lazytransition],
+            data: {
+                src: asset.url,
+            },
+            alt: altText,
+        }) }}
     {% else %}
+        {% set sizes = [375, 768, 1024, 1440] %}
+        {% set srcset = asset.getSrcSet(sizes | map(dim => "#{dim}w")) %}
 
-        <img class="{{ lazytransition }} lazyload"
-            data-srcset="{{ srcset }}"
-            sizes="{{ sizes }}"
-            alt="{{ alt }}"
-            style="object-position: {{ asset.focalPoint | first * 100 }}% {{ asset.focalPoint | last * 100 }}%;"
-        />
-
+        {{ tag('img', {
+            class: ['lazyload', lazytransition],
+            data: {
+                srcset: srcset | join(', '),
+                sizes: 'auto',
+            },
+            alt: altText,
+            style: "object-position: #{asset.getFocalPoint(true)};",
+        }) }}
     {% endif %}
-
 </picture>

@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: string
 handle: newsCategory
 instructions: null
 name: 'News Category'
@@ -7,17 +6,20 @@ searchable: true
 settings:
   allowSelfRelations: false
   branchLimit: 1
-  localizeRelations: false
+  defaultPlacement: end
   maintainHierarchy: true
   maxRelations: null
   minRelations: null
   selectionLabel: null
+  showSearchInput: true
   showSiteMenu: true
+  showUnpermittedEntries: true
+  showUnpermittedSections: true
   sources:
     - 'section:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: null
+  viewMode: list
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Entries

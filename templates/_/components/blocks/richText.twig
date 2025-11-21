@@ -1,15 +1,12 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set richText = theBlock.richText %}
 {% set topBorder = theBlock.topBorder ? "topBorder" : "" %}
-{% set layout = theBlock.layout %}
-{% set narrowWidth = theBlock.narrowWidth ? "narrowWidth" : "" %}
 
-{% if richText %}
+{% if theBlock.richText %}
 
-    <div class="content-block rich-text-block {{ isFirst }} {{ topBorder }} layout-{{ layout }} {{ narrowWidth }}" data-scroll-section>
+    <div class="content-block rich-text-block {{ isFirst }} {{ topBorder }} layout-{{ theBlock.imageHandling }} width-{{ theBlock.layoutWidth }}" data-scroll-section>
         <div class="rich-text">
-            {{ richText }}
+            {{ theBlock.richText }}
         </div>
     </div>
 

@@ -1,0 +1,40 @@
+columnSuffix: null
+handle: slideType
+instructions: 'What type of content do you want to display in this slider?'
+name: 'Slide Type'
+searchable: false
+settings:
+  customOptions: false
+  iconsOnly: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Assets
+        -
+          - value
+          - assets
+        -
+          - icon
+          - photo-film
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - Entries
+        -
+          - value
+          - entries
+        -
+          - icon
+          - newspaper
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\ButtonGroup

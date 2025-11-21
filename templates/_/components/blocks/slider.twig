@@ -1,19 +1,16 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set ctaLinkText = theBlock.ctaLinkText %}
-{% set ctaLink = theBlock.ctaLink.eagerly().one() %}
+{% set usesAssets = theBlock.slideType == 'assets' %}
 {% set slideImages = theBlock.slideImages.eagerly().all() %}
 {% set slideEntries = theBlock.slideEntries.eagerly().all() %}
-{% set slideLayoutCentered = theBlock.slideLayoutCentered %}
-{% set darkUI = theBlock.darkUI %}
 
-<div class="content-block slider-block {{ isFirst }} {% if slideImages | length %}is-image{% else %}is-entry{% endif %} {% if darkUI %}dark-ui{% endif %}" data-scroll-section>
+<div class="content-block slider-block {{ isFirst }} {{ usesAssets ? 'is-image' : 'is-entry' }} {{ theBlock.colorTheme }}-ui" data-scroll-section>
 
     <div class="slider-info">
 
         <div class="slider-link-container hide-on-tablet">
-            {% if ctaLink %}
-                <a class="slider-link active" href="{{ ctaLink.url }}">{{ ctaLinkText }}</a>
+            {% if theBlock.linkDestination %}
+                <a class="slider-link active" href="{{ theBlock.linkDestination.value }}">{{ theBlock.linkDestination.label }}</a>
             {% endif %}
         </div>
 
@@ -27,9 +24,7 @@
                 {% include "_/svg/arrowLeft" %}
             </button>
 
-            {% if slideEntries is not empty and slideImages is empty %}
-                <span class="divider">|</span>
-            {% endif %}
+            <span class="divider">|</span>
 
             <button class="btn-slider-next" aria-label="Next">
                 {% include "_/svg/arrowRight" %}
@@ -41,9 +36,9 @@
 
     <div class="slider-container">
 
-        <div class="slider {{ slideLayoutCentered }} {% if slideLayoutCentered %}slide-wrap{% endif %}">
+        <div class="slider slide-{{ theBlock.sliderMode }}">
 
-            {% if slideImages | length %}
+            {% if usesAssets %}
 
                 {% for slideImage in slideImages %}
 
@@ -56,34 +51,29 @@
                         mode: 'crop',
                     }) %}
 
-                    {% set slideCaption = image.imageCaption %}
-                    {% set slideUrl = image.url %}
+                    <div class="slide no-underline">
 
-                    {% if image %}
-                        <div class="slide no-underline">
+                        <div class="slide-image-container">
+                            <img class="slide-image" src="{{ image.url }}" alt="{{ image.title }}">
+                        </div>
 
-                            <div class="slide-image-container">
-                                <img class="slide-image" src="{{ image.url }}" alt="{{ image.title }}">
-                            </div>
+                        <div class="slide-info">
 
-                            <div class="slide-info">
-
-                                <div class="slide-caption">
-                                    {{ slideCaption }}
-                                </div>
-
+                            <div class="slide-caption">
+                                {{ image.imageCaption }}
                             </div>
 
                         </div>
-                    {% endif %}
+
+                    </div>
 
                 {% endfor %}
 
-            {% elseif slideEntries | length %}
+            {% else %}
 
-                {% for entry in slideEntries %}
+                {% for slideEntry in slideEntries | filter(e => e.heroImage is not empty) %}
 
-                    {% set heroImage = entry.heroImage.one() %}
+                    {% set heroImage = slideEntry.heroImage.one() %}
                     {% do heroImage.setTransform({
                         width: 500,
                         height: 500,
@@ -92,23 +82,23 @@
                         mode: 'crop',
                     }) %}
 
-                    {% set slideTitle = entry.title %}
-                    {% set slideNewsCategory = entry.newsCategory.one() %}
-                    {% set slideDate = entry.postDate | date('m.y') %}
-                    {% set slideUrl = entry.url %}
+                    <a class="slide no-underline" href="{{ slideEntry.url }}">
 
-                    {% if heroImage %}
-                        <a class="slide no-underline" href="{{ slideUrl }}">
+                        <div class="slide-image-container">
+                            <img class="slide-image" src="{{ heroImage.url }}" alt="{{ heroImage.alt ?: heroImage.title }}">
+                        </div>
 
-                            <div class="slide-image-container">
-                                <img class="slide-image" src="{{ heroImage.url }}" alt="{{ heroImage.title }}">
+                        <div class="slide-info">
+
+                            <div class="slide-title">
+                                {{ slideEntry.title }}
                             </div>
 
-                            <div class="slide-info">
+                            {# Add a pip for the category to news articles: #}
 
-                                <div class="slide-title">
-                                    {{ slideTitle }}
-                                </div>
+                            {% if slideEntry.type.handle == 'newsArticle' %}
+
+                                {% set slideNewsCategory = slideEntry.newsCategory.one() %}
 
                                 {% if slideNewsCategory %}
                                     <div class="slide-news-category">
@@ -116,14 +106,37 @@
                                     </div>
                                 {% endif %}
 
-                                <div class="slide-date">
-                                    {{ slideDate }}
-                                </div>
+                            {% endif %}
 
+                            <div class="slide-date">
+                                {% switch slideEntry.type.handle %}
+                                    {% case 'exhibit' %}
+                                        {% if slideEntry.dateExpression is not empty %}
+                                            {# Custom expression: #}
+                                            {{ slideEntry.dateExpression }}
+                                        {% elseif slideEntry.dateStart and slideEntry.dateStart > now %}
+                                            {# Future: #}
+                                            Opens {{ slideEntry.dateStart | date('j F Y') }}
+                                        {% elseif slideEntry.dateStart < now and slideEntry.dateEnd > now %}
+                                            {# Current: #}
+                                            Open though {{ slideEntry.dateEnd | date('j F Y') }}
+                                        {% elseif slideEntry.dateEnd and slideEntry.dateEnd < now %}
+                                            {# Ended already: #}
+                                            Ended {{ slideEntry.dateEnd | date('j F Y') }}
+                                        {% elseif slideEntry.dateStart and slideEntry.dateEnd %}
+                                            {# Show the range, when available: #}
+                                            {{ slideEntry.dateStart | date('j F Y') }}–{{ slideEntry.dateEnd | date('j F Y') }}
+                                        {% else %}
+                                            {{ slideEntry.postDate | date('j F Y') }}
+                                        {% endif %}
+                                    {% default %}
+                                        {{ slideEntry.postDate | date('m.y') }}
+                                {% endswitch %}
                             </div>
 
-                        </a>
-                    {% endif %}
+                        </div>
+
+                    </a>
 
                 {% endfor %}
 

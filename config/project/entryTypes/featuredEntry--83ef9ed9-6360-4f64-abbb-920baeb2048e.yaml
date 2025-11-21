@@ -1,6 +1,8 @@
 color: orange
+description: null
 fieldLayouts:
   317b7d36-2f97-4ffa-846f-0404ab3c6df8:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -10,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,8 +38,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Content Blocks - Featured Entry - Entry
+            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Featured Entry
             handle: null
             includeInCards: true
             instructions: null
@@ -50,8 +55,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Content Blocks - Featured Entry - Text Color
+            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Text Color Scheme
             handle: null
             includeInCards: false
             instructions: null
@@ -73,8 +80,9 @@ icon: newspaper
 name: 'Featured Entry'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

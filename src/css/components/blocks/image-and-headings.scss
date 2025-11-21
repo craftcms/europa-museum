@@ -5,7 +5,7 @@
     padding-left: 60px;
     padding-right: 60px;
 
-    &.whiteText {
+    &.text-color-scheme-light {
         color: #fff;
     }
 
@@ -27,7 +27,6 @@
         justify-content: center;
         padding: 200px 60px;
         opacity: 0;
-        transform: translateY(100%);
         transition: opacity 1s 0.25s;
     }
 
@@ -43,7 +42,7 @@
 
     &.is-highlighted {
 
-        &.whiteText {
+        &.text-color-scheme-light {
             .title,
             .sub-heading {
                 background-color: #000;
@@ -58,7 +57,7 @@
         }
 
         .sub-heading {
-            bottom: 49px;
+            bottom: 5px;
             left: auto;
             right: 5px;
             width: auto;
@@ -78,7 +77,6 @@
         text-align: center;
         user-select: none;
         opacity: 0;
-        transform: translateY(100%);
         transition: opacity 1s 0.4s;
     }
 
@@ -133,7 +131,7 @@
         padding-left: 30px;
         padding-right: 30px;
 
-        &.is-highlighted.whiteText {
+        &.is-highlighted.text-color-scheme-light {
 
             .title {
                 padding: 30px;
@@ -176,7 +174,7 @@ body.theme-dark {
 
     .image-and-headings-block {
 
-        &.whiteText {
+        &.text-color-scheme-light {
             color: #ccc;
         }
 

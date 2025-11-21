@@ -40,7 +40,7 @@
         // Block Overrides
 
         .cta-caption-block {
-            &.narrowWidth {
+            &.width-narrow {
                 max-width: 1144px;
                 margin-top: 30px;
                 padding-left: 60px;
@@ -67,7 +67,7 @@
             // Block Overrides
 
             .cta-caption-block {
-                &.narrowWidth {
+                &.width-narrow {
                     padding-left: 30px;
                     padding-right: 30px;
                 }

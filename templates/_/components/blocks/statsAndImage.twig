@@ -2,18 +2,21 @@
 
 {% set image = theBlock.image.eagerly().one() %}
 
+{% set hasLeftStat = theBlock.statValueLeft is not empty %}
+{% set hasRightStat = theBlock.statValueRight is not empty %}
+
 <div class="content-block stats-and-image-block {{ isFirst }}" data-scroll-section>
 
     <div class="relative">
 
         <div class="text-container">
 
-            <div class="stat-left {% if theBlock.rightStatValue | length == 0 %}hide-on-mobile{% endif %}">
+            <div class="stat-left {% if hasRightStat %}hide-on-mobile{% endif %}">
                 <div class="stat-value">
-                    {{ theBlock.leftStatValue }}
+                    {{ theBlock.statValueLeft }}
                 </div>
                 <div class="stat-label">
-                    {{ theBlock.leftStatLabel }}
+                    {{ theBlock.statLabelLeft }}
                 </div>
             </div>
 
@@ -25,22 +28,18 @@
                     {{ theBlock.description }}
                 </div>
                 <div class="link">
-                    {% if theBlock.linkDestination == 'internal' %}
-                        {% set target = theBlock.internalLink.one() %}
-
-                        <a class="active" href="{{ target.url }}">{{ theBlock.linkLabel }}</a>
-                    {% else %}
-                        <a class="active" href="{{ theBlock.externalLink }}">{{ theBlock.linkLabel }}</a>
+                    {% if theBlock.linkDestination %}
+                        {{ theBlock.linkDestination.getLink() }}
                     {% endif %}
                 </div>
             </div>
 
-            <div class="stat-right {% if theBlock.rightStatValue|length == 0 %}hide-on-mobile{% endif %}">
+            <div class="stat-right {% if hasRightStat %}hide-on-mobile{% endif %}">
                 <div class="stat-value">
-                    {{ theBlock.rightStatValue }}
+                    {{ theBlock.statValueRight }}
                 </div>
                 <div class="stat-label">
-                    {{ theBlock.rightStatLabel }}
+                    {{ theBlock.statLabelRight }}
                 </div>
             </div>
 

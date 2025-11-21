@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: dateExpression
+instructions: 'A human-readable description of the duration, like “Coming Winter 2027”'
+name: 'Date Expression'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

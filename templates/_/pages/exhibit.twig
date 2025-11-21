@@ -35,24 +35,23 @@
 
                 <div class="hero-info">
 
-                    {% set imageCaption = heroImage.imageCaption | default('') %}
-
-                    {% if imageCaption | length %}
+                    {% if heroImage.imageCaption %}
                         <div class="caption">
-                            {{ imageCaption }}
+                            {{ heroImage.imageCaption }}
                         </div>
                     {% endif %}
 
-                    {% set startDate = entry.postDate | date('m.y') | default('') %}
-                    {% set endDate = entry.expiryDate | date('m.y') | default('') %}
-
-                    {% if startDate | length %}
+                    {% if entry.postDate %}
                         <div class="dates">
-                            {{ startDate }} &mdash; {{ endDate }}
+                            {{ entry.postDate | date('m.y') }}
+                            {% if entry.expiryDate %}
+                                &mdash; {{ entry.expiryDate | date('m.y') }}
+                            {% endif %}
                         </div>
                     {% endif %}
 
-                    {% if imageCaption | length %}
+                    {# Balance the layout when a caption is provided by surfacing this extra info: #}
+                    {% if heroImage.imageCaption %}
                         <div class="tickets">
                             Tickets are purchased at the Museum
                         </div>

@@ -1,0 +1,68 @@
+columnSuffix: null
+handle: linkDestination
+instructions: null
+name: 'Link Destination'
+searchable: true
+settings:
+  advancedFields:
+    - target
+    - rel
+    - download
+  fullGraphqlData: false
+  maxLength: 255
+  showLabelField: true
+  typeSettings:
+    __assoc__:
+      -
+        - asset
+        -
+          __assoc__:
+            -
+              - sources
+              -
+                - 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+                - 'volume:39bbec04-e985-41b5-92c1-2b1aa044796e' # Resources
+            -
+              - allowedKinds
+              - '*'
+            -
+              - showUnpermittedVolumes
+              - ''
+            -
+              - showUnpermittedFiles
+              - ''
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - showUnpermittedEntries
+              - ''
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - '1'
+            -
+              - allowAnchors
+              - '1'
+            -
+              - allowCustomSchemes
+              - ''
+  types:
+    - url
+    - asset
+    - email
+    - entry
+    - tel
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

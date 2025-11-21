@@ -1,46 +1,27 @@
 color: teal
+description: null
 fieldLayouts:
   6f1b2935-dba4-460d-be70-b29a7aa0aa60:
+    cardThumbAlignment: end
+    generatedFields:
+      -
+        handle: headingCombined
+        name: 'Combined Heading'
+        template: "{{ [headingPre, heading, headingSub] | filter | join(' ') }}"
+        uid: ad7d4d29-a34a-4802-b881-0a8900b96a7c
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
+            dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
             elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: db3d085d-d51c-4621-8da3-0b0c2af93f1f
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Content Blocks - Image and Headings - Image
+            fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Image
             handle: null
             includeInCards: false
             instructions: null
-            label: Image
+            label: null
             providesThumbs: true
             required: false
             tip: null
@@ -50,12 +31,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: a65ec270-2111-40c2-bf47-f3d6d929603a # Content Blocks - Image and Headings - Pre Heading
-            handle: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: headingPre
             includeInCards: true
             instructions: null
-            label: 'Pre Heading'
+            label: Pre-heading
             providesThumbs: false
             required: false
             tip: null
@@ -65,12 +48,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: f109ee5b-bb41-47ce-aaa0-53b5304e0e22 # Content Blocks - Image and Headings - Heading
-            handle: heading
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: null
             includeInCards: false
             instructions: null
-            label: Heading
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -80,9 +65,11 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 3b943244-76d1-4973-9d71-6ec6c109e255 # Content Blocks - Image and Headings - Sub Heading
-            handle: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: headingSub
             includeInCards: false
             instructions: null
             label: 'Sub Heading'
@@ -95,14 +82,31 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-19T21:21:08+00:00'
+            dismissible: true
             elementCondition: null
-            fieldUid: 3ad065f3-cd49-4ea6-91e3-12d3a0f0e30f # Content Blocks - Image and Headings - Text Color
-            handle: textColor
+            style: tip
+            tip: 'You can output a complete heading using the `headingCombined` [generated field](https://craftcms.com/docs/5.x/system/elements.html#generated-fields).'
+            type: craft\fieldlayoutelements\Tip
+            uid: 4e648207-8c73-413d-9cf4-6139a33811e4
+            userCondition: null
+          -
+            dateAdded: '2025-11-19T21:21:41+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: a1296ebc-2185-480d-bdad-93c9d4d99dba
+            userCondition: null
+          -
+            dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Text Color Scheme
+            handle: null
             includeInCards: false
             instructions: null
-            label: 'Text Color'
+            label: null
             providesThumbs: false
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 86f23cc1-2e98-47e1-9a05-ba947ade11f1
@@ -110,12 +114,14 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: 913eb47c-ce43-4325-bb3a-1f5d99065038 # Content Blocks - Image and Headings - Highlight Text
+            fieldUid: 913eb47c-ce43-4325-bb3a-1f5d99065038 # Highlight Text
             handle: null
             includeInCards: false
             instructions: null
-            label: 'Highlight Text'
+            label: null
             providesThumbs: false
             required: false
             tip: null
@@ -123,7 +129,7 @@ fieldLayouts:
             uid: 7c92a655-fcc1-4f32-abb6-86ef8213a8d1
             userCondition: null
             warning: null
-            width: 100
+            width: 50
         name: Content
         uid: c7e1b071-3935-47c7-9acf-9c6f3d7f595e
         userCondition: null
@@ -133,8 +139,9 @@ icon: image
 name: 'Image and Headings'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -6,7 +6,7 @@
     padding-left: 60px;
     padding-right: 60px;
 
-    &.narrowWidth {
+    &.width-narrow {
         max-width: 1024px;
         padding-left: 120px;
         padding-right: 120px;
@@ -95,17 +95,17 @@
         }
     }
 
-    &.layout-imageFullWidth figure {
+    &.layout-full figure {
         margin: 60px 0;
     }
 
-    &.layout-imageLeft figure {
+    &.layout-left figure {
         float: left;
         width: calc(50% - 30px);
         margin-right: 60px;
     }
 
-    &.layout-imageRight figure {
+    &.layout-right figure {
         float: right;
         width: calc(50% + 30px);
         margin-left: 60px;
@@ -134,7 +134,7 @@
         padding-left: 30px;
         padding-right: 30px;
 
-        &.narrowWidth {
+        &.width-narrow {
             padding-left: 30px;
             padding-right: 30px;
         }
@@ -152,17 +152,12 @@
             margin-top: 0;
         }
 
-        &.layout-imageFullWidth figure {
+        &.layout-full figure {
             margin: 30px 0;
         }
 
-        &.layout-imageLeft figure {
-            float: none;
-            width: 100%;
-            margin-right: 0;
-        }
-
-        &.layout-imageRight figure {
+        &.layout-left figure,
+        &.layout-right figure {
             float: none;
             width: 100%;
             margin-left: 0;

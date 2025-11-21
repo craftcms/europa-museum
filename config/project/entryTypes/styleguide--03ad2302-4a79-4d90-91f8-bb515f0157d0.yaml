@@ -1,11 +1,21 @@
 color: null
-description: null
+description: 'A singleton page that allows designers to see all the front-end layouts and components in one place.'
 fieldLayouts:
   10b19456-af43-4ddc-95ec-daf105ffcc38:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-18T21:30:50+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'This page isn’t intended to be seen by visitors. It is provided for designers and developers to see all the front-end layouts and components in one place.'
+            type: craft\fieldlayoutelements\Tip
+            uid: a1c77e0e-d007-49b7-a130-14ccf7d11e4a
+            userCondition: null
         name: Content
         uid: a32535ef-ef8d-4801-980f-19499eb7b6f4
         userCondition: null

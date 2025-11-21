@@ -4,16 +4,55 @@ instructions: null
 name: 'Content Blocks'
 searchable: true
 settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
   entryTypes:
-    - 371b985f-f191-4c1b-8785-c4133cbb42fc # Heading
-    - 8f9a20e9-754d-490d-baa6-b9512feafa91 # Rich Text
-    - a4b1ac77-02b4-4121-91b4-8d3754b290d4 # Image and Headings
-    - 0d3f8f65-dde1-4921-a575-26ade4545fc9 # Slider
-    - f75a20aa-e20c-4f26-b217-2d2ffa1a7cac # Stats and Image
-    - 6fb16db4-9ff1-412f-8cde-bc13843d78e8 # CTA Caption
-    - 83ef9ed9-6360-4f64-abbb-920baeb2048e # Featured Entry
-    - 9ba346ec-12cc-4b07-9a30-677efc6e97c1 # Google Map Embed
-    - 24db24b1-bf70-414a-8652-ba22d7b0dfc3 # Form
+    -
+      __assoc__:
+        -
+          - uid
+          - 371b985f-f191-4c1b-8785-c4133cbb42fc # Heading
+    -
+      __assoc__:
+        -
+          - uid
+          - 8f9a20e9-754d-490d-baa6-b9512feafa91 # Rich Text
+    -
+      __assoc__:
+        -
+          - uid
+          - a4b1ac77-02b4-4121-91b4-8d3754b290d4 # Image and Headings
+    -
+      __assoc__:
+        -
+          - uid
+          - 0d3f8f65-dde1-4921-a575-26ade4545fc9 # Slider
+    -
+      __assoc__:
+        -
+          - uid
+          - f75a20aa-e20c-4f26-b217-2d2ffa1a7cac # Stats and Image
+    -
+      __assoc__:
+        -
+          - uid
+          - 6fb16db4-9ff1-412f-8cde-bc13843d78e8 # CTA Caption
+    -
+      __assoc__:
+        -
+          - uid
+          - 83ef9ed9-6360-4f64-abbb-920baeb2048e # Featured Entry
+    -
+      __assoc__:
+        -
+          - uid
+          - 9ba346ec-12cc-4b07-9a30-677efc6e97c1 # Google Map Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - 24db24b1-bf70-414a-8652-ba22d7b0dfc3 # Form
   includeTableView: false
   maxEntries: null
   minEntries: null

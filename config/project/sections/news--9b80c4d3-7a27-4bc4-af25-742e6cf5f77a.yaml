@@ -1,22 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 19f3873e-d59d-48d0-bbee-1c25acd90c6c # News
+  -
+    uid: 19f3873e-d59d-48d0-bbee-1c25acd90c6c # News
 handle: news
 maxAuthors: 1
 name: News
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English

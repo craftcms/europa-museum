@@ -3,6 +3,11 @@ altTranslationMethod: site
 fieldLayouts:
   73319165-f289-4758-a3f8-a617823df46f:
     cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:31c9ee1b-2972-4e0e-8996-72fce12f51e7'
+      - 'layoutElement:d67bb30f-1456-486a-991d-618c2abe2c36'
+      - imageSize
+      - size
     tabs:
       -
         elementCondition: null
@@ -86,7 +91,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 7aecb4af-681c-47ff-9160-2cc0fbddcd4e # Attribution
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: null
             providesThumbs: false
