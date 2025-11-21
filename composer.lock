@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e02aabbcf874b8f8a16e855b1340a7a",
+    "content-hash": "9dd68d0f1e33ddd8d889ac331bf7a930",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.362.0",
+            "version": "3.363.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "717d63914cc3e2391678c587157a30e43318d7d7"
+                "reference": "b2f78a0787a73801957eb329048d52b4181e9660"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/717d63914cc3e2391678c587157a30e43318d7d7",
-                "reference": "717d63914cc3e2391678c587157a30e43318d7d7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b2f78a0787a73801957eb329048d52b4181e9660",
+                "reference": "b2f78a0787a73801957eb329048d52b4181e9660",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.362.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.363.0"
             },
-            "time": "2025-11-19T20:01:26+00:00"
+            "time": "2025-11-21T19:41:10+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -979,12 +979,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "0bc5f7edfb4d55cfb68d531d619bf6765a027821"
+                "reference": "3e44e325e212363423f1600709b5326abeebf7b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/0bc5f7edfb4d55cfb68d531d619bf6765a027821",
-                "reference": "0bc5f7edfb4d55cfb68d531d619bf6765a027821",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/3e44e325e212363423f1600709b5326abeebf7b4",
+                "reference": "3e44e325e212363423f1600709b5326abeebf7b4",
                 "shasum": ""
             },
             "require": {
@@ -1098,7 +1098,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2025-11-18T04:07:28+00:00"
+            "time": "2025-11-21T22:49:45+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -1301,72 +1301,6 @@
                 "source": "https://github.com/craftcms/server-check"
             },
             "time": "2025-07-23T14:22:43+00:00"
-        },
-        {
-            "name": "craftcms/yii2-dynamodb",
-            "version": "2.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/craftcms/yii2-dynamodb.git",
-                "reference": "0e2fe6c2697a06ef6c6f033fb42b64fb4d8764e4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/yii2-dynamodb/zipball/0e2fe6c2697a06ef6c6f033fb42b64fb4d8764e4",
-                "reference": "0e2fe6c2697a06ef6c6f033fb42b64fb4d8764e4",
-                "shasum": ""
-            },
-            "require": {
-                "aws/aws-sdk-php": ">=2.4",
-                "ext-json": "*",
-                "yiisoft/yii2": "^2.0.45",
-                "yiisoft/yii2-queue": "^2.3.2"
-            },
-            "provide": {
-                "bower-asset/bootstrap": "*",
-                "bower-asset/inputmask": "*",
-                "bower-asset/jquery": "*",
-                "bower-asset/punycode": "*",
-                "bower-asset/typeahead.js": "*",
-                "bower-asset/yii2-pjax": "*"
-            },
-            "require-dev": {
-                "craftcms/ecs": "dev-main",
-                "craftcms/phpstan": "dev-main",
-                "craftcms/rector": "dev-main",
-                "phpunit/phpunit": "^8.5"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "craftcms\\dynamodb\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Pixel & Tonic",
-                    "homepage": "https://pixelandtonic.com/"
-                }
-            ],
-            "description": "Yii2 implementation of a cache, session, and queue driver for DynamoDB",
-            "keywords": [
-                "cache",
-                "dynamodb",
-                "queue",
-                "session",
-                "yii2"
-            ],
-            "support": {
-                "docs": "https://github.com/craftcms/yii2-dynamodb/blob/README.md",
-                "email": "support@craftcms.com",
-                "issues": "https://github.com/craftcms/yii2-dynamodb/issues?state=open",
-                "source": "https://github.com/craftcms/yii2-dynamodb"
-            },
-            "time": "2023-03-08T20:08:21+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -5275,16 +5209,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.10.1",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "431c02da15e566adb0ad9c5030fa6f6204d9de9e"
+                "reference": "f626740b38009078de0dc8b2b9dc4e7f749c6eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/431c02da15e566adb0ad9c5030fa6f6204d9de9e",
-                "reference": "431c02da15e566adb0ad9c5030fa6f6204d9de9e",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/f626740b38009078de0dc8b2b9dc4e7f749c6eba",
+                "reference": "f626740b38009078de0dc8b2b9dc4e7f749c6eba",
                 "shasum": ""
             },
             "require": {
@@ -5327,9 +5261,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.10.1"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.11.1"
             },
-            "time": "2025-11-18T07:51:16+00:00"
+            "time": "2025-11-21T11:31:57+00:00"
         },
         {
             "name": "phpoffice/phpspreadsheet",
@@ -10143,16 +10077,16 @@
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.10.0",
+            "version": "6.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "ca5b6de294512145db96bcbc94e61696599c391d"
+                "reference": "7a2701251e5d52fc3d508fd71704683eb54f5939"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/ca5b6de294512145db96bcbc94e61696599c391d",
-                "reference": "ca5b6de294512145db96bcbc94e61696599c391d",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/7a2701251e5d52fc3d508fd71704683eb54f5939",
+                "reference": "7a2701251e5d52fc3d508fd71704683eb54f5939",
                 "shasum": ""
             },
             "require": {
@@ -10202,7 +10136,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.10.0"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.10.1"
             },
             "funding": [
                 {
@@ -10210,7 +10144,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-05-27T18:02:28+00:00"
+            "time": "2025-11-21T10:58:21+00:00"
         },
         {
             "name": "theiconic/name-parser",

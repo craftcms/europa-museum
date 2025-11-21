@@ -24,7 +24,6 @@
         "craftcms/aws-s3": "^2",
         "craftcms/ckeditor": "^4",
         "craftcms/cms": "5.9.x-dev",
-        "craftcms/yii2-dynamodb": "^2",
         "fakerphp/faker": "^1",
         "nystudio107/craft-seomatic": "^5",
         "nystudio107/craft-twigpack": "^5",

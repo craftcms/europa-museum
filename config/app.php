@@ -20,5 +20,15 @@ return [
         'demos' => Module::class,
     ],
     'bootstrap' => ['demos'],
-    'components' => [],
+    'components' => [
+        // The demos live on special infrastructure that 
+        'cache' => function() {
+            $config = [
+                'class' => craft\cache\DbCache::class,
+                'defaultDuration' => Craft::$app->getConfig()->getGeneral()->cacheDuration,
+            ];
+
+            return Craft::createObject($config);
+        },
+    ],
 ];
