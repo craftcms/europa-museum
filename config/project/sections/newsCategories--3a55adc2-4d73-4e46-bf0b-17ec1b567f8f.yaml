@@ -12,11 +12,6 @@ previewTargets:
     urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
-    enabledByDefault: true
-    hasUrls: true
-    template: _/pages/news
-    uriFormat: 'news/category/{slug}'
   c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
     enabledByDefault: true
     hasUrls: true
