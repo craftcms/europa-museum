@@ -61,12 +61,14 @@ class SeedController extends Controller
 
     public function actionDeleteFreeformData(): int
     {
-        $submissions = (Submission::find())->isSpam(null);
+        $this->stdout("Deleting Freeform data ..." . PHP_EOL);
+        $submissions = Submission::find()->isSpam(null);
         $submissionCount = $submissions->count();
         $errorCount = 0;
-        $this->stdout("Deleting Freeform data ..." . PHP_EOL);
 
-        foreach ($submissions->all() as $submission) {
+        $this->stdout(sprintf('Found %d submission(s).', $submissionCount), Console::FG_BLUE) . PHP_EOL;
+
+        foreach ($submissions->each() as $submission) {
             $i = isset($i) ? $i + 1 : 1;
             $this->stdout("    - [{$i}/{$submissionCount}] Deleting submission {$submission->title} ... ");
             try {
