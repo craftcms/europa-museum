@@ -11,7 +11,6 @@ use craft\helpers\App;
 
 return GeneralConfig::create()
     ->omitScriptNameInUrls(true)
-    ->allowUpdates(false)
     ->defaultSearchTermOptions([
         'subLeft' => true,
         'subRight' => true,
