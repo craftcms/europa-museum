@@ -13,7 +13,7 @@ _Europa_ shows off many of Craft’s [core features](https://craftcms.com/featur
 ### Development Technologies
 
 - [Craft CMS 5.x](https://craftcms.com/docs/5.x/)
-- PHP 8.2
+- PHP 8.4
 - PostgreSQL 13
 - Native [Twig](https://craftcms.com/docs/5.x/development/twig.html) templates
 - Built on the [Yii 2 framework](https://www.yiiframework.com/)
