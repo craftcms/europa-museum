@@ -1,3 +1,5 @@
+@use '../shared/mixins' as *;
+
 [data-page="about"] {
 
     [data-router-view="about"] {

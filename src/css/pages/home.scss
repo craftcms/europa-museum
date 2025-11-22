@@ -1,5 +1,7 @@
-[data-page="home"] {
+@use '../shared/mixins' as *;
+@use '../shared/vars' as *;
 
+[data-page="home"] {
     .wrapper {
         padding-left: 60px;
         padding-right: 60px;

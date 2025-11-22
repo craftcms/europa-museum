@@ -1,3 +1,5 @@
+@use '../shared/vars' as *;
+
 [data-page="news"] {
 
     [data-router-view="news"] {

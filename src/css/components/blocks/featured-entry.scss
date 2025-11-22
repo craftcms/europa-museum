@@ -1,3 +1,6 @@
+@use '../../shared/mixins' as *;
+@use '../../shared/vars' as *;
+
 .featured-entry-block {
 
     padding-left: 60px;
