@@ -8,7 +8,7 @@
 
 {% block content %}
 
-    {% set heroTitle = entry.heroTitle | default(entry.title) %}
+    {% set heroTitle = entry.heroTitle ?: entry.title %}
     {% set heroImage = entry.heroImage.one() %}
 
     <article data-router-view="about" data-handle="{{ entry.type.handle }}">

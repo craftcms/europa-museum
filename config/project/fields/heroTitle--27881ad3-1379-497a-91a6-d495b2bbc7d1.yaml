@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: heroTitle
-instructions: '*Optional: Will override the entry title if used.'
+instructions: 'This page’s canonical title is determined by its section settings. Use this field to override it at the top of the page.'
 name: 'Hero Title'
 searchable: true
 settings:
