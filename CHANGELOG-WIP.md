@@ -14,6 +14,17 @@
 - Removed unused tag group
 - Merged redundant ex-Matrix fields
 - Removed French site (there was no content for this, anyway—and the homepage didn't resolve)
+- Deleted `config/debug.php`
+
+### Other Issues Fixed
+
+- Hamburger menu not working [#51](https://github.com/craftcms/europa-museum/issues/51)
+  - Imported auto-initializing script dropped during prior cleanup
+- Few issues with setting up this demo site [#53](https://github.com/craftcms/europa-museum/issues/53)
+  - Some of this was handled on `stable` to get actions green again
+  - Additional readme steps and corresponding `Makefile` adjustments happened in here
+- Steps for installation [#49](https://github.com/craftcms/europa-museum/issues/49)
+  - Still need to mention `mkcert` setup step? (We don’t even mention this in the main installation docs—it's generally considered part of the DDEV setup process, and is platform-dependent.)
 
 ### To-Do
 
@@ -24,5 +35,4 @@
 
 - Alter `craftcms/cms` constraint to `^5.9.0` upon release
 - Delete all content migrations created during field merging!
-- Prune dead project config files + items
-- `config/debug.php`?
+- Ensure dead project config files + items are pruned
