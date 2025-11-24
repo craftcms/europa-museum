@@ -21,7 +21,8 @@ return [
     ],
     'bootstrap' => ['demos'],
     'components' => [
-        // The demos live on special infrastructure that 
+        // The demos live on special infrastructure that can’t rely on the default file-based sessions.
+        // (You probably don’t need to worry about this in other projects!)
         'cache' => function() {
             $config = [
                 'class' => craft\cache\DbCache::class,

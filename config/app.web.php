@@ -9,6 +9,9 @@
 return [
     'components' => [
         'session' => function() {
+            // The demos live on special infrastructure that can’t rely on file-based sessions.
+            // (You probably don’t need to worry about this in other projects!)
+
             // Get the default component config:
             $config = craft\helpers\App::sessionConfig();
 
