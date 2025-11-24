@@ -5,6 +5,7 @@ import lazysizes from 'lazysizes';
 // Core
 import store from './store';
 
+import { GlobalMobileNavMenu } from './components/mobileNavMenu.js';
 import Pages from './pages/index.js';
 
 window.firstLoad = true;
