@@ -1,6 +1,3 @@
-// Plugins
-import LocomotiveScroll from 'locomotive-scroll';
-
 // Core
 import store from '../store';
 
@@ -19,10 +16,10 @@ import Visit from './visit';
 
 class Pages {
     constructor() {
-        const pageTemplate = location.pathname.split('/')[1];
+        const segments = location.pathname.split('/').filter(s => s.length);
+        const pageTemplate = segments[0];
         const pageName = pageTemplate.length > 1 ? pageTemplate : 'home';
         store.body.dataset.page = pageName;
-        const selectedLink = store.body.querySelector('[data-link="' + pageName + '"]');
 
         if (pageName === 'exhibitions') {
             new Exhibitions();
@@ -32,9 +29,6 @@ class Pages {
             new Visit();
         }
 
-        if (selectedLink) {
-            selectedLink.classList.add('selected');
-        }
         this.initVars();
         this.init();
     }
@@ -47,8 +41,6 @@ class Pages {
         bindAll(this, ['onResize', 'updateScroll', 'onScroll']);
 
         const _this = this;
-
-        this.initLocoScroll();
 
         this.scrolled = false;
 
@@ -79,30 +71,11 @@ class Pages {
 
     }
 
-    initLocoScroll() {
-        const _this = this;
-
-        this.locoScroll = new LocomotiveScroll({
-            el: document.querySelector('#loco-scroll'),
-            smooth: false,
-            // inertia: 1,
-            // smoothMobile: true,
-        });
-
-        store.locoScroll = this.locoScroll;
-
-        this.locoScroll.on('scroll', _this.onScroll);
-    }
-
     onResize() {
         this.updateScroll();
     }
 
-    updateScroll() {
-        if (store.isSmooth) {
-            this.locoScroll.update();
-        }
-    }
+    updateScroll() {}
 
     onScroll(e) {
         const currentScroll = e.scroll.y;
@@ -120,11 +93,6 @@ class Pages {
 
     destroy() {
         const _this = this;
-
-        if (this.locoScroll) {
-            this.locoScroll.destroy();
-            store.locoScroll = null;
-        }
 
         document.removeEventListener('lazyloaded', _this.updateScroll);
 

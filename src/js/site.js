@@ -20,32 +20,23 @@ class App {
     setup() {
         sniffer.addClasses(store.body);
         Object.assign(store, sniffer.getInfos());
-        Object.assign(store, {
-          isSmooth: false
-        });
     }
 
     init() {
-        const footerTop = store.coreFooter.querySelector('.scroll-top');
-
-        // window.scrollTo(0, 0);
+        const $footerTop = store.coreFooter.querySelector('.scroll-top');
 
         new Pages();
-
-        if (store.isSmooth) {
-            "scrollRestoration" in history ? history.scrollRestoration = "manual" : window.onbeforeunload = function() {window.scrollTo(0, 0) };
-        }
-
-        // if (store.isSmooth) {
-        //     "scrollRestoration" in history ? history.scrollRestoration = "manual" : window.onbeforeunload = function() {window.scrollTo(0, 0) };
-        // }
 
         store.darkToggle.addEventListener('click', () => {
             store.body.classList.toggle('theme-dark');
         });
 
-        footerTop.addEventListener('click', () => {
-            store.locoScroll.scrollTo('#loco-scroll');
+        $footerTop.addEventListener('click', () => {
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: 'smooth',
+            });
         });
     }
 }

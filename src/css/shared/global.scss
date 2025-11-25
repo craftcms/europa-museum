@@ -110,62 +110,6 @@ body:not(.loading) {
     filter: blur(0);
 }
 
-// Locomotive Scroll
-
-html.has-scroll-smooth:not(.has-scroll-init) {
-    cursor: wait;
-    overflow: hidden;
-}
-
-html.has-scroll-smooth {
-    overflow: hidden;
-}
-
-html.has-scroll-dragging {
-    user-select: none;
-}
-
-.has-scroll-smooth body {
-    overflow: hidden;
-}
-
-.c-scrollbar {
-    position: absolute;
-    top: 0;
-    right: -2px;
-    z-index: 4;
-    width: 11px;
-    height: 100vh;
-    transform-origin: center right;
-    transition: transform 0.3s, opacity 0.3s;
-    opacity: 0;
-}
-
-.c-scrollbar:hover {
-    transform: scaleX(2);
-}
-
-.c-scrollbar:hover,
-.has-scroll-dragging .c-scrollbar,
-.has-scroll-scrolling .c-scrollbar {
-    opacity: 1;
-}
-
-.c-scrollbar_thumb {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #000;
-    opacity: 1;
-    width: 3px;
-    margin: 2px;
-    cursor: grab;
-}
-
-.has-scroll-dragging .c-scrollbar_thumb {
-    cursor: grabbing;
-}
-
 // Lazyload
 
 .lazypicture {
@@ -336,12 +280,6 @@ body.theme-dark {
     // Cover
     .cover {
         background-color: #000;
-    }
-
-    // Locomotive Scroll
-
-    .c-scrollbar_thumb {
-        background-color: #fff;
     }
 
     // Class Helpers

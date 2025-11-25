@@ -18,6 +18,7 @@ import BlocksController from '../../../blocks/blocks-controller';
 
 class DefaultRenderer extends Highway.Renderer {
     onEnter() {
+        console.log('WHAT');
         const pageTemplate = H.location.pathname.split('/')[1];
         const pageName = pageTemplate.length > 1 ? pageTemplate : 'home';
         store.body.dataset.page = pageName;
