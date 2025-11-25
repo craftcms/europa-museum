@@ -1,5 +1,4 @@
 // Plugins
-import sniffer from 'sniffer';
 import lazysizes from 'lazysizes';
 
 // Core
@@ -17,10 +16,7 @@ class App {
         this.init();
     }
 
-    setup() {
-        sniffer.addClasses(store.body);
-        Object.assign(store, sniffer.getInfos());
-    }
+    setup() {}
 
     init() {
         const $footerTop = store.coreFooter.querySelector('.scroll-top');

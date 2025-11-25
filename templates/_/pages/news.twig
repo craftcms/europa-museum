@@ -5,10 +5,6 @@
 {% set indexType = entry.type.handle %}
 {% set isCategory = indexType == 'newsCategory' %}
 
-{% block inline_css %}
-    {{ source("_/#{indexType}-critical.min.css", ignore_missing = true) }}
-{% endblock %}
-
 {% block content %}
 
     {#

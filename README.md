@@ -24,13 +24,9 @@ Read more about Craft’s [technical requirements](https://craftcms.com/docs/5.x
 
 _Europa_’s front-end was built with modern Javascript and CSS tools. Craft itself has no rules about how you structure your front-end code—so we’ve taken the opportunity to share a handful of techniques that couple Twig templates with front-end interactivity.
 
-- [Babel](https://babeljs.io/) with ES6
-- [Sass](https://sass-lang.com/)
-- [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme) with [PurgeCSS](https://github.com/spatie/laravel-mix-purgecss#readme) and [Critical CSS](https://github.com/riasvdv/laravel-mix-critical#readme)
-- [Highway.js](https://highway.js.org/)
+- [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme) to manage compilation of [Sass](https://sass-lang.com/) and JavaScript
 - [GSAP](https://greensock.com/gsap)
 - [Lazysizes](https://github.com/aFarkas/lazysizes#readme)
-- [LocomotiveScroll](https://github.com/locomotivemtl/locomotive-scroll)
 
 ## Local Development
 

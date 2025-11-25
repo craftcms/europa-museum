@@ -113,13 +113,10 @@
         }
     }
 
-    .is-inview {
+    &.is-inview {
 
-        &.title-container {
-            opacity: 1;
-        }
-
-        &.sub-heading {
+        .title-container,
+        .sub-heading {
             opacity: 1;
         }
 
@@ -149,24 +146,6 @@
 
         }
 
-    }
-
-}
-
-body.is-device {
-
-    .image-and-headings-block {
-        .title-container {
-            transform: none;
-
-            @media screen and (max-width: 1024px) {
-                padding: 120px 30px;
-            }
-
-            @media screen and (max-width: 767px) {
-                padding: 60px 30px;
-            }
-        }
     }
 
 }

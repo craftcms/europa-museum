@@ -11,7 +11,7 @@
 
     <div class="image-and-headings-container">
 
-        <div class="title-container" data-scroll data-scroll-speed="1">
+        <div class="title-container" data-scroll data-scroll-z="8">
             <h3 class="title">
                 <span class="pre-heading">
                     {{ theBlock.headingPre }}
@@ -23,13 +23,13 @@
         </div>
 
         {% if theBlock.headingSub %}
-            <div class="sub-heading" data-scroll>
+            <div class="sub-heading">
                 {{ theBlock.headingSub }}
             </div>
         {% endif %}
 
         {% if image %}
-            <div class="image" data-scroll data-scroll-speed="-1" {% if not hasHeroImage and isFirst %} data-scroll-position="top"{% endif %}>
+            <div class="image" data-scroll data-scroll-z="-10">
                 {# with, classes: 'example' #}
                 {% include "_/components/picture" with {
                     asset: image,

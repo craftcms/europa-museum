@@ -5,6 +5,9 @@
     .wrapper {
         padding-left: 60px;
         padding-right: 60px;
+        min-height: calc(100vh - 400px);
+        display: flex;
+        align-items: center;
     }
 
     .hero {
@@ -15,10 +18,8 @@
         user-select: none;
 
         h1 {
-            margin-bottom: 1em;
             letter-spacing: -0.05em;
         }
-
     }
 
     // Exhibitions
@@ -82,46 +83,6 @@
         z-index: 1;
         display: flex;
         width: 45%;
-    }
-
-    .exhibit-odd {
-        justify-content: flex-start;
-    }
-
-    .exhibit-even {
-        justify-content: flex-end;
-    }
-
-    .exhibit-2 {
-        transform: translateY(-8vh);
-    }
-
-    .exhibit-3 {
-        justify-content: flex-end;
-        transform: translateY(-6vh);
-    }
-
-    .exhibit-4 {
-        justify-content: flex-start;
-        transform: translateY(-4vh);
-    }
-
-    .exhibit-odd .exhibit-image {
-        transform: translateX(-100px);
-    }
-
-    .exhibit-even .exhibit-image {
-        transform: translateX(100px);
-    }
-
-    .container {
-
-        width: 100%;
-
-        .exhibit-image {
-            user-select: none;
-            opacity: 0;
-        }
 
         &.is-inview {
 
@@ -144,9 +105,43 @@
             .exhibit-date {
                 transition: opacity 1s 0.1s, transform 1s 0.1s;
             }
-
         }
+    }
 
+    .exhibit-odd {
+        justify-content: flex-start;
+    }
+
+    .exhibit-even {
+        justify-content: flex-end;
+    }
+
+    .exhibit-2 {}
+
+    .exhibit-3 {
+        justify-content: flex-end;
+    }
+
+    .exhibit-4 {
+        justify-content: flex-start;
+    }
+
+    .exhibit-odd .exhibit-image {
+        transform: translateX(-100px);
+    }
+
+    .exhibit-even .exhibit-image {
+        transform: translateX(100px);
+    }
+
+    .container {
+
+        width: 100%;
+
+        .exhibit-image {
+            user-select: none;
+            opacity: 0;
+        }
     }
 
     .exhibit-link {

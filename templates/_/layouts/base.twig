@@ -27,18 +27,7 @@
         <meta name="msapplication-config" content="{{ url('browserconfig.xml') }}">
         <meta name="theme-color" content="#ffffff">
 
-        {# -- Inline CSS block used by templates for Critical CSS #}
-        {# -- Only use Critical CSS & LoadCSS when we have it available to prevent flashing #}
-        {% set inline_css = "" %}
-        {% if env != "local" %}
-            {% set inline_css =  block("inline_css") is defined ? block("inline_css") : "" %}
-        {% endif %}
-        {% if inline_css | trim is not empty %}
-            <style>{{ inline_css | raw | replace({'/assets/dist/': alias('@dist/')}) }}</style>
-            {{ craft.twigpack.includeCssModule('/css/site.css', true) }}
-        {% else %}
-            {{ craft.twigpack.includeCssModule('/css/site.css', false) }}
-        {% endif %}
+        {{ craft.twigpack.includeCssModule('/css/site.css', false) }}
     </head>
 
     <body class="first-load loading {% if bodyClass is defined %}{{ bodyClass }}{% endif %}">

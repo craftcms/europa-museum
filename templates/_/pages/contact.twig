@@ -2,10 +2,6 @@
 
 {% extends "_/layouts/site" %}
 
-{% block inline_css %}
-    {{ source("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
-{% endblock %}
-
 {% block content %}
 
     <article data-router-view="contact" data-handle="{{ entry.type.handle }}">
@@ -21,7 +17,7 @@
             {% if heroImage %}
 
                 <div class="hero-image-container">
-                    <div class="hero-image" data-scroll data-scroll-speed="2" data-scroll-position="top">
+                    <div class="hero-image" data-scroll data-scroll-z="-5">
                         {% include "_/components/picture" with {
                             asset: heroImage,
                             transform: 'base',
