@@ -8,44 +8,14 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: null
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c115ea50-c3c2-4866-8add-8ebdd0510a40
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: null
+            dateAdded: '2025-11-25T00:04:28+00:00'
             editCondition: null
             elementCondition: null
             fieldUid: 2d7b7e2f-71b1-4b25-8501-c8edc07a7f18 # Embed Code
             handle: null
             includeInCards: true
             instructions: null
-            label: 'Embed Code'
+            label: null
             providesThumbs: false
             required: false
             tip: null
