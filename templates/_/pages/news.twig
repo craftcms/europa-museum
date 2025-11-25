@@ -78,18 +78,16 @@
         <div class="news-container" data-scroll-section>
 
             {# This field is only present on the news landing entry; for category pages, we fall back to a static limit: #}
-            {% set paginationCount = entry.paginationCount.value ?? 10 %}
+            {% set paginationCount = (entry.paginationCount.value ?? 10) | integer %}
 
             {% if isCategory %}
                 {% set query = craft.entries.section('newsArticles')
                     .with(['heroImage', 'newsCategory'])
-                    .relatedTo(entry)
-                %}
+                    .relatedTo(entry) %}
             {% else %}
                 {% set query = craft.entries().section('newsArticles')
                     .with(['heroImage', 'newsCategory'])
-                    .limit(paginationCount)
-                    %}
+                    .limit(paginationCount | integer) %}
             {% endif %}
 
             {% paginate query as pageInfo, pageEntries %}
@@ -142,25 +140,23 @@
 
             {% endfor %}
 
-            {% if pageInfo.prevUrl or pageInfo.nextUrl %}
+            <div class="pagination">
 
-                <div class="pagination">
+                {% if pageInfo.prevUrl %}
+                    <a class="pagination-link-active" href="{{ pageInfo.prevUrl }}">Previous</a>
+                {% else %}
+                    <span class="pagination-link-inactive">Previous</span>
+                {% endif %}
 
-                    {% if pageInfo.prevUrl %}
-                        <a href="{{ pageInfo.prevUrl }}">Previous</a>
-                    {% endif %}
+                <span class="divider">|</span>
 
-                    {% if pageInfo.prevUrl and pageInfo.nextUrl %}
-                        <span class="divider">|</span>
-                    {% endif %}
+                {% if pageInfo.nextUrl %}
+                    <a class="pagination-link-active" href="{{ pageInfo.nextUrl }}">Next</a>
+                {% else %}
+                    <span class="pagination-link-inactive">Next</span>
+                {% endif %}
 
-                    {% if pageInfo.nextUrl %}
-                        <a href="{{ pageInfo.nextUrl }}">Next</a>
-                    {% endif %}
-
-                </div>
-
-            {% endif %}
+            </div>
 
         </div>
 

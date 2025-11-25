@@ -130,6 +130,20 @@
             padding-top: 30px;
             border-top: 1px solid #000;
             text-align: right;
+
+            .pagination-link-active {
+
+            }
+
+            .divider {
+                opacity: 0.25;
+                pointer-events: none;
+            }
+
+            .pagination-link-inactive {
+                opacity: 0.5;
+                pointer-events: none;
+            }
         }
 
         // Block Overrides
