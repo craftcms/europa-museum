@@ -14,8 +14,8 @@
             alt: altText,
         }) }}
     {% else %}
-        {% set sizes = [375, 768, 1024, 1440] %}
-        {% set srcset = asset.getSrcSet(sizes | map(dim => "#{dim}w")) %}
+        {% set transforms = ['inline', 'hero'] %}
+        {% set srcset = asset.getSrcSet(transforms | map(t => "#{craft.app.imageTransforms.getTransformByHandle(t).width}w")) %}
 
         {{ tag('img', {
             class: ['lazyload', lazytransition],
