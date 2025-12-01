@@ -22,4 +22,5 @@ return GeneralConfig::create()
         '@dist' => (App::env('S3_BASE_URL') ?: App::env('PRIMARY_SITE_URL')) . '/assets/dist',
     ])
     ->upscaleImages(false)
+    ->transformGifs(false)
 ;
