@@ -1,7 +1,8 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 
-{% set sizes = sizes ?? '100vw' %}
 {% set lazytransition = lazytransition ?? 'lazyfade' %}
+
+{# If an author has provided an explicit image description, use that. Otherwise, use the title. #}
 {% set altText = asset.alt ?: asset.title %}
 
 <picture class="lazypicture {{ classes ?? '' }}">
