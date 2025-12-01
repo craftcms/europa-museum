@@ -5,11 +5,12 @@ name: 'Rich Text'
 searchable: true
 settings:
   availableTransforms: ''
-  availableVolumes: '*'
+  availableVolumes:
+    - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
   characterLimit: null
   ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Rich Text
   createButtonLabel: null
-  defaultTransform: null
+  defaultTransform: 4ee7fd54-73f7-4abe-94e3-6c01585ca5e3 # Inline
   entryTypes:
     -
       __assoc__:

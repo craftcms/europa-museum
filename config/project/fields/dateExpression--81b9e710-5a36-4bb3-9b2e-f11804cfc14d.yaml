@@ -2,7 +2,7 @@ columnSuffix: null
 handle: dateExpression
 instructions: 'A human-readable description of the duration, like “Coming Winter 2027”'
 name: 'Date Expression'
-searchable: false
+searchable: true
 settings:
   byteLimit: null
   charLimit: null

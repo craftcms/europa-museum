@@ -5,11 +5,12 @@ name: Description
 searchable: true
 settings:
   availableTransforms: ''
-  availableVolumes: '*'
+  availableVolumes:
+    - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
   characterLimit: null
   ckeConfig: 40bfb363-8740-499a-82f2-6eda20cb6025 # Vhc No Assets
   createButtonLabel: null
-  defaultTransform: null
+  defaultTransform: 4ee7fd54-73f7-4abe-94e3-6c01585ca5e3 # Inline
   expandEntryButtons: false
   fullGraphqlData: false
   parseEmbeds: false
