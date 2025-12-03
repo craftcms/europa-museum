@@ -1,4 +1,4 @@
-dateModified: 1764630747
+dateModified: 1764802638
 elementSources:
   craft\elements\Asset:
     -
@@ -42,6 +42,32 @@ elementSources:
         - uploader
         - link
       type: native
+    -
+      condition:
+        class: craft\elements\conditions\assets\AssetCondition
+        conditionRules:
+          -
+            class: craft\elements\conditions\assets\HasAltConditionRule
+            uid: c246e07f-ce6c-4bc4-984e-84baf57bfcbe
+            value: false
+          -
+            class: craft\elements\conditions\assets\VolumeConditionRule
+            operator: in
+            uid: 9fee5310-fb83-4a5a-b8d5-4b9f3e6aae75
+            values:
+              - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
+        elementType: craft\elements\Asset
+        fieldContext: global
+      defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      key: 'custom:329ad360-447f-47c5-a20e-b45e28cbf000'
+      label: 'Needs Alt Text'
+      tableAttributes:
+        - dateCreated
+        - kind
+      type: custom
   craft\elements\Entry:
     -
       defaultSort:
