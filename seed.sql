@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict YXeXjTZB5o4ocA85VIJzTAawwjyy2snkeWnzVB4Jl7nI8UhV1sLQTDjWvaoDyic
+\restrict ziz6RcxJT6T3mgH5JRUl5lP322ZdiRkIzzDivw6Ojfy5212tLplylac1qNiieVV
 
 -- Dumped from database version 13.23 (Debian 13.23-1.pgdg13+1)
 -- Dumped by pg_dump version 18.1 (Debian 18.1-1.pgdg12+2)
@@ -5499,46 +5499,47 @@ COPY public.assetindexingsessions (id, "indexedVolumes", "totalEntries", "proces
 --
 
 COPY public.assets (id, "volumeId", "folderId", filename, kind, width, height, size, "focalPoint", "deletedWithVolume", "keptFile", "dateModified", "dateCreated", "dateUpdated", "uploaderId", alt, "mimeType") FROM stdin;
-264	1	1	van-gogh-wheat-field-with-cypresses.jpg	image	3112	2448	6498868	\N	\N	\N	2020-01-17 06:26:51	2020-01-17 06:26:54	2024-02-07 04:18:54	\N	Van Gogh’s 1889 painting, “Wheat Field with Cypresses”	\N
-263	1	1	van-gogh-view-of-arles-flowering-orchards.jpg	image	3926	3072	2825657	\N	\N	\N	2020-01-17 06:26:41	2020-01-17 06:26:42	2024-02-07 04:18:54	\N	Van Gogh’s 1889 painting, “View of Arles, Flowering Orchards”	\N
-262	1	1	van-gogh-the-olive-trees.jpg	image	4500	3580	3049701	\N	\N	\N	2020-01-17 06:26:34	2020-01-17 06:26:35	2024-02-07 04:18:54	\N	Van Gogh’s 1889 painting, “The Olive Trees”	\N
-17	1	1	van-gogh-weizenfeld-unter-einem-gewitterhimmel.jpeg	image	3840	1878	2824332	\N	\N	\N	2019-11-30 07:40:00	2019-11-30 07:40:01	2024-02-07 04:18:54	\N	Van Gogh’s 1890 painting, “Wheatfield Under Thunderclouds”	\N
-330	1	4	veronica.jpg	image	500	500	37398	\N	\N	\N	2020-01-18 00:43:21	2020-01-18 00:43:21	2020-01-23 11:50:56	\N	\N	\N
-356	1	1	social-share.png	image	1200	630	40850	\N	\N	\N	2020-01-18 09:04:57	2020-01-18 09:04:51	2020-01-23 11:50:27	\N	\N	\N
-355	1	1	social-share-dark.png	image	1200	630	40566	\N	\N	\N	2020-01-18 09:03:03	2020-01-18 09:02:57	2020-01-23 11:50:33	\N	\N	\N
-289	1	1	exhibitions-upcoming.jpg	image	1762	1362	946538	\N	\N	\N	2020-01-17 08:34:11	2020-01-17 08:34:10	2020-01-23 11:50:51	\N	\N	\N
-288	1	1	exhibitions-current.jpg	image	2198	1589	1508540	0.5153;0.4530	\N	\N	2020-01-17 08:29:50	2020-01-17 08:29:52	2020-01-23 11:50:52	\N	\N	\N
-614	1	1	europa-interior-gallery-south.jpg	image	2726	1820	613563	\N	\N	\N	2020-01-25 09:36:47	2020-01-25 11:57:18	2024-02-07 00:47:44	\N	\N	\N
-613	1	1	europa-interior-mezzanine.jpg	image	4896	3264	1960676	\N	\N	\N	2024-02-07 00:49:13	2020-01-25 11:57:14	2024-02-07 00:49:28	879	\N	\N
-383	1	1	europa-interior-gallery-north.jpg	image	4608	3456	1508975	\N	\N	\N	2020-01-25 09:35:45	2020-01-23 11:50:53	2024-02-07 01:04:11	\N	\N	\N
-378	1	1	palace-museum-china.jpg	image	3785	2524	2762946	\N	\N	\N	2020-01-23 07:08:04	2020-01-23 11:50:29	2024-02-07 02:02:03	\N	\N	\N
-382	1	1	europa-interior-pavilion.jpg	image	4323	6484	4311911	\N	\N	\N	2024-02-07 01:37:29	2020-01-23 11:50:49	2024-02-07 01:37:42	879	\N	\N
-381	1	1	steve-johnson-abstract-painting.jpg	image	4567	3295	3375812	\N	\N	\N	2024-02-07 01:49:20	2020-01-23 11:50:34	2024-02-07 01:51:10	879	\N	\N
-207015	1	62	cole-thomas-the-course-of-empire-destruction.jpg	image	8917	5532	17011717	\N	\N	\N	2024-02-07 00:40:39	2024-02-07 00:40:41	2024-02-07 02:28:57	879	\N	\N
-380	1	1	europa-interior-main-stair.jpg	image	4032	3023	1317910	\N	\N	\N	2024-02-07 01:55:55	2020-01-23 11:50:31	2024-02-07 01:56:06	879	\N	\N
-102	1	1	ian-dooley-admiration.jpg	image	749	499	79981	\N	\N	\N	2020-01-09 07:08:14	2020-01-09 07:08:13	2024-02-07 02:08:57	\N	\N	\N
-98	1	1	europa-pavilion-facade.jpg	image	1562	1181	313117	\N	\N	\N	2020-01-22 23:43:48	2020-01-09 07:06:23	2024-02-07 02:11:49	\N	\N	\N
-94	1	1	dresden-war-triptych-quiet-contemplation.jpg	image	934	563	120138	\N	\N	\N	2020-01-09 07:05:43	2020-01-09 07:05:43	2024-02-07 02:14:43	\N	\N	\N
-90	1	1	europa-statue-garden.jpg	image	5184	3456	2667923	\N	\N	\N	2020-01-23 06:59:07	2020-01-09 07:04:53	2024-02-07 02:25:09	\N	\N	\N
-207016	1	62	cole-thomas-the-course-of-empire-the-arcadian-or-pastoral-state.jpg	image	8733	5442	17175179	\N	\N	\N	2024-02-07 00:40:46	2024-02-07 00:40:48	2024-02-07 02:28:57	879	\N	\N
-66	1	1	europa-interior-courtyard.jpg	image	4896	3264	1960676	\N	\N	\N	2024-02-07 02:26:00	2020-01-08 22:33:41	2024-02-07 02:26:54	879	\N	\N
-207017	1	62	cole-thomas-the-course-of-empire-the-savage-state.jpg	image	8880	5520	14995771	\N	\N	\N	2024-02-07 00:40:55	2024-02-07 00:40:58	2024-02-07 02:28:56	879	\N	\N
-698	1	62	kandinsky-color-study-squares-concentric-circles.jpg	image	796	600	237003	\N	\N	\N	2020-02-17 16:13:20	2020-02-17 16:13:20	2024-02-07 02:28:58	\N	\N	\N
-207014	1	62	cole-thomas-the-course-of-empire-desolation.jpg	image	8881	5526	17652363	\N	\N	\N	2024-02-07 00:40:27	2024-02-07 00:40:30	2024-02-07 02:28:58	879	\N	\N
-694	1	62	kandinsky-study-for-improvisation.jpg	image	1920	1934	846411	\N	\N	\N	2020-02-17 16:11:35	2020-02-17 16:11:35	2024-02-07 02:28:59	\N	\N	\N
-689	1	62	kandinsky-landscape-with-factory-chimney.jpg	image	1920	1545	1333762	\N	\N	\N	2020-02-17 16:08:24	2020-02-17 16:08:23	2024-02-07 02:28:59	\N	\N	\N
-287	1	62	adolph-tidemand-hans-gude-bridal-procession-on-the-hardangerfjord.jpg	image	3021	2160	1422111	\N	\N	\N	2024-02-07 02:04:24	2020-01-17 08:24:23	2024-02-07 02:29:00	879	\N	\N
-48	1	62	vassily-kandinsky-on-white-ii.jpg	image	562	600	144579	\N	\N	\N	2019-12-30 20:38:17	2019-12-30 20:38:17	2024-02-07 02:29:00	\N	\N	\N
-38	1	62	the-course-of-empire-consummation.jpg	image	1600	850	686260	\N	\N	\N	2019-12-30 08:07:53	2019-12-30 08:07:52	2024-02-07 02:29:00	\N	\N	\N
-278	1	62	van-gogh-self-portrait.jpg	image	4747	6000	10668197	\N	\N	\N	2020-01-17 08:05:32	2020-01-17 08:05:39	2024-02-07 02:29:01	\N	\N	\N
-32	1	62	delaunay-circular-forms.jpg	image	2999	1824	2992394	\N	\N	\N	2019-12-30 07:12:22	2019-12-30 07:12:24	2024-02-07 02:29:01	\N	\N	\N
-23	1	62	van-gogh-starry-night.jpg	image	2728	2160	2904790	\N	\N	\N	2019-11-30 07:43:53	2019-11-30 07:43:55	2024-02-07 02:29:02	\N	Van Gogh’s painting, Starry Night	\N
-702	1	62	vassily-kandinsky-houses-in-munich.jpg	image	586	473	40447	0.4744;0.8658	\N	\N	2020-02-17 16:14:24	2020-02-17 16:14:23	2024-02-07 02:30:34	\N	\N	\N
-379	1	62	prometheus-bound-and-the-oceanids.jpg	image	768	959	123315	\N	\N	\N	2020-01-23 00:01:07	2020-01-23 11:50:30	2024-02-07 02:30:59	\N	\N	\N
-190	1	1	sensory-art-house-abstract.jpg	image	5616	3744	2850802	\N	\N	\N	2024-02-07 02:07:04	2020-01-16 08:26:59	2024-02-07 02:32:26	879	\N	\N
 211155	3	66	press-kit.zip	compressed	\N	\N	58600	\N	\N	\N	2025-11-20 20:12:02	2025-11-20 20:12:02	2025-11-20 20:12:02	\N	\N	application/zip
 211183	1	1	andrew-faires-V1RLTNjlBW8-unsplash.jpg	image	6209	4139	1812234	\N	\N	\N	2025-11-20 22:10:42	2025-11-20 22:10:42	2025-11-20 22:14:02	\N	Doorway and hall, flanked by two painted portraits.	image/jpeg
-211639	1	1	ian-dooley-w2ooB5BxsU8-unsplash.jpg	image	6000	4000	3354966	\N	\N	\N	2025-11-25 22:06:24	2025-11-25 22:06:24	2025-11-25 22:06:24	879	\N	image/jpeg
+66	1	1	europa-interior-courtyard.jpg	image	4896	3264	1960676	\N	\N	\N	2025-11-18 00:25:58	2020-01-08 22:33:41	2025-12-01 22:26:51	879	\N	image/jpeg
+381	1	1	steve-johnson-abstract-painting.jpg	image	4567	3295	3375812	\N	\N	\N	2025-11-18 00:25:58	2020-01-23 11:50:34	2025-12-01 22:26:51	879	\N	image/jpeg
+262	1	1	van-gogh-the-olive-trees.jpg	image	4500	3580	3049701	\N	\N	\N	2025-11-18 00:25:58	2020-01-17 06:26:35	2025-12-01 22:26:51	\N	Van Gogh’s 1889 painting, “The Olive Trees”	image/jpeg
+330	1	4	veronica.jpg	image	500	500	37398	\N	\N	\N	2025-11-18 00:25:58	2020-01-18 00:43:21	2025-12-01 22:26:51	\N	\N	image/jpeg
+190	1	1	sensory-art-house-abstract.jpg	image	5616	3744	2850802	\N	\N	\N	2025-11-18 00:25:58	2020-01-16 08:26:59	2025-12-01 22:26:51	879	\N	image/jpeg
+94	1	1	dresden-war-triptych-quiet-contemplation.jpg	image	934	563	120138	\N	\N	\N	2025-11-18 00:25:58	2020-01-09 07:05:43	2025-12-01 22:26:52	\N	\N	image/jpeg
+383	1	1	europa-interior-gallery-north.jpg	image	4608	3456	1508975	\N	\N	\N	2025-11-18 00:25:59	2020-01-23 11:50:53	2025-12-03 23:03:06	\N	Wide-angle photo of Europa’s North Gallery, with openings to the mezzanine, below.	image/jpeg
+378	1	1	palace-museum-china.jpg	image	3785	2524	2762946	\N	\N	\N	2025-11-18 00:25:58	2020-01-23 11:50:29	2025-12-01 22:26:52	\N	\N	image/jpeg
+90	1	1	europa-statue-garden.jpg	image	5184	3456	2667923	\N	\N	\N	2025-11-18 00:25:58	2020-01-09 07:04:53	2025-12-01 22:26:52	\N	\N	image/jpeg
+102	1	1	ian-dooley-admiration.jpg	image	749	499	79981	\N	\N	\N	2025-11-18 00:25:59	2020-01-09 07:08:13	2025-12-01 22:26:52	\N	\N	image/jpeg
+698	1	62	kandinsky-color-study-squares-concentric-circles.jpg	image	796	600	237003	\N	\N	\N	2025-11-18 00:25:58	2020-02-17 16:13:20	2025-12-03 22:59:58	\N	“Color Study Squares with Concentric Circles” by Wassily Kandinsky	image/jpeg
+38	1	62	the-course-of-empire-consummation.jpg	image	1600	850	686260	\N	\N	\N	2025-11-18 00:25:58	2019-12-30 08:07:52	2025-12-01 22:26:53	\N	\N	image/jpeg
+689	1	62	kandinsky-landscape-with-factory-chimney.jpg	image	1920	1545	1333762	\N	\N	\N	2025-11-18 00:25:58	2020-02-17 16:08:23	2025-12-03 23:00:42	\N	“Landscape with Factory Chimney” by Wassily Kandinsky	image/jpeg
+23	1	62	van-gogh-starry-night.jpg	image	2728	2160	2904790	\N	\N	\N	2025-11-18 00:25:58	2019-11-30 07:43:55	2025-12-01 22:26:53	\N	Van Gogh’s painting, Starry Night	image/jpeg
+614	1	1	europa-interior-gallery-south.jpg	image	2726	1820	613563	\N	\N	\N	2025-11-18 00:25:58	2020-01-25 11:57:18	2025-12-03 23:01:46	\N	Wide-angle photo of Europa’s South Gallery with a young guest seated at center	image/jpeg
+48	1	62	vassily-kandinsky-on-white-ii.jpg	image	562	600	144579	\N	\N	\N	2025-11-18 00:25:58	2019-12-30 20:38:17	2025-12-01 22:26:53	\N	\N	image/jpeg
+694	1	62	kandinsky-study-for-improvisation.jpg	image	1920	1934	846411	\N	\N	\N	2025-11-18 00:25:58	2020-02-17 16:11:35	2025-12-03 23:00:07	\N	“Study for Improvisation V” by Wassily Kandinsky	image/jpeg
+278	1	62	van-gogh-self-portrait.jpg	image	4747	6000	10668197	\N	\N	\N	2025-11-18 00:25:58	2020-01-17 08:05:39	2025-12-01 22:26:54	\N	\N	image/jpeg
+207015	1	62	cole-thomas-the-course-of-empire-destruction.jpg	image	8917	5532	17011717	\N	\N	\N	2025-11-18 00:25:58	2024-02-07 00:40:41	2025-12-03 22:59:09	879	“The Course of Empire (Destruction)” by Cole Thomas	image/jpeg
+32	1	62	delaunay-circular-forms.jpg	image	2999	1824	2992394	\N	\N	\N	2025-11-18 00:25:58	2019-12-30 07:12:24	2025-12-01 22:26:54	\N	\N	image/jpeg
+613	1	1	europa-interior-mezzanine.jpg	image	4896	3264	1960676	\N	\N	\N	2025-11-18 00:25:58	2020-01-25 11:57:14	2025-12-03 23:02:32	879	Photo of Europa’s cerulean-tiled mezzanine	image/jpeg
+287	1	62	adolph-tidemand-hans-gude-bridal-procession-on-the-hardangerfjord.jpg	image	3021	2160	1422111	\N	\N	\N	2025-11-18 00:25:58	2020-01-17 08:24:23	2025-12-01 22:26:55	879	\N	image/jpeg
+379	1	62	prometheus-bound-and-the-oceanids.jpg	image	768	959	123315	\N	\N	\N	2025-11-18 00:25:58	2020-01-23 11:50:30	2025-12-01 22:26:55	\N	\N	image/jpeg
+207014	1	62	cole-thomas-the-course-of-empire-desolation.jpg	image	8881	5526	17652363	\N	\N	\N	2025-11-18 00:25:58	2024-02-07 00:40:30	2025-12-03 22:59:27	879	“The Course of Empire (Desolation)” by Cole Thomas	image/jpeg
+288	1	1	exhibitions-current.jpg	image	2198	1589	1508540	0.5153;0.4530	\N	\N	2025-11-18 00:25:58	2020-01-17 08:29:52	2025-12-01 22:26:56	\N	\N	image/jpeg
+17	1	1	van-gogh-weizenfeld-unter-einem-gewitterhimmel.jpeg	image	3840	1878	2824332	\N	\N	\N	2025-11-18 00:25:58	2019-11-30 07:40:01	2025-12-01 22:26:56	\N	Van Gogh’s 1890 painting, “Wheatfield Under Thunderclouds”	image/jpeg
+289	1	1	exhibitions-upcoming.jpg	image	1762	1362	946538	\N	\N	\N	2025-11-18 00:25:58	2020-01-17 08:34:10	2025-12-01 22:26:56	\N	\N	image/jpeg
+382	1	1	europa-interior-pavilion.jpg	image	4323	6484	4311911	\N	\N	\N	2025-11-18 00:25:58	2020-01-23 11:50:49	2025-12-01 22:26:56	879	\N	image/jpeg
+355	1	1	social-share-dark.png	image	1200	630	40566	\N	\N	\N	2025-11-18 00:25:58	2020-01-18 09:02:57	2025-12-01 22:26:56	\N	\N	image/png
+264	1	1	van-gogh-wheat-field-with-cypresses.jpg	image	3112	2448	6498868	\N	\N	\N	2025-11-18 00:25:58	2020-01-17 06:26:54	2025-12-01 22:26:56	\N	Van Gogh’s 1889 painting, “Wheat Field with Cypresses”	image/jpeg
+98	1	1	europa-pavilion-facade.jpg	image	1562	1181	313117	\N	\N	\N	2025-11-18 00:25:58	2020-01-09 07:06:23	2025-12-01 22:26:56	\N	\N	image/jpeg
+356	1	1	social-share.png	image	1200	630	40850	\N	\N	\N	2025-11-18 00:25:58	2020-01-18 09:04:51	2025-12-01 22:26:56	\N	\N	image/png
+380	1	1	europa-interior-main-stair.jpg	image	4032	3023	1317910	\N	\N	\N	2025-11-18 00:25:58	2020-01-23 11:50:31	2025-12-01 22:26:56	879	\N	image/jpeg
+263	1	1	van-gogh-view-of-arles-flowering-orchards.jpg	image	3926	3072	2825657	\N	\N	\N	2025-11-18 00:25:58	2020-01-17 06:26:42	2025-12-01 22:26:57	\N	Van Gogh’s 1889 painting, “View of Arles, Flowering Orchards”	image/jpeg
+211645	1	1	craft-red.png	image	2560	1440	20921	\N	f	f	2025-11-18 00:25:58	2025-12-01 22:26:52	2025-12-01 22:26:52	\N	\N	image/png
+211639	1	1	ian-dooley-w2ooB5BxsU8-unsplash.jpg	image	6000	4000	3354966	\N	\N	\N	2025-11-25 22:06:24	2025-11-25 22:06:24	2025-12-01 22:34:58	879	Photograph of the exterior of the Denver Central Library. The building was designed by Michael Graves, and is composed of simple, jaunty geometric solids and uses natural stone finishes on most surfaces.	image/jpeg
+207017	1	62	cole-thomas-the-course-of-empire-the-savage-state.jpg	image	8880	5520	14995771	\N	\N	\N	2025-11-18 00:25:58	2024-02-07 00:40:58	2025-12-03 22:58:07	879	“The Course of Empire” by Cole Thomas	image/jpeg
+207016	1	62	cole-thomas-the-course-of-empire-the-arcadian-or-pastoral-state.jpg	image	8733	5442	17175179	\N	\N	\N	2025-11-18 00:25:58	2024-02-07 00:40:48	2025-12-03 22:58:53	879	“The Course of Empire (The Arcadian or Pastoral State)” by Cole Thomas	image/jpeg
+702	1	62	vassily-kandinsky-houses-in-munich.jpg	image	586	473	40447	0.4744;0.8658	\N	\N	2025-11-18 00:25:58	2020-02-17 16:14:23	2025-12-03 22:59:46	\N	“Houses in Munich” by Wassily Kandinsky	image/jpeg
 \.
 
 
@@ -5547,46 +5548,47 @@ COPY public.assets (id, "volumeId", "folderId", filename, kind, width, height, s
 --
 
 COPY public.assets_sites ("assetId", "siteId", alt) FROM stdin;
-207017	1	\N
-207016	1	\N
-207015	1	\N
-207014	1	\N
-702	1	\N
-698	1	\N
-694	1	\N
-689	1	\N
-614	1	\N
-613	1	\N
-383	1	\N
-382	1	\N
-381	1	\N
-380	1	\N
-379	1	\N
-378	1	\N
-356	1	\N
-355	1	\N
-330	1	\N
-289	1	\N
-288	1	\N
-287	1	\N
-278	1	\N
-264	1	\N
-263	1	\N
-262	1	\N
-190	1	\N
-102	1	\N
-98	1	\N
-94	1	\N
-90	1	\N
+211639	1	Photograph of the exterior of the Denver Central Library. The building was designed by Michael Graves, and is composed of simple, jaunty geometric solids and uses natural stone finishes on most surfaces.
+207017	1	“The Course of Empire (The Savage State)” by Cole Thomas
+207016	1	“The Course of Empire (The Arcadian or Pastoral State)” by Cole Thomas
+207015	1	“The Course of Empire (Destruction)” by Cole Thomas
+207014	1	“The Course of Empire (Desolation)” by Cole Thomas
+702	1	“Houses in Munich” by Wassily Kandinsky
+698	1	“Color Study Squares with Concentric Circles” by Wassily Kandinsky
+694	1	“Study for Improvisation V” by Wassily Kandinsky
+689	1	“Landscape with Factory Chimney” by Wassily Kandinsky
+614	1	Wide-angle photo of Europa’s South Gallery with a young guest seated at center
+613	1	Photo of Europa’s cerulean-tiled mezzanine
+383	1	Wide-angle photo of Europa’s North Gallery, with openings to the mezzanine, below.
 66	1	\N
-48	1	\N
-38	1	\N
-32	1	\N
-23	1	\N
-17	1	\N
-211155	1	\N
+381	1	\N
+262	1	Van Gogh’s 1889 painting, “The Olive Trees”
+330	1	\N
+190	1	\N
+94	1	\N
+211645	1	\N
 211183	1	Doorway and hall, flanked by two painted portraits.
-211639	1	\N
+378	1	\N
+90	1	\N
+102	1	\N
+38	1	\N
+23	1	Van Gogh’s painting, Starry Night
+48	1	\N
+278	1	\N
+32	1	\N
+287	1	\N
+379	1	\N
+288	1	\N
+17	1	Van Gogh’s 1890 painting, “Wheatfield Under Thunderclouds”
+289	1	\N
+382	1	\N
+355	1	\N
+264	1	Van Gogh’s 1889 painting, “Wheat Field with Cypresses”
+98	1	\N
+356	1	\N
+380	1	\N
+263	1	Van Gogh’s 1889 painting, “View of Arles, Flowering Orchards”
+211155	1	\N
 \.
 
 
@@ -5807,17 +5809,43 @@ COPY public.elementactivity ("elementId", "userId", "siteId", "draftId", type, "
 91	879	1	\N	save	2025-11-25 22:07:23
 91	879	1	\N	view	2025-11-25 22:08:53
 91	879	1	\N	edit	2025-11-25 22:08:56
-1	879	1	\N	view	2025-11-25 22:09:22
+1	879	1	\N	view	2025-11-25 22:28:02
+211645	879	1	\N	view	2025-12-01 22:28:27
+613	879	1	\N	save	2025-12-03 23:02:32
+689	879	1	\N	save	2025-12-03 23:00:42
+211639	879	1	\N	save	2025-12-01 22:34:58
+211639	879	1	\N	view	2025-12-01 22:36:14
+207036	879	1	\N	view	2025-12-01 22:59:18
 60	879	1	\N	edit	2025-11-24 21:40:36
 60	879	1	\N	save	2025-11-24 21:40:36
+614	879	1	\N	save	2025-12-03 23:01:46
 60	879	1	\N	view	2025-11-24 23:07:09
+207017	879	1	\N	save	2025-12-03 22:58:33
+207016	879	1	\N	save	2025-12-03 22:58:53
 56	879	1	\N	edit	2025-11-25 00:05:16
 102	879	1	\N	view	2025-11-25 22:05:56
 103	879	1	\N	view	2025-11-25 22:05:56
 56	879	1	\N	save	2025-11-25 00:06:11
+207015	879	1	\N	save	2025-12-03 22:59:09
 56	879	1	\N	view	2025-11-25 00:09:03
 58	879	1	\N	view	2025-11-25 20:47:45
 58	879	1	\N	save	2025-11-25 20:47:47
+207017	879	1	\N	view	2025-12-03 23:03:02
+702	879	1	\N	view	2025-12-03 23:03:02
+207016	879	1	\N	view	2025-12-03 23:03:02
+207014	879	1	\N	view	2025-12-03 23:03:02
+689	879	1	\N	view	2025-12-03 23:03:03
+694	879	1	\N	view	2025-12-03 23:03:04
+207015	879	1	\N	view	2025-12-03 23:03:04
+383	879	1	\N	view	2025-12-03 23:03:04
+613	879	1	\N	view	2025-12-03 23:03:04
+614	879	1	\N	view	2025-12-03 23:03:04
+207014	879	1	\N	save	2025-12-03 22:59:27
+698	879	1	\N	view	2025-12-03 23:03:05
+383	879	1	\N	save	2025-12-03 23:03:06
+702	879	1	\N	save	2025-12-03 22:59:46
+698	879	1	\N	save	2025-12-03 22:59:59
+694	879	1	\N	save	2025-12-03 23:00:07
 \.
 
 
@@ -5879,7 +5907,7 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 13434	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-10 00:13:29	2022-03-10 00:13:29	\N	2b454e07-b0c0-4c13-8178-a0765e75ee23	541	\N	\N
 292	\N	\N	7	craft\\elements\\Entry	t	f	2020-01-17 08:35:54	2025-11-20 23:46:01	\N	efdd8ae2-385a-436b-a6c5-80cb490e477e	\N	\N	\N
 662	\N	\N	19	craft\\elements\\Entry	t	f	2020-01-25 12:09:50	2025-11-25 22:09:08	\N	d17111d8-cfb3-44ef-950a-5b3dfc90f325	\N	\N	\N
-211639	\N	\N	1	craft\\elements\\Asset	t	f	2025-11-25 22:06:23	2025-11-25 22:06:23	\N	172881a5-a67c-4c53-afa1-cea0ad4eb2b9	\N	\N	\N
+211639	\N	\N	1	craft\\elements\\Asset	t	f	2025-11-25 22:06:23	2025-12-01 22:34:58	\N	172881a5-a67c-4c53-afa1-cea0ad4eb2b9	\N	\N	\N
 206946	\N	13855	20	craft\\elements\\Entry	t	f	2024-02-06 21:31:14	2024-02-06 21:31:16	\N	6232cb11-923c-4afc-9d50-cc90f584dd1d	235	\N	\N
 206947	\N	13856	5	craft\\elements\\Entry	t	f	2024-02-06 21:31:15	2024-02-06 21:31:16	\N	7bf4edfc-1259-4556-b97a-5254be4c2ada	236	\N	\N
 206956	\N	13857	3	craft\\elements\\Entry	t	f	2024-02-06 21:58:39	2024-02-06 21:58:40	\N	36104c37-623e-4130-acd0-2e87afaf6150	18	\N	\N
@@ -5911,6 +5939,9 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 211610	\N	17983	19	craft\\elements\\Entry	t	f	2025-11-25 22:01:40	2025-11-25 22:01:40	\N	823282fe-5636-445a-9372-db6ac261195b	663	\N	\N
 211640	\N	17997	14	craft\\elements\\Entry	t	f	2025-11-25 22:06:37	2025-11-25 22:06:37	\N	46a0b636-7ce0-4e9a-b674-fc18e9d42a56	91	\N	\N
 211641	\N	17998	19	craft\\elements\\Entry	t	f	2025-11-25 22:06:37	2025-11-25 22:06:37	\N	b84fc6d0-0d6d-4582-91cb-12470c438822	660	\N	\N
+330	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-18 00:43:20	2025-12-01 22:26:51	\N	46a7b68a-d2f9-441b-aa6d-14d0010e44d9	\N	\N	\N
+288	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:29:47	2025-12-01 22:26:56	\N	39130b34-c103-4526-b5bf-c3e6fffac0c3	\N	\N	\N
+289	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:34:07	2025-12-01 22:26:56	\N	b404baac-5ccb-4e7a-a885-833436e407a4	\N	\N	\N
 12315	\N	2687	9	craft\\elements\\Entry	t	f	2022-02-19 12:06:35	2022-02-19 12:06:35	\N	88a06b03-b292-4d9a-ad97-06b40f85d4c8	60	\N	\N
 12346	\N	2694	9	craft\\elements\\Entry	t	f	2022-02-19 12:06:45	2022-02-19 12:06:45	\N	90ffd550-2d39-497a-b44a-fe824f89d877	60	\N	\N
 12377	\N	2701	9	craft\\elements\\Entry	t	f	2022-02-20 00:15:39	2022-02-20 00:15:39	\N	6797952b-6dca-475c-8a95-076393a67a3c	60	\N	\N
@@ -5923,9 +5954,6 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 12594	\N	2750	9	craft\\elements\\Entry	t	f	2022-02-21 12:06:29	2022-02-21 12:06:29	\N	51e31a20-9ae0-4d08-aee3-4e97740beb68	60	\N	\N
 12625	\N	2757	9	craft\\elements\\Entry	t	f	2022-02-22 00:13:10	2022-02-22 00:13:10	\N	6f7c57ff-759e-4278-9cbc-13488726337e	60	\N	\N
 206962	\N	13863	8	craft\\elements\\Entry	t	f	2024-02-06 21:58:40	2024-02-06 21:58:41	2025-11-21 00:38:14	f89ce97d-a50d-4c2e-b811-2a646265492a	206955	\N	\N
-330	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-18 00:43:20	2020-03-06 22:53:41	\N	46a7b68a-d2f9-441b-aa6d-14d0010e44d9	\N	\N	\N
-289	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:34:07	2020-03-06 22:53:38	\N	b404baac-5ccb-4e7a-a885-833436e407a4	\N	\N	\N
-288	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:29:47	2020-03-06 22:53:39	\N	39130b34-c103-4526-b5bf-c3e6fffac0c3	\N	\N	\N
 206976	\N	13870	8	craft\\elements\\Entry	t	f	2024-02-06 22:01:58	2024-02-06 22:01:59	2025-11-21 00:38:14	59be217f-cdcf-456f-ab95-551c37ea83b3	206955	\N	\N
 206990	\N	13877	8	craft\\elements\\Entry	t	f	2024-02-06 22:04:27	2024-02-06 22:04:29	2025-11-21 00:38:14	e0ed9c6d-e13d-457d-b485-bd5b1dad88c9	206955	\N	\N
 18	\N	\N	3	craft\\elements\\Entry	t	f	2019-11-30 07:40:13	2025-11-21 00:54:25	\N	de770f72-8ffa-4965-aeb5-92ece0ddf984	\N	\N	\N
@@ -5966,28 +5994,28 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 12172	\N	2655	10	craft\\elements\\Entry	t	f	2022-02-18 12:06:23	2022-02-18 12:06:23	\N	b3077c0d-a2aa-43d9-8996-dfe67d35d615	63	\N	\N
 12203	\N	2662	10	craft\\elements\\Entry	t	f	2022-02-18 12:06:34	2022-02-18 12:06:34	\N	ad9225f6-e851-4e80-b552-55f85c1b8d41	63	\N	\N
 12234	\N	2669	10	craft\\elements\\Entry	t	f	2022-02-19 00:14:40	2022-02-19 00:14:40	\N	c182e0ca-91cf-4e8e-89e3-05f05b1eb5ae	63	\N	\N
-698	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:13:19	2024-02-07 02:28:58	\N	9daaf97f-6437-43ab-882c-5b56a4ec4511	\N	\N	\N
-689	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:08:22	2024-02-07 02:28:59	\N	d9325c5f-a4ab-42ed-989c-9f943fbfe5ac	\N	\N	\N
-614	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-25 11:57:18	2024-02-07 00:47:43	\N	ab88806a-ab8e-449d-bb2d-daf2e9a95bdd	\N	\N	\N
-383	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:53	2024-02-07 01:04:11	\N	66400b67-3bc3-41d8-985d-a0172529cae7	\N	\N	\N
-382	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:49	2024-02-07 01:37:42	\N	93446de0-cad4-4f7d-8049-d99fc62a8280	\N	\N	\N
-381	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:34	2024-02-07 01:51:10	\N	80424337-e19a-46b5-b951-3f9ba9627002	\N	\N	\N
-380	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:31	2024-02-07 01:56:06	\N	b52e740c-1ec3-4c35-baf8-92082618c3ac	\N	\N	\N
-378	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:29	2024-02-07 02:02:03	\N	a163b225-52d2-4c6b-9982-51dd1dcc95ef	\N	\N	\N
-356	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-18 09:04:51	2024-02-07 02:02:21	\N	b031e7f6-7ce1-4b10-9ff6-81ef27983a31	\N	\N	\N
-355	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-18 09:02:57	2024-02-07 02:02:33	\N	9fe3914f-2c24-421d-ac99-d5b329480116	\N	\N	\N
-287	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:24:20	2024-02-07 02:29:00	\N	3c7b69b8-faf3-4217-91b0-6de2fc468f72	\N	\N	\N
-278	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:05:23	2024-02-07 02:29:01	\N	9bebd2cd-a94d-48e8-9008-4506220a4a7a	\N	\N	\N
-264	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 06:26:44	2024-02-07 04:18:54	\N	35c27a3e-8db4-412a-8193-632880e4f2c9	\N	\N	\N
-190	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-16 08:26:58	2024-02-07 02:32:26	\N	11a5cb4d-3bdc-4ba2-8c6f-9a39b1f5cc0f	\N	\N	\N
-102	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:08:12	2024-02-07 02:08:57	\N	d41bd2a5-3ec6-461a-8a59-e832f51bcc04	\N	\N	\N
-98	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:06:22	2024-02-07 02:11:49	\N	d33fb4d1-3c2a-408b-8411-f646ec549f42	\N	\N	\N
-94	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:05:42	2024-02-07 02:14:43	\N	9777e402-eb18-4a62-a9b5-4c89509f90f8	\N	\N	\N
-90	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:04:52	2024-02-07 02:25:09	\N	3b7d1cb8-1ee7-43e3-8a20-9275543c78e9	\N	\N	\N
-66	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-08 22:33:38	2024-02-07 02:26:54	\N	25603110-50d9-4a7d-b46c-f657df944ad0	\N	\N	\N
-48	\N	\N	1	craft\\elements\\Asset	t	f	2019-12-30 20:38:16	2024-02-07 02:29:00	\N	af219dc3-8622-452e-a9c6-e0c0dc62a0f0	\N	\N	\N
-38	\N	\N	1	craft\\elements\\Asset	t	f	2019-12-30 08:07:49	2024-02-07 02:29:00	\N	4b101f9d-66a2-460f-8cf4-f2324c4fd10a	\N	\N	\N
-32	\N	\N	1	craft\\elements\\Asset	t	f	2019-12-30 07:12:18	2024-02-07 02:29:01	\N	bbbdb842-c1f8-4818-a822-388576d752a7	\N	\N	\N
+614	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-25 11:57:18	2025-12-03 23:01:46	\N	ab88806a-ab8e-449d-bb2d-daf2e9a95bdd	\N	\N	\N
+48	\N	\N	1	craft\\elements\\Asset	t	f	2019-12-30 20:38:16	2025-12-01 22:26:53	\N	af219dc3-8622-452e-a9c6-e0c0dc62a0f0	\N	\N	\N
+698	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:13:19	2025-12-03 22:59:58	\N	9daaf97f-6437-43ab-882c-5b56a4ec4511	\N	\N	\N
+382	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:49	2025-12-01 22:26:56	\N	93446de0-cad4-4f7d-8049-d99fc62a8280	\N	\N	\N
+355	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-18 09:02:57	2025-12-01 22:26:56	\N	9fe3914f-2c24-421d-ac99-d5b329480116	\N	\N	\N
+190	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-16 08:26:58	2025-12-01 22:26:51	\N	11a5cb4d-3bdc-4ba2-8c6f-9a39b1f5cc0f	\N	\N	\N
+383	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:53	2025-12-03 23:03:06	\N	66400b67-3bc3-41d8-985d-a0172529cae7	\N	\N	\N
+90	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:04:52	2025-12-01 22:26:52	\N	3b7d1cb8-1ee7-43e3-8a20-9275543c78e9	\N	\N	\N
+380	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:31	2025-12-01 22:26:56	\N	b52e740c-1ec3-4c35-baf8-92082618c3ac	\N	\N	\N
+264	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 06:26:44	2025-12-01 22:26:56	\N	35c27a3e-8db4-412a-8193-632880e4f2c9	\N	\N	\N
+32	\N	\N	1	craft\\elements\\Asset	t	f	2019-12-30 07:12:18	2025-12-01 22:26:54	\N	bbbdb842-c1f8-4818-a822-388576d752a7	\N	\N	\N
+98	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:06:22	2025-12-01 22:26:56	\N	d33fb4d1-3c2a-408b-8411-f646ec549f42	\N	\N	\N
+94	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:05:42	2025-12-01 22:26:52	\N	9777e402-eb18-4a62-a9b5-4c89509f90f8	\N	\N	\N
+38	\N	\N	1	craft\\elements\\Asset	t	f	2019-12-30 08:07:49	2025-12-01 22:26:53	\N	4b101f9d-66a2-460f-8cf4-f2324c4fd10a	\N	\N	\N
+356	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-18 09:04:51	2025-12-01 22:26:56	\N	b031e7f6-7ce1-4b10-9ff6-81ef27983a31	\N	\N	\N
+378	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:29	2025-12-01 22:26:52	\N	a163b225-52d2-4c6b-9982-51dd1dcc95ef	\N	\N	\N
+102	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-09 07:08:12	2025-12-01 22:26:52	\N	d41bd2a5-3ec6-461a-8a59-e832f51bcc04	\N	\N	\N
+381	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:34	2025-12-01 22:26:51	\N	80424337-e19a-46b5-b951-3f9ba9627002	\N	\N	\N
+278	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:05:23	2025-12-01 22:26:54	\N	9bebd2cd-a94d-48e8-9008-4506220a4a7a	\N	\N	\N
+689	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:08:22	2025-12-03 23:00:42	\N	d9325c5f-a4ab-42ed-989c-9f943fbfe5ac	\N	\N	\N
+287	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 08:24:20	2025-12-01 22:26:55	\N	3c7b69b8-faf3-4217-91b0-6de2fc468f72	\N	\N	\N
+66	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-08 22:33:38	2025-12-01 22:26:51	\N	25603110-50d9-4a7d-b46c-f657df944ad0	\N	\N	\N
 12265	\N	2676	10	craft\\elements\\Entry	t	f	2022-02-19 00:14:52	2022-02-19 00:14:53	\N	875d2cc3-644a-41e3-9aef-c9ed40c9e2e1	63	\N	\N
 12296	\N	2683	10	craft\\elements\\Entry	t	f	2022-02-19 12:06:32	2022-02-19 12:06:32	\N	caf0f381-556b-4290-8e8a-077a48d2fc14	63	\N	\N
 12327	\N	2690	10	craft\\elements\\Entry	t	f	2022-02-19 12:06:42	2022-02-19 12:06:42	\N	45142139-5630-4a43-8d1c-5a587d94fcce	63	\N	\N
@@ -6332,6 +6360,7 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 268	\N	\N	5	craft\\elements\\Entry	t	f	2020-01-17 06:30:56	2020-01-17 06:30:56	\N	a0fc272e-ac64-49ed-8113-8304f213d27d	\N	\N	\N
 271	\N	\N	5	craft\\elements\\Entry	t	f	2020-01-17 06:30:57	2020-01-17 00:09:04	\N	5e3a9302-717d-47c7-805c-4da0b7fca0b3	\N	\N	\N
 274	\N	\N	5	craft\\elements\\Entry	t	f	2020-01-17 06:56:49	2020-01-17 06:56:49	\N	53e04a2c-2420-4403-9d65-d4354fa0bedb	\N	\N	\N
+211645	\N	\N	1	craft\\elements\\Asset	t	f	2025-12-01 22:26:52	2025-12-01 22:28:32	2025-12-01 22:28:32	8c85d97d-e013-4596-9df4-3ffe27b59b89	\N	\N	\N
 211613	\N	17984	14	craft\\elements\\Entry	t	f	2025-11-25 22:02:37	2025-11-25 22:02:37	\N	7a53f15b-3a29-4f43-a262-da580b66581c	91	\N	\N
 211614	\N	17985	19	craft\\elements\\Entry	t	f	2025-11-25 22:02:37	2025-11-25 22:02:37	\N	a754198b-a1c6-43fc-8559-d2fe21becafe	662	\N	\N
 286	\N	\N	5	craft\\elements\\Entry	t	f	2020-01-17 08:06:51	2020-01-17 00:09:04	\N	ce1dda88-96df-41dd-b8e6-b696a67e11d2	\N	\N	\N
@@ -7476,23 +7505,23 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 207034	\N	\N	25	craft\\elements\\Entry	t	f	2024-02-07 04:01:22	2024-02-07 04:02:00	\N	3ab1b4b2-6b9b-47e2-b50c-a074f5f16e5e	\N	\N	\N
 207035	\N	13895	25	craft\\elements\\Entry	t	f	2024-02-07 04:02:00	2024-02-07 04:02:01	\N	885ff544-b45c-4676-9b41-3930075bcc80	207034	\N	\N
 207036	\N	\N	25	craft\\elements\\Entry	t	f	2024-02-07 04:02:29	2024-02-07 04:03:34	\N	4a1eb238-16b3-401b-a339-8cdfd7e592d0	\N	\N	\N
-207017	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:52	2024-02-07 02:28:56	\N	67fc9b51-326c-4362-ba16-51712d5fc443	\N	\N	\N
 211629	\N	17992	14	craft\\elements\\Entry	t	f	2025-11-25 22:03:35	2025-11-25 22:03:36	\N	d93a8a4b-58bb-4769-8a33-0d53b685b6a8	91	\N	\N
 13634	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:06:55	2022-03-15 12:06:55	\N	11d799c1-165a-4b0b-9038-d4dda7270be6	67	\N	\N
 207013	\N	\N	5	craft\\elements\\Entry	t	f	2024-02-07 00:39:56	2024-02-07 00:39:57	\N	2e84343f-3637-4a1e-85fc-757e00e92b0c	\N	\N	\N
 211630	\N	17993	19	craft\\elements\\Entry	t	f	2025-11-25 22:03:36	2025-11-25 22:03:36	\N	d494fac1-99ff-461e-b248-69d9b54fe0bf	662	\N	\N
+694	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:11:34	2025-12-03 23:00:07	\N	da857aff-7491-4e25-97fe-ccfceb3a29bd	\N	\N	\N
 13651	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:06:58	2022-03-15 12:06:58	\N	c723ebf7-cc40-4b98-9ab0-ab1cf4e539e6	541	\N	\N
 13658	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:06:59	2022-03-15 12:06:59	\N	4ede59d4-a355-49f4-a55c-c8b2fe2500e7	525	\N	\N
 13659	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:06:59	2022-03-15 12:06:59	\N	bba793e1-8b52-416b-971c-b884179c3a72	526	\N	\N
 13682	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:07:10	2022-03-15 12:07:10	\N	a57df108-eaae-46bd-8d1b-ff92400d0489	541	\N	\N
 13689	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:07:11	2022-03-15 12:07:11	\N	b522fb13-38ae-446d-85fa-14acc80f96d5	525	\N	\N
 13690	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:07:11	2022-03-15 12:07:11	\N	3ec613b9-c2e1-4fa9-9d1a-98501fd146d6	526	\N	\N
-207016	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:42	2024-02-07 02:28:57	\N	354051fe-f982-4708-b96a-7d9161798eb8	\N	\N	\N
-207015	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:34	2024-02-07 02:28:57	\N	ec067c03-d128-4623-b59e-8e494af75825	\N	\N	\N
-207014	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:17	2024-02-07 02:28:58	\N	7cea68df-f582-47db-a6ee-06eb2b1428a4	\N	\N	\N
-694	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:11:34	2024-02-07 02:28:59	\N	da857aff-7491-4e25-97fe-ccfceb3a29bd	\N	\N	\N
-379	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:30	2024-02-07 02:30:59	\N	35816466-1011-4319-810f-9b3bf0e38dbf	\N	\N	\N
-23	\N	\N	1	craft\\elements\\Asset	t	f	2019-11-30 07:43:49	2024-02-07 02:29:02	\N	57072ec3-8a56-49ce-96cc-f5e4ba15858b	\N	\N	\N
+23	\N	\N	1	craft\\elements\\Asset	t	f	2019-11-30 07:43:49	2025-12-01 22:26:53	\N	57072ec3-8a56-49ce-96cc-f5e4ba15858b	\N	\N	\N
+207014	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:17	2025-12-03 22:59:27	\N	7cea68df-f582-47db-a6ee-06eb2b1428a4	\N	\N	\N
+379	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-23 11:50:30	2025-12-01 22:26:55	\N	35816466-1011-4319-810f-9b3bf0e38dbf	\N	\N	\N
+207015	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:34	2025-12-03 22:59:09	\N	ec067c03-d128-4623-b59e-8e494af75825	\N	\N	\N
+207016	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:42	2025-12-03 22:58:53	\N	354051fe-f982-4708-b96a-7d9161798eb8	\N	\N	\N
+207017	\N	\N	1	craft\\elements\\Asset	t	f	2024-02-07 00:40:52	2025-12-03 22:58:33	\N	67fc9b51-326c-4362-ba16-51712d5fc443	\N	\N	\N
 207053	\N	13897	3	craft\\elements\\Entry	t	f	2024-02-07 04:18:53	2024-02-07 04:18:55	\N	77fdf374-518c-49e1-b800-42bf7db500e4	18	\N	\N
 207054	\N	13898	18	craft\\elements\\Entry	t	f	2024-02-07 04:18:54	2024-02-07 04:18:55	\N	09f5344d-e534-4082-9b70-fb07904da601	233	\N	\N
 207055	\N	13899	5	craft\\elements\\Entry	t	f	2024-02-07 04:18:54	2024-02-07 04:18:55	\N	f5a25f5c-9d5b-4778-b761-6b5be3b2ae01	265	\N	\N
@@ -7519,6 +7548,7 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 207120	\N	13921	19	craft\\elements\\Entry	t	f	2024-02-07 19:32:28	2024-02-07 19:33:35	\N	144ab5f9-39f8-4006-b7ec-65452b0f29e4	234	\N	\N
 207121	\N	13922	20	craft\\elements\\Entry	t	f	2024-02-07 19:32:28	2024-02-07 19:33:35	\N	4568450f-6b8c-4e8e-9623-d7010cda7de6	235	\N	\N
 207122	\N	13923	5	craft\\elements\\Entry	t	f	2024-02-07 19:32:28	2024-02-07 19:33:35	\N	61da508d-f660-4390-b623-2b684ba1dfc5	236	\N	\N
+262	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 06:26:29	2025-12-01 22:26:51	\N	6375a688-3290-4abb-ab23-2d60766dfdfa	\N	\N	\N
 661	\N	\N	18	craft\\elements\\Entry	t	f	2020-01-25 12:09:50	2025-11-25 22:09:08	\N	0a2ef8a7-77cd-4f49-b37c-e65287255db1	\N	\N	\N
 207142	\N	13933	3	craft\\elements\\Entry	t	f	2024-02-07 21:34:55	2024-02-07 21:34:56	\N	bdd94a1e-c929-437c-bd5d-2bc00d360aea	18	\N	\N
 207143	\N	13934	18	craft\\elements\\Entry	t	f	2024-02-07 21:34:55	2024-02-07 21:34:56	\N	ed2e30a9-78d9-437f-ab76-ebcadb2b9242	233	\N	\N
@@ -7527,6 +7557,7 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 207146	\N	13937	26	craft\\elements\\Entry	t	f	2024-02-07 21:34:56	2024-02-07 21:34:57	\N	e490f870-80b0-4ce3-b870-97009f28078f	207133	\N	\N
 207147	\N	13938	20	craft\\elements\\Entry	t	f	2024-02-07 21:34:56	2024-02-07 21:34:57	\N	8e23d92c-4f60-4681-b7aa-c85d39faea30	235	\N	\N
 207148	\N	13939	5	craft\\elements\\Entry	t	f	2024-02-07 21:34:56	2024-02-07 21:34:57	\N	6cc3df53-752c-4585-8791-c636f203c1dc	236	\N	\N
+17	\N	\N	1	craft\\elements\\Asset	t	f	2019-11-30 07:39:55	2025-12-01 22:26:56	\N	50d2b399-5861-4275-aee0-067c7b9c4d0b	\N	\N	\N
 207133	\N	\N	26	craft\\elements\\Entry	t	f	2024-02-07 20:12:57	2024-02-07 21:56:26	\N	7624be40-021e-48d2-9f4d-7ced25195647	\N	\N	\N
 207150	\N	13941	3	craft\\elements\\Entry	t	f	2024-02-07 21:56:26	2024-02-07 21:56:26	\N	11b99195-069f-4cdc-90be-9812b3e0a7ee	18	\N	\N
 207151	\N	13942	18	craft\\elements\\Entry	t	f	2024-02-07 21:56:26	2024-02-07 21:56:26	\N	fecbf1b2-6f9d-4fb7-be69-84ee02bac9e4	233	\N	\N
@@ -7534,9 +7565,7 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 207153	\N	13944	19	craft\\elements\\Entry	t	f	2024-02-07 21:56:26	2024-02-07 21:56:27	\N	46aedfcb-c884-43aa-9cdc-15eb4767fcc4	234	\N	\N
 207155	\N	13946	20	craft\\elements\\Entry	t	f	2024-02-07 21:56:26	2024-02-07 21:56:27	\N	1f1c334a-719b-4918-9f0e-772004818f27	235	\N	\N
 233	\N	\N	18	craft\\elements\\Entry	t	f	2020-01-17 00:06:47	2025-11-18 01:08:13	\N	ebc4ff0d-315f-42bc-8310-b0babbdd19aa	\N	\N	\N
-263	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 06:26:36	2024-02-07 04:18:54	\N	f4bc2f65-27f6-496d-bb94-371b329f7bfb	\N	\N	\N
-262	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 06:26:29	2024-02-07 04:18:54	\N	6375a688-3290-4abb-ab23-2d60766dfdfa	\N	\N	\N
-17	\N	\N	1	craft\\elements\\Asset	t	f	2019-11-30 07:39:55	2024-02-07 04:18:54	\N	50d2b399-5861-4275-aee0-067c7b9c4d0b	\N	\N	\N
+263	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-17 06:26:36	2025-12-01 22:26:57	\N	f4bc2f65-27f6-496d-bb94-371b329f7bfb	\N	\N	\N
 207154	\N	13945	26	craft\\elements\\Entry	t	f	2024-02-07 21:56:26	2025-11-20 23:54:48	\N	36bb1e73-6319-4bd1-b3f7-593a743faaf8	207133	\N	\N
 207059	\N	13903	8	craft\\elements\\Entry	t	f	2024-02-07 04:18:55	2024-02-07 04:18:56	2025-11-21 00:38:14	eb052c07-79a6-47c2-917d-12219331db06	206955	\N	\N
 207115	\N	13917	8	craft\\elements\\Entry	t	f	2024-02-07 19:32:28	2024-02-07 19:32:42	2025-11-21 00:38:14	101244a0-cf61-473d-9893-f117dfbe33e4	206955	\N	\N
@@ -7832,13 +7861,17 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 527	\N	\N	19	craft\\elements\\Entry	t	f	2020-01-23 11:54:44	2025-11-24 21:40:36	\N	c3066681-080c-47fa-9c0d-91cf3eee4292	\N	\N	\N
 12311	\N	\N	15	craft\\elements\\Entry	t	f	2022-02-19 12:06:34	2022-02-19 12:06:34	\N	982074b1-faf3-4f80-a53c-06f433bc3200	542	\N	\N
 211634	\N	17994	14	craft\\elements\\Entry	t	f	2025-11-25 22:04:00	2025-11-25 22:04:00	\N	153feed2-cee9-4c9d-9e9f-f61b2b3c0540	91	\N	\N
+211183	\N	\N	1	craft\\elements\\Asset	t	f	2025-11-20 22:10:40	2025-12-01 22:26:52	\N	110a475a-fe8c-41af-bb5a-a2a685ff9cef	\N	\N	\N
 211173	\N	17930	9	craft\\elements\\Entry	t	f	2025-11-20 21:49:34	2025-11-20 21:49:34	\N	fd76bc66-0194-4ee0-9c91-774ae2be6042	60	\N	\N
 211168	\N	17928	9	craft\\elements\\Entry	t	f	2025-11-20 20:15:47	2025-11-20 20:15:47	\N	9e6cb6b8-1522-4c20-93f8-36208ffa0d5e	60	\N	\N
 211169	\N	17929	7	craft\\elements\\Entry	t	f	2025-11-20 20:15:47	2025-11-20 20:15:47	\N	512b9461-cd1e-4db0-a862-d6b92bdca83e	524	\N	\N
+211155	\N	\N	28	craft\\elements\\Asset	t	f	2025-11-20 20:12:02	2025-12-01 22:27:12	\N	2ef8be49-a556-42e3-9454-35725b9744bd	\N	\N	\N
+702	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:14:23	2025-12-03 22:59:46	\N	25abc108-4fe3-40cd-b43b-05e5ea5af87d	\N	\N	\N
 211147	\N	17917	9	craft\\elements\\Entry	t	f	2025-11-20 20:02:22	2025-11-20 20:02:22	\N	e246f1ca-878b-4041-a8c7-a7359e412061	60	\N	\N
 211148	\N	17918	7	craft\\elements\\Entry	t	f	2025-11-20 20:02:22	2025-11-20 20:02:22	\N	d3e031fa-3826-4851-a808-b96ab7981a26	524	\N	\N
 211149	\N	17919	19	craft\\elements\\Entry	t	f	2025-11-20 20:02:22	2025-11-20 20:02:22	\N	15c5fc36-be42-47e4-a41b-6d754e3c5006	527	\N	\N
 211150	\N	17920	20	craft\\elements\\Entry	t	f	2025-11-20 20:02:22	2025-11-20 20:02:22	\N	de07db0f-9877-4a59-a584-74c0de3e2bc8	528	\N	\N
+613	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-25 11:57:14	2025-12-03 23:02:32	\N	e805da32-4460-40a5-adde-0b86e4c7429f	\N	\N	\N
 211139	\N	17913	13	craft\\elements\\Entry	t	f	2025-11-19 21:28:17	2025-11-19 21:28:17	\N	fd8bbd50-2c91-4fa4-a39d-53eca68e374b	56	\N	\N
 211140	\N	17914	19	craft\\elements\\Entry	t	f	2025-11-19 21:28:17	2025-11-19 21:28:17	\N	e0c78ea9-782f-43e9-8834-69251bccef5d	540	\N	\N
 211141	\N	17915	8	craft\\elements\\Entry	t	f	2025-11-19 21:28:17	2025-11-19 21:28:17	\N	ffddf1ff-2622-4b4e-8100-fdb904e237ff	541	\N	\N
@@ -7848,8 +7881,6 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 13155	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-08 00:13:16	2022-03-08 00:13:16	\N	09c02323-369e-46f0-97b9-585ae4122382	541	\N	\N
 13386	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-10 00:13:15	2022-03-10 00:13:15	\N	b9a16c12-04e6-46f4-b7e7-6d069638f153	67	\N	\N
 13665	\N	\N	8	craft\\elements\\Entry	t	f	2022-03-15 12:07:06	2022-03-15 12:07:06	\N	17b6d415-496b-436a-a828-c53f6cbda75c	67	\N	\N
-702	\N	\N	1	craft\\elements\\Asset	t	f	2020-02-17 16:14:23	2024-02-07 02:30:34	\N	25abc108-4fe3-40cd-b43b-05e5ea5af87d	\N	\N	\N
-613	\N	\N	1	craft\\elements\\Asset	t	f	2020-01-25 11:57:14	2024-02-07 00:49:28	\N	e805da32-4460-40a5-adde-0b86e4c7429f	\N	\N	\N
 525	\N	\N	8	craft\\elements\\Entry	t	f	2020-01-23 11:54:44	2025-11-20 20:07:41	\N	e46bddb5-3ac7-4262-b679-636355cf63cf	\N	\N	\N
 528	\N	\N	20	craft\\elements\\Entry	t	f	2020-01-23 11:54:44	2025-11-20 20:12:55	\N	12ebad54-4bc4-4d67-9947-6b96506b3713	\N	\N	\N
 211159	\N	17923	9	craft\\elements\\Entry	t	f	2025-11-20 20:12:55	2025-11-20 20:12:55	\N	b093f29f-6501-4bd1-86dd-3e3f61118720	60	\N	\N
@@ -7857,7 +7888,6 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 211161	\N	17925	20	craft\\elements\\Entry	t	f	2025-11-20 20:12:55	2025-11-20 20:12:55	\N	90ccd852-0336-4a0b-b5fe-511dc5a8680b	528	\N	\N
 211153	\N	17921	9	craft\\elements\\Entry	t	f	2025-11-20 20:07:41	2025-11-20 20:07:41	\N	379bd0ac-cde1-4790-8fff-b92b453ee7d5	60	\N	\N
 211154	\N	17922	8	craft\\elements\\Entry	t	f	2025-11-20 20:07:41	2025-11-20 20:07:42	\N	5d6f281b-4548-4fa7-980a-992f5c5c56cd	525	\N	\N
-211155	\N	\N	28	craft\\elements\\Asset	t	f	2025-11-20 20:12:02	2025-11-20 20:12:14	\N	2ef8be49-a556-42e3-9454-35725b9744bd	\N	\N	\N
 211164	\N	17926	9	craft\\elements\\Entry	t	f	2025-11-20 20:15:32	2025-11-20 20:15:32	\N	4f59a85d-4b08-4c06-a055-1bd9048418a0	60	\N	\N
 211165	\N	17927	7	craft\\elements\\Entry	t	f	2025-11-20 20:15:32	2025-11-20 20:15:32	\N	a6a2d4b1-3e84-46ca-bb08-d64ca97ab601	524	\N	\N
 211174	\N	17931	7	craft\\elements\\Entry	t	f	2025-11-20 21:49:34	2025-11-20 21:49:34	\N	63acbf90-025a-4186-9ff2-0eda83dd53d4	524	\N	\N
@@ -7867,7 +7897,6 @@ COPY public.elements (id, "draftId", "revisionId", "fieldLayoutId", type, enable
 211177	\N	17932	9	craft\\elements\\Entry	t	f	2025-11-20 21:54:09	2025-11-20 21:54:09	\N	f5f98676-bae7-4c60-9f27-637efb8b3411	60	\N	\N
 211178	\N	17933	7	craft\\elements\\Entry	t	f	2025-11-20 21:54:09	2025-11-20 21:54:09	\N	22edce9d-073f-4da2-bf5e-5c98e8b43b35	524	\N	\N
 211182	\N	\N	5	craft\\elements\\Entry	t	f	2025-11-20 22:01:15	2025-11-20 22:01:15	\N	2cc365c8-6635-4d6a-b3ef-9133118e0eca	119	\N	\N
-211183	\N	\N	1	craft\\elements\\Asset	t	f	2025-11-20 22:10:40	2025-11-20 22:14:02	\N	110a475a-fe8c-41af-bb5a-a2a685ff9cef	\N	\N	\N
 211185	\N	17934	14	craft\\elements\\Entry	t	f	2025-11-20 22:58:48	2025-11-20 22:58:48	\N	08b9d070-6f76-4f06-813f-bcda00045b6e	95	\N	\N
 295	\N	\N	7	craft\\elements\\Entry	t	f	2020-01-17 08:35:54	2025-11-20 23:46:01	\N	727eadd6-311c-4cb7-aba0-c9b31f1ef86a	\N	\N	\N
 211602	\N	17979	12	craft\\elements\\Entry	t	f	2025-11-25 20:47:47	2025-11-25 20:47:47	\N	7cce7188-bb98-49d5-8577-cb566756a3c8	58	\N	\N
@@ -9645,7 +9674,7 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 12246	12185	1	\N	\N	t	2022-02-18 12:06:26	2024-02-06 20:59:48	b1c307b4-39b0-4d4c-ac0e-0ec4f361ba1a	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageLeft", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<figure class=\\"image\\"><img src=\\"{asset:382:url||http://localhost:8123/assets/volumes/images/grant-ritchie-p-4xI3UPCCY-unsplash.jpg}\\" alt=\\"\\" /></figure><h3>Visiting Info</h3><p>Europa Museum is open every day:</p><p>Monday - Friday from 8am to 5pm<br />Saturday - Sunday from 8am to 9pm</p><p><br />Closed on the following holidays:<br /></p><ul><li>January 1 (New Year’s Day)</li><li>December 25 (Christmas Day)</li></ul><p><strong><br />Email:</strong> <a href=\\"mailto:hello@pixelandtonic.com\\">hello@pixelandtonic.com</a></p><p><strong>Telephone:</strong> <a href=\\"tel:+18557005115\\">+1 855-700-5115</a></p><p><strong>Address:</strong> <br /><a href=\\"https://goo.gl/maps/7R6cCWcELV4hN3QF7\\" target=\\"_blank\\" rel=\\"noreferrer noopener\\">20832 SE Humber Ln <br />Bend, OR 97702, USA</a><br /></p>", "a23485b0-fc56-44e9-870e-51520b2e3073": false}
 12339	12278	1	\N	\N	t	2022-02-19 00:14:55	2024-02-06 20:59:49	a4d3e461-60f1-462e-bc3d-767f2b8621df	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageLeft", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<figure class=\\"image\\"><img src=\\"{asset:382:url||http://localhost:8123/assets/volumes/images/grant-ritchie-p-4xI3UPCCY-unsplash.jpg}\\" alt=\\"\\" /></figure><h3>Visiting Info</h3><p>Europa Museum is open every day:</p><p>Monday - Friday from 8am to 5pm<br />Saturday - Sunday from 8am to 9pm</p><p><br />Closed on the following holidays:<br /></p><ul><li>January 1 (New Year’s Day)</li><li>December 25 (Christmas Day)</li></ul><p><strong><br />Email:</strong> <a href=\\"mailto:hello@pixelandtonic.com\\">hello@pixelandtonic.com</a></p><p><strong>Telephone:</strong> <a href=\\"tel:+18557005115\\">+1 855-700-5115</a></p><p><strong>Address:</strong> <br /><a href=\\"https://goo.gl/maps/7R6cCWcELV4hN3QF7\\" target=\\"_blank\\" rel=\\"noreferrer noopener\\">20832 SE Humber Ln <br />Bend, OR 97702, USA</a><br /></p>", "a23485b0-fc56-44e9-870e-51520b2e3073": false}
 13264	13176	1	\N	\N	t	2022-03-08 00:13:26	2022-03-08 00:13:26	45b7549b-3d31-4528-a213-ffff8aad8ee0	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "DISCOVER OUR CURRENT, UPCOMING, AND PAST EXHIBITIONS."}
-218090	207015	1	\N	\N	t	2024-02-07 00:40:34	2024-02-07 00:44:53	b0ab859c-7a32-4441-982d-2bde02e36915	The Course of Empire (Destruction)	\N
+218090	207015	1	\N	\N	t	2024-02-07 00:40:34	2025-12-03 22:59:09	b0ab859c-7a32-4441-982d-2bde02e36915	The Course of Empire (Destruction)	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Cole Thomas"}
 12380	12319	1	\N	\N	t	2022-02-19 12:06:36	2024-02-06 20:59:49	3f911f37-225d-4f1b-83ad-d0ff4ae5fe56	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageFullWidth", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<h4>Pellentesque sit amet</h4><h5>01.20 — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5><p>Mi ipsum faucibus vitae aliquet nec ullamcorper. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Morbi quis commodo odio aenean sed adipiscing diam. Non odio euismod lacinia at. Turpis tincidunt id aliquet risus feugiat in ante.<br /><br /></p><figure class=\\"image\\"><img src=\\"{asset:66:url||http://localhost:8123/assets/volumes/images/flipboard-Ylus81fS7q4-unsplash.jpg}\\" alt=\\"\\" /></figure><p><br />Ornare suspendisse sed nisi lacus sed. Urna id volutpat lacus laoreet non curabitur gravida arcu. Quam lacus suspendisse faucibus interdum. Mauris nunc congue nisi vitae. Quisque egestas diam in arcu cursus euismod.</p><p>Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Lacinia quis vel eros donec ac odio. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Neque gravida in fermentum et sollicitudin. Feugiat in ante metus dictum at tempor commodo.</p>", "a23485b0-fc56-44e9-870e-51520b2e3073": true}
 12432	12371	1	\N	\N	t	2022-02-20 00:15:38	2024-02-06 20:59:50	8bee566a-d255-4f7b-a196-c104ff8f4ee8	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageLeft", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<figure class=\\"image\\"><img src=\\"{asset:382:url||http://localhost:8123/assets/volumes/images/grant-ritchie-p-4xI3UPCCY-unsplash.jpg}\\" alt=\\"\\" /></figure><h3>Visiting Info</h3><p>Europa Museum is open every day:</p><p>Monday - Friday from 8am to 5pm<br />Saturday - Sunday from 8am to 9pm</p><p><br />Closed on the following holidays:<br /></p><ul><li>January 1 (New Year’s Day)</li><li>December 25 (Christmas Day)</li></ul><p><strong><br />Email:</strong> <a href=\\"mailto:hello@pixelandtonic.com\\">hello@pixelandtonic.com</a></p><p><strong>Telephone:</strong> <a href=\\"tel:+18557005115\\">+1 855-700-5115</a></p><p><strong>Address:</strong> <br /><a href=\\"https://goo.gl/maps/7R6cCWcELV4hN3QF7\\" target=\\"_blank\\" rel=\\"noreferrer noopener\\">20832 SE Humber Ln <br />Bend, OR 97702, USA</a><br /></p>", "a23485b0-fc56-44e9-870e-51520b2e3073": false}
 12442	12381	1	\N	\N	t	2022-02-20 00:15:39	2024-02-06 20:59:50	e195fb88-0010-4fca-acd0-2caa379498e0	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageFullWidth", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<h4>Pellentesque sit amet</h4><h5>01.20 — Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h5><p>Mi ipsum faucibus vitae aliquet nec ullamcorper. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Morbi quis commodo odio aenean sed adipiscing diam. Non odio euismod lacinia at. Turpis tincidunt id aliquet risus feugiat in ante.<br /><br /></p><figure class=\\"image\\"><img src=\\"{asset:66:url||http://localhost:8123/assets/volumes/images/flipboard-Ylus81fS7q4-unsplash.jpg}\\" alt=\\"\\" /></figure><p><br />Ornare suspendisse sed nisi lacus sed. Urna id volutpat lacus laoreet non curabitur gravida arcu. Quam lacus suspendisse faucibus interdum. Mauris nunc congue nisi vitae. Quisque egestas diam in arcu cursus euismod.</p><p>Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Lacinia quis vel eros donec ac odio. Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Neque gravida in fermentum et sollicitudin. Feugiat in ante metus dictum at tempor commodo.</p>", "a23485b0-fc56-44e9-870e-51520b2e3073": true}
@@ -9774,7 +9803,6 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 87	87	1	special-events	news/category/special-events	t	2020-01-09 07:01:07	2025-11-17 21:59:15	325646c0-0055-4a44-873d-5bc881f6df09	Special Events	\N
 190	190	1	\N	\N	t	2020-01-16 08:26:58	2024-02-07 02:07:34	d9afbbb7-da9a-4e57-8bd1-19687375a8a3	Sensory Art House Abstract Painting	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Paul Blenkhorn, https://unsplash.com/@sensoryarthouse"}
 694	694	1	\N	\N	t	2020-02-17 16:11:34	2024-02-07 02:28:59	c3425f12-6967-4048-9113-389b3817fee9	Study for Improvisation V	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Minneapolis Institute of Arts: Charles Walbridge, 12 January 2015, Public Domain, https://commons.wikimedia.org/w/index.php?curid=38965272", "d67bb30f-1456-486a-991d-618c2abe2c36": "“Study for Improvisation V” — 1911, Wassily Kandinsky"}
-689	689	1	\N	\N	t	2020-02-17 16:08:22	2024-02-07 02:28:59	8e6ed6db-4d50-4a44-a0db-aabc41924fed	Landscape with Factory Chimney	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Solomon R. Guggenheim Museum", "d67bb30f-1456-486a-991d-618c2abe2c36": "“Landscape with Factory Chimney” — 1910, Vassily Kandinsky"}
 13569	13481	1	styleguide	styleguide	t	2022-03-10 12:06:32	2022-03-10 12:06:32	ce26b1bc-0b2a-4603-b6b8-605ba2126049	Styleguide	\N
 13605	13517	1	styleguide	styleguide	t	2022-03-11 00:16:13	2022-03-11 00:16:13	4e14b774-11b2-4ea1-a873-9d27c5976fd3	Styleguide	\N
 13636	13548	1	styleguide	styleguide	t	2022-03-11 00:16:25	2022-03-11 00:16:25	94717841-fa7d-4582-b297-18772a9a0f66	Styleguide	\N
@@ -9782,6 +9810,7 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 13693	13605	1	styleguide	styleguide	t	2022-03-15 00:14:14	2022-03-15 00:14:14	4149abc4-1eab-428d-b8a8-5b107eaae391	Styleguide	\N
 13724	13636	1	styleguide	styleguide	t	2022-03-15 12:06:55	2022-03-15 12:06:55	387de65c-1603-4543-944e-9e3c6b5538b1	Styleguide	\N
 13755	13667	1	styleguide	styleguide	t	2022-03-15 12:07:07	2022-03-15 12:07:07	2004d1ae-123c-48b1-8437-763f1bf2456f	Styleguide	\N
+689	689	1	\N	\N	t	2020-02-17 16:08:22	2025-12-03 23:00:42	8e6ed6db-4d50-4a44-a0db-aabc41924fed	Landscape with Factory Chimney	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Solomon R. Guggenheim Museum", "d67bb30f-1456-486a-991d-618c2abe2c36": "“Landscape with Factory Chimney” — 1910, Wassily Kandinsky"}
 594	594	1	\N	\N	t	2020-01-24 20:14:37	2025-11-19 20:57:52	df20d231-9bc5-4e35-80f5-22e2ce0bed2d	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "1", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [], "b8be8189-563c-449a-a7cf-bc40d8cc6421": [264, 263, 262, 17]}
 603	603	1	\N	\N	t	2020-01-24 20:16:05	2025-11-19 20:57:52	f08e7cbd-8231-4a95-86e8-26e42c114353	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": true, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [8, 49, 39, 18], "b07a2cc5-1456-407e-9226-bf0cad7d11d6": "Related Exhibits", "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
 13298	13210	1	\N	\N	t	2022-03-08 12:06:42	2025-11-19 20:57:57	625bddf3-f892-434f-a448-7b80f86f6b35	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [18, 39, 8], "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
@@ -9873,9 +9902,9 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 11861	11800	1	contact	contact	t	2022-02-15 12:06:18	2022-02-15 12:06:18	6737d0c7-462e-4a42-a7c1-009bec573bc6	Contact	{"a9a11945-755b-446d-a2ab-867d0549717a": "{\\"bundleVersion\\":\\"1.0.22\\",\\"sourceBundleType\\":\\"field\\",\\"sourceId\\":null,\\"sourceName\\":null,\\"sourceHandle\\":null,\\"sourceType\\":\\"field\\",\\"typeId\\":null,\\"sourceTemplate\\":\\"\\",\\"sourceSiteId\\":null,\\"sourceAltSiteSettings\\":[],\\"sourceDateUpdated\\":\\"2022-02-15T04:06:18-08:00\\",\\"metaGlobalVars\\":{\\"language\\":null,\\"mainEntityOfPage\\":\\"\\",\\"seoTitle\\":\\"\\",\\"siteNamePosition\\":\\"\\",\\"seoDescription\\":\\"\\",\\"seoKeywords\\":\\"\\",\\"seoImage\\":\\"\\",\\"seoImageWidth\\":\\"\\",\\"seoImageHeight\\":\\"\\",\\"seoImageDescription\\":\\"\\",\\"canonicalUrl\\":\\"\\",\\"robots\\":\\"\\",\\"ogType\\":\\"\\",\\"ogTitle\\":\\"\\",\\"ogSiteNamePosition\\":\\"\\",\\"ogDescription\\":\\"\\",\\"ogImage\\":\\"\\",\\"ogImageWidth\\":\\"\\",\\"ogImageHeight\\":\\"\\",\\"ogImageDescription\\":\\"\\",\\"twitterCard\\":\\"\\",\\"twitterCreator\\":\\"\\",\\"twitterTitle\\":\\"\\",\\"twitterSiteNamePosition\\":\\"\\",\\"twitterDescription\\":\\"\\",\\"twitterImage\\":\\"\\",\\"twitterImageWidth\\":\\"\\",\\"twitterImageHeight\\":\\"\\",\\"twitterImageDescription\\":\\"\\",\\"inherited\\":[],\\"overrides\\":[]},\\"metaSiteVars\\":{\\"siteName\\":\\"Europa Museum\\",\\"identity\\":null,\\"creator\\":null,\\"twitterHandle\\":\\"\\",\\"facebookProfileId\\":\\"\\",\\"facebookAppId\\":\\"\\",\\"googleSiteVerification\\":\\"\\",\\"bingSiteVerification\\":\\"\\",\\"pinterestSiteVerification\\":\\"\\",\\"facebookSiteVerification\\":\\"\\",\\"sameAsLinks\\":[],\\"siteLinksSearchTarget\\":\\"\\",\\"siteLinksQueryInput\\":\\"\\",\\"referrer\\":\\"no-referrer-when-downgrade\\",\\"additionalSitemapUrls\\":[],\\"additionalSitemapUrlsDateUpdated\\":null,\\"additionalSitemaps\\":[]},\\"metaSitemapVars\\":{\\"sitemapUrls\\":null,\\"sitemapAssets\\":null,\\"sitemapFiles\\":null,\\"sitemapAltLinks\\":null,\\"sitemapChangeFreq\\":\\"\\",\\"sitemapPriority\\":\\"\\",\\"sitemapLimit\\":null,\\"structureDepth\\":null,\\"sitemapImageFieldMap\\":[],\\"sitemapVideoFieldMap\\":[],\\"inherited\\":[],\\"overrides\\":[]},\\"metaContainers\\":{\\"MetaTagContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"General Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContaineropengraph\\":{\\"data\\":[],\\"name\\":\\"Facebook\\",\\"description\\":\\"Facebook OpenGraph Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"opengraph\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContainertwitter\\":{\\"data\\":[],\\"name\\":\\"Twitter\\",\\"description\\":\\"Twitter Card Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"twitter\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContainermiscellaneous\\":{\\"data\\":[],\\"name\\":\\"Miscellaneous\\",\\"description\\":\\"Miscellaneous Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"miscellaneous\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaLinkContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"Link Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaLinkContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaScriptContainergeneral\\":{\\"data\\":[],\\"position\\":1,\\"name\\":\\"General\\",\\"description\\":\\"Script Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaScriptContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaJsonLdContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"JsonLd Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaJsonLdContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTitleContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"Meta Title Tag\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTitleContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false}},\\"redirectsContainer\\":[],\\"frontendTemplatesContainer\\":{\\"data\\":[],\\"name\\":null,\\"description\\":null,\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\FrontendTemplateContainer\\",\\"handle\\":null,\\"include\\":true,\\"dependencies\\":null,\\"clearCache\\":false},\\"metaBundleSettings\\":{\\"siteType\\":\\"\\",\\"siteSubType\\":\\"\\",\\"siteSpecificType\\":\\"\\",\\"seoTitleSource\\":\\"fromCustom\\",\\"seoTitleField\\":\\"\\",\\"siteNamePositionSource\\":\\"\\",\\"seoDescriptionSource\\":\\"fromCustom\\",\\"seoDescriptionField\\":\\"\\",\\"seoKeywordsSource\\":\\"fromCustom\\",\\"seoKeywordsField\\":\\"\\",\\"seoImageIds\\":[],\\"seoImageSource\\":\\"fromAsset\\",\\"seoImageField\\":\\"\\",\\"seoImageTransform\\":true,\\"seoImageTransformMode\\":\\"crop\\",\\"seoImageDescriptionSource\\":\\"fromCustom\\",\\"seoImageDescriptionField\\":\\"\\",\\"twitterCreatorSource\\":\\"\\",\\"twitterCreatorField\\":\\"\\",\\"twitterTitleSource\\":\\"\\",\\"twitterTitleField\\":\\"\\",\\"twitterSiteNamePositionSource\\":\\"\\",\\"twitterDescriptionSource\\":\\"\\",\\"twitterDescriptionField\\":\\"\\",\\"twitterImageIds\\":[],\\"twitterImageSource\\":\\"\\",\\"twitterImageField\\":\\"\\",\\"twitterImageTransform\\":true,\\"twitterImageTransformMode\\":\\"crop\\",\\"twitterImageDescriptionSource\\":\\"\\",\\"twitterImageDescriptionField\\":\\"\\",\\"ogTitleSource\\":\\"\\",\\"ogTitleField\\":\\"\\",\\"ogSiteNamePositionSource\\":\\"\\",\\"ogDescriptionSource\\":\\"\\",\\"ogDescriptionField\\":\\"\\",\\"ogImageIds\\":[],\\"ogImageSource\\":\\"\\",\\"ogImageField\\":\\"\\",\\"ogImageTransform\\":true,\\"ogImageTransformMode\\":\\"crop\\",\\"ogImageDescriptionSource\\":\\"\\",\\"ogImageDescriptionField\\":\\"\\"}}"}
 12079	12018	1	\N	\N	t	2022-02-17 00:11:33	2022-02-17 00:11:33	e8931262-9769-424c-86cc-94f881bd2e43	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "How can we help?"}
 12358	12297	1	\N	\N	t	2022-02-19 12:06:32	2022-02-19 12:06:32	8a5262f0-8bc9-46d4-a0b5-934abe82be6a	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "How can we help?"}
+218094	207017	1	\N	\N	t	2024-02-07 00:40:52	2025-12-03 22:58:07	db79f935-a94a-4759-99c7-3bbea162f441	The Course of Empire (The Savage State)	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Cole Thomas"}
 11892	11831	1	contact	contact	t	2022-02-15 12:06:30	2022-02-15 12:06:30	f5e6d88b-6b38-4e9c-916f-2c628f8c75c4	Contact	{"a9a11945-755b-446d-a2ab-867d0549717a": "{\\"bundleVersion\\":\\"1.0.22\\",\\"sourceBundleType\\":\\"field\\",\\"sourceId\\":null,\\"sourceName\\":null,\\"sourceHandle\\":null,\\"sourceType\\":\\"field\\",\\"typeId\\":null,\\"sourceTemplate\\":\\"\\",\\"sourceSiteId\\":null,\\"sourceAltSiteSettings\\":[],\\"sourceDateUpdated\\":\\"2022-02-15T04:06:30-08:00\\",\\"metaGlobalVars\\":{\\"language\\":null,\\"mainEntityOfPage\\":\\"\\",\\"seoTitle\\":\\"\\",\\"siteNamePosition\\":\\"\\",\\"seoDescription\\":\\"\\",\\"seoKeywords\\":\\"\\",\\"seoImage\\":\\"\\",\\"seoImageWidth\\":\\"\\",\\"seoImageHeight\\":\\"\\",\\"seoImageDescription\\":\\"\\",\\"canonicalUrl\\":\\"\\",\\"robots\\":\\"\\",\\"ogType\\":\\"\\",\\"ogTitle\\":\\"\\",\\"ogSiteNamePosition\\":\\"\\",\\"ogDescription\\":\\"\\",\\"ogImage\\":\\"\\",\\"ogImageWidth\\":\\"\\",\\"ogImageHeight\\":\\"\\",\\"ogImageDescription\\":\\"\\",\\"twitterCard\\":\\"\\",\\"twitterCreator\\":\\"\\",\\"twitterTitle\\":\\"\\",\\"twitterSiteNamePosition\\":\\"\\",\\"twitterDescription\\":\\"\\",\\"twitterImage\\":\\"\\",\\"twitterImageWidth\\":\\"\\",\\"twitterImageHeight\\":\\"\\",\\"twitterImageDescription\\":\\"\\",\\"inherited\\":[],\\"overrides\\":[]},\\"metaSiteVars\\":{\\"siteName\\":\\"Europa Museum\\",\\"identity\\":null,\\"creator\\":null,\\"twitterHandle\\":\\"\\",\\"facebookProfileId\\":\\"\\",\\"facebookAppId\\":\\"\\",\\"googleSiteVerification\\":\\"\\",\\"bingSiteVerification\\":\\"\\",\\"pinterestSiteVerification\\":\\"\\",\\"facebookSiteVerification\\":\\"\\",\\"sameAsLinks\\":[],\\"siteLinksSearchTarget\\":\\"\\",\\"siteLinksQueryInput\\":\\"\\",\\"referrer\\":\\"no-referrer-when-downgrade\\",\\"additionalSitemapUrls\\":[],\\"additionalSitemapUrlsDateUpdated\\":null,\\"additionalSitemaps\\":[]},\\"metaSitemapVars\\":{\\"sitemapUrls\\":null,\\"sitemapAssets\\":null,\\"sitemapFiles\\":null,\\"sitemapAltLinks\\":null,\\"sitemapChangeFreq\\":\\"\\",\\"sitemapPriority\\":\\"\\",\\"sitemapLimit\\":null,\\"structureDepth\\":null,\\"sitemapImageFieldMap\\":[],\\"sitemapVideoFieldMap\\":[],\\"inherited\\":[],\\"overrides\\":[]},\\"metaContainers\\":{\\"MetaTagContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"General Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContaineropengraph\\":{\\"data\\":[],\\"name\\":\\"Facebook\\",\\"description\\":\\"Facebook OpenGraph Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"opengraph\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContainertwitter\\":{\\"data\\":[],\\"name\\":\\"Twitter\\",\\"description\\":\\"Twitter Card Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"twitter\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContainermiscellaneous\\":{\\"data\\":[],\\"name\\":\\"Miscellaneous\\",\\"description\\":\\"Miscellaneous Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"miscellaneous\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaLinkContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"Link Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaLinkContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaScriptContainergeneral\\":{\\"data\\":[],\\"position\\":1,\\"name\\":\\"General\\",\\"description\\":\\"Script Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaScriptContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaJsonLdContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"JsonLd Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaJsonLdContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTitleContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"Meta Title Tag\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTitleContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false}},\\"redirectsContainer\\":[],\\"frontendTemplatesContainer\\":{\\"data\\":[],\\"name\\":null,\\"description\\":null,\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\FrontendTemplateContainer\\",\\"handle\\":null,\\"include\\":true,\\"dependencies\\":null,\\"clearCache\\":false},\\"metaBundleSettings\\":{\\"siteType\\":\\"\\",\\"siteSubType\\":\\"\\",\\"siteSpecificType\\":\\"\\",\\"seoTitleSource\\":\\"fromCustom\\",\\"seoTitleField\\":\\"\\",\\"siteNamePositionSource\\":\\"\\",\\"seoDescriptionSource\\":\\"fromCustom\\",\\"seoDescriptionField\\":\\"\\",\\"seoKeywordsSource\\":\\"fromCustom\\",\\"seoKeywordsField\\":\\"\\",\\"seoImageIds\\":[],\\"seoImageSource\\":\\"fromAsset\\",\\"seoImageField\\":\\"\\",\\"seoImageTransform\\":true,\\"seoImageTransformMode\\":\\"crop\\",\\"seoImageDescriptionSource\\":\\"fromCustom\\",\\"seoImageDescriptionField\\":\\"\\",\\"twitterCreatorSource\\":\\"\\",\\"twitterCreatorField\\":\\"\\",\\"twitterTitleSource\\":\\"\\",\\"twitterTitleField\\":\\"\\",\\"twitterSiteNamePositionSource\\":\\"\\",\\"twitterDescriptionSource\\":\\"\\",\\"twitterDescriptionField\\":\\"\\",\\"twitterImageIds\\":[],\\"twitterImageSource\\":\\"\\",\\"twitterImageField\\":\\"\\",\\"twitterImageTransform\\":true,\\"twitterImageTransformMode\\":\\"crop\\",\\"twitterImageDescriptionSource\\":\\"\\",\\"twitterImageDescriptionField\\":\\"\\",\\"ogTitleSource\\":\\"\\",\\"ogTitleField\\":\\"\\",\\"ogSiteNamePositionSource\\":\\"\\",\\"ogDescriptionSource\\":\\"\\",\\"ogDescriptionField\\":\\"\\",\\"ogImageIds\\":[],\\"ogImageSource\\":\\"\\",\\"ogImageField\\":\\"\\",\\"ogImageTransform\\":true,\\"ogImageTransformMode\\":\\"crop\\",\\"ogImageDescriptionSource\\":\\"\\",\\"ogImageDescriptionField\\":\\"\\"}}"}
 11923	11862	1	contact	contact	t	2022-02-16 00:11:16	2022-02-16 00:11:16	60cfebae-5fd7-41b6-a812-f27c6d3028f8	Contact	{"a9a11945-755b-446d-a2ab-867d0549717a": "{\\"bundleVersion\\":\\"1.0.22\\",\\"sourceBundleType\\":\\"field\\",\\"sourceId\\":null,\\"sourceName\\":null,\\"sourceHandle\\":null,\\"sourceType\\":\\"field\\",\\"typeId\\":null,\\"sourceTemplate\\":\\"\\",\\"sourceSiteId\\":null,\\"sourceAltSiteSettings\\":[],\\"sourceDateUpdated\\":\\"2022-02-15T16:11:16-08:00\\",\\"metaGlobalVars\\":{\\"language\\":null,\\"mainEntityOfPage\\":\\"\\",\\"seoTitle\\":\\"\\",\\"siteNamePosition\\":\\"\\",\\"seoDescription\\":\\"\\",\\"seoKeywords\\":\\"\\",\\"seoImage\\":\\"\\",\\"seoImageWidth\\":\\"\\",\\"seoImageHeight\\":\\"\\",\\"seoImageDescription\\":\\"\\",\\"canonicalUrl\\":\\"\\",\\"robots\\":\\"\\",\\"ogType\\":\\"\\",\\"ogTitle\\":\\"\\",\\"ogSiteNamePosition\\":\\"\\",\\"ogDescription\\":\\"\\",\\"ogImage\\":\\"\\",\\"ogImageWidth\\":\\"\\",\\"ogImageHeight\\":\\"\\",\\"ogImageDescription\\":\\"\\",\\"twitterCard\\":\\"\\",\\"twitterCreator\\":\\"\\",\\"twitterTitle\\":\\"\\",\\"twitterSiteNamePosition\\":\\"\\",\\"twitterDescription\\":\\"\\",\\"twitterImage\\":\\"\\",\\"twitterImageWidth\\":\\"\\",\\"twitterImageHeight\\":\\"\\",\\"twitterImageDescription\\":\\"\\",\\"inherited\\":[],\\"overrides\\":[]},\\"metaSiteVars\\":{\\"siteName\\":\\"Europa Museum\\",\\"identity\\":null,\\"creator\\":null,\\"twitterHandle\\":\\"\\",\\"facebookProfileId\\":\\"\\",\\"facebookAppId\\":\\"\\",\\"googleSiteVerification\\":\\"\\",\\"bingSiteVerification\\":\\"\\",\\"pinterestSiteVerification\\":\\"\\",\\"facebookSiteVerification\\":\\"\\",\\"sameAsLinks\\":[],\\"siteLinksSearchTarget\\":\\"\\",\\"siteLinksQueryInput\\":\\"\\",\\"referrer\\":\\"no-referrer-when-downgrade\\",\\"additionalSitemapUrls\\":[],\\"additionalSitemapUrlsDateUpdated\\":null,\\"additionalSitemaps\\":[]},\\"metaSitemapVars\\":{\\"sitemapUrls\\":null,\\"sitemapAssets\\":null,\\"sitemapFiles\\":null,\\"sitemapAltLinks\\":null,\\"sitemapChangeFreq\\":\\"\\",\\"sitemapPriority\\":\\"\\",\\"sitemapLimit\\":null,\\"structureDepth\\":null,\\"sitemapImageFieldMap\\":[],\\"sitemapVideoFieldMap\\":[],\\"inherited\\":[],\\"overrides\\":[]},\\"metaContainers\\":{\\"MetaTagContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"General Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContaineropengraph\\":{\\"data\\":[],\\"name\\":\\"Facebook\\",\\"description\\":\\"Facebook OpenGraph Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"opengraph\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContainertwitter\\":{\\"data\\":[],\\"name\\":\\"Twitter\\",\\"description\\":\\"Twitter Card Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"twitter\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTagContainermiscellaneous\\":{\\"data\\":[],\\"name\\":\\"Miscellaneous\\",\\"description\\":\\"Miscellaneous Meta Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTagContainer\\",\\"handle\\":\\"miscellaneous\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaLinkContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"Link Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaLinkContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaScriptContainergeneral\\":{\\"data\\":[],\\"position\\":1,\\"name\\":\\"General\\",\\"description\\":\\"Script Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaScriptContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaJsonLdContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"JsonLd Tags\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaJsonLdContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false},\\"MetaTitleContainergeneral\\":{\\"data\\":[],\\"name\\":\\"General\\",\\"description\\":\\"Meta Title Tag\\",\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\MetaTitleContainer\\",\\"handle\\":\\"general\\",\\"include\\":true,\\"dependencies\\":[],\\"clearCache\\":false}},\\"redirectsContainer\\":[],\\"frontendTemplatesContainer\\":{\\"data\\":[],\\"name\\":null,\\"description\\":null,\\"class\\":\\"nystudio107\\\\\\\\seomatic\\\\\\\\models\\\\\\\\FrontendTemplateContainer\\",\\"handle\\":null,\\"include\\":true,\\"dependencies\\":null,\\"clearCache\\":false},\\"metaBundleSettings\\":{\\"siteType\\":\\"\\",\\"siteSubType\\":\\"\\",\\"siteSpecificType\\":\\"\\",\\"seoTitleSource\\":\\"fromCustom\\",\\"seoTitleField\\":\\"\\",\\"siteNamePositionSource\\":\\"\\",\\"seoDescriptionSource\\":\\"fromCustom\\",\\"seoDescriptionField\\":\\"\\",\\"seoKeywordsSource\\":\\"fromCustom\\",\\"seoKeywordsField\\":\\"\\",\\"seoImageIds\\":[],\\"seoImageSource\\":\\"fromAsset\\",\\"seoImageField\\":\\"\\",\\"seoImageTransform\\":true,\\"seoImageTransformMode\\":\\"crop\\",\\"seoImageDescriptionSource\\":\\"fromCustom\\",\\"seoImageDescriptionField\\":\\"\\",\\"twitterCreatorSource\\":\\"\\",\\"twitterCreatorField\\":\\"\\",\\"twitterTitleSource\\":\\"\\",\\"twitterTitleField\\":\\"\\",\\"twitterSiteNamePositionSource\\":\\"\\",\\"twitterDescriptionSource\\":\\"\\",\\"twitterDescriptionField\\":\\"\\",\\"twitterImageIds\\":[],\\"twitterImageSource\\":\\"\\",\\"twitterImageField\\":\\"\\",\\"twitterImageTransform\\":true,\\"twitterImageTransformMode\\":\\"crop\\",\\"twitterImageDescriptionSource\\":\\"\\",\\"twitterImageDescriptionField\\":\\"\\",\\"ogTitleSource\\":\\"\\",\\"ogTitleField\\":\\"\\",\\"ogSiteNamePositionSource\\":\\"\\",\\"ogDescriptionSource\\":\\"\\",\\"ogDescriptionField\\":\\"\\",\\"ogImageIds\\":[],\\"ogImageSource\\":\\"\\",\\"ogImageField\\":\\"\\",\\"ogImageTransform\\":true,\\"ogImageTransformMode\\":\\"crop\\",\\"ogImageDescriptionSource\\":\\"\\",\\"ogImageDescriptionField\\":\\"\\"}}"}
-218094	207017	1	\N	\N	t	2024-02-07 00:40:52	2024-02-07 00:42:30	db79f935-a94a-4759-99c7-3bbea162f441	The Course of Empire (The Savage State)	\N
 12736	12675	1	\N	\N	t	2022-02-22 12:07:46	2025-11-19 20:57:57	186596c3-5f9c-4c9c-a6c2-3235f73e081b	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [18, 39, 8], "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
 12767	12706	1	\N	\N	t	2022-02-22 12:07:56	2025-11-19 20:57:57	d2465ccd-c3a4-4fcb-89e6-13cbff6fa6cf	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [18, 39, 8], "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
 13236	13148	1	\N	\N	t	2022-03-08 00:13:15	2025-11-19 20:57:57	cbd46d61-4c0c-4a8b-923d-39494706b4e6	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [18, 39, 8], "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
@@ -10502,12 +10531,12 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 12654	12593	1	\N	\N	t	2022-02-21 12:06:29	2025-11-18 22:30:25	43f2f7fe-dcc0-48e3-8339-4a5cd971a6ca	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Today — {{ now|date('F dS, Y') }}", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "news", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "http://europa-museum.us-west-2.elasticbeanstalk.com/news.rss"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
 12747	12686	1	\N	\N	t	2022-02-22 12:07:48	2025-11-18 22:30:25	f6e00895-fd66-4781-b545-f9aa7d60a69c	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Today — {{ now|date('F dS, Y') }}", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "news", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "http://europa-museum.us-west-2.elasticbeanstalk.com/news.rss"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
 13588	13500	1	\N	\N	t	2022-03-10 12:06:35	2025-11-18 22:30:25	9c29a845-2d2d-483e-a4ad-4145d495bc43	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Today — {{ now|date('F dS, Y') }}", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "news", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "http://europa-museum.us-west-2.elasticbeanstalk.com/news.rss"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
+218092	207016	1	\N	\N	t	2024-02-07 00:40:42	2025-12-03 22:58:53	de8e9d90-d949-4117-80e5-56c430988efc	The Course of Empire (The Arcadian or Pastoral State)	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Cole Thomas"}
 13664	13576	1	\N	\N	t	2022-03-15 00:14:04	2022-03-15 00:14:04	d31ea726-0894-4a77-89c1-6064750396c5	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "How can we help?"}
 11993	11932	1	\N	\N	t	2022-02-16 12:06:18	2024-02-06 20:59:44	a0a83619-61f9-4199-aaed-6f1ba18067f5	\N	{"691cb210-126a-4a63-a5bb-ebe3e414160d": true, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<h4>UPCOMING EXHIBITS</h4><p>New exhibits will be released throughout the winter period.</p>", "a23485b0-fc56-44e9-870e-51520b2e3073": true}
 12731	12670	1	\N	\N	t	2022-02-22 12:07:45	2022-02-22 12:07:45	3e0c29d6-a238-45c1-b9d1-93e768a3bf20	\N	{"1da2001e-b1d4-4216-ba64-afa70351c1a2": 5, "ec58db74-50a6-4093-8292-d0c5ab60f6ef": "Thank you! We'll be in touch shortly."}
 258	258	1	\N	\N	t	2020-01-17 00:09:05	2020-01-17 00:09:05	95c64fb0-3a5f-4fa6-816b-6d7f35b8da7d	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "Explore the works of Van Gogh, the Dutch post-impressionist artist who created over 2000 art pieces, a foundation of modern art."}
 13286	13198	1	\N	\N	t	2022-03-08 12:06:40	2022-03-08 12:06:40	55c97a48-825e-4f87-b4ce-368d4b6ef4d2	\N	{"c48002d6-a933-4e50-9036-a2749de05ae3": "whiteText"}
-218092	207016	1	\N	\N	t	2024-02-07 00:40:42	2024-02-07 00:43:54	de8e9d90-d949-4117-80e5-56c430988efc	The Course of Empire (The Arcadian or Pastoral State)	\N
 226048	211069	1	new-wing-is-now-open	news/new-wing-is-now-open	t	2025-08-28 12:08:36	2025-08-28 12:08:36	050bdc5c-3177-41e0-b098-9324ee06ff5a	New Wing is Now Open	{"5b0bca29-968a-4bba-b621-dd839742da31": [90], "81699a5d-8d5f-4e26-8301-0c3da3d53770": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "871a3951-38e5-44cc-8b2a-ef805ab21cd4": [86], "d93b9b73-2e95-44ea-afee-db408cc226e1": {"typeId": null, "sourceId": null, "sourceName": null, "sourceType": "field", "metaSiteVars": {"creator": null, "identity": null, "referrer": "no-referrer-when-downgrade", "siteName": "Europa Museum", "sameAsLinks": [], "facebookAppId": "", "twitterHandle": "", "facebookProfileId": "", "siteAlternateName": "", "additionalSitemaps": [], "siteLinksQueryInput": "", "bingSiteVerification": "", "additionalSitemapUrls": [], "siteLinksSearchTarget": "", "googleSiteVerification": "", "facebookSiteVerification": "", "pinterestSiteVerification": "", "additionalSitemapUrlsDateUpdated": null}, "sourceHandle": null, "sourceSiteId": null, "bundleVersion": "1.0.22", "metaContainers": {"MetaTagContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "general", "include": true, "clearCache": false, "description": "General Meta Tags", "dependencies": []}, "MetaTagContainertwitter": {"data": [], "name": "Twitter", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "twitter", "include": true, "clearCache": false, "description": "Twitter Card Meta Tags", "dependencies": []}, "MetaLinkContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaLinkContainer", "handle": "general", "include": true, "clearCache": false, "description": "Link Tags", "dependencies": []}, "MetaTagContaineropengraph": {"data": [], "name": "Facebook", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "opengraph", "include": true, "clearCache": false, "description": "Facebook OpenGraph Meta Tags", "dependencies": []}, "MetaTitleContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTitleContainer", "handle": "general", "include": true, "clearCache": false, "description": "Meta Title Tag", "dependencies": []}, "MetaJsonLdContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaJsonLdContainer", "handle": "general", "include": true, "clearCache": false, "description": "JsonLd Tags", "dependencies": []}, "MetaScriptContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaScriptContainer", "handle": "general", "include": true, "position": 1, "clearCache": false, "description": "Script Tags", "dependencies": []}, "MetaTagContainermiscellaneous": {"data": [], "name": "Miscellaneous", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "miscellaneous", "include": true, "clearCache": false, "description": "Miscellaneous Meta Tags", "dependencies": []}}, "metaGlobalVars": {"ogType": "", "robots": "", "ogImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "ogTitle": "{{ seomatic.meta.seoTitle }}", "language": null, "seoImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "seoTitle": "{{ seomatic.helper.extractTextFromField(entry.title) }}", "inherited": [], "overrides": [], "seoKeywords": "", "twitterCard": "", "canonicalUrl": "", "ogImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "twitterImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "twitterTitle": "{{ seomatic.meta.seoTitle }}", "ogDescription": "{{ seomatic.meta.seoDescription }}", "ogImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "seoImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "seoDescription": "", "seoImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "twitterCreator": "{{ seomatic.site.twitterHandle }}", "mainEntityOfPage": "", "siteNamePosition": "", "twitterImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "ogImageDescription": "{{ seomatic.meta.seoImageDescription }}", "ogSiteNamePosition": "", "twitterDescription": "{{ seomatic.meta.seoDescription }}", "twitterImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "seoImageDescription": "", "twitterImageDescription": "{{ seomatic.meta.seoImageDescription }}", "twitterSiteNamePosition": ""}, "sourceTemplate": "", "metaSitemapVars": {"inherited": [], "overrides": [], "newsSitemap": null, "sitemapUrls": true, "sitemapFiles": true, "sitemapLimit": null, "sitemapAssets": true, "structureDepth": null, "sitemapAltLinks": true, "sitemapPageSize": 500, "sitemapPriority": 0.5, "sitemapChangeFreq": "weekly", "newsPublicationName": "", "sitemapImageFieldMap": [], "sitemapVideoFieldMap": [], "sitemapAssetTransform": null}, "sourceBundleType": "field", "sourceDateUpdated": "2020-01-09T07:13:58+00:00", "metaBundleSettings": {"siteType": "CreativeWork", "ogImageIds": "", "seoImageIds": "", "siteSubType": "WebPage", "ogImageField": "heroImage", "ogTitleField": "title", "ogImageSource": "sameAsSeo", "ogTitleSource": "sameAsSeo", "seoImageField": "heroImage", "seoTitleField": "title", "seoImageSource": "fromField", "seoTitleSource": "fromField", "twitterImageIds": "", "ogImageTransform": "1", "seoKeywordsField": "title", "siteSpecificType": "none", "seoImageTransform": "1", "seoKeywordsSource": "fromCustom", "twitterImageField": "heroImage", "twitterTitleField": "title", "ogDescriptionField": "title", "twitterImageSource": "sameAsSeo", "twitterTitleSource": "sameAsSeo", "ogDescriptionSource": "sameAsSeo", "seoDescriptionField": "title", "twitterCreatorField": "", "ogImageTransformMode": "crop", "seoDescriptionSource": "fromCustom", "twitterCreatorSource": "sameAsSiteTwitter", "seoImageTransformMode": "crop", "twitterImageTransform": "1", "siteNamePositionSource": "sameAsGlobal", "ogImageDescriptionField": "", "twitterDescriptionField": "title", "ogImageDescriptionSource": "sameAsSeo", "ogSiteNamePositionSource": "sameAsGlobal", "seoImageDescriptionField": "title", "twitterDescriptionSource": "sameAsSeo", "seoImageDescriptionSource": "fromCustom", "twitterImageTransformMode": "crop", "twitterImageDescriptionField": "", "twitterImageDescriptionSource": "sameAsSeo", "twitterSiteNamePositionSource": "sameAsGlobal"}, "redirectsContainer": [], "sourceAltSiteSettings": [], "frontendTemplatesContainer": {"data": [], "name": null, "class": "nystudio107\\\\seomatic\\\\models\\\\FrontendTemplateContainer", "handle": null, "include": true, "clearCache": false, "description": null, "dependencies": null}}}
 12685	12624	1	\N	\N	t	2022-02-22 00:13:10	2025-11-18 22:30:25	b4b5415e-744e-4a01-99ab-78a1e678761b	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Today — {{ now|date('F dS, Y') }}", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "news", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "http://europa-museum.us-west-2.elasticbeanstalk.com/news.rss"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
 12691	12630	1	\N	\N	t	2022-02-22 00:13:11	2025-11-18 22:30:25	674a3aca-2c26-4e38-90a7-a63947107841	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Press Kit", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "arrowDown", "521a42a3-5a35-43b3-9c62-129f039d3229": "Company Overview, Press Contact, Media Assets, Board & Staff Bios", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "https://s3.us-west-2.amazonaws.com/craftcms-client-demos/europa/files/press-kit.zip"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
@@ -10714,7 +10743,6 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 12370	12309	1	\N	\N	t	2022-02-19 12:06:34	2024-02-06 20:59:49	44cb7309-ca68-4e4b-b4d3-2bb47881ff7a	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageLeft", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<figure class=\\"image\\"><img src=\\"{asset:382:url||http://localhost:8123/assets/volumes/images/grant-ritchie-p-4xI3UPCCY-unsplash.jpg}\\" alt=\\"\\" /></figure><h3>Visiting Info</h3><p>Europa Museum is open every day:</p><p>Monday - Friday from 8am to 5pm<br />Saturday - Sunday from 8am to 9pm</p><p><br />Closed on the following holidays:<br /></p><ul><li>January 1 (New Year’s Day)</li><li>December 25 (Christmas Day)</li></ul><p><strong><br />Email:</strong> <a href=\\"mailto:hello@pixelandtonic.com\\">hello@pixelandtonic.com</a></p><p><strong>Telephone:</strong> <a href=\\"tel:+18557005115\\">+1 855-700-5115</a></p><p><strong>Address:</strong> <br /><a href=\\"https://goo.gl/maps/7R6cCWcELV4hN3QF7\\" target=\\"_blank\\" rel=\\"noreferrer noopener\\">20832 SE Humber Ln <br />Bend, OR 97702, USA</a><br /></p>", "a23485b0-fc56-44e9-870e-51520b2e3073": false}
 218058	206998	1	landscape-with-factory-chimney	\N	t	2024-02-07 00:16:18	2024-02-07 00:16:18	567e5d08-9669-46d8-9ff0-a6575f957cc1	Landscape with Factory Chimney	{"16443aa1-ee0e-471f-9fa3-f4c81a04844f": 1910, "5e7bb16f-be3b-45e3-b2f2-be7ea021d78a": "Vassily Kandinsky"}
 12587	12526	1	\N	\N	t	2022-02-21 00:13:56	2024-02-06 20:59:52	b8395b8b-11db-41fb-b15e-51d81f1acca9	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageLeft", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<figure class=\\"image\\"><img src=\\"{asset:382:url||http://localhost:8123/assets/volumes/images/grant-ritchie-p-4xI3UPCCY-unsplash.jpg}\\" alt=\\"\\" /></figure><h3>Visiting Info</h3><p>Europa Museum is open every day:</p><p>Monday - Friday from 8am to 5pm<br />Saturday - Sunday from 8am to 9pm</p><p><br />Closed on the following holidays:<br /></p><ul><li>January 1 (New Year’s Day)</li><li>December 25 (Christmas Day)</li></ul><p><strong><br />Email:</strong> <a href=\\"mailto:hello@pixelandtonic.com\\">hello@pixelandtonic.com</a></p><p><strong>Telephone:</strong> <a href=\\"tel:+18557005115\\">+1 855-700-5115</a></p><p><strong>Address:</strong> <br /><a href=\\"https://goo.gl/maps/7R6cCWcELV4hN3QF7\\" target=\\"_blank\\" rel=\\"noreferrer noopener\\">20832 SE Humber Ln <br />Bend, OR 97702, USA</a><br /></p>", "a23485b0-fc56-44e9-870e-51520b2e3073": false}
-218088	207014	1	\N	\N	t	2024-02-07 00:40:17	2024-02-07 00:45:49	4b2e3b31-ca4f-4b18-b8d0-fa157e042615	The Course of Empire (Desolation)	\N
 13357	13269	1	\N	\N	t	2022-03-09 00:14:17	2022-03-09 00:14:17	12c6c74d-8905-4f32-bcc2-cba558bd8025	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "DISCOVER OUR CURRENT, UPCOMING, AND PAST EXHIBITIONS."}
 13348	13260	1	\N	\N	t	2022-03-09 00:14:15	2022-03-09 00:14:15	3af71536-7651-41bf-8bad-6ad7a63449f9	\N	{"c48002d6-a933-4e50-9036-a2749de05ae3": "whiteText"}
 13509	13421	1	\N	\N	t	2022-03-10 00:13:28	2022-03-10 00:13:28	6b9db5f4-10e6-45e0-b9ef-8c972c733a13	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "How can we help?"}
@@ -10725,6 +10753,7 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 12680	12619	1	\N	\N	t	2022-02-22 00:13:09	2024-02-06 20:59:54	c62e551e-c62f-4f3d-a5f8-2c1f62e929de	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageLeft", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<figure class=\\"image\\"><img src=\\"{asset:382:url||http://localhost:8123/assets/volumes/images/grant-ritchie-p-4xI3UPCCY-unsplash.jpg}\\" alt=\\"\\" /></figure><h3>Visiting Info</h3><p>Europa Museum is open every day:</p><p>Monday - Friday from 8am to 5pm<br />Saturday - Sunday from 8am to 9pm</p><p><br />Closed on the following holidays:<br /></p><ul><li>January 1 (New Year’s Day)</li><li>December 25 (Christmas Day)</li></ul><p><strong><br />Email:</strong> <a href=\\"mailto:hello@pixelandtonic.com\\">hello@pixelandtonic.com</a></p><p><strong>Telephone:</strong> <a href=\\"tel:+18557005115\\">+1 855-700-5115</a></p><p><strong>Address:</strong> <br /><a href=\\"https://goo.gl/maps/7R6cCWcELV4hN3QF7\\" target=\\"_blank\\" rel=\\"noreferrer noopener\\">20832 SE Humber Ln <br />Bend, OR 97702, USA</a><br /></p>", "a23485b0-fc56-44e9-870e-51520b2e3073": false}
 757	757	1	\N	\N	t	2020-04-23 18:15:22	2020-04-23 18:15:22	4602e4cf-7326-4afc-b3e2-dd67b5fbd804	\N	{"db91b6bf-05af-4356-b713-a66592a119bd": "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.” — Lorem Ipsum"}
 13490	13402	1	\N	\N	t	2022-03-10 00:13:19	2024-02-06 20:59:59	37cecba3-fda3-4f5c-b4ce-174a5a282db0	\N	{"4f463e9b-a0ae-4024-bb4d-e5427ca3a1e8": "imageLeft", "691cb210-126a-4a63-a5bb-ebe3e414160d": false, "88b22500-1a2a-4744-be8c-2e6020bb4cdf": "<figure class=\\"image\\"><img src=\\"{asset:382:url||http://localhost:8123/assets/volumes/images/grant-ritchie-p-4xI3UPCCY-unsplash.jpg}\\" alt=\\"\\" /></figure><h3>Visiting Info</h3><p>Europa Museum is open every day:</p><p>Monday - Friday from 8am to 5pm<br />Saturday - Sunday from 8am to 9pm</p><p><br />Closed on the following holidays:<br /></p><ul><li>January 1 (New Year’s Day)</li><li>December 25 (Christmas Day)</li></ul><p><strong><br />Email:</strong> <a href=\\"mailto:hello@pixelandtonic.com\\">hello@pixelandtonic.com</a></p><p><strong>Telephone:</strong> <a href=\\"tel:+18557005115\\">+1 855-700-5115</a></p><p><strong>Address:</strong> <br /><a href=\\"https://goo.gl/maps/7R6cCWcELV4hN3QF7\\" target=\\"_blank\\" rel=\\"noreferrer noopener\\">20832 SE Humber Ln <br />Bend, OR 97702, USA</a><br /></p>", "a23485b0-fc56-44e9-870e-51520b2e3073": false}
+218088	207014	1	\N	\N	t	2024-02-07 00:40:17	2025-12-03 22:59:27	4b2e3b31-ca4f-4b18-b8d0-fa157e042615	The Course of Empire (Desolation)	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Cole Thomas"}
 225768	210929	1	winter-night-tours	news/winter-night-tours	t	2025-08-11 00:24:03	2025-08-11 00:24:03	e4cfe12e-7088-4b2b-83e2-eddb0193c342	Winter Night Tours	{"5b0bca29-968a-4bba-b621-dd839742da31": [94], "81699a5d-8d5f-4e26-8301-0c3da3d53770": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "871a3951-38e5-44cc-8b2a-ef805ab21cd4": [87], "d93b9b73-2e95-44ea-afee-db408cc226e1": {"typeId": null, "sourceId": null, "sourceName": null, "sourceType": "field", "metaSiteVars": {"creator": null, "identity": null, "referrer": "no-referrer-when-downgrade", "siteName": "Europa Museum", "sameAsLinks": [], "facebookAppId": "", "twitterHandle": "", "facebookProfileId": "", "siteAlternateName": "", "additionalSitemaps": [], "siteLinksQueryInput": "", "bingSiteVerification": "", "additionalSitemapUrls": [], "siteLinksSearchTarget": "", "googleSiteVerification": "", "facebookSiteVerification": "", "pinterestSiteVerification": "", "additionalSitemapUrlsDateUpdated": null}, "sourceHandle": null, "sourceSiteId": null, "bundleVersion": "1.0.22", "metaContainers": {"MetaTagContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "general", "include": true, "clearCache": false, "description": "General Meta Tags", "dependencies": []}, "MetaTagContainertwitter": {"data": [], "name": "Twitter", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "twitter", "include": true, "clearCache": false, "description": "Twitter Card Meta Tags", "dependencies": []}, "MetaLinkContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaLinkContainer", "handle": "general", "include": true, "clearCache": false, "description": "Link Tags", "dependencies": []}, "MetaTagContaineropengraph": {"data": [], "name": "Facebook", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "opengraph", "include": true, "clearCache": false, "description": "Facebook OpenGraph Meta Tags", "dependencies": []}, "MetaTitleContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTitleContainer", "handle": "general", "include": true, "clearCache": false, "description": "Meta Title Tag", "dependencies": []}, "MetaJsonLdContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaJsonLdContainer", "handle": "general", "include": true, "clearCache": false, "description": "JsonLd Tags", "dependencies": []}, "MetaScriptContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaScriptContainer", "handle": "general", "include": true, "position": 1, "clearCache": false, "description": "Script Tags", "dependencies": []}, "MetaTagContainermiscellaneous": {"data": [], "name": "Miscellaneous", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "miscellaneous", "include": true, "clearCache": false, "description": "Miscellaneous Meta Tags", "dependencies": []}}, "metaGlobalVars": {"ogType": "", "robots": "", "ogImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "ogTitle": "{{ seomatic.meta.seoTitle }}", "language": null, "seoImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "seoTitle": "{{ seomatic.helper.extractTextFromField(entry.title) }}", "inherited": [], "overrides": [], "seoKeywords": "", "twitterCard": "", "canonicalUrl": "", "ogImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "twitterImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "twitterTitle": "{{ seomatic.meta.seoTitle }}", "ogDescription": "{{ seomatic.meta.seoDescription }}", "ogImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "seoImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "seoDescription": "", "seoImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "twitterCreator": "{{ seomatic.site.twitterHandle }}", "mainEntityOfPage": "", "siteNamePosition": "", "twitterImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "ogImageDescription": "{{ seomatic.meta.seoImageDescription }}", "ogSiteNamePosition": "", "twitterDescription": "{{ seomatic.meta.seoDescription }}", "twitterImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "seoImageDescription": "", "twitterImageDescription": "{{ seomatic.meta.seoImageDescription }}", "twitterSiteNamePosition": ""}, "sourceTemplate": "", "metaSitemapVars": {"inherited": [], "overrides": [], "newsSitemap": null, "sitemapUrls": true, "sitemapFiles": true, "sitemapLimit": null, "sitemapAssets": true, "structureDepth": null, "sitemapAltLinks": true, "sitemapPageSize": 500, "sitemapPriority": 0.5, "sitemapChangeFreq": "weekly", "newsPublicationName": "", "sitemapImageFieldMap": [], "sitemapVideoFieldMap": [], "sitemapAssetTransform": null}, "sourceBundleType": "field", "sourceDateUpdated": "2020-01-09T07:14:16+00:00", "metaBundleSettings": {"siteType": "CreativeWork", "ogImageIds": "", "seoImageIds": "", "siteSubType": "WebPage", "ogImageField": "heroImage", "ogTitleField": "title", "ogImageSource": "sameAsSeo", "ogTitleSource": "sameAsSeo", "seoImageField": "heroImage", "seoTitleField": "title", "seoImageSource": "fromField", "seoTitleSource": "fromField", "twitterImageIds": "", "ogImageTransform": "1", "seoKeywordsField": "title", "siteSpecificType": "none", "seoImageTransform": "1", "seoKeywordsSource": "fromCustom", "twitterImageField": "heroImage", "twitterTitleField": "title", "ogDescriptionField": "title", "twitterImageSource": "sameAsSeo", "twitterTitleSource": "sameAsSeo", "ogDescriptionSource": "sameAsSeo", "seoDescriptionField": "title", "twitterCreatorField": "", "ogImageTransformMode": "crop", "seoDescriptionSource": "fromCustom", "twitterCreatorSource": "sameAsSiteTwitter", "seoImageTransformMode": "crop", "twitterImageTransform": "1", "siteNamePositionSource": "sameAsGlobal", "ogImageDescriptionField": "", "twitterDescriptionField": "title", "ogImageDescriptionSource": "sameAsSeo", "ogSiteNamePositionSource": "sameAsGlobal", "seoImageDescriptionField": "title", "twitterDescriptionSource": "sameAsSeo", "seoImageDescriptionSource": "fromCustom", "twitterImageTransformMode": "crop", "twitterImageDescriptionField": "", "twitterImageDescriptionSource": "sameAsSeo", "twitterSiteNamePositionSource": "sameAsGlobal"}, "redirectsContainer": [], "sourceAltSiteSettings": [], "frontendTemplatesContainer": {"data": [], "name": null, "class": "nystudio107\\\\seomatic\\\\models\\\\FrontendTemplateContainer", "handle": null, "include": true, "clearCache": false, "description": null, "dependencies": null}}}
 12062	12001	1	\N	\N	t	2022-02-17 00:11:23	2022-02-17 00:11:23	c5f87c91-4297-41b5-ac61-c09d5521cec2	\N	{"f06ea1f6-4c5b-459b-8c6c-42fcbc6ab114": "<iframe src=\\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2869.2967126900453!2d-121.28341778449052!3d44.015262679110634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54b8c71d76cf2b5f%3A0x73ca6f502c7a0b53!2sSE%20Humber%20Ln%2C%20Bend%2C%20OR%2097702!5e0!3m2!1sen!2sus!4v1579762142141!5m2!1sen!2sus\\" width=\\"600\\" height=\\"450\\" frameborder=\\"0\\" style=\\"border:0;\\" allowfullscreen=\\"\\"></iframe>"}
 13441	13353	1	\N	\N	t	2022-03-09 12:06:56	2022-03-09 12:06:56	f3b8a8e6-94fa-407a-9ef2-fb4c1991036e	\N	{"c48002d6-a933-4e50-9036-a2749de05ae3": "whiteText"}
@@ -11333,7 +11362,7 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 226134	211112	1	new-wing-is-now-open	news/new-wing-is-now-open	t	2025-09-02 12:09:15	2025-09-02 12:09:15	af553e2d-f53f-414b-9984-4f4df66ba7f3	New Wing is Now Open	{"5b0bca29-968a-4bba-b621-dd839742da31": [90], "81699a5d-8d5f-4e26-8301-0c3da3d53770": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", "871a3951-38e5-44cc-8b2a-ef805ab21cd4": [86], "d93b9b73-2e95-44ea-afee-db408cc226e1": {"typeId": null, "sourceId": null, "sourceName": null, "sourceType": "field", "metaSiteVars": {"creator": null, "identity": null, "referrer": "no-referrer-when-downgrade", "siteName": "Europa Museum", "sameAsLinks": [], "facebookAppId": "", "twitterHandle": "", "facebookProfileId": "", "siteAlternateName": "", "additionalSitemaps": [], "siteLinksQueryInput": "", "bingSiteVerification": "", "additionalSitemapUrls": [], "siteLinksSearchTarget": "", "googleSiteVerification": "", "facebookSiteVerification": "", "pinterestSiteVerification": "", "additionalSitemapUrlsDateUpdated": null}, "sourceHandle": null, "sourceSiteId": null, "bundleVersion": "1.0.22", "metaContainers": {"MetaTagContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "general", "include": true, "clearCache": false, "description": "General Meta Tags", "dependencies": []}, "MetaTagContainertwitter": {"data": [], "name": "Twitter", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "twitter", "include": true, "clearCache": false, "description": "Twitter Card Meta Tags", "dependencies": []}, "MetaLinkContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaLinkContainer", "handle": "general", "include": true, "clearCache": false, "description": "Link Tags", "dependencies": []}, "MetaTagContaineropengraph": {"data": [], "name": "Facebook", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "opengraph", "include": true, "clearCache": false, "description": "Facebook OpenGraph Meta Tags", "dependencies": []}, "MetaTitleContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTitleContainer", "handle": "general", "include": true, "clearCache": false, "description": "Meta Title Tag", "dependencies": []}, "MetaJsonLdContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaJsonLdContainer", "handle": "general", "include": true, "clearCache": false, "description": "JsonLd Tags", "dependencies": []}, "MetaScriptContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaScriptContainer", "handle": "general", "include": true, "position": 1, "clearCache": false, "description": "Script Tags", "dependencies": []}, "MetaTagContainermiscellaneous": {"data": [], "name": "Miscellaneous", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "miscellaneous", "include": true, "clearCache": false, "description": "Miscellaneous Meta Tags", "dependencies": []}}, "metaGlobalVars": {"ogType": "", "robots": "", "ogImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "ogTitle": "{{ seomatic.meta.seoTitle }}", "language": null, "seoImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "seoTitle": "{{ seomatic.helper.extractTextFromField(entry.title) }}", "inherited": [], "overrides": [], "seoKeywords": "", "twitterCard": "", "canonicalUrl": "", "ogImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "twitterImage": "{{ seomatic.helper.socialTransform(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "twitterTitle": "{{ seomatic.meta.seoTitle }}", "ogDescription": "{{ seomatic.meta.seoDescription }}", "ogImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], \\"facebook\\", 0, \\"crop\\") }}", "seoImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "seoDescription": "", "seoImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], \\"base\\", 0, \\"crop\\") }}", "twitterCreator": "{{ seomatic.site.twitterHandle }}", "mainEntityOfPage": "", "siteNamePosition": "", "twitterImageWidth": "{{ seomatic.helper.socialTransformWidth(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "ogImageDescription": "{{ seomatic.meta.seoImageDescription }}", "ogSiteNamePosition": "", "twitterDescription": "{{ seomatic.meta.seoDescription }}", "twitterImageHeight": "{{ seomatic.helper.socialTransformHeight(entry.heroImage.collect()[0], seomatic.helper.twitterTransform(), 0, \\"crop\\") }}", "seoImageDescription": "", "twitterImageDescription": "{{ seomatic.meta.seoImageDescription }}", "twitterSiteNamePosition": ""}, "sourceTemplate": "", "metaSitemapVars": {"inherited": [], "overrides": [], "newsSitemap": null, "sitemapUrls": true, "sitemapFiles": true, "sitemapLimit": null, "sitemapAssets": true, "structureDepth": null, "sitemapAltLinks": true, "sitemapPageSize": 500, "sitemapPriority": 0.5, "sitemapChangeFreq": "weekly", "newsPublicationName": "", "sitemapImageFieldMap": [], "sitemapVideoFieldMap": [], "sitemapAssetTransform": null}, "sourceBundleType": "field", "sourceDateUpdated": "2020-01-09T07:13:58+00:00", "metaBundleSettings": {"siteType": "CreativeWork", "ogImageIds": "", "seoImageIds": "", "siteSubType": "WebPage", "ogImageField": "heroImage", "ogTitleField": "title", "ogImageSource": "sameAsSeo", "ogTitleSource": "sameAsSeo", "seoImageField": "heroImage", "seoTitleField": "title", "seoImageSource": "fromField", "seoTitleSource": "fromField", "twitterImageIds": "", "ogImageTransform": "1", "seoKeywordsField": "title", "siteSpecificType": "none", "seoImageTransform": "1", "seoKeywordsSource": "fromCustom", "twitterImageField": "heroImage", "twitterTitleField": "title", "ogDescriptionField": "title", "twitterImageSource": "sameAsSeo", "twitterTitleSource": "sameAsSeo", "ogDescriptionSource": "sameAsSeo", "seoDescriptionField": "title", "twitterCreatorField": "", "ogImageTransformMode": "crop", "seoDescriptionSource": "fromCustom", "twitterCreatorSource": "sameAsSiteTwitter", "seoImageTransformMode": "crop", "twitterImageTransform": "1", "siteNamePositionSource": "sameAsGlobal", "ogImageDescriptionField": "", "twitterDescriptionField": "title", "ogImageDescriptionSource": "sameAsSeo", "ogSiteNamePositionSource": "sameAsGlobal", "seoImageDescriptionField": "title", "twitterDescriptionSource": "sameAsSeo", "seoImageDescriptionSource": "fromCustom", "twitterImageTransformMode": "crop", "twitterImageDescriptionField": "", "twitterImageDescriptionSource": "sameAsSeo", "twitterSiteNamePositionSource": "sameAsGlobal"}, "redirectsContainer": [], "sourceAltSiteSettings": [], "frontendTemplatesContainer": {"data": [], "name": null, "class": "nystudio107\\\\seomatic\\\\models\\\\FrontendTemplateContainer", "handle": null, "include": true, "clearCache": false, "description": null, "dependencies": null}}}
 86	86	1	museum-updates	news/category/museum-updates	t	2020-01-09 07:00:58	2025-11-17 21:59:15	f01ca828-f726-4fa9-99ed-550290528dbe	Museum Updates	\N
 88	88	1	tickets	news/category/tickets	t	2020-01-09 07:01:14	2025-11-17 21:59:15	425187c1-9756-41e4-887a-cba4b5251a64	Tickets	\N
-226671	211639	1	\N	\N	t	2025-11-25 22:06:23	2025-11-25 22:06:23	039008f1-9efe-4cc1-8994-d1b27425b9e3	Ian dooley w2oo B5 Bxs U8 unsplash	\N
+226671	211639	1	\N	\N	t	2025-11-25 22:06:23	2025-12-01 22:34:58	039008f1-9efe-4cc1-8994-d1b27425b9e3	Geometric Buildings, Exterior	{"31c9ee1b-2972-4e0e-8996-72fce12f51e7": "Photo by Ian Dooley, via Unsplash (https://unsplash.com/photos/w2ooB5BxsU8)", "d67bb30f-1456-486a-991d-618c2abe2c36": "Denver Central Library — 1995, Michael Graves"}
 12443	12382	1	\N	\N	t	2022-02-20 00:15:40	2025-11-18 22:30:25	e0d8c261-3200-4c62-bdcb-b0a0bcca3176	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Press Kit", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "arrowDown", "521a42a3-5a35-43b3-9c62-129f039d3229": "Company Overview, Press Contact, Media Assets, Board & Staff Bios", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "https://s3.us-west-2.amazonaws.com/craftcms-client-demos/europa/files/press-kit.zip"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
 12660	12599	1	\N	\N	t	2022-02-21 12:06:30	2025-11-18 22:30:25	f20f9439-c676-488d-b75a-64eb068a1efa	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Press Kit", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "arrowDown", "521a42a3-5a35-43b3-9c62-129f039d3229": "Company Overview, Press Contact, Media Assets, Board & Staff Bios", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "https://s3.us-west-2.amazonaws.com/craftcms-client-demos/europa/files/press-kit.zip"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
 11910	11849	1	\N	\N	t	2022-02-15 12:06:33	2025-11-18 22:30:24	0129e1f3-1a36-4aac-99e5-a18a074eef55	\N	{"1723daa2-1605-463e-bb38-4472e9bcfaf4": "Today — {{ now|date('F dS, Y') }}", "37e5a668-9ae1-4caf-b8d9-a2335cab28eb": "news", "82dcbab5-40bc-4e35-b60c-5c82732a9e90": {"type": "url", "value": "http://europa-museum.us-west-2.elasticbeanstalk.com/news.rss"}, "892da9c7-a6ed-4d7c-9e8c-3073f53d5fe2": true}
@@ -11426,6 +11455,7 @@ COPY public.elements_sites (id, "elementId", "siteId", slug, uri, enabled, "date
 12181	12120	1	\N	\N	t	2022-02-18 00:11:32	2025-11-19 20:57:54	93b27f69-3cb0-4798-9a7a-a7d9b81b0ab6	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [8, 18, 49], "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
 12182	12121	1	\N	\N	t	2022-02-18 00:11:32	2025-11-19 20:57:54	a61f0021-307b-4267-92d2-6c12a5202bf7	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": true, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [18, 39, 8, 49], "b07a2cc5-1456-407e-9226-bf0cad7d11d6": "Past Exhibits", "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
 12198	12137	1	\N	\N	t	2022-02-18 00:11:39	2025-11-19 20:57:54	22db7120-c31c-4860-832e-c708e6e7e4c1	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "1", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [8, 49, 39, 18], "b07a2cc5-1456-407e-9226-bf0cad7d11d6": "Our Exhibits", "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
+226677	211645	1	\N	\N	t	2025-12-01 22:26:52	2025-12-01 22:26:52	12228379-c658-4f88-b817-3608af3ab462	Craft red	\N
 226193	211164	1	about	about	t	2025-11-20 20:15:32	2025-11-20 20:15:32	a67c72ee-1422-4d96-a7a4-8d2d2baf2098	About	{"3455a89c-de3b-4052-8a29-f99fd0ffdc8d": "Our Story", "5dc0e35e-7c51-403c-bd23-c6945d019ad3": {"typeId": null, "sourceId": null, "sourceName": null, "sourceType": "field", "metaSiteVars": {"creator": null, "identity": null, "referrer": "no-referrer-when-downgrade", "siteName": "English", "sameAsLinks": [], "facebookAppId": "", "twitterHandle": "", "facebookProfileId": "", "siteAlternateName": "", "additionalSitemaps": [], "siteLinksQueryInput": "", "bingSiteVerification": "", "additionalSitemapUrls": [], "siteLinksSearchTarget": "", "googleSiteVerification": "", "facebookSiteVerification": "", "pinterestSiteVerification": "", "additionalSitemapUrlsDateUpdated": null}, "sourceHandle": null, "sourceSiteId": null, "bundleVersion": "1.0.23", "metaContainers": {"MetaTagContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "general", "include": true, "clearCache": false, "description": "General Meta Tags", "dependencies": []}, "MetaTagContainertwitter": {"data": [], "name": "Twitter", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "twitter", "include": true, "clearCache": false, "description": "Twitter Card Meta Tags", "dependencies": []}, "MetaLinkContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaLinkContainer", "handle": "general", "include": true, "clearCache": false, "description": "Link Tags", "dependencies": []}, "MetaTagContaineropengraph": {"data": [], "name": "Facebook", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "opengraph", "include": true, "clearCache": false, "description": "Facebook OpenGraph Meta Tags", "dependencies": []}, "MetaTitleContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTitleContainer", "handle": "general", "include": true, "clearCache": false, "description": "Meta Title Tag", "dependencies": []}, "MetaJsonLdContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaJsonLdContainer", "handle": "general", "include": true, "clearCache": false, "description": "JsonLd Tags", "dependencies": []}, "MetaScriptContainergeneral": {"data": [], "name": "General", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaScriptContainer", "handle": "general", "include": true, "position": 1, "clearCache": false, "description": "Script Tags", "dependencies": []}, "MetaTagContainermiscellaneous": {"data": [], "name": "Miscellaneous", "class": "nystudio107\\\\seomatic\\\\models\\\\MetaTagContainer", "handle": "miscellaneous", "include": true, "clearCache": false, "description": "Miscellaneous Meta Tags", "dependencies": []}}, "metaGlobalVars": {"ogType": "", "robots": "", "ogImage": "", "ogTitle": "", "language": null, "seoImage": "", "seoTitle": "", "inherited": [], "overrides": [], "seoKeywords": "", "twitterCard": "", "canonicalUrl": "", "ogImageWidth": "", "twitterImage": "", "twitterTitle": "", "ogDescription": "", "ogImageHeight": "", "seoImageWidth": "", "seoDescription": "", "seoImageHeight": "", "twitterCreator": "", "mainEntityOfPage": "", "siteNamePosition": "", "twitterImageWidth": "", "ogImageDescription": "", "ogSiteNamePosition": "", "twitterDescription": "", "twitterImageHeight": "", "seoImageDescription": "", "twitterImageDescription": "", "twitterSiteNamePosition": ""}, "sourceTemplate": "", "metaSitemapVars": {"inherited": [], "overrides": [], "newsSitemap": null, "sitemapUrls": null, "sitemapFiles": null, "sitemapLimit": null, "sitemapAssets": null, "structureDepth": null, "sitemapAltLinks": null, "sitemapPageSize": 500, "sitemapPriority": "", "sitemapChangeFreq": "", "newsPublicationName": "", "sitemapImageFieldMap": [], "sitemapVideoFieldMap": [], "sitemapAssetTransform": null}, "sourceBundleType": "field", "sourceDateUpdated": "2025-11-18T00:36:55+00:00", "metaBundleSettings": {"siteType": "", "ogImageIds": [], "seoImageIds": [], "siteSubType": "", "ogImageField": "", "ogTitleField": "", "ogImageSource": "", "ogTitleSource": "", "seoImageField": "", "seoTitleField": "", "seoImageSource": "fromAsset", "seoTitleSource": "fromCustom", "twitterImageIds": [], "ogImageTransform": false, "seoKeywordsField": "", "siteSpecificType": "", "seoImageTransform": true, "seoKeywordsSource": "fromCustom", "twitterImageField": "", "twitterTitleField": "", "ogDescriptionField": "", "twitterImageSource": "", "twitterTitleSource": "", "ogDescriptionSource": "", "seoDescriptionField": "", "twitterCreatorField": "", "ogImageTransformMode": "crop", "seoDescriptionSource": "fromCustom", "twitterCreatorSource": "", "seoImageTransformMode": "crop", "twitterImageTransform": false, "siteNamePositionSource": "", "ogImageDescriptionField": "", "twitterDescriptionField": "", "ogImageDescriptionSource": "", "ogSiteNamePositionSource": "", "seoImageDescriptionField": "", "twitterDescriptionSource": "", "seoImageDescriptionSource": "fromCustom", "twitterImageTransformMode": "crop", "twitterImageDescriptionField": "", "twitterImageDescriptionSource": "", "twitterSiteNamePositionSource": ""}, "redirectsContainer": [], "sourceAltSiteSettings": [], "frontendTemplatesContainer": {"data": [], "name": null, "class": "nystudio107\\\\seomatic\\\\models\\\\FrontendTemplateContainer", "handle": null, "include": true, "clearCache": false, "description": null, "dependencies": null}}}
 12200	12139	1	\N	\N	t	2022-02-18 00:11:39	2025-11-19 20:57:54	b1e7009a-aaa7-4780-8a57-372ac8034102	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [91, 103, 99, 95], "b07a2cc5-1456-407e-9226-bf0cad7d11d6": "Latest News", "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
 12207	12146	1	\N	\N	t	2022-02-18 00:11:41	2025-11-19 20:57:54	f318045f-a218-4c99-94b2-2cacabc81034	\N	{"24d017d2-0892-4d77-8e37-8e6bb2a7141f": "1", "33eca5a4-b557-4128-8cc8-02c375be3778": false, "9f3861bd-a0ce-4e70-a654-6b532f640ca6": [8, 49, 39, 18], "b07a2cc5-1456-407e-9226-bf0cad7d11d6": "Current", "b8be8189-563c-449a-a7cf-bc40d8cc6421": []}
@@ -14095,8 +14125,8 @@ COPY public.fields (id, name, handle, context, instructions, searchable, "transl
 42	Details	details	global	\N	t	none	\N	craft\\fields\\PlainText	{"byteLimit":null,"charLimit":null,"code":false,"initialRows":4,"multiline":false,"placeholder":null,"uiMode":"normal"}	2020-01-16 08:57:30	2025-11-18 22:36:41	8c274864-9cf0-4ef9-b4bd-88da544515ad	\N	\N
 27	Mode	sliderMode	global	By default, slides are presented in a horizontal list, beginning at the left edge of the screen. When selecting many visually-distinct items, or items whose order is not vital, consider using the **Wrap** mode.	t	none	\N	craft\\fields\\Dropdown	{"customOptions":false,"options":[{"label":"Normal","value":"normal","icon":"arrow-right-from-bracket","color":"","default":"1"},{"label":"Wrap","value":"wrap","icon":"arrows-repeat","color":"","default":""}]}	2020-01-09 07:30:05	2025-11-19 20:57:02	e6e6fbf0-a370-48de-b635-6f31bece3c9d	\N	\N
 35	Color Theme	colorTheme	global	This section supports light and dark themes. It can help to break up a page (or group adjacent sections) by periodically inverting the theme.	t	none	\N	craft\\fields\\Dropdown	{"customOptions":false,"options":[{"label":"Light","value":"light","icon":"sun","color":"#ffffff","default":"1"},{"label":"Dark","value":"dark","icon":"moon-stars","color":"#000000","default":""}]}	2020-01-16 07:11:08	2025-11-19 21:00:05	85241ed2-6bbd-4dd0-af5c-07842116ccf3	\N	\N
-22	Description	description	global	\N	t	none	\N	craft\\ckeditor\\Field	{"ckeConfig":"40bfb363-8740-499a-82f2-6eda20cb6025","wordLimit":null,"characterLimit":null,"showWordCount":false,"parseEmbeds":false,"availableVolumes":"*","availableTransforms":"","defaultTransform":null,"sourceEditingGroups":"*","showUnpermittedVolumes":true,"showUnpermittedFiles":false,"fullGraphqlData":false,"createButtonLabel":null,"expandEntryButtons":false,"purifierConfig":null,"purifyHtml":true,"entryTypes":[]}	2020-01-08 22:30:44	2025-11-20 17:53:50	eb7b8bc9-c07a-4a25-9201-8174bd70fcb9	\N	\N
 51	Hero Title	heroTitle	global	This page’s canonical title is determined by its section settings. Use this field to override it at the top of the page.	t	none	\N	craft\\fields\\PlainText	{"byteLimit":null,"charLimit":null,"code":false,"initialRows":4,"multiline":false,"placeholder":null,"uiMode":"normal"}	2020-01-23 11:46:55	2025-11-24 21:37:09	27881ad3-1379-497a-91a6-d495b2bbc7d1	\N	\N
+22	Description	description	global	\N	t	none	\N	craft\\ckeditor\\Field	{"availableTransforms":"","availableVolumes":["a36fa6aa-4824-448f-82cf-b3086f8582c5"],"characterLimit":null,"ckeConfig":"40bfb363-8740-499a-82f2-6eda20cb6025","createButtonLabel":null,"defaultTransform":"4ee7fd54-73f7-4abe-94e3-6c01585ca5e3","expandEntryButtons":false,"fullGraphqlData":false,"parseEmbeds":false,"purifierConfig":null,"purifyHtml":true,"showUnpermittedFiles":false,"showUnpermittedVolumes":true,"showWordCount":false,"sourceEditingGroups":"*","wordLimit":null}	2020-01-08 22:30:44	2025-12-01 23:11:11	eb7b8bc9-c07a-4a25-9201-8174bd70fcb9	\N	\N
 56	Layout Width	layoutWidth	global	\N	f	none	\N	craft\\fields\\ButtonGroup	{"customOptions":false,"iconsOnly":false,"options":[{"label":"Normal (No restrictions)","value":"normal","icon":"distribute-spacing-vertical","default":"1"},{"label":"Narrow","value":"narrow","icon":"distribute-spacing-horizontal","default":""}]}	2020-01-24 11:19:54	2025-11-18 22:33:22	0ba28a66-d3aa-4c97-ad77-8e26087b3d70	\N	\N
 52	Image Handling	imageHandling	global	How do you want to treat embedded images?	t	none	\N	craft\\fields\\ButtonGroup	{"customOptions":false,"iconsOnly":true,"options":[{"label":"Left","value":"left","icon":"objects-align-left","default":""},{"label":"Full","value":"full","icon":"distribute-spacing-vertical","default":"1"},{"label":"Right","value":"right","icon":"objects-align-right","default":""}]}	2020-01-23 11:46:56	2025-11-18 22:43:31	cdc345f6-dec9-46b7-80b5-6de7918fcdf3	\N	\N
 55	Highlight Text	highlightText	global	Should a background be applied to the text to increase contrast from the background? This is recommended when overlaid on an image.	f	none	\N	craft\\fields\\Lightswitch	{"default":false,"offLabel":null,"onLabel":null,"showLabelsInCards":false}	2020-01-23 11:46:56	2025-11-19 20:09:27	913eb47c-ce43-4325-bb3a-1f5d99065038	\N	\N
@@ -14116,18 +14146,18 @@ COPY public.fields (id, name, handle, context, instructions, searchable, "transl
 20	Stat Value	statValue	global	\N	t	none	\N	craft\\fields\\PlainText	{"byteLimit":null,"charLimit":null,"code":false,"initialRows":4,"multiline":false,"placeholder":null,"uiMode":"enlarged"}	2020-01-08 22:30:44	2025-11-19 21:24:07	7cce3872-9055-454a-8fdc-45cbccec785b	\N	\N
 46	Image Slides	slideImages	global	\N	t	none	\N	craft\\fields\\Assets	{"allowSelfRelations":false,"allowSubfolders":false,"allowUploads":true,"allowedKinds":["image"],"branchLimit":null,"defaultPlacement":"end","defaultUploadLocationSource":"volume:a36fa6aa-4824-448f-82cf-b3086f8582c5","defaultUploadLocationSubpath":null,"maintainHierarchy":false,"maxRelations":null,"minRelations":null,"previewMode":"full","restrictFiles":true,"restrictLocation":true,"restrictedDefaultUploadSubpath":null,"restrictedLocationSource":"volume:a36fa6aa-4824-448f-82cf-b3086f8582c5","restrictedLocationSubpath":null,"selectionLabel":null,"showSearchInput":true,"showSiteMenu":true,"showUnpermittedFiles":false,"showUnpermittedVolumes":false,"sources":"*","targetSiteId":null,"validateRelatedElements":false,"viewMode":"cards-grid"}	2020-01-17 06:19:34	2025-11-20 17:53:23	11b555a2-89cb-434c-a97c-8bf858a76326	\N	\N
 6	Entry Slides	slideEntries	global	\N	t	none	\N	craft\\fields\\Entries	{"allowSelfRelations":false,"branchLimit":null,"defaultPlacement":"end","maintainHierarchy":false,"maxRelations":null,"minRelations":1,"selectionLabel":null,"showSearchInput":true,"showSiteMenu":true,"showUnpermittedEntries":true,"showUnpermittedSections":true,"sources":"*","targetSiteId":null,"validateRelatedElements":false,"viewMode":"cards"}	2019-12-30 06:47:43	2025-11-20 17:53:11	13b529cb-1236-4eb5-95a0-e20c2358385e	\N	\N
-65	Attachment	attachment	global	What would you like to embed? The front-end presentation may differ based on the type of entry selected.	f	site	\N	craft\\fields\\Entries	{"allowSelfRelations":false,"branchLimit":null,"localizeRelations":false,"maintainHierarchy":false,"maxRelations":1,"minRelations":1,"selectionLabel":null,"showCardsInGrid":false,"showSiteMenu":false,"sources":["section:647de63e-c78e-4d05-b61d-013120b49d5d","section:c49dac11-102e-429e-8bcc-5c8d99508dcb","section:666bcffb-61d7-43b4-a9f5-8c51c458b356","singles"],"targetSiteId":null,"validateRelatedElements":false,"viewMode":"list"}	2024-02-07 06:29:39	2024-02-07 06:29:39	f36520a3-472b-40e0-8895-6f577f213037	\N	\N
 57	Featured Exhibits	featuredExhibits	global	Will be displayed in a random order.	t	site	\N	craft\\fields\\Entries	{"allowSelfRelations":false,"branchLimit":null,"localizeRelations":false,"maintainHierarchy":false,"maxRelations":4,"minRelations":null,"selectionLabel":null,"showCardsInGrid":true,"showSiteMenu":true,"sources":["section:c49dac11-102e-429e-8bcc-5c8d99508dcb"],"targetSiteId":null,"validateRelatedElements":false,"viewMode":"cards"}	2020-01-25 11:54:48	2024-02-07 06:52:14	c3286b59-368a-4fdf-8dbe-48084247c9e2	\N	\N
 25	News Category	newsCategory	global	\N	t	site	\N	craft\\fields\\Entries	{"allowSelfRelations":false,"branchLimit":1,"localizeRelations":false,"maintainHierarchy":true,"maxRelations":null,"minRelations":null,"selectionLabel":null,"showSiteMenu":true,"sources":["section:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f"],"targetSiteId":null,"validateRelatedElements":false,"viewMode":null}	2020-01-09 07:09:25	2025-11-17 21:59:05	079ddf1a-d985-4de2-9929-8dc87fa2047f	\N	\N
 44	Link Icon	linkIcon	global	\N	t	none	\N	craft\\fields\\Dropdown	{"customOptions":false,"options":[{"label":"None","value":"none","icon":"","color":"","default":"1"},{"label":"Arrow - Left","value":"arrowLeft","icon":"","color":"","default":""},{"label":"Arrow - Right","value":"arrowRight","icon":"","color":"","default":""},{"label":"Arrow - Up","value":"arrowUp","icon":"","color":"","default":""},{"label":"Arrow - Down","value":"arrowDown","icon":"","color":"","default":""},{"label":"Brochure","value":"brochure","icon":"","color":"","default":""},{"label":"Map Pin","value":"mapPin","icon":"","color":"","default":""},{"label":"News","value":"news","icon":"","color":"","default":""}]}	2020-01-16 09:11:53	2025-11-18 22:46:35	42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8	\N	\N
 66	Slide Type	slideType	global	What type of content do you want to display in this slider?	f	none	\N	craft\\fields\\ButtonGroup	{"customOptions":false,"iconsOnly":false,"options":[{"label":"Assets","value":"assets","icon":"photo-film","default":""},{"label":"Entries","value":"entries","icon":"newspaper","default":""}]}	2025-11-19 20:48:47	2025-11-19 20:48:47	501340bb-461c-45f4-851b-15c83b08ef13	\N	\N
 10	Primary Links	navLinksPrimary	global	\N	t	none	\N	craft\\fields\\Entries	{"allowSelfRelations":false,"branchLimit":null,"defaultPlacement":"end","maintainHierarchy":false,"maxRelations":null,"minRelations":null,"selectionLabel":"Add Link","showSearchInput":true,"showSiteMenu":true,"showUnpermittedEntries":true,"showUnpermittedSections":true,"sources":"*","targetSiteId":null,"validateRelatedElements":false,"viewMode":"list-inline"}	2019-12-31 21:58:29	2025-11-20 00:39:57	1addbebe-4d59-4c1d-9607-6c47999665df	\N	\N
 11	Secondary Links	navLinksSecondary	global	\N	t	none	\N	craft\\fields\\Entries	{"allowSelfRelations":false,"branchLimit":null,"defaultPlacement":"end","maintainHierarchy":false,"maxRelations":null,"minRelations":null,"selectionLabel":"Add Link","showSearchInput":true,"showSiteMenu":true,"showUnpermittedEntries":true,"showUnpermittedSections":true,"sources":"*","targetSiteId":null,"validateRelatedElements":false,"viewMode":"list-inline"}	2019-12-31 22:00:39	2025-11-20 00:40:06	599f0646-f724-4ce4-a810-a8eaf7798b2d	\N	\N
-38	Rich Text	richText	global	\N	t	none	\N	craft\\ckeditor\\Field	{"availableTransforms":"","availableVolumes":"*","characterLimit":null,"ckeConfig":"a6cb7c13-e866-45ba-ad8e-a44c552ff6c1","createButtonLabel":null,"defaultTransform":null,"entryTypes":[{"uid":"386be967-b947-414c-8ea0-824e977d04ad"}],"expandEntryButtons":false,"fullGraphqlData":false,"parseEmbeds":false,"purifierConfig":null,"purifyHtml":true,"showUnpermittedFiles":false,"showUnpermittedVolumes":true,"showWordCount":false,"sourceEditingGroups":null,"wordLimit":null}	2020-01-16 08:20:57	2025-11-20 17:52:43	aa1aa6b7-0e81-4b68-8694-ed5f543f38bc	\N	\N
+69	Date Expression	dateExpression	global	A human-readable description of the duration, like “Coming Winter 2027”	t	none	\N	craft\\fields\\PlainText	{"byteLimit":null,"charLimit":null,"code":false,"initialRows":4,"multiline":false,"placeholder":null,"uiMode":"normal"}	2025-11-20 23:50:16	2025-12-01 23:12:05	81b9e710-5a36-4bb3-9b2e-f11804cfc14d	\N	\N
 43	Link Destination	linkDestination	global	\N	t	none	\N	craft\\fields\\Link	{"advancedFields":["target","rel","download"],"fullGraphqlData":false,"maxLength":255,"showLabelField":true,"typeSettings":{"asset":{"sources":["volume:a36fa6aa-4824-448f-82cf-b3086f8582c5","volume:39bbec04-e985-41b5-92c1-2b1aa044796e"],"allowedKinds":"*","showUnpermittedVolumes":"","showUnpermittedFiles":""},"entry":{"sources":"*","showUnpermittedSections":"","showUnpermittedEntries":""},"url":{"allowRootRelativeUrls":"1","allowAnchors":"1","allowCustomSchemes":""}},"types":["url","asset","email","entry","tel"]}	2020-01-16 08:59:07	2025-11-20 20:11:49	55c6cb51-defc-4e30-bc18-e524de65b7b7	\N	\N
 68	End Date	dateEnd	global	\N	f	none	\N	craft\\fields\\Date	{"max":null,"min":null,"minuteIncrement":30,"showDate":true,"showTime":false,"showTimeZone":false}	2025-11-20 23:49:05	2025-11-20 23:49:05	e565f693-e816-4539-8caf-a618b5637ea4	\N	\N
 67	Start Date	dateStart	global	\N	t	none	\N	craft\\fields\\Date	{"max":null,"min":null,"minuteIncrement":30,"showDate":true,"showTime":false,"showTimeZone":false}	2025-11-20 23:48:52	2025-11-20 23:49:17	ceeaad1b-ea68-46f6-8b14-e1c219b9a828	\N	\N
-69	Date Expression	dateExpression	global	A human-readable description of the duration, like “Coming Winter 2027”	f	none	\N	craft\\fields\\PlainText	{"byteLimit":null,"charLimit":null,"code":false,"initialRows":4,"multiline":false,"placeholder":null,"uiMode":"normal"}	2025-11-20 23:50:16	2025-11-20 23:50:16	81b9e710-5a36-4bb3-9b2e-f11804cfc14d	\N	\N
+65	Attachment	attachment	global	What would you like to embed? The front-end presentation may differ based on the type of entry selected.	t	none	\N	craft\\fields\\Entries	{"allowSelfRelations":false,"branchLimit":null,"defaultPlacement":"end","maintainHierarchy":false,"maxRelations":1,"minRelations":1,"selectionLabel":null,"showSearchInput":true,"showSiteMenu":true,"showUnpermittedEntries":true,"showUnpermittedSections":true,"sources":["section:647de63e-c78e-4d05-b61d-013120b49d5d","section:c49dac11-102e-429e-8bcc-5c8d99508dcb","section:666bcffb-61d7-43b4-a9f5-8c51c458b356"],"targetSiteId":null,"validateRelatedElements":false,"viewMode":"list"}	2024-02-07 06:29:39	2025-12-01 23:12:27	f36520a3-472b-40e0-8895-6f577f213037	\N	\N
+38	Rich Text	richText	global	\N	t	none	\N	craft\\ckeditor\\Field	{"availableTransforms":"","availableVolumes":["a36fa6aa-4824-448f-82cf-b3086f8582c5"],"characterLimit":null,"ckeConfig":"a6cb7c13-e866-45ba-ad8e-a44c552ff6c1","createButtonLabel":null,"defaultTransform":"4ee7fd54-73f7-4abe-94e3-6c01585ca5e3","entryTypes":[{"uid":"386be967-b947-414c-8ea0-824e977d04ad"}],"expandEntryButtons":false,"fullGraphqlData":false,"parseEmbeds":false,"purifierConfig":null,"purifyHtml":true,"showUnpermittedFiles":false,"showUnpermittedVolumes":true,"showWordCount":false,"sourceEditingGroups":null,"wordLimit":null}	2020-01-16 08:20:57	2025-12-01 23:11:26	aa1aa6b7-0e81-4b68-8694-ed5f543f38bc	\N	\N
 \.
 
 
@@ -14668,7 +14698,7 @@ COPY public.imagetransforms (id, name, handle, mode, "position", width, height, 
 --
 
 COPY public.info (id, version, "schemaVersion", maintenance, "fieldVersion", "dateCreated", "dateUpdated", uid, "configVersion") FROM stdin;
-1	5.8.20	5.9.0.2	f	3@aldbunldgw	2019-11-25 23:37:04	2025-11-25 22:09:07	b11a290b-ac19-4da8-84ec-fb6620253195	acrzfsifkuix
+1	5.8.20	5.9.0.2	f	3@oskfltmrhb	2019-11-25 23:37:04	2025-12-03 22:57:18	b11a290b-ac19-4da8-84ec-fb6620253195	jqafdyigiygb
 \.
 
 
@@ -15200,7 +15230,31 @@ fields.13b529cb-1236-4eb5-95a0-e20c2358385e.settings.viewMode	"cards"
 fields.13b529cb-1236-4eb5-95a0-e20c2358385e.translationKeyFormat	null
 fields.13b529cb-1236-4eb5-95a0-e20c2358385e.translationMethod	"none"
 fields.13b529cb-1236-4eb5-95a0-e20c2358385e.type	"craft\\\\fields\\\\Entries"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.columnSuffix	null
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.handle	"description"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.instructions	null
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.name	"Description"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.searchable	true
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.availableTransforms	""
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.availableVolumes.0	"a36fa6aa-4824-448f-82cf-b3086f8582c5"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.characterLimit	null
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.ckeConfig	"40bfb363-8740-499a-82f2-6eda20cb6025"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.createButtonLabel	null
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.defaultTransform	"4ee7fd54-73f7-4abe-94e3-6c01585ca5e3"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.expandEntryButtons	false
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.fullGraphqlData	false
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.parseEmbeds	false
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.purifierConfig	null
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.purifyHtml	true
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.showUnpermittedFiles	false
 plugins.aws-s3.enabled	true
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.showUnpermittedVolumes	true
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.showWordCount	false
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.sourceEditingGroups	"*"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.wordLimit	null
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.translationKeyFormat	null
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.translationMethod	"none"
+fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.type	"craft\\\\ckeditor\\\\Field"
 meta.__names__.11b555a2-89cb-434c-a97c-8bf858a76326	"Image Slides"
 fields.11b555a2-89cb-434c-a97c-8bf858a76326.columnSuffix	null
 fields.11b555a2-89cb-434c-a97c-8bf858a76326.handle	"slideImages"
@@ -15236,31 +15290,48 @@ fields.11b555a2-89cb-434c-a97c-8bf858a76326.settings.viewMode	"cards-grid"
 fields.11b555a2-89cb-434c-a97c-8bf858a76326.translationKeyFormat	null
 fields.11b555a2-89cb-434c-a97c-8bf858a76326.translationMethod	"none"
 fields.11b555a2-89cb-434c-a97c-8bf858a76326.type	"craft\\\\fields\\\\Assets"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.columnSuffix	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.handle	"richText"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.instructions	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.name	"Rich Text"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.searchable	true
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.availableTransforms	""
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.availableVolumes.0	"a36fa6aa-4824-448f-82cf-b3086f8582c5"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.characterLimit	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.ckeConfig	"a6cb7c13-e866-45ba-ad8e-a44c552ff6c1"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.createButtonLabel	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.defaultTransform	"4ee7fd54-73f7-4abe-94e3-6c01585ca5e3"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.entryTypes.0.__assoc__.0.0	"uid"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.entryTypes.0.__assoc__.0.1	"386be967-b947-414c-8ea0-824e977d04ad"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.expandEntryButtons	false
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.fullGraphqlData	false
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.parseEmbeds	false
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.purifierConfig	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.purifyHtml	true
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.showUnpermittedFiles	false
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.showUnpermittedVolumes	true
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.showWordCount	false
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.sourceEditingGroups	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.wordLimit	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.translationKeyFormat	null
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.translationMethod	"none"
+fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.type	"craft\\\\ckeditor\\\\Field"
 meta.__names__.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9	"Description"
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.columnSuffix	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.handle	"description"
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.instructions	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.name	"Description"
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.searchable	true
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.availableTransforms	""
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.availableVolumes	"*"
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.characterLimit	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.ckeConfig	"40bfb363-8740-499a-82f2-6eda20cb6025"
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.createButtonLabel	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.defaultTransform	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.expandEntryButtons	false
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.fullGraphqlData	false
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.parseEmbeds	false
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.purifierConfig	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.purifyHtml	true
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.showUnpermittedFiles	false
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.showUnpermittedVolumes	true
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.showWordCount	false
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.sourceEditingGroups	"*"
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.settings.wordLimit	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.translationKeyFormat	null
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.translationMethod	"none"
-fields.eb7b8bc9-c07a-4a25-9201-8174bd70fcb9.type	"craft\\\\ckeditor\\\\Field"
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.columnSuffix	null
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.handle	"dateExpression"
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.instructions	"A human-readable description of the duration, like “Coming Winter 2027”"
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.name	"Date Expression"
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.searchable	true
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.byteLimit	null
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.charLimit	null
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.code	false
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.initialRows	4
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.multiline	false
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.placeholder	null
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.uiMode	"normal"
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.translationKeyFormat	null
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.translationMethod	"none"
+fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.type	"craft\\\\fields\\\\PlainText"
 plugins.aws-s3.schemaVersion	"2.0"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.color	"teal"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.description	null
@@ -15309,6 +15380,7 @@ entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.instructions	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.label	"Image"
 plugins.freeform.schemaVersion	"5.8.0"
+fields.f36520a3-472b-40e0-8895-6f577f213037.columnSuffix	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.providesThumbs	true
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.required	false
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.tip	null
@@ -15352,6 +15424,7 @@ entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.type	"craft\\\\fieldlayoutelements\\\\CustomField"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.uid	"675e92cb-65e0-414e-873c-b8d2dfd898d2"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.userCondition	null
+fields.f36520a3-472b-40e0-8895-6f577f213037.handle	"attachment"
 ckeditor.configs.a6cb7c13-e866-45ba-ad8e-a44c552ff6c1.headingLevels.2	3
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.warning	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.width	50
@@ -15531,6 +15604,80 @@ volumes.a36fa6aa-4824-448f-82cf-b3086f8582c5.titleTranslationKeyFormat	null
 volumes.a36fa6aa-4824-448f-82cf-b3086f8582c5.titleTranslationMethod	"site"
 volumes.a36fa6aa-4824-448f-82cf-b3086f8582c5.transformFs	""
 volumes.a36fa6aa-4824-448f-82cf-b3086f8582c5.transformSubpath	""
+fields.f36520a3-472b-40e0-8895-6f577f213037.instructions	"What would you like to embed? The front-end presentation may differ based on the type of entry selected."
+fields.f36520a3-472b-40e0-8895-6f577f213037.name	"Attachment"
+fields.f36520a3-472b-40e0-8895-6f577f213037.searchable	true
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.allowSelfRelations	false
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.branchLimit	null
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.defaultPlacement	"end"
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.maintainHierarchy	false
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.maxRelations	1
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.minRelations	1
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.selectionLabel	null
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showSearchInput	true
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showSiteMenu	true
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showUnpermittedEntries	true
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showUnpermittedSections	true
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.sources.0	"section:647de63e-c78e-4d05-b61d-013120b49d5d"
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.sources.1	"section:c49dac11-102e-429e-8bcc-5c8d99508dcb"
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.sources.2	"section:666bcffb-61d7-43b4-a9f5-8c51c458b356"
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.targetSiteId	null
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.validateRelatedElements	false
+fields.f36520a3-472b-40e0-8895-6f577f213037.settings.viewMode	"list"
+fields.f36520a3-472b-40e0-8895-6f577f213037.translationKeyFormat	null
+fields.f36520a3-472b-40e0-8895-6f577f213037.translationMethod	"none"
+fields.f36520a3-472b-40e0-8895-6f577f213037.type	"craft\\\\fields\\\\Entries"
+dateModified	1764802638
+elementSources.craft\\elements\\Asset.0.defaultSort.0	"dateCreated"
+elementSources.craft\\elements\\Asset.0.defaultSort.1	"desc"
+elementSources.craft\\elements\\Asset.0.defaultViewMode	""
+elementSources.craft\\elements\\Asset.0.disabled	false
+elementSources.craft\\elements\\Asset.0.key	"volume:a36fa6aa-4824-448f-82cf-b3086f8582c5"
+elementSources.craft\\elements\\Asset.0.tableAttributes.0	"filename"
+elementSources.craft\\elements\\Asset.0.tableAttributes.1	"size"
+elementSources.craft\\elements\\Asset.0.tableAttributes.2	"imageSize"
+elementSources.craft\\elements\\Asset.0.tableAttributes.3	"dateCreated"
+elementSources.craft\\elements\\Asset.0.tableAttributes.4	"link"
+elementSources.craft\\elements\\Asset.0.type	"native"
+elementSources.craft\\elements\\Asset.1.defaultSort.0	"dateCreated"
+elementSources.craft\\elements\\Asset.1.defaultSort.1	"desc"
+elementSources.craft\\elements\\Asset.1.defaultViewMode	"cards"
+elementSources.craft\\elements\\Asset.1.disabled	false
+elementSources.craft\\elements\\Asset.1.key	"volume:39bbec04-e985-41b5-92c1-2b1aa044796e"
+elementSources.craft\\elements\\Asset.1.tableAttributes.0	"filename"
+elementSources.craft\\elements\\Asset.1.tableAttributes.1	"size"
+elementSources.craft\\elements\\Asset.1.tableAttributes.2	"uploader"
+elementSources.craft\\elements\\Asset.1.tableAttributes.3	"link"
+elementSources.craft\\elements\\Asset.1.type	"native"
+elementSources.craft\\elements\\Asset.2.defaultSort.0	"dateCreated"
+elementSources.craft\\elements\\Asset.2.defaultSort.1	"desc"
+elementSources.craft\\elements\\Asset.2.defaultViewMode	""
+elementSources.craft\\elements\\Asset.2.disabled	false
+elementSources.craft\\elements\\Asset.2.key	"temp"
+elementSources.craft\\elements\\Asset.2.tableAttributes.0	"filename"
+elementSources.craft\\elements\\Asset.2.tableAttributes.1	"size"
+elementSources.craft\\elements\\Asset.2.tableAttributes.2	"dateModified"
+elementSources.craft\\elements\\Asset.2.tableAttributes.3	"uploader"
+elementSources.craft\\elements\\Asset.2.tableAttributes.4	"link"
+elementSources.craft\\elements\\Asset.2.type	"native"
+elementSources.craft\\elements\\Asset.3.condition.class	"craft\\\\elements\\\\conditions\\\\assets\\\\AssetCondition"
+elementSources.craft\\elements\\Asset.3.condition.conditionRules.0.class	"craft\\\\elements\\\\conditions\\\\assets\\\\HasAltConditionRule"
+elementSources.craft\\elements\\Asset.3.condition.conditionRules.0.uid	"c246e07f-ce6c-4bc4-984e-84baf57bfcbe"
+elementSources.craft\\elements\\Asset.3.condition.conditionRules.0.value	false
+elementSources.craft\\elements\\Asset.3.condition.conditionRules.1.class	"craft\\\\elements\\\\conditions\\\\assets\\\\VolumeConditionRule"
+elementSources.craft\\elements\\Asset.3.condition.conditionRules.1.operator	"in"
+elementSources.craft\\elements\\Asset.3.condition.conditionRules.1.uid	"9fee5310-fb83-4a5a-b8d5-4b9f3e6aae75"
+elementSources.craft\\elements\\Asset.3.condition.conditionRules.1.values.0	"a36fa6aa-4824-448f-82cf-b3086f8582c5"
+elementSources.craft\\elements\\Asset.3.condition.elementType	"craft\\\\elements\\\\Asset"
+elementSources.craft\\elements\\Asset.3.condition.fieldContext	"global"
+elementSources.craft\\elements\\Asset.3.defaultSort.0	"dateCreated"
+elementSources.craft\\elements\\Asset.3.defaultSort.1	"desc"
+elementSources.craft\\elements\\Asset.3.defaultViewMode	""
+elementSources.craft\\elements\\Asset.3.key	"custom:329ad360-447f-47c5-a20e-b45e28cbf000"
+elementSources.craft\\elements\\Asset.3.label	"Needs Alt Text"
+elementSources.craft\\elements\\Asset.3.tableAttributes.0	"dateCreated"
+elementSources.craft\\elements\\Asset.3.tableAttributes.1	"kind"
+elementSources.craft\\elements\\Asset.3.type	"custom"
 elementSources.craft\\elements\\Entry.0.defaultSort.0	"title"
 elementSources.craft\\elements\\Entry.0.defaultSort.1	"asc"
 elementSources.craft\\elements\\Entry.0.defaultViewMode	"cards"
@@ -16069,64 +16216,6 @@ volumes.39bbec04-e985-41b5-92c1-2b1aa044796e.titleTranslationMethod	"site"
 volumes.39bbec04-e985-41b5-92c1-2b1aa044796e.transformFs	""
 volumes.39bbec04-e985-41b5-92c1-2b1aa044796e.transformSubpath	""
 meta.__names__.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc	"Rich Text"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.columnSuffix	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.handle	"richText"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.instructions	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.name	"Rich Text"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.searchable	true
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.availableTransforms	""
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.availableVolumes	"*"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.characterLimit	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.ckeConfig	"a6cb7c13-e866-45ba-ad8e-a44c552ff6c1"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.createButtonLabel	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.defaultTransform	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.entryTypes.0.__assoc__.0.0	"uid"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.entryTypes.0.__assoc__.0.1	"386be967-b947-414c-8ea0-824e977d04ad"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.expandEntryButtons	false
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.fullGraphqlData	false
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.parseEmbeds	false
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.purifierConfig	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.purifyHtml	true
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.showUnpermittedFiles	false
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.showUnpermittedVolumes	true
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.showWordCount	false
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.sourceEditingGroups	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.settings.wordLimit	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.translationKeyFormat	null
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.translationMethod	"none"
-fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.type	"craft\\\\ckeditor\\\\Field"
-elementSources.craft\\elements\\Asset.0.defaultSort.0	"dateCreated"
-elementSources.craft\\elements\\Asset.0.defaultSort.1	"desc"
-elementSources.craft\\elements\\Asset.0.defaultViewMode	""
-elementSources.craft\\elements\\Asset.0.disabled	false
-elementSources.craft\\elements\\Asset.0.key	"volume:a36fa6aa-4824-448f-82cf-b3086f8582c5"
-elementSources.craft\\elements\\Asset.0.tableAttributes.0	"filename"
-elementSources.craft\\elements\\Asset.0.tableAttributes.1	"size"
-elementSources.craft\\elements\\Asset.0.tableAttributes.2	"imageSize"
-elementSources.craft\\elements\\Asset.0.tableAttributes.3	"dateCreated"
-elementSources.craft\\elements\\Asset.0.tableAttributes.4	"link"
-elementSources.craft\\elements\\Asset.0.type	"native"
-elementSources.craft\\elements\\Asset.1.defaultSort.0	"dateCreated"
-elementSources.craft\\elements\\Asset.1.defaultSort.1	"desc"
-elementSources.craft\\elements\\Asset.1.defaultViewMode	"cards"
-elementSources.craft\\elements\\Asset.1.disabled	false
-elementSources.craft\\elements\\Asset.1.key	"volume:39bbec04-e985-41b5-92c1-2b1aa044796e"
-elementSources.craft\\elements\\Asset.1.tableAttributes.0	"filename"
-elementSources.craft\\elements\\Asset.1.tableAttributes.1	"size"
-elementSources.craft\\elements\\Asset.1.tableAttributes.2	"uploader"
-elementSources.craft\\elements\\Asset.1.tableAttributes.3	"link"
-elementSources.craft\\elements\\Asset.1.type	"native"
-elementSources.craft\\elements\\Asset.2.defaultSort.0	"dateCreated"
-elementSources.craft\\elements\\Asset.2.defaultSort.1	"desc"
-elementSources.craft\\elements\\Asset.2.defaultViewMode	""
-elementSources.craft\\elements\\Asset.2.disabled	false
-elementSources.craft\\elements\\Asset.2.key	"temp"
-elementSources.craft\\elements\\Asset.2.tableAttributes.0	"filename"
-elementSources.craft\\elements\\Asset.2.tableAttributes.1	"size"
-elementSources.craft\\elements\\Asset.2.tableAttributes.2	"dateModified"
-elementSources.craft\\elements\\Asset.2.tableAttributes.3	"uploader"
-elementSources.craft\\elements\\Asset.2.tableAttributes.4	"link"
-elementSources.craft\\elements\\Asset.2.type	"native"
 fields.55c6cb51-defc-4e30-bc18-e524de65b7b7.columnSuffix	null
 fields.55c6cb51-defc-4e30-bc18-e524de65b7b7.handle	"linkDestination"
 fields.55c6cb51-defc-4e30-bc18-e524de65b7b7.instructions	null
@@ -16245,21 +16334,6 @@ fields.ceeaad1b-ea68-46f6-8b14-e1c219b9a828.translationKeyFormat	null
 fields.ceeaad1b-ea68-46f6-8b14-e1c219b9a828.translationMethod	"none"
 fields.ceeaad1b-ea68-46f6-8b14-e1c219b9a828.type	"craft\\\\fields\\\\Date"
 meta.__names__.81b9e710-5a36-4bb3-9b2e-f11804cfc14d	"Date Expression"
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.columnSuffix	null
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.handle	"dateExpression"
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.instructions	"A human-readable description of the duration, like “Coming Winter 2027”"
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.name	"Date Expression"
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.searchable	false
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.byteLimit	null
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.charLimit	null
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.code	false
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.initialRows	4
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.multiline	false
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.placeholder	null
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.settings.uiMode	"normal"
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.translationKeyFormat	null
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.translationMethod	"none"
-fields.81b9e710-5a36-4bb3-9b2e-f11804cfc14d.type	"craft\\\\fields\\\\PlainText"
 plugins.guide.schemaVersion	"2.0.0"
 entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.color	null
 entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.description	null
@@ -16657,7 +16731,6 @@ entryTypes.9ba346ec-12cc-4b07-9a30-677efc6e97c1.titleTranslationKeyFormat	null
 entryTypes.9ba346ec-12cc-4b07-9a30-677efc6e97c1.titleTranslationMethod	"site"
 entryTypes.9ba346ec-12cc-4b07-9a30-677efc6e97c1.uiLabelFormat	"{title}"
 users.groups.823ac85e-6b3c-499a-bbdc-99a4e2432138.permissions.16	"deletepeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f"
-dateModified	1764108547
 users.photoSubpath	"user-photos/"
 users.photoVolumeUid	"a36fa6aa-4824-448f-82cf-b3086f8582c5"
 users.requireEmailVerification	true
@@ -18183,7 +18256,6 @@ entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.0.elements.0.type	"craft\\\\fieldlayoutelements\\\\CustomField"
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.0.elements.0.uid	"11707c41-c00c-4dc5-bb79-f1f531a5d627"
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.0.elements.0.userCondition	null
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showSiteMenu	false
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.0.elements.0.warning	null
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.0.elements.0.width	100
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.0.elements.1.dateAdded	"2025-11-18T01:04:44+00:00"
@@ -18879,31 +18951,6 @@ fields.e6e6fbf0-a370-48de-b635-6f31bece3c9d.settings.options.1.__assoc__.4.1	""
 fields.e6e6fbf0-a370-48de-b635-6f31bece3c9d.translationKeyFormat	null
 fields.e6e6fbf0-a370-48de-b635-6f31bece3c9d.translationMethod	"none"
 fields.e6e6fbf0-a370-48de-b635-6f31bece3c9d.type	"craft\\\\fields\\\\Dropdown"
-fields.f36520a3-472b-40e0-8895-6f577f213037.columnSuffix	null
-fields.f36520a3-472b-40e0-8895-6f577f213037.handle	"attachment"
-fields.f36520a3-472b-40e0-8895-6f577f213037.instructions	"What would you like to embed? The front-end presentation may differ based on the type of entry selected."
-fields.f36520a3-472b-40e0-8895-6f577f213037.name	"Attachment"
-fields.f36520a3-472b-40e0-8895-6f577f213037.searchable	false
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.allowSelfRelations	false
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.branchLimit	null
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.defaultPlacement	"end"
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.maintainHierarchy	false
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.maxRelations	1
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.minRelations	1
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.selectionLabel	null
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showSearchInput	true
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showUnpermittedEntries	true
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.showUnpermittedSections	true
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.sources.0	"section:647de63e-c78e-4d05-b61d-013120b49d5d"
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.sources.1	"section:c49dac11-102e-429e-8bcc-5c8d99508dcb"
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.sources.2	"section:666bcffb-61d7-43b4-a9f5-8c51c458b356"
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.sources.3	"singles"
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.targetSiteId	null
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.validateRelatedElements	false
-fields.f36520a3-472b-40e0-8895-6f577f213037.settings.viewMode	"list"
-fields.f36520a3-472b-40e0-8895-6f577f213037.translationKeyFormat	null
-fields.f36520a3-472b-40e0-8895-6f577f213037.translationMethod	"none"
-fields.f36520a3-472b-40e0-8895-6f577f213037.type	"craft\\\\fields\\\\Entries"
 globalSets.a90cc22d-485c-4cd7-a4b9-63a8a637e90d.fieldLayouts.eb1e53f5-82c8-40b9-9072-91da10f51fe7.cardThumbAlignment	"end"
 globalSets.a90cc22d-485c-4cd7-a4b9-63a8a637e90d.fieldLayouts.eb1e53f5-82c8-40b9-9072-91da10f51fe7.tabs.0.elementCondition	null
 globalSets.a90cc22d-485c-4cd7-a4b9-63a8a637e90d.fieldLayouts.eb1e53f5-82c8-40b9-9072-91da10f51fe7.tabs.0.elements.0.dateAdded	null
@@ -19116,6 +19163,43 @@ sections.c49dac11-102e-429e-8bcc-5c8d99508dcb.type	"structure"
 --
 
 COPY public.queue (id, job, description, "timePushed", ttr, delay, priority, "dateReserved", "timeUpdated", progress, "progressLabel", attempt, fail, "dateFailed", error, channel) FROM stdin;
+36872	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3133303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d7468652d617263616469616e2d6f722d706173746f72616c2d73746174652e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137333b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-the-arcadian-or-pastoral-state.jpg"}]	1764802693	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36873	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3133303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d7468652d617263616469616e2d6f722d706173746f72616c2d73746174652e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137343b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-the-arcadian-or-pastoral-state.jpg"}]	1764802693	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36874	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3230373031373b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802713	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36875	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3133303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d7468652d617263616469616e2d6f722d706173746f72616c2d73746174652e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137343b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-the-arcadian-or-pastoral-state.jpg"}]	1764802716	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36876	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3230373031363b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802733	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36877	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3133303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d7468652d617263616469616e2d6f722d706173746f72616c2d73746174652e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137343b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-the-arcadian-or-pastoral-state.jpg"}]	1764802736	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36878	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131313a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d6465737472756374696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137353b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-destruction.jpg"}]	1764802739	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36879	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131313a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d6465737472756374696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137363b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-destruction.jpg"}]	1764802739	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36880	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3230373031353b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802749	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36881	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d6465736f6c6174696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137373b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-desolation.jpg"}]	1764802751	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36882	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d6465736f6c6174696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137383b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-desolation.jpg"}]	1764802751	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36883	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131313a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d6465737472756374696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137363b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-destruction.jpg"}]	1764802753	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36884	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131313a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d6465737472756374696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137363b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-destruction.jpg"}]	1764802756	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36885	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a22636f6c652d74686f6d61732d7468652d636f757273652d6f662d656d706972652d6465736f6c6174696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137383b7d	t9n:["app","Generating image transform for {file}",{"file":"cole-thomas-the-course-of-empire-desolation.jpg"}]	1764802760	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36886	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3230373031343b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802767	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36887	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3130313a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a2276617373696c792d6b616e64696e736b792d686f757365732d696e2d6d756e6963682e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3137393b7d	t9n:["app","Generating image transform for {file}",{"file":"vassily-kandinsky-houses-in-munich.jpg"}]	1764802770	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36888	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3130313a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a2276617373696c792d6b616e64696e736b792d686f757365732d696e2d6d756e6963682e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138303b7d	t9n:["app","Generating image transform for {file}",{"file":"vassily-kandinsky-houses-in-munich.jpg"}]	1764802770	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36889	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3730323b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802786	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36890	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131353a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226b616e64696e736b792d636f6c6f722d73747564792d737175617265732d636f6e63656e747269632d636972636c65732e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138313b7d	t9n:["app","Generating image transform for {file}",{"file":"kandinsky-color-study-squares-concentric-circles.jpg"}]	1764802788	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36891	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3131353a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226b616e64696e736b792d636f6c6f722d73747564792d737175617265732d636f6e63656e747269632d636972636c65732e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138323b7d	t9n:["app","Generating image transform for {file}",{"file":"kandinsky-color-study-squares-concentric-circles.jpg"}]	1764802788	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36892	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3639383b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802799	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36893	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3130303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226b616e64696e736b792d73747564792d666f722d696d70726f7669736174696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138333b7d	t9n:["app","Generating image transform for {file}",{"file":"kandinsky-study-for-improvisation.jpg"}]	1764802801	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36894	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3130303a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226b616e64696e736b792d73747564792d666f722d696d70726f7669736174696f6e2e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138343b7d	t9n:["app","Generating image transform for {file}",{"file":"kandinsky-study-for-improvisation.jpg"}]	1764802801	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36895	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3639343b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802807	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36896	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3130373a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226b616e64696e736b792d6c616e6473636170652d776974682d666163746f72792d6368696d6e65792e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138353b7d	t9n:["app","Generating image transform for {file}",{"file":"kandinsky-landscape-with-factory-chimney.jpg"}]	1764802809	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36897	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3130373a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226b616e64696e736b792d6c616e6473636170652d776974682d666163746f72792d6368696d6e65792e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138363b7d	t9n:["app","Generating image transform for {file}",{"file":"kandinsky-landscape-with-factory-chimney.jpg"}]	1764802809	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36898	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3638393b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802842	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36899	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a3130373a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226b616e64696e736b792d6c616e6473636170652d776974682d666163746f72792d6368696d6e65792e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138363b7d	t9n:["app","Generating image transform for {file}",{"file":"kandinsky-landscape-with-factory-chimney.jpg"}]	1764802846	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36900	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a39363a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226575726f70612d696e746572696f722d67616c6c6572792d736f7574682e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138373b7d	t9n:["app","Generating image transform for {file}",{"file":"europa-interior-gallery-south.jpg"}]	1764802848	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36901	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a39363a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226575726f70612d696e746572696f722d67616c6c6572792d736f7574682e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3138383b7d	t9n:["app","Generating image transform for {file}",{"file":"europa-interior-gallery-south.jpg"}]	1764802848	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36902	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3631343b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802906	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36903	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a39323a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226575726f70612d696e746572696f722d6d657a7a616e696e652e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3139303b7d	t9n:["app","Generating image transform for {file}",{"file":"europa-interior-mezzanine.jpg"}]	1764802908	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36904	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a39323a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226575726f70612d696e746572696f722d6d657a7a616e696e652e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3139313b7d	t9n:["app","Generating image transform for {file}",{"file":"europa-interior-mezzanine.jpg"}]	1764802908	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36905	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3631333b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802952	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36906	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a39363a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226575726f70612d696e746572696f722d67616c6c6572792d6e6f7274682e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3139333b7d	t9n:["app","Generating image transform for {file}",{"file":"europa-interior-gallery-north.jpg"}]	1764802954	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36907	\\x4f3a33393a2263726166745c71756575655c6a6f62735c47656e6572617465496d6167655472616e73666f726d223a343a7b733a31313a226465736372697074696f6e223b733a39363a2274396e3a5b22617070222c2247656e65726174696e6720696d616765207472616e73666f726d20666f72207b66696c657d222c7b2266696c65223a226575726f70612d696e746572696f722d67616c6c6572792d6e6f7274682e6a7067227d5d223b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a227472616e73666f726d4964223b693a3139343b7d	t9n:["app","Generating image transform for {file}",{"file":"europa-interior-gallery-north.jpg"}]	1764802954	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
+36908	\\x4f3a33343a2263726166745c71756575655c6a6f62735c557064617465536561726368496e646578223a383a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a31313a22656c656d656e7454797065223b733a32303a2263726166745c656c656d656e74735c4173736574223b733a393a22656c656d656e744964223b693a3338333b733a363a22736974654964223b693a313b733a31323a226669656c6448616e646c6573223b4e3b733a363a22717565756564223b623a313b7d	t9n:["app","Updating search indexes"]	1764802986	300	0	2048	\N	\N	0	\N	\N	f	\N	\N	queue
 \.
 
 
@@ -22703,19 +22787,24 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 87	title	0	1	 special events 	'events' 'special'
 88	slug	0	1	 tickets 	'tickets'
 88	title	0	1	 tickets 	'tickets'
+211639	filename	0	1	 ian dooley w2oob5bxsu8 unsplash jpg 	'dooley' 'ian' 'jpg' 'unsplash' 'w2oob5bxsu8'
 660	field	53	1		
+211639	extension	0	1	 jpg 	'jpg'
+211639	kind	0	1	 image 	'image'
 661	field	37	1	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum 	'adipiscing' 'aliqua' 'amet' 'consectetur' 'do' 'dolor' 'dolore' 'eiusmod' 'elit' 'et' 'incididunt' 'ipsum' 'labore' 'lorem' 'magna' 'sed' 'sit' 'tempor' 'ut'
 262	field	36	1	 olive trees 1889 vincent van gogh 	'1889' 'gogh' 'olive' 'trees' 'van' 'vincent'
 278	field	36	1	 self portrait 1887 vincent van gogh 	'1887' 'gogh' 'portrait' 'self' 'van' 'vincent'
 48	field	36	2		
-702	filename	0	1	 vassily kandinsky houses in munich jpg 	'houses' 'in' 'jpg' 'kandinsky' 'munich' 'vassily'
-702	extension	0	1	 jpg 	'jpg'
+211639	alt	0	1	 photograph of the exterior of the denver central library the building was designed by michael graves and is composed of simple jaunty geometric solids and uses natural stone finishes on most surfaces 	'and' 'building' 'by' 'central' 'composed' 'denver' 'designed' 'exterior' 'finishes' 'geometric' 'graves' 'is' 'jaunty' 'library' 'michael' 'most' 'natural' 'of' 'on' 'photograph' 'simple' 'solids' 'stone' 'surfaces' 'the' 'uses' 'was'
+211639	slug	0	1		
 38	field	36	2		
 17	field	36	1	 wheatfield under thunderclouds 1890 vincent van gogh 	'1890' 'gogh' 'thunderclouds' 'under' 'van' 'vincent' 'wheatfield'
 18	field	4	1	 2728px van gogh starry night google art project 	'2728px' 'art' 'gogh' 'google' 'night' 'project' 'starry' 'van'
 206991	slug	0	1	 houses in munich 	'houses' 'in' 'munich'
 206991	title	0	1	 houses in munich 	'houses' 'in' 'munich'
-702	kind	0	1	 image 	'image'
+211639	title	0	1	 geometric buildings exterior 	'buildings' 'exterior' 'geometric'
+211639	field	36	1	 denver central library 1995 michael graves 	'1995' 'central' 'denver' 'graves' 'library' 'michael'
+211639	field	64	1	 photo by ian dooley via unsplash https unsplash com photos w2oob5bxsu8 	'by' 'com' 'dooley' 'https' 'ian' 'photo' 'photos' 'unsplash' 'via' 'w2oob5bxsu8'
 291	slug	0	1	 temp ntsbznjzdkqnwkfarcgxojrnvclqmpsrtapu 	'ntsbznjzdkqnwkfarcgxojrnvclqmpsrtapu' 'temp'
 295	field	12	1	 exhibitions upcoming 	'exhibitions' 'upcoming'
 291	title	0	1		
@@ -22729,8 +22818,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 119	field	8	1	 view all news 	'all' 'news' 'view'
 119	field	27	1		
 23	field	36	2	 the starry night 1889 vincent van gogh 	'1889' 'gogh' 'night' 'starry' 'the' 'van' 'vincent'
-702	alt	0	1		
-702	slug	0	1		
 263	field	36	1	 view of arles flowering orchards 1889 vincent van gogh 	'1889' 'arles' 'flowering' 'gogh' 'of' 'orchards' 'van' 'view' 'vincent'
 330	field	36	2		
 102	field	36	2		
@@ -22753,9 +22840,14 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 291	field	46	1		
 54	slug	0	1	 exhibitions 	'exhibitions'
 54	title	0	1	 exhibitions 	'exhibitions'
+207017	filename	0	1	 cole thomas the course of empire the savage state jpg 	'cole' 'course' 'empire' 'jpg' 'of' 'savage' 'state' 'the' 'thomas'
 292	field	12	1	 exhibitions current 	'current' 'exhibitions'
+207015	extension	0	1	 jpg 	'jpg'
+207015	kind	0	1	 image 	'image'
+207015	alt	0	1		
+207015	slug	0	1		
+207017	extension	0	1	 jpg 	'jpg'
 287	field	36	1	 bridal procession on the hardangerfjord 1848 hans gude and adolph tidemand 	'1848' 'adolph' 'and' 'bridal' 'gude' 'hans' 'hardangerfjord' 'on' 'procession' 'the' 'tidemand'
-702	title	0	1	 houses in munich 	'houses' 'in' 'munich'
 702	field	36	1	 houses in munich 1908 wassily kandinsky 	'1908' 'houses' 'in' 'kandinsky' 'munich' 'wassily'
 702	field	64	1	 wassily kandinsky http www wassilykandinsky net public domain https commons wikimedia org w index php curid=37610953 	'commons' 'curid=37610953' 'domain' 'http' 'https' 'index' 'kandinsky' 'net' 'org' 'php' 'public' 'w' 'wassily' 'wassilykandinsky' 'wikimedia' 'www'
 702	filename	0	2	 vassily kandinsky houses in munich jpg 	'houses' 'in' 'jpg' 'kandinsky' 'munich' 'vassily'
@@ -22769,9 +22861,7 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 702	field	64	2	 wassily kandinsky http www wassilykandinsky net public domain https commons wikimedia org w index php curid=37610953 	'commons' 'curid=37610953' 'domain' 'http' 'https' 'index' 'kandinsky' 'net' 'org' 'php' 'public' 'w' 'wassily' 'wassilykandinsky' 'wikimedia' 'www'
 297	field	46	1		
 17	field	36	2	 wheatfield under thunderclouds 1890 vincent van gogh 	'1890' 'gogh' 'thunderclouds' 'under' 'van' 'vincent' 'wheatfield'
-383	slug	0	1		
 264	field	36	1	 wheat field with cypresses 1889 vincent van gogh 	'1889' 'cypresses' 'field' 'gogh' 'van' 'vincent' 'wheat' 'with'
-383	title	0	1	 north gallery 	'gallery' 'north'
 23	field	36	1	 the starry night 1889 vincent van gogh 	'1889' 'gogh' 'night' 'starry' 'the' 'van' 'vincent'
 66	field	36	2		
 25	field	7	1	 our exhibits 	'exhibits' 'our'
@@ -22787,15 +22877,14 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 383	field	64	1	 deanna jing https unsplash com dannie jing 	'com' 'dannie' 'deanna' 'https' 'jing' 'unsplash'
 98	field	36	2		
 383	field	36	2		
-379	filename	0	1	 prometheus bound and the oceanids jpg 	'and' 'bound' 'jpg' 'oceanids' 'prometheus' 'the'
-379	extension	0	1	 jpg 	'jpg'
-379	kind	0	1	 image 	'image'
+207017	kind	0	1	 image 	'image'
+207017	alt	0	1	 the course of empire by cole thomas 	'by' 'cole' 'course' 'empire' 'of' 'the' 'thomas'
+207017	slug	0	1		
 25	slug	0	1		
 25	field	9	1	 exhibitions 	'exhibitions'
-379	alt	0	1		
-379	slug	0	1		
+207017	title	0	1	 the course of empire the savage state 	'course' 'empire' 'of' 'savage' 'state' 'the'
+207017	field	64	1	 cole thomas 	'cole' 'thomas'
 94	field	36	2		
-379	title	0	1	 prometheus bound and the oceanids 	'and' 'bound' 'oceanids' 'prometheus' 'the'
 287	field	36	2	 bridal procession on the hardangerfjord 1848 hans gude and adolph tidemand 	'1848' 'adolph' 'and' 'bridal' 'gude' 'hans' 'hardangerfjord' 'on' 'procession' 'the' 'tidemand'
 289	filename	0	2	 exhibitions upcoming jpg 	'exhibitions' 'jpg' 'upcoming'
 67	slug	0	1		
@@ -22836,19 +22925,38 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 378	field	36	2		
 66	filename	0	2	 europa interior courtyard jpg 	'courtyard' 'europa' 'interior' 'jpg'
 66	extension	0	2	 jpg 	'jpg'
+207015	title	0	1	 the course of empire destruction 	'course' 'destruction' 'empire' 'of' 'the'
+287	filename	0	1	 adolph tidemand hans gude bridal procession on the hardangerfjord jpg 	'adolph' 'bridal' 'gude' 'hans' 'hardangerfjord' 'jpg' 'on' 'procession' 'the' 'tidemand'
+287	extension	0	1	 jpg 	'jpg'
+287	kind	0	1	 image 	'image'
+287	alt	0	1		
+287	slug	0	1		
+287	title	0	1	 bridal procession on the hardangerfjord 	'bridal' 'hardangerfjord' 'on' 'procession' 'the'
+379	filename	0	1	 prometheus bound and the oceanids jpg 	'and' 'bound' 'jpg' 'oceanids' 'prometheus' 'the'
+379	extension	0	1	 jpg 	'jpg'
+379	kind	0	1	 image 	'image'
+379	alt	0	1		
+379	slug	0	1		
+379	title	0	1	 prometheus bound and the oceanids 	'and' 'bound' 'oceanids' 'prometheus' 'the'
+694	filename	0	1	 kandinsky study for improvisation jpg 	'for' 'improvisation' 'jpg' 'kandinsky' 'study'
+694	extension	0	1	 jpg 	'jpg'
+694	kind	0	1	 image 	'image'
+694	alt	0	1		
+694	slug	0	1		
+694	title	0	1	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
+288	filename	0	1	 exhibitions current jpg 	'current' 'exhibitions' 'jpg'
+288	extension	0	1	 jpg 	'jpg'
+288	kind	0	1	 image 	'image'
+288	alt	0	1		
+288	slug	0	1		
+288	title	0	1	 exhibitions current 	'current' 'exhibitions'
 66	kind	0	2	 image 	'image'
 66	alt	0	2		
 66	slug	0	2		
 66	title	0	2	 flipboard ylus81f s7q4 unsplash 	'flipboard' 's7q4' 'unsplash' 'ylus81f'
 379	field	36	2		
 66	field	64	2	 flipboard https unsplash com flipboard 	'com' 'flipboard' 'https' 'unsplash'
-66	filename	0	1	 europa interior courtyard jpg 	'courtyard' 'europa' 'interior' 'jpg'
-66	extension	0	1	 jpg 	'jpg'
-66	kind	0	1	 image 	'image'
-66	alt	0	1		
 381	field	36	2		
-66	slug	0	1		
-66	title	0	1	 europa courtyard 	'courtyard' 'europa'
 66	field	64	1	 flipboard https unsplash com flipboard 	'com' 'flipboard' 'https' 'unsplash'
 356	field	36	2		
 207026	slug	0	2	 temp ztuagswhfjzvyuixolawjcfccnaifgauulog 	'temp' 'ztuagswhfjzvyuixolawjcfccnaifgauulog'
@@ -22857,7 +22965,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 207026	field	63	1	 vassily kandinsky 	'kandinsky' 'vassily'
 207026	slug	0	1	 on white ii 	'ii' 'on' 'white'
 207026	title	0	1	 on white ii 	'ii' 'on' 'white'
-207016	title	0	1	 the course of empire the arcadian or pastoral state 	'arcadian' 'course' 'empire' 'of' 'or' 'pastoral' 'state' 'the'
 264	field	64	2	 vincent van gogh google art project 	'art' 'gogh' 'google' 'project' 'van' 'vincent'
 660	field	38	2	 sed eiusmod tempor encodidunt ut labore lore magna aliqua consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo velit esse cillum dolore eu fugiat nulla pariatur excepteur sint 	'ab' 'accusantium' 'aden' 'adipisicing' 'aliqua' 'aliquip' 'anim' 'aperiam' 'architecto' 'aute' 'beatae' 'cillum' 'consectetur' 'consequat' 'culpa' 'cupidatat' 'deserunt' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'id' 'illo' 'in' 'incididunt' 'inventore' 'ipsa' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'lore' 'magna' 'minim' 'modo' 'mollit' 'natus' 'nisi' 'non' 'nostrud' 'nulla' 'occaecat' 'officia' 'omnis' 'pariatur' 'perspiciatis' 'proident' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'sed' 'sint' 'sit' 'sunt' 'tempor' 'totam' 'ullamco' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'voluptate' 'voluptatem'
 660	field	53	2		
@@ -22868,7 +22975,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 661	slug	0	1		
 661	slug	0	2		
 264	field	64	1	 vincent van gogh google art project 	'art' 'gogh' 'google' 'project' 'van' 'vincent'
-330	filename	0	1	 veronica jpg 	'jpg' 'veronica'
 278	field	64	1	 google art project 454045 	'454045' 'art' 'google' 'project'
 278	field	64	2	 google art project 454045 	'454045' 'art' 'google' 'project'
 662	field	38	2	 dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium 	'accusantium' 'anim' 'culpa' 'cupidatat' 'deserunt' 'dolore' 'doloremque' 'error' 'est' 'eu' 'excepteur' 'fugiat' 'id' 'in' 'iste' 'laborum' 'laudantium' 'mollit' 'natus' 'non' 'nulla' 'occaecat' 'officia' 'omnis' 'pariatur' 'perspiciatis' 'proident' 'qui' 'sed' 'sint' 'sit' 'sunt' 'unde' 'ut' 'voluptatem'
@@ -22888,12 +22994,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 190	field	64	1	 paul blenkhorn https unsplash com sensoryarthouse 	'blenkhorn' 'com' 'https' 'paul' 'sensoryarthouse' 'unsplash'
 190	field	64	2	 paul blenkhorn https unsplash com sensoryarthouse 	'blenkhorn' 'com' 'https' 'paul' 'sensoryarthouse' 'unsplash'
 211644	field	57	1		
-102	filename	0	1	 ian dooley admiration jpg 	'admiration' 'dooley' 'ian' 'jpg'
-102	extension	0	1	 jpg 	'jpg'
-102	kind	0	1	 image 	'image'
-102	alt	0	1		
-102	slug	0	1		
-102	title	0	1	 admiration 	'admiration'
 102	field	64	1	 iean dooley https unsplash com sadswim 	'com' 'dooley' 'https' 'iean' 'sadswim' 'unsplash'
 102	filename	0	2	 ian dooley admiration jpg 	'admiration' 'dooley' 'ian' 'jpg'
 102	extension	0	2	 jpg 	'jpg'
@@ -22906,9 +23006,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 233	title	0	1		
 233	field	37	1	 explore the works of van gogh the dutch post impressionist artist who created over 2000 art pieces a foundation of modern art 	'2000' 'a' 'art' 'artist' 'created' 'dutch' 'explore' 'foundation' 'gogh' 'impressionist' 'modern' 'of' 'over' 'pieces' 'post' 'the' 'van' 'who' 'works'
 211644	field	25	1	 museum updates 	'museum' 'updates'
-190	filename	0	1	 sensory art house abstract jpg 	'abstract' 'art' 'house' 'jpg' 'sensory'
-190	extension	0	1	 jpg 	'jpg'
-190	kind	0	1	 image 	'image'
 98	filename	0	2	 europa pavilion facade jpg 	'europa' 'facade' 'jpg' 'pavilion'
 98	extension	0	2	 jpg 	'jpg'
 98	kind	0	2	 image 	'image'
@@ -22916,9 +23013,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 207024	title	0	2	 the course of empire desolation 	'course' 'desolation' 'empire' 'of' 'the'
 207024	field	63	2	 cole thomas 	'cole' 'thomas'
 98	alt	0	2		
-190	alt	0	1		
-190	slug	0	1		
-190	title	0	1	 sensory art house abstract painting 	'abstract' 'art' 'house' 'painting' 'sensory'
 190	filename	0	2	 sensory art house abstract jpg 	'abstract' 'art' 'house' 'jpg' 'sensory'
 190	extension	0	2	 jpg 	'jpg'
 190	kind	0	2	 image 	'image'
@@ -22937,40 +23031,24 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 211644	field	4	1	 europa statue garden 	'europa' 'garden' 'statue'
 39	slug	0	1	 the roman empire 	'empire' 'roman' 'the'
 39	title	0	1	 the roman empire 	'empire' 'roman' 'the'
+17	filename	0	1	 van gogh weizenfeld unter einem gewitterhimmel jpeg 	'einem' 'gewitterhimmel' 'gogh' 'jpeg' 'unter' 'van' 'weizenfeld'
+17	extension	0	1	 jpeg 	'jpeg'
+17	kind	0	1	 image 	'image'
+17	alt	0	1	 van goghs 1890 painting wheatfield under thunderclouds 	'1890' 'goghs' 'painting' 'thunderclouds' 'under' 'van' 'wheatfield'
+17	slug	0	1		
+17	title	0	1	 wheatfield under thunderclouds 	'thunderclouds' 'under' 'wheatfield'
 98	field	64	2	 yuya hata https unsplash com themirraz 	'com' 'hata' 'https' 'themirraz' 'unsplash' 'yuya'
-98	filename	0	1	 europa pavilion facade jpg 	'europa' 'facade' 'jpg' 'pavilion'
-98	extension	0	1	 jpg 	'jpg'
-98	kind	0	1	 image 	'image'
-98	alt	0	1		
-98	slug	0	1		
-98	title	0	1	 europa pavilion facade 	'europa' 'facade' 'pavilion'
 98	field	64	1	 yuya hata https unsplash com themirraz 	'com' 'hata' 'https' 'themirraz' 'unsplash' 'yuya'
 94	filename	0	2	 dresden war triptych quiet contemplation jpg 	'contemplation' 'dresden' 'jpg' 'quiet' 'triptych' 'war'
 94	extension	0	2	 jpg 	'jpg'
 94	kind	0	2	 image 	'image'
 94	alt	0	2		
-289	filename	0	1	 exhibitions upcoming jpg 	'exhibitions' 'jpg' 'upcoming'
-289	extension	0	1	 jpg 	'jpg'
-289	kind	0	1	 image 	'image'
-289	slug	0	1		
-289	title	0	1	 exhibitions upcoming 	'exhibitions' 'upcoming'
-288	filename	0	1	 exhibitions current jpg 	'current' 'exhibitions' 'jpg'
-288	extension	0	1	 jpg 	'jpg'
-288	kind	0	1	 image 	'image'
-288	slug	0	1		
-288	title	0	1	 exhibitions current 	'current' 'exhibitions'
 94	slug	0	2		
 94	title	0	2	 igor miske o lh tld r bsc unsplash 	'bsc' 'igor' 'lh' 'miske' 'o' 'r' 'tld' 'unsplash'
 94	field	64	2	 painting by otto dix dresden war triptych photo by igor miske https unsplash com igormiske 	'by' 'com' 'dix' 'dresden' 'https' 'igor' 'igormiske' 'miske' 'otto' 'painting' 'photo' 'triptych' 'unsplash' 'war'
-94	filename	0	1	 dresden war triptych quiet contemplation jpg 	'contemplation' 'dresden' 'jpg' 'quiet' 'triptych' 'war'
-94	extension	0	1	 jpg 	'jpg'
-94	kind	0	1	 image 	'image'
-94	alt	0	1		
-94	slug	0	1		
 207009	slug	0	2	 temp jwxjgzcubegxunacjyttudxrlyuowlqchmib 	'jwxjgzcubegxunacjyttudxrlyuowlqchmib' 'temp'
 207009	title	0	2	 wheatfield under thunderclouds 	'thunderclouds' 'under' 'wheatfield'
 207009	field	63	2	 vincent van gogh 	'gogh' 'van' 'vincent'
-94	title	0	1	 guest quietly contemplating the dresden war triptych 	'contemplating' 'dresden' 'guest' 'quietly' 'the' 'triptych' 'war'
 94	field	64	1	 painting by otto dix dresden war triptych photo by igor miske https unsplash com igormiske 	'by' 'com' 'dix' 'dresden' 'https' 'igor' 'igormiske' 'miske' 'otto' 'painting' 'photo' 'triptych' 'unsplash' 'war'
 207009	field	63	1	 vincent van gogh 	'gogh' 'van' 'vincent'
 207009	slug	0	1	 wheatfield under thunderclouds 	'thunderclouds' 'under' 'wheatfield'
@@ -22978,10 +23056,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 48	field	64	1	 vassily kandinsky 1923 	'1923' 'kandinsky' 'vassily'
 48	field	64	2	 vassily kandinsky 1923 	'1923' 'kandinsky' 'vassily'
 207016	field	36	2		
-330	extension	0	1	 jpg 	'jpg'
-330	kind	0	1	 image 	'image'
-330	slug	0	1		
-330	title	0	1	 veronica 	'veronica'
 694	field	36	2	 study for improvisation v 1911 wassily kandinsky 	'1911' 'for' 'improvisation' 'kandinsky' 'study' 'v' 'wassily'
 88	title	0	2	 tickets 	'tickets'
 524	field	12	1	 steve johnson m p1m4 gu sd4k unsplash 	'gu' 'johnson' 'm' 'p1m4' 'sd4k' 'steve' 'unsplash'
@@ -23010,13 +23084,23 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 663	field	53	1		
 211644	field	28	1	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
 211644	field	2	1	 sed eiusmod tempor encodidunt ut labore lore magna aliqua consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo velit esse cillum dolore eu fugiat nulla pariatur excepteur sint full full lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum odio orci at diam iaculis vivamus velit morbi nunc imperdiet dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium as you traverse the connecting hallway between the new and old wings you will see a gradual transition in architectural style 1 full full duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nulla aenean libero eu purus egestas convallis orci ullamcorper consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 	'1' 'a' 'ab' 'accusantium' 'aden' 'adipiscing' 'adipisicing' 'aenean' 'aliqua' 'aliquip' 'amet' 'and' 'anim' 'aperiam' 'architecto' 'architectural' 'as' 'at' 'aute' 'beatae' 'between' 'cillum' 'connecting' 'consectetur' 'consequat' 'convallis' 'culpa' 'cupidatat' 'deserunt' 'diam' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'egestas' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'full' 'gradual' 'hallway' 'iaculis' 'id' 'illo' 'imperdiet' 'in' 'incididunt' 'inventore' 'ipsa' 'ipsum' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'libero' 'lore' 'lorem' 'magna' 'minim' 'modo' 'mollit' 'morbi' 'natus' 'new' 'nisi' 'non' 'nostrud' 'nulla' 'nunc' 'occaecat' 'odio' 'officia' 'old' 'omnis' 'orci' 'pariatur' 'perspiciatis' 'proident' 'purus' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'sed' 'see' 'sint' 'sit' 'style' 'sunt' 'tempor' 'the' 'totam' 'transition' 'traverse' 'ullamco' 'ullamcorper' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'vivamus' 'voluptate' 'voluptatem' 'will' 'wings' 'you'
+383	filename	0	1	 europa interior gallery north jpg 	'europa' 'gallery' 'interior' 'jpg' 'north'
 528	field	42	1	 company overview press contact media assets board staff bios 	'assets' 'bios' 'board' 'company' 'contact' 'media' 'overview' 'press' 'staff'
+383	extension	0	1	 jpg 	'jpg'
+383	kind	0	1	 image 	'image'
 535	slug	0	1		
 535	field	37	1	 how can we help 	'can' 'help' 'how' 'we'
 536	slug	0	1		
 536	field	31	1	 contact 	'contact'
 536	field	30	1	 thank you well be in touch shortly 	'be' 'in' 'shortly' 'thank' 'touch' 'well' 'you'
 540	field	53	1		
+383	alt	0	1		
+383	slug	0	1		
+383	title	0	1	 north gallery 	'gallery' 'north'
+289	filename	0	1	 exhibitions upcoming jpg 	'exhibitions' 'jpg' 'upcoming'
+289	extension	0	1	 jpg 	'jpg'
+289	kind	0	1	 image 	'image'
+289	alt	0	1		
 543	field	46	1		
 555	field	42	1		
 555	field	41	1	 rss feed 	'feed' 'rss'
@@ -23063,6 +23147,7 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 879	lastname	0	1		
 207017	alt	0	2		
 207017	slug	0	2		
+289	slug	0	1		
 99	field	28	2	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
 99	field	2	2		
 1	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title entry url website seomatic meta seotitle seomatic meta seodescription seomatic meta seoimagedescription summary large image seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage fromfield title sameasglobal fromcustom title fromcustom fromasset 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo 1 crop sameasseo 	'0' '1' '22' '5' 'card' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromasset' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'image' 'jsonld' 'large' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'summary' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'url' 'webpage' 'website' 'weekly' 'when'
@@ -23093,17 +23178,8 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 211155	kind	0	2	 compressed 	'compressed'
 211155	alt	0	2		
 60	field	24	1	 1 0 22 field field europa museum no referrer when downgrade general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 fromcustom fromcustom fromcustom fromasset 1 crop fromcustom 1 crop 1 crop 	'0' '1' '22' 'card' 'crop' 'downgrade' 'europa' 'facebook' 'field' 'fromasset' 'fromcustom' 'frontendtemplatecontainer' 'general' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'nystudio107' 'opengraph' 'referrer' 'script' 'seomatic' 'tag' 'tags' 'title' 'twitter' 'when'
-382	filename	0	1	 europa interior pavilion jpg 	'europa' 'interior' 'jpg' 'pavilion'
-382	extension	0	1	 jpg 	'jpg'
-382	kind	0	1	 image 	'image'
 211155	slug	0	2		
 211155	title	0	2	 press kit 	'kit' 'press'
-211155	filename	0	1	 press kit zip 	'kit' 'press' 'zip'
-211155	extension	0	1	 zip 	'zip'
-211155	kind	0	1	 compressed 	'compressed'
-211155	alt	0	1		
-211155	slug	0	1		
-211155	title	0	1	 press kit 	'kit' 'press'
 211179	slug	0	1	 home 	'home'
 211179	title	0	1	 home 	'home'
 211179	field	58	1	 the museum for euro art 	'art' 'euro' 'for' 'museum' 'the'
@@ -23120,12 +23196,39 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 95	field	25	1	 special events 	'events' 'special'
 95	field	28	1	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
 95	field	2	1		
-382	alt	0	1		
 207029	field	63	1	 hans gude and adolph tidemand 	'adolph' 'and' 'gude' 'hans' 'tidemand'
 207029	slug	0	1	 bridal procession on the hardangerfjord 	'bridal' 'hardangerfjord' 'on' 'procession' 'the'
 207029	title	0	1	 bridal procession on the hardangerfjord 	'bridal' 'hardangerfjord' 'on' 'procession' 'the'
 689	field	36	1	 landscape with factory chimney 1910 vassily kandinsky 	'1910' 'chimney' 'factory' 'kandinsky' 'landscape' 'vassily' 'with'
 662	field	53	1	 1 	'1'
+289	title	0	1	 exhibitions upcoming 	'exhibitions' 'upcoming'
+382	filename	0	1	 europa interior pavilion jpg 	'europa' 'interior' 'jpg' 'pavilion'
+382	extension	0	1	 jpg 	'jpg'
+382	kind	0	1	 image 	'image'
+382	alt	0	1		
+382	slug	0	1		
+382	title	0	1	 europa pavilion 	'europa' 'pavilion'
+355	filename	0	1	 social share dark png 	'dark' 'png' 'share' 'social'
+355	extension	0	1	 png 	'png'
+355	kind	0	1	 image 	'image'
+355	alt	0	1		
+355	slug	0	1		
+355	title	0	1	 social preview graphic dark 	'dark' 'graphic' 'preview' 'social'
+264	filename	0	1	 van gogh wheat field with cypresses jpg 	'cypresses' 'field' 'gogh' 'jpg' 'van' 'wheat' 'with'
+264	extension	0	1	 jpg 	'jpg'
+264	kind	0	1	 image 	'image'
+264	alt	0	1	 van goghs 1889 painting wheat field with cypresses 	'1889' 'cypresses' 'field' 'goghs' 'painting' 'van' 'wheat' 'with'
+264	slug	0	1		
+264	title	0	1	 wheat field with cypresses 	'cypresses' 'field' 'wheat' 'with'
+98	filename	0	1	 europa pavilion facade jpg 	'europa' 'facade' 'jpg' 'pavilion'
+98	extension	0	1	 jpg 	'jpg'
+98	kind	0	1	 image 	'image'
+98	alt	0	1		
+98	slug	0	1		
+98	title	0	1	 europa pavilion facade 	'europa' 'facade' 'pavilion'
+356	filename	0	1	 social share png 	'png' 'share' 'social'
+356	extension	0	1	 png 	'png'
+356	kind	0	1	 image 	'image'
 95	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
 103	slug	0	2	 colors 	'colors'
 103	title	0	2	 colors 	'colors'
@@ -23142,6 +23245,7 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 103	field	4	1	 ian dooley zl bz m gle n e unsplash 	'bz' 'dooley' 'e' 'gle' 'ian' 'm' 'n' 'unsplash' 'zl'
 103	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
 91	field	57	2		
+356	alt	0	1		
 91	field	4	2	 lizzie george e ev icv acs8 unsplash 	'acs8' 'e' 'ev' 'george' 'icv' 'lizzie' 'unsplash'
 91	field	28	2	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
 689	field	64	1	 solomon r guggenheim museum 	'guggenheim' 'museum' 'r' 'solomon'
@@ -23152,6 +23256,9 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 206997	field	63	2	 vassily kandinsky 	'kandinsky' 'vassily'
 206997	field	63	1	 vassily kandinsky 	'kandinsky' 'vassily'
 206997	slug	0	1	 landscape with factory chimney 	'chimney' 'factory' 'landscape' 'with'
+356	slug	0	1		
+356	title	0	1	 social preview graphic 	'graphic' 'preview' 'social'
+380	filename	0	1	 europa interior main stair jpg 	'europa' 'interior' 'jpg' 'main' 'stair'
 91	field	2	2	 imageright image right 1 sed eiusmod tempor encodidunt ut labore lore magna aliqua consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo velit esse cillum dolore eu fugiat nulla pariatur excepteur sint lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum imageleft image left 1 dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium imagefullwidth image full width 1 1 duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo consectetur adipisicing elit sed do eiusmod tempor incididunt ut 	'1' 'ab' 'accusantium' 'aden' 'adipiscing' 'adipisicing' 'aliqua' 'aliquip' 'amet' 'anim' 'aperiam' 'architecto' 'aute' 'beatae' 'cillum' 'consectetur' 'consequat' 'culpa' 'cupidatat' 'deserunt' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'full' 'id' 'illo' 'image' 'imagefullwidth' 'imageleft' 'imageright' 'in' 'incididunt' 'inventore' 'ipsa' 'ipsum' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'left' 'lore' 'lorem' 'magna' 'minim' 'modo' 'mollit' 'natus' 'nisi' 'non' 'nostrud' 'nulla' 'occaecat' 'officia' 'omnis' 'pariatur' 'perspiciatis' 'proident' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'right' 'sed' 'sint' 'sit' 'sunt' 'tempor' 'totam' 'ullamco' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'voluptate' 'voluptatem' 'width'
 99	field	4	1	 yuya hata 9 ajm1u c1bj8 unsplash 	'9' 'ajm1u' 'c1bj8' 'hata' 'unsplash' 'yuya'
 91	field	24	2	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
@@ -23172,35 +23279,42 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 99	field	28	1	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
 99	field	2	1		
 99	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
-90	alt	0	1		
 235	field	44	1	 brochure brochure 	'brochure'
+380	extension	0	1	 jpg 	'jpg'
+380	kind	0	1	 image 	'image'
+380	alt	0	1		
+380	slug	0	1		
+380	title	0	1	 europa interior main stair 	'europa' 'interior' 'main' 'stair'
 236	field	46	1		
 32	field	36	2	 circular forms 1930 robert delaunay 	'1930' 'circular' 'delaunay' 'forms' 'robert'
+614	filename	0	1	 europa interior gallery south jpg 	'europa' 'gallery' 'interior' 'jpg' 'south'
 32	field	64	2	 https www guggenheim org artwork 1026 	'1026' 'artwork' 'guggenheim' 'https' 'org' 'www'
 32	field	36	1	 circular forms 1930 robert delaunay 	'1930' 'circular' 'delaunay' 'forms' 'robert'
 32	field	64	1	 https www guggenheim org artwork 1026 	'1026' 'artwork' 'guggenheim' 'https' 'org' 'www'
 207016	field	64	2		
+614	extension	0	1	 jpg 	'jpg'
+614	kind	0	1	 image 	'image'
+614	alt	0	1		
+614	slug	0	1		
+614	title	0	1	 south gallery 	'gallery' 'south'
 614	filename	0	2	 europa interior gallery south jpg 	'europa' 'gallery' 'interior' 'jpg' 'south'
 614	extension	0	2	 jpg 	'jpg'
+263	filename	0	1	 van gogh view of arles flowering orchards jpg 	'arles' 'flowering' 'gogh' 'jpg' 'of' 'orchards' 'van' 'view'
 206955	field	22	1	 morbi leo risus porta ac consectetur ac vestibulum at eros lorem ipsum dolor sit amet consectetur adipiscing elit 	'ac' 'adipiscing' 'amet' 'at' 'consectetur' 'dolor' 'elit' 'eros' 'ipsum' 'leo' 'lorem' 'morbi' 'porta' 'risus' 'sit' 'vestibulum'
+263	extension	0	1	 jpg 	'jpg'
+263	kind	0	1	 image 	'image'
 206955	field	20	1	 85k 	'85k'
 206955	field	16	1	 annual visitors 	'annual' 'visitors'
+263	alt	0	1	 van goghs 1889 painting view of arles flowering orchards 	'1889' 'arles' 'flowering' 'goghs' 'of' 'orchards' 'painting' 'van' 'view'
 90	slug	0	2		
 614	kind	0	2	 image 	'image'
 614	alt	0	2		
 614	slug	0	2		
 614	title	0	2	 aaina sharma nqj3nc ops0g unsplash 	'aaina' 'nqj3nc' 'ops0g' 'sharma' 'unsplash'
 614	field	64	2	 aaina sharma https unsplash com aaina 	'aaina' 'com' 'https' 'sharma' 'unsplash'
-614	filename	0	1	 europa interior gallery south jpg 	'europa' 'gallery' 'interior' 'jpg' 'south'
-614	extension	0	1	 jpg 	'jpg'
-614	kind	0	1	 image 	'image'
-614	alt	0	1		
-614	slug	0	1		
-614	title	0	1	 south gallery 	'gallery' 'south'
 614	field	64	1	 aaina sharma https unsplash com aaina 	'aaina' 'com' 'https' 'sharma' 'unsplash'
 694	field	64	2	 minneapolis institute of arts charles walbridge 12 january 2015 public domain https commons wikimedia org w index php curid=38965272 	'12' '2015' 'arts' 'charles' 'commons' 'curid=38965272' 'domain' 'https' 'index' 'institute' 'january' 'minneapolis' 'of' 'org' 'php' 'public' 'w' 'walbridge' 'wikimedia'
 694	field	36	1	 study for improvisation v 1911 wassily kandinsky 	'1911' 'for' 'improvisation' 'kandinsky' 'study' 'v' 'wassily'
-90	slug	0	1		
 694	field	64	1	 minneapolis institute of arts charles walbridge 12 january 2015 public domain https commons wikimedia org w index php curid=38965272 	'12' '2015' 'arts' 'charles' 'commons' 'curid=38965272' 'domain' 'https' 'index' 'institute' 'january' 'minneapolis' 'of' 'org' 'php' 'public' 'w' 'walbridge' 'wikimedia'
 207012	field	4	1	 the course of empire the consummation 	'consummation' 'course' 'empire' 'of' 'the'
 698	field	36	2	 color study squares with concentric circles 1913 wassily kandinsky 	'1913' 'circles' 'color' 'concentric' 'kandinsky' 'squares' 'study' 'wassily' 'with'
@@ -23239,12 +23353,10 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 207029	title	0	2	 bridal procession on the hardangerfjord 	'bridal' 'hardangerfjord' 'on' 'procession' 'the'
 207029	field	63	2	 hans gude and adolph tidemand 	'adolph' 'and' 'gude' 'hans' 'tidemand'
 60	field	4	1		
+263	slug	0	1		
+263	title	0	1	 view of arles flowering orchards 	'arles' 'flowering' 'of' 'orchards' 'view'
 90	title	0	2	 lizzie george e ev icv acs8 unsplash 	'acs8' 'e' 'ev' 'george' 'icv' 'lizzie' 'unsplash'
 90	field	64	2	 glyptoteket copenhagen denmark photo by elizabeth george https unsplash com lziize 	'by' 'com' 'copenhagen' 'denmark' 'elizabeth' 'george' 'glyptoteket' 'https' 'lziize' 'photo' 'unsplash'
-90	filename	0	1	 europa statue garden jpg 	'europa' 'garden' 'jpg' 'statue'
-90	extension	0	1	 jpg 	'jpg'
-90	kind	0	1	 image 	'image'
-90	title	0	1	 europa statue garden 	'europa' 'garden' 'statue'
 90	field	64	1	 glyptoteket copenhagen denmark photo by elizabeth george https unsplash com lziize 	'by' 'com' 'copenhagen' 'denmark' 'elizabeth' 'george' 'glyptoteket' 'https' 'lziize' 'photo' 'unsplash'
 206999	slug	0	2	 temp jwbmtnwlxnefujhiggrfbbqvkzieplhcyuee 	'jwbmtnwlxnefujhiggrfbbqvkzieplhcyuee' 'temp'
 206999	title	0	2	 self portrait 	'portrait' 'self'
@@ -23291,28 +23403,14 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 613	slug	0	2		
 613	title	0	2	 flipboard ylus81f s7q4 unsplash optimized 	'flipboard' 'optimized' 's7q4' 'unsplash' 'ylus81f'
 355	kind	0	2	 image 	'image'
-613	filename	0	1	 europa interior mezzanine jpg 	'europa' 'interior' 'jpg' 'mezzanine'
-613	extension	0	1	 jpg 	'jpg'
 207015	field	36	2		
 207015	field	64	2		
-613	kind	0	1	 image 	'image'
-613	alt	0	1		
-613	slug	0	1		
-613	title	0	1	 europa mezzanine 	'europa' 'mezzanine'
-382	slug	0	1		
-382	title	0	1	 europa pavilion 	'europa' 'pavilion'
 382	filename	0	2	 europa interior pavilion jpg 	'europa' 'interior' 'jpg' 'pavilion'
 382	extension	0	2	 jpg 	'jpg'
 382	kind	0	2	 image 	'image'
 382	alt	0	2		
 382	slug	0	2		
 382	title	0	2	 grant ritchie p 4x i3 upccy unsplash 	'4x' 'grant' 'i3' 'p' 'ritchie' 'unsplash' 'upccy'
-381	filename	0	1	 steve johnson abstract painting jpg 	'abstract' 'johnson' 'jpg' 'painting' 'steve'
-381	extension	0	1	 jpg 	'jpg'
-381	kind	0	1	 image 	'image'
-381	alt	0	1		
-381	slug	0	1		
-381	title	0	1	 red and multicolored abstract painting 	'abstract' 'and' 'multicolored' 'painting' 'red'
 381	field	64	1	 steve johnson https www artbystevej com 	'artbystevej' 'com' 'https' 'johnson' 'steve' 'www'
 381	filename	0	2	 steve johnson abstract painting jpg 	'abstract' 'johnson' 'jpg' 'painting' 'steve'
 381	extension	0	2	 jpg 	'jpg'
@@ -23328,12 +23426,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 380	slug	0	2		
 380	title	0	2	 pipe a o ds wuj1 ys00 unsplash 	'a' 'ds' 'o' 'pipe' 'unsplash' 'wuj1' 'ys00'
 380	field	64	2	 pipe a https unsplash com pipeaguileram 	'a' 'com' 'https' 'pipe' 'pipeaguileram' 'unsplash'
-380	filename	0	1	 europa interior main stair jpg 	'europa' 'interior' 'jpg' 'main' 'stair'
-380	extension	0	1	 jpg 	'jpg'
-380	kind	0	1	 image 	'image'
-380	alt	0	1		
-380	slug	0	1		
-380	title	0	1	 europa interior main stair 	'europa' 'interior' 'main' 'stair'
 380	field	64	1	 pipe a https unsplash com pipeaguileram 	'a' 'com' 'https' 'pipe' 'pipeaguileram' 'unsplash'
 379	field	64	2	 original sculpture by eduard muller photo by pavel nekoranec https unsplash com sur le misanthrope 	'by' 'com' 'eduard' 'https' 'le' 'misanthrope' 'muller' 'nekoranec' 'original' 'pavel' 'photo' 'sculpture' 'sur' 'unsplash'
 207032	slug	0	2	 temp kuwedcihcjmporgcahhywfpidslanfcmxydq 	'kuwedcihcjmporgcahhywfpidslanfcmxydq' 'temp'
@@ -23346,10 +23438,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 383	slug	0	2		
 383	title	0	2	 deanna j 3 g zlh rozi qg unsplash 	'3' 'deanna' 'g' 'j' 'qg' 'rozi' 'unsplash' 'zlh'
 383	field	64	2	 deanna jing https unsplash com dannie jing 	'com' 'dannie' 'deanna' 'https' 'jing' 'unsplash'
-383	filename	0	1	 europa interior gallery north jpg 	'europa' 'gallery' 'interior' 'jpg' 'north'
-383	extension	0	1	 jpg 	'jpg'
-383	kind	0	1	 image 	'image'
-383	alt	0	1		
 207017	field	36	2		
 207017	field	64	2		
 207032	field	63	1	 robert delaunay 	'delaunay' 'robert'
@@ -23387,99 +23475,46 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 378	slug	0	2		
 378	title	0	2	 marc olivier jodoin en fca jh hqj8 unsplash 	'en' 'fca' 'hqj8' 'jh' 'jodoin' 'marc' 'olivier' 'unsplash'
 378	field	64	2	 marc olivier jodoin https unsplash com marcojodoin 	'com' 'https' 'jodoin' 'marc' 'marcojodoin' 'olivier' 'unsplash'
-378	filename	0	1	 palace museum china jpg 	'china' 'jpg' 'museum' 'palace'
-378	extension	0	1	 jpg 	'jpg'
-378	kind	0	1	 image 	'image'
-378	alt	0	1		
-378	slug	0	1		
-378	title	0	1	 the palace museum china 	'china' 'museum' 'palace' 'the'
 378	field	64	1	 marc olivier jodoin https unsplash com marcojodoin 	'com' 'https' 'jodoin' 'marc' 'marcojodoin' 'olivier' 'unsplash'
-356	filename	0	1	 social share png 	'png' 'share' 'social'
-356	extension	0	1	 png 	'png'
-356	kind	0	1	 image 	'image'
-356	alt	0	1		
-356	slug	0	1		
-356	title	0	1	 social preview graphic 	'graphic' 'preview' 'social'
 356	filename	0	2	 social share png 	'png' 'share' 'social'
 356	extension	0	2	 png 	'png'
 356	kind	0	2	 image 	'image'
 356	alt	0	2		
 356	slug	0	2		
 356	title	0	2	 social share 	'share' 'social'
-355	filename	0	1	 social share dark png 	'dark' 'png' 'share' 'social'
-355	extension	0	1	 png 	'png'
-355	kind	0	1	 image 	'image'
-355	alt	0	1		
-355	slug	0	1		
-355	title	0	1	 social preview graphic dark 	'dark' 'graphic' 'preview' 'social'
 355	filename	0	2	 social share dark png 	'dark' 'png' 'share' 'social'
 355	extension	0	2	 png 	'png'
 207017	title	0	2	 cole thomas the course of empire the savage state 1836 	'1836' 'cole' 'course' 'empire' 'of' 'savage' 'state' 'the' 'thomas'
-207017	filename	0	1	 cole thomas the course of empire the savage state jpg 	'cole' 'course' 'empire' 'jpg' 'of' 'savage' 'state' 'the' 'thomas'
-207017	extension	0	1	 jpg 	'jpg'
-207017	kind	0	1	 image 	'image'
-207017	alt	0	1		
-207017	slug	0	1		
-207017	title	0	1	 the course of empire the savage state 	'course' 'empire' 'of' 'savage' 'state' 'the'
 207015	filename	0	2	 cole thomas the course of empire destruction jpg 	'cole' 'course' 'destruction' 'empire' 'jpg' 'of' 'the' 'thomas'
 207015	extension	0	2	 jpg 	'jpg'
 207015	kind	0	2	 image 	'image'
 207015	alt	0	2		
 207015	slug	0	2		
 207015	title	0	2	 cole thomas the course of empire destruction 1836 	'1836' 'cole' 'course' 'destruction' 'empire' 'of' 'the' 'thomas'
-207015	filename	0	1	 cole thomas the course of empire destruction jpg 	'cole' 'course' 'destruction' 'empire' 'jpg' 'of' 'the' 'thomas'
-207015	extension	0	1	 jpg 	'jpg'
-207015	kind	0	1	 image 	'image'
-207015	alt	0	1		
-207015	slug	0	1		
-207015	title	0	1	 the course of empire destruction 	'course' 'destruction' 'empire' 'of' 'the'
 207016	filename	0	2	 cole thomas the course of empire the arcadian or pastoral state jpg 	'arcadian' 'cole' 'course' 'empire' 'jpg' 'of' 'or' 'pastoral' 'state' 'the' 'thomas'
 207016	extension	0	2	 jpg 	'jpg'
 207016	kind	0	2	 image 	'image'
 207016	alt	0	2		
 207016	slug	0	2		
 207016	title	0	2	 cole thomas the course of empire the arcadian or pastoral state 1836 	'1836' 'arcadian' 'cole' 'course' 'empire' 'of' 'or' 'pastoral' 'state' 'the' 'thomas'
-207016	filename	0	1	 cole thomas the course of empire the arcadian or pastoral state jpg 	'arcadian' 'cole' 'course' 'empire' 'jpg' 'of' 'or' 'pastoral' 'state' 'the' 'thomas'
-207016	extension	0	1	 jpg 	'jpg'
-207016	kind	0	1	 image 	'image'
-207016	alt	0	1		
-207016	slug	0	1		
 698	filename	0	2	 kandinsky color study squares concentric circles jpg 	'circles' 'color' 'concentric' 'jpg' 'kandinsky' 'squares' 'study'
 698	extension	0	2	 jpg 	'jpg'
 698	kind	0	2	 image 	'image'
 698	alt	0	2		
 698	slug	0	2		
 698	title	0	2	 vassily kandinsky 1913 color study squares with concentric circles 	'1913' 'circles' 'color' 'concentric' 'kandinsky' 'squares' 'study' 'vassily' 'with'
-698	filename	0	1	 kandinsky color study squares concentric circles jpg 	'circles' 'color' 'concentric' 'jpg' 'kandinsky' 'squares' 'study'
-698	extension	0	1	 jpg 	'jpg'
-698	kind	0	1	 image 	'image'
-698	alt	0	1		
-698	slug	0	1		
-698	title	0	1	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
 207014	filename	0	2	 cole thomas the course of empire desolation jpg 	'cole' 'course' 'desolation' 'empire' 'jpg' 'of' 'the' 'thomas'
 207014	extension	0	2	 jpg 	'jpg'
 207014	kind	0	2	 image 	'image'
 207014	alt	0	2		
 207014	slug	0	2		
 207014	title	0	2	 cole thomas the course of empire desolation 1836 	'1836' 'cole' 'course' 'desolation' 'empire' 'of' 'the' 'thomas'
-207014	filename	0	1	 cole thomas the course of empire desolation jpg 	'cole' 'course' 'desolation' 'empire' 'jpg' 'of' 'the' 'thomas'
-207014	extension	0	1	 jpg 	'jpg'
-207014	kind	0	1	 image 	'image'
-207014	alt	0	1		
-207014	slug	0	1		
-207014	title	0	1	 the course of empire desolation 	'course' 'desolation' 'empire' 'of' 'the'
 694	filename	0	2	 kandinsky study for improvisation jpg 	'for' 'improvisation' 'jpg' 'kandinsky' 'study'
 694	extension	0	2	 jpg 	'jpg'
 694	kind	0	2	 image 	'image'
 694	alt	0	2		
 694	slug	0	2		
 694	title	0	2	 1920px kandinsky study for improvisation v mia 67342 	'1920px' '67342' 'for' 'improvisation' 'kandinsky' 'mia' 'study' 'v'
-694	filename	0	1	 kandinsky study for improvisation jpg 	'for' 'improvisation' 'jpg' 'kandinsky' 'study'
-694	extension	0	1	 jpg 	'jpg'
-694	kind	0	1	 image 	'image'
-694	alt	0	1		
-694	slug	0	1		
-694	title	0	1	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
 207034	slug	0	2	 temp bfwttrzvbpqnomhbhuzsggewndnrowcbpotp 	'bfwttrzvbpqnomhbhuzsggewndnrowcbpotp' 'temp'
 207034	title	0	2	 prometheus bound and the oceanids 	'and' 'bound' 'oceanids' 'prometheus' 'the'
 689	filename	0	2	 kandinsky landscape with factory chimney jpg 	'chimney' 'factory' 'jpg' 'kandinsky' 'landscape' 'with'
@@ -23488,12 +23523,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 689	alt	0	2		
 689	slug	0	2		
 689	title	0	2	 1920px wassily kandinsky 1910 landscape with factory chimney oil on canvas 66 2 x 82 cm solomon r guggenheim museum 	'1910' '1920px' '2' '66' '82' 'canvas' 'chimney' 'cm' 'factory' 'guggenheim' 'kandinsky' 'landscape' 'museum' 'oil' 'on' 'r' 'solomon' 'wassily' 'with' 'x'
-689	filename	0	1	 kandinsky landscape with factory chimney jpg 	'chimney' 'factory' 'jpg' 'kandinsky' 'landscape' 'with'
-689	extension	0	1	 jpg 	'jpg'
-689	kind	0	1	 image 	'image'
-689	alt	0	1		
-689	slug	0	1		
-689	title	0	1	 landscape with factory chimney 	'chimney' 'factory' 'landscape' 'with'
 207034	field	63	2	 eduard muller 	'eduard' 'muller'
 207034	field	63	1	 eduard muller 	'eduard' 'muller'
 207034	slug	0	1	 prometheus bound and the oceanids 	'and' 'bound' 'oceanids' 'prometheus' 'the'
@@ -23504,42 +23533,18 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 287	alt	0	2		
 287	slug	0	2		
 287	title	0	2	 hero exhibitions 	'exhibitions' 'hero'
-287	filename	0	1	 adolph tidemand hans gude bridal procession on the hardangerfjord jpg 	'adolph' 'bridal' 'gude' 'hans' 'hardangerfjord' 'jpg' 'on' 'procession' 'the' 'tidemand'
-287	extension	0	1	 jpg 	'jpg'
-287	kind	0	1	 image 	'image'
-287	alt	0	1		
-287	slug	0	1		
-287	title	0	1	 bridal procession on the hardangerfjord 	'bridal' 'hardangerfjord' 'on' 'procession' 'the'
-48	filename	0	1	 vassily kandinsky on white ii jpg 	'ii' 'jpg' 'kandinsky' 'on' 'vassily' 'white'
-48	extension	0	1	 jpg 	'jpg'
-48	kind	0	1	 image 	'image'
-48	alt	0	1		
-48	slug	0	1		
-48	title	0	1	 on white ii 	'ii' 'on' 'white'
 48	filename	0	2	 vassily kandinsky on white ii jpg 	'ii' 'jpg' 'kandinsky' 'on' 'vassily' 'white'
 48	extension	0	2	 jpg 	'jpg'
 48	kind	0	2	 image 	'image'
 48	alt	0	2		
 48	slug	0	2		
 48	title	0	2	 vassily kandinsky 1923 on white ii 	'1923' 'ii' 'kandinsky' 'on' 'vassily' 'white'
-38	filename	0	1	 the course of empire consummation jpg 	'consummation' 'course' 'empire' 'jpg' 'of' 'the'
-38	extension	0	1	 jpg 	'jpg'
-38	kind	0	1	 image 	'image'
-38	alt	0	1		
-38	slug	0	1		
-38	title	0	1	 the course of empire the consummation 	'consummation' 'course' 'empire' 'of' 'the'
 38	filename	0	2	 the course of empire consummation jpg 	'consummation' 'course' 'empire' 'jpg' 'of' 'the'
 38	extension	0	2	 jpg 	'jpg'
 38	kind	0	2	 image 	'image'
 38	alt	0	2		
 38	slug	0	2		
 38	title	0	2	 hero the roman empire 	'empire' 'hero' 'roman' 'the'
-278	filename	0	1	 van gogh self portrait jpg 	'gogh' 'jpg' 'portrait' 'self' 'van'
-278	extension	0	1	 jpg 	'jpg'
-278	kind	0	1	 image 	'image'
-278	alt	0	1		
-278	slug	0	1		
-278	title	0	1	 self portrait 	'portrait' 'self'
 278	filename	0	2	 van gogh self portrait jpg 	'gogh' 'jpg' 'portrait' 'self' 'van'
 278	extension	0	2	 jpg 	'jpg'
 278	kind	0	2	 image 	'image'
@@ -23552,24 +23557,12 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 32	alt	0	2		
 32	slug	0	2		
 32	title	0	2	 gugg circular forms 	'circular' 'forms' 'gugg'
-32	filename	0	1	 delaunay circular forms jpg 	'circular' 'delaunay' 'forms' 'jpg'
-32	extension	0	1	 jpg 	'jpg'
-32	kind	0	1	 image 	'image'
-32	alt	0	1		
-32	slug	0	1		
-32	title	0	1	 circular forms 	'circular' 'forms'
 23	filename	0	2	 van gogh starry night jpg 	'gogh' 'jpg' 'night' 'starry' 'van'
 23	extension	0	2	 jpg 	'jpg'
 23	kind	0	2	 image 	'image'
 23	alt	0	2	 van goghs painting starry night 	'goghs' 'night' 'painting' 'starry' 'van'
 23	slug	0	2		
 23	title	0	2	 2728px van gogh starry night google art project 	'2728px' 'art' 'gogh' 'google' 'night' 'project' 'starry' 'van'
-23	filename	0	1	 van gogh starry night jpg 	'gogh' 'jpg' 'night' 'starry' 'van'
-23	extension	0	1	 jpg 	'jpg'
-23	kind	0	1	 image 	'image'
-23	alt	0	1	 van goghs painting starry night 	'goghs' 'night' 'painting' 'starry' 'van'
-23	slug	0	1		
-23	title	0	1	 starry night 	'night' 'starry'
 207036	slug	0	2	 temp ftgxbpmfnnfwclotikezsctvoiyxvbqkkpst 	'ftgxbpmfnnfwclotikezsctvoiyxvbqkkpst' 'temp'
 207036	title	0	2	 the course of empire the consummation of empire 	'consummation' 'course' 'empire' 'of' 'the'
 207036	field	63	2	 thomas cole 	'cole' 'thomas'
@@ -23582,48 +23575,24 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 264	alt	0	2	 van goghs 1889 painting wheat field with cypresses 	'1889' 'cypresses' 'field' 'goghs' 'painting' 'van' 'wheat' 'with'
 264	slug	0	2		
 264	title	0	2	 vincent van gogh wheat field with cypresses google art project 	'art' 'cypresses' 'field' 'gogh' 'google' 'project' 'van' 'vincent' 'wheat' 'with'
-264	filename	0	1	 van gogh wheat field with cypresses jpg 	'cypresses' 'field' 'gogh' 'jpg' 'van' 'wheat' 'with'
-264	extension	0	1	 jpg 	'jpg'
-264	kind	0	1	 image 	'image'
-264	alt	0	1	 van goghs 1889 painting wheat field with cypresses 	'1889' 'cypresses' 'field' 'goghs' 'painting' 'van' 'wheat' 'with'
-264	slug	0	1		
-264	title	0	1	 wheat field with cypresses 	'cypresses' 'field' 'wheat' 'with'
 263	filename	0	2	 van gogh view of arles flowering orchards jpg 	'arles' 'flowering' 'gogh' 'jpg' 'of' 'orchards' 'van' 'view'
 263	extension	0	2	 jpg 	'jpg'
 263	kind	0	2	 image 	'image'
 263	alt	0	2	 van goghs 1889 painting view of arles flowering orchards 	'1889' 'arles' 'flowering' 'goghs' 'of' 'orchards' 'painting' 'van' 'view'
 263	slug	0	2		
 263	title	0	2	 vincent van gogh 0018 	'0018' 'gogh' 'van' 'vincent'
-263	filename	0	1	 van gogh view of arles flowering orchards jpg 	'arles' 'flowering' 'gogh' 'jpg' 'of' 'orchards' 'van' 'view'
-263	extension	0	1	 jpg 	'jpg'
-263	kind	0	1	 image 	'image'
-263	alt	0	1	 van goghs 1889 painting view of arles flowering orchards 	'1889' 'arles' 'flowering' 'goghs' 'of' 'orchards' 'painting' 'van' 'view'
-263	slug	0	1		
-263	title	0	1	 view of arles flowering orchards 	'arles' 'flowering' 'of' 'orchards' 'view'
 262	filename	0	2	 van gogh the olive trees jpg 	'gogh' 'jpg' 'olive' 'the' 'trees' 'van'
 262	extension	0	2	 jpg 	'jpg'
 262	kind	0	2	 image 	'image'
 262	alt	0	2	 van goghs 1889 painting the olive trees 	'1889' 'goghs' 'olive' 'painting' 'the' 'trees' 'van'
 262	slug	0	2		
 262	title	0	2	 van gogh the olive trees 	'gogh' 'olive' 'the' 'trees' 'van'
-262	filename	0	1	 van gogh the olive trees jpg 	'gogh' 'jpg' 'olive' 'the' 'trees' 'van'
-262	extension	0	1	 jpg 	'jpg'
-262	kind	0	1	 image 	'image'
-262	alt	0	1	 van goghs 1889 painting the olive trees 	'1889' 'goghs' 'olive' 'painting' 'the' 'trees' 'van'
-262	slug	0	1		
-262	title	0	1	 the olive trees 	'olive' 'the' 'trees'
 17	filename	0	2	 van gogh weizenfeld unter einem gewitterhimmel jpeg 	'einem' 'gewitterhimmel' 'gogh' 'jpeg' 'unter' 'van' 'weizenfeld'
 17	extension	0	2	 jpeg 	'jpeg'
 17	kind	0	2	 image 	'image'
 17	alt	0	2	 van goghs 1890 painting wheatfield under thunderclouds 	'1890' 'goghs' 'painting' 'thunderclouds' 'under' 'van' 'wheatfield'
 17	slug	0	2		
 17	title	0	2	 3840px van gogh weizenfeld unter einem gewitterhimmel 	'3840px' 'einem' 'gewitterhimmel' 'gogh' 'unter' 'van' 'weizenfeld'
-17	filename	0	1	 van gogh weizenfeld unter einem gewitterhimmel jpeg 	'einem' 'gewitterhimmel' 'gogh' 'jpeg' 'unter' 'van' 'weizenfeld'
-17	extension	0	1	 jpeg 	'jpeg'
-17	kind	0	1	 image 	'image'
-17	alt	0	1	 van goghs 1890 painting wheatfield under thunderclouds 	'1890' 'goghs' 'painting' 'thunderclouds' 'under' 'van' 'wheatfield'
-17	slug	0	1		
-17	title	0	1	 wheatfield under thunderclouds 	'thunderclouds' 'under' 'wheatfield'
 207133	slug	0	1	 temp ffipuhbbpeenkzeuvapmotmlayycmfntmhjv 	'ffipuhbbpeenkzeuvapmotmlayycmfntmhjv' 'temp'
 207133	title	0	1		
 207083	field	4	1	 circular forms 	'circular' 'forms'
@@ -23631,6 +23600,12 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 207083	field	24	1	 1 0 22 field field europa museum no referrer when downgrade general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 fromcustom fromcustom fromcustom fromasset 1 crop fromcustom 1 crop 1 crop 	'0' '1' '22' 'card' 'crop' 'downgrade' 'europa' 'facebook' 'field' 'fromasset' 'fromcustom' 'frontendtemplatecontainer' 'general' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'nystudio107' 'opengraph' 'referrer' 'script' 'seomatic' 'tag' 'tags' 'title' 'twitter' 'when'
 207083	slug	0	1	 robert delaunay 	'delaunay' 'robert'
 207083	title	0	1	 robert delaunay 	'delaunay' 'robert'
+211155	filename	0	1	 press kit zip 	'kit' 'press' 'zip'
+211155	extension	0	1	 zip 	'zip'
+211155	kind	0	1	 compressed 	'compressed'
+211155	alt	0	1		
+211155	slug	0	1		
+211155	title	0	1	 press kit 	'kit' 'press'
 527	field	38	1	 pellentesque sit amet lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua mi ipsum faucibus vitae aliquet nec ullamcorper bibendum est ultricies integer quis auctor elit sed vulputate mi morbi quis commodo odio aenean sed adipiscing diam non odio euismod lacinia at turpis tincidunt id aliquet risus feugiat in ante ornare suspendisse sed nisi lacus sed urna id volutpat lacus laoreet non curabitur gravida arcu quam lacus suspendisse faucibus interdum mauris nunc congue nisi vitae quisque egestas diam in arcu cursus euismod ac orci phasellus egestas tellus rutrum tellus pellentesque eu lacinia quis vel eros donec ac odio ut aliquam purus sit amet luctus venenatis lectus magna fringilla neque gravida in fermentum et sollicitudin feugiat in ante metus dictum at tempor commodo 	'ac' 'adipiscing' 'aenean' 'aliqua' 'aliquam' 'aliquet' 'amet' 'ante' 'arcu' 'at' 'auctor' 'bibendum' 'commodo' 'congue' 'consectetur' 'curabitur' 'cursus' 'diam' 'dictum' 'do' 'dolor' 'dolore' 'donec' 'egestas' 'eiusmod' 'elit' 'eros' 'est' 'et' 'eu' 'euismod' 'faucibus' 'fermentum' 'feugiat' 'fringilla' 'gravida' 'id' 'in' 'incididunt' 'integer' 'interdum' 'ipsum' 'labore' 'lacinia' 'lacus' 'laoreet' 'lectus' 'lorem' 'luctus' 'magna' 'mauris' 'metus' 'mi' 'morbi' 'nec' 'neque' 'nisi' 'non' 'nunc' 'odio' 'orci' 'ornare' 'pellentesque' 'phasellus' 'purus' 'quam' 'quis' 'quisque' 'risus' 'rutrum' 'sed' 'sit' 'sollicitudin' 'suspendisse' 'tellus' 'tempor' 'tincidunt' 'turpis' 'ullamcorper' 'ultricies' 'urna' 'ut' 'vel' 'venenatis' 'vitae' 'volutpat' 'vulputate'
 211644	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 500 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' '500' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
 525	field	16	1	 square meters 	'meters' 'square'
@@ -23658,6 +23633,31 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 528	slug	0	1	 temp klwjwsodkfzpingyyudiznifnqrtswiqwnrd 	'klwjwsodkfzpingyyudiznifnqrtswiqwnrd' 'temp'
 528	title	0	1		
 528	field	43	1	 https europa museum ddev site uploads resources press kit zip 	'ddev' 'europa' 'https' 'kit' 'museum' 'press' 'resources' 'site' 'uploads' 'zip'
+66	filename	0	1	 europa interior courtyard jpg 	'courtyard' 'europa' 'interior' 'jpg'
+66	extension	0	1	 jpg 	'jpg'
+66	kind	0	1	 image 	'image'
+66	alt	0	1		
+66	slug	0	1		
+66	title	0	1	 europa courtyard 	'courtyard' 'europa'
+381	filename	0	1	 steve johnson abstract painting jpg 	'abstract' 'johnson' 'jpg' 'painting' 'steve'
+381	extension	0	1	 jpg 	'jpg'
+381	kind	0	1	 image 	'image'
+381	alt	0	1		
+381	slug	0	1		
+381	title	0	1	 red and multicolored abstract painting 	'abstract' 'and' 'multicolored' 'painting' 'red'
+262	filename	0	1	 van gogh the olive trees jpg 	'gogh' 'jpg' 'olive' 'the' 'trees' 'van'
+262	extension	0	1	 jpg 	'jpg'
+262	kind	0	1	 image 	'image'
+262	alt	0	1	 van goghs 1889 painting the olive trees 	'1889' 'goghs' 'olive' 'painting' 'the' 'trees' 'van'
+262	slug	0	1		
+262	title	0	1	 the olive trees 	'olive' 'the' 'trees'
+330	filename	0	1	 veronica jpg 	'jpg' 'veronica'
+330	extension	0	1	 jpg 	'jpg'
+330	kind	0	1	 image 	'image'
+330	alt	0	1		
+330	slug	0	1		
+330	title	0	1	 veronica 	'veronica'
+190	filename	0	1	 sensory art house abstract jpg 	'abstract' 'art' 'house' 'jpg' 'sensory'
 525	slug	0	1	 temp efpojihxetgkboftrzgzgqhklesbcuvykubf 	'efpojihxetgkboftrzgzgqhklesbcuvykubf' 'temp'
 525	title	0	1		
 525	field	20	1	 8 7k 9 	'7k' '8' '9'
@@ -23689,12 +23689,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 211183	title	0	2	 andrew faires v1 rlt njl bw8 unsplash 	'andrew' 'bw8' 'faires' 'njl' 'rlt' 'unsplash' 'v1'
 211183	field	36	2	 the museum after dark photo by andrew faires 	'after' 'andrew' 'by' 'dark' 'faires' 'museum' 'photo' 'the'
 211183	field	64	2	 andrew faires of the joslyn art museum in omaha nebraska us via unsplash https unsplash com photos v1rltnjlbw8 	'andrew' 'art' 'com' 'faires' 'https' 'in' 'joslyn' 'museum' 'nebraska' 'of' 'omaha' 'photos' 'the' 'unsplash' 'us' 'v1rltnjlbw8' 'via'
-211183	filename	0	1	 andrew faires v1rltnjlbw8 unsplash jpg 	'andrew' 'faires' 'jpg' 'unsplash' 'v1rltnjlbw8'
-211183	extension	0	1	 jpg 	'jpg'
-211183	kind	0	1	 image 	'image'
-211183	alt	0	1	 doorway and hall flanked by two painted portraits 	'and' 'by' 'doorway' 'flanked' 'hall' 'painted' 'portraits' 'two'
-211183	slug	0	1		
-211183	title	0	1	 museum doorways 	'doorways' 'museum'
 211183	field	36	1	 the museum after dark photo by andrew faires 	'after' 'andrew' 'by' 'dark' 'faires' 'museum' 'photo' 'the'
 211183	field	64	1	 andrew faires of the joslyn art museum in omaha nebraska us via unsplash https unsplash com photos v1rltnjlbw8 	'andrew' 'art' 'com' 'faires' 'https' 'in' 'joslyn' 'museum' 'nebraska' 'of' 'omaha' 'photos' 'the' 'unsplash' 'us' 'v1rltnjlbw8' 'via'
 95	slug	0	1	 winter night tours 	'night' 'tours' 'winter'
@@ -23731,6 +23725,22 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 663	slug	0	1	 temp hitrnhqxzpcyooxvfidngpcdskjmxhqgfnev 	'hitrnhqxzpcyooxvfidngpcdskjmxhqgfnev' 'temp'
 663	title	0	1		
 663	field	38	1	 duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nulla aenean libero eu purus egestas convallis orci ullamcorper consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum 	'ab' 'accusantium' 'aden' 'adipisicing' 'aenean' 'aliqua' 'aliquip' 'anim' 'aperiam' 'architecto' 'aute' 'beatae' 'cillum' 'consectetur' 'consequat' 'convallis' 'culpa' 'cupidatat' 'deserunt' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'egestas' 'eiusmod' 'elit' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'id' 'illo' 'in' 'incididunt' 'inventore' 'ipsa' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'libero' 'magna' 'minim' 'modo' 'mollit' 'natus' 'nisi' 'non' 'nostrud' 'nulla' 'occaecat' 'officia' 'omnis' 'orci' 'pariatur' 'perspiciatis' 'proident' 'purus' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'sed' 'sint' 'sit' 'sunt' 'tempor' 'totam' 'ullamco' 'ullamcorper' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'voluptate' 'voluptatem'
+190	extension	0	1	 jpg 	'jpg'
+190	kind	0	1	 image 	'image'
+190	alt	0	1		
+190	slug	0	1		
+190	title	0	1	 sensory art house abstract painting 	'abstract' 'art' 'house' 'painting' 'sensory'
+94	filename	0	1	 dresden war triptych quiet contemplation jpg 	'contemplation' 'dresden' 'jpg' 'quiet' 'triptych' 'war'
+94	extension	0	1	 jpg 	'jpg'
+94	kind	0	1	 image 	'image'
+94	alt	0	1		
+94	slug	0	1		
+94	title	0	1	 guest quietly contemplating the dresden war triptych 	'contemplating' 'dresden' 'guest' 'quietly' 'the' 'triptych' 'war'
+613	filename	0	1	 europa interior mezzanine jpg 	'europa' 'interior' 'jpg' 'mezzanine'
+613	extension	0	1	 jpg 	'jpg'
+613	kind	0	1	 image 	'image'
+613	alt	0	1		
+613	slug	0	1		
 60	slug	0	1	 about 	'about'
 60	title	0	1	 about 	'about'
 60	field	2	1	 red and multicolored abstract painting est 2020 the digital archive of historic art europa museum lorem ipsum dolor amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua mi ipsum faucibus vitae aliquet nec ullamcorper bibendum est ultricies integer quis auctor elit sed vulputate mi morbi quis commodo odio aenean sed adipiscing diam non odio euismod lacinia at europa courtyard square meters 8 7k new galleries 9 our board staff members lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua mi ipsum faucibus vitae aliquet nec ullamcorper bibendum est ultricies integer quis auctor elit sed vulputate mi morbi quis commodo odio aenean sed adipiscing diam non odio euismod lacinia at europa interior main stair board members 8 staff members 12 pellentesque sit amet lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua mi ipsum faucibus vitae aliquet nec ullamcorper bibendum est ultricies integer quis auctor elit sed vulputate mi morbi quis commodo odio aenean sed adipiscing diam non odio euismod lacinia at turpis tincidunt id aliquet risus feugiat in ante ornare suspendisse sed nisi lacus sed urna id volutpat lacus laoreet non curabitur gravida arcu quam lacus suspendisse faucibus interdum mauris nunc congue nisi vitae quisque egestas diam in arcu cursus euismod ac orci phasellus egestas tellus rutrum tellus pellentesque eu lacinia quis vel eros donec ac odio ut aliquam purus sit amet luctus venenatis lectus magna fringilla neque gravida in fermentum et sollicitudin feugiat in ante metus dictum at tempor commodo right right press kit company overview press contact media assets board staff bios https europa museum ddev site uploads resources press kit zip brochure brochure membership morbi leo risus porta ac consectetur ac vestibulum at eros lorem ipsum dolor sit amet consectetur adipiscing elit south gallery https europa museum ddev site visit annual visitors 85k guest passes issued 19k 	'12' '19k' '2020' '7k' '8' '85k' '9' 'abstract' 'ac' 'adipiscing' 'aenean' 'aliqua' 'aliquam' 'aliquet' 'amet' 'and' 'annual' 'ante' 'archive' 'arcu' 'art' 'assets' 'at' 'auctor' 'bibendum' 'bios' 'board' 'brochure' 'commodo' 'company' 'congue' 'consectetur' 'contact' 'courtyard' 'curabitur' 'cursus' 'ddev' 'diam' 'dictum' 'digital' 'do' 'dolor' 'dolore' 'donec' 'egestas' 'eiusmod' 'elit' 'eros' 'est' 'et' 'eu' 'euismod' 'europa' 'faucibus' 'fermentum' 'feugiat' 'fringilla' 'galleries' 'gallery' 'gravida' 'guest' 'historic' 'https' 'id' 'in' 'incididunt' 'integer' 'interdum' 'interior' 'ipsum' 'issued' 'kit' 'labore' 'lacinia' 'lacus' 'laoreet' 'lectus' 'leo' 'lorem' 'luctus' 'magna' 'main' 'mauris' 'media' 'members' 'membership' 'meters' 'metus' 'mi' 'morbi' 'multicolored' 'museum' 'nec' 'neque' 'new' 'nisi' 'non' 'nunc' 'odio' 'of' 'orci' 'ornare' 'our' 'overview' 'painting' 'passes' 'pellentesque' 'phasellus' 'porta' 'press' 'purus' 'quam' 'quis' 'quisque' 'red' 'resources' 'right' 'risus' 'rutrum' 'sed' 'sit' 'site' 'sollicitudin' 'south' 'square' 'staff' 'stair' 'suspendisse' 'tellus' 'tempor' 'the' 'tincidunt' 'turpis' 'ullamcorper' 'ultricies' 'uploads' 'urna' 'ut' 'vel' 'venenatis' 'vestibulum' 'visit' 'visitors' 'vitae' 'volutpat' 'vulputate' 'zip'
@@ -23753,12 +23763,50 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 542	slug	0	1	 temp qypxrhcsrpboloqaoalsjiwadhsqmguzatjn 	'qypxrhcsrpboloqaoalsjiwadhsqmguzatjn' 'temp'
 542	title	0	1		
 542	field	29	1		
-211639	filename	0	1	 ian dooley w2oob5bxsu8 unsplash jpg 	'dooley' 'ian' 'jpg' 'unsplash' 'w2oob5bxsu8'
-211639	extension	0	1	 jpg 	'jpg'
-211639	kind	0	1	 image 	'image'
-211639	alt	0	1		
-211639	slug	0	1		
-211639	title	0	1	 ian dooley w2oo b5 bxs u8 unsplash 	'b5' 'bxs' 'dooley' 'ian' 'u8' 'unsplash' 'w2oo'
+613	title	0	1	 europa mezzanine 	'europa' 'mezzanine'
+211645	filename	0	1	 craft red png 	'craft' 'png' 'red'
+211645	extension	0	1	 png 	'png'
+211645	kind	0	1	 image 	'image'
+211645	alt	0	1		
+211645	slug	0	1		
+211645	title	0	1	 craft red 	'craft' 'red'
+211183	filename	0	1	 andrew faires v1rltnjlbw8 unsplash jpg 	'andrew' 'faires' 'jpg' 'unsplash' 'v1rltnjlbw8'
+211183	extension	0	1	 jpg 	'jpg'
+211183	kind	0	1	 image 	'image'
+211183	alt	0	1	 doorway and hall flanked by two painted portraits 	'and' 'by' 'doorway' 'flanked' 'hall' 'painted' 'portraits' 'two'
+211183	slug	0	1		
+211183	title	0	1	 museum doorways 	'doorways' 'museum'
+378	filename	0	1	 palace museum china jpg 	'china' 'jpg' 'museum' 'palace'
+378	extension	0	1	 jpg 	'jpg'
+378	kind	0	1	 image 	'image'
+378	alt	0	1		
+378	slug	0	1		
+378	title	0	1	 the palace museum china 	'china' 'museum' 'palace' 'the'
+90	filename	0	1	 europa statue garden jpg 	'europa' 'garden' 'jpg' 'statue'
+90	extension	0	1	 jpg 	'jpg'
+90	kind	0	1	 image 	'image'
+90	alt	0	1		
+90	slug	0	1		
+90	title	0	1	 europa statue garden 	'europa' 'garden' 'statue'
+102	filename	0	1	 ian dooley admiration jpg 	'admiration' 'dooley' 'ian' 'jpg'
+102	extension	0	1	 jpg 	'jpg'
+102	kind	0	1	 image 	'image'
+102	alt	0	1		
+102	slug	0	1		
+102	title	0	1	 admiration 	'admiration'
+207014	filename	0	1	 cole thomas the course of empire desolation jpg 	'cole' 'course' 'desolation' 'empire' 'jpg' 'of' 'the' 'thomas'
+207014	extension	0	1	 jpg 	'jpg'
+207014	kind	0	1	 image 	'image'
+207014	alt	0	1		
+207014	slug	0	1		
+207014	title	0	1	 the course of empire desolation 	'course' 'desolation' 'empire' 'of' 'the'
+38	filename	0	1	 the course of empire consummation jpg 	'consummation' 'course' 'empire' 'jpg' 'of' 'the'
+38	extension	0	1	 jpg 	'jpg'
+38	kind	0	1	 image 	'image'
+38	alt	0	1		
+38	slug	0	1		
+38	title	0	1	 the course of empire the consummation 	'consummation' 'course' 'empire' 'of' 'the'
+698	filename	0	1	 kandinsky color study squares concentric circles jpg 	'circles' 'color' 'concentric' 'jpg' 'kandinsky' 'squares' 'study'
 211221	slug	0	1	 temp ujbmbwzpipyegtluugvnuacsqmqugrxejpjw 	'temp' 'ujbmbwzpipyegtluugvnuacsqmqugrxejpjw'
 211221	title	0	1		
 211221	field	16	1	 annual visitors guest passes issued 	'annual' 'guest' 'issued' 'passes' 'visitors'
@@ -23768,6 +23816,17 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 91	field	2	1	 sed eiusmod tempor encodidunt ut labore lore magna aliqua consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo velit esse cillum dolore eu fugiat nulla pariatur excepteur sint full full lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum odio orci at diam iaculis vivamus velit morbi nunc imperdiet dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium as you traverse the connecting hallway between the new and old wings you will see a gradual transition in architectural style 1 full full duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nulla aenean libero eu purus egestas convallis orci ullamcorper consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 	'1' 'a' 'ab' 'accusantium' 'aden' 'adipiscing' 'adipisicing' 'aenean' 'aliqua' 'aliquip' 'amet' 'and' 'anim' 'aperiam' 'architecto' 'architectural' 'as' 'at' 'aute' 'beatae' 'between' 'cillum' 'connecting' 'consectetur' 'consequat' 'convallis' 'culpa' 'cupidatat' 'deserunt' 'diam' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'egestas' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'full' 'gradual' 'hallway' 'iaculis' 'id' 'illo' 'imperdiet' 'in' 'incididunt' 'inventore' 'ipsa' 'ipsum' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'libero' 'lore' 'lorem' 'magna' 'minim' 'modo' 'mollit' 'morbi' 'natus' 'new' 'nisi' 'non' 'nostrud' 'nulla' 'nunc' 'occaecat' 'odio' 'officia' 'old' 'omnis' 'orci' 'pariatur' 'perspiciatis' 'proident' 'purus' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'sed' 'see' 'sint' 'sit' 'style' 'sunt' 'tempor' 'the' 'totam' 'transition' 'traverse' 'ullamco' 'ullamcorper' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'vivamus' 'voluptate' 'voluptatem' 'will' 'wings' 'you'
 660	slug	0	1	 temp zzkkwxnorlursgepogsfgqojoucbfbrtidgb 	'temp' 'zzkkwxnorlursgepogsfgqojoucbfbrtidgb'
 660	title	0	1		
+698	extension	0	1	 jpg 	'jpg'
+698	kind	0	1	 image 	'image'
+698	alt	0	1		
+698	slug	0	1		
+698	title	0	1	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
+23	filename	0	1	 van gogh starry night jpg 	'gogh' 'jpg' 'night' 'starry' 'van'
+23	extension	0	1	 jpg 	'jpg'
+23	kind	0	1	 image 	'image'
+23	alt	0	1	 van goghs painting starry night 	'goghs' 'night' 'painting' 'starry' 'van'
+23	slug	0	1		
+23	title	0	1	 starry night 	'night' 'starry'
 291	field	6	1	 robert delaunay wassily kandinsky the roman empire van gogh 	'delaunay' 'empire' 'gogh' 'kandinsky' 'robert' 'roman' 'the' 'van' 'wassily'
 291	field	27	1	 normal normal 	'normal'
 291	field	35	1	 light light 	'light'
@@ -23795,6 +23854,43 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 524	slug	0	1	 temp kmpbwzcuugasopypdkzufnaasgwtplnumlye 	'kmpbwzcuugasopypdkzufnaasgwtplnumlye' 'temp'
 524	title	0	1		
 660	field	38	1	 sed eiusmod tempor encodidunt ut labore lore magna aliqua consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo velit esse cillum dolore eu fugiat nulla pariatur excepteur sint 	'ab' 'accusantium' 'aden' 'adipisicing' 'aliqua' 'aliquip' 'anim' 'aperiam' 'architecto' 'aute' 'beatae' 'cillum' 'consectetur' 'consequat' 'culpa' 'cupidatat' 'deserunt' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'id' 'illo' 'in' 'incididunt' 'inventore' 'ipsa' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'lore' 'magna' 'minim' 'modo' 'mollit' 'natus' 'nisi' 'non' 'nostrud' 'nulla' 'occaecat' 'officia' 'omnis' 'pariatur' 'perspiciatis' 'proident' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'sed' 'sint' 'sit' 'sunt' 'tempor' 'totam' 'ullamco' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'voluptate' 'voluptatem'
+689	filename	0	1	 kandinsky landscape with factory chimney jpg 	'chimney' 'factory' 'jpg' 'kandinsky' 'landscape' 'with'
+689	extension	0	1	 jpg 	'jpg'
+689	kind	0	1	 image 	'image'
+689	alt	0	1		
+689	slug	0	1		
+689	title	0	1	 landscape with factory chimney 	'chimney' 'factory' 'landscape' 'with'
+48	filename	0	1	 vassily kandinsky on white ii jpg 	'ii' 'jpg' 'kandinsky' 'on' 'vassily' 'white'
+48	extension	0	1	 jpg 	'jpg'
+48	kind	0	1	 image 	'image'
+48	alt	0	1		
+48	slug	0	1		
+48	title	0	1	 on white ii 	'ii' 'on' 'white'
+702	filename	0	1	 vassily kandinsky houses in munich jpg 	'houses' 'in' 'jpg' 'kandinsky' 'munich' 'vassily'
+702	extension	0	1	 jpg 	'jpg'
+702	kind	0	1	 image 	'image'
+702	alt	0	1		
+702	slug	0	1		
+702	title	0	1	 houses in munich 	'houses' 'in' 'munich'
+278	filename	0	1	 van gogh self portrait jpg 	'gogh' 'jpg' 'portrait' 'self' 'van'
+278	extension	0	1	 jpg 	'jpg'
+278	kind	0	1	 image 	'image'
+278	alt	0	1		
+278	slug	0	1		
+278	title	0	1	 self portrait 	'portrait' 'self'
+207016	filename	0	1	 cole thomas the course of empire the arcadian or pastoral state jpg 	'arcadian' 'cole' 'course' 'empire' 'jpg' 'of' 'or' 'pastoral' 'state' 'the' 'thomas'
+207016	extension	0	1	 jpg 	'jpg'
+207016	kind	0	1	 image 	'image'
+207016	alt	0	1		
+207016	slug	0	1		
+207016	title	0	1	 the course of empire the arcadian or pastoral state 	'arcadian' 'course' 'empire' 'of' 'or' 'pastoral' 'state' 'the'
+32	filename	0	1	 delaunay circular forms jpg 	'circular' 'delaunay' 'forms' 'jpg'
+32	extension	0	1	 jpg 	'jpg'
+32	kind	0	1	 image 	'image'
+32	alt	0	1		
+32	slug	0	1		
+32	title	0	1	 circular forms 	'circular' 'forms'
+207015	filename	0	1	 cole thomas the course of empire destruction jpg 	'cole' 'course' 'destruction' 'empire' 'jpg' 'of' 'the' 'thomas'
 \.
 
 
@@ -23803,6 +23899,17 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 --
 
 COPY public.searchindexqueue (id, "elementId", "siteId", reserved) FROM stdin;
+251	207017	1	f
+252	207016	1	f
+253	207015	1	f
+254	207014	1	f
+255	702	1	f
+256	698	1	f
+257	694	1	f
+258	689	1	f
+259	614	1	f
+260	613	1	f
+261	383	1	f
 \.
 
 
@@ -23811,6 +23918,10 @@ COPY public.searchindexqueue (id, "elementId", "siteId", reserved) FROM stdin;
 --
 
 COPY public.searchindexqueue_fields ("jobId", "fieldHandle") FROM stdin;
+252	attribution
+253	attribution
+254	attribution
+258	imageCaption
 \.
 
 
@@ -23897,7 +24008,7 @@ COPY public.seomatic_metabundles (id, "dateCreated", "dateUpdated", uid, "bundle
 --
 
 COPY public.sequences (name, next) FROM stdin;
-freeform	286
+freeform	287
 \.
 
 
@@ -24479,7 +24590,7 @@ COPY public.userpreferences ("userId", preferences) FROM stdin;
 COPY public.users (id, username, "photoId", "firstName", "lastName", email, password, admin, locked, suspended, pending, "lastLoginDate", "lastLoginAttemptIp", "invalidLoginWindowStart", "invalidLoginCount", "lastInvalidLoginDate", "lockoutDate", "hasDashboard", "verificationCode", "verificationCodeIssuedDate", "unverifiedEmail", "passwordResetRequired", "lastPasswordChangeDate", "dateCreated", "dateUpdated", active, "fullName", "affiliatedSiteId") FROM stdin;
 13134	editor	\N			editor@craftcms.com	\N	f	f	f	f	\N	\N	\N	\N	\N	\N	f	\N	\N	\N	f	\N	2022-03-04 01:20:55	2022-03-22 18:24:56	t	\N	\N
 324	veronica@europa.museum	330	Veronica		veronica@europa.museum	$2y$13$rnEbbQzZ6n9Fu7Q6FMcUJeZbHoi5v0SMMI1pBDetwNyYIYWqKhPXq	f	f	f	f	2021-06-18 13:35:37	\N	\N	\N	\N	\N	t	\N	\N	\N	f	2021-06-11 15:49:08	2020-01-18 00:34:26	2022-03-22 18:24:56	t	Veronica	\N
-879	admin@craftcms.com	\N	\N	\N	admin@craftcms.com	$2y$13$YCoey.N4EHuKvmrwQD7QZuI5ejpmIKc5H1qnjG4cOoiVgOto028Y2	t	f	f	f	2025-11-25 20:47:41	\N	\N	\N	2025-11-21 23:44:38	\N	t	\N	\N	\N	f	2025-11-21 23:45:09	2021-06-24 18:15:09	2025-11-25 20:47:41	t	\N	\N
+879	admin@craftcms.com	\N	\N	\N	admin@craftcms.com	$2y$13$YCoey.N4EHuKvmrwQD7QZuI5ejpmIKc5H1qnjG4cOoiVgOto028Y2	t	f	f	f	2025-12-03 22:50:29	\N	\N	\N	2025-11-21 23:44:38	\N	t	\N	\N	\N	f	2025-11-21 23:45:09	2021-06-24 18:15:09	2025-12-03 22:50:29	t	\N	\N
 \.
 
 
@@ -24543,14 +24654,14 @@ SELECT pg_catalog.setval('public.announcements_id_seq', 24, true);
 -- Name: assetindexdata_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.assetindexdata_id_seq', 1, false);
+SELECT pg_catalog.setval('public.assetindexdata_id_seq', 43, true);
 
 
 --
 -- Name: assetindexingsessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.assetindexingsessions_id_seq', 1, false);
+SELECT pg_catalog.setval('public.assetindexingsessions_id_seq', 2, true);
 
 
 --
@@ -24606,14 +24717,14 @@ SELECT pg_catalog.setval('public.drafts_id_seq', 254, true);
 -- Name: elements_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.elements_id_seq', 211644, true);
+SELECT pg_catalog.setval('public.elements_id_seq', 211645, true);
 
 
 --
 -- Name: elements_sites_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.elements_sites_id_seq', 226676, true);
+SELECT pg_catalog.setval('public.elements_sites_id_seq', 226677, true);
 
 
 --
@@ -24963,7 +25074,7 @@ SELECT pg_catalog.setval('public.guide_organizers_id_seq', 1, true);
 -- Name: imagetransformindex_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.imagetransformindex_id_seq', 207, true);
+SELECT pg_catalog.setval('public.imagetransformindex_id_seq', 195, true);
 
 
 --
@@ -24998,7 +25109,7 @@ SELECT pg_catalog.setval('public.plugins_id_seq', 26, true);
 -- Name: queue_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.queue_id_seq', 36525, true);
+SELECT pg_catalog.setval('public.queue_id_seq', 36908, true);
 
 
 --
@@ -25026,7 +25137,7 @@ SELECT pg_catalog.setval('public.revisions_id_seq', 17999, true);
 -- Name: searchindexqueue_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.searchindexqueue_id_seq', 248, true);
+SELECT pg_catalog.setval('public.searchindexqueue_id_seq', 261, true);
 
 
 --
@@ -25054,7 +25165,7 @@ SELECT pg_catalog.setval('public.seomatic_metabundles_id_seq', 18, true);
 -- Name: sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.sessions_id_seq', 76, true);
+SELECT pg_catalog.setval('public.sessions_id_seq', 80, true);
 
 
 --
@@ -28757,5 +28868,5 @@ ALTER TABLE ONLY public.widgets
 -- PostgreSQL database dump complete
 --
 
-\unrestrict YXeXjTZB5o4ocA85VIJzTAawwjyy2snkeWnzVB4Jl7nI8UhV1sLQTDjWvaoDyic
+\unrestrict ziz6RcxJT6T3mgH5JRUl5lP322ZdiRkIzzDivw6Ojfy5212tLplylac1qNiieVV
 
