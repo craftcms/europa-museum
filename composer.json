@@ -21,15 +21,14 @@
     },
     "require": {
         "craftcms/aws-s3": "^2.2.0",
-        "craftcms/ckeditor": "^4.0.0-beta.4",
-        "craftcms/cloud": "*",
-        "craftcms/cms": "^5.0.0-beta.1",
-        "craftcms/yii2-dynamodb": "^2.0.0",
+        "craftcms/ckeditor": "^4",
+        "craftcms/cloud": "^2",
+        "craftcms/cms": "^5.8",
         "fakerphp/faker": "^1.14",
-        "nystudio107/craft-seomatic": "^5.0.0-beta.1",
-        "nystudio107/craft-twigpack": "v5.x-dev",
+        "nystudio107/craft-seomatic": "^5",
+        "nystudio107/craft-twigpack": "v5",
         "solspace/craft-freeform": "^5",
-        "vlucas/phpdotenv": "^5.6.0"
+        "vlucas/phpdotenv": "^5"
     },
     "minimum-stability": "dev",
     "autoload": {
@@ -53,10 +52,6 @@
         ]
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/AugustMiller/craft-twigpack"
-        },
         {
             "type": "composer",
             "url": "https://composer.craftcms.com",

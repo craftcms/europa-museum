@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - 13b5cd9c-c5b1-40bb-8a8a-dc14815aabad # Exhibit
 handle: exhibits
+maxAuthors: 1
 name: Exhibits
 previewTargets:
   -

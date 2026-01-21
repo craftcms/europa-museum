@@ -219,7 +219,7 @@ fields:
     contentColumnType: boolean
     fieldGroup: null
     handle: slideLayoutCentered
-    instructions: 'When enabled it''s best to have 6+ Slide Images/Entries so that the slider will wrap nicely on wide screens.'
+    instructions: "When enabled it's best to have 6+ Slide Images/Entries so that the slider will wrap nicely on wide screens."
     name: 'Slide Layout Centered'
     searchable: true
     settings:

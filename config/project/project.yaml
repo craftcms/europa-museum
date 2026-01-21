@@ -1,4 +1,4 @@
-dateModified: 1725990352
+dateModified: 1767054171
 elementSources:
   craft\elements\Asset:
     -
@@ -205,7 +205,7 @@ plugins:
     edition: lite
     enabled: true
     licenseKey: VKEWWWS910PS87ALDS4HIVX8
-    schemaVersion: 5.2.2
+    schemaVersion: 5.14.1
     settings:
       ajaxByDefault: '1'
       alertNotificationRecipients: ''
@@ -229,6 +229,7 @@ plugins:
       digestRecipients: ''
       displayFeed: ''
       emailTemplateDirectory: null
+      emailTemplateMethod: global
       exportLabels: ''
       fieldDisplayOrder: name
       fillWithGet: '1'
@@ -311,7 +312,7 @@ plugins:
     edition: standard
     enabled: true
     licenseKey: F05LKTHK735ZMFRL0LNY2YWC
-    schemaVersion: 3.0.12
+    schemaVersion: 3.0.13
     settings:
       addHrefLang: true
       addPaginatedHreflang: true
@@ -324,7 +325,7 @@ plugins:
           __assoc__:
             -
               - policy
-              - '''self'''
+              - "'self'"
       devModeCpTitlePrefix: '🚧⚙ '
       devModeTitlePrefix: '🚧 '
       displayAnalysisSidebar: true
@@ -366,5 +367,5 @@ system:
   live: true
   name: 'Europa Museum'
   retryDuration: null
-  schemaVersion: 5.3.0.2
+  schemaVersion: 5.8.0.3
   timeZone: America/Los_Angeles

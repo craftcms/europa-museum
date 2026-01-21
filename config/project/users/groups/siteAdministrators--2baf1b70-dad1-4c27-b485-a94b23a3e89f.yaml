@@ -115,3 +115,4 @@ permissions:
   - 'viewpeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
   - 'savepeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
   - 'assignusergroup:2baf1b70-dad1-4c27-b485-a94b23a3e89f' # Site Administrators
+  - viewusers

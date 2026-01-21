@@ -12,16 +12,13 @@ _Europa_ shows off many of Craft’s [core features](https://craftcms.com/featur
 
 ### Development Technologies
 
-- [Craft CMS 5](https://craftcms.com/docs/5.x/)
+- [Craft CMS 5.x](https://craftcms.com/docs/5.x/)
 - PHP 8.2
 - PostgreSQL 13
 - Native [Twig](https://craftcms.com/docs/5.x/development/twig.html) templates
 - Built on the [Yii 2 framework](https://www.yiiframework.com/)
 
 Read more about Craft’s [technical requirements](https://craftcms.com/docs/5.x/requirements.html) in the official documentation.
-
-> [!WARNING]
-> This branch uses a beta version of Craft 5. Use it to [explore the new features](https://craftcms.com/blog/craft-5-beta-released) ahead of a stable release!
 
 ### Front End Dependencies
 
@@ -37,10 +34,31 @@ _Europa_’s front-end was built with modern Javascript and CSS tools. Craft its
 
 ## Local Development
 
-This repository is ready to use with [Docker Compose](#docker-compose) and [DDEV](#ddev).
+This repository is ready to use with [DDEV](#ddev) and [Docker Compose](#docker-compose).
 
 > [!TIP]
 > If you’re using a different local environment, see Craft’s [Server Requirements](https://craftcms.com/docs/5.x/requirements.html) and [Installation Instructions](https://craftcms.com/docs/5.x/install.html).
+
+### DDEV
+
+[DDEV](https://ddev.com/) is our recommended local development environment, for Craft developers at any level of experience. Our [quick-start guide](https://craftcms.com/docs/5.x/install.html) covers this process in detail—but we’ve done the config for you, so all that’s required is…
+
+```bash
+git clone https://github.com/craftcms/europa-museum.git
+cd europa-museum
+ddev start
+ddev composer install
+ddev import-db < seed.sql
+ddev craft setup/security-key
+```
+
+As with the vanilla Docker setup process, you can create a user for yourself with the CLI:
+
+```bash
+ddev craft users/create --admin
+# ...
+ddev launch admin
+```
 
 ### Docker Compose
 
@@ -62,41 +80,25 @@ docker-compose exec web php craft users/create --admin
 > [!TIP]
 > Visit the control panel in your running project `http://localhost:8080/admin`!
 
-### DDEV
-
-[DDEV](https://ddev.com/) is our recommended local development environment, for Craft developers at any level of experience. Our [quick-start guide](https://craftcms.com/docs/5.x/install.html) covers this process in detail—but we’ve done the config for you, so all that’s required is…
-
-```bash
-git clone https://github.com/craftcms/europa-museum.git
-cd europa-museum
-ddev start
-ddev craft db/restore seed.sql
-```
-
-As with the vanilla Docker setup process, you can create a user for yourself with the CLI:
-
-```bash
-ddev craft users/create --admin
-# ...
-ddev launch admin
-```
-
 ### Front End
 
-Run `npm install` with Node 14.15.0 or later.
+Run `npm install` with Node.js 14.15.0 or later.
+
+> [!TIP]
+> DDEV users can run npm commands within the application container, via `ddev npm ...`!
+
+These development scripts are available in `package.json`:
+
+- `npm run watch` to watch and automatically recompile assets for local development
+- `npm run sync` to watch files and reload with BrowserSync for local development
+- `npm run dev` to compile assets for local development
+- `npm run prod` to compile optimized assets for production
 
 If you use a different site URL, update `DEFAULT_SITE_URL` in `.env` or the production build process will fail:
 
 ```
 DEFAULT_SITE_URL=https://europa.ddev.site
 ```
-
-You can then run any of the development scripts found in `package.json`:
-
-- `npm run watch` to watch and automatically recompile assets for local development
-- `npm run sync` to watch files and reload with BrowserSync for local development
-- `npm run dev` to compile assets for local development
-- `npm run prod` to compile optimized assets for production
 
 ## License
 

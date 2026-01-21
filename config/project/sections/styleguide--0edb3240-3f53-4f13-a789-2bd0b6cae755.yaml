@@ -3,6 +3,7 @@ enableVersioning: true
 entryTypes:
   - 03ad2302-4a79-4d90-91f8-bb515f0157d0 # Styleguide
 handle: styleguide
+maxAuthors: 1
 name: Styleguide
 previewTargets:
   -
