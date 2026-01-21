@@ -1,5 +1,11 @@
 # Craft Cloud configuration file
 # https://craftcms.com/knowledge-base/cloud-config
-php-version: '8.2'
+php-version: "8.2"
 npm-script: production
-node-version: '16'
+node-version: "16"
+
+redirects:
+  - pattern:
+      hostname: "www.europamuseum.co"
+    destination: "https://europamuseum.co/{request.uri}"
+    status: 301
