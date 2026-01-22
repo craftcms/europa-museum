@@ -2,6 +2,7 @@ altTranslationKeyFormat: null
 altTranslationMethod: site
 fieldLayouts:
   73319165-f289-4758-a3f8-a617823df46f:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -64,6 +65,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-09-10T17:36:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 8b592bee-c976-4c83-be76-d749cc991410 # Image Caption
             handle: null
@@ -80,6 +82,7 @@ fieldLayouts:
             width: 100
           -
             dateAdded: '2024-09-10T17:36:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 7aecb4af-681c-47ff-9160-2cc0fbddcd4e # Attribution
             handle: null
@@ -97,11 +100,11 @@ fieldLayouts:
         name: Content
         uid: 4137e69d-a442-464d-8260-f253f42201c5
         userCondition: null
-fs: images
+fs: craftCloud
 handle: images
 name: Images
 sortOrder: 1
-subpath: ''
+subpath: images
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: ''

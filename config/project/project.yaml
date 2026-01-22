@@ -1,4 +1,4 @@
-dateModified: 1769084929
+dateModified: 1769095171
 elementSources:
   craft\elements\Asset:
     -
@@ -77,15 +77,15 @@ email:
     username: ''
   transportType: craft\mail\transportadapters\Smtp
 fs:
-  images:
+  craftCloud:
     hasUrls: true
-    name: Images
+    name: 'Craft Cloud'
     settings:
+      baseUrl: $ASSET_BASE_URL
       expires: '1 years'
-      hasUrls: true
-      localFsPath: '@webroot/assets/volumes'
-      localFsUrl: '@web/assets/volumes'
-      subpath: images
+      localFsPath: $ASSET_BASE_PATH
+      localFsUrl: $ASSET_BASE_URL
+      subpath: null
     type: craft\cloud\fs\AssetsFs
 meta:
   __names__:
