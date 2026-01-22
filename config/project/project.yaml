@@ -1,4 +1,4 @@
-dateModified: 1769082575
+dateModified: 1769084769
 elementSources:
   craft\elements\Asset:
     -
@@ -219,6 +219,7 @@ meta:
     ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e: Visit # Visit
     cdc345f6-dec9-46b7-80b5-6de7918fcdf3: 'Content Blocks - Rich Text - Layout' # Content Blocks - Rich Text - Layout
     cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c: Heading # Heading
+    d86bcb1f-c9ae-4a07-98ed-0e8b496b30a3: 'Content Managers - Barcelona' # Content Managers - Barcelona
     d703e6d3-677f-4b60-99d7-44b4710ff7bc: Contact # Contact
     d10684d5-bcd7-4e35-b0be-69377f981c39: 'Content Blocks - Stats and Image - Heading' # Content Blocks - Stats and Image - Heading
     dad3b3bd-ab3c-486d-a552-b3cc718f8e1c: 'Content Blocks - Image and Headings - Image' # Content Blocks - Image and Headings - Image
