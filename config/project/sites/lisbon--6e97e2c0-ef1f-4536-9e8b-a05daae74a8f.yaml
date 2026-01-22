@@ -3,7 +3,7 @@ enabled: '1'
 handle: lisbon
 hasUrls: true
 language: pt-PT
-name: Lisbon
+name: Lisboa
 primary: false
 siteGroup: 20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b # Europa Museum
 sortOrder: 5

@@ -283,6 +283,7 @@
 
     .location-title {
         font-size: 3rem;
+        text-transform: uppercase;
         padding: 0;
         transform: translateX(-1.2rem);
         transition: transform 0.3s $ease-in-out-1, box-shadow 0.3s;

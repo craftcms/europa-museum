@@ -17,7 +17,7 @@ previewTargets:
     urlFormat: news
 propagationMethod: custom
 siteSettings:
-  6e97e2c0-ef1f-4536-9e8b-a05daae74a8f: # Lisbon
+  6e97e2c0-ef1f-4536-9e8b-a05daae74a8f: # Lisboa
     enabledByDefault: true
     hasUrls: true
     template: _/pages/news-article
