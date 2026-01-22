@@ -1,41 +1,38 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - f4cfbdf3-fa41-42c6-99f5-d0efefc2e406 # News Article
+  -
+    uid: f4cfbdf3-fa41-42c6-99f5-d0efefc2e406 # News Article
 handle: newsArticles
 maxAuthors: 1
 name: 'News Articles'
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
   -
-    __assoc__:
-      -
-        - label
-        - 'Listing page'
-      -
-        - urlFormat
-        - news
-      -
-        - refresh
-        - '1'
-propagationMethod: all
+    label: 'Listing page'
+    refresh: '1'
+    urlFormat: news
+propagationMethod: custom
 siteSettings:
-  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+  6e97e2c0-ef1f-4536-9e8b-a05daae74a8f: # Lisboa
     enabledByDefault: true
     hasUrls: true
     template: _/pages/news-article
     uriFormat: 'news/{slug}'
-  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+  ba1b402d-782f-4f88-9747-2f698adfc9e2: # London
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news-article
+    uriFormat: 'news/{slug}'
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # Paris
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news-article
+    uriFormat: 'news/{slug}'
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # Barçalona
     enabledByDefault: true
     hasUrls: true
     template: _/pages/news-article

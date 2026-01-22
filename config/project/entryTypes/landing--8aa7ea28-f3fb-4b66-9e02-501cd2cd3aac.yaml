@@ -1,0 +1,80 @@
+color: null
+description: null
+fieldLayouts:
+  269a81d3-a858-4228-90b8-9ed701073e18:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-21T09:13:57+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 904ba9d4-30a5-4a38-9151-c8cb685483d4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-21T10:45:34+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: eb3ec401-b293-46e9-b875-0e69b6f48aa1 # Locations
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 70db1b15-ae6c-4859-a14c-dbe2c288f2cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 488c11b6-366c-4abc-b28a-ef90e6907dc5
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-01-21T14:27:36+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 970b020d-7046-46ab-8f0d-69eb2bca85db
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: 51ad9274-1b56-4fd8-bb21-6b3e667d9ae1
+        userCondition: null
+handle: landing
+hasTitleField: false
+icon: null
+name: Landing
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

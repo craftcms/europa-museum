@@ -5,7 +5,11 @@ php_version: "8.2"
 webserver_type: nginx-fpm
 xdebug_enabled: false
 additional_hostnames:
-    - fr.europa-museum
+    - www.europa-museum
+    - paris.europa-museum
+    - barcelona.europa-museum
+    - london.europa-museum
+    - lisbon.europa-museum
 additional_fqdns: []
 database:
     type: postgres

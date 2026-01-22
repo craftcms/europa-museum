@@ -1,0 +1,21 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 8aa7ea28-f3fb-4b66-9e02-501cd2cd3aac # Landing
+handle: landing
+maxAuthors: 1
+name: Landing
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  752481c4-0191-42fe-aedd-fbdf302d3eb9: # Global
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/landing.twig
+    uriFormat: __home__
+type: single

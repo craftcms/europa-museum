@@ -1,42 +1,15 @@
 color: null
+description: null
 fieldLayouts:
   e1fad73a-2e23-4fa8-8f33-5037fe6b6d76:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-09-10T17:40:45+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 1fd34966-3f04-4530-9990-611cfa0a6146
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2024-09-10T17:40:45+00:00'
+            dateAdded: '2026-01-22T09:56:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
             handle: null
@@ -52,7 +25,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-10T17:40:45+00:00'
+            dateAdded: '2026-01-22T09:56:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: c3286b59-368a-4fdf-8dbe-48084247c9e2 # Featured Exhibits
             handle: null
@@ -68,7 +42,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-09-10T17:40:45+00:00'
+            dateAdded: '2026-01-22T09:56:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
             handle: null
@@ -90,7 +65,8 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            dateAdded: '2024-09-10T17:40:45+00:00'
+            dateAdded: '2026-01-22T09:56:57+00:00'
+            editCondition: null
             elementCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             handle: null
@@ -110,12 +86,12 @@ fieldLayouts:
         userCondition: null
 handle: home
 hasTitleField: false
-icon: ''
+icon: null
 name: Home
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: ''
-titleTranslationMethod: none
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

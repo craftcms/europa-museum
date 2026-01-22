@@ -210,6 +210,86 @@
         transform: translateY(100%);
     }
 
+    // Locations
+
+    .locations-grid {
+        hr {
+            margin-right: 16%;
+            margin-left: 6%;
+        }
+    }
+
+    .locations-heading {
+        text-transform: uppercase;
+    }
+
+    .locations-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @media (min-width: 700px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .location-card {
+        display: block;
+        position: relative;
+        overflow: visible;
+        text-decoration: none;
+        transition: transform 0.3s $ease-in-out-1;
+
+        &:nth-child(2n) {
+            margin-top: 3rem;
+        }
+
+        &:hover {
+            transform: translateY(-8px) scale(1.02);
+
+            .location-image {
+                transform: scale(1.08);
+            }
+            .location-overlay {
+                background: rgba(0,0,0,0.25);
+            }
+            .location-title {
+                transform: translateX(1.5rem);
+            }
+        }
+    }
+
+    .location-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        margin-top: -1.3rem;
+    }
+
+    .location-image {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s $ease-in-out-1;
+    }
+
+    .location-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.47);
+        transition: background 0.3s $ease-in-out-1;
+        z-index: 1;
+    }
+
+    .location-title {
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: 0;
+        transform: translateX(-1.2rem);
+        transition: transform 0.3s $ease-in-out-1, box-shadow 0.3s;
+    }
+
+
     @media screen and (max-width: 1100px) {
 
         .wrapper {

@@ -2,10 +2,18 @@
 
 <nav class="core-nav-links">
 
-    {% for link in navigation.linksRight.all() %}
+    {% if currentSite.handle == 'global' %}
 
-        <a href="{{ link.url }}" {% if link.url == url('contact') %}data-router-disabled{% endif %}>{{ link.title }}</a>
+        <a href="#locations" data-router-disabled>{{ 'Locations'|t }}</a>
 
-    {% endfor %}
+    {% else %}
+
+        {% for link in navigation.linksRight.all() %}
+
+            <a href="{{ link.url }}" {% if link.url == url('contact') %}data-router-disabled{% endif %}>{{ link.title }}</a>
+
+        {% endfor %}
+
+    {% endif %}
 
 </nav>

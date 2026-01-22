@@ -3,9 +3,14 @@
 namespace modules\demos;
 
 use Craft;
+use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
+use craft\fields\Link;
 use craft\helpers\App;
+use craft\services\Dashboard;
 use craft\web\View;
+use modules\demos\fields\SiteLink;
+use modules\demos\widgets\AnalyticsWidget;
 use yii\base\Event;
 
 class Module extends \yii\base\Module
@@ -22,11 +27,6 @@ class Module extends \yii\base\Module
 
         parent::init();
 
-        $fsHandle = App::env('FS_HANDLE') ?? (App::env('S3_BUCKET') ? 'images' : 'imagesLocal');
-        putenv("FS_HANDLE=$fsHandle");
-        $_SERVER['FS_HANDLE'] = $fsHandle;
-        $_ENV['FS_HANDLE'] = $fsHandle;
-
         Event::on(
             View::class,
             View::EVENT_REGISTER_CP_TEMPLATE_ROOTS,
@@ -34,5 +34,13 @@ class Module extends \yii\base\Module
                 $event->roots['modules'] = __DIR__ . '/templates';
             }
         );
+
+        Event::on(Link::class, Link::EVENT_REGISTER_LINK_TYPES, function(RegisterComponentTypesEvent $event) {
+            $event->types[] = SiteLink::class;
+        });
+
+        Event::on(Dashboard::class, Dashboard::EVENT_REGISTER_WIDGET_TYPES, function(RegisterComponentTypesEvent $event) {
+            $event->types[] = AnalyticsWidget::class;
+        });
     }
 }

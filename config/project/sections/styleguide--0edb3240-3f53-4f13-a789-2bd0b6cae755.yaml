@@ -16,7 +16,7 @@ previewTargets:
         - '{url}'
 propagationMethod: all
 siteSettings:
-  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # Barçalona
     enabledByDefault: true
     hasUrls: true
     template: _/pages/styleguide

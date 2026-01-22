@@ -19,6 +19,7 @@ use modules\demos\Module;
 use samdark\log\PsrTarget;
 
 return [
+    'id' => 'EuropaMuseum-CraftCMS',
     'modules'   => [
         'demos' => Module::class,
     ],

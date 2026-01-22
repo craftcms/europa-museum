@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: text
 handle: summary
 instructions: 'Short summary for News page and RSS feed.'
 name: Summary
@@ -8,11 +7,10 @@ settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: null
   initialRows: 1
   multiline: true
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\PlainText

@@ -1,0 +1,15 @@
+<<<<<<<< HEAD:config/project/sites/english--c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9.yaml
+baseUrl: $PRIMARY_SITE_URL
+enabled: true
+handle: english
+========
+baseUrl: $DEFAULT_SITE_URL
+enabled: true
+handle: global
+>>>>>>>> feature/multi-site:config/project/sites/global--752481c4-0191-42fe-aedd-fbdf302d3eb9.yaml
+hasUrls: true
+language: en-US
+name: Global
+primary: true
+siteGroup: 20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b # Europa Museum
+sortOrder: 1
