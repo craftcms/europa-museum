@@ -13,13 +13,11 @@
  * built-in system components.
  */
 
-use Bugsnag\Client;
-use craft\helpers\App;
 use modules\demos\Module;
-use samdark\log\PsrTarget;
+use craft\helpers\App;
 
 return [
-    'id' => 'EuropaMuseum-CraftCMS',
+    'id' => App::env('CRAFT_APP_ID') ?: 'CraftCMS',
     'modules'   => [
         'demos' => Module::class,
     ],
