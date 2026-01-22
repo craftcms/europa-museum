@@ -1,9 +1,9 @@
-baseUrl: '@web'
+baseUrl: $DEFAULT_SITE_URL
 enabled: true
-handle: default
+handle: global
 hasUrls: true
 language: en-US
-name: English
+name: Global
 primary: true
 siteGroup: 20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b # Europa Museum
 sortOrder: 1

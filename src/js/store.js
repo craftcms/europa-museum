@@ -3,7 +3,8 @@ let store = {
     body: document.body,
     darkToggle: document.querySelector('#dark-toggle'),
     coreFooter: document.querySelector('.core-footer'),
-    locoScroll: null
+    locoScroll: null,
+    museumLocations: [],
 };
 
 export default store;

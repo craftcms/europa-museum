@@ -19,7 +19,19 @@ import Visit from './visit';
 
 class Pages {
     constructor() {
-        const pageTemplate = location.pathname.split('/')[1];
+        let pageTemplate = location.pathname.split('/')[1];
+
+        if (store.museumLocations.length > 0) {
+            // Check to see if we are in a museum location path
+            const isInLocation = store.museumLocations.find(locationHandle => {
+                return locationHandle === pageTemplate;
+            });
+
+            if (isInLocation && location.pathname.split('/').length > 1) {
+                pageTemplate = location.pathname.split('/')[2];
+            }
+        }
+
         const pageName = pageTemplate.length > 1 ? pageTemplate : 'home';
         store.body.dataset.page = pageName;
         const selectedLink = store.body.querySelector('[data-link="' + pageName + '"]');

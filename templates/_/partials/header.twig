@@ -4,7 +4,8 @@
     <div class="core-header-content">
 
         <a class="core-logo no-underline" href="{{ siteUrl }}">
-            <span class="underline">euro</span>pa.museum
+            {# Decide if we need to include .core-logo-location #}
+            <span class="underline">euro</span>pa.museum{% if currentSite.handle != 'global' %} <span class="core-logo-location">{{ currentSite.name }}</span>{% endif %}
         </a>
 
         {% include "_/partials/quick-links" %}

@@ -22,6 +22,13 @@ class App {
         Object.assign(store, {
           isSmooth: false
         });
+
+        // If museum location handles have been defined, add them to the store
+        if (window.museumLocations) {
+            Object.assign(store, {
+                museumLocations: window.museumLocations
+            });
+        }
     }
 
     init() {

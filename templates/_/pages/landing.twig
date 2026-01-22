@@ -1,0 +1,69 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+
+{% extends "_/layouts/site" %}
+
+{% block inline_css %}
+    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
+{% endblock %}
+
+{% block content %}
+
+    {% set heading = entry.heading | default('') %}
+    {% set headingWords = heading | split(' ') %}
+
+    <article data-router-view="home">
+
+        <div class="home-container">
+
+            <div class="wrapper">
+
+                {% if headingWords %}
+
+                    <div class="hero" data-scroll-section>
+                        <h1 class="sans-light text-center" data-scroll>
+
+                            {% for word in headingWords %}
+                                <span class="word">{{ word }}</span>
+                            {% endfor %}
+
+                        </h1>
+                    </div>
+
+                {% endif %}
+
+            </div>
+
+        </div>
+
+        {% set locations = entry.locations.all() %}
+        {% if locations | length %}
+            <div id="locations" class="locations-grid" data-scroll-section>
+                <hr>
+                <div class="wrapper">
+                    <h4 class="locations-heading text-center">
+                        {{ 'Our Locations'|t }}
+                    </h4>
+                    <div class="locations-cards">
+                        {% for location in locations %}
+                            <a href="{{ location.siteLink }}" class="location-card no-underline">
+                                <div class="location-title serif-display-regular">{{ location.title }}</div>
+                                <div class="location-image-wrapper">
+                                    {% include "_/components/picture" with {
+                                        asset: location.heroImage.one(),
+                                        transform: 'base',
+                                        sizes: sizes ?? '100vw',
+                                        lazytransition: 'lazyfade'
+                                    } %}
+                                    <div class="location-overlay"></div>
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+
+            </div>
+        {% endif %}
+
+    </article>
+
+{% endblock %}

@@ -192,6 +192,10 @@
         .core-logo {
             color: #fff;
 
+            .core-logo-location {
+                color: rgba(255,255,255,0.75);
+            }
+
             .underline:before {
                 background-color: #fff;
             }

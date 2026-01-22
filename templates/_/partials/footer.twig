@@ -1,4 +1,5 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
+{% set primarySite = craft.app.sites.getPrimarySite() %}
 
 <footer class="core-footer" data-scroll-section>
 
@@ -50,20 +51,30 @@
                 <a href="/contact" class="underline" data-router-disabled>
                     {{ 'Contact' | t }}
                 </a>
+                {% if primarySite %}
+
+                    <br>
+                    <a href="{{ primarySite.getBaseUrl() }}" class="underline" data-router-disabled>
+                        {{ 'Locations' | t }}
+                    </a>
+
+                {% endif %}
             </p>
 
         </div>
 
         <div class="column hide-on-mobile">
 
-            <p>
-                {{ 'Open Hours' | t }}
-            </p>
+            {% if currentSite.handle != primarySite.handle %}
+                <p>
+                    {{ 'Open Hours' | t }}
+                </p>
 
-            <p>
-                {{ 'Weekdays:' | t }} 8am - 5pm<br>
-                {{ 'Weekend:' | t }} 8am - 9pm
-            </p>
+                <p>
+                    {{ 'Weekdays:' | t }} 8am - 5pm<br>
+                    {{ 'Weekend:' | t }} 8am - 9pm
+                </p>
+            {% endif %}
 
         </div>
 

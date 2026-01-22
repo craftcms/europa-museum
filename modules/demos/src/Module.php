@@ -3,9 +3,12 @@
 namespace modules\demos;
 
 use Craft;
+use craft\events\RegisterComponentTypesEvent;
 use craft\events\RegisterTemplateRootsEvent;
+use craft\fields\Link;
 use craft\helpers\App;
 use craft\web\View;
+use modules\demos\fields\SiteLink;
 use yii\base\Event;
 
 class Module extends \yii\base\Module
@@ -34,5 +37,9 @@ class Module extends \yii\base\Module
                 $event->roots['modules'] = __DIR__ . '/templates';
             }
         );
+
+        Event::on(Link::class, Link::EVENT_REGISTER_LINK_TYPES, function(RegisterComponentTypesEvent $event) {
+            $event->types[] = SiteLink::class;
+        });
     }
 }

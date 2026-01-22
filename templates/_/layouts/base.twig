@@ -45,6 +45,10 @@
 
         {% block body %}{% endblock %}
 
+        <script type="application/javascript">
+            window.museumLocations = {{ craft.app.sites.getAllSites()|map(site => site.handle)|json_encode|raw }};
+        </script>
+
         {{ craft.twigpack.includeJsModule("/js/site.js") }}
 
     </body>

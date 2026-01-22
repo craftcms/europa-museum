@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: text
 handle: heading
 instructions: null
 name: Heading
@@ -8,11 +7,10 @@ settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: null
   initialRows: 4
   multiline: false
   placeholder: null
   uiMode: normal
 translationKeyFormat: null
-translationMethod: none
+translationMethod: site
 type: craft\fields\PlainText

@@ -41,6 +41,15 @@
         .underline:before {
             width: calc(100% + 3px);
         }
+
+        .core-logo-location {
+            position: absolute;
+            bottom: -0.8rem;
+            right: 0;
+            color: rgba(0,0,0,0.5);
+            font-size: 0.7em;
+            display: block;
+        }
     }
 
     .core-quick-links,
@@ -230,6 +239,12 @@ body.theme-dark {
 
         .core-header-content:before {
             background-color: rgba(255,255,255,0.1);
+        }
+
+        .core-logo {
+            .core-logo-location {
+                color: rgba(255,255,255,0.75);
+            }
         }
 
         .core-quick-links,

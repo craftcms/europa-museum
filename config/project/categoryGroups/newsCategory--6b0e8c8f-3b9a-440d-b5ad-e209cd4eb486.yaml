@@ -33,11 +33,23 @@ fieldLayouts:
 handle: newsCategory
 name: 'News Category'
 siteSettings:
-  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+  6e97e2c0-ef1f-4536-9e8b-a05daae74a8f: # Lisbon
     hasUrls: true
     template: _/pages/news
     uriFormat: 'news/category/{slug}'
-  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+  752481c4-0191-42fe-aedd-fbdf302d3eb9: # Global
+    hasUrls: true
+    template: _/pages/news
+    uriFormat: 'news/category/{slug}'
+  ba1b402d-782f-4f88-9747-2f698adfc9e2: # London
+    hasUrls: true
+    template: _/pages/news
+    uriFormat: 'news/category/{slug}'
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # Paris
+    hasUrls: true
+    template: _/pages/news
+    uriFormat: 'news/category/{slug}'
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # Barçalona
     hasUrls: true
     template: _/pages/news
     uriFormat: 'news/category/{slug}'

@@ -1,30 +1,34 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - bf62232f-0516-44b1-949d-960e37bd6228 # Work
+  -
+    uid: bf62232f-0516-44b1-949d-960e37bd6228 # Work
 handle: collection
 maxAuthors: 1
 name: Collection
 previewTargets:
   -
-    __assoc__:
-      -
-        - label
-        - 'Primary entry page'
-      -
-        - urlFormat
-        - '{url}'
-      -
-        - refresh
-        - '1'
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # French
+  6e97e2c0-ef1f-4536-9e8b-a05daae74a8f: # Lisbon
     enabledByDefault: true
     hasUrls: false
     template: null
     uriFormat: null
-  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+  ba1b402d-782f-4f88-9747-2f698adfc9e2: # London
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  beffd6f6-3f04-4ae0-b2c6-71a4e419ab57: # Paris
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # Barçalona
     enabledByDefault: true
     hasUrls: false
     template: null

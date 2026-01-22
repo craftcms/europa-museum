@@ -1,0 +1,14 @@
+columnSuffix: null
+handle: siteLink
+instructions: null
+name: 'Site Link'
+searchable: false
+settings:
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: false
+  types:
+    - siteLink
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link
