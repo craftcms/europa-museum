@@ -15,7 +15,7 @@ additional_hostnames:
 additional_fqdns: []
 database:
     type: postgres
-    version: "13"
+    version: "15"
 upload_dirs:
     - web/assets/volumes
 use_dns_when_possible: true
