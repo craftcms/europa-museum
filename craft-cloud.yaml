@@ -4,8 +4,22 @@ php-version: "8.2"
 npm-script: production
 node-version: "16"
 
+rewrites:
+  - pattern:
+      pathname: "/assets/dist/*?"
+    destination: "{artifactBaseUrl}/{request.uri}"
+
+  - pattern:
+      hostname: "cdn.europamuseum.co"
+    destination: "{assetBaseUrl}/{request.uri}"
+
 redirects:
   - pattern:
       hostname: "www.europamuseum.co"
     destination: "https://europamuseum.co/{request.uri}"
+    status: 301
+  - pattern:
+      hostname: "europamuseum.co"
+      path: "admin/*?"
+    destination: "https://cp.europamuseum.co/"
     status: 301
