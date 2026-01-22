@@ -1,0 +1,51 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  68844b64-b1cb-4a53-988f-e81cbdca8f53:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-01-22T15:51:38+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: a796f5da-8095-4625-89f3-47a620dd9a1a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3bd3172f-4efd-43b5-8123-8f3a78e5c4e0
+        userCondition: null
+fs: craftCloud
+handle: userPhotos
+name: 'User Photos'
+sortOrder: 2
+subpath: user-photos
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

@@ -1,10 +1,11 @@
-dateModified: 1769095171
+dateModified: 1769097237
 elementSources:
   craft\elements\Asset:
     -
       defaultSort:
         - dateCreated
         - desc
+      defaultViewMode: ''
       disabled: false
       key: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
       tableAttributes:
@@ -15,7 +16,10 @@ elementSources:
         - link
       type: native
     -
-      key: 'folder:a834e440-bb85-4bd5-b8a3-82827fc321f1'
+      key: 'volume:e2717149-0d53-46cf-ac19-1ae155f7d8e3' # User Photos
+      type: native
+    -
+      key: temp
       type: native
   craft\elements\Entry:
     -
@@ -191,6 +195,7 @@ meta:
     e3b664df-ac52-4b7c-b296-d324800c4b3c: 'Public Schema' # Public Schema
     e6e6fbf0-a370-48de-b635-6f31bece3c9d: 'Content Blocks - Slider - Slide Layout Centered' # Content Blocks - Slider - Slide Layout Centered
     e44383bb-8f5a-4b3b-9114-30a955feb64c: 'Content Blocks - Form - Form' # Content Blocks - Form - Form
+    e2717149-0d53-46cf-ac19-1ae155f7d8e3: 'User Photos' # User Photos
     eb3ec401-b293-46e9-b875-0e69b6f48aa1: Locations # Locations
     eb7b8bc9-c07a-4a25-9201-8174bd70fcb9: 'Content Blocks - Stats and Image - Description' # Content Blocks - Stats and Image - Description
     eb910859-8baf-408a-ae9a-3af97b637806: 'Content Blocks - Rich Text - Top Border' # Content Blocks - Rich Text - Top Border
