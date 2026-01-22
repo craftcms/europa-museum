@@ -20,6 +20,6 @@ redirects:
     status: 301
   - pattern:
       hostname: "europamuseum.co"
-      path: "admin/*?"
+      pathname: "admin/*?"
     destination: "https://cp.europamuseum.co/"
     status: 301
