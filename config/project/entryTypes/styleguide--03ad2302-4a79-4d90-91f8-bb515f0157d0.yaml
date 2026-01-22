@@ -1,15 +1,23 @@
+color: null
+description: null
 fieldLayouts:
   10b19456-af43-4ddc-95ec-daf105ffcc38:
+    cardThumbAlignment: end
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
+            elementCondition: null
             id: null
+            includeInCards: false
+            inputType: null
             instructions: null
             label: null
             max: null
@@ -17,22 +25,29 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
+            providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: c6e43acd-fe82-4bae-bc8f-4a010eb52084
+            userCondition: null
             warning: null
             width: 100
         name: Content
         uid: a32535ef-ef8d-4801-980f-19499eb7b6f4
+        userCondition: null
 handle: styleguide
 hasTitleField: false
+icon: null
 name: Styleguide
-sortOrder: 1
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: ''

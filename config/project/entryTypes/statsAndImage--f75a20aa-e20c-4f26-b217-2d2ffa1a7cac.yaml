@@ -1,6 +1,8 @@
 color: teal
+description: null
 fieldLayouts:
   b00121d3-e692-4fad-9a4d-14069ec52bf4:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -10,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,8 +38,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: d10684d5-bcd7-4e35-b0be-69377f981c39 # Content Blocks - Stats and Image - Heading
+            fieldUid: d10684d5-bcd7-4e35-b0be-69377f981c39 # Heading
             handle: heading
             includeInCards: true
             instructions: null
@@ -50,8 +55,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: eb7b8bc9-c07a-4a25-9201-8174bd70fcb9 # Content Blocks - Stats and Image - Description
+            fieldUid: eb7b8bc9-c07a-4a25-9201-8174bd70fcb9 # Description
             handle: null
             includeInCards: false
             instructions: null
@@ -65,8 +72,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 00f86307-b225-423b-bd34-b70af6632cf2 # Content Blocks - Stats and Image - Link Label
+            fieldUid: 00f86307-b225-423b-bd34-b70af6632cf2 # Link Label
             handle: linkLabel
             includeInCards: false
             instructions: null
@@ -80,6 +89,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 24f81c6e-6793-446c-8e1c-a00518b79160 # Link Destination
             handle: null
@@ -95,6 +106,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition:
               class: craft\elements\conditions\entries\EntryCondition
               conditionRules:
@@ -108,7 +121,7 @@ fieldLayouts:
                     - internal
               elementType: craft\elements\Entry
               fieldContext: global
-            fieldUid: f466ab59-2e29-4cce-85b8-f9ebe7000b03 # Content Blocks - Stats and Image - Internal Link
+            fieldUid: f466ab59-2e29-4cce-85b8-f9ebe7000b03 # Internal Link
             handle: internalLink
             includeInCards: false
             instructions: null
@@ -122,6 +135,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition:
               class: craft\elements\conditions\entries\EntryCondition
               conditionRules:
@@ -135,7 +150,7 @@ fieldLayouts:
                     - external
               elementType: craft\elements\Entry
               fieldContext: global
-            fieldUid: 52ff2568-6318-44d5-a130-818c19f83360 # Content Blocks - Stats and Image - External Link
+            fieldUid: 52ff2568-6318-44d5-a130-818c19f83360 # External Link
             handle: externalLink
             includeInCards: false
             instructions: null
@@ -149,8 +164,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 7cce3872-9055-454a-8fdc-45cbccec785b # Content Blocks - Stats and Image - Left Stat Value
+            fieldUid: 7cce3872-9055-454a-8fdc-45cbccec785b # Left Stat Value
             handle: null
             includeInCards: false
             instructions: null
@@ -164,8 +181,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 4c127ec9-df18-4d62-bd02-cf8b5044f7ea # Content Blocks - Stats and Image - Left Stat Label
+            fieldUid: 4c127ec9-df18-4d62-bd02-cf8b5044f7ea # Left Stat Label
             handle: null
             includeInCards: false
             instructions: null
@@ -179,8 +198,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 5f06df0c-02b7-4b2d-9b75-4b22a09c3a12 # Content Blocks - Stats and Image - Right Stat Value
+            fieldUid: 5f06df0c-02b7-4b2d-9b75-4b22a09c3a12 # Right Stat Value
             handle: null
             includeInCards: false
             instructions: null
@@ -194,8 +215,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 5ccbb75b-a9e9-455a-baf9-60aaa799d452 # Content Blocks - Stats and Image - Right Stat Label
+            fieldUid: 5ccbb75b-a9e9-455a-baf9-60aaa799d452 # Right Stat Label
             handle: null
             includeInCards: false
             instructions: null
@@ -209,8 +232,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: 2b1996eb-1a60-4257-b4ab-2e41c49fbd06 # Content Blocks - Stats and Image - Image
+            fieldUid: 2b1996eb-1a60-4257-b4ab-2e41c49fbd06 # Image
             handle: image
             includeInCards: false
             instructions: null
@@ -232,8 +257,8 @@ icon: projector
 name: 'Stats and Image'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

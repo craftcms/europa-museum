@@ -1,6 +1,8 @@
 color: null
+description: null
 fieldLayouts:
   2d8e6b8a-86f4-4aa6-9395-a77ea8005a01:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -10,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,6 +38,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 4e1408af-3452-4723-828d-1c779542492d # Artist
             handle: null
@@ -50,6 +55,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 71424eae-6314-46d2-8aff-8fe8be940860 # Representative Image
             handle: null
@@ -65,6 +72,8 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
             fieldUid: 547be893-d407-44df-9142-f0ba630ce0cb # Year
             handle: null
@@ -88,8 +97,8 @@ icon: paintbrush
 name: Work
 showSlugField: false
 showStatusField: false
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: none
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: none

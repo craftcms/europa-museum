@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: string
 handle: heroImage
 instructions: null
 name: 'Hero Image'
@@ -10,9 +9,11 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
+  branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   defaultUploadLocationSubpath: null
-  localizeRelations: false
+  maintainHierarchy: false
   maxRelations: 1
   minRelations: null
   previewMode: full
@@ -22,15 +23,16 @@ settings:
   restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   restrictedLocationSubpath: null
   selectionLabel: 'Add an image'
+  showCardsInGrid: false
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
-  source: null
   sources:
     - 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
   targetSiteId: null
   validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets

@@ -4,9 +4,11 @@ instructions: null
 name: 'Content Blocks - Stats and Image - External Link'
 searchable: true
 settings:
+  fullGraphqlData: false
   maxLength: 255
+  showLabelField: false
   types:
     - url
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Url
+type: craft\fields\Link

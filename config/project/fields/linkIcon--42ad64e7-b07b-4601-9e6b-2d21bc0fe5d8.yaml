@@ -4,6 +4,7 @@ instructions: null
 name: 'Content Blocks - CTA Caption - Link Icon'
 searchable: true
 settings:
+  customOptions: false
   options:
     -
       __assoc__:

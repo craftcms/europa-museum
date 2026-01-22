@@ -4,6 +4,7 @@ instructions: null
 name: 'Link Destination'
 searchable: false
 settings:
+  customOptions: false
   options:
     -
       __assoc__:

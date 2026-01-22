@@ -3,6 +3,8 @@ handle: form
 instructions: null
 name: 'Content Blocks - Form - Form'
 searchable: true
+settings:
+  forms: '*'
 translationKeyFormat: null
 translationMethod: none
 type: Solspace\Freeform\FieldTypes\FormFieldType

@@ -1,6 +1,8 @@
 color: null
+description: null
 fieldLayouts:
   b7542268-90e7-488e-aaf2-8c6695a2948c:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -10,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +27,7 @@ fieldLayouts:
             placeholder: null
             providesThumbs: false
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,8 +38,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # Content Blocks - Rich Text - Rich Text
+            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # __blank__
             handle: null
             includeInCards: true
             instructions: null
@@ -50,8 +55,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Content Blocks - Rich Text - Top Border
+            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Top Border
             handle: null
             includeInCards: false
             instructions: null
@@ -65,8 +72,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Content Blocks - Rich Text - Layout
+            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Layout
             handle: null
             includeInCards: false
             instructions: null
@@ -80,8 +89,10 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7 # Content Blocks - Rich Text - Narrow Width
+            fieldUid: fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7 # Narrow Width
             handle: narrowWidth
             includeInCards: false
             instructions: null
@@ -103,8 +114,8 @@ icon: paragraph
 name: 'Rich Text'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site

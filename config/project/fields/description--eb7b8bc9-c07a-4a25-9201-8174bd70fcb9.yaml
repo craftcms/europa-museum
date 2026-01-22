@@ -6,14 +6,19 @@ searchable: true
 settings:
   availableTransforms: '*'
   availableVolumes: '*'
+  characterLimit: null
   ckeConfig: 40bfb363-8740-499a-82f2-6eda20cb6025 # Vhc No Assets
+  createButtonLabel: null
   defaultTransform: null
-  enableSourceEditingForNonAdmins: true
+  expandEntryButtons: false
+  fullGraphqlData: false
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
   showWordCount: false
+  sourceEditingGroups: '*'
   wordLimit: null
 translationKeyFormat: null
 translationMethod: none

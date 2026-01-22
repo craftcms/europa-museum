@@ -4,6 +4,7 @@ instructions: null
 name: 'Content Blocks - Featured Entry - Text Color'
 searchable: true
 settings:
+  customOptions: false
   options:
     -
       __assoc__:

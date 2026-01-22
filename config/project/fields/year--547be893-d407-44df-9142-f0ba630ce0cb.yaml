@@ -12,6 +12,7 @@ settings:
   previewCurrency: null
   previewFormat: none
   size: 6
+  step: null
   suffix: null
 translationKeyFormat: null
 translationMethod: none

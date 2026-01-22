@@ -4,6 +4,7 @@ instructions: null
 name: 'Content Blocks - Rich Text - Layout'
 searchable: true
 settings:
+  customOptions: false
   options:
     -
       __assoc__:

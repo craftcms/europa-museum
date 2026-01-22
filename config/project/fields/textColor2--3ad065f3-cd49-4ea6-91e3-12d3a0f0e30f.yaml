@@ -4,6 +4,7 @@ instructions: null
 name: 'Content Blocks - Image and Headings - Text Color'
 searchable: true
 settings:
+  customOptions: false
   options:
     -
       __assoc__:
