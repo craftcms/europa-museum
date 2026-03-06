@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.371.5",
+            "version": "3.372.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d40b962154a146901f71561519f9d9c5a3863a6e"
+                "reference": "91ff063599dd5775e8886b9a7ba13cb1f40ca201"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d40b962154a146901f71561519f9d9c5a3863a6e",
-                "reference": "d40b962154a146901f71561519f9d9c5a3863a6e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/91ff063599dd5775e8886b9a7ba13cb1f40ca201",
+                "reference": "91ff063599dd5775e8886b9a7ba13cb1f40ca201",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.371.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.372.0"
             },
-            "time": "2026-03-04T19:06:59+00:00"
+            "time": "2026-03-05T19:38:44+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -910,16 +910,16 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "4.11.2",
+            "version": "4.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/ckeditor.git",
-                "reference": "9681db10641a03edd529fca1a403f6f5cc72eb2a"
+                "reference": "0efb6030ef1aa9bd16ce6a3e0acf36fb90a414d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/9681db10641a03edd529fca1a403f6f5cc72eb2a",
-                "reference": "9681db10641a03edd529fca1a403f6f5cc72eb2a",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/0efb6030ef1aa9bd16ce6a3e0acf36fb90a414d4",
+                "reference": "0efb6030ef1aa9bd16ce6a3e0acf36fb90a414d4",
                 "shasum": ""
             },
             "require": {
@@ -971,7 +971,7 @@
                 "rss": "https://github.com/craftcms/ckeditor/commits/master.atom",
                 "source": "https://github.com/craftcms/ckeditor"
             },
-            "time": "2026-03-02T22:35:06+00:00"
+            "time": "2026-03-05T16:26:14+00:00"
         },
         {
             "name": "craftcms/cms",
