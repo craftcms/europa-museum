@@ -23,7 +23,7 @@
         "bref/bref": "^2",
         "craftcms/aws-s3": "^2.3.2",
         "craftcms/ckeditor": "^5.5.0",
-        "craftcms/cms": "^5.11.5.1",
+        "craftcms/cms": "^5.12.0.1",
         "fakerphp/faker": "^1",
         "nystudio107/craft-seomatic": "^5.1.22",
         "nystudio107/craft-twigpack": "^5",
@@ -40,8 +40,9 @@
         "sort-packages": true,
         "optimize-autoloader": true,
         "allow-plugins": {
-            "yiisoft/yii2-composer": true,
-            "craftcms/plugin-installer": true
+            "craftcms/plugin-installer": true,
+            "php-http/discovery": true,
+            "yiisoft/yii2-composer": true
         }
     },
     "scripts": {

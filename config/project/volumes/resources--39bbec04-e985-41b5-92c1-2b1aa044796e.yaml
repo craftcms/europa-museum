@@ -45,6 +45,7 @@ fieldLayouts:
 fs: disk
 handle: resources
 name: Resources
+propagationMethod: custom
 sortOrder: 2
 subpath: resources
 titleTranslationKeyFormat: null

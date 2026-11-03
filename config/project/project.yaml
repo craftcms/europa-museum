@@ -1,4 +1,4 @@
-dateModified: 1793729753
+dateModified: 1793733972
 elementSources:
   craft\elements\Asset:
     -
@@ -329,6 +329,17 @@ fs:
       subfolder: runtime
     type: craft\awss3\Fs
     url: null
+mcp:
+  authorizationRoute: /admin/mcp/auth
+  enabled: false
+  publicAllowDrafts: false
+  publicAllowInactive: false
+  publicAllowRevisions: false
+  publicEnabled: true
+  publicRoute: /mcp
+  publicSectionHandles:
+    - artists
+  route: /admin/mcp
 meta:
   __names__:
     0b3ab84a-728c-4dfa-b505-ee524b9631d9: Home # Home
@@ -603,5 +614,5 @@ system:
   live: true
   name: 'Europa Museum'
   retryDuration: null
-  schemaVersion: 5.11.0.2
+  schemaVersion: 5.12.0.1
   timeZone: America/Los_Angeles
