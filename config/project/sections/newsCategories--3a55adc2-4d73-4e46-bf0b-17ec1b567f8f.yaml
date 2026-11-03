@@ -5,6 +5,7 @@ entryTypes:
     uid: bd9a6c80-1abe-4747-bb3e-f5e376171eb0 # News Category
 handle: newsCategories
 maxAuthors: 1
+minAuthors: 1
 name: 'News Categories'
 previewTargets:
   -

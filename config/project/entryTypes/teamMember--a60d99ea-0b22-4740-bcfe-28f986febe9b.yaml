@@ -1,0 +1,69 @@
+color: null
+description: null
+fieldLayouts:
+  c34a5f81-c897-4c2e-b907-7756aea8580c:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:3fb96c9c-f62b-4f5f-b8db-c6fb1f22b7cb'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-01-26T22:43:42+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7e754fa0-75c3-44e9-bdc1-6142aa2671e0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-26T22:49:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 073eadde-4f16-405b-a4c6-a0262bab5021 # Role
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3fb96c9c-f62b-4f5f-b8db-c6fb1f22b7cb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 33c50a38-bbf4-4fa1-9917-9c76eb902d2a
+        userCondition: null
+handle: teamMember
+hasTitleField: true
+icon: user
+name: 'Team Member'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

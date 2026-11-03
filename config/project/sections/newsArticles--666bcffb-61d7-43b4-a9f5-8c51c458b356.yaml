@@ -5,6 +5,7 @@ entryTypes:
     uid: f4cfbdf3-fa41-42c6-99f5-d0efefc2e406 # News Article
 handle: newsArticles
 maxAuthors: 1
+minAuthors: 1
 name: 'News Articles'
 previewTargets:
   -

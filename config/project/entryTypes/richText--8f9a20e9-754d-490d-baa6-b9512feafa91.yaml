@@ -3,6 +3,8 @@ description: null
 fieldLayouts:
   b7542268-90e7-488e-aaf2-8c6695a2948c:
     cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:88b22500-1a2a-4744-be8c-2e6020bb4cdf'
     tabs:
       -
         elementCondition: null
@@ -16,7 +18,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -25,7 +26,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -43,10 +43,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # Rich Text
             handle: null
-            includeInCards: true
             instructions: null
             label: __blank__
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -60,10 +58,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Top Border
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Top Border'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -77,10 +73,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Image Handling
             handle: null
-            includeInCards: false
             instructions: null
             label: Layout
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -94,10 +88,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Layout Width
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Narrow Width'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

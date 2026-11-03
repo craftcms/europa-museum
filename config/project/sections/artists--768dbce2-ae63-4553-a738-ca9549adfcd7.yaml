@@ -1,0 +1,22 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 4b633a78-4971-411d-aced-a0b2da880e5f # Artist
+handle: artists
+maxAuthors: 1
+minAuthors: 1
+name: Artists
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: artists/_entry.twig
+    uriFormat: 'artists/{slug}'
+type: channel

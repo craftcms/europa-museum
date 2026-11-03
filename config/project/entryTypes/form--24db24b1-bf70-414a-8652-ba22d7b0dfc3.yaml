@@ -16,7 +16,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -25,7 +24,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -43,10 +41,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: e44383bb-8f5a-4b3b-9114-30a955feb64c # Form
             handle: null
-            includeInCards: false
             instructions: null
             label: Form
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -60,10 +56,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee # Success Message
             handle: null
-            includeInCards: false
             instructions: null
             label: 'Success Message'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

@@ -1,0 +1,54 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  c18cd796-d86f-45c5-b8cf-8dfad923170c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2026-01-27T17:48:35+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2fcd39b8-12ef-4bf2-abcd-c14e551f7256
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 59333903-7d33-4fda-ba56-abb681c26ba7
+        userCondition: null
+    thumbFieldKey: null
+handle: medium
+hasTitleField: true
+icon: pen-paintbrush
+name: Medium
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

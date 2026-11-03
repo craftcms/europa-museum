@@ -13,10 +13,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -30,14 +28,27 @@ fieldLayouts:
             elementCondition: null
             fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: abdc96c1-ea73-4c21-960a-65ecaf7b777e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-01-26T22:51:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 90d357f1-c459-456b-b7b8-addbcd7d7449 # Team
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d1a7d2e-6ce9-40d2-949e-0bf255a27c1f
             userCondition: null
             warning: null
             width: 100
@@ -53,10 +64,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

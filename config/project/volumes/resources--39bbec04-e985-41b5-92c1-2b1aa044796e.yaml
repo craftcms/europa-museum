@@ -19,7 +19,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -28,7 +27,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             requirable: false
             size: null
@@ -43,7 +41,8 @@ fieldLayouts:
         name: Content
         uid: b74578dd-0f56-4659-bb31-73f8e5976b00
         userCondition: null
-fs: $UPLOAD_FS
+    thumbFieldKey: null
+fs: disk
 handle: resources
 name: Resources
 sortOrder: 2

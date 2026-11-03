@@ -5,6 +5,7 @@ entryTypes:
     uid: ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e # Visit
 handle: visit
 maxAuthors: 1
+minAuthors: 1
 name: Visit
 previewTargets:
   -

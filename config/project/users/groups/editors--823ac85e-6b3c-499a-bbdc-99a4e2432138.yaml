@@ -96,3 +96,7 @@ permissions:
   - 'viewpeerentrydrafts:9d1ed50c-2239-4171-8b5a-ab121973301f' # Home
   - 'viewpeerentrydrafts:b39c0003-6393-4175-8698-6edef920f7fd' # Exhibitions
   - 'viewpeerentrydrafts:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'changeauthorforpeerentries:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+  - 'changeauthorforpeerentries:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  - 'changeauthorforpeerentries:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  - 'changeauthorforpeerentries:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories

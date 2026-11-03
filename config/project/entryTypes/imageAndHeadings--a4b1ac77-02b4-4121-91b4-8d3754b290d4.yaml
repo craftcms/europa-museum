@@ -1,8 +1,11 @@
+allowLineBreaksInTitles: false
 color: teal
 description: null
 fieldLayouts:
   6f1b2935-dba4-460d-be70-b29a7aa0aa60:
     cardThumbAlignment: end
+    cardView:
+      - 'generatedField:ad7d4d29-a34a-4802-b881-0a8900b96a7c'
     generatedFields:
       -
         handle: headingCombined
@@ -17,12 +20,11 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:14:59+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -34,12 +36,11 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:14:59+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
             handle: headingPre
-            includeInCards: true
             instructions: null
             label: Pre-heading
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -51,12 +52,11 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:14:59+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -68,12 +68,11 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:14:59+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
             handle: headingSub
-            includeInCards: false
             instructions: null
             label: 'Sub Heading'
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -100,12 +99,11 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:14:59+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Text Color Scheme
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -117,12 +115,11 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:14:59+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 913eb47c-ce43-4325-bb3a-1f5d99065038 # Highlight Text
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -133,6 +130,7 @@ fieldLayouts:
         name: Content
         uid: c7e1b071-3935-47c7-9acf-9c6f3d7f595e
         userCondition: null
+    thumbFieldKey: 'layoutElement:016d6fd9-8677-47f0-8771-a220936b734b'
 handle: imageAndHeadings
 hasTitleField: false
 icon: image

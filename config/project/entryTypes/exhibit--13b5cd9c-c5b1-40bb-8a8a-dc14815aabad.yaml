@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -16,7 +17,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: Title
@@ -25,7 +25,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -41,12 +40,11 @@ fieldLayouts:
             dateAdded: '2025-11-18T01:05:50+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -71,12 +69,11 @@ fieldLayouts:
             dateAdded: '2025-11-20T23:50:46+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: ceeaad1b-ea68-46f6-8b14-e1c219b9a828 # Start Date
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -88,12 +85,11 @@ fieldLayouts:
             dateAdded: '2025-11-20T23:50:46+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e565f693-e816-4539-8caf-a618b5637ea4 # End Date
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -105,12 +101,11 @@ fieldLayouts:
             dateAdded: '2025-11-20T23:50:46+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 81b9e710-5a36-4bb3-9b2e-f11804cfc14d # Date Expression
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -128,12 +123,11 @@ fieldLayouts:
             dateAdded: '2025-11-18T01:05:50+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -151,12 +145,11 @@ fieldLayouts:
             dateAdded: '2025-11-18T01:05:50+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -167,6 +160,7 @@ fieldLayouts:
         name: SEO
         uid: 101d8795-8da3-4a62-ae6b-0217fac54d72
         userCondition: null
+    thumbFieldKey: 'layoutElement:85c4431d-c47e-4f71-be6f-822a361ea08f'
 handle: exhibit
 hasTitleField: true
 icon: calendar-image

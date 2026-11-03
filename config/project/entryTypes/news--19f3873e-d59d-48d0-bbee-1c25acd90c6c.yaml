@@ -22,10 +22,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: a73bf239-f2f0-45ac-b84d-361e5dd1a75f # Pagination Count
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -45,10 +43,8 @@ fieldLayouts:
             elementCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

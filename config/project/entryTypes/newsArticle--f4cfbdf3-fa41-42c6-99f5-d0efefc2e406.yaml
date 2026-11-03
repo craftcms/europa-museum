@@ -1,8 +1,11 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
   f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8:
     cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:81699a5d-8d5f-4e26-8301-0c3da3d53770'
     tabs:
       -
         elementCondition: null
@@ -16,7 +19,6 @@ fieldLayouts:
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: Title
@@ -25,7 +27,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -41,12 +42,11 @@ fieldLayouts:
             dateAdded: '2025-11-25T22:08:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 079ddf1a-d985-4de2-9929-8dc87fa2047f # News Category
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -58,12 +58,11 @@ fieldLayouts:
             dateAdded: '2025-11-25T22:08:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -75,12 +74,11 @@ fieldLayouts:
             dateAdded: '2025-11-25T22:08:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 59eb8fe2-8081-44bc-82ee-b7bc5f91c4ec # Summary
             handle: null
-            includeInCards: true
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -89,19 +87,18 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-11-25T22:08:01+00:00'
+            dateAdded: '2026-01-27T17:53:12+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+            elementEditCondition: null
+            fieldUid: 0d7c5482-cf45-4aa7-8eed-8db3bf998f45 # Mediums
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 03bb6cbc-7430-43ce-bd65-eac867237a7b
+            uid: 05bb384f-e4b5-4543-8426-b74cb8c366d7
             userCondition: null
             warning: null
             width: 100
@@ -115,12 +112,11 @@ fieldLayouts:
             dateAdded: '2025-11-25T22:08:01+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: false
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -131,6 +127,29 @@ fieldLayouts:
         name: SEO
         uid: 3f132cfb-49a0-4aae-b6bf-25fc2666d98a
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 03bb6cbc-7430-43ce-bd65-eac867237a7b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Main
+        uid: 2f841b39-ab73-4d31-8a73-af7a3050d773
+        userCondition: null
+    thumbFieldKey: 'layoutElement:5b0bca29-968a-4bba-b621-dd839742da31'
 handle: newsArticle
 hasTitleField: true
 icon: radio

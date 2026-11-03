@@ -1,8 +1,11 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
   2d8e6b8a-86f4-4aa6-9395-a77ea8005a01:
     cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:16443aa1-ee0e-471f-9fa3-f4c81a04844f'
     tabs:
       -
         elementCondition: null
@@ -12,11 +15,10 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: null
+            dateAdded: '2026-02-27T00:11:09+00:00'
             disabled: false
             elementCondition: null
             id: null
-            includeInCards: false
             inputType: null
             instructions: null
             label: null
@@ -25,7 +27,6 @@ fieldLayouts:
             name: null
             orientation: null
             placeholder: null
-            providesThumbs: false
             readonly: false
             required: true
             size: null
@@ -38,32 +39,62 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2026-02-27T00:11:09+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 4e1408af-3452-4723-828d-1c779542492d # Artist
+            elementEditCondition: null
+            fieldUid: 547be893-d407-44df-9142-f0ba630ce0cb # Year
             handle: null
-            includeInCards: true
-            instructions: null
+            instructions: 'The year the work was produced'
             label: null
-            providesThumbs: false
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5e7bb16f-be3b-45e3-b2f2-be7ea021d78a
+            uid: 16443aa1-ee0e-471f-9fa3-f4c81a04844f
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2026-02-27T02:39:43+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 71424eae-6314-46d2-8aff-8fe8be940860 # Representative Image
+            elementEditCondition: null
+            fieldUid: 441d08b2-c7e9-4df8-93fb-a4b6cac1a481 # Width
             handle: null
-            includeInCards: false
             instructions: null
             label: null
-            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41ac555a-1c16-4cf2-a069-67b9306166f4
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-02-27T02:39:43+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: a81a3e70-72ab-4dc2-a178-29be876ebef8 # Height
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 80ec4f3e-662f-4076-8cba-2478fa8ec377
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2026-02-27T00:11:09+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 71424eae-6314-46d2-8aff-8fe8be940860 # Representative Image
+            handle: null
+            instructions: null
+            label: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -72,25 +103,47 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: null
+            dateAdded: '2026-02-27T00:12:38+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 547be893-d407-44df-9142-f0ba630ce0cb # Year
+            elementEditCondition: null
+            fieldUid: 5f1c0ebf-8be4-4577-be65-95d9f15a50aa # Related Artists
             handle: null
-            includeInCards: true
             instructions: null
             label: null
-            providesThumbs: false
-            required: true
+            required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 16443aa1-ee0e-471f-9fa3-f4c81a04844f
+            uid: fef44a34-4276-42a7-9431-2d01bcd0328b
             userCondition: null
             warning: null
             width: 100
-        name: Attributes
+        name: 'Main Content'
         uid: 4a828e53-e15e-46a4-b7d1-bd2f93dc97c7
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-02-27T02:39:43+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7aecb4af-681c-47ff-9160-2cc0fbddcd4e # Attribution
+            handle: null
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6f4f3b19-8563-4971-bedb-9957c2c18f06
+            userCondition: null
+            warning: null
+            width: 100
+        name: Curation
+        uid: 683b6ef3-8ffb-48bc-860f-365801be39cb
+        userCondition: null
+    thumbFieldKey: 'layoutElement:f57b2cdc-4eba-498a-85e8-195325569989'
 handle: work
 hasTitleField: true
 icon: paintbrush
