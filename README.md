@@ -44,7 +44,7 @@ git clone https://github.com/craftcms/europa-museum.git
 cd europa-museum
 ddev start
 ddev composer install
-ddev import-db < seed.sql
+ddev craft db/restore seed.sql --interactive=0
 ddev craft setup/security-key
 ```
 
