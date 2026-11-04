@@ -58,7 +58,7 @@ php_packages=()
 for ext in cli bcmath curl gd gmp imagick intl mbstring pgsql xml zip; do
   php_packages+=("php${php_version}-${ext}")
 done
-packages=("${php_packages[@]}" "postgresql-${pg_version}" jq unzip)
+packages=("${php_packages[@]}" "postgresql-${pg_version}" jq unzip fonts-noto-core)
 
 missing=()
 for pkg in "${packages[@]}"; do
