@@ -33,6 +33,5 @@
 
 ## Cleanup
 
-- Alter `craftcms/cms` constraint to `^5.9.0` upon release
 - Delete all content migrations created during field merging!
 - Ensure dead project config files + items are pruned
