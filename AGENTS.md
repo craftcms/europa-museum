@@ -21,6 +21,23 @@ sleep 2
 agent-browser screenshot page.png --full
 ```
 
+## Fonts on the Debian orb
+
+`.agents/setup` installs `fonts-noto-core`, which is what the Craft control panel's
+`system-ui` font stack resolves to on Debian. After installing or changing fonts, reconfigure
+fontconfig and regenerate its cache (Debian wiki: [Fonts](https://wiki.debian.org/Fonts)), then
+restart the browser so it picks up the new fonts:
+
+```bash
+# Reconfigure fontconfig
+sudo dpkg-reconfigure fontconfig-config
+
+# Regenerate fonts cache
+sudo dpkg-reconfigure fontconfig
+```
+
+Verify with `fc-match system-ui` (expect `NotoSans-Regular.ttf: "Noto Sans" "Regular"`).
+
 ## Amp orbs
 
 `.agents/setup` reads tool versions from `.ddev/config.yaml` (`php_version`, `database.version`, `composer_version`, and `nodejs_version`, falling back to the latest Node.js 24.x). Update versions there rather than in the setup script, and keep `.nvmrc` on the same Node.js major version.
