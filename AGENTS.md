@@ -1,10 +1,11 @@
 # Agent guidance
 
-## Uploads and image transforms
+## Front-end build artifacts, uploads, image transforms
 
-Files in `web/uploads/` are committed on purpose, including the image transforms Craft generates there (`_<width>x<height>_…` folders) when pages are rendered. Unlike a typical Craft project, do not ignore them.
+There are files in `web/` that would not be committed in a typical Craft project, but they are not ignored and given dedicated commits in this project.
 
-Commit new or changed files in `web/uploads/` separately from other work, in their own commit with a message like `Adds new image transforms for demos`.
+- After running `npm run prod`, commit new or changed files in `web/` separately from other work, in their own commit with a message like “Rebuild”.
+- Files in `web/uploads/` are committed on purpose, including the image transforms Craft generates there (`_<width>x<height>_…` folders) when pages are rendered. Commit new or changed files in `web/uploads/` separately from other work, in their own commit with a message like “Adds new image transforms”.
 
 ## Amp orbs
 
