@@ -58,7 +58,7 @@ php_packages=()
 for ext in cli bcmath curl gd gmp imagick intl mbstring pgsql xml zip; do
   php_packages+=("php${php_version}-${ext}")
 done
-packages=("${php_packages[@]}" "postgresql-${pg_version}" jq unzip)
+packages=("${php_packages[@]}" "postgresql-${pg_version}" jq unzip fonts-noto-core)
 
 missing=()
 for pkg in "${packages[@]}"; do
@@ -81,6 +81,12 @@ if ((${#missing[@]})); then
   sudo apt-get update -qq
   sudo apt-get install -y -qq --no-install-recommends "${missing[@]}"
 fi
+
+# So the fonts we install (e.g. Noto Sans, for the control panel's system-ui
+# stack) resolve for every user of the orb. Runs even when nothing was just
+# installed, in case the base image's fontconfig state changed.
+sudo dpkg-reconfigure fontconfig-config
+sudo dpkg-reconfigure fontconfig
 sudo update-alternatives --quiet --set php "/usr/bin/php${php_version}"
 done_step
 

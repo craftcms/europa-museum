@@ -7,6 +7,37 @@ There are files in `web/` that would not be committed in a typical Craft project
 - After running `npm run prod`, commit new or changed files in `web/` separately from other work, in their own commit with a message like “Rebuild”.
 - Files in `web/uploads/` are committed on purpose, including the image transforms Craft generates there (`_<width>x<height>_…` folders) when pages are rendered. Commit new or changed files in `web/uploads/` separately from other work, in their own commit with a message like “Adds new image transforms”.
 
+## Screenshots of the front-end
+
+Images on the front-end are lazy-loaded with `lazysizes` (`.lazyload` elements with `data-srcset`), so a full-page screenshot of an unscrolled page shows blank gaps and broken-image alt text below the fold. `lazysizes` does trigger in headless browsers — but only when the page actually scrolls like a user would.
+
+Before any screenshot (viewport or full-page), scroll through the page in steps, then return to the top and let images finish loading:
+
+```bash
+for i in $(seq 1 8); do agent-browser eval "window.scrollBy(0, 900)" > /dev/null; sleep 0.5; done
+agent-browser eval "document.querySelectorAll('img.lazyload').length"   # expect 0
+agent-browser eval "window.scrollTo(0, 0)" > /dev/null
+sleep 2
+agent-browser screenshot page.png --full
+```
+
+## Fonts on the Debian orb
+
+`.agents/setup` installs `fonts-noto-core`, which is what the Craft control panel's
+`system-ui` font stack resolves to on Debian. After installing or changing fonts, reconfigure
+fontconfig and regenerate its cache (Debian wiki: [Fonts](https://wiki.debian.org/Fonts)), then
+restart the browser so it picks up the new fonts:
+
+```bash
+# Reconfigure fontconfig
+sudo dpkg-reconfigure fontconfig-config
+
+# Regenerate fonts cache
+sudo dpkg-reconfigure fontconfig
+```
+
+Verify with `fc-match system-ui` (expect `NotoSans-Regular.ttf: "Noto Sans" "Regular"`).
+
 ## Amp orbs
 
 `.agents/setup` reads tool versions from `.ddev/config.yaml` (`php_version`, `database.version`, `composer_version`, and `nodejs_version`, falling back to the latest Node.js 24.x). Update versions there rather than in the setup script, and keep `.nvmrc` on the same Node.js major version.

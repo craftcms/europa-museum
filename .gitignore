@@ -53,3 +53,6 @@
 # LOCAL DEVELOPMENT
 docker-compose.override.yml
 .amp/portals/
+
+# AMP LIVE SYNC
+.amp/live-sync.pid
