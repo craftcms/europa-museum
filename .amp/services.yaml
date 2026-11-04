@@ -1,0 +1,14 @@
+services:
+  web:
+    # Craft builds absolute URLs from PRIMARY_SITE_URL, so point it at this
+    # thread's portal, without PUBLIC_URL's trailing slash (config/general.php
+    # appends "/assets/dist"). PostgreSQL runs as a systemd service set up by .agents/setup.
+    command: PRIMARY_SITE_URL="${PUBLIC_URL%/}" php craft serve "0.0.0.0:$PORT"
+    env:
+      PHP_CLI_SERVER_WORKERS: "4"
+    health: /actions/app/health-check
+    portal:
+      title: Europa Museum
+    portals:
+      - url: /admin
+        title: Control panel

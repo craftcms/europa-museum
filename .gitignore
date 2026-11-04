@@ -52,3 +52,4 @@
 
 # LOCAL DEVELOPMENT
 docker-compose.override.yml
+.amp/portals/
