@@ -9,6 +9,8 @@ There are files in `web/` that would not be committed in a typical Craft project
 
 ## Amp orbs
 
-`.agents/setup` reads tool versions from `.ddev/config.yaml` (`php_version`, `database.version`, `composer_version`, and `nodejs_version`, falling back to the latest Node.js 24.x). Update versions there rather than in the setup script. `.nvmrc` is outdated and is not used.
+`.agents/setup` reads tool versions from `.ddev/config.yaml` (`php_version`, `database.version`, `composer_version`, and `nodejs_version`, falling back to the latest Node.js 24.x). Update versions there rather than in the setup script, and keep `.nvmrc` on the same Node.js major version.
 
 Run the site with `amp orb services ensure`; `.amp/services.yaml` serves it with `php craft serve`.
+
+The seeded admin's password isn't public, so setup also creates a local admin for the control panel (`/admin`): `admin@example.com` / `password`. Elsewhere, create your own with `php craft users/create --admin`.

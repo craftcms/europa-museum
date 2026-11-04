@@ -203,3 +203,10 @@ if [[ "$has_tables" != "t" ]]; then
 fi
 php craft up --interactive=0
 done_step
+
+# The seeded admin's password isn't public, so add a local one (see AGENTS.md).
+step "Control panel admin"
+if ! php craft users/list-admins | grep -Fq 'admin@example.com'; then
+  php craft users/create --email=admin@example.com --password=password --admin=1 --interactive=0
+fi
+done_step

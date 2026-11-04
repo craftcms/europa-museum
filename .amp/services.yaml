@@ -12,3 +12,4 @@ services:
     portals:
       - url: /admin
         title: Control panel
+        description: Sign in with admin@example.com / password.
