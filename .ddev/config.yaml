@@ -19,6 +19,8 @@ web_extra_exposed_ports:
       http_port: 2999
       https_port: 3000
 
+nodejs_version: 24
+
 # Key features of DDEV's config.yaml:
 
 # name: <projectname> # Name of the project, automatically provides

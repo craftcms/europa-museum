@@ -6,7 +6,7 @@
 #   - PostgreSQL: database.version in .ddev/config.yaml
 #   - Composer:   composer_version in .ddev/config.yaml
 #   - Node.js:    nodejs_version in .ddev/config.yaml, else the latest 24.x
-#                 (.nvmrc is outdated and not used)
+#                 (.nvmrc should be set to the same major version)
 set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
