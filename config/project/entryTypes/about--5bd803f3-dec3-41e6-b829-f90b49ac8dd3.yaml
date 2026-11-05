@@ -26,40 +26,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-05-05T00:10:52+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 0b67d93b-83fe-470a-9033-179bcfa69099 # Artists
-            handle: featuredArtists
-            instructions: null
-            label: 'Featured Artists'
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 36fa9fae-1a0c-4ad4-9946-18f45ffebc89
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2026-05-05T00:07:35+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: fc099d55-bf07-43e1-b7f7-1bb429900f72 # Work
-            handle: featuredWork
-            instructions: null
-            label: 'Featured Work'
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e86f0a85-3b72-4e49-8489-87906f36b140
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2025-11-18T01:02:49+00:00'
             editCondition: null
             elementCondition: null
@@ -73,23 +39,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: c6fde41e-6343-4fef-838a-385bf08a9ab9
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2026-05-05T00:07:35+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Featured Entry
-            handle: null
-            instructions: null
-            label: null
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 95eb7b8d-3485-4bc8-83f9-040255ce9bcc
             userCondition: null
             warning: null
             width: 100

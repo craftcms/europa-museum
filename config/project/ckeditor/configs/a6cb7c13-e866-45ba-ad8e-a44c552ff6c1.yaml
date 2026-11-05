@@ -1,0 +1,24 @@
+headingLevels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+name: 'Rich Text'
+options:
+  code:
+    indentSequence: '  '
+toolbar:
+  - sourceEditing
+  - '|'
+  - heading
+  - '|'
+  - blockQuote
+  - bold
+  - italic
+  - bulletedList
+  - numberedList
+  - link
+  - insertImage
+  - createEntry

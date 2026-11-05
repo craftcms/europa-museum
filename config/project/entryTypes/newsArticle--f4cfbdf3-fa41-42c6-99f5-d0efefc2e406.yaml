@@ -90,11 +90,11 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2026-01-27T17:53:12+00:00'
+            dateAdded: '2025-11-25T22:08:01+00:00'
             editCondition: null
             elementCondition: null
             elementEditCondition: null
-            fieldUid: 0d7c5482-cf45-4aa7-8eed-8db3bf998f45 # Mediums
+            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
             handle: null
             instructions: null
             label: null
@@ -102,7 +102,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 05bb384f-e4b5-4543-8426-b74cb8c366d7
+            uid: 03bb6cbc-7430-43ce-bd65-eac867237a7b
             userCondition: null
             warning: null
             width: 100
@@ -131,29 +131,6 @@ fieldLayouts:
             width: 100
         name: SEO
         uid: 3f132cfb-49a0-4aae-b6bf-25fc2666d98a
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            dateAdded: '2025-11-25T22:08:01+00:00'
-            editCondition: null
-            elementCondition: null
-            elementEditCondition: null
-            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
-            handle: null
-            instructions: null
-            label: null
-            oldFieldUid: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 03bb6cbc-7430-43ce-bd65-eac867237a7b
-            userCondition: null
-            warning: null
-            width: 100
-        name: Main
-        uid: 2f841b39-ab73-4d31-8a73-af7a3050d773
         userCondition: null
     thumbFieldKey: 'layoutElement:5b0bca29-968a-4bba-b621-dd839742da31'
 handle: newsArticle

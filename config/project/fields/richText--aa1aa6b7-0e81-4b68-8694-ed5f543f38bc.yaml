@@ -35,15 +35,7 @@ settings:
   imageMode: img
   js: null
   jsFile: null
-  options:
-    __assoc__:
-      -
-        - code
-        -
-          __assoc__:
-            -
-              - indentSequence
-              - '  '
+  options: null
   parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
@@ -52,18 +44,11 @@ settings:
   showWordCount: false
   sourceEditingGroups: null
   toolbar:
-    - sourceEditing
-    - '|'
     - heading
     - '|'
-    - blockQuote
     - bold
     - italic
-    - bulletedList
-    - numberedList
     - link
-    - insertImage
-    - createEntry
   wordLimit: null
 tip: null
 translationKeyFormat: null

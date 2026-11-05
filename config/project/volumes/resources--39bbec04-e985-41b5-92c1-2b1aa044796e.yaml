@@ -42,7 +42,7 @@ fieldLayouts:
         uid: b74578dd-0f56-4659-bb31-73f8e5976b00
         userCondition: null
     thumbFieldKey: null
-fs: disk
+fs: $UPLOAD_FS
 handle: resources
 name: Resources
 propagationMethod: custom

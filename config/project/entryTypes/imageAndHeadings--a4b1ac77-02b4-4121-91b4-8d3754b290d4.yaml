@@ -5,7 +5,7 @@ fieldLayouts:
   6f1b2935-dba4-460d-be70-b29a7aa0aa60:
     cardThumbAlignment: end
     cardView:
-      - 'generatedField:ad7d4d29-a34a-4802-b881-0a8900b96a7c'
+      - 'layoutElement:056f209b-7979-4291-8553-6faa4b0e49a1'
     generatedFields:
       -
         handle: headingCombined

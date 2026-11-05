@@ -1,4 +1,4 @@
-dateModified: 1793901296
+dateModified: 1793904739
 elementSources:
   craft\elements\Asset:
     -
@@ -130,12 +130,20 @@ elementSources:
       tableAttributes: '-'
       type: custom
     -
-      key: 'section:26ea4cbf-c00e-48cb-abd1-c1b022707ebf' # Mediums
-      page: 'Landing Pages'
-      type: native
-    -
-      key: 'section:eed77afd-82aa-41dc-a3ba-84c0cbec7816' # Team
-      page: 'Landing Pages'
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: true
+      key: '*'
+      page: Programming
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - authors
+        - link
       type: native
     -
       defaultSort:
@@ -177,63 +185,6 @@ elementSources:
       type: native
     -
       defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: ''
-      disabled: false
-      key: 'section:768dbce2-ae63-4553-a738-ca9549adfcd7' # Artists
-      page: Library
-      tableAttributes:
-        - status
-        - postDate
-        - expiryDate
-        - authors
-        - link
-      type: native
-    -
-      condition:
-        class: craft\elements\conditions\entries\EntryCondition
-        conditionRules:
-          -
-            class: craft\elements\conditions\entries\TypeConditionRule
-            operator: in
-            uid: 4f5edde0-bb79-4ebe-9a3c-cb9741fa84c0
-            values:
-              - 83ef9ed9-6360-4f64-abbb-920baeb2048e # Featured Entry
-        elementType: craft\elements\Entry
-        fieldContext: global
-      defaultSort:
-        - id
-        - asc
-      defaultViewMode: ''
-      key: 'custom:9b2b63f7-93da-4c77-bc52-cfafdb1135aa'
-      label: 'Featured Works'
-      page: Library
-      tableAttributes: '-'
-      type: custom
-    -
-      condition:
-        class: craft\elements\conditions\entries\EntryCondition
-        conditionRules:
-          -
-            class: craft\elements\conditions\entries\TypeConditionRule
-            operator: in
-            uid: aea4907f-e439-4483-a86a-41d610ac66e4
-            values:
-              - 83ef9ed9-6360-4f64-abbb-920baeb2048e # Featured Entry
-        elementType: craft\elements\Entry
-        fieldContext: global
-      defaultSort:
-        - id
-        - asc
-      defaultViewMode: ''
-      key: 'custom:a21b5caa-3cab-42bb-9fbd-c84877f4342e'
-      label: 'Archiverd Works'
-      page: Library
-      tableAttributes: '-'
-      type: custom
-    -
-      defaultSort:
         - structure
         - asc
       defaultViewMode: ''
@@ -243,26 +194,8 @@ elementSources:
       tableAttributes:
         - dateCreated
       type: native
-    -
-      defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: ''
-      disabled: false
-      key: '*'
-      page: Entries
-      tableAttributes:
-        - status
-        - section
-        - postDate
-        - expiryDate
-        - authors
-        - link
-      type: native
 elementSourcesPages:
   craft\elements\Entry:
-    Entries:
-      icon: newspaper
     'Landing Pages':
       icon: diagram-subtask
     Library:
@@ -331,35 +264,20 @@ fs:
       subfolder: runtime
     type: craft\awss3\Fs
     url: null
-mcp:
-  authorizationRoute: /admin/mcp/auth
-  enabled: false
-  publicAllowDrafts: false
-  publicAllowInactive: false
-  publicAllowRevisions: false
-  publicEnabled: true
-  publicRoute: /mcp
-  publicSectionHandles:
-    - artists
-  route: /admin/mcp
 meta:
   __names__:
     0b3ab84a-728c-4dfa-b505-ee524b9631d9: Home # Home
-    0b67d93b-83fe-470a-9033-179bcfa69099: Artists # Artists
     0ba28a66-d3aa-4c97-ad77-8e26087b3d70: 'Layout Width' # Layout Width
     0d3f8f65-dde1-4921-a575-26ade4545fc9: Slider # Slider
-    0d7c5482-cf45-4aa7-8eed-8db3bf998f45: Mediums # Mediums
     0edb3240-3f53-4f13-a789-2bd0b6cae755: Styleguide # Styleguide
     1addbebe-4d59-4c1d-9607-6c47999665df: 'Primary Links' # Primary Links
     2d7b7e2f-71b1-4b25-8501-c8edc07a7f18: 'Embed Code' # Embed Code
     3a55adc2-4d73-4e46-bf0b-17ec1b567f8f: 'News Categories' # News Categories
     03ad2302-4a79-4d90-91f8-bb515f0157d0: Styleguide # Styleguide
-    4b633a78-4971-411d-aced-a0b2da880e5f: Artist # Artist
     4c127ec9-df18-4d62-bd02-cf8b5044f7ea: 'Stat Label' # Stat Label
     4e1408af-3452-4723-828d-1c779542492d: Artist # Artist
     4ee7fd54-73f7-4abe-94e3-6c01585ca5e3: Inline # Inline
     5bd803f3-dec3-41e6-b829-f90b49ac8dd3: About # About
-    5f1c0ebf-8be4-4577-be65-95d9f15a50aa: 'Related Artists' # Related Artists
     6c31cab7-7f79-4628-b345-9a700a16a726: 'Featured Entry' # Featured Entry
     6fb16db4-9ff1-412f-8cde-bc13843d78e8: 'CTA Caption' # CTA Caption
     7aecb4af-681c-47ff-9160-2cc0fbddcd4e: Attribution # Attribution
@@ -381,39 +299,35 @@ meta:
     19f3873e-d59d-48d0-bbee-1c25acd90c6c: News # News
     20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b: 'Europa Museum' # Europa Museum
     24db24b1-bf70-414a-8652-ba22d7b0dfc3: Form # Form
-    26ea4cbf-c00e-48cb-abd1-c1b022707ebf: Mediums # Mediums
     39bbec04-e985-41b5-92c1-2b1aa044796e: Resources # Resources
+    40bfb363-8740-499a-82f2-6eda20cb6025: 'Vhc No Assets' # Vhc No Assets
     42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8: 'Link Icon' # Link Icon
     51a8cdf9-2c85-4947-bdd2-aabb24f1b899: Hero # Hero
     55c6cb51-defc-4e30-bc18-e524de65b7b7: 'Link Destination' # Link Destination
     59eb8fe2-8081-44bc-82ee-b7bc5f91c4ec: Summary # Summary
-    073eadde-4f16-405b-a4c6-a0262bab5021: Role # Role
     079ddf1a-d985-4de2-9929-8dc87fa2047f: 'News Category' # News Category
     81b9e710-5a36-4bb3-9b2e-f11804cfc14d: 'Date Expression' # Date Expression
     83ef9ed9-6360-4f64-abbb-920baeb2048e: 'Featured Entry' # Featured Entry
-    90d357f1-c459-456b-b7b8-addbcd7d7449: Team # Team
     371b985f-f191-4c1b-8785-c4133cbb42fc: Heading # Heading
     386be967-b947-414c-8ea0-824e977d04ad: Embed # Embed
-    441d08b2-c7e9-4df8-93fb-a4b6cac1a481: Width # Width
     547be893-d407-44df-9142-f0ba630ce0cb: Year # Year
     599f0646-f724-4ce4-a810-a8eaf7798b2d: 'Secondary Links' # Secondary Links
     647de63e-c78e-4d05-b61d-013120b49d5d: Collection # Collection
     666bcffb-61d7-43b4-a9f5-8c51c458b356: 'News Articles' # News Articles
-    768dbce2-ae63-4553-a738-ca9549adfcd7: Artists # Artists
     778abb42-18bd-447c-99ae-483c775ed3bd: 'Content Blocks' # Content Blocks
     823ac85e-6b3c-499a-bbdc-99a4e2432138: Editors # Editors
     913eb47c-ce43-4325-bb3a-1f5d99065038: 'Highlight Text' # Highlight Text
     977f4737-eaaa-4d0f-aadb-10251ee1c4ff: About # About
     27881ad3-1379-497a-91a6-d495b2bbc7d1: 'Hero Title' # Hero Title
+    67193fb0-26c1-4f39-ad77-c119711a4e4a: Simple # Simple
     71424eae-6314-46d2-8aff-8fe8be940860: 'Representative Image' # Representative Image
     85241ed2-6bbd-4dd0-af5c-07842116ccf3: 'Color Theme' # Color Theme
     501340bb-461c-45f4-851b-15c83b08ef13: 'Slide Type' # Slide Type
     a4b1ac77-02b4-4121-91b4-8d3754b290d4: 'Image and Headings' # Image and Headings
     a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee: 'Success Message' # Success Message
+    a6cb7c13-e866-45ba-ad8e-a44c552ff6c1: 'Rich Text' # Rich Text
     a36fa6aa-4824-448f-82cf-b3086f8582c5: Images # Images
-    a60d99ea-0b22-4740-bcfe-28f986febe9b: 'Team Member' # Team Member
     a73bf239-f2f0-45ac-b84d-361e5dd1a75f: 'Pagination Count' # Pagination Count
-    a81a3e70-72ab-4dc2-a178-29be876ebef8: Height # Height
     a90cc22d-485c-4cd7-a4b9-63a8a637e90d: Navigation # Navigation
     aa1aa6b7-0e81-4b68-8694-ed5f543f38bc: 'Rich Text' # Rich Text
     b39c0003-6393-4175-8698-6edef920f7fd: Exhibitions # Exhibitions
@@ -431,18 +345,15 @@ meta:
     cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c: Heading # Heading
     d703e6d3-677f-4b60-99d7-44b4710ff7bc: Contact # Contact
     dad3b3bd-ab3c-486d-a552-b3cc718f8e1c: Image # Image
-    daf5697a-9994-4b8e-8696-29496ad9fe5b: Medium # Medium
     e3b664df-ac52-4b7c-b296-d324800c4b3c: 'Public Schema' # Public Schema
     e6e6fbf0-a370-48de-b635-6f31bece3c9d: Mode # Mode
     e565f693-e816-4539-8caf-a618b5637ea4: 'End Date' # End Date
     e44383bb-8f5a-4b3b-9114-30a955feb64c: Form # Form
     eb7b8bc9-c07a-4a25-9201-8174bd70fcb9: Description # Description
     eb910859-8baf-408a-ae9a-3af97b637806: 'Top Border' # Top Border
-    eed77afd-82aa-41dc-a3ba-84c0cbec7816: Team # Team
     f4cfbdf3-fa41-42c6-99f5-d0efefc2e406: 'News Article' # News Article
     f75a20aa-e20c-4f26-b217-2d2ffa1a7cac: 'Stats and Image' # Stats and Image
     f36520a3-472b-40e0-8895-6f577f213037: Attachment # Attachment
-    fc099d55-bf07-43e1-b7f7-1bb429900f72: Work # Work
 plugins:
   aws-s3:
     edition: standard
@@ -579,8 +490,8 @@ plugins:
               - "'self'"
       devModeCpTitlePrefix: '🚧⚙ '
       devModeTitlePrefix: '🚧 '
+      displayAnalysisSidebar: true
       displayPreviewSidebar: true
-      enableDebugToolbarPanel: true
       enableJsonLdEndpoint: false
       enableMetaContainerEndpoint: false
       enableSeoFileLinkEndpoint: false
@@ -595,18 +506,20 @@ plugins:
       maxTitleLength: 70
       metaCacheDuration: 0
       pluginName: SEOmatic
+      regenerateSitemapsAutomatically: false
       renderEnabled: true
       separatorChar: '|'
       sidebarDisplayPreviewTypes:
         - google
+        - twitter
         - facebook
-      siteGroupsSeparate: true
+      siteGroupsSeparate: '1'
       siteUrlOverride: ''
       sitemapsEnabled: false
-      socialMediaPreviewTarget: false
-      truncateDescriptionTags: true
-      truncateTitleTags: true
-      xDefaultSite: 0
+      socialMediaPreviewTarget: true
+      submitSitemaps: false
+      truncateDescriptionTags: '1'
+      truncateTitleTags: '1'
   twigpack:
     edition: standard
     enabled: true
