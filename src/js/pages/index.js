@@ -99,7 +99,7 @@ class Pages {
             const box = $scrollSection.getBoundingClientRect();
             const center = (box.top + box.bottom) / 2;
             const screenCenter = window.innerHeight / 2;
-            console.log({ center, screenCenter });
+            // console.log({ center, screenCenter });
 
             $el.style.transform = `translate(0, ${(center - screenCenter) / z}px)`;
         });
