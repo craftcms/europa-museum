@@ -23,7 +23,7 @@ class Module extends \yii\base\Module
         parent::init();
 
         // Backfill the `UPLOAD_FS` variable, as it determines how assets are handled:
-        $fsHandle = App::env('UPLOAD_FS') ?? (App::env('S3_BUCKET') ? 'remote' : 'local');
+        $fsHandle = App::env('UPLOAD_FS') ?? (App::env('S3_BUCKET') ? 'remote' : 'disk');
         putenv("UPLOAD_FS=$fsHandle");
         $_SERVER['UPLOAD_FS'] = $fsHandle;
         $_ENV['UPLOAD_FS'] = $fsHandle;
