@@ -1,4 +1,4 @@
-dateModified: 1793899664
+dateModified: 1793901296
 elementSources:
   craft\elements\Asset:
     -
@@ -142,22 +142,6 @@ elementSources:
         - postDate
         - desc
       defaultViewMode: ''
-      disabled: true
-      key: '*'
-      page: Programming
-      tableAttributes:
-        - status
-        - section
-        - postDate
-        - expiryDate
-        - authors
-        - link
-      type: native
-    -
-      defaultSort:
-        - postDate
-        - desc
-      defaultViewMode: ''
       disabled: false
       key: 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
       page: Programming
@@ -259,8 +243,26 @@ elementSources:
       tableAttributes:
         - dateCreated
       type: native
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: '*'
+      page: Entries
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
 elementSourcesPages:
   craft\elements\Entry:
+    Entries:
+      icon: newspaper
     'Landing Pages':
       icon: diagram-subtask
     Library:
