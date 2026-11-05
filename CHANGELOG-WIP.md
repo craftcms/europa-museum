@@ -30,7 +30,3 @@
 
 - Add `cache` table to seed, or add `craft setup/db-cache-table` to Makefile/setup instructions
 - Add `phpsessions` table to seed, or add `craft setup/php-session-table` to Makefile/setup instructions
-
-## Cleanup
-
-- Delete all content migrations created during field merging!
