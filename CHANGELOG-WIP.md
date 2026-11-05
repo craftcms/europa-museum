@@ -25,8 +25,3 @@
   - Additional readme steps and corresponding `Makefile` adjustments happened in here
 - Steps for installation [#49](https://github.com/craftcms/europa-museum/issues/49)
   - Still need to mention `mkcert` setup step? (We don’t even mention this in the main installation docs—it's generally considered part of the DDEV setup process, and is platform-dependent.)
-
-### To-Do
-
-- Add `cache` table to seed, or add `craft setup/db-cache-table` to Makefile/setup instructions
-- Add `phpsessions` table to seed, or add `craft setup/php-session-table` to Makefile/setup instructions
