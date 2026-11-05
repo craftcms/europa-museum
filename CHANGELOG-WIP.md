@@ -7,7 +7,7 @@
 - Removed `@web` alias
 - `@assetBaseUrl` split into `@uploads` and `@dist`, simplified asset URL schemes:
     - Moved uploaded assets into `web/uploads/` (`@uploads`)
-    - Moved build artifacts into `web/assets/disc/` (`@dist`)
+    - Moved build artifacts into `web/assets/dist/` (`@dist`)
     - Rearranged URLs and paths in filesystem/volume config
 - Renamed `FS_HANDLE` to `UPLOAD_FS` for switching filesystem types
 - Converted CTA/link blocks to use the link field
