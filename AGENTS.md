@@ -1,5 +1,7 @@
 # Agent guidance
 
+Follow [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance.
+
 ## Front-end build artifacts, uploads, image transforms
 
 There are files in `web/` that would not be committed in a typical Craft project, but they are not ignored and given dedicated commits in this project.
