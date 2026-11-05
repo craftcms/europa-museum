@@ -34,4 +34,3 @@
 ## Cleanup
 
 - Delete all content migrations created during field merging!
-- Ensure dead project config files + items are pruned
