@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -20,10 +21,12 @@ fieldLayouts:
             dateAdded: '2025-11-18T21:24:10+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a73bf239-f2f0-45ac-b84d-361e5dd1a75f # Pagination Count
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -41,10 +44,12 @@ fieldLayouts:
             dateAdded: '2025-11-18T21:24:10+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -55,6 +60,7 @@ fieldLayouts:
         name: SEO
         uid: 99c94680-2a52-4526-89f1-bed83bab2619
         userCondition: null
+    thumbFieldKey: null
 handle: news
 hasTitleField: false
 icon: newspaper

@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: orange
 description: null
 fieldLayouts:
@@ -14,10 +15,12 @@ fieldLayouts:
             dateAdded: '2025-11-18T22:28:44+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
             handle: null
             instructions: 'Allows HTML & Twig syntax.'
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -29,10 +32,12 @@ fieldLayouts:
             dateAdded: '2025-11-18T22:28:44+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8c274864-9cf0-4ef9-b4bd-88da544515ad # Details
             handle: null
             instructions: null
             label: Information
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +49,12 @@ fieldLayouts:
             dateAdded: '2025-11-18T22:28:44+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Link Destination
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -59,10 +66,12 @@ fieldLayouts:
             dateAdded: '2025-11-18T22:28:44+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8 # Link Icon
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -74,10 +83,12 @@ fieldLayouts:
             dateAdded: '2025-11-18T22:28:44+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Layout Width
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -88,6 +99,7 @@ fieldLayouts:
         name: Content
         uid: 8e6c3502-8203-4d4f-a932-fa343b17b998
         userCondition: null
+    thumbFieldKey: null
 handle: ctaCaption
 hasTitleField: false
 icon: megaphone

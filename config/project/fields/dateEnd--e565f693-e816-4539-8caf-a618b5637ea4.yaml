@@ -10,6 +10,8 @@ settings:
   showDate: true
   showTime: false
   showTimeZone: false
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Date
+warning: null

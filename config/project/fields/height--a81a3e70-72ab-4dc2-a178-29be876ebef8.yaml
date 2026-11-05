@@ -14,6 +14,8 @@ settings:
   size: null
   step: null
   suffix: cm
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Number
+warning: null

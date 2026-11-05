@@ -20,6 +20,8 @@ settings:
   targetSiteId: null
   validateRelatedElements: false
   viewMode: cards-grid
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Entries
+warning: null

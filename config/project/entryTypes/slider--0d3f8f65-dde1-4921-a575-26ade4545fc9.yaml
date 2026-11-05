@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: teal
 description: null
 fieldLayouts:
@@ -13,10 +14,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T20:21:49+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -28,10 +31,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T20:57:50+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Link Destination
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -43,10 +48,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T20:57:50+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 501340bb-461c-45f4-851b-15c83b08ef13 # Slide Type
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -70,10 +77,12 @@ fieldLayouts:
                     - assets
               elementType: craft\elements\Entry
               fieldContext: global
+            elementEditCondition: null
             fieldUid: 11b555a2-89cb-434c-a97c-8bf858a76326 # Image Slides
             handle: null
             instructions: null
             label: 'Slide Images'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -97,10 +106,12 @@ fieldLayouts:
                     - entries
               elementType: craft\elements\Entry
               fieldContext: global
+            elementEditCondition: null
             fieldUid: 13b529cb-1236-4eb5-95a0-e20c2358385e # Entry Slides
             handle: null
             instructions: null
             label: 'Slide Entries'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -112,10 +123,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T20:21:49+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e6e6fbf0-a370-48de-b635-6f31bece3c9d # Mode
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -127,10 +140,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T20:21:49+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 85241ed2-6bbd-4dd0-af5c-07842116ccf3 # Color Theme
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField

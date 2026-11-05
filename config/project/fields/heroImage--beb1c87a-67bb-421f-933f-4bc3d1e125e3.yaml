@@ -32,6 +32,8 @@ settings:
   targetSiteId: null
   validateRelatedElements: false
   viewMode: thumbs
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Assets
+warning: null

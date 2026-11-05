@@ -8,6 +8,8 @@ settings:
   offLabel: null
   onLabel: null
   showLabelsInCards: false
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Lightswitch
+warning: null

@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: blue
 description: null
 fieldLayouts:
@@ -39,10 +40,12 @@ fieldLayouts:
             dateAdded: null
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: e44383bb-8f5a-4b3b-9114-30a955feb64c # Form
             handle: null
             instructions: null
             label: Form
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -54,10 +57,12 @@ fieldLayouts:
             dateAdded: null
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: a4c579fb-e9c9-4d0c-91f6-1b3d9980c5ee # Success Message
             handle: null
             instructions: null
             label: 'Success Message'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -68,6 +73,7 @@ fieldLayouts:
         name: Content
         uid: 0c40cfb4-32d4-4f05-8813-99b00af4d589
         userCondition: null
+    thumbFieldKey: null
 handle: form
 hasTitleField: false
 icon: paper-plane

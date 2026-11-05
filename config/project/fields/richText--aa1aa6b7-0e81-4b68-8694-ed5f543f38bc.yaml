@@ -11,9 +11,17 @@ settings:
   css: null
   cssFile: null
   defaultTransform: 4ee7fd54-73f7-4abe-94e3-6c01585ca5e3 # Inline
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
   entryTypes:
     -
-      uid: 386be967-b947-414c-8ea0-824e977d04ad # Embed
+      __assoc__:
+        -
+          - uid
+          - 386be967-b947-414c-8ea0-824e977d04ad # Embed
+        -
+          - expanded
+          - false
   fullGraphqlData: false
   headingLevels:
     - 1
@@ -22,11 +30,20 @@ settings:
     - 4
     - 5
     - 6
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
   js: null
   jsFile: null
   options:
-    code:
-      indentSequence: '  '
+    __assoc__:
+      -
+        - code
+        -
+          __assoc__:
+            -
+              - indentSequence
+              - '  '
   parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
@@ -48,6 +65,8 @@ settings:
     - insertImage
     - createEntry
   wordLimit: null
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field
+warning: null

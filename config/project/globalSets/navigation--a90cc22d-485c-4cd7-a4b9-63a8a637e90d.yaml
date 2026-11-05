@@ -9,10 +9,12 @@ fieldLayouts:
             dateAdded: null
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 1addbebe-4d59-4c1d-9607-6c47999665df # Primary Links
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -24,10 +26,12 @@ fieldLayouts:
             dateAdded: null
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 599f0646-f724-4ce4-a810-a8eaf7798b2d # Secondary Links
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -38,6 +42,7 @@ fieldLayouts:
         name: 'Navigation Links'
         uid: f84cf6b3-3af0-4efa-8335-3d948640d582
         userCondition: null
+    thumbFieldKey: null
 handle: navigation
 name: Navigation
 sortOrder: 1

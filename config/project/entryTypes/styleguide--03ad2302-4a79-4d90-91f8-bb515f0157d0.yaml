@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: 'A singleton page that allows designers to see all the front-end layouts and components in one place.'
 fieldLayouts:
@@ -19,6 +20,7 @@ fieldLayouts:
         name: Content
         uid: a32535ef-ef8d-4801-980f-19499eb7b6f4
         userCondition: null
+    thumbFieldKey: null
 handle: styleguide
 hasTitleField: false
 icon: hammer-brush

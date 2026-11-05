@@ -49,6 +49,8 @@ settings:
         -
           - default
           - ''
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\ButtonGroup
+warning: null

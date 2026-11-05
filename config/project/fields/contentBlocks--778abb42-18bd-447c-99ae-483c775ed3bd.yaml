@@ -88,6 +88,8 @@ settings:
   propagationMethod: all
   showCardsInGrid: false
   viewMode: cards
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix
+warning: null

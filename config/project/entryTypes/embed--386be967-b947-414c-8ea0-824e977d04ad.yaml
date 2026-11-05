@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -41,10 +42,12 @@ fieldLayouts:
             dateAdded: null
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: f36520a3-472b-40e0-8895-6f577f213037 # Attachment
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -55,6 +58,7 @@ fieldLayouts:
         name: Content
         uid: e2c0abf4-734d-4c22-bde5-d4c88e065840
         userCondition: null
+    thumbFieldKey: null
 handle: embed
 hasTitleField: false
 icon: cubes

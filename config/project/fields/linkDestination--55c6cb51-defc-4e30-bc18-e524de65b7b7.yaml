@@ -63,6 +63,8 @@ settings:
     - email
     - entry
     - tel
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Link
+warning: null

@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -38,6 +39,7 @@ fieldLayouts:
         name: Content
         uid: 75f49f5a-f102-49d0-b187-23d7cc25df13
         userCondition: null
+    thumbFieldKey: null
 handle: newsCategory
 hasTitleField: true
 icon: null

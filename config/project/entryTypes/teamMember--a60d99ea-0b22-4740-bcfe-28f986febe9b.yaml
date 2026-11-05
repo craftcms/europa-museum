@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: null
 description: null
 fieldLayouts:
@@ -41,10 +42,12 @@ fieldLayouts:
             dateAdded: '2026-01-26T22:49:04+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 073eadde-4f16-405b-a4c6-a0262bab5021 # Role
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -55,6 +58,7 @@ fieldLayouts:
         name: Content
         uid: 33c50a38-bbf4-4fa1-9917-9c76eb902d2a
         userCondition: null
+    thumbFieldKey: null
 handle: teamMember
 hasTitleField: true
 icon: user

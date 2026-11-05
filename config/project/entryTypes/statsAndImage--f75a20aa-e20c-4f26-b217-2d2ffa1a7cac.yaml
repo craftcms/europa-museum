@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: teal
 description: null
 fieldLayouts:
@@ -14,10 +15,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -29,10 +32,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: eb7b8bc9-c07a-4a25-9201-8174bd70fcb9 # Description
             handle: null
             instructions: null
             label: Description
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -44,10 +49,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Image
             handle: null
             instructions: null
             label: Image
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -59,10 +66,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Link Destination
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -80,10 +89,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4c127ec9-df18-4d62-bd02-cf8b5044f7ea # Stat Label
             handle: statLabelLeft
             instructions: null
             label: 'Left Stat Label'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -95,10 +106,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 7cce3872-9055-454a-8fdc-45cbccec785b # Stat Value
             handle: statValueLeft
             instructions: null
             label: 'Left Stat Value'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -116,10 +129,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 4c127ec9-df18-4d62-bd02-cf8b5044f7ea # Stat Label
             handle: statLabelRight
             instructions: null
             label: 'Right Stat Label'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -131,10 +146,12 @@ fieldLayouts:
             dateAdded: '2025-11-19T21:32:27+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 7cce3872-9055-454a-8fdc-45cbccec785b # Stat Value
             handle: statValueRight
             instructions: null
             label: 'Right Stat Value'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField

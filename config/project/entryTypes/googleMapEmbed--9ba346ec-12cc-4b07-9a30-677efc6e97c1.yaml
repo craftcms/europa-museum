@@ -1,3 +1,4 @@
+allowLineBreaksInTitles: false
 color: blue
 description: null
 fieldLayouts:
@@ -13,10 +14,12 @@ fieldLayouts:
             dateAdded: '2025-11-25T00:04:28+00:00'
             editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 2d7b7e2f-71b1-4b25-8501-c8edc07a7f18 # Embed Code
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -27,6 +30,7 @@ fieldLayouts:
         name: Content
         uid: 1bda72d4-5ac2-4da7-80b2-e764095687ce
         userCondition: null
+    thumbFieldKey: null
 handle: googleMapEmbed
 hasTitleField: false
 icon: map-location
