@@ -1,0 +1,218 @@
+#!/usr/bin/env bash
+# Prepares an Amp orb to run this project without DDEV.
+#
+# Tool versions are read from DDEV's config, so updating it keeps orbs in sync:
+#   - PHP:        php_version in .ddev/config.yaml
+#   - PostgreSQL: database.version in .ddev/config.yaml
+#   - Composer:   composer_version in .ddev/config.yaml
+#   - Node.js:    nodejs_version in .ddev/config.yaml, else the latest 24.x
+#                 (.nvmrc should be set to the same major version)
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$repo_root"
+
+step() {
+  printf '\n==> %s\n' "$*"
+  step_started=$SECONDS
+}
+done_step() { printf '    (%ss)\n' "$((SECONDS - step_started))"; }
+
+# Reads a top-level scalar, or a scalar nested one level under a top-level key.
+ddev_value() {
+  local parent="$1" key="$2"
+  awk -v parent="$parent" -v key="$key" '
+    /^[^[:space:]#]/ { in_parent = (parent != "" && $0 ~ "^" parent ":") }
+    {
+      if (parent == "" && $0 ~ "^" key ":") found = 1
+      else if (parent != "" && in_parent && $0 ~ "^[[:space:]]+" key ":") found = 1
+      else next
+      sub(/^[^:]*:[[:space:]]*/, ""); sub(/[[:space:]]+#.*$/, ""); gsub(/["\047[:space:]]/, "")
+      print; exit
+    }' .ddev/config.yaml
+}
+
+php_version="$(ddev_value "" php_version)"
+db_type="$(ddev_value database type)"
+pg_version="$(ddev_value database version)"
+composer_version="$(ddev_value "" composer_version)"
+node_version="$(ddev_value "" nodejs_version)"
+node_version="${node_version:-24}"
+
+if [[ -z "$php_version" || -z "$pg_version" ]]; then
+  echo "Could not read PHP or PostgreSQL version from .ddev/config.yaml" >&2
+  exit 1
+fi
+if [[ "$db_type" != "postgres" ]]; then
+  echo "This setup supports database.type postgres; .ddev/config.yaml has '$db_type'" >&2
+  exit 1
+fi
+echo "PHP $php_version, PostgreSQL $pg_version, Composer ${composer_version:-2}, Node.js $node_version"
+
+export DEBIAN_FRONTEND=noninteractive
+codename="$(. /etc/os-release && echo "$VERSION_CODENAME")"
+
+# --- System packages: PHP from packages.sury.org, PostgreSQL from apt.postgresql.org ---
+step "System packages"
+php_packages=()
+for ext in cli bcmath curl gd gmp imagick intl mbstring pgsql xml zip; do
+  php_packages+=("php${php_version}-${ext}")
+done
+packages=("${php_packages[@]}" "postgresql-${pg_version}" jq unzip fonts-noto-core)
+
+missing=()
+for pkg in "${packages[@]}"; do
+  dpkg-query -W -f='${Status}' "$pkg" 2>/dev/null | grep -q 'install ok installed' || missing+=("$pkg")
+done
+
+if ((${#missing[@]})); then
+  echo "Installing: ${missing[*]}"
+  if [[ ! -f /etc/apt/sources.list.d/php-sury.list ]]; then
+    sudo curl -fsSLo /usr/share/keyrings/php-sury.gpg https://packages.sury.org/php/apt.gpg
+    echo "deb [signed-by=/usr/share/keyrings/php-sury.gpg] https://packages.sury.org/php/ ${codename} main" |
+      sudo tee /etc/apt/sources.list.d/php-sury.list >/dev/null
+  fi
+  if [[ ! -f /etc/apt/sources.list.d/pgdg.list ]]; then
+    curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc |
+      sudo gpg --dearmor --yes -o /usr/share/keyrings/pgdg.gpg
+    echo "deb [signed-by=/usr/share/keyrings/pgdg.gpg] https://apt.postgresql.org/pub/repos/apt ${codename}-pgdg main" |
+      sudo tee /etc/apt/sources.list.d/pgdg.list >/dev/null
+  fi
+  sudo apt-get update -qq
+  sudo apt-get install -y -qq --no-install-recommends "${missing[@]}"
+fi
+
+# So the fonts we install (e.g. Noto Sans, for the control panel's system-ui
+# stack) resolve for every user of the orb. Runs even when nothing was just
+# installed, in case the base image's fontconfig state changed.
+sudo dpkg-reconfigure fontconfig-config
+sudo dpkg-reconfigure fontconfig
+sudo update-alternatives --quiet --set php "/usr/bin/php${php_version}"
+done_step
+
+# --- Composer ---
+step "Composer"
+composer_version="${composer_version:-2}"
+if [[ "$composer_version" =~ ^[0-9]+$ ]]; then
+  composer_url="https://getcomposer.org/download/latest-${composer_version}.x/composer.phar"
+  composer_matches() { [[ "$(composer --version 2>/dev/null)" =~ version\ ${composer_version}\. ]]; }
+else
+  composer_url="https://getcomposer.org/download/${composer_version}/composer.phar"
+  composer_matches() { [[ "$(composer --version 2>/dev/null)" =~ version\ ${composer_version}\  ]]; }
+fi
+if ! composer_matches; then
+  sudo curl -fsSLo /usr/local/bin/composer "$composer_url"
+  sudo chmod +x /usr/local/bin/composer
+fi
+composer --version
+done_step
+
+# --- Node.js, scoped to this repository so other tools keep the orb's default Node ---
+step "Node.js"
+node_root=/usr/local/lib/nodejs-ddev
+# Accepts the forms DDEV does: a full or partial version ("24.22.1", "24"), "lts", or "latest".
+node_resolved="$(curl -fsSL https://nodejs.org/dist/index.json | jq -r --arg v "${node_version#v}" '
+  [.[] | select(.version | test("^v[0-9]+[.][0-9]+[.][0-9]+$")) | select(
+    if $v == "latest" then true
+    elif $v == "lts" then .lts != false
+    else .version == "v\($v)" or (.version | startswith("v\($v).")) end
+  )][0].version // empty')"
+if [[ -z "$node_resolved" ]]; then
+  echo "No Node.js release matches nodejs_version '$node_version'" >&2
+  exit 1
+fi
+node_tarball="node-${node_resolved}-linux-x64.tar.xz"
+node_dir="$node_root/${node_tarball%.tar.xz}"
+if [[ ! -x "$node_dir/bin/node" ]]; then
+  sudo mkdir -p "$node_root"
+  curl -fsSL "https://nodejs.org/dist/${node_resolved}/${node_tarball}" | sudo tar -xJ -C "$node_root"
+fi
+sudo ln -sfn "$node_dir" "$node_root/current"
+
+profile_marker="# craftcms-europamuseum: Node.js from .ddev/config.yaml"
+if ! grep -Fqx "$profile_marker" "$HOME/.bash_profile" 2>/dev/null; then
+  cat >> "$HOME/.bash_profile" <<EOF
+
+$profile_marker
+case "\$PWD" in
+  "$repo_root"|"$repo_root"/*) export PATH="$node_root/current/bin:\$PATH" ;;
+esac
+EOF
+fi
+export PATH="$node_root/current/bin:$PATH"
+echo "node $(node --version), npm $(npm --version)"
+done_step
+
+# --- PostgreSQL, tuned for speed over durability ---
+step "PostgreSQL"
+sudo tee "/etc/postgresql/${pg_version}/main/conf.d/amp-orb.conf" >/dev/null <<'EOF'
+fsync = off
+synchronous_commit = off
+full_page_writes = off
+EOF
+sudo systemctl enable --quiet "postgresql@${pg_version}-main"
+sudo systemctl restart "postgresql@${pg_version}-main"
+until pg_isready -q -h 127.0.0.1; do sleep 0.5; done
+
+# Same credentials DDEV uses (.ddev/.env.web).
+sudo -u postgres psql -q -v ON_ERROR_STOP=1 <<'SQL'
+SELECT 'CREATE ROLE db LOGIN PASSWORD ''db'''
+WHERE NOT EXISTS (SELECT FROM pg_roles WHERE rolname = 'db') \gexec
+SELECT 'CREATE DATABASE db OWNER db'
+WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'db') \gexec
+\c db
+-- seed.sql drops and recreates the public schema.
+ALTER SCHEMA public OWNER TO db;
+SQL
+done_step
+
+# --- Craft environment ---
+step "Craft .env"
+if [[ ! -f .env ]]; then
+  # PRIMARY_SITE_URL is left out on purpose: the web service sets it to the
+  # thread's portal URL at runtime (see .amp/services.yaml).
+  cat > .env <<'EOF'
+CRAFT_ENVIRONMENT=dev
+CRAFT_SECURITY_KEY=
+
+CRAFT_DB_DRIVER=pgsql
+CRAFT_DB_SERVER=127.0.0.1
+CRAFT_DB_PORT=5432
+CRAFT_DB_DATABASE=db
+CRAFT_DB_USER=db
+CRAFT_DB_PASSWORD=db
+EOF
+fi
+if grep -q '^CRAFT_SECURITY_KEY=$' .env; then
+  # Craft can't generate it yet: config/app.php uses a database cache, so Craft
+  # needs the seeded tables before any console command runs.
+  security_key="$(php -r 'echo bin2hex(random_bytes(16));')"
+  sed -i "s/^CRAFT_SECURITY_KEY=\$/CRAFT_SECURITY_KEY=${security_key}/" .env
+fi
+done_step
+
+step "Composer dependencies"
+composer install --no-interaction --no-progress
+done_step
+
+step "npm dependencies"
+npm ci --no-audit --no-fund --no-update-notifier --loglevel=error
+done_step
+
+step "Database seed"
+export PGPASSWORD=db
+has_tables="$(psql -h 127.0.0.1 -U db -d db -tAc "SELECT to_regclass('public.info') IS NOT NULL")"
+if [[ "$has_tables" != "t" ]]; then
+  # Like `ddev import-db`. Not ON_ERROR_STOP: the dump comes from a newer
+  # pg_dump and includes settings PostgreSQL 13 rejects harmlessly.
+  psql -h 127.0.0.1 -U db -d db -q -o /dev/null -f seed.sql 2>&1 | grep -v 'unrecognized configuration parameter' || true
+fi
+php craft up --interactive=0
+done_step
+
+# The seeded admin's password isn't public, so add a local one (see AGENTS.md).
+step "Control panel admin"
+if ! php craft users/list-admins | grep -Fq 'admin@example.com'; then
+  php craft users/create --email=admin@example.com --password=password --admin=1 --interactive=0
+fi
+done_step

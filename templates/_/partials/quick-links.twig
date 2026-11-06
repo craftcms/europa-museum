@@ -2,7 +2,7 @@
 
 <nav class="core-quick-links">
 
-    {% for link in navigation.linksMiddle.all() %}
+    {% for link in navigation.navLinksPrimary.all() %}
 
         <a href="{{ link.url }}" {% if link.url == url('contact') %}data-router-disabled{% endif %}>{{ link.title }}</a>
         {% if not loop.last %} / {% endif %}

@@ -88,20 +88,6 @@
 
     // Responsive
 
-    @media screen and (min-width: 768px) {
-        body.has-scroll-smooth:not(.scrolled) & {
-            visibility: hidden !important;
-            pointer-events: none;
-            user-select: none;
-        }
-
-        body.has-scroll-smooth.scrolled & {
-            visibility: visible;
-            pointer-events: auto;
-            user-select: auto;
-        }
-    }
-
     @media screen and (max-width: 1050px) {
 
         padding: 60px;

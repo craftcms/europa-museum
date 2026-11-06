@@ -4,7 +4,7 @@
  */
 
 /*!
- * Flickity v2.2.2
+ * Flickity v2.3.0
  * Touch, responsive, flickable carousels
  *
  * Licensed GPLv3 for open source use
@@ -15,22 +15,24 @@
  */
 
 /*!
- * Unidragger v2.3.1
+ * GSAP 3.13.0
+ * https://gsap.com
+ *
+ * @license Copyright 2008-2025, GreenSock. All rights reserved.
+ * Subject to the terms at https://gsap.com/standard-license
+ * @author: Jack Doyle, jack@greensock.com
+*/
+
+/*!
+ * Unidragger v2.4.0
  * Draggable base class
  * MIT license
  */
 
 /*!
- * Unipointer v2.3.0
+ * Unipointer v2.4.0
  * base class for doing one thing with pointer event
  * MIT license
- */
-
-/*!
- * dashify <https://github.com/jonschlinkert/dashify>
- *
- * Copyright (c) 2015 Jon Schlinkert.
- * Licensed under the MIT license.
  */
 
 /*!

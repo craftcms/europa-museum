@@ -2,51 +2,44 @@
 
 {% set isFirst = isFirst ? 'isFirst' : '' %}
 
-{% set heading = theBlock.heading %}
-{% set information = theBlock.information %}
 {% set linkIcon = theBlock.linkIcon %}
-{% set narrowWidth = theBlock.narrowWidth ? "narrowWidth" : "" %}
 
-<div class="content-block cta-caption-block {{ isFirst }} {% if linkIcon %}has-icon{% endif %} {{ narrowWidth }}" data-scroll-section>
+<div class="content-block cta-caption-block {{ isFirst }} {% if linkIcon %}has-icon{% endif %} {{ theBlock.layoutWidth }}" data-scroll-section>
 
     <div class="caption-container">
 
         <div class="text">
 
-            {% if heading %}
+            {% if theBlock.heading %}
                 <span class="caption-heading">
-                    {{ include(template_from_string(heading) | raw) }}
+                    {{ theBlock.heading }}
                 </span>
-            {% endif %}
 
-            {% if heading and information %}
-                &mdash;
-            {% endif %}
+                {% if theBlock.details %}
 
-            {% if information %}
-                <span class="information">
-                    {{ include(template_from_string(information) | raw) }}
-                </span>
+                    &mdash;
+
+                    <span class="information">
+                        {{ theBlock.details }}
+                    </span>
+                {% endif %}
+
             {% endif %}
 
         </div>
 
-        <div class="link">
 
-            {% if theBlock.linkDestination == 'internal' %}
-                {% set target = theBlock.internalLink.one() %}
-                <a href="{{ target.url }}">{{ theBlock.linkLabel }}</a>
-            {% else %}
-                <a href="{{ theBlock.externalLink }}" target="_blank" rel="noopener">{{ theBlock.linkLabel }}</a>
-            {% endif %}
+        {% if theBlock.linkDestination %}
+            <div class="link">
+                {{ theBlock.linkDestination.getLink() }}
 
-            {% if linkIcon %}
-                <span>
-                    {% include "_/svg/" ~ linkIcon ignore missing %}
-                </span>
-            {% endif %}
-
-        </div>
+                {% if linkIcon %}
+                    <span>
+                        {% include "_/svg/" ~ linkIcon ignore missing %}
+                    </span>
+                {% endif %}
+            </div>
+        {% endif %}
 
     </div>
 

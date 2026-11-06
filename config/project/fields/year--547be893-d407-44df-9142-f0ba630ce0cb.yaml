@@ -12,7 +12,10 @@ settings:
   previewCurrency: null
   previewFormat: none
   size: 6
+  step: null
   suffix: null
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Number
+warning: null

@@ -1,6 +1,6 @@
 <h1 align="center">Europa Museum — Craft CMS Demo</h1>
 
-![Europa Museum homepage](homepage.png)
+![Europa Museum homepage](screenshot.png)
 
 ## Overview
 
@@ -13,7 +13,7 @@ _Europa_ shows off many of Craft’s [core features](https://craftcms.com/featur
 ### Development Technologies
 
 - [Craft CMS 5.x](https://craftcms.com/docs/5.x/)
-- PHP 8.2
+- PHP 8.4
 - PostgreSQL 13
 - Native [Twig](https://craftcms.com/docs/5.x/development/twig.html) templates
 - Built on the [Yii 2 framework](https://www.yiiframework.com/)
@@ -24,20 +24,16 @@ Read more about Craft’s [technical requirements](https://craftcms.com/docs/5.x
 
 _Europa_’s front-end was built with modern Javascript and CSS tools. Craft itself has no rules about how you structure your front-end code—so we’ve taken the opportunity to share a handful of techniques that couple Twig templates with front-end interactivity.
 
-- [Babel](https://babeljs.io/) with ES6
-- [Sass](https://sass-lang.com/)
-- [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme) with [PurgeCSS](https://github.com/spatie/laravel-mix-purgecss#readme) and [Critical CSS](https://github.com/riasvdv/laravel-mix-critical#readme)
-- [Highway.js](https://highway.js.org/)
+- [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme) to manage compilation of [Sass](https://sass-lang.com/) and JavaScript
 - [GSAP](https://greensock.com/gsap)
 - [Lazysizes](https://github.com/aFarkas/lazysizes#readme)
-- [LocomotiveScroll](https://github.com/locomotivemtl/locomotive-scroll)
 
 ## Local Development
 
 This repository is ready to use with [DDEV](#ddev) and [Docker Compose](#docker-compose).
 
 > [!TIP]
-> If you’re using a different local environment, see Craft’s [Server Requirements](https://craftcms.com/docs/5.x/requirements.html) and [Installation Instructions](https://craftcms.com/docs/5.x/install.html).
+> If you’re using a different local environment, refer to Craft’s [requirements](https://craftcms.com/docs/5.x/requirements.html) and our [installation instructions](https://craftcms.com/docs/5.x/install.html).
 
 ### DDEV
 
@@ -48,7 +44,7 @@ git clone https://github.com/craftcms/europa-museum.git
 cd europa-museum
 ddev start
 ddev composer install
-ddev import-db < seed.sql
+ddev craft db/restore seed.sql --interactive=0
 ddev craft setup/security-key
 ```
 

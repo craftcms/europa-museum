@@ -1,5 +1,4 @@
 columnSuffix: null
-contentColumnType: text
 handle: seo
 instructions: null
 name: SEO
@@ -29,6 +28,8 @@ settings:
     - twitterDescription
     - twitterImage
   twitterTabEnabled: '1'
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: nystudio107\seomatic\fields\SeoSettings
+warning: null

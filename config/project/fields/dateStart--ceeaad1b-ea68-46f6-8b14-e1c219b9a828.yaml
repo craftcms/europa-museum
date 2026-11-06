@@ -1,0 +1,17 @@
+columnSuffix: null
+handle: dateStart
+instructions: null
+name: 'Start Date'
+searchable: true
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: false
+  showTimeZone: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date
+warning: null

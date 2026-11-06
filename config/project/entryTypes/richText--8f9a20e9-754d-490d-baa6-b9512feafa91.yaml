@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 fieldLayouts:
   b7542268-90e7-488e-aaf2-8c6695a2948c:
+    cardThumbAlignment: end
     cardView:
       - 'layoutElement:88b22500-1a2a-4744-be8c-2e6020bb4cdf'
     tabs:
@@ -12,6 +15,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +28,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,11 +39,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # Content Blocks - Rich Text - Rich Text
+            elementEditCondition: null
+            fieldUid: aa1aa6b7-0e81-4b68-8694-ed5f543f38bc # Rich Text
             handle: null
             instructions: null
             label: __blank__
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -48,11 +56,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Content Blocks - Rich Text - Top Border
+            elementEditCondition: null
+            fieldUid: eb910859-8baf-408a-ae9a-3af97b637806 # Top Border
             handle: null
             instructions: null
             label: 'Top Border'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -61,11 +73,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Content Blocks - Rich Text - Layout
+            elementEditCondition: null
+            fieldUid: cdc345f6-dec9-46b7-80b5-6de7918fcdf3 # Image Handling
             handle: null
             instructions: null
             label: Layout
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -74,11 +90,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
-            fieldUid: fadcfcb9-b6bc-4adf-9adb-18ba2e89bfb7 # Content Blocks - Rich Text - Narrow Width
-            handle: narrowWidth
+            elementEditCondition: null
+            fieldUid: 0ba28a66-d3aa-4c97-ad77-8e26087b3d70 # Layout Width
+            handle: null
             instructions: null
             label: 'Narrow Width'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -89,14 +109,16 @@ fieldLayouts:
         name: Content
         uid: a3ac54c2-d758-450a-9127-4ae990c8f440
         userCondition: null
+    thumbFieldKey: null
 handle: richText
 hasTitleField: false
 icon: paragraph
 name: 'Rich Text'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'
