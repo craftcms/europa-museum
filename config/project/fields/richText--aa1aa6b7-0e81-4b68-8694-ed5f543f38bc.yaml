@@ -1,22 +1,57 @@
 columnSuffix: null
 handle: richText
 instructions: null
-name: 'Content Blocks - Rich Text - Rich Text'
+name: 'Rich Text'
 searchable: true
 settings:
   availableTransforms: ''
-  availableVolumes: '*'
-  ckeConfig: a6cb7c13-e866-45ba-ad8e-a44c552ff6c1 # Rich Text
-  defaultTransform: null
-  enableSourceEditingForNonAdmins: true
+  availableVolumes:
+    - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
+  characterLimit: null
+  css: null
+  cssFile: null
+  defaultTransform: 4ee7fd54-73f7-4abe-94e3-6c01585ca5e3 # Inline
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
   entryTypes:
-    - 386be967-b947-414c-8ea0-824e977d04ad # Embed
+    -
+      __assoc__:
+        -
+          - uid
+          - 386be967-b947-414c-8ea0-824e977d04ad # Embed
+        -
+          - expanded
+          - false
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
+  js: null
+  jsFile: null
+  options: null
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
   showWordCount: false
+  sourceEditingGroups: null
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
   wordLimit: null
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field
+warning: null

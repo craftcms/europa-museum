@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: blue
+description: null
 fieldLayouts:
   74ad9d74-87f7-47ce-979e-cd93cc0f6002:
+    cardThumbAlignment: end
     cardView:
       - 'layoutElement:f06ea1f6-4c5b-459b-8c6c-42fcbc6ab114'
     tabs:
@@ -8,38 +11,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            disabled: false
+            dateAdded: '2025-11-25T00:04:28+00:00'
+            editCondition: null
             elementCondition: null
-            id: null
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            readonly: false
-            requirable: false
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: c115ea50-c3c2-4866-8add-8ebdd0510a40
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 2d7b7e2f-71b1-4b25-8501-c8edc07a7f18 # Content Blocks - Google Map Embed - Embed Code
+            elementEditCondition: null
+            fieldUid: 2d7b7e2f-71b1-4b25-8501-c8edc07a7f18 # Embed Code
             handle: null
             instructions: null
-            label: 'Embed Code'
+            label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -50,14 +30,16 @@ fieldLayouts:
         name: Content
         uid: 1bda72d4-5ac2-4da7-80b2-e764095687ce
         userCondition: null
+    thumbFieldKey: null
 handle: googleMapEmbed
 hasTitleField: false
 icon: map-location
 name: 'Google Map Embed'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

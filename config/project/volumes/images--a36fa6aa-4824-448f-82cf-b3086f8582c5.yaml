@@ -1,7 +1,13 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   73319165-f289-4758-a3f8-a617823df46f:
+    cardThumbAlignment: end
     cardView:
+      - 'layoutElement:31c9ee1b-2972-4e0e-8996-72fce12f51e7'
       - 'layoutElement:d67bb30f-1456-486a-991d-618c2abe2c36'
+      - imageSize
+      - size
     tabs:
       -
         elementCondition: null
@@ -11,6 +17,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-11-18T00:33:29+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -37,6 +44,7 @@ fieldLayouts:
             attribute: alt
             class: null
             cols: null
+            dateAdded: '2025-11-18T00:33:29+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -57,11 +65,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-18T00:33:29+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 8b592bee-c976-4c83-be76-d749cc991410 # Image Caption
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -70,11 +82,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-18T00:33:29+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 7aecb4af-681c-47ff-9160-2cc0fbddcd4e # Attribution
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -85,11 +101,13 @@ fieldLayouts:
         name: Content
         uid: 4137e69d-a442-464d-8260-f253f42201c5
         userCondition: null
-fs: $FS_HANDLE
+    thumbFieldKey: null
+fs: $UPLOAD_FS
 handle: images
 name: Images
+propagationMethod: custom
 sortOrder: 1
-subpath: ''
+subpath: images
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: ''

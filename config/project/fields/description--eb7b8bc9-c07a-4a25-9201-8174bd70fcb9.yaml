@@ -1,20 +1,48 @@
 columnSuffix: null
 handle: description
 instructions: null
-name: 'Content Blocks - Stats and Image - Description'
+name: Description
 searchable: true
 settings:
-  availableTransforms: '*'
-  availableVolumes: '*'
-  ckeConfig: 40bfb363-8740-499a-82f2-6eda20cb6025 # Vhc No Assets
-  defaultTransform: null
-  enableSourceEditingForNonAdmins: true
+  availableTransforms: ''
+  availableVolumes:
+    - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
+  characterLimit: null
+  css: null
+  cssFile: null
+  defaultTransform: 4ee7fd54-73f7-4abe-94e3-6c01585ca5e3 # Inline
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
+  js: null
+  jsFile: null
+  options: null
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
   showWordCount: false
+  sourceEditingGroups: '*'
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
   wordLimit: null
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field
+warning: null

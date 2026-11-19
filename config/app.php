@@ -13,15 +13,23 @@
  * built-in system components.
  */
 
-use Bugsnag\Client;
-use craft\helpers\App;
 use modules\demos\Module;
-use samdark\log\PsrTarget;
 
 return [
     'modules'   => [
         'demos' => Module::class,
     ],
     'bootstrap' => ['demos'],
-    'components' => [],
+    'components' => [
+        // The demos live on special infrastructure that can’t rely on the default file-based sessions.
+        // (You probably don’t need to worry about this in other projects!)
+        'cache' => function() {
+            $config = [
+                'class' => craft\cache\DbCache::class,
+                'defaultDuration' => Craft::$app->getConfig()->getGeneral()->cacheDuration,
+            ];
+
+            return Craft::createObject($config);
+        },
+    ],
 ];

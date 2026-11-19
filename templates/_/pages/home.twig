@@ -1,10 +1,4 @@
-{# @var craft \craft\web\twig\variables\CraftVariable #}
-
 {% extends "_/layouts/site" %}
-
-{% block inline_css %}
-    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
-{% endblock %}
 
 {% block content %}
 
@@ -33,12 +27,12 @@
 
             </div>
 
-            <div class="exhibitions" data-scroll-section>
+            <div class="exhibitions">
 
                 <div class="exhibitions-info">
 
                     <div class="exhibitions-title-container">
-                        <h6 class="title" data-scroll data-scroll-speed="" data-scroll-delay="">
+                        <h6 class="title" data-scroll-section>
                             {{ 'Featured Exhibits' | t | replace(' ', '<br>') | raw }}
                         </h6>
                     </div>
@@ -55,22 +49,22 @@
                     {% set exhibitEndDate = exhibit.expiryDate | date('m.y') | default('') %}
                     {% set exhibitHeroImage = exhibit.heroImage.one() %}
 
-                    {% do exhibitHeroImage.setTransform({
+                    {% set exhibitHeroImageUrl = exhibitHeroImage.getUrl({
                         width: 650,
                         quality: 80,
                         format: 'jpg',
                     }) %}
 
-                    {% set speed = [3, 1, 5, 2] %}
+                    {% set z = [5, 3, 6, 4] %}
 
-                    <div class="exhibit exhibit-{% if loop.index is odd %}odd{% else %}even{% endif %} exhibit-{{ loop.index }}">
+                    <div class="exhibit exhibit-{% if loop.index is odd %}odd{% else %}even{% endif %} exhibit-{{ loop.index }}" data-scroll-section>
 
-                        <div class="container" data-scroll data-scroll-speed="{{ speed[loop.index - 1] }}" data-scroll-delay="">
+                        <div class="container" data-scroll data-scroll-z="{{ cycle(z, loop.index0) }}" >
 
                             <a class="exhibit-link no-underline" href="{{ exhibitUrl }}">
 
                                 <div class="exhibit-image">
-                                    <img class="lazyfade lazyload" data-src="{{ exhibitHeroImage.url }}" alt="">
+                                    <img class="lazyfade lazyload" data-src="{{ exhibitHeroImageUrl }}" alt="">
                                 </div>
 
                                 <div class="exhibit-info">

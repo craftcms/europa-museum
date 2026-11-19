@@ -1,6 +1,9 @@
+allowLineBreaksInTitles: false
 color: null
+description: null
 fieldLayouts:
   f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8:
+    cardThumbAlignment: end
     cardView:
       - 'layoutElement:81699a5d-8d5f-4e26-8301-0c3da3d53770'
     tabs:
@@ -12,6 +15,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: '2025-11-25T22:08:01+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -24,7 +28,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -35,24 +39,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
             elementCondition: null
-            fieldUid: c3286b59-368a-4fdf-8dbe-48084247c9e2 # Featured Exhibits
-            handle: null
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5bd524ab-c96d-487a-9479-867646501e95
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
+            elementEditCondition: null
             fieldUid: 079ddf1a-d985-4de2-9929-8dc87fa2047f # News Category
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -61,11 +56,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -74,11 +73,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 59eb8fe2-8081-44bc-82ee-b7bc5f91c4ec # Summary
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -87,11 +90,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -106,11 +113,15 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c8da1bd9-67c9-402f-8a95-aeaec337e207 # SEO
             handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -128,8 +139,9 @@ icon: radio
 name: 'News Article'
 showSlugField: true
 showStatusField: true
-slugTranslationKeyFormat: ''
+slugTranslationKeyFormat: null
 slugTranslationMethod: site
-titleFormat: ''
-titleTranslationKeyFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
 titleTranslationMethod: none
+uiLabelFormat: '{title}'

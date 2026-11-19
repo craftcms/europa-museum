@@ -1,14 +1,8 @@
-{# @var craft \craft\web\twig\variables\CraftVariable #}
-
 {% extends "_/layouts/site" %}
-
-{% block inline_css %}
-    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
-{% endblock %}
 
 {% block content %}
 
-    {% set heroTitle = entry.heroTitle | default(entry.title) %}
+    {% set heroTitle = entry.heroTitle ?: entry.title %}
     {% set heroImage = entry.heroImage.one() %}
 
     <article data-router-view="about" data-handle="{{ entry.type.handle }}">
@@ -26,7 +20,6 @@
                         {% include "_/components/picture" with {
                             asset: heroImage,
                             transform: 'base',
-                            sizes: sizes ?? '100vw',
                             lazytransition: 'lazyfade'
                         } %}
                     </div>

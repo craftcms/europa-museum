@@ -10,7 +10,8 @@
 !/storage/rebrand/
 
 # UPLOADS
-# /web/assets/volumes
+# Image transforms are generated on demand
+/web/uploads/**/_*/
 
 # WEB
 /web/cpresources
@@ -36,7 +37,7 @@
 /web/css/site.css.map
 /web/js/site.js.map
 
-# For demo infrastucture only
+# For demo infrastructure only
 !seed.sql
 !/web/assets
 !/web/css
@@ -49,6 +50,3 @@
 !/web/browserconfig.xml
 
 /submodules
-
-# LOCAL DEVELOPMENT
-docker-compose.override.yml

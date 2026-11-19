@@ -1,3 +1,6 @@
+@use '../../shared/vars' as *;
+@use '../../shared/mixins' as *;
+
 .image-and-headings-block {
 
     margin-top: 150px;
@@ -5,7 +8,7 @@
     padding-left: 60px;
     padding-right: 60px;
 
-    &.whiteText {
+    &.text-color-scheme-light {
         color: #fff;
     }
 
@@ -27,7 +30,6 @@
         justify-content: center;
         padding: 200px 60px;
         opacity: 0;
-        transform: translateY(100%);
         transition: opacity 1s 0.25s;
     }
 
@@ -43,7 +45,7 @@
 
     &.is-highlighted {
 
-        &.whiteText {
+        &.text-color-scheme-light {
             .title,
             .sub-heading {
                 background-color: #000;
@@ -58,7 +60,7 @@
         }
 
         .sub-heading {
-            bottom: 49px;
+            bottom: 5px;
             left: auto;
             right: 5px;
             width: auto;
@@ -78,7 +80,6 @@
         text-align: center;
         user-select: none;
         opacity: 0;
-        transform: translateY(100%);
         transition: opacity 1s 0.4s;
     }
 
@@ -112,13 +113,10 @@
         }
     }
 
-    .is-inview {
+    &.is-inview {
 
-        &.title-container {
-            opacity: 1;
-        }
-
-        &.sub-heading {
+        .title-container,
+        .sub-heading {
             opacity: 1;
         }
 
@@ -133,7 +131,7 @@
         padding-left: 30px;
         padding-right: 30px;
 
-        &.is-highlighted.whiteText {
+        &.is-highlighted.text-color-scheme-light {
 
             .title {
                 padding: 30px;
@@ -152,31 +150,13 @@
 
 }
 
-body.is-device {
-
-    .image-and-headings-block {
-        .title-container {
-            transform: none;
-
-            @media screen and (max-width: 1024px) {
-                padding: 120px 30px;
-            }
-
-            @media screen and (max-width: 767px) {
-                padding: 60px 30px;
-            }
-        }
-    }
-
-}
-
 // Themes
 
 body.theme-dark {
 
     .image-and-headings-block {
 
-        &.whiteText {
+        &.text-color-scheme-light {
             color: #ccc;
         }
 

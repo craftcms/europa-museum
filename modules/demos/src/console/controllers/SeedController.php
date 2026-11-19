@@ -20,6 +20,7 @@ class SeedController extends Controller
     public const FREEFORM_SUBMISSION_MAX = 200;
     public const FREEFORM_MESSAGE_CHARS_MIN = 120;
     public const FREEFORM_MESSAGE_CHARS_MAX = 300;
+    public const FREEFORM_STATUS_HANDLES = ['open', 'pending', 'closed'];
 
     /**
      * @var FakerGenerator
@@ -44,8 +45,7 @@ class SeedController extends Controller
     public function actionIndex(): int
     {
         $this->stdout('Beginning seed ... ' . PHP_EOL . PHP_EOL);
-        // TODO: get this to work with v5
-        // $this->runAction('freeform-data', ['contact']);
+        $this->runAction('freeform-data', ['contact']);
         $this->runAction('refresh-news');
         $this->_cleanup();
         $this->stdout('Seed complete.' . PHP_EOL . PHP_EOL, Console::FG_GREEN);
@@ -61,12 +61,14 @@ class SeedController extends Controller
 
     public function actionDeleteFreeformData(): int
     {
-        $submissions = (Submission::find())->isSpam(null);
+        $this->stdout("Deleting Freeform data ..." . PHP_EOL);
+        $submissions = Submission::find()->isSpam(null);
         $submissionCount = $submissions->count();
         $errorCount = 0;
-        $this->stdout("Deleting Freeform data ..." . PHP_EOL);
 
-        foreach ($submissions->all() as $submission) {
+        $this->stdout(sprintf('Found %d submission(s).', $submissionCount), Console::FG_BLUE) . PHP_EOL;
+
+        foreach ($submissions->each() as $submission) {
             $i = isset($i) ? $i + 1 : 1;
             $this->stdout("    - [{$i}/{$submissionCount}] Deleting submission {$submission->title} ... ");
             try {
@@ -122,7 +124,7 @@ class SeedController extends Controller
         for ($i = 1; $i <= $submissionCount; $i++) {
             try {
                 $submission = $this->_createFormSubmission($form);
-                $this->stdout("    - [{$i}/{$submissionCount}] Creating submission {$submission->title} ... ");
+                $this->stdout("    - [{$i}/{$submissionCount}] Creating submission “{$submission->title}” ... ");
 
                 if ($this->_saveFormSubmission($submission)) {
                     $this->stdout('done' . PHP_EOL, Console::FG_GREEN);
@@ -157,24 +159,32 @@ class SeedController extends Controller
 
     private function _createFormSubmission(Form $form): Submission
     {
+        $status = Freeform::getInstance()->statuses->getStatusByHandle($this->_faker->randomElement(self::FREEFORM_STATUS_HANDLES));
         $submission = Submission::create($form);
         $submission->dateCreated = $submission->dateUpdated = $this->_faker->dateTimeThisMonth();
 
-        // Reparse the title with the fake date
-        $submission->title = Craft::$app->view->renderString(
-            $form->getSubmission()->title,
-            $form->getLayout()->getFields()->getListByHandle() + [
-                'dateCreated' => $submission->dateCreated,
-                'form' => $form,
-            ]
-        );
-
         $submission->setFormFieldValues([
-            'email' => $this->_faker->email,
-            'firstName' => $this->_faker->firstName,
-            'lastName' => $this->_faker->lastName,
+            'email' => $this->_faker->email(),
+            'firstName' => $this->_faker->firstName(),
+            'lastName' => $this->_faker->lastName(),
             'message' => $this->_faker->realTextBetween(self::FREEFORM_MESSAGE_CHARS_MIN, self::FREEFORM_MESSAGE_CHARS_MAX),
         ]);
+        $submission->statusId = $status->id;
+
+        // We can't use this, because it's too entangled with the act of actually submitting a form from the front-end.
+        // $submission->title = Submission::generateTitle($submission, $form);
+
+        $formSettings = $form->getSettings()->getGeneral();
+
+        $submission->title = Craft::$app->view->renderString(
+            $formSettings->submissionTitle,
+            array_merge(
+                $submission->toArray(),
+                [
+                    'form' => $form,
+                ]
+            )
+        );
 
         return $submission;
     }

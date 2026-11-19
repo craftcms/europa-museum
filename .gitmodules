@@ -1,3 +1,0 @@
-[submodule "submodules/yii2-dynamodb"]
-	path = submodules/yii2-dynamodb
-	url = git@github.com:pixelandtonic/yii2-dynamodb.git

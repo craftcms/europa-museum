@@ -1,7 +1,7 @@
 columnSuffix: null
 handle: successMessage
-instructions: 'Optional success message for this specific form.'
-name: 'Content Blocks - Form - Success Message'
+instructions: 'Optional success message displayed when the attached form is submitted.'
+name: 'Success Message'
 searchable: true
 settings:
   byteLimit: null
@@ -11,6 +11,8 @@ settings:
   multiline: false
   placeholder: null
   uiMode: normal
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText
+warning: null

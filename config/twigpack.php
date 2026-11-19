@@ -5,7 +5,7 @@ use craft\helpers\App;
 return [
     // Global settings
     '*' => [
-        // If `devMode` is on, use webpack-dev-server to all for HMR (hot module reloading)
+        // By default, don’t assume availability of a dev server
         'useDevServer' => false,
         // Enforce Absolute URLs on includes
         'useAbsoluteUrl' => true,
@@ -22,12 +22,12 @@ return [
         // Public server config
         'server' => [
             'manifestPath' => '@webroot/assets/dist',
-            'publicPath' => '@assetBaseUrl/assets/dist',
+            'publicPath' => '@dist',
         ],
         // webpack-dev-server config
         'devServer' => [
-            'manifestPath' => App::env('TWIGPACK_MANIFEST_PATH'),
-            'publicPath' => App::env('TWIGPACK_PUBLIC_PATH'),
+            'manifestPath' => '@webroot/assets/dist',
+            'publicPath' => App::env('TWIGPACK_PUBLIC_PATH') ?: '@dist',
         ],
         // Bundle to use with the webpack-dev-server
         'devServerBuildType' => 'modern',

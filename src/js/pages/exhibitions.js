@@ -43,13 +43,13 @@ class Exhibitions {
     }
 
     scrollDown() {
-        const _this = this;
+        const contentRect = this.contentBlocks.getBoundingClientRect();
 
-        store.body.style.pointerEvents = 'none';
-        store.locoScroll.scrollTo(_this.contentBlocks, -120);
-        setTimeout(() => {
-            store.body.style.pointerEvents = 'auto';
-        }, 1000);
+        window.scrollTo({
+            left: 0,
+            top: window.scrollY + contentRect.top - 150,
+            behavior: 'smooth',
+        });
     }
 
 }

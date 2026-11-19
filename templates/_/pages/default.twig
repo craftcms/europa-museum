@@ -1,10 +1,4 @@
-{# @var craft \craft\web\twig\variables\CraftVariable #}
-
 {% extends "_/layouts/site" %}
-
-{% block inline_css %}
-    {{ source ("_/#{entry.type.handle}-critical.min.css", ignore_missing = true) }}
-{% endblock %}
 
 {% block content %}
 
