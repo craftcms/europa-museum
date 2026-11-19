@@ -1,0 +1,32 @@
+{% extends "_/layouts/site" %}
+
+{% set heroImage = entry.heroImage.one() %}
+
+{% block content %}
+
+    {% if heroImage %}
+        {% set heroImageUrl = heroImage.getUrl({
+            width: 1024,
+            quality: 80,
+            format: 'jpg',
+        }) %}
+    {% endif %}
+
+    <article data-router-view="newsArticle" data-handle="{{ entry.type.handle }}">
+
+        <div class="news-article-container" data-scroll-section>
+
+            {% include '_/svg/arrowLeft' %}
+            <a class="link-back" href="{{ url('news') }}">{{ 'Back to News' | t }}</a>
+
+            <h5 class="hero-heading">{{ entry.title }}</h5>
+
+            <img class="hero-image" src="{{ heroImageUrl }}" alt="{{ heroImage.title }}">
+
+        </div>
+
+        {% include "_/components/block-matrix" %}
+
+    </article>
+
+{% endblock %}

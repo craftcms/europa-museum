@@ -1,107 +1,74 @@
 <h1 align="center">Europa Museum — Craft CMS Demo</h1>
 
-![Europa Museum homepage](homepage.png)
+![Europa Museum homepage](screenshot.png)
 
 ## Overview
 
 _Europa_ is a fictitious art museum website build with [Craft CMS](https://craftcms.com). This repository houses the source code for our demo, which you can try for yourself by visiting [craftcms.com/demo](https://craftcms.com/demo?kind=europa).
 
-We’ve also included instructions below for setting up the demo in a local development environment with [Docker Compose](#docker-compose) and [DDEV](https://ddev.com/).
+We’ve also included instructions below for setting up the demo in a local development environment with [DDEV](https://ddev.com/).
 
-_Europa_ shows off many of Craft’s [core features](https://craftcms.com/features) and includes some [popular plugins](https://plugins.craftcms.com/) to spark your curiosity.
+_Europa_ shows off many of Craft’s [core features](https://craftcms.com/features). This version runs on Craft 6, which is still in beta, and uses no third-party plugins. Its rich text is edited with the Craft 6 beta of [CKEditor](https://github.com/craftcms/ckeditor).
 
 ### Development Technologies
 
-- [Craft CMS 5.x](https://craftcms.com/docs/5.x/)
-- PHP 8.2
-- PostgreSQL 13
+- [Craft CMS 6.x](https://github.com/craftcms/cms/tree/6.x) (beta)
+- PHP 8.5
+- PostgreSQL 17
 - Native [Twig](https://craftcms.com/docs/5.x/development/twig.html) templates
-- Built on the [Yii 2 framework](https://www.yiiframework.com/)
-
-Read more about Craft’s [technical requirements](https://craftcms.com/docs/5.x/requirements.html) in the official documentation.
+- Built on [Laravel](https://laravel.com/)
 
 ### Front End Dependencies
 
 _Europa_’s front-end was built with modern Javascript and CSS tools. Craft itself has no rules about how you structure your front-end code—so we’ve taken the opportunity to share a handful of techniques that couple Twig templates with front-end interactivity.
 
-- [Babel](https://babeljs.io/) with ES6
-- [Sass](https://sass-lang.com/)
-- [Laravel Mix](https://github.com/JeffreyWay/laravel-mix#readme) with [PurgeCSS](https://github.com/spatie/laravel-mix-purgecss#readme) and [Critical CSS](https://github.com/riasvdv/laravel-mix-critical#readme)
-- [Highway.js](https://highway.js.org/)
+- [Vite](https://vite.dev/), through Laravel’s Vite plugin, to compile [Sass](https://sass-lang.com/) and JavaScript
 - [GSAP](https://greensock.com/gsap)
 - [Lazysizes](https://github.com/aFarkas/lazysizes#readme)
-- [LocomotiveScroll](https://github.com/locomotivemtl/locomotive-scroll)
 
 ## Local Development
 
-This repository is ready to use with [DDEV](#ddev) and [Docker Compose](#docker-compose).
-
-> [!TIP]
-> If you’re using a different local environment, see Craft’s [Server Requirements](https://craftcms.com/docs/5.x/requirements.html) and [Installation Instructions](https://craftcms.com/docs/5.x/install.html).
-
-### DDEV
-
-[DDEV](https://ddev.com/) is our recommended local development environment, for Craft developers at any level of experience. Our [quick-start guide](https://craftcms.com/docs/5.x/install.html) covers this process in detail—but we’ve done the config for you, so all that’s required is…
+This repository is ready to use with [DDEV](https://ddev.com/).
 
 ```bash
-git clone https://github.com/craftcms/europa-museum.git
+git clone --branch 6.x https://github.com/craftcms/europa-museum.git
 cd europa-museum
 ddev start
 ddev composer install
-ddev import-db < seed.sql
-ddev craft setup/security-key
+ddev php artisan key:generate
+ddev php artisan craft:db:restore seed.sql --no-interaction
+ddev php artisan craft:up
+ddev php artisan craft:setup:publish
 ```
 
-As with the vanilla Docker setup process, you can create a user for yourself with the CLI:
+`craft:setup:publish` publishes CKEditor's control panel assets, which Composer skipped because the plugin wasn't installed yet.
+
+Create a user for yourself with the CLI:
 
 ```bash
-ddev craft users/create --admin
+ddev php artisan craft:users:create --admin=1
 # ...
 ddev launch admin
 ```
 
-### Docker Compose
-
-We test demo projects in automated pipelines, so the project is ready to go if you have [Docker Compose](https://docs.docker.com/compose/) installed! The `Makefile` contains all the steps to boot up the project:
-
-```bash
-# Create containers and install dependencies:
-make init
-# Restore the bundled database backup:
-make restore
-```
-
-You can use the CLI to create a new user, as well:
-
-```bash
-docker-compose exec web php craft users/create --admin
-```
-
-> [!TIP]
-> Visit the control panel in your running project `http://localhost:8080/admin`!
-
 ### Front End
 
-Run `npm install` with Node.js 14.15.0 or later.
+Built assets are committed in `public/build`, so the site works without Node.js. To change the styles or scripts in `src/`, run these in the application container with `ddev npm ...`, or locally:
 
-> [!TIP]
-> DDEV users can run npm commands within the application container, via `ddev npm ...`!
+- `npm install` to install the dependencies
+- `npm run dev` to start Vite’s dev server, which reloads the page as you edit
+- `npm run build` to compile optimized assets into `public/build`
 
-These development scripts are available in `package.json`:
+### Content
 
-- `npm run watch` to watch and automatically recompile assets for local development
-- `npm run sync` to watch files and reload with BrowserSync for local development
-- `npm run dev` to compile assets for local development
-- `npm run prod` to compile optimized assets for production
+The demo’s content and content model live in `seed.sql`. After changing either on a database restored from it, run `php artisan demos:dump` to write them back. `php artisan demos:seed` gives the news articles recent post dates.
 
-If you use a different site URL, update `DEFAULT_SITE_URL` in `.env` or the production build process will fail:
+## Contributing
 
-```
-DEFAULT_SITE_URL=https://europa.ddev.site
-```
+Thank you for considering contributing to this demo! It is generated by [Maestro](https://github.com/craftcms/maestro), which builds all of Craft's starter kits, so changes made directly in this repository are overwritten. Please make all contributions through Maestro.
 
 ## License
 
-The source code of this project is licensed under the [BSD Zero Clause License](LICENSE.MD) unless stated otherwise.
+The source code of this project is licensed under the [BSD Zero Clause License](LICENSE.md) unless stated otherwise.
 
 The imagery used by this project is the property of each respective license holder. You are not free to use it for your own projects.

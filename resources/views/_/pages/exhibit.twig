@@ -1,0 +1,71 @@
+{% extends "_/layouts/site" %}
+
+{% set contentBlocks = entry.contentBlocks.all() %}
+
+{% block content %}
+
+    <article class="{% if contentBlocks is empty %}no-blocks{% endif %}" data-router-view="exhibit" data-handle="{{ entry.type.handle }}">
+
+        <div class="exhibit-container" data-scroll-section>
+
+            <h1 class="heading">
+                {{ entry.title }}
+            </h1>
+
+            {% set heroImage = entry.heroImage.one() %}
+
+            {% if heroImage %}
+
+                <div class="hero-image-container">
+                    <div class="hero-image">
+                        {% include "_/components/picture" with {
+                            asset: heroImage,
+                            transform: 'base',
+                            lazytransition: 'lazyfade'
+                        } %}
+                    </div>
+                </div>
+
+                <div class="hero-info">
+
+                    {% if heroImage.imageCaption %}
+                        <div class="caption">
+                            {{ heroImage.imageCaption }}
+                        </div>
+                    {% endif %}
+
+                    {% if entry.postDate %}
+                        <div class="dates">
+                            {{ entry.postDate | date('m.y') }}
+                            {% if entry.expiryDate %}
+                                &mdash; {{ entry.expiryDate | date('m.y') }}
+                            {% endif %}
+                        </div>
+                    {% endif %}
+
+                    {# Balance the layout when a caption is provided by surfacing this extra info: #}
+                    {% if heroImage.imageCaption %}
+                        <div class="tickets">
+                            Tickets are purchased at the Museum
+                        </div>
+                    {% endif %}
+
+                </div>
+
+            {% endif %}
+
+        </div>
+
+        {% if contentBlocks | length %}
+
+            {% include "_/components/block-matrix" with { contentBlocks: contentBlocks } %}
+
+        {% else %}
+
+            {% include "_/components/blocks/heading" with { altText: 'Coming soon…' | t } %}
+
+        {% endif %}
+
+    </article>
+
+{% endblock %}

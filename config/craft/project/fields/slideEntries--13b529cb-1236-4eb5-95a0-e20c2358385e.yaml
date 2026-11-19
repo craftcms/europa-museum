@@ -1,0 +1,25 @@
+columnSuffix: null
+handle: slideEntries
+instructions: null
+name: 'Entry Slides'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: 1
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedSections: true
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Entries
+warning: null

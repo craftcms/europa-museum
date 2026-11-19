@@ -1,0 +1,47 @@
+columnSuffix: null
+handle: slideImages
+instructions: null
+name: 'Image Slides'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  previewMode: full
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  restrictedLocationSubpath: null
+  selectionCondition:
+    class: CraftCms\Cms\Asset\Conditions\AssetCondition
+    conditionRules:
+      operator: and
+      rules:
+        - class: CraftCms\Cms\Asset\Conditions\ViewableConditionRule
+          uid: 0e065e84-ab94-4f5e-a0a2-a32095dbf83c
+          value: true
+        - class: CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
+          operator: in
+          uid: 66d23a46-b3ca-40f9-95ab-2a2ab652664c
+          values:
+            - image
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedVolumes: false
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards-grid
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Assets
+warning: null

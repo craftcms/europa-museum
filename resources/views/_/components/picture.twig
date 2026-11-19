@@ -1,0 +1,31 @@
+{# @var craft \CraftCms\Cms\Twig\Variables\CraftVariable #}
+
+{% set lazytransition = lazytransition ?? 'lazyfade' %}
+
+{# If an author has provided an explicit image description, use that. Otherwise, use the title. #}
+{% set altText = asset.alt ?: asset.title %}
+
+<picture class="lazypicture {{ classes ?? '' }}">
+    {% if asset.extension == 'gif' or asset.extension == 'svg' %}
+        {{ tag('img', {
+            class: ['lazyload', lazytransition],
+            data: {
+                src: asset.url,
+            },
+            alt: altText,
+        }) }}
+    {% else %}
+        {% set transforms = ['inline', 'hero'] %}
+        {% set srcset = asset.getSrcSet(transforms | map(t => "#{ImageTransforms.getTransformByHandle(t).width}w")) %}
+
+        {{ tag('img', {
+            class: ['lazyload', lazytransition],
+            data: {
+                srcset: srcset | join(', '),
+                sizes: 'auto',
+            },
+            alt: altText,
+            style: "object-position: #{asset.getFocalPoint(true)};",
+        }) }}
+    {% endif %}
+</picture>

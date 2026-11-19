@@ -1,0 +1,48 @@
+columnSuffix: null
+handle: heroImage
+instructions: null
+name: 'Hero Image'
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  restrictedLocationSubpath: null
+  selectionCondition:
+    class: CraftCms\Cms\Asset\Conditions\AssetCondition
+    conditionRules:
+      operator: and
+      rules:
+        - class: CraftCms\Cms\Asset\Conditions\ViewableConditionRule
+          uid: 889acafa-b9cd-4189-bf88-3aa8a73ed7b7
+          value: true
+        - class: CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
+          operator: in
+          uid: 605ce8db-90e2-48d5-b06c-92cfe983f516
+          values:
+            - image
+  selectionLabel: 'Add an image'
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedVolumes: true
+  sources:
+    - 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: thumbs
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Assets
+warning: null

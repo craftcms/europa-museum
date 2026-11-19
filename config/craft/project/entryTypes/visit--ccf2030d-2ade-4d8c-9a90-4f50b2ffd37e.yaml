@@ -1,0 +1,57 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  c266fd55-9906-470d-b73b-a1e12e86bb69:
+    cardThumbAlignment: end
+    tabs:
+      - elementCondition: null
+        elements:
+          - dateAdded: '2025-11-18T01:04:44+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 11707c41-c00c-4dc5-bb79-f1f531a5d627
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-18T01:04:44+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: d15cae13-1a55-4e27-85e4-1b7d4187892c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f70e57da-e2b6-4b27-a16c-f164b129df6b
+        userCondition: null
+    thumbFieldKey: null
+handle: visit
+hasTitleField: false
+icon: door-open
+name: Visit
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

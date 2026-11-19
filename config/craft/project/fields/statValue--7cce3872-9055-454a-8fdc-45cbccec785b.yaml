@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: statValue
+instructions: null
+name: 'Stat Value'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: enlarged
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\PlainText
+warning: null

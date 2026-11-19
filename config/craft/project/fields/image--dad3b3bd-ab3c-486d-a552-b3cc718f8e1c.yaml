@@ -1,0 +1,47 @@
+columnSuffix: null
+handle: image
+instructions: null
+name: Image
+searchable: true
+settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
+  branchLimit: null
+  defaultPlacement: end
+  defaultUploadLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  defaultUploadLocationSubpath: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictLocation: true
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+  restrictedLocationSubpath: null
+  selectionCondition:
+    class: CraftCms\Cms\Asset\Conditions\AssetCondition
+    conditionRules:
+      operator: and
+      rules:
+        - class: CraftCms\Cms\Asset\Conditions\ViewableConditionRule
+          uid: cd6d4e98-26b3-4357-9e52-3179252167d4
+          value: true
+        - class: CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
+          operator: in
+          uid: 1b65b650-4300-4dea-8b53-157a597eca2c
+          values:
+            - image
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedVolumes: true
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: thumbs
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Assets
+warning: null

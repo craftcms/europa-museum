@@ -1,0 +1,45 @@
+columnSuffix: null
+handle: textColor
+instructions: null
+name: 'Text Color Scheme'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    - __assoc__:
+        -
+          - label
+          - Dark
+        -
+          - value
+          - dark
+        -
+          - icon
+          - moon-stars
+        -
+          - color
+          - '#000000'
+        -
+          - default
+          - '1'
+    - __assoc__:
+        -
+          - label
+          - Light
+        -
+          - value
+          - light
+        -
+          - icon
+          - sun
+        -
+          - color
+          - '#ffffff'
+        -
+          - default
+          - ''
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Dropdown
+warning: null

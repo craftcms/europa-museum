@@ -1,0 +1,15 @@
+columnSuffix: null
+handle: highlightText
+instructions: 'Should a background be applied to the text to increase contrast from the background? This is recommended when overlaid on an image.'
+name: 'Highlight Text'
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+  showLabelsInCards: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Lightswitch
+warning: null

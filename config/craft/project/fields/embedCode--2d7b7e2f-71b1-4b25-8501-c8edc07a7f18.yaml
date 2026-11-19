@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: embedCode
+instructions: 'Paste your HTML here.'
+name: 'Embed Code'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: true
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\PlainText
+warning: null

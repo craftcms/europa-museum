@@ -1,0 +1,43 @@
+columnSuffix: null
+handle: paginationCount
+instructions: 'The max number of news articles to display per page.'
+name: 'Pagination Count'
+searchable: true
+settings:
+  customOptions: false
+  options:
+    - __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - '2'
+        -
+          - value
+          - '2'
+    - __assoc__:
+        -
+          - default
+          - '1'
+        -
+          - label
+          - '5'
+        -
+          - value
+          - '5'
+    - __assoc__:
+        -
+          - default
+          - ''
+        -
+          - label
+          - '10'
+        -
+          - value
+          - '10'
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Dropdown
+warning: null

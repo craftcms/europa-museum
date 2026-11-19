@@ -1,0 +1,159 @@
+{% extends "_/layouts/site" %}
+
+{% set indexType = entry.type.handle %}
+{% set isCategory = indexType == 'newsCategory' %}
+
+{% block content %}
+
+    {#
+        This template is shared by both the News single section and entries in the News Categories section.
+    #}
+
+    <article data-router-view="news" data-handle="news">
+
+        <div class="news-container width-narrow" data-scroll-section>
+
+            {% if isCategory %}
+                {% include '_/svg/arrowLeft' %}
+                <a class="link-back" href="{{ url('news') }}">{{ 'Back to News' | t }}</a>
+            {% endif %}
+
+            {% if isCategory %}
+                <div class="hero-category">{{ 'Category:' | t }}</div>
+                <h5 class="hero-category-heading">{{ entry.title }}</h5>
+            {% else %}
+                <h1 class="hero-heading">{{ 'News' | t }}</h1>
+            {% endif %}
+
+        </div>
+
+        {# On the news index page, mimic the output of a "content blocks" field, with a single "CTA" block: #}
+
+        {% if not isCategory %}
+
+            <section class="content-blocks">
+
+                <div class="content-block cta-caption-block isFirst has-icon width-narrow" data-scroll-section>
+
+                    <div class="caption-container">
+
+                        <div class="text">
+
+                            <span class="caption-heading">
+                                Today
+                            </span>
+
+                            &mdash;
+
+                            <span class="information">
+                                {{ now | date('d F Y') }}
+                            </span>
+
+                        </div>
+
+                        <div class="link">
+
+                            <a href="{{ url('news.rss') }}" target="_blank" rel="noopener">RSS FEED</a>
+
+                            <span>
+                                {% include '_/svg/news' %}
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        {% endif %}
+
+        <div class="news-container" data-scroll-section>
+
+            {# This field is only present on the news landing entry; for category pages, we fall back to a static limit: #}
+            {% set paginationCount = (entry.paginationCount.value ?? 10) | integer %}
+
+            {% if isCategory %}
+                {% set query = craft.entries.section('newsArticles')
+                    .with(['heroImage', 'newsCategory'])
+                    .relatedTo(entry) %}
+            {% else %}
+                {% set query = craft.entries().section('newsArticles')
+                    .with(['heroImage', 'newsCategory'])
+                    .limit(paginationCount | integer) %}
+            {% endif %}
+
+            {% paginate query as pageInfo, pageEntries %}
+
+            {% for newsEntry in pageEntries %}
+
+                {% set articleImage = newsEntry.heroImage | first %}
+
+                {% set articleImageUrl = articleImage.getUrl({
+                    width: 440,
+                    quality: 80,
+                    format: 'jpg',
+                }) %}
+
+                <article class="news-article">
+
+                    <div class="info-left">
+
+                        {% if newsEntry.heroImage | length %}
+                            <a class="article-image-link no-underline" href="{{ newsEntry.url }}">
+                                <img src="{{ articleImageUrl }}" alt="{{ articleImage.title }}">
+                            </a>
+                        {% endif %}
+
+                    </div>
+
+                    <div class="info-right">
+
+                        <h6 class="article-heading">
+                            {{ newsEntry.getLink() }}
+                        </h6>
+
+                        <div class="article-category-date">
+                            {{ newsEntry.postDate | date('m.d.Y') }}
+                            {% set newsCategory = newsEntry.newsCategory.one() %}
+
+                            {% if newsCategory %}
+                                <span class="divider">|</span>
+                                {{ newsCategory.link }}
+                            {% endif %}
+                        </div>
+
+                        <p class="article-summary">
+                            {{ newsEntry.summary | nl2br }}
+                        </p>
+
+                    </div>
+
+                </article>
+
+            {% endfor %}
+
+            <div class="pagination">
+
+                {% if pageInfo.prevUrl %}
+                    <a class="pagination-link-active" href="{{ pageInfo.prevUrl }}">Previous</a>
+                {% else %}
+                    <span class="pagination-link-inactive">Previous</span>
+                {% endif %}
+
+                <span class="divider">|</span>
+
+                {% if pageInfo.nextUrl %}
+                    <a class="pagination-link-active" href="{{ pageInfo.nextUrl }}">Next</a>
+                {% else %}
+                    <span class="pagination-link-inactive">Next</span>
+                {% endif %}
+
+            </div>
+
+        </div>
+
+    </article>
+
+{% endblock %}

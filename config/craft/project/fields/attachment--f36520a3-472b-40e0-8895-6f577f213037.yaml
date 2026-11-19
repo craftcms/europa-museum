@@ -1,0 +1,28 @@
+columnSuffix: null
+handle: attachment
+instructions: 'What would you like to embed? The front-end presentation may differ based on the type of entry selected.'
+name: Attachment
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: 1
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedSections: true
+  sources:
+    - 'section:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+    - 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+    - 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Entries
+warning: null

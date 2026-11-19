@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: featuredExhibits
+instructions: 'Will be displayed in a random order.'
+name: 'Featured Exhibits'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: 4
+  minRelations: null
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedSections: true
+  sources:
+    - 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards-grid
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Entries
+warning: null

@@ -1,0 +1,19 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - uid: ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e # Visit
+handle: visit
+maxAuthors: 1
+minAuthors: 1
+name: Visit
+previewTargets:
+  - label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/visit
+    uriFormat: visit
+type: single

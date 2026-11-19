@@ -1,4 +1,5 @@
 {
+    "$schema": "https://getcomposer.org/schema.json",
     "name": "craftcms/demo-europa-museum",
     "description": "Europa Museum Demo",
     "keywords": [
@@ -14,43 +15,94 @@
     "type": "project",
     "support": {
         "email": "support@craftcms.com",
-        "issues": "https://github.com/craftcms/demo-europa-museum/issues",
+        "issues": "https://github.com/craftcms/europa-museum/issues",
         "forum": "https://craftcms.stackexchange.com/",
-        "source": "https://github.com/craftcms/demo-europa-museum",
-        "docs": "https://github.com/craftcms/demo-europa-museum"
-    },
-    "require": {
-        "bref/bref": "^2",
-        "craftcms/aws-s3": "^2",
-        "craftcms/ckeditor": "^4",
-        "craftcms/cms": "^5",
-        "craftcms/yii2-dynamodb": "^2",
-        "fakerphp/faker": "^1",
-        "nystudio107/craft-seomatic": "^5",
-        "nystudio107/craft-twigpack": "^5",
-        "solspace/craft-freeform": "^5",
-        "vlucas/phpdotenv": "^5"
+        "source": "https://github.com/craftcms/europa-museum",
+        "docs": "https://github.com/craftcms/europa-museum"
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.5",
+        "craftcms/ckeditor": "^6.0.0-beta.1",
+        "craftcms/cms": "^6.0.0-beta.1",
+        "craftcms/html-field": "^4.0.0",
+        "fakerphp/faker": "^1.23",
+        "laravel/framework": "^13.17",
+        "laravel/tinker": "^3.0"
+    },
+    "require-dev": {
+        "laravel/pail": "^1.2.5",
+        "laravel/pao": "^1.0.6",
+        "laravel/pint": "^1.27",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.6",
+        "phpunit/phpunit": "^12.5.12"
+    },
     "autoload": {
         "psr-4": {
-            "modules\\demos\\": "modules/demos/src/"
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
         }
     },
-    "config": {
-        "sort-packages": true,
-        "optimize-autoloader": true,
-        "allow-plugins": {
-            "yiisoft/yii2-composer": true,
-            "craftcms/plugin-installer": true
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "scripts": {
-        "post-create-project-cmd": [
+        "setup": [
+            "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php craft db/restore seed.sql > /dev/null 2>&1",
-            "@php craft demos/seed > /dev/null 2>&1"
+            "@php artisan key:generate",
+            "@php artisan migrate --force",
+            "npm install --ignore-scripts",
+            "npm run build"
+        ],
+        "dev": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php artisan dev"
+        ],
+        "test": [
+            "@php artisan config:clear --ansi @no_additional_args",
+            "@php artisan test"
+        ],
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi",
+            "@php artisan craft:setup:publish --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi",
+            "@php -r \"@unlink('composer.json.default');\"",
+            "@php artisan craft:db:restore seed.sql --no-interaction > /dev/null 2>&1",
+      "@php artisan craft:setup:publish --ansi",
+            "@php artisan demos:seed > /dev/null 2>&1"
+        ],
+        "pre-package-uninstall": [
+            "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
         ]
     },
-    "prefer-stable": true
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "craftcms/plugin-installer": true,
+            "pestphp/pest-plugin": true,
+            "php-http/discovery": true
+        }
+    }
 }

@@ -1,0 +1,36 @@
+{% extends "_/layouts/site" %}
+
+{% block content %}
+
+    {% set heroTitle = entry.heroTitle ?: entry.title %}
+    {% set heroImage = entry.heroImage.one() %}
+
+    <article data-router-view="about" data-handle="{{ entry.type.handle }}">
+
+        <div class="about-container {% if not heroImage %}no-hero-image{% endif %}" data-scroll-section>
+
+            <h1 class="hero-heading">
+                {{ heroTitle }}
+            </h1>
+
+            {% if heroImage %}
+
+                <div class="hero-image-container" data-scroll data-scroll-speed="1" data-scroll-position="top">
+                    <div class="hero-image">
+                        {% include "_/components/picture" with {
+                            asset: heroImage,
+                            transform: 'base',
+                            lazytransition: 'lazyfade'
+                        } %}
+                    </div>
+                </div>
+
+            {% endif %}
+
+        </div>
+
+        {% include "_/components/block-matrix" %}
+
+    </article>
+
+{% endblock %}

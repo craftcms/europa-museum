@@ -1,0 +1,110 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
+fieldLayouts:
+  73319165-f289-4758-a3f8-a617823df46f:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:31c9ee1b-2972-4e0e-8996-72fce12f51e7'
+      - 'layoutElement:d67bb30f-1456-486a-991d-618c2abe2c36'
+      - imageSize
+      - size
+    tabs:
+      - elementCondition: null
+        elements:
+          - autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-11-18T00:33:29+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Assets\AssetTitleField
+            uid: 707869c0-c835-4d01-b039-4790688afa3a
+            userCondition: null
+            warning: null
+            width: 100
+          - attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2025-11-18T00:33:29+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Assets\AltField
+            uid: 5fe8996a-1e60-46c2-86a1-f2fe887a383c
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-18T00:33:29+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8b592bee-c976-4c83-be76-d749cc991410 # Image Caption
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: d67bb30f-1456-486a-991d-618c2abe2c36
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-18T00:33:29+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7aecb4af-681c-47ff-9160-2cc0fbddcd4e # Attribution
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 31c9ee1b-2972-4e0e-8996-72fce12f51e7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4137e69d-a442-464d-8260-f253f42201c5
+        userCondition: null
+    thumbFieldKey: null
+fs: disk
+handle: images
+hasUrls: true
+name: Images
+propagationMethod: custom
+sortOrder: 1
+subpath: images
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

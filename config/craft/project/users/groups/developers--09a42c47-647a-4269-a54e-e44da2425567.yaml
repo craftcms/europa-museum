@@ -1,0 +1,24 @@
+description: 'Additional permissions for anyone who needs to manage the site’s code or configuration, in production. This is _not_ the equivalent of Craft’s **Admin** designation.'
+handle: developers
+name: Developers
+permissions:
+  - accesscp
+  - accesscpwhensystemisoff
+  - accesssitewhensystemisoff
+  - 'editglobalset:a90cc22d-485c-4cd7-a4b9-63a8a637e90d'
+  - 'utility:asset-indexes'
+  - 'utility:clear-caches'
+  - 'utility:db-backup'
+  - 'utility:deprecation-errors'
+  - 'utility:find-replace'
+  - 'utility:migrations'
+  - 'utility:php-info'
+  - 'utility:queue-manager'
+  - 'utility:system-messages'
+  - 'utility:system-report'
+  - 'utility:updates'
+  - 'viewentries:89b839c5-5a0f-4d66-8c70-2a3fe6096220' # Navigation
+  - 'saveentries:89b839c5-5a0f-4d66-8c70-2a3fe6096220' # Navigation
+  - 'viewpeerentrydrafts:89b839c5-5a0f-4d66-8c70-2a3fe6096220' # Navigation
+  - 'savepeerentrydrafts:89b839c5-5a0f-4d66-8c70-2a3fe6096220' # Navigation
+  - 'deletepeerentrydrafts:89b839c5-5a0f-4d66-8c70-2a3fe6096220' # Navigation

@@ -1,6 +1,3 @@
-// Plugins
-import LocomotiveScroll from 'locomotive-scroll';
-
 // Core
 import store from '../store';
 
@@ -19,22 +16,18 @@ import Visit from './visit';
 
 class Pages {
     constructor() {
-        const pageTemplate = location.pathname.split('/')[1];
-        const pageName = pageTemplate.length > 1 ? pageTemplate : 'home';
-        store.body.dataset.page = pageName;
-        const selectedLink = store.body.querySelector('[data-link="' + pageName + '"]');
+        const segments = location.pathname.split('/').filter(s => s.length);
+        const rootSlug = segments.length ? segments[0] : 'home';
+        store.body.dataset.page = rootSlug;
 
-        if (pageName === 'exhibitions') {
+        if (rootSlug === 'exhibitions') {
             new Exhibitions();
         }
 
-        if (pageName === 'visit') {
+        if (rootSlug === 'visit') {
             new Visit();
         }
 
-        if (selectedLink) {
-            selectedLink.classList.add('selected');
-        }
         this.initVars();
         this.init();
     }
@@ -46,31 +39,25 @@ class Pages {
     init() {
         bindAll(this, ['onResize', 'updateScroll', 'onScroll']);
 
-        const _this = this;
-
-        this.initLocoScroll();
-
         this.scrolled = false;
+        this.$scrollAwareElements = store.body.querySelectorAll('[data-scroll-section]');
+        this.$parallaxElements = store.body.querySelectorAll('[data-scroll]');
 
         if (document.readyState === 'complete') {
-
             this.updateScroll();
-
         } else {
-
             window.addEventListener('load', () => {
-
                 store.body.classList.remove('loading');
                 store.isLoading = false;
 
-                _this.updateScroll();
-
+                this.updateScroll();
             });
         }
 
-        EventBus.on(GlobalResizeEvents.RESIZE, _this.onResize);
+        EventBus.on(GlobalResizeEvents.RESIZE, this.onResize);
 
-        document.addEventListener('lazyloaded', _this.updateScroll);
+        document.addEventListener('lazyloaded', this.updateScroll);
+        document.addEventListener('scroll', this.updateScroll);
 
         // Blocks
         if (this.contentBlocks) {
@@ -79,29 +66,43 @@ class Pages {
 
     }
 
-    initLocoScroll() {
-        const _this = this;
-
-        this.locoScroll = new LocomotiveScroll({
-            el: document.querySelector('#loco-scroll'),
-            smooth: false,
-            // inertia: 1,
-            // smoothMobile: true,
-        });
-
-        store.locoScroll = this.locoScroll;
-
-        this.locoScroll.on('scroll', _this.onScroll);
-    }
-
     onResize() {
         this.updateScroll();
     }
 
     updateScroll() {
-        if (store.isSmooth) {
-            this.locoScroll.update();
-        }
+        // This method includes a number of basic behavioral “shims” for features we wanted from the `locomotive-scroll` package.
+
+        this.$scrollAwareElements.forEach(function($el) {
+            const box = $el.getBoundingClientRect();
+
+            // Has it come above-the-fold or passed the screen entirely?
+            if (box.top > window.innerHeight || box.bottom < 0) {
+                $el.classList.remove('is-inview');
+                $el.dataset.isInView = false;
+                return;
+            }
+
+            // Ok, some part of the element is on screen:
+            $el.classList.add('is-inview');
+            $el.dataset.isInView = true;
+        });
+
+        this.$parallaxElements.forEach(function($el) {
+            // Is there an effect to apply?
+            if (!$el.dataset.scrollZ) {
+                return;
+            }
+
+            const z = parseFloat($el.dataset.scrollZ);
+            const $scrollSection = $el.closest('[data-scroll-section]');
+            const box = $scrollSection.getBoundingClientRect();
+            const center = (box.top + box.bottom) / 2;
+            const screenCenter = window.innerHeight / 2;
+            // console.log({ center, screenCenter });
+
+            $el.style.transform = `translate(0, ${(center - screenCenter) / z}px)`;
+        });
     }
 
     onScroll(e) {
@@ -120,11 +121,6 @@ class Pages {
 
     destroy() {
         const _this = this;
-
-        if (this.locoScroll) {
-            this.locoScroll.destroy();
-            store.locoScroll = null;
-        }
 
         document.removeEventListener('lazyloaded', _this.updateScroll);
 

@@ -1,0 +1,9 @@
+<nav class="core-nav-links">
+
+    {% for link in navigation.navLinksSecondary.all() %}
+
+        <a href="{{ link.url }}" {% if link.url == url('contact') %}data-router-disabled{% endif %}>{{ link.title }}</a>
+
+    {% endfor %}
+
+</nav>

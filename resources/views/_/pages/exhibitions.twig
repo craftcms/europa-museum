@@ -1,0 +1,38 @@
+{% extends "_/layouts/site" %}
+
+{% block content %}
+
+        <article data-router-view="exhibitions" data-handle="{{ entry.type.handle }}">
+
+            <div class="exhibitions-container" data-scroll-section>
+
+                <h1 class="hero-heading">
+                    {{ entry.title }}
+                </h1>
+
+                {% set heroImage = entry.heroImage.one() %}
+
+                {% if heroImage %}
+
+                    <div class="hero-image-container" data-scroll data-scroll-z="5" data-scroll-position="top">
+                        <div class="hero-image">
+                            {% include "_/components/picture" with {
+                                asset: heroImage,
+                                lazytransition: 'lazyfade'
+                            } %}
+                        </div>
+                    </div>
+
+                {% endif %}
+
+                <button class="btn-down" aria-label="Scroll Down">
+                    {% include "_/svg/arrowDown" %}
+                </button>
+
+            </div>
+
+            {% include "_/components/block-matrix" %}
+
+        </article>
+
+{% endblock %}

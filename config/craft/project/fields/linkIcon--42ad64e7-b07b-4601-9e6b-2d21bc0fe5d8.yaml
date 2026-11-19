@@ -1,0 +1,141 @@
+columnSuffix: null
+handle: linkIcon
+instructions: null
+name: 'Link Icon'
+searchable: true
+settings:
+  customOptions: false
+  options:
+    - __assoc__:
+        -
+          - label
+          - None
+        -
+          - value
+          - none
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - '1'
+    - __assoc__:
+        -
+          - label
+          - 'Arrow - Left'
+        -
+          - value
+          - arrowLeft
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    - __assoc__:
+        -
+          - label
+          - 'Arrow - Right'
+        -
+          - value
+          - arrowRight
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    - __assoc__:
+        -
+          - label
+          - 'Arrow - Up'
+        -
+          - value
+          - arrowUp
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    - __assoc__:
+        -
+          - label
+          - 'Arrow - Down'
+        -
+          - value
+          - arrowDown
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    - __assoc__:
+        -
+          - label
+          - Brochure
+        -
+          - value
+          - brochure
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    - __assoc__:
+        -
+          - label
+          - 'Map Pin'
+        -
+          - value
+          - mapPin
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+    - __assoc__:
+        -
+          - label
+          - News
+        -
+          - value
+          - news
+        -
+          - icon
+          - ''
+        -
+          - color
+          - ''
+        -
+          - default
+          - ''
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Dropdown
+warning: null

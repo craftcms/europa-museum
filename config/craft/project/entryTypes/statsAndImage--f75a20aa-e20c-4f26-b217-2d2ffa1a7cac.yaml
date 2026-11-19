@@ -1,0 +1,166 @@
+allowLineBreaksInTitles: false
+color: teal
+description: null
+fieldLayouts:
+  b00121d3-e692-4fad-9a4d-14069ec52bf4:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:c1bc74c3-49bc-4f9c-8fec-5a73f3526e49'
+      - 'layoutElement:56ef9542-a4c8-4d4d-8550-5ed52750e8ae'
+    tabs:
+      - elementCondition: null
+        elements:
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: c1bc74c3-49bc-4f9c-8fec-5a73f3526e49
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: eb7b8bc9-c07a-4a25-9201-8174bd70fcb9 # Description
+            handle: null
+            instructions: null
+            label: Description
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 56ef9542-a4c8-4d4d-8550-5ed52750e8ae
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Image
+            handle: null
+            instructions: null
+            label: Image
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 290ed74f-8e1a-4f1c-854a-a04e25db912b
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 55c6cb51-defc-4e30-bc18-e524de65b7b7 # Link Destination
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 71306902-1f79-4286-a4bc-77778f2a5c32
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-20T01:00:00+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: dd12e872-1613-4204-a87c-832158f07b67
+            userCondition: null
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4c127ec9-df18-4d62-bd02-cf8b5044f7ea # Stat Label
+            handle: statLabelLeft
+            instructions: null
+            label: 'Left Stat Label'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 675e92cb-65e0-414e-873c-b8d2dfd898d2
+            userCondition: null
+            warning: null
+            width: 50
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7cce3872-9055-454a-8fdc-45cbccec785b # Stat Value
+            handle: statValueLeft
+            instructions: null
+            label: 'Left Stat Value'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 6978fbab-a7bb-48b0-9bff-28027d87682c
+            userCondition: null
+            warning: null
+            width: 50
+          - dateAdded: '2025-11-20T01:43:42+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: eaaf5fa9-c100-46bb-ba11-33643df520c7
+            userCondition: null
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4c127ec9-df18-4d62-bd02-cf8b5044f7ea # Stat Label
+            handle: statLabelRight
+            instructions: null
+            label: 'Right Stat Label'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 580f7c2b-26fb-45b7-bc28-57fd026a7285
+            userCondition: null
+            warning: null
+            width: 50
+          - dateAdded: '2025-11-19T21:32:27+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 7cce3872-9055-454a-8fdc-45cbccec785b # Stat Value
+            handle: statValueRight
+            instructions: null
+            label: 'Right Stat Value'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: d71530d9-7dcd-499a-a414-55c578362a4c
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: 31b86478-b2de-4194-b7d1-91b6c0434033
+        userCondition: null
+    thumbFieldKey: 'layoutElement:290ed74f-8e1a-4f1c-854a-a04e25db912b'
+handle: statsAndImage
+hasTitleField: false
+icon: projector
+name: 'Stats and Image'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

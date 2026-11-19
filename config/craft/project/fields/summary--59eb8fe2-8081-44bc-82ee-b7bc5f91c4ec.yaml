@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: summary
+instructions: 'Short summary for News page and RSS feed.'
+name: Summary
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 1
+  multiline: true
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\PlainText
+warning: null

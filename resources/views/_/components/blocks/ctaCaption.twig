@@ -1,0 +1,44 @@
+{% set isFirst = isFirst ? 'isFirst' : '' %}
+
+{% set linkIcon = theBlock.linkIcon %}
+
+<div class="content-block cta-caption-block {{ isFirst }} {% if linkIcon %}has-icon{% endif %} {{ theBlock.layoutWidth }}" data-scroll-section>
+
+    <div class="caption-container">
+
+        <div class="text">
+
+            {% if theBlock.heading %}
+                <span class="caption-heading">
+                    {{ theBlock.heading }}
+                </span>
+
+                {% if theBlock.details %}
+
+                    &mdash;
+
+                    <span class="information">
+                        {{ theBlock.details }}
+                    </span>
+                {% endif %}
+
+            {% endif %}
+
+        </div>
+
+
+        {% if theBlock.linkDestination %}
+            <div class="link">
+                {{ theBlock.linkDestination.getLink() }}
+
+                {% if linkIcon %}
+                    <span>
+                        {% include "_/svg/" ~ linkIcon ignore missing %}
+                    </span>
+                {% endif %}
+            </div>
+        {% endif %}
+
+    </div>
+
+</div>

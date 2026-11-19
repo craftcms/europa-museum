@@ -1,0 +1,59 @@
+{
+  "src/css/site.scss": {
+    "file": "assets/site-CP3BcPfy.css",
+    "name": "site",
+    "names": [
+      "site.css"
+    ],
+    "src": "src/css/site.scss",
+    "isEntry": true,
+    "assets": [
+      "assets/Poppins-VariableFont_wght-subset-Ca-jvqpD.woff2",
+      "assets/Poppins-VariableFont_wght-subset-DJJJ7Osr.ttf",
+      "assets/Poppins-Italic-VariableFont_wght-subset-BP2dImn8.woff2",
+      "assets/Poppins-Italic-VariableFont_wght-subset-CK-gnHqd.ttf",
+      "assets/NotoSerifDisplay-Regular-C7rRanvJ.woff2",
+      "assets/NotoSerifDisplay-Regular-DdL4L2XU.woff",
+      "assets/NotoSerifDisplay-Italic-CEjS__ll.woff2",
+      "assets/NotoSerifDisplay-Italic-BOGQIoeb.woff"
+    ]
+  },
+  "src/fonts/noto-serif-display/NotoSerifDisplay-Italic.woff": {
+    "file": "assets/NotoSerifDisplay-Italic-BOGQIoeb.woff",
+    "src": "src/fonts/noto-serif-display/NotoSerifDisplay-Italic.woff"
+  },
+  "src/fonts/noto-serif-display/NotoSerifDisplay-Italic.woff2": {
+    "file": "assets/NotoSerifDisplay-Italic-CEjS__ll.woff2",
+    "src": "src/fonts/noto-serif-display/NotoSerifDisplay-Italic.woff2"
+  },
+  "src/fonts/noto-serif-display/NotoSerifDisplay-Regular.woff": {
+    "file": "assets/NotoSerifDisplay-Regular-DdL4L2XU.woff",
+    "src": "src/fonts/noto-serif-display/NotoSerifDisplay-Regular.woff"
+  },
+  "src/fonts/noto-serif-display/NotoSerifDisplay-Regular.woff2": {
+    "file": "assets/NotoSerifDisplay-Regular-C7rRanvJ.woff2",
+    "src": "src/fonts/noto-serif-display/NotoSerifDisplay-Regular.woff2"
+  },
+  "src/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.ttf": {
+    "file": "assets/Poppins-Italic-VariableFont_wght-subset-CK-gnHqd.ttf",
+    "src": "src/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.ttf"
+  },
+  "src/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.woff2": {
+    "file": "assets/Poppins-Italic-VariableFont_wght-subset-BP2dImn8.woff2",
+    "src": "src/fonts/poppins/Poppins-Italic-VariableFont_wght-subset.woff2"
+  },
+  "src/fonts/poppins/Poppins-VariableFont_wght-subset.ttf": {
+    "file": "assets/Poppins-VariableFont_wght-subset-DJJJ7Osr.ttf",
+    "src": "src/fonts/poppins/Poppins-VariableFont_wght-subset.ttf"
+  },
+  "src/fonts/poppins/Poppins-VariableFont_wght-subset.woff2": {
+    "file": "assets/Poppins-VariableFont_wght-subset-Ca-jvqpD.woff2",
+    "src": "src/fonts/poppins/Poppins-VariableFont_wght-subset.woff2"
+  },
+  "src/js/site.js": {
+    "file": "assets/site-CLkrlfwo.js",
+    "name": "site",
+    "src": "src/js/site.js",
+    "isEntry": true
+  }
+}

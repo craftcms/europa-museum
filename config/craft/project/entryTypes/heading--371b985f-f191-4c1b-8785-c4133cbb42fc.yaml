@@ -1,0 +1,70 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  43071b8b-6243-4eea-b70b-e6122dd5a909:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:db91b6bf-05af-4356-b713-a66592a119bd'
+    tabs:
+      - elementCondition: null
+        elements:
+          - autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
+            uid: 5a14bd05-9494-4838-b58a-84fa6f99f52b
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: null
+            instructions: null
+            label: __blank__
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: db91b6bf-05af-4356-b713-a66592a119bd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f6fd8c78-a3eb-4219-8c73-55c6c89c190c
+        userCondition: null
+    thumbFieldKey: null
+handle: heading
+hasTitleField: false
+icon: text
+name: Heading
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

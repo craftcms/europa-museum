@@ -1,0 +1,16 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - uid: 314b3f54-9fff-4a26-9a2c-37da224085fb # Navigation
+handle: navigation
+maxAuthors: 1
+minAuthors: 1
+name: Navigation
+propagationMethod: all
+siteSettings:
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: single

@@ -1,0 +1,19 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - uid: 5bd803f3-dec3-41e6-b829-f90b49ac8dd3 # About
+handle: about
+maxAuthors: 1
+minAuthors: 1
+name: About
+previewTargets:
+  - label: 'Primary entry page'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/about
+    uriFormat: about
+type: single

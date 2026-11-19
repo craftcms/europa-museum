@@ -1,0 +1,141 @@
+allowLineBreaksInTitles: false
+color: teal
+description: null
+fieldLayouts:
+  6f1b2935-dba4-460d-be70-b29a7aa0aa60:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:056f209b-7979-4291-8553-6faa4b0e49a1'
+    generatedFields:
+      - handle: headingCombined
+        name: 'Combined Heading'
+        template: "{{ [headingPre, heading, headingSub] | filter | join(' ') }}"
+        uid: ad7d4d29-a34a-4802-b881-0a8900b96a7c
+    tabs:
+      - elementCondition: null
+        elements:
+          - dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: dad3b3bd-ab3c-486d-a552-b3cc718f8e1c # Image
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 016d6fd9-8677-47f0-8771-a220936b734b
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: headingPre
+            instructions: null
+            label: Pre-heading
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 056f209b-7979-4291-8553-6faa4b0e49a1
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 11fe54a4-5984-413c-95c8-900925b8a814
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c # Heading
+            handle: headingSub
+            instructions: null
+            label: 'Sub Heading'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 123f3984-590d-41e3-a874-2c477b21c0e0
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:21:08+00:00'
+            dismissible: true
+            elementCondition: null
+            style: tip
+            tip: 'You can output a complete heading using the `headingCombined` [generated field](https://craftcms.com/docs/5.x/system/elements.html#generated-fields).'
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Tip
+            uid: 4e648207-8c73-413d-9cf4-6139a33811e4
+            userCondition: null
+          - dateAdded: '2025-11-19T21:21:41+00:00'
+            elementCondition: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\HorizontalRule
+            uid: a1296ebc-2185-480d-bdad-93c9d4d99dba
+            userCondition: null
+          - dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Text Color Scheme
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 86f23cc1-2e98-47e1-9a05-ba947ade11f1
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-19T21:14:59+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 913eb47c-ce43-4325-bb3a-1f5d99065038 # Highlight Text
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 7c92a655-fcc1-4f32-abb6-86ef8213a8d1
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: c7e1b071-3935-47c7-9acf-9c6f3d7f595e
+        userCondition: null
+    thumbFieldKey: 'layoutElement:016d6fd9-8677-47f0-8771-a220936b734b'
+handle: imageAndHeadings
+hasTitleField: false
+icon: image
+name: 'Image and Headings'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

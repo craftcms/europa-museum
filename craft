@@ -1,14 +1,24 @@
 #!/usr/bin/env php
 <?php
-/**
- * Craft console bootstrap file
- */
 
-// Load shared bootstrap
-require __DIR__ . '/bootstrap.php';
+use Illuminate\Foundation\Application;
+use Symfony\Component\Console\Input\ArgvInput;
 
-// Load and run Craft
-/** @var craft\console\Application $app */
-$app = require CRAFT_VENDOR_PATH . '/craftcms/cms/bootstrap/console.php';
-$exitCode = $app->run();
-exit($exitCode);
+define('LARAVEL_START', microtime(true));
+
+// Register the Composer autoloader...
+require __DIR__.'/vendor/autoload.php';
+
+// Bootstrap Laravel and handle the command...
+/** @var Application $app */
+$app = require_once __DIR__.'/bootstrap/app.php';
+
+// Rebind console kernel to Craft's
+$app->singleton(
+    \Illuminate\Contracts\Console\Kernel::class,
+    \CraftCms\Cms\Console\Kernel::class,
+);
+
+$status = $app->handleCommand(new ArgvInput);
+
+exit($status);

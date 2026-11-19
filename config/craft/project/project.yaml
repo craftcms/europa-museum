@@ -1,0 +1,306 @@
+dateModified: 1795033141
+elementSources:
+  CraftCms\Cms\Asset\Elements\Asset:
+    - defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+      tableAttributes:
+        - filename
+        - size
+        - imageSize
+        - dateCreated
+        - link
+      type: native
+    - defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: cards
+      disabled: false
+      key: 'volume:39bbec04-e985-41b5-92c1-2b1aa044796e' # Resources
+      tableAttributes:
+        - filename
+        - size
+        - uploader
+        - link
+      type: native
+    - defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: temp
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - uploader
+        - link
+      type: native
+    - condition:
+        class: CraftCms\Cms\Asset\Conditions\AssetCondition
+        conditionRules:
+          - class: CraftCms\Cms\Asset\Conditions\HasAltConditionRule
+            uid: c246e07f-ce6c-4bc4-984e-84baf57bfcbe
+            value: false
+          - class: CraftCms\Cms\Asset\Conditions\VolumeConditionRule
+            operator: in
+            uid: 9fee5310-fb83-4a5a-b8d5-4b9f3e6aae75
+            values:
+              - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
+        elementType: CraftCms\Cms\Asset\Elements\Asset
+        fieldContext: global
+      defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      key: 'custom:329ad360-447f-47c5-a20e-b45e28cbf000'
+      label: 'Needs Alt Text'
+      tableAttributes:
+        - dateCreated
+        - kind
+      type: custom
+  CraftCms\Cms\Entry\Elements\Entry:
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: true
+      key: '*'
+      page: Entries
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - authors
+        - link
+      type: native
+    - defaultSort:
+        - title
+        - asc
+      defaultViewMode: cards
+      disabled: true
+      key: singles
+      page: Entries
+      tableAttributes:
+        - dateUpdated
+        - revisionCreator
+        - link
+      type: native
+    - heading: Library
+      key: 'heading:26da75a2-1e2e-4bfd-a763-b6769e8cbf02'
+      page: Entries
+      type: heading
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:647de63e-c78e-4d05-b61d-013120b49d5d' # Collection
+      page: Entries
+      tableAttributes:
+        - 'field:4e1408af-3452-4723-828d-1c779542492d' # Artist
+        - 'field:547be893-d407-44df-9142-f0ba630ce0cb' # Year
+        - 'field:71424eae-6314-46d2-8aff-8fe8be940860' # Representative Image
+      type: native
+    - condition:
+        class: CraftCms\Cms\Entry\Conditions\EntryCondition
+        conditionRules:
+          - class: CraftCms\Cms\Entry\Conditions\SectionConditionRule
+            operator: in
+            uid: aa445e89-a60f-41c4-bfef-b5f9cf2bd6a7
+            values:
+              - 977f4737-eaaa-4d0f-aadb-10251ee1c4ff # About
+              - 8f6c3046-e9ee-4df9-af84-6dc0199f01da # Contact
+              - 9d1ed50c-2239-4171-8b5a-ab121973301f # Home
+              - 0edb3240-3f53-4f13-a789-2bd0b6cae755 # Styleguide
+              - 8a02b167-35d9-4c71-bc4b-59ee401246e3 # Visit
+        elementType: CraftCms\Cms\Entry\Elements\Entry
+        fieldContext: global
+      defaultSort:
+        - title
+        - asc
+      defaultViewMode: cards
+      key: 'custom:63fcf928-a2ee-40a8-b65f-8159db404ba9'
+      label: Main
+      page: 'Landing Pages'
+      tableAttributes: '-'
+      type: custom
+    - condition:
+        class: CraftCms\Cms\Entry\Conditions\EntryCondition
+        conditionRules:
+          - class: CraftCms\Cms\Entry\Conditions\SectionConditionRule
+            operator: in
+            uid: 409caec8-2587-4a23-8bd9-3611af8ce672
+            values:
+              - 9b80c4d3-7a27-4bc4-af25-742e6cf5f77a # News
+              - b39c0003-6393-4175-8698-6edef920f7fd # Exhibitions
+        elementType: CraftCms\Cms\Entry\Elements\Entry
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: cards
+      key: 'custom:675fd404-9708-4dda-9073-80fb3db21ac1'
+      label: Feeds
+      page: 'Landing Pages'
+      tableAttributes: '-'
+      type: custom
+    - defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:666bcffb-61d7-43b4-a9f5-8c51c458b356' # News Articles
+      page: Programming
+      tableAttributes:
+        - postDate
+        - authors
+        - link
+      type: native
+    - defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:c49dac11-102e-429e-8bcc-5c8d99508dcb' # Exhibits
+      page: Programming
+      tableAttributes:
+        - dateUpdated
+        - link
+      type: native
+    - defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+      page: Taxonomies
+      tableAttributes:
+        - dateCreated
+      type: native
+elementSourcesPages:
+  craft\elements\Entry:
+    Entries:
+      icon: newspaper
+    'Landing Pages':
+      icon: diagram-subtask
+    Programming:
+      icon: calendar-lines-pen
+    Taxonomies:
+      icon: sitemap
+email:
+  fromEmail: support@craftcms.com
+  fromName: 'Europa Museum'
+  replyToEmail: null
+  template: ''
+  transportSettings:
+    encryptionMethod: ''
+    host: $SMTP_HOST
+    password: ''
+    port: $SMTP_PORT
+    timeout: '10'
+    useAuthentication: ''
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    0b3ab84a-728c-4dfa-b505-ee524b9631d9: Home # Home
+    0ba28a66-d3aa-4c97-ad77-8e26087b3d70: 'Layout Width' # Layout Width
+    0d3f8f65-dde1-4921-a575-26ade4545fc9: Slider # Slider
+    0edb3240-3f53-4f13-a789-2bd0b6cae755: Styleguide # Styleguide
+    1addbebe-4d59-4c1d-9607-6c47999665df: 'Primary Links' # Primary Links
+    2d7b7e2f-71b1-4b25-8501-c8edc07a7f18: 'Embed Code' # Embed Code
+    3a55adc2-4d73-4e46-bf0b-17ec1b567f8f: 'News Categories' # News Categories
+    03ad2302-4a79-4d90-91f8-bb515f0157d0: Styleguide # Styleguide
+    4c127ec9-df18-4d62-bd02-cf8b5044f7ea: 'Stat Label' # Stat Label
+    4e1408af-3452-4723-828d-1c779542492d: Artist # Artist
+    4ee7fd54-73f7-4abe-94e3-6c01585ca5e3: Inline # Inline
+    5bd803f3-dec3-41e6-b829-f90b49ac8dd3: About # About
+    6c31cab7-7f79-4628-b345-9a700a16a726: 'Featured Entry' # Featured Entry
+    6fb16db4-9ff1-412f-8cde-bc13843d78e8: 'CTA Caption' # CTA Caption
+    7aecb4af-681c-47ff-9160-2cc0fbddcd4e: Attribution # Attribution
+    7cce3872-9055-454a-8fdc-45cbccec785b: 'Stat Value' # Stat Value
+    8a02b167-35d9-4c71-bc4b-59ee401246e3: Visit # Visit
+    8b592bee-c976-4c83-be76-d749cc991410: 'Image Caption' # Image Caption
+    8c274864-9cf0-4ef9-b4bd-88da544515ad: Details # Details
+    8df6d29d-59a0-44ee-80e5-f69849956547: 'Text Color Scheme' # Text Color Scheme
+    8f6c3046-e9ee-4df9-af84-6dc0199f01da: Contact # Contact
+    8f9a20e9-754d-490d-baa6-b9512feafa91: 'Rich Text' # Rich Text
+    09a42c47-647a-4269-a54e-e44da2425567: Developers # Developers
+    9b80c4d3-7a27-4bc4-af25-742e6cf5f77a: News # News
+    9ba346ec-12cc-4b07-9a30-677efc6e97c1: 'Google Map Embed' # Google Map Embed
+    9d1ed50c-2239-4171-8b5a-ab121973301f: Home # Home
+    9f8a4de3-d72b-4d23-bb81-c83ef4611889: Exhibitions # Exhibitions
+    11b555a2-89cb-434c-a97c-8bf858a76326: 'Image Slides' # Image Slides
+    13b5cd9c-c5b1-40bb-8a8a-dc14815aabad: Exhibit # Exhibit
+    13b529cb-1236-4eb5-95a0-e20c2358385e: 'Entry Slides' # Entry Slides
+    19f3873e-d59d-48d0-bbee-1c25acd90c6c: News # News
+    20d3ac0c-0016-4714-9ce6-ffd91f1a0d5b: 'Europa Museum' # Europa Museum
+    39bbec04-e985-41b5-92c1-2b1aa044796e: Resources # Resources
+    40bfb363-8740-499a-82f2-6eda20cb6025: 'Vhc No Assets' # Vhc No Assets
+    42ad64e7-b07b-4601-9e6b-2d21bc0fe5d8: 'Link Icon' # Link Icon
+    51a8cdf9-2c85-4947-bdd2-aabb24f1b899: Hero # Hero
+    55c6cb51-defc-4e30-bc18-e524de65b7b7: 'Link Destination' # Link Destination
+    59eb8fe2-8081-44bc-82ee-b7bc5f91c4ec: Summary # Summary
+    079ddf1a-d985-4de2-9929-8dc87fa2047f: 'News Category' # News Category
+    81b9e710-5a36-4bb3-9b2e-f11804cfc14d: 'Date Expression' # Date Expression
+    83ef9ed9-6360-4f64-abbb-920baeb2048e: 'Featured Entry' # Featured Entry
+    89b839c5-5a0f-4d66-8c70-2a3fe6096220: Navigation # Navigation
+    314b3f54-9fff-4a26-9a2c-37da224085fb: Navigation # Navigation
+    371b985f-f191-4c1b-8785-c4133cbb42fc: Heading # Heading
+    386be967-b947-414c-8ea0-824e977d04ad: Embed # Embed
+    547be893-d407-44df-9142-f0ba630ce0cb: Year # Year
+    599f0646-f724-4ce4-a810-a8eaf7798b2d: 'Secondary Links' # Secondary Links
+    647de63e-c78e-4d05-b61d-013120b49d5d: Collection # Collection
+    666bcffb-61d7-43b4-a9f5-8c51c458b356: 'News Articles' # News Articles
+    778abb42-18bd-447c-99ae-483c775ed3bd: 'Content Blocks' # Content Blocks
+    823ac85e-6b3c-499a-bbdc-99a4e2432138: Editors # Editors
+    913eb47c-ce43-4325-bb3a-1f5d99065038: 'Highlight Text' # Highlight Text
+    977f4737-eaaa-4d0f-aadb-10251ee1c4ff: About # About
+    27881ad3-1379-497a-91a6-d495b2bbc7d1: 'Hero Title' # Hero Title
+    67193fb0-26c1-4f39-ad77-c119711a4e4a: Simple # Simple
+    71424eae-6314-46d2-8aff-8fe8be940860: 'Representative Image' # Representative Image
+    85241ed2-6bbd-4dd0-af5c-07842116ccf3: 'Color Theme' # Color Theme
+    501340bb-461c-45f4-851b-15c83b08ef13: 'Slide Type' # Slide Type
+    a4b1ac77-02b4-4121-91b4-8d3754b290d4: 'Image and Headings' # Image and Headings
+    a6cb7c13-e866-45ba-ad8e-a44c552ff6c1: 'Rich Text' # Rich Text
+    a36fa6aa-4824-448f-82cf-b3086f8582c5: Images # Images
+    a73bf239-f2f0-45ac-b84d-361e5dd1a75f: 'Pagination Count' # Pagination Count
+    aa1aa6b7-0e81-4b68-8694-ed5f543f38bc: 'Rich Text' # Rich Text
+    b39c0003-6393-4175-8698-6edef920f7fd: Exhibitions # Exhibitions
+    bd9a6c80-1abe-4747-bb3e-f5e376171eb0: 'News Category' # News Category
+    bdf1f89a-1d7d-48c3-adf5-a9006a6fcb55: Thumbnail # Thumbnail
+    beb1c87a-67bb-421f-933f-4bc3d1e125e3: 'Hero Image' # Hero Image
+    bf62232f-0516-44b1-949d-960e37bd6228: Work # Work
+    c49dac11-102e-429e-8bcc-5c8d99508dcb: Exhibits # Exhibits
+    c3286b59-368a-4fdf-8dbe-48084247c9e2: 'Featured Exhibits' # Featured Exhibits
+    c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: English # English
+    ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e: Visit # Visit
+    cdc345f6-dec9-46b7-80b5-6de7918fcdf3: 'Image Handling' # Image Handling
+    ceeaad1b-ea68-46f6-8b14-e1c219b9a828: 'Start Date' # Start Date
+    cf7038b3-3aa7-4d1f-8a12-1cf0017d5b2c: Heading # Heading
+    d703e6d3-677f-4b60-99d7-44b4710ff7bc: Contact # Contact
+    dad3b3bd-ab3c-486d-a552-b3cc718f8e1c: Image # Image
+    e3b664df-ac52-4b7c-b296-d324800c4b3c: 'Public Schema' # Public Schema
+    e6e6fbf0-a370-48de-b635-6f31bece3c9d: Mode # Mode
+    e565f693-e816-4539-8caf-a618b5637ea4: 'End Date' # End Date
+    eb7b8bc9-c07a-4a25-9201-8174bd70fcb9: Description # Description
+    eb910859-8baf-408a-ae9a-3af97b637806: 'Top Border' # Top Border
+    f4cfbdf3-fa41-42c6-99f5-d0efefc2e406: 'News Article' # News Article
+    f75a20aa-e20c-4f26-b217-2d2ffa1a7cac: 'Stats and Image' # Stats and Image
+    f36520a3-472b-40e0-8895-6f577f213037: Attachment # Attachment
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 6.0.0.0
+system:
+  edition: pro
+  name: 'Europa Museum'
+  retryDuration: null
+  schemaVersion: 6.0.0.36
+  timeZone: America/Los_Angeles

@@ -1,0 +1,86 @@
+allowLineBreaksInTitles: false
+color: orange
+description: null
+fieldLayouts:
+  317b7d36-2f97-4ffa-846f-0404ab3c6df8:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:f2f6cc8c-4b5e-408c-96cb-402677285f65'
+    tabs:
+      - elementCondition: null
+        elements:
+          - autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
+            uid: 345595f4-45af-48ce-b525-ab343fec0496
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 6c31cab7-7f79-4628-b345-9a700a16a726 # Featured Entry
+            handle: null
+            instructions: null
+            label: Entry
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: f2f6cc8c-4b5e-408c-96cb-402677285f65
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 8df6d29d-59a0-44ee-80e5-f69849956547 # Text Color Scheme
+            handle: null
+            instructions: null
+            label: 'Text Color'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: c48002d6-a933-4e50-9036-a2749de05ae3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 37762363-6e7a-4b70-a451-e81c935a203c
+        userCondition: null
+    thumbFieldKey: null
+handle: featuredEntry
+hasTitleField: false
+icon: newspaper
+name: 'Featured Entry'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

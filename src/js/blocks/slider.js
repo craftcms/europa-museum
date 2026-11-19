@@ -51,13 +51,11 @@ class SliderBlock {
         if (document.readyState === 'complete') {
 
             this.flkty.resize();
-            store.locoScroll.update();
 
         } else {
 
             window.addEventListener('load', function() {
                 _this.flkty.resize();
-                store.locoScroll.update();
             });
 
         }

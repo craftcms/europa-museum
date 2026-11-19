@@ -1,54 +1,29 @@
-# CRAFT ENVIRONMENT
-.env
-
-# COMPOSER
-/vendor
-
-# CRAFT STORAGE
-!/storage/
-/storage/*
-!/storage/rebrand/
-
-# UPLOADS
-# /web/assets/volumes
-
-# WEB
-/web/cpresources
-/web/css
-/web/images
-/web/js
-/web/fonts
-/web/mix-manifest.json
-/web/favicon.ico
-/web/manifest.json
-/web/browserconfig.xml
-
-# BUILD FILES
-/node_modules
-/yarn-error.log
-/npm-debug.log
-
-# MISC FILES
-.cache
+*.log
 .DS_Store
-.vscode
-.idea
-/web/css/site.css.map
-/web/js/site.js.map
+.env
+.env.backup
+.env.production
+.phpactor.json
+.phpunit.result.cache
+/.codex
+/.cursor/
+/.idea
+/.nova
+/.phpunit.cache
+/.vscode
+/.zed
+/auth.json
+/node_modules
+/public/hot
+/public/storage
+/public/vendor/craft
+/storage/*.key
+/storage/pail
+/vendor
+_ide_helper.php
+Homestead.json
+Homestead.yaml
+Thumbs.db
 
-# For demo infrastucture only
-!seed.sql
-!/web/assets
-!/web/css
-!/web/images
-!/web/js
-!/web/fonts
-!/web/mix-manifest.json
-!/web/favicon.ico
-!/web/manifest.json
-!/web/browserconfig.xml
-
-/submodules
-
-# LOCAL DEVELOPMENT
-docker-compose.override.yml
+# Image transforms are generated on demand
+/public/uploads/**/_*/

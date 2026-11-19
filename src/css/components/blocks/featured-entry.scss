@@ -1,3 +1,6 @@
+@use '../../shared/mixins' as *;
+@use '../../shared/vars' as *;
+
 .featured-entry-block {
 
     padding-left: 60px;
@@ -117,18 +120,6 @@
         .featured-entry-container {
             @include aspect-ratio(4 3);
         }
-
-        .title-container {
-            transform: none;
-        }
-
-    }
-
-}
-
-body.is-device {
-
-    .featured-entry-block {
 
         .title-container {
             transform: none;

@@ -1,0 +1,118 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:81699a5d-8d5f-4e26-8301-0c3da3d53770'
+    tabs:
+      - elementCondition: null
+        elements:
+          - autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-11-25T22:08:01+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
+            uid: 175c3492-224d-4668-8ad9-a288233d6053
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 079ddf1a-d985-4de2-9929-8dc87fa2047f # News Category
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 871a3951-38e5-44cc-8b2a-ef805ab21cd4
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: beb1c87a-67bb-421f-933f-4bc3d1e125e3 # Hero Image
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 5b0bca29-968a-4bba-b621-dd839742da31
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 59eb8fe2-8081-44bc-82ee-b7bc5f91c4ec # Summary
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 81699a5d-8d5f-4e26-8301-0c3da3d53770
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: '2025-11-25T22:08:01+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 778abb42-18bd-447c-99ae-483c775ed3bd # Content Blocks
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 03bb6cbc-7430-43ce-bd65-eac867237a7b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d1fc188f-f98d-423b-82b2-8080912beb4e
+        userCondition: null
+    thumbFieldKey: 'layoutElement:5b0bca29-968a-4bba-b621-dd839742da31'
+handle: newsArticle
+hasTitleField: true
+icon: radio
+name: 'News Article'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

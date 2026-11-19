@@ -1,0 +1,103 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  2d8e6b8a-86f4-4aa6-9395-a77ea8005a01:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:5e7bb16f-be3b-45e3-b2f2-be7ea021d78a'
+      - 'layoutElement:16443aa1-ee0e-471f-9fa3-f4c81a04844f'
+    tabs:
+      - elementCondition: null
+        elements:
+          - autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\Entries\EntryTitleField
+            uid: ab04437e-59dc-4f4b-84f6-50190d151c26
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 4e1408af-3452-4723-828d-1c779542492d # Artist
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 5e7bb16f-be3b-45e3-b2f2-be7ea021d78a
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 71424eae-6314-46d2-8aff-8fe8be940860 # Representative Image
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: f57b2cdc-4eba-498a-85e8-195325569989
+            userCondition: null
+            warning: null
+            width: 100
+          - dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 547be893-d407-44df-9142-f0ba630ce0cb # Year
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: CraftCms\Cms\FieldLayout\LayoutElements\CustomField
+            uid: 16443aa1-ee0e-471f-9fa3-f4c81a04844f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Attributes
+        uid: 4a828e53-e15e-46a4-b7d1-bd2f93dc97c7
+        userCondition: null
+    thumbFieldKey: 'layoutElement:f57b2cdc-4eba-498a-85e8-195325569989'
+handle: work
+hasTitleField: true
+icon: paintbrush
+name: Work
+showSlugField: false
+showStatusField: false
+slugTranslationKeyFormat: null
+slugTranslationMethod: none
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: none
+uiLabelFormat: '{title}'

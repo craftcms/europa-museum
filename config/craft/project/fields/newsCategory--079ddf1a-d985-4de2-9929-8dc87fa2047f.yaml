@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: newsCategory
+instructions: null
+name: 'News Category'
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: 1
+  defaultPlacement: end
+  maintainHierarchy: true
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSearchInput: true
+  showSiteMenu: true
+  showUnpermittedSections: true
+  sources:
+    - 'section:3a55adc2-4d73-4e46-bf0b-17ec1b567f8f' # News Categories
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Entries
+warning: null

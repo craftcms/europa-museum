@@ -1,0 +1,122 @@
+columnSuffix: null
+handle: linkDestination
+instructions: null
+name: 'Link Destination'
+searchable: true
+settings:
+  advancedFields:
+    - target
+    - rel
+    - download
+  fullGraphqlData: false
+  maxLength: 255
+  showLabelField: true
+  typeSettings:
+    __assoc__:
+      -
+        - asset
+        - __assoc__:
+            -
+              - sources
+              -
+                - 'volume:a36fa6aa-4824-448f-82cf-b3086f8582c5' # Images
+                - 'volume:39bbec04-e985-41b5-92c1-2b1aa044796e' # Resources
+            -
+              - showUnpermittedVolumes
+              - ''
+            -
+              - selectionCondition
+              - __assoc__:
+                  -
+                    - class
+                    - CraftCms\Cms\Asset\Conditions\AssetCondition
+                  -
+                    - conditionRules
+                    - __assoc__:
+                        -
+                          - operator
+                          - and
+                        -
+                          - rules
+                          -
+                            - __assoc__:
+                                -
+                                  - class
+                                  - CraftCms\Cms\Asset\Conditions\ViewableConditionRule
+                                -
+                                  - uid
+                                  - b8f06609-179a-4c6d-9888-9ffde0c4eb16
+                                -
+                                  - value
+                                  - true
+                            - __assoc__:
+                                -
+                                  - class
+                                  - CraftCms\Cms\Asset\Conditions\FileTypeConditionRule
+                                -
+                                  - uid
+                                  - b8cc0d6c-045a-4b72-85d3-9b3da7be5fb5
+                                -
+                                  - operator
+                                  - in
+                                -
+                                  - values
+                                  -
+                                    - '*'
+      -
+        - entry
+        - __assoc__:
+            -
+              - sources
+              - '*'
+            -
+              - showUnpermittedSections
+              - ''
+            -
+              - selectionCondition
+              - __assoc__:
+                  -
+                    - class
+                    - CraftCms\Cms\Entry\Conditions\EntryCondition
+                  -
+                    - conditionRules
+                    - __assoc__:
+                        -
+                          - operator
+                          - and
+                        -
+                          - rules
+                          -
+                            - __assoc__:
+                                -
+                                  - class
+                                  - CraftCms\Cms\Entry\Conditions\ViewableConditionRule
+                                -
+                                  - uid
+                                  - 7e0df572-cd9c-490a-93d9-8b8769d2b782
+                                -
+                                  - value
+                                  - true
+      -
+        - url
+        - __assoc__:
+            -
+              - allowRootRelativeUrls
+              - '1'
+            -
+              - allowAnchors
+              - '1'
+            -
+              - allowCustomSchemes
+              - ''
+  types:
+    - url
+    - asset
+    - email
+    - entry
+    - tel
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: CraftCms\Cms\Field\Link
+warning: null

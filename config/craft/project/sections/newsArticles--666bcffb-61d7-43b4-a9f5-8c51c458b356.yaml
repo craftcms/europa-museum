@@ -1,0 +1,23 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - uid: f4cfbdf3-fa41-42c6-99f5-d0efefc2e406 # News Article
+handle: newsArticles
+maxAuthors: 1
+minAuthors: 1
+name: 'News Articles'
+previewTargets:
+  - label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+  - label: 'Listing page'
+    refresh: '1'
+    urlFormat: news
+propagationMethod: all
+siteSettings:
+  c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9: # English
+    enabledByDefault: true
+    hasUrls: true
+    template: _/pages/news-article
+    uriFormat: 'news/{slug}'
+type: channel
