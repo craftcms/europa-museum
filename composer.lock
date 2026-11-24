@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a33980ad7fd703302688adfeb935d90",
+    "content-hash": "ab4658b068121bbc61de54c6d9315b33",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -883,11 +883,11 @@
         },
         {
             "name": "craftcms/ckeditor",
-            "version": "5.9.0",
+            "version": "5.10.0",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/ecd96fbd96cfb9685b60688230b26a8f3268e337",
-                "reference": "ecd96fbd96cfb9685b60688230b26a8f3268e337",
+                "url": "https://api.github.com/repos/craftcms/ckeditor/zipball/f52060aeb6e4c9e35532e50cb449c9bbc8a9a96b",
+                "reference": "f52060aeb6e4c9e35532e50cb449c9bbc8a9a96b",
                 "shasum": ""
             },
             "require": {
@@ -932,7 +932,7 @@
                 "docs": "https://github.com/craftcms/ckeditor/blob/5.x/README.md",
                 "rss": "https://github.com/craftcms/ckeditor/commits/5.x.atom"
             },
-            "time": "2026-10-06T15:00:15+00:00"
+            "time": "2026-11-24T19:00:25+00:00"
         },
         {
             "name": "craftcms/cms",

@@ -22,7 +22,7 @@
     "require": {
         "bref/bref": "^2",
         "craftcms/aws-s3": "^2.3.2",
-        "craftcms/ckeditor": "^5.5.0",
+        "craftcms/ckeditor": "^5.10.0",
         "craftcms/cms": "^5.12.3",
         "fakerphp/faker": "^1",
         "nystudio107/craft-seomatic": "^5.1.24",
