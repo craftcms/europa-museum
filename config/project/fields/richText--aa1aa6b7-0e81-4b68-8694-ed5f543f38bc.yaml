@@ -4,6 +4,7 @@ instructions: null
 name: 'Rich Text'
 searchable: true
 settings:
+  advancedLinkFields: null
   availableTransforms: ''
   availableVolumes:
     - a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
@@ -12,7 +13,7 @@ settings:
   cssFile: null
   defaultTransform: 4ee7fd54-73f7-4abe-94e3-6c01585ca5e3 # Inline
   defaultUploadLocationSubpath: null
-  defaultUploadLocationVolume: null
+  defaultUploadLocationVolume: a36fa6aa-4824-448f-82cf-b3086f8582c5 # Images
   entryTypes:
     -
       __assoc__:
@@ -24,12 +25,12 @@ settings:
           - false
   fullGraphqlData: false
   headingLevels:
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
   imageEntryTypeUid: null
   imageFieldUid: null
   imageMode: img
@@ -49,6 +50,8 @@ settings:
     - bold
     - italic
     - link
+    - '|'
+    - insertImage
   wordLimit: null
 tip: null
 translationKeyFormat: null
