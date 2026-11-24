@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict 8Wa0TLYThnsYLvqC2I5rqniLFohnnrp3ITSfPcVzRUIqNrVJcmJToZJKioF3l7r
+\restrict z2wCFYGgSQUFHlZgD40gJPNdOQNPiiGCjUF1pb3eAlG2seVHcnMcS3BgpxEY6Xw
 
 -- Dumped from database version 13.21 (Debian 13.21-1.pgdg120+1)
 -- Dumped by pg_dump version 13.23 (Debian 13.23-2.pgdg13+2)
@@ -15100,7 +15100,7 @@ COPY public.imagetransforms (id, name, handle, mode, "position", width, height, 
 --
 
 COPY public.info (id, version, "schemaVersion", maintenance, "fieldVersion", "dateCreated", "dateUpdated", uid, "configVersion") FROM stdin;
-1	5.12.0.1	5.12.0.1	f	3@oskfltmrhb	2019-11-25 23:37:04	2026-11-05 21:59:00	b11a290b-ac19-4da8-84ec-fb6620253195	jnhddbkrggfg
+1	5.12.3	5.12.0.2	f	3@oskfltmrhb	2019-11-25 23:37:04	2026-11-24 19:07:08	b11a290b-ac19-4da8-84ec-fb6620253195	ogxkexnaawtz
 \.
 
 
@@ -15579,6 +15579,7 @@ COPY public.migrations (id, name, "applyTime", "dateCreated", "dateUpdated", uid
 498	m260817_155623_AddCronExpressionToExportNotifications	2026-11-05 18:49:59	2026-11-05 18:49:59	2026-11-05 18:49:59	15c69005-e68f-4688-9cfc-1c6588756692	plugin:freeform
 499	m261014_180000_AddDuplicateCheckIdentityToSubmissions	2026-11-05 18:49:59	2026-11-05 18:49:59	2026-11-05 18:49:59	11d674f9-0b16-4c0a-8bc4-46e0c1460b7c	plugin:freeform
 500	m261022_055826_FixLegacyStatusColorColumn	2026-11-05 18:49:59	2026-11-05 18:49:59	2026-11-05 18:49:59	1df02c48-5b11-46f1-b501-7e1eda142b8b	plugin:freeform
+501	m261104_000000_snake_case_mcp_tool_names	2026-11-24 19:07:08	2026-11-24 19:07:08	2026-11-24 19:07:08	999952d9-e828-492d-9854-504b57a6cd8c	craft
 \.
 
 
@@ -15625,9 +15626,9 @@ COPY public.plugins (id, handle, version, "schemaVersion", "installDate", "dateC
 20	oembed	1.3.15	1.0.1	2020-01-15 22:49:53	2020-01-15 22:49:53	2022-03-16 13:38:16	7f74f754-24e9-47df-8b18-04d03daeae17
 25	twigpack	5.0.0	1.0.0	2022-03-11 18:48:05	2022-03-11 18:48:05	2025-11-14 20:34:08	d0f7a7d5-8020-45f7-b517-c566877e4648
 24	aws-s3	2.3.2	2.0	2022-02-22 18:46:47	2022-02-22 18:46:47	2026-11-05 18:46:09	80c4f551-7a8c-43e3-a815-20457c825a6a
-13	seomatic	5.1.22	3.0.13	2019-11-25 23:37:05	2019-11-25 23:37:05	2026-11-05 18:46:09	fbadb504-ab48-4eae-a840-785320fbeb41
 26	ckeditor	5.9.0	5.6.0.0	2024-02-05 20:35:46	2024-02-05 20:35:46	2026-11-05 18:49:58	99a71ffe-9fa6-4df2-acd1-993892a1768b
 4	freeform	5.17.7	5.17.4	2019-11-25 23:37:04	2019-11-25 23:37:04	2026-11-05 18:49:59	dbce5e9f-3a16-4ec0-8858-92c770324088
+13	seomatic	5.1.24	3.0.13	2019-11-25 23:37:05	2019-11-25 23:37:05	2026-11-24 19:03:17	fbadb504-ab48-4eae-a840-785320fbeb41
 \.
 
 
@@ -15801,7 +15802,6 @@ elementSourcesPages.craft\\elements\\Entry.Entries.icon	"newspaper"
 elementSourcesPages.craft\\elements\\Entry.Landing Pages.icon	"diagram-subtask"
 elementSourcesPages.craft\\elements\\Entry.Programming.icon	"calendar-lines-pen"
 elementSourcesPages.craft\\elements\\Entry.Taxonomies.icon	"sitemap"
-dateModified	1793915940
 elementSources.craft\\elements\\Entry.0.defaultSort.0	"postDate"
 elementSources.craft\\elements\\Entry.0.defaultSort.1	"desc"
 elementSources.craft\\elements\\Entry.0.defaultViewMode	""
@@ -16314,6 +16314,7 @@ sections.666bcffb-61d7-43b4-a9f5-8c51c458b356.siteSettings.c42694e0-26f4-46d0-9f
 sections.666bcffb-61d7-43b4-a9f5-8c51c458b356.type	"channel"
 sections.3a55adc2-4d73-4e46-bf0b-17ec1b567f8f.defaultPlacement	"end"
 sections.3a55adc2-4d73-4e46-bf0b-17ec1b567f8f.enableVersioning	true
+entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.icon	"window-frame"
 sections.3a55adc2-4d73-4e46-bf0b-17ec1b567f8f.entryTypes.0.uid	"bd9a6c80-1abe-4747-bb3e-f5e376171eb0"
 sections.3a55adc2-4d73-4e46-bf0b-17ec1b567f8f.handle	"newsCategories"
 sections.3a55adc2-4d73-4e46-bf0b-17ec1b567f8f.maxAuthors	1
@@ -16359,7 +16360,6 @@ sections.8a02b167-35d9-4c71-bc4b-59ee401246e3.siteSettings.c42694e0-26f4-46d0-9f
 sections.8a02b167-35d9-4c71-bc4b-59ee401246e3.siteSettings.c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9.template	"_/pages/visit"
 sections.8a02b167-35d9-4c71-bc4b-59ee401246e3.siteSettings.c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9.uriFormat	"visit"
 sections.8a02b167-35d9-4c71-bc4b-59ee401246e3.type	"single"
-system.schemaVersion	"5.12.0.1"
 plugins.ckeditor.schemaVersion	"5.6.0.0"
 plugins.freeform.schemaVersion	"5.17.4"
 entryTypes.03ad2302-4a79-4d90-91f8-bb515f0157d0.showSlugField	true
@@ -16380,6 +16380,8 @@ entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.0.elements.0.instructions	null
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.0.elements.0.label	null
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.0.elements.0.oldFieldUid	null
+system.schemaVersion	"5.12.0.2"
+dateModified	1795546366
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.0.elements.0.tip	null
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.0.elements.0.type	"craft\\\\fieldlayoutelements\\\\CustomField"
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.0.elements.0.uid	"56b8cad3-9e11-4ed2-97df-9d4f36987e99"
@@ -17036,7 +17038,6 @@ entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.fieldLayouts.3a8c8c59-0ff6-482b-
 entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.fieldLayouts.3a8c8c59-0ff6-482b-b984-2c5956ebfa9f.tabs.1.uid	"e56c297f-2cfb-4e67-b952-d4d0a95a80a9"
 entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.fieldLayouts.3a8c8c59-0ff6-482b-b984-2c5956ebfa9f.tabs.1.userCondition	null
 entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.fieldLayouts.3a8c8c59-0ff6-482b-b984-2c5956ebfa9f.thumbFieldKey	null
-entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.icon	"window-frame"
 entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.name	"Exhibitions"
 entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.showSlugField	true
 entryTypes.9f8a4de3-d72b-4d23-bb81-c83ef4611889.showStatusField	true
@@ -17090,6 +17091,7 @@ entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.fieldLayouts.268b8d62-05d6-417a-
 entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.fieldLayouts.268b8d62-05d6-417a-9a6b-ed707ea8dd4b.tabs.0.elements.1.required	false
 entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.fieldLayouts.268b8d62-05d6-417a-9a6b-ed707ea8dd4b.tabs.0.elements.1.tip	null
 entryTypes.371b985f-f191-4c1b-8785-c4133cbb42fc.titleTranslationMethod	"site"
+entryTypes.386be967-b947-414c-8ea0-824e977d04ad.color	null
 entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.fieldLayouts.268b8d62-05d6-417a-9a6b-ed707ea8dd4b.tabs.0.elements.1.type	"craft\\\\fieldlayoutelements\\\\CustomField"
 entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.fieldLayouts.268b8d62-05d6-417a-9a6b-ed707ea8dd4b.tabs.0.elements.1.uid	"85c4431d-c47e-4f71-be6f-822a361ea08f"
 entryTypes.13b5cd9c-c5b1-40bb-8a8a-dc14815aabad.fieldLayouts.268b8d62-05d6-417a-9a6b-ed707ea8dd4b.tabs.0.elements.1.userCondition	null
@@ -17502,7 +17504,6 @@ entryTypes.371b985f-f191-4c1b-8785-c4133cbb42fc.slugTranslationKeyFormat	null
 entryTypes.371b985f-f191-4c1b-8785-c4133cbb42fc.slugTranslationMethod	"site"
 entryTypes.371b985f-f191-4c1b-8785-c4133cbb42fc.titleFormat	null
 entryTypes.371b985f-f191-4c1b-8785-c4133cbb42fc.titleTranslationKeyFormat	null
-entryTypes.386be967-b947-414c-8ea0-824e977d04ad.color	null
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.description	null
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-99ce-02ab032ec5f5.cardThumbAlignment	"end"
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-99ce-02ab032ec5f5.cardView.0	"layoutElement:03178f87-bb08-47b2-9bdb-fb5d23d2827d"
@@ -17552,6 +17553,7 @@ entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-99ce-02ab032ec5f5.tabs.0.elements.1.width	100
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-99ce-02ab032ec5f5.tabs.0.name	"Content"
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.color	null
+entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.description	null
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-99ce-02ab032ec5f5.tabs.0.uid	"e2c0abf4-734d-4c22-bde5-d4c88e065840"
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-99ce-02ab032ec5f5.tabs.0.userCondition	null
 entryTypes.386be967-b947-414c-8ea0-824e977d04ad.fieldLayouts.5bb81956-9103-4bdb-99ce-02ab032ec5f5.thumbFieldKey	null
@@ -17703,7 +17705,6 @@ entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.titleTranslationKeyFormat	null
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.titleTranslationMethod	"site"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.uiLabelFormat	"{title}"
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.allowLineBreaksInTitles	false
-entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.description	null
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.fieldLayouts.e80a0f08-da8a-4d90-98bc-ca1a1cd3376f.cardThumbAlignment	"end"
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.fieldLayouts.e80a0f08-da8a-4d90-98bc-ca1a1cd3376f.tabs.0.elementCondition	null
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.fieldLayouts.e80a0f08-da8a-4d90-98bc-ca1a1cd3376f.tabs.0.elements.0.autocapitalize	true
@@ -17759,6 +17760,7 @@ entryTypes.bf62232f-0516-44b1-949d-960e37bd6228.fieldLayouts.2d8e6b8a-86f4-4aa6-
 entryTypes.bf62232f-0516-44b1-949d-960e37bd6228.fieldLayouts.2d8e6b8a-86f4-4aa6-9395-a77ea8005a01.tabs.0.elements.0.autocapitalize	true
 entryTypes.bf62232f-0516-44b1-949d-960e37bd6228.fieldLayouts.2d8e6b8a-86f4-4aa6-9395-a77ea8005a01.tabs.0.elements.0.autocomplete	false
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.handle	"visit"
+entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.icon	"door-open"
 entryTypes.bf62232f-0516-44b1-949d-960e37bd6228.fieldLayouts.2d8e6b8a-86f4-4aa6-9395-a77ea8005a01.tabs.0.elements.0.autocorrect	true
 entryTypes.bf62232f-0516-44b1-949d-960e37bd6228.fieldLayouts.2d8e6b8a-86f4-4aa6-9395-a77ea8005a01.tabs.0.elements.0.class	null
 entryTypes.bf62232f-0516-44b1-949d-960e37bd6228.fieldLayouts.2d8e6b8a-86f4-4aa6-9395-a77ea8005a01.tabs.0.elements.0.dateAdded	null
@@ -17910,7 +17912,6 @@ entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.1.uid	"c7e2b4e0-3126-4862-b821-869071a0fc9e"
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.tabs.1.userCondition	null
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.fieldLayouts.c266fd55-9906-470d-b73b-a1e12e86bb69.thumbFieldKey	null
-entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.icon	"door-open"
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.name	"Visit"
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.showSlugField	true
 entryTypes.ccf2030d-2ade-4d8c-9a90-4f50b2ffd37e.showStatusField	true
@@ -17963,6 +17964,7 @@ entryTypes.d703e6d3-677f-4b60-99d7-44b4710ff7bc.fieldLayouts.435a9c09-fba5-4a0f-
 entryTypes.d703e6d3-677f-4b60-99d7-44b4710ff7bc.fieldLayouts.435a9c09-fba5-4a0f-99d7-137fe73929f1.tabs.1.elementCondition	null
 entryTypes.d703e6d3-677f-4b60-99d7-44b4710ff7bc.fieldLayouts.435a9c09-fba5-4a0f-99d7-137fe73929f1.tabs.1.elements.0.dateAdded	"2025-11-18T01:03:14+00:00"
 entryTypes.d703e6d3-677f-4b60-99d7-44b4710ff7bc.fieldLayouts.435a9c09-fba5-4a0f-99d7-137fe73929f1.tabs.1.elements.0.editCondition	null
+fields.8df6d29d-59a0-44ee-80e5-f69849956547.name	"Text Color Scheme"
 entryTypes.d703e6d3-677f-4b60-99d7-44b4710ff7bc.fieldLayouts.435a9c09-fba5-4a0f-99d7-137fe73929f1.tabs.1.elements.0.elementCondition	null
 entryTypes.d703e6d3-677f-4b60-99d7-44b4710ff7bc.fieldLayouts.435a9c09-fba5-4a0f-99d7-137fe73929f1.tabs.1.elements.0.elementEditCondition	null
 entryTypes.d703e6d3-677f-4b60-99d7-44b4710ff7bc.fieldLayouts.435a9c09-fba5-4a0f-99d7-137fe73929f1.tabs.1.elements.0.fieldUid	"c8da1bd9-67c9-402f-8a95-aeaec337e207"
@@ -18017,6 +18019,7 @@ entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.0.placeholder	null
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.0.readonly	false
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.0.required	true
+fields.8df6d29d-59a0-44ee-80e5-f69849956547.searchable	false
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.0.size	null
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.0.step	null
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.0.tip	null
@@ -18211,6 +18214,7 @@ entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.instructions	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.label	"Left Stat Label"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.oldFieldUid	null
+fields.1addbebe-4d59-4c1d-9607-6c47999665df.settings.defaultPlacement	"end"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.required	false
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.tip	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.5.type	"craft\\\\fieldlayoutelements\\\\CustomField"
@@ -18257,6 +18261,7 @@ entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.8.width	50
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.9.dateAdded	"2025-11-19T21:32:27+00:00"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.9.editCondition	null
+fields.8df6d29d-59a0-44ee-80e5-f69849956547.instructions	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.9.elementCondition	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.9.elementEditCondition	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.9.fieldUid	"7cce3872-9055-454a-8fdc-45cbccec785b"
@@ -18322,7 +18327,6 @@ fields.1addbebe-4d59-4c1d-9607-6c47999665df.name	"Primary Links"
 fields.1addbebe-4d59-4c1d-9607-6c47999665df.searchable	true
 fields.1addbebe-4d59-4c1d-9607-6c47999665df.settings.allowSelfRelations	false
 fields.1addbebe-4d59-4c1d-9607-6c47999665df.settings.branchLimit	null
-fields.1addbebe-4d59-4c1d-9607-6c47999665df.settings.defaultPlacement	"end"
 fields.1addbebe-4d59-4c1d-9607-6c47999665df.settings.maintainHierarchy	false
 fields.1addbebe-4d59-4c1d-9607-6c47999665df.settings.maxRelations	null
 fields.1addbebe-4d59-4c1d-9607-6c47999665df.settings.minRelations	null
@@ -18487,9 +18491,6 @@ fields.8c274864-9cf0-4ef9-b4bd-88da544515ad.type	"craft\\\\fields\\\\PlainText"
 fields.8c274864-9cf0-4ef9-b4bd-88da544515ad.warning	null
 fields.8df6d29d-59a0-44ee-80e5-f69849956547.columnSuffix	null
 fields.8df6d29d-59a0-44ee-80e5-f69849956547.handle	"textColor"
-fields.8df6d29d-59a0-44ee-80e5-f69849956547.instructions	null
-fields.8df6d29d-59a0-44ee-80e5-f69849956547.name	"Text Color Scheme"
-fields.8df6d29d-59a0-44ee-80e5-f69849956547.searchable	false
 fields.8df6d29d-59a0-44ee-80e5-f69849956547.settings.customOptions	false
 fields.8df6d29d-59a0-44ee-80e5-f69849956547.settings.options.0.__assoc__.0.0	"label"
 fields.8df6d29d-59a0-44ee-80e5-f69849956547.settings.options.0.__assoc__.0.1	"Dark"
@@ -19800,6 +19801,7 @@ volumes.a36fa6aa-4824-448f-82cf-b3086f8582c5.transformSubpath	""
 --
 
 COPY public.queue (id, job, description, "timePushed", ttr, delay, priority, "dateReserved", "timeUpdated", progress, "progressLabel", attempt, fail, "dateFailed", error, channel) FROM stdin;
+38051	\\x4f3a34383a22536f6c73706163655c46726565666f726d5c4a6f62735c5075726765556e66696e616c697a65644173736574734a6f62223a343a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a333a22616765223b693a3138303b7d	Freeform: Purging Unfinalized Assets	1795547077	300	0	1024	\N	\N	0	\N	\N	f	\N	\N	queue
 \.
 
 
@@ -23502,6 +23504,7 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 119	slug	0	1		
 119	field	6	1	 new wing is now open colors yearly museum pass winter night tours 	'colors' 'is' 'museum' 'new' 'night' 'now' 'open' 'pass' 'tours' 'wing' 'winter' 'yearly'
 330	extension	0	2	 jpg 	'jpg'
+17	slug	0	1		
 330	kind	0	2	 image 	'image'
 330	slug	0	2		
 355	field	36	2		
@@ -23560,6 +23563,10 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 264	field	64	1	 vincent van gogh google art project 	'art' 'gogh' 'google' 'project' 'van' 'vincent'
 278	field	64	1	 google art project 454045 	'454045' 'art' 'google' 'project'
 278	field	64	2	 google art project 454045 	'454045' 'art' 'google' 'project'
+17	title	0	1	 wheatfield under thunderclouds 	'thunderclouds' 'under' 'wheatfield'
+98	field	64	2	 yuya hata https unsplash com themirraz 	'com' 'hata' 'https' 'themirraz' 'unsplash' 'yuya'
+98	field	64	1	 yuya hata https unsplash com themirraz 	'com' 'hata' 'https' 'themirraz' 'unsplash' 'yuya'
+206995	title	0	2	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
 662	field	38	2	 dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium 	'accusantium' 'anim' 'culpa' 'cupidatat' 'deserunt' 'dolore' 'doloremque' 'error' 'est' 'eu' 'excepteur' 'fugiat' 'id' 'in' 'iste' 'laborum' 'laudantium' 'mollit' 'natus' 'non' 'nulla' 'occaecat' 'officia' 'omnis' 'pariatur' 'perspiciatis' 'proident' 'qui' 'sed' 'sint' 'sit' 'sunt' 'unde' 'ut' 'voluptatem'
 662	field	53	2		
 662	field	52	2	 imageleft 	'imageleft'
@@ -23618,10 +23625,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 17	extension	0	1	 jpeg 	'jpeg'
 17	kind	0	1	 image 	'image'
 17	alt	0	1	 van goghs 1890 painting wheatfield under thunderclouds 	'1890' 'goghs' 'painting' 'thunderclouds' 'under' 'van' 'wheatfield'
-17	slug	0	1		
-17	title	0	1	 wheatfield under thunderclouds 	'thunderclouds' 'under' 'wheatfield'
-98	field	64	2	 yuya hata https unsplash com themirraz 	'com' 'hata' 'https' 'themirraz' 'unsplash' 'yuya'
-98	field	64	1	 yuya hata https unsplash com themirraz 	'com' 'hata' 'https' 'themirraz' 'unsplash' 'yuya'
 94	filename	0	2	 dresden war triptych quiet contemplation jpg 	'contemplation' 'dresden' 'jpg' 'quiet' 'triptych' 'war'
 94	extension	0	2	 jpg 	'jpg'
 94	kind	0	2	 image 	'image'
@@ -23666,6 +23669,10 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 527	field	53	1		
 294	field	38	1	 upcoming exhibits new exhibits are previewed at our winter gala 	'are' 'at' 'exhibits' 'gala' 'new' 'our' 'previewed' 'upcoming' 'winter'
 663	field	53	1		
+54	field	4	1	 hero exhibitions 	'exhibitions' 'hero'
+8	field	67	1		
+206995	field	63	2	 vassily kandinsky 	'kandinsky' 'vassily'
+207013	field	8	1		
 211644	field	28	1	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
 211644	field	2	1	 sed eiusmod tempor encodidunt ut labore lore magna aliqua consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo velit esse cillum dolore eu fugiat nulla pariatur excepteur sint full full lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum odio orci at diam iaculis vivamus velit morbi nunc imperdiet dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium as you traverse the connecting hallway between the new and old wings you will see a gradual transition in architectural style 1 full full duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nulla aenean libero eu purus egestas convallis orci ullamcorper consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 	'1' 'a' 'ab' 'accusantium' 'aden' 'adipiscing' 'adipisicing' 'aenean' 'aliqua' 'aliquip' 'amet' 'and' 'anim' 'aperiam' 'architecto' 'architectural' 'as' 'at' 'aute' 'beatae' 'between' 'cillum' 'connecting' 'consectetur' 'consequat' 'convallis' 'culpa' 'cupidatat' 'deserunt' 'diam' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'egestas' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'full' 'gradual' 'hallway' 'iaculis' 'id' 'illo' 'imperdiet' 'in' 'incididunt' 'inventore' 'ipsa' 'ipsum' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'libero' 'lore' 'lorem' 'magna' 'minim' 'modo' 'mollit' 'morbi' 'natus' 'new' 'nisi' 'non' 'nostrud' 'nulla' 'nunc' 'occaecat' 'odio' 'officia' 'old' 'omnis' 'orci' 'pariatur' 'perspiciatis' 'proident' 'purus' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'sed' 'see' 'sint' 'sit' 'style' 'sunt' 'tempor' 'the' 'totam' 'transition' 'traverse' 'ullamco' 'ullamcorper' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'vivamus' 'voluptate' 'voluptatem' 'will' 'wings' 'you'
 528	field	42	1	 company overview press contact media assets board staff bios 	'assets' 'bios' 'board' 'company' 'contact' 'media' 'overview' 'press' 'staff'
@@ -23706,6 +23713,16 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 65	slug	0	1		
 65	field	10	1	 exhibitions visit 	'exhibitions' 'visit'
 65	field	11	1	 news about contact 	'about' 'contact' 'news'
+103	field	28	1	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
+103	field	2	1		
+207013	field	46	1		
+206995	field	63	1	 vassily kandinsky 	'kandinsky' 'vassily'
+206995	slug	0	1	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
+206995	title	0	1	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
+207013	field	6	1		
+207013	field	27	1	 1 	'1'
+207013	field	35	1		
+662	title	0	1		
 39	field	24	1	 1 0 22 field field seomatic meta seotitle seomatic meta seodescription seomatic meta seoimagedescription seomatic meta seotitle seomatic meta seodescription seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 fromcustom sameasglobal fromcustom fromcustom fromasset 1 crop fromcustom sameassite sameasseo sameasglobal sameasseo sameasseo 1 crop sameasseo sameasseo sameasglobal sameasseo sameasseo 1 crop sameasseo 	'0' '1' '22' 'card' 'crop' 'downgrade' 'europa' 'facebook' 'field' 'fromasset' 'fromcustom' 'frontendtemplatecontainer' 'general' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassite' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'tag' 'tags' 'title' 'twitter' 'when'
 1	slug	0	1	 home 	'home'
 1	title	0	1	 home 	'home'
@@ -23734,10 +23751,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 63	field	24	1	 1 0 22 field field europa museum no referrer when downgrade general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 fromcustom fromcustom fromcustom fromasset 1 crop fromcustom 1 crop 1 crop 	'0' '1' '22' 'card' 'crop' 'downgrade' 'europa' 'facebook' 'field' 'fromasset' 'fromcustom' 'frontendtemplatecontainer' 'general' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'nystudio107' 'opengraph' 'referrer' 'script' 'seomatic' 'tag' 'tags' 'title' 'twitter' 'when'
 8	slug	0	1	 robert delaunay 	'delaunay' 'robert'
 8	title	0	1	 robert delaunay 	'delaunay' 'robert'
-54	field	4	1	 hero exhibitions 	'exhibitions' 'hero'
-8	field	67	1		
-103	field	28	1	 lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	'ad' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'commodo' 'consectetur' 'consequat' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'enim' 'et' 'ex' 'exercitation' 'incididunt' 'ipsum' 'labore' 'laboris' 'lorem' 'magna' 'minim' 'nisi' 'nostrud' 'quis' 'sed' 'sit' 'tempor' 'ullamco' 'ut' 'veniam'
-103	field	2	1		
 54	field	24	1	 1 0 22 field field europa museum no referrer when downgrade general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 fromcustom fromcustom fromcustom fromasset 1 crop fromcustom 1 crop 1 crop 	'0' '1' '22' 'card' 'crop' 'downgrade' 'europa' 'facebook' 'field' 'fromasset' 'fromcustom' 'frontendtemplatecontainer' 'general' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'nystudio107' 'opengraph' 'referrer' 'script' 'seomatic' 'tag' 'tags' 'title' 'twitter' 'when'
 56	field	4	1	 marc olivier jodoin en fca jh hqj8 unsplash 	'en' 'fca' 'hqj8' 'jh' 'jodoin' 'marc' 'olivier' 'unsplash'
 99	field	25	2	 tickets 	'tickets'
@@ -23766,6 +23779,9 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 211179	title	0	1	 home 	'home'
 211179	field	58	1	 the museum for euro art 	'art' 'euro' 'for' 'museum' 'the'
 211179	field	57	1	 van gogh the roman empire robert delaunay wassily kandinsky 	'delaunay' 'empire' 'gogh' 'kandinsky' 'robert' 'roman' 'the' 'van' 'wassily'
+380	filename	0	1	 europa interior main stair jpg 	'europa' 'interior' 'jpg' 'main' 'stair'
+613	field	64	1	 flipboard https unsplash com flipboard 	'com' 'flipboard' 'https' 'unsplash'
+382	filename	0	2	 europa interior pavilion jpg 	'europa' 'interior' 'jpg' 'pavilion'
 211179	field	2	1	 winter night tours our exhibits robert delaunay wassily kandinsky the roman empire van gogh normal normal light light visit us today new exhibits will be released throughout the winter period europa courtyard artworks 1k floors 5 latest news new wing is now open colors yearly museum pass winter night tours normal normal light light 	'1k' '5' 'artworks' 'be' 'colors' 'courtyard' 'delaunay' 'empire' 'europa' 'exhibits' 'floors' 'gogh' 'is' 'kandinsky' 'latest' 'light' 'museum' 'new' 'news' 'night' 'normal' 'now' 'open' 'our' 'pass' 'period' 'released' 'robert' 'roman' 'the' 'throughout' 'today' 'tours' 'us' 'van' 'visit' 'wassily' 'will' 'wing' 'winter' 'yearly'
 234	field	38	1	 sed eiusmod tempor encodidunt ut labore lore magna aliqua ut enim ad minim veniam quisism nostrud aese exercitation ullamco commodom consequat duis aute irure dolore prehenderit consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat reprehenderit duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo 	'ab' 'accusantium' 'ad' 'aden' 'adipisicing' 'aese' 'aliqua' 'aliquip' 'anim' 'aperiam' 'architecto' 'aute' 'beatae' 'cillum' 'commodom' 'consectetur' 'consequat' 'culpa' 'cupidatat' 'deserunt' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'id' 'illo' 'in' 'incididunt' 'inventore' 'ipsa' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'lore' 'magna' 'minim' 'modo' 'mollit' 'natus' 'nisi' 'non' 'nostrud' 'nulla' 'occaecat' 'officia' 'omnis' 'pariatur' 'perspiciatis' 'prehenderit' 'proident' 'quae' 'quasi' 'qui' 'quis' 'quisism' 'rem' 'reprehenderit' 'sed' 'sint' 'sit' 'sunt' 'tempor' 'totam' 'ullamco' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'voluptate' 'voluptatem'
 234	field	53	1	 1 	'1'
@@ -23794,6 +23810,11 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 356	filename	0	1	 social share png 	'png' 'share' 'social'
 356	extension	0	1	 png 	'png'
 356	kind	0	1	 image 	'image'
+698	field	64	1	 http www eternels eclairs fr tableaux kandinsky php public domain https commons wikimedia org w index php curid=37614832 	'commons' 'curid=37614832' 'domain' 'eclairs' 'eternels' 'fr' 'http' 'https' 'index' 'kandinsky' 'org' 'php' 'public' 'tableaux' 'w' 'wikimedia' 'www'
+90	filename	0	2	 europa statue garden jpg 	'europa' 'garden' 'jpg' 'statue'
+90	extension	0	2	 jpg 	'jpg'
+206993	slug	0	2	 temp cqhivcmtmneuuyawnskgzleqcrngsiavjkoj 	'cqhivcmtmneuuyawnskgzleqcrngsiavjkoj' 'temp'
+206993	title	0	2	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
 95	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
 103	slug	0	2	 colors 	'colors'
 103	title	0	2	 colors 	'colors'
@@ -23824,7 +23845,7 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 206997	slug	0	1	 landscape with factory chimney 	'chimney' 'factory' 'landscape' 'with'
 356	slug	0	1		
 356	title	0	1	 social preview graphic 	'graphic' 'preview' 'social'
-380	filename	0	1	 europa interior main stair jpg 	'europa' 'interior' 'jpg' 'main' 'stair'
+525	title	0	1		
 91	field	2	2	 imageright image right 1 sed eiusmod tempor encodidunt ut labore lore magna aliqua consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo velit esse cillum dolore eu fugiat nulla pariatur excepteur sint lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua lorem ipsum imageleft image left 1 dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium imagefullwidth image full width 1 1 duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo consectetur adipisicing elit sed do eiusmod tempor incididunt ut 	'1' 'ab' 'accusantium' 'aden' 'adipiscing' 'adipisicing' 'aliqua' 'aliquip' 'amet' 'anim' 'aperiam' 'architecto' 'aute' 'beatae' 'cillum' 'consectetur' 'consequat' 'culpa' 'cupidatat' 'deserunt' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'eiusmod' 'elit' 'encodidunt' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'full' 'id' 'illo' 'image' 'imagefullwidth' 'imageleft' 'imageright' 'in' 'incididunt' 'inventore' 'ipsa' 'ipsum' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'left' 'lore' 'lorem' 'magna' 'minim' 'modo' 'mollit' 'natus' 'nisi' 'non' 'nostrud' 'nulla' 'occaecat' 'officia' 'omnis' 'pariatur' 'perspiciatis' 'proident' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'right' 'sed' 'sint' 'sit' 'sunt' 'tempor' 'totam' 'ullamco' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'voluptate' 'voluptatem' 'width'
 99	field	4	1	 yuya hata 9 ajm1u c1bj8 unsplash 	'9' 'ajm1u' 'c1bj8' 'hata' 'unsplash' 'yuya'
 91	field	24	2	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
@@ -23841,6 +23862,17 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 207012	field	4	1	 the course of empire the consummation 	'consummation' 'course' 'empire' 'of' 'the'
 698	field	36	2	 color study squares with concentric circles 1913 wassily kandinsky 	'1913' 'circles' 'color' 'concentric' 'kandinsky' 'squares' 'study' 'wassily' 'with'
 17	slug	0	2		
+206993	field	63	2	 vassily kandinsky 	'kandinsky' 'vassily'
+90	kind	0	2	 image 	'image'
+206993	field	63	1	 vassily kandinsky 	'kandinsky' 'vassily'
+206993	slug	0	1	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
+206993	title	0	1	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
+613	field	64	2	 flipboard https unsplash com flipboard 	'com' 'flipboard' 'https' 'unsplash'
+207013	slug	0	1	 temp pvnzenxelhfzkgcqkxopctkbthhcpagvqfeq 	'pvnzenxelhfzkgcqkxopctkbthhcpagvqfeq' 'temp'
+207013	title	0	1		
+207013	field	7	1		
+207013	field	9	1		
+206995	slug	0	2	 temp bqdsdgweijrkbjispylaxopmaslkkugsvntg 	'bqdsdgweijrkbjispylaxopmaslkkugsvntg' 'temp'
 99	field	24	2	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
 99	slug	0	1	 yearly museum pass 	'museum' 'pass' 'yearly'
 99	title	0	1	 yearly museum pass 	'museum' 'pass' 'yearly'
@@ -23881,33 +23913,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 694	field	36	1	 study for improvisation v 1911 wassily kandinsky 	'1911' 'for' 'improvisation' 'kandinsky' 'study' 'v' 'wassily'
 698	field	64	2	 http www eternels eclairs fr tableaux kandinsky php public domain https commons wikimedia org w index php curid=37614832 	'commons' 'curid=37614832' 'domain' 'eclairs' 'eternels' 'fr' 'http' 'https' 'index' 'kandinsky' 'org' 'php' 'public' 'tableaux' 'w' 'wikimedia' 'www'
 698	field	36	1	 color study squares with concentric circles 1913 wassily kandinsky 	'1913' 'circles' 'color' 'concentric' 'kandinsky' 'squares' 'study' 'wassily' 'with'
-698	field	64	1	 http www eternels eclairs fr tableaux kandinsky php public domain https commons wikimedia org w index php curid=37614832 	'commons' 'curid=37614832' 'domain' 'eclairs' 'eternels' 'fr' 'http' 'https' 'index' 'kandinsky' 'org' 'php' 'public' 'tableaux' 'w' 'wikimedia' 'www'
-90	filename	0	2	 europa statue garden jpg 	'europa' 'garden' 'jpg' 'statue'
-90	extension	0	2	 jpg 	'jpg'
-206993	slug	0	2	 temp cqhivcmtmneuuyawnskgzleqcrngsiavjkoj 	'cqhivcmtmneuuyawnskgzleqcrngsiavjkoj' 'temp'
-206993	title	0	2	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
-206993	field	63	2	 vassily kandinsky 	'kandinsky' 'vassily'
-90	kind	0	2	 image 	'image'
-206993	field	63	1	 vassily kandinsky 	'kandinsky' 'vassily'
-206993	slug	0	1	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
-206993	title	0	1	 color study squares with concentric circles 	'circles' 'color' 'concentric' 'squares' 'study' 'with'
-613	field	64	2	 flipboard https unsplash com flipboard 	'com' 'flipboard' 'https' 'unsplash'
-207013	slug	0	1	 temp pvnzenxelhfzkgcqkxopctkbthhcpagvqfeq 	'pvnzenxelhfzkgcqkxopctkbthhcpagvqfeq' 'temp'
-207013	title	0	1		
-207013	field	7	1		
-207013	field	9	1		
-206995	slug	0	2	 temp bqdsdgweijrkbjispylaxopmaslkkugsvntg 	'bqdsdgweijrkbjispylaxopmaslkkugsvntg' 'temp'
-206995	title	0	2	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
-206995	field	63	2	 vassily kandinsky 	'kandinsky' 'vassily'
-207013	field	8	1		
-207013	field	46	1		
-206995	field	63	1	 vassily kandinsky 	'kandinsky' 'vassily'
-206995	slug	0	1	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
-206995	title	0	1	 study for improvisation v 	'for' 'improvisation' 'study' 'v'
-207013	field	6	1		
-207013	field	27	1	 1 	'1'
-207013	field	35	1		
-613	field	64	1	 flipboard https unsplash com flipboard 	'com' 'flipboard' 'https' 'unsplash'
 382	field	64	1	 grant ritchie https unsplash com grantritchie 	'com' 'grant' 'grantritchie' 'https' 'ritchie' 'unsplash'
 382	field	64	2	 grant ritchie https unsplash com grantritchie 	'com' 'grant' 'grantritchie' 'https' 'ritchie' 'unsplash'
 207029	slug	0	2	 temp whzqtryjzyfiosdduzyznrmmgsltezlmodnx 	'temp' 'whzqtryjzyfiosdduzyznrmmgsltezlmodnx'
@@ -23965,7 +23970,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 355	kind	0	2	 image 	'image'
 207015	field	36	2		
 207015	field	64	2		
-382	filename	0	2	 europa interior pavilion jpg 	'europa' 'interior' 'jpg' 'pavilion'
 382	extension	0	2	 jpg 	'jpg'
 382	kind	0	2	 image 	'image'
 382	alt	0	2		
@@ -24165,6 +24169,8 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 211155	alt	0	1		
 211155	slug	0	1		
 211155	title	0	1	 press kit 	'kit' 'press'
+525	field	20	1	 8 7k 9 	'7k' '8' '9'
+662	field	38	1	 odio orci at diam iaculis vivamus velit morbi nunc imperdiet dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium as you traverse the connecting hallway between the new and old wings you will see a gradual transition in architectural style 	'a' 'accusantium' 'and' 'anim' 'architectural' 'as' 'at' 'between' 'connecting' 'culpa' 'cupidatat' 'deserunt' 'diam' 'dolore' 'doloremque' 'error' 'est' 'eu' 'excepteur' 'fugiat' 'gradual' 'hallway' 'iaculis' 'id' 'imperdiet' 'in' 'iste' 'laborum' 'laudantium' 'mollit' 'morbi' 'natus' 'new' 'non' 'nulla' 'nunc' 'occaecat' 'odio' 'officia' 'old' 'omnis' 'orci' 'pariatur' 'perspiciatis' 'proident' 'qui' 'sed' 'see' 'sint' 'sit' 'style' 'sunt' 'the' 'transition' 'traverse' 'unde' 'ut' 'velit' 'vivamus' 'voluptatem' 'will' 'wings' 'you'
 527	field	38	1	 pellentesque sit amet lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua mi ipsum faucibus vitae aliquet nec ullamcorper bibendum est ultricies integer quis auctor elit sed vulputate mi morbi quis commodo odio aenean sed adipiscing diam non odio euismod lacinia at turpis tincidunt id aliquet risus feugiat in ante ornare suspendisse sed nisi lacus sed urna id volutpat lacus laoreet non curabitur gravida arcu quam lacus suspendisse faucibus interdum mauris nunc congue nisi vitae quisque egestas diam in arcu cursus euismod ac orci phasellus egestas tellus rutrum tellus pellentesque eu lacinia quis vel eros donec ac odio ut aliquam purus sit amet luctus venenatis lectus magna fringilla neque gravida in fermentum et sollicitudin feugiat in ante metus dictum at tempor commodo 	'ac' 'adipiscing' 'aenean' 'aliqua' 'aliquam' 'aliquet' 'amet' 'ante' 'arcu' 'at' 'auctor' 'bibendum' 'commodo' 'congue' 'consectetur' 'curabitur' 'cursus' 'diam' 'dictum' 'do' 'dolor' 'dolore' 'donec' 'egestas' 'eiusmod' 'elit' 'eros' 'est' 'et' 'eu' 'euismod' 'faucibus' 'fermentum' 'feugiat' 'fringilla' 'gravida' 'id' 'in' 'incididunt' 'integer' 'interdum' 'ipsum' 'labore' 'lacinia' 'lacus' 'laoreet' 'lectus' 'lorem' 'luctus' 'magna' 'mauris' 'metus' 'mi' 'morbi' 'nec' 'neque' 'nisi' 'non' 'nunc' 'odio' 'orci' 'ornare' 'pellentesque' 'phasellus' 'purus' 'quam' 'quis' 'quisque' 'risus' 'rutrum' 'sed' 'sit' 'sollicitudin' 'suspendisse' 'tellus' 'tempor' 'tincidunt' 'turpis' 'ullamcorper' 'ultricies' 'urna' 'ut' 'vel' 'venenatis' 'vitae' 'volutpat' 'vulputate'
 211644	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title seomatic helper socialtransform entry heroimage collect 0 base 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 base 0 crop seomatic helper socialtransformheight entry heroimage collect 0 base 0 crop seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 facebook 0 crop seomatic helper socialtransformheight entry heroimage collect 0 facebook 0 crop seomatic meta seoimagedescription seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic helper socialtransform entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformwidth entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic helper socialtransformheight entry heroimage collect 0 seomatic helper twittertransform 0 crop seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 500 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage none fromfield title sameasglobal fromcustom title fromcustom title fromfield heroimage 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo heroimage 1 crop sameasseo 	'0' '1' '22' '5' '500' 'base' 'card' 'collect' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'heroimage' 'jsonld' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'none' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'socialtransform' 'socialtransformheight' 'socialtransformwidth' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'twittertransform' 'webpage' 'weekly' 'when'
 525	field	16	1	 square meters 	'meters' 'square'
@@ -24219,8 +24225,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 330	title	0	1	 veronica 	'veronica'
 190	filename	0	1	 sensory art house abstract jpg 	'abstract' 'art' 'house' 'jpg' 'sensory'
 525	slug	0	1	 temp efpojihxetgkboftrzgzgqhklesbcuvykubf 	'efpojihxetgkboftrzgzgqhklesbcuvykubf' 'temp'
-525	title	0	1		
-525	field	20	1	 8 7k 9 	'7k' '8' '9'
 211179	field	24	1	 1 0 22 field field seomatic helper extracttextfromfield entry title entry url website seomatic meta seotitle seomatic meta seodescription seomatic meta seoimagedescription summary large image seomatic site twitterhandle seomatic meta seotitle seomatic meta seodescription seomatic meta seoimagedescription europa museum no referrer when downgrade 1 1 1 1 weekly 0 5 500 general general meta tags nystudio107 seomatic models metatagcontainer general 1 facebook facebook opengraph meta tags nystudio107 seomatic models metatagcontainer opengraph 1 twitter twitter card meta tags nystudio107 seomatic models metatagcontainer twitter 1 miscellaneous miscellaneous meta tags nystudio107 seomatic models metatagcontainer miscellaneous 1 general link tags nystudio107 seomatic models metalinkcontainer general 1 1 general script tags nystudio107 seomatic models metascriptcontainer general 1 general jsonld tags nystudio107 seomatic models metajsonldcontainer general 1 general meta title tag nystudio107 seomatic models metatitlecontainer general 1 nystudio107 seomatic models frontendtemplatecontainer 1 creativework webpage fromfield title sameasglobal fromcustom title fromcustom fromasset 1 crop fromcustom title sameassitetwitter sameasseo title sameasglobal sameasseo title sameasseo 1 crop sameasseo sameasseo title sameasglobal sameasseo title sameasseo 1 crop sameasseo 	'0' '1' '22' '5' '500' 'card' 'creativework' 'crop' 'downgrade' 'entry' 'europa' 'extracttextfromfield' 'facebook' 'field' 'fromasset' 'fromcustom' 'fromfield' 'frontendtemplatecontainer' 'general' 'helper' 'image' 'jsonld' 'large' 'link' 'meta' 'metajsonldcontainer' 'metalinkcontainer' 'metascriptcontainer' 'metatagcontainer' 'metatitlecontainer' 'miscellaneous' 'models' 'museum' 'no' 'nystudio107' 'opengraph' 'referrer' 'sameasglobal' 'sameasseo' 'sameassitetwitter' 'script' 'seodescription' 'seoimagedescription' 'seomatic' 'seotitle' 'site' 'summary' 'tag' 'tags' 'title' 'twitter' 'twitterhandle' 'url' 'webpage' 'website' 'weekly' 'when'
 211180	slug	0	1	 temp tdqelfbhjqycoevhzeauoczjtofcgtjedahk 	'tdqelfbhjqycoevhzeauoczjtofcgtjedahk' 'temp'
 211180	title	0	1		
@@ -24279,8 +24283,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 206955	title	0	1		
 206955	field	43	1	 https europa museum ddev site visit 	'ddev' 'europa' 'https' 'museum' 'site' 'visit'
 662	slug	0	1	 temp huciootgwkgkfscmevewocahdonbuzvhsoih 	'huciootgwkgkfscmevewocahdonbuzvhsoih' 'temp'
-662	title	0	1		
-662	field	38	1	 odio orci at diam iaculis vivamus velit morbi nunc imperdiet dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium as you traverse the connecting hallway between the new and old wings you will see a gradual transition in architectural style 	'a' 'accusantium' 'and' 'anim' 'architectural' 'as' 'at' 'between' 'connecting' 'culpa' 'cupidatat' 'deserunt' 'diam' 'dolore' 'doloremque' 'error' 'est' 'eu' 'excepteur' 'fugiat' 'gradual' 'hallway' 'iaculis' 'id' 'imperdiet' 'in' 'iste' 'laborum' 'laudantium' 'mollit' 'morbi' 'natus' 'new' 'non' 'nulla' 'nunc' 'occaecat' 'odio' 'officia' 'old' 'omnis' 'orci' 'pariatur' 'perspiciatis' 'proident' 'qui' 'sed' 'see' 'sint' 'sit' 'style' 'sunt' 'the' 'transition' 'traverse' 'unde' 'ut' 'velit' 'vivamus' 'voluptatem' 'will' 'wings' 'you'
 663	slug	0	1	 temp hitrnhqxzpcyooxvfidngpcdskjmxhqgfnev 	'hitrnhqxzpcyooxvfidngpcdskjmxhqgfnev' 'temp'
 663	title	0	1		
 663	field	38	1	 duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nulla aenean libero eu purus egestas convallis orci ullamcorper consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim aden minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea modo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum 	'ab' 'accusantium' 'aden' 'adipisicing' 'aenean' 'aliqua' 'aliquip' 'anim' 'aperiam' 'architecto' 'aute' 'beatae' 'cillum' 'consectetur' 'consequat' 'convallis' 'culpa' 'cupidatat' 'deserunt' 'dicta' 'do' 'dolor' 'dolore' 'doloremque' 'duis' 'ea' 'eaque' 'egestas' 'eiusmod' 'elit' 'enim' 'error' 'esse' 'est' 'et' 'eu' 'ex' 'excepteur' 'exercitation' 'explicabo' 'fugiat' 'id' 'illo' 'in' 'incididunt' 'inventore' 'ipsa' 'irure' 'iste' 'labore' 'laboris' 'laborum' 'laudantium' 'libero' 'magna' 'minim' 'modo' 'mollit' 'natus' 'nisi' 'non' 'nostrud' 'nulla' 'occaecat' 'officia' 'omnis' 'orci' 'pariatur' 'perspiciatis' 'proident' 'purus' 'quae' 'quasi' 'qui' 'quis' 'rem' 'reprehenderit' 'sed' 'sint' 'sit' 'sunt' 'tempor' 'totam' 'ullamco' 'ullamcorper' 'unde' 'ut' 'velit' 'veniam' 'veritatis' 'vitae' 'voluptate' 'voluptatem'
@@ -24311,6 +24313,11 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 56	field	2	1	 visiting info europa museum is open every day monday friday from 8am to 5pm saturday sunday from 8am to 9pm closed on the following holidays january 1 new years day december 25 christmas day email hello pixelandtonic com telephone 1 855 700 5115 address 1 rue de marengo 75001 paris france left left points of interest lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat https maps app goo gl 91kqx23dywrrxqhs9 hotels 12 restaurants 23 latest news https europa museum ddev site news new wing is now open yearly museum pass winter night tours colors normal normal dark dark 	'1' '12' '23' '25' '5115' '5pm' '700' '75001' '855' '8am' '91kqx23dywrrxqhs9' '9pm' 'ad' 'address' 'adipiscing' 'aliqua' 'aliquip' 'amet' 'app' 'christmas' 'closed' 'colors' 'com' 'commodo' 'consectetur' 'consequat' 'dark' 'day' 'ddev' 'de' 'december' 'do' 'dolor' 'dolore' 'ea' 'eiusmod' 'elit' 'email' 'enim' 'et' 'europa' 'every' 'ex' 'exercitation' 'following' 'france' 'friday' 'from' 'gl' 'goo' 'hello' 'holidays' 'hotels' 'https' 'incididunt' 'info' 'interest' 'ipsum' 'is' 'january' 'labore' 'laboris' 'latest' 'left' 'lorem' 'magna' 'maps' 'marengo' 'minim' 'monday' 'museum' 'new' 'news' 'night' 'nisi' 'normal' 'nostrud' 'now' 'of' 'on' 'open' 'paris' 'pass' 'pixelandtonic' 'points' 'quis' 'restaurants' 'rue' 'saturday' 'sed' 'sit' 'site' 'sunday' 'telephone' 'tempor' 'the' 'to' 'tours' 'ullamco' 'ut' 'veniam' 'visiting' 'wing' 'winter' 'yearly' 'years'
 540	slug	0	1	 temp dkxwofticmezviuoskxapuzxrkkrqldjmqyb 	'dkxwofticmezviuoskxapuzxrkkrqldjmqyb' 'temp'
 540	title	0	1		
+296	slug	0	1	 temp ivvzuihzjcczwnqmnpovxvmdgjfuhmetegki 	'ivvzuihzjcczwnqmnpovxvmdgjfuhmetegki' 'temp'
+296	title	0	1		
+296	field	6	1	 robert delaunay van gogh wassily kandinsky 	'delaunay' 'gogh' 'kandinsky' 'robert' 'van' 'wassily'
+296	field	27	1	 normal normal 	'normal'
+296	field	35	1	 light light 	'light'
 540	field	38	1	 visiting info europa museum is open every day monday friday from 8am to 5pm saturday sunday from 8am to 9pm closed on the following holidays january 1 new years day december 25 christmas day email hello pixelandtonic com telephone 1 855 700 5115 address 1 rue de marengo 75001 paris france 	'1' '25' '5115' '5pm' '700' '75001' '855' '8am' '9pm' 'address' 'christmas' 'closed' 'com' 'day' 'de' 'december' 'email' 'europa' 'every' 'following' 'france' 'friday' 'from' 'hello' 'holidays' 'info' 'is' 'january' 'marengo' 'monday' 'museum' 'new' 'on' 'open' 'paris' 'pixelandtonic' 'rue' 'saturday' 'sunday' 'telephone' 'the' 'to' 'visiting' 'years'
 541	slug	0	1	 temp kxrwoathlddfbzzfxfygqcdpzustxuybrkzb 	'kxrwoathlddfbzzfxfygqcdpzustxuybrkzb' 'temp'
 541	title	0	1		
@@ -24381,11 +24388,6 @@ COPY public.searchindex ("elementId", attribute, "fieldId", "siteId", keywords, 
 294	field	52	1	 full full 	'full'
 295	slug	0	1	 temp himlewlliedgcypfqaolgmzpspdspjfpbsdo 	'himlewlliedgcypfqaolgmzpspdspjfpbsdo' 'temp'
 295	title	0	1		
-296	slug	0	1	 temp ivvzuihzjcczwnqmnpovxvmdgjfuhmetegki 	'ivvzuihzjcczwnqmnpovxvmdgjfuhmetegki' 'temp'
-296	title	0	1		
-296	field	6	1	 robert delaunay van gogh wassily kandinsky 	'delaunay' 'gogh' 'kandinsky' 'robert' 'van' 'wassily'
-296	field	27	1	 normal normal 	'normal'
-296	field	35	1	 light light 	'light'
 297	slug	0	1	 temp kkzfbizcscvevmuhsnoelfawaaozraqwplbp 	'kkzfbizcscvevmuhsnoelfawaaozraqwplbp' 'temp'
 297	title	0	1		
 297	field	6	1	 van gogh the roman empire robert delaunay wassily kandinsky 	'delaunay' 'empire' 'gogh' 'kandinsky' 'robert' 'roman' 'the' 'van' 'wassily'
@@ -25705,7 +25707,7 @@ SELECT pg_catalog.setval('public.guide_organizers_id_seq', 1, true);
 -- Name: imagetransformindex_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.imagetransformindex_id_seq', 116, true);
+SELECT pg_catalog.setval('public.imagetransformindex_id_seq', 120, true);
 
 
 --
@@ -25726,7 +25728,7 @@ SELECT pg_catalog.setval('public.info_id_seq', 1, true);
 -- Name: migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.migrations_id_seq', 500, true);
+SELECT pg_catalog.setval('public.migrations_id_seq', 501, true);
 
 
 --
@@ -25740,7 +25742,7 @@ SELECT pg_catalog.setval('public.plugins_id_seq', 26, true);
 -- Name: queue_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.queue_id_seq', 38050, true);
+SELECT pg_catalog.setval('public.queue_id_seq', 38051, true);
 
 
 --
@@ -29809,5 +29811,5 @@ ALTER TABLE ONLY public.widgets
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 8Wa0TLYThnsYLvqC2I5rqniLFohnnrp3ITSfPcVzRUIqNrVJcmJToZJKioF3l7r
+\unrestrict z2wCFYGgSQUFHlZgD40gJPNdOQNPiiGCjUF1pb3eAlG2seVHcnMcS3BgpxEY6Xw
 
