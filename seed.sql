@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict qXPsovVS4Xaji7JZlHO00aklAmT261QrHgu34fvbHc3Oq1ZTeiSJLwMYg5xbNUn
+\restrict G7u3EepB0NoITEqeVs2tKwHcux5GVtgrYnTJatfmdL2Jk1dWV2mqHjMzxZgmb8k
 
 -- Dumped from database version 13.21 (Debian 13.21-1.pgdg120+1)
 -- Dumped by pg_dump version 13.23 (Debian 13.23-2.pgdg13+2)
@@ -65,6 +65,7 @@ ALTER TABLE IF EXISTS ONLY public.freeform_email_marketing_lists DROP CONSTRAINT
 ALTER TABLE IF EXISTS ONLY public.freeform_integrations_queue DROP CONSTRAINT IF EXISTS "freeform_integrations_queue_submissionId_fk";
 ALTER TABLE IF EXISTS ONLY public.freeform_forms DROP CONSTRAINT IF EXISTS "freeform_forms_updatedByUserId_fk";
 ALTER TABLE IF EXISTS ONLY public.freeform_forms DROP CONSTRAINT IF EXISTS "freeform_forms_createdByUserId_fk";
+ALTER TABLE IF EXISTS ONLY public.freeform_form_merge_batches DROP CONSTRAINT IF EXISTS "freeform_form_merge_batches_mergeId_fk";
 ALTER TABLE IF EXISTS ONLY public.freeform_feed_messages DROP CONSTRAINT IF EXISTS "freeform_feed_messages_feedId_fk";
 ALTER TABLE IF EXISTS ONLY public.freeform_export_settings DROP CONSTRAINT IF EXISTS "freeform_export_settings_userId_fk";
 ALTER TABLE IF EXISTS ONLY public.freeform_export_profiles DROP CONSTRAINT IF EXISTS "freeform_export_profiles_formId_fk";
@@ -349,8 +350,19 @@ DROP INDEX IF EXISTS public."freeform_mailing_lists_integrationId_resourceId_unq
 DROP INDEX IF EXISTS public.freeform_mailing_list_fields_type_idx;
 DROP INDEX IF EXISTS public.freeform_integrations_type_idx;
 DROP INDEX IF EXISTS public.freeform_integrations_queue_status_idx;
+DROP INDEX IF EXISTS public."freeform_form_merges_userId_id_idx";
+DROP INDEX IF EXISTS public."freeform_form_merges_targetId_status_idx";
+DROP INDEX IF EXISTS public."freeform_form_merges_sourceId_status_idx";
+DROP INDEX IF EXISTS public."freeform_form_merge_batches_mergeId_throughId_unq_idx";
 DROP INDEX IF EXISTS public.freeform_feeds_hash_unq_idx;
 DROP INDEX IF EXISTS public.freeform_crm_fields_type_idx;
+DROP INDEX IF EXISTS public."freeform_activity_submissionId_id_idx";
+DROP INDEX IF EXISTS public."freeform_activity_resolvedAt_level_dateCreated_idx";
+DROP INDEX IF EXISTS public.freeform_activity_level_id_idx;
+DROP INDEX IF EXISTS public."freeform_activity_formId_id_idx";
+DROP INDEX IF EXISTS public.freeform_activity_event_id_idx;
+DROP INDEX IF EXISTS public."freeform_activity_dateCreated_id_idx";
+DROP INDEX IF EXISTS public.freeform_activity_category_id_idx;
 DROP INDEX IF EXISTS public."formId_handle";
 DROP INDEX IF EXISTS public.fields_handle_context_idx;
 DROP INDEX IF EXISTS public.fields_context_idx;
@@ -480,6 +492,8 @@ ALTER TABLE IF EXISTS ONLY public.freeform_forms DROP CONSTRAINT IF EXISTS freef
 ALTER TABLE IF EXISTS ONLY public.freeform_forms_groups DROP CONSTRAINT IF EXISTS freeform_forms_groups_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_forms_groups_entries DROP CONSTRAINT IF EXISTS freeform_forms_groups_entries_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_forms_fields DROP CONSTRAINT IF EXISTS freeform_forms_fields_pkey;
+ALTER TABLE IF EXISTS ONLY public.freeform_form_merges DROP CONSTRAINT IF EXISTS freeform_form_merges_pkey;
+ALTER TABLE IF EXISTS ONLY public.freeform_form_merge_batches DROP CONSTRAINT IF EXISTS freeform_form_merge_batches_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_fields_type_groups DROP CONSTRAINT IF EXISTS freeform_fields_type_groups_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_feeds DROP CONSTRAINT IF EXISTS freeform_feeds_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_feed_messages DROP CONSTRAINT IF EXISTS freeform_feed_messages_pkey;
@@ -490,6 +504,7 @@ ALTER TABLE IF EXISTS ONLY public.freeform_export_profiles DROP CONSTRAINT IF EX
 ALTER TABLE IF EXISTS ONLY public.freeform_export_notifications DROP CONSTRAINT IF EXISTS freeform_export_notifications_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_export_notifications DROP CONSTRAINT IF EXISTS freeform_export_notifications_name_key;
 ALTER TABLE IF EXISTS ONLY public.freeform_crm_fields DROP CONSTRAINT IF EXISTS freeform_crm_fields_pkey;
+ALTER TABLE IF EXISTS ONLY public.freeform_activity DROP CONSTRAINT IF EXISTS freeform_activity_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_ab_tests_variants DROP CONSTRAINT IF EXISTS freeform_ab_tests_variants_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_ab_tests_statistics DROP CONSTRAINT IF EXISTS freeform_ab_tests_statistics_pkey;
 ALTER TABLE IF EXISTS ONLY public.freeform_ab_tests DROP CONSTRAINT IF EXISTS freeform_ab_tests_pkey;
@@ -596,6 +611,8 @@ ALTER TABLE IF EXISTS public.freeform_forms_groups_entries ALTER COLUMN id DROP 
 ALTER TABLE IF EXISTS public.freeform_forms_groups ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_forms_fields ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_forms ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE IF EXISTS public.freeform_form_merges ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE IF EXISTS public.freeform_form_merge_batches ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_fields_type_groups ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_feeds ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_feed_messages ALTER COLUMN id DROP DEFAULT;
@@ -606,6 +623,7 @@ ALTER TABLE IF EXISTS public.freeform_export_notifications ALTER COLUMN id DROP 
 ALTER TABLE IF EXISTS public.freeform_email_marketing_lists ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_email_marketing_fields ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_crm_fields ALTER COLUMN id DROP DEFAULT;
+ALTER TABLE IF EXISTS public.freeform_activity ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_ab_tests_variants ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_ab_tests_statistics ALTER COLUMN id DROP DEFAULT;
 ALTER TABLE IF EXISTS public.freeform_ab_tests_assignments ALTER COLUMN id DROP DEFAULT;
@@ -786,6 +804,10 @@ DROP TABLE IF EXISTS public.freeform_forms_groups;
 DROP SEQUENCE IF EXISTS public.freeform_forms_fields_id_seq;
 DROP TABLE IF EXISTS public.freeform_forms_fields;
 DROP TABLE IF EXISTS public.freeform_forms;
+DROP SEQUENCE IF EXISTS public.freeform_form_merges_id_seq;
+DROP TABLE IF EXISTS public.freeform_form_merges;
+DROP SEQUENCE IF EXISTS public.freeform_form_merge_batches_id_seq;
+DROP TABLE IF EXISTS public.freeform_form_merge_batches;
 DROP SEQUENCE IF EXISTS public.freeform_fields_type_groups_id_seq;
 DROP TABLE IF EXISTS public.freeform_fields_type_groups;
 DROP SEQUENCE IF EXISTS public.freeform_feeds_id_seq;
@@ -806,6 +828,8 @@ DROP SEQUENCE IF EXISTS public.freeform_email_marketing_fields_id_seq;
 DROP TABLE IF EXISTS public.freeform_email_marketing_fields;
 DROP SEQUENCE IF EXISTS public.freeform_crm_fields_id_seq;
 DROP TABLE IF EXISTS public.freeform_crm_fields;
+DROP SEQUENCE IF EXISTS public.freeform_activity_id_seq;
+DROP TABLE IF EXISTS public.freeform_activity;
 DROP SEQUENCE IF EXISTS public.freeform_ab_tests_variants_id_seq;
 DROP TABLE IF EXISTS public.freeform_ab_tests_variants;
 DROP SEQUENCE IF EXISTS public.freeform_ab_tests_statistics_id_seq;
@@ -1862,6 +1886,45 @@ ALTER SEQUENCE public.freeform_ab_tests_variants_id_seq OWNED BY public.freeform
 
 
 --
+-- Name: freeform_activity; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.freeform_activity (
+    id integer NOT NULL,
+    event character varying(32) NOT NULL,
+    category character varying(20) NOT NULL,
+    level character varying(10) NOT NULL,
+    "formId" integer,
+    "submissionId" integer,
+    metadata text,
+    "resolvedAt" timestamp(0) without time zone,
+    "dateCreated" timestamp(0) without time zone NOT NULL,
+    "dateUpdated" timestamp(0) without time zone NOT NULL,
+    uid character(36) DEFAULT '0'::bpchar NOT NULL
+);
+
+
+--
+-- Name: freeform_activity_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.freeform_activity_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: freeform_activity_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.freeform_activity_id_seq OWNED BY public.freeform_activity.id;
+
+
+--
 -- Name: freeform_crm_fields; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2034,7 +2097,8 @@ CREATE TABLE public.freeform_export_profiles (
     "dateUpdated" timestamp(0) without time zone NOT NULL,
     uid character(36) DEFAULT '0'::bpchar NOT NULL,
     "rangeStart" character varying(255) DEFAULT NULL::character varying,
-    "rangeEnd" character varying(255) DEFAULT NULL::character varying
+    "rangeEnd" character varying(255) DEFAULT NULL::character varying,
+    "allowedExportTypes" jsonb
 );
 
 
@@ -2238,6 +2302,78 @@ ALTER SEQUENCE public.freeform_fields_type_groups_id_seq OWNED BY public.freefor
 
 
 --
+-- Name: freeform_form_merge_batches; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.freeform_form_merge_batches (
+    id integer NOT NULL,
+    "mergeId" integer NOT NULL,
+    "throughId" integer NOT NULL,
+    checksum character varying(64) NOT NULL,
+    "dateCreated" timestamp(0) without time zone NOT NULL,
+    "dateUpdated" timestamp(0) without time zone NOT NULL,
+    uid character(36) DEFAULT '0'::bpchar NOT NULL
+);
+
+
+--
+-- Name: freeform_form_merge_batches_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.freeform_form_merge_batches_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: freeform_form_merge_batches_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.freeform_form_merge_batches_id_seq OWNED BY public.freeform_form_merge_batches.id;
+
+
+--
+-- Name: freeform_form_merges; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE public.freeform_form_merges (
+    id integer NOT NULL,
+    "sourceId" integer NOT NULL,
+    "targetId" integer NOT NULL,
+    "userId" integer NOT NULL,
+    status character varying(16) NOT NULL,
+    state text NOT NULL,
+    "dateCreated" timestamp(0) without time zone NOT NULL,
+    "dateUpdated" timestamp(0) without time zone NOT NULL,
+    uid character(36) DEFAULT '0'::bpchar NOT NULL
+);
+
+
+--
+-- Name: freeform_form_merges_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE public.freeform_form_merges_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: freeform_form_merges_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE public.freeform_form_merges_id_seq OWNED BY public.freeform_form_merges.id;
+
+
+--
 -- Name: freeform_forms; Type: TABLE; Schema: public; Owner: -
 --
 
@@ -2256,7 +2392,9 @@ CREATE TABLE public.freeform_forms (
     metadata text,
     "createdByUserId" integer,
     "updatedByUserId" integer,
-    "dateArchived" timestamp(0) without time zone DEFAULT NULL::timestamp without time zone
+    "dateArchived" timestamp(0) without time zone DEFAULT NULL::timestamp without time zone,
+    "dateTrashed" timestamp(0) without time zone DEFAULT NULL::timestamp without time zone,
+    "trashedFromMerge" boolean DEFAULT false NOT NULL
 );
 
 
@@ -5249,6 +5387,13 @@ ALTER TABLE ONLY public.freeform_ab_tests_variants ALTER COLUMN id SET DEFAULT n
 
 
 --
+-- Name: freeform_activity id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.freeform_activity ALTER COLUMN id SET DEFAULT nextval('public.freeform_activity_id_seq'::regclass);
+
+
+--
 -- Name: freeform_crm_fields id; Type: DEFAULT; Schema: public; Owner: -
 --
 
@@ -5316,6 +5461,20 @@ ALTER TABLE ONLY public.freeform_feeds ALTER COLUMN id SET DEFAULT nextval('publ
 --
 
 ALTER TABLE ONLY public.freeform_fields_type_groups ALTER COLUMN id SET DEFAULT nextval('public.freeform_fields_type_groups_id_seq'::regclass);
+
+
+--
+-- Name: freeform_form_merge_batches id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.freeform_form_merge_batches ALTER COLUMN id SET DEFAULT nextval('public.freeform_form_merge_batches_id_seq'::regclass);
+
+
+--
+-- Name: freeform_form_merges id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.freeform_form_merges ALTER COLUMN id SET DEFAULT nextval('public.freeform_form_merges_id_seq'::regclass);
 
 
 --
@@ -6211,7 +6370,6 @@ COPY public.elementactivity ("elementId", "userId", "siteId", "draftId", type, "
 211639	879	1	\N	view	2026-11-05 22:17:40
 211155	879	1	\N	view	2026-11-05 22:17:54
 207017	879	1	\N	view	2026-11-05 22:20:29
-879	879	1	\N	view	2026-11-06 00:42:17
 86	879	1	\N	view	2026-11-24 20:54:41
 99	879	1	\N	view	2026-11-24 20:54:55
 103	879	1	\N	view	2026-11-24 20:55:01
@@ -6219,6 +6377,7 @@ COPY public.elementactivity ("elementId", "userId", "siteId", "draftId", type, "
 662	879	1	\N	view	2026-11-24 21:09:24
 91	879	1	\N	save	2026-11-24 21:10:21
 91	879	1	\N	view	2026-11-24 21:10:22
+879	879	1	\N	view	2026-11-25 17:35:53
 \.
 
 
@@ -14571,6 +14730,14 @@ COPY public.freeform_ab_tests_variants (id, "abTestId", "formId", weight, "dateC
 
 
 --
+-- Data for Name: freeform_activity; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.freeform_activity (id, event, category, level, "formId", "submissionId", metadata, "resolvedAt", "dateCreated", "dateUpdated", uid) FROM stdin;
+\.
+
+
+--
 -- Data for Name: freeform_crm_fields; Type: TABLE DATA; Schema: public; Owner: -
 --
 
@@ -14606,7 +14773,7 @@ COPY public.freeform_export_notifications (id, "profileId", name, "fileType", "f
 -- Data for Name: freeform_export_profiles; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.freeform_export_profiles (id, "formId", name, "limit", "dateRange", fields, filters, statuses, "dateCreated", "dateUpdated", uid, "rangeStart", "rangeEnd") FROM stdin;
+COPY public.freeform_export_profiles (id, "formId", name, "limit", "dateRange", fields, filters, statuses, "dateCreated", "dateUpdated", uid, "rangeStart", "rangeEnd", "allowedExportTypes") FROM stdin;
 \.
 
 
@@ -14719,11 +14886,27 @@ COPY public.freeform_fields_type_groups (id, color, label, types, "dateCreated",
 
 
 --
+-- Data for Name: freeform_form_merge_batches; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.freeform_form_merge_batches (id, "mergeId", "throughId", checksum, "dateCreated", "dateUpdated", uid) FROM stdin;
+\.
+
+
+--
+-- Data for Name: freeform_form_merges; Type: TABLE DATA; Schema: public; Owner: -
+--
+
+COPY public.freeform_form_merges (id, "sourceId", "targetId", "userId", status, state, "dateCreated", "dateUpdated", uid) FROM stdin;
+\.
+
+
+--
 -- Data for Name: freeform_forms; Type: TABLE DATA; Schema: public; Owner: -
 --
 
-COPY public.freeform_forms (id, name, handle, "spamBlockCount", "dateCreated", "dateUpdated", uid, "order", "gtmId", "gtmEventName", type, metadata, "createdByUserId", "updatedByUserId", "dateArchived") FROM stdin;
-5	Contact	contact	0	2020-01-23 11:55:43	2025-11-21 19:53:37	0c1ceea2-7e7f-46ba-991d-1f2d1713b3e1	1			Solspace\\Freeform\\Form\\Types\\Regular	{"behavior":{"ajax":true,"successBehavior":"reload","duplicateCheck":"no_limit","showProcessingSpinner":true,"successTemplate":"","stopSubmissionsAfter":null,"showProcessingText":true,"returnUrl":"","processingText":"Processing...","successMessage":"Form has been submitted successfully!","errorMessage":"Sorry, there was an error submitting the form. Please try again."},"general":{"name":"Contact","storeData":true,"handle":"contact","defaultStatus":"1","type":"Solspace\\\\Freeform\\\\Form\\\\Types\\\\Regular","collectIpAddresses":true,"sites":[],"allowUsersToOptIn":false,"translations":false,"optInCheckbox":null,"submissionTitle":"Query from {{ firstName }} on {{ dateCreated|date(\\"Y-m-d\\") }}","formattingTemplate":"flexbox\\/index.twig","description":"","color":"#000000","attributes":{"form":{},"row":{},"success":{},"errors":{}}}}	\N	\N	\N
+COPY public.freeform_forms (id, name, handle, "spamBlockCount", "dateCreated", "dateUpdated", uid, "order", "gtmId", "gtmEventName", type, metadata, "createdByUserId", "updatedByUserId", "dateArchived", "dateTrashed", "trashedFromMerge") FROM stdin;
+5	Contact	contact	0	2020-01-23 11:55:43	2025-11-21 19:53:37	0c1ceea2-7e7f-46ba-991d-1f2d1713b3e1	1			Solspace\\Freeform\\Form\\Types\\Regular	{"behavior":{"ajax":true,"successBehavior":"reload","duplicateCheck":"no_limit","showProcessingSpinner":true,"successTemplate":"","stopSubmissionsAfter":null,"showProcessingText":true,"returnUrl":"","processingText":"Processing...","successMessage":"Form has been submitted successfully!","errorMessage":"Sorry, there was an error submitting the form. Please try again."},"general":{"name":"Contact","storeData":true,"handle":"contact","defaultStatus":"1","type":"Solspace\\\\Freeform\\\\Form\\\\Types\\\\Regular","collectIpAddresses":true,"sites":[],"allowUsersToOptIn":false,"translations":false,"optInCheckbox":null,"submissionTitle":"Query from {{ firstName }} on {{ dateCreated|date(\\"Y-m-d\\") }}","formattingTemplate":"flexbox\\/index.twig","description":"","color":"#000000","attributes":{"form":{},"row":{},"success":{},"errors":{}}}}	\N	\N	\N	\N	f
 \.
 
 
@@ -15107,7 +15290,7 @@ COPY public.imagetransforms (id, name, handle, mode, "position", width, height, 
 --
 
 COPY public.info (id, version, "schemaVersion", maintenance, "fieldVersion", "dateCreated", "dateUpdated", uid, "configVersion") FROM stdin;
-1	5.12.3	5.12.0.2	f	3@dbsgibjfaa	2019-11-25 23:37:04	2026-11-25 17:30:46	b11a290b-ac19-4da8-84ec-fb6620253195	fjfpfhqietqf
+1	5.12.3	5.12.0.2	f	3@dbsgibjfaa	2019-11-25 23:37:04	2026-11-25 18:00:50	b11a290b-ac19-4da8-84ec-fb6620253195	tgezpevqednh
 \.
 
 
@@ -15587,6 +15770,12 @@ COPY public.migrations (id, name, "applyTime", "dateCreated", "dateUpdated", uid
 499	m261014_180000_AddDuplicateCheckIdentityToSubmissions	2026-11-05 18:49:59	2026-11-05 18:49:59	2026-11-05 18:49:59	11d674f9-0b16-4c0a-8bc4-46e0c1460b7c	plugin:freeform
 500	m261022_055826_FixLegacyStatusColorColumn	2026-11-05 18:49:59	2026-11-05 18:49:59	2026-11-05 18:49:59	1df02c48-5b11-46f1-b501-7e1eda142b8b	plugin:freeform
 501	m261104_000000_snake_case_mcp_tool_names	2026-11-24 19:07:08	2026-11-24 19:07:08	2026-11-24 19:07:08	999952d9-e828-492d-9854-504b57a6cd8c	craft
+502	m261028_120000_AddActivityLog	2026-11-25 18:00:49	2026-11-25 18:00:49	2026-11-25 18:00:49	28ef123c-0e7b-4e08-9f12-36bdbdd3c360	plugin:freeform
+503	m261106_190000_AddActivityResolution	2026-11-25 18:00:49	2026-11-25 18:00:49	2026-11-25 18:00:49	001c03fa-fb03-48a0-9ffd-3d431f0b9eb2	plugin:freeform
+504	m261106_220000_ClassifyActivityNotices	2026-11-25 18:00:49	2026-11-25 18:00:49	2026-11-25 18:00:49	6b4dda19-e666-460f-b3d6-29fcd91793f4	plugin:freeform
+505	m261116_143000_AddAllowedExportTypesToProfiles	2026-11-25 18:00:49	2026-11-25 18:00:49	2026-11-25 18:00:49	414d4a1e-e7f9-4048-92ab-33763332b3b5	plugin:freeform
+506	m261123_193000_AddBackgroundFormMerges	2026-11-25 18:00:49	2026-11-25 18:00:49	2026-11-25 18:00:49	628a5365-874c-4061-9654-c93b3915ef1a	plugin:freeform
+507	m261123_225500_AllowFormsTrash	2026-11-25 18:00:50	2026-11-25 18:00:50	2026-11-25 18:00:50	3affe246-3e0d-4e45-a177-007812276fa1	plugin:freeform
 \.
 
 
@@ -15633,9 +15822,9 @@ COPY public.plugins (id, handle, version, "schemaVersion", "installDate", "dateC
 20	oembed	1.3.15	1.0.1	2020-01-15 22:49:53	2020-01-15 22:49:53	2022-03-16 13:38:16	7f74f754-24e9-47df-8b18-04d03daeae17
 25	twigpack	5.0.0	1.0.0	2022-03-11 18:48:05	2022-03-11 18:48:05	2025-11-14 20:34:08	d0f7a7d5-8020-45f7-b517-c566877e4648
 24	aws-s3	2.3.2	2.0	2022-02-22 18:46:47	2022-02-22 18:46:47	2026-11-05 18:46:09	80c4f551-7a8c-43e3-a815-20457c825a6a
-4	freeform	5.17.7	5.17.4	2019-11-25 23:37:04	2019-11-25 23:37:04	2026-11-05 18:49:59	dbce5e9f-3a16-4ec0-8858-92c770324088
 13	seomatic	5.1.24	3.0.13	2019-11-25 23:37:05	2019-11-25 23:37:05	2026-11-24 19:03:17	fbadb504-ab48-4eae-a840-785320fbeb41
 26	ckeditor	5.10.0	5.6.0.0	2024-02-05 20:35:46	2024-02-05 20:35:46	2026-11-24 21:08:17	99a71ffe-9fa6-4df2-acd1-993892a1768b
+4	freeform	5.18.7	5.18.9	2019-11-25 23:37:04	2019-11-25 23:37:04	2026-11-25 18:00:50	dbce5e9f-3a16-4ec0-8858-92c770324088
 \.
 
 
@@ -16351,7 +16540,6 @@ sections.8a02b167-35d9-4c71-bc4b-59ee401246e3.siteSettings.c42694e0-26f4-46d0-9f
 sections.8a02b167-35d9-4c71-bc4b-59ee401246e3.siteSettings.c42694e0-26f4-46d0-9ffe-3e7fe6a64cb9.uriFormat	"visit"
 sections.8a02b167-35d9-4c71-bc4b-59ee401246e3.type	"single"
 plugins.ckeditor.schemaVersion	"5.6.0.0"
-plugins.freeform.schemaVersion	"5.17.4"
 entryTypes.03ad2302-4a79-4d90-91f8-bb515f0157d0.showSlugField	true
 entryTypes.03ad2302-4a79-4d90-91f8-bb515f0157d0.showStatusField	true
 entryTypes.8f9a20e9-754d-490d-baa6-b9512feafa91.showStatusField	true
@@ -17642,7 +17830,6 @@ entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.4.userCondition	null
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.dateAdded	"2025-11-19T21:21:41+00:00"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.elementCondition	null
-dateModified	1795627846
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.type	"craft\\\\fieldlayoutelements\\\\HorizontalRule"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.uid	"a1296ebc-2185-480d-bdad-93c9d4d99dba"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.userCondition	null
@@ -18160,6 +18347,7 @@ entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.1.userCondition	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.1.warning	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.1.width	100
+dateModified	1795629649
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.dateAdded	"2025-11-19T21:32:27+00:00"
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.editCondition	null
 entryTypes.f75a20aa-e20c-4f26-b217-2d2ffa1a7cac.fieldLayouts.b00121d3-e692-4fad-9a4d-14069ec52bf4.tabs.0.elements.2.elementCondition	null
@@ -19803,6 +19991,8 @@ fs.remote.settings.storageClass	""
 fs.remote.settings.subfolder	"uploads"
 fs.remote.type	"craft\\\\awss3\\\\Fs"
 fs.remote.url	"$S3_BASE_URL"
+plugins.freeform.settings.activityMode	"minimal"
+plugins.freeform.schemaVersion	"5.18.9"
 \.
 
 
@@ -19811,7 +20001,8 @@ fs.remote.url	"$S3_BASE_URL"
 --
 
 COPY public.queue (id, job, description, "timePushed", ttr, delay, priority, "dateReserved", "timeUpdated", progress, "progressLabel", attempt, fail, "dateFailed", error, channel) FROM stdin;
-38051	\\x4f3a34383a22536f6c73706163655c46726565666f726d5c4a6f62735c5075726765556e66696e616c697a65644173736574734a6f62223a343a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a333a22616765223b693a3138303b7d	Freeform: Purging Unfinalized Assets	1795547077	300	0	1024	\N	\N	0	\N	\N	f	\N	\N	queue
+38063	\\x4f3a34383a22536f6c73706163655c46726565666f726d5c4a6f62735c5075726765556e66696e616c697a65644173736574734a6f62223a343a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a333a22616765223b693a3138303b7d	Freeform: Purging Unfinalized Assets	1795629243	300	0	1024	\N	\N	0	\N	\N	f	\N	\N	queue
+38064	\\x4f3a33393a22536f6c73706163655c46726565666f726d5c4a6f62735c507572676541637469766974794a6f62223a343a7b733a31313a226465736372697074696f6e223b4e3b733a33303a220063726166745c71756575655c426173654a6f62005f70726f6772657373223b693a303b733a33353a220063726166745c71756575655c426173654a6f62005f70726f67726573734c6162656c223b4e3b733a393a227468726f7567684964223b4e3b7d	Freeform: Purging Activity	1795629668	300	0	1024	\N	\N	0	\N	\N	f	\N	\N	queue
 \.
 
 
@@ -25187,7 +25378,7 @@ COPY public.userpreferences ("userId", preferences) FROM stdin;
 COPY public.users (id, username, "photoId", "firstName", "lastName", email, password, admin, locked, suspended, pending, "lastLoginDate", "lastLoginAttemptIp", "invalidLoginWindowStart", "invalidLoginCount", "lastInvalidLoginDate", "lockoutDate", "hasDashboard", "verificationCode", "verificationCodeIssuedDate", "unverifiedEmail", "passwordResetRequired", "lastPasswordChangeDate", "dateCreated", "dateUpdated", active, "fullName", "affiliatedSiteId") FROM stdin;
 324	veronica@europa.museum	330	Veronica		veronica@europa.museum	$2y$13$rnEbbQzZ6n9Fu7Q6FMcUJeZbHoi5v0SMMI1pBDetwNyYIYWqKhPXq	f	f	f	f	2021-06-18 13:35:37	\N	\N	\N	\N	\N	t	\N	\N	\N	f	2021-06-11 15:49:08	2020-01-18 00:34:26	2022-03-22 18:24:56	t	Veronica	\N
 13134	editor@craftcms.com	\N	Editor	\N	editor@craftcms.com	\N	f	f	f	f	\N	\N	\N	\N	\N	\N	f	\N	\N	\N	f	\N	2022-03-04 01:20:55	2026-11-05 22:05:44	t	Editor	\N
-879	admin@craftcms.com	\N	Admin	\N	admin@craftcms.com	$2y$13$YCoey.N4EHuKvmrwQD7QZuI5ejpmIKc5H1qnjG4cOoiVgOto028Y2	t	f	f	f	2026-11-25 16:47:19	\N	\N	\N	2026-11-24 20:53:52	\N	t	\N	\N	\N	f	2025-11-21 23:45:09	2021-06-24 18:15:09	2026-11-25 16:47:19	t	Admin	\N
+879	admin@craftcms.com	\N	Admin	\N	admin@craftcms.com	$2y$13$YCoey.N4EHuKvmrwQD7QZuI5ejpmIKc5H1qnjG4cOoiVgOto028Y2	t	f	f	f	2026-11-25 17:35:48	\N	\N	\N	2026-11-24 20:53:52	\N	t	\N	\N	\N	f	2025-11-21 23:45:09	2021-06-24 18:15:09	2026-11-25 17:35:48	t	Admin	\N
 \.
 
 
@@ -25381,6 +25572,13 @@ SELECT pg_catalog.setval('public.freeform_ab_tests_variants_id_seq', 1, false);
 
 
 --
+-- Name: freeform_activity_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.freeform_activity_id_seq', 1, false);
+
+
+--
 -- Name: freeform_crm_fields_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
@@ -25448,6 +25646,20 @@ SELECT pg_catalog.setval('public.freeform_feeds_id_seq', 37, true);
 --
 
 SELECT pg_catalog.setval('public.freeform_fields_type_groups_id_seq', 7, true);
+
+
+--
+-- Name: freeform_form_merge_batches_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.freeform_form_merge_batches_id_seq', 1, false);
+
+
+--
+-- Name: freeform_form_merges_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
+--
+
+SELECT pg_catalog.setval('public.freeform_form_merges_id_seq', 1, false);
 
 
 --
@@ -25727,7 +25939,7 @@ SELECT pg_catalog.setval('public.info_id_seq', 1, true);
 -- Name: migrations_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.migrations_id_seq', 501, true);
+SELECT pg_catalog.setval('public.migrations_id_seq', 507, true);
 
 
 --
@@ -25741,7 +25953,7 @@ SELECT pg_catalog.setval('public.plugins_id_seq', 26, true);
 -- Name: queue_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.queue_id_seq', 38062, true);
+SELECT pg_catalog.setval('public.queue_id_seq', 38064, true);
 
 
 --
@@ -25797,7 +26009,7 @@ SELECT pg_catalog.setval('public.seomatic_metabundles_id_seq', 18, true);
 -- Name: sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.sessions_id_seq', 87, true);
+SELECT pg_catalog.setval('public.sessions_id_seq', 88, true);
 
 
 --
@@ -26230,6 +26442,14 @@ ALTER TABLE ONLY public.freeform_ab_tests_variants
 
 
 --
+-- Name: freeform_activity freeform_activity_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.freeform_activity
+    ADD CONSTRAINT freeform_activity_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: freeform_crm_fields freeform_crm_fields_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -26307,6 +26527,22 @@ ALTER TABLE ONLY public.freeform_feeds
 
 ALTER TABLE ONLY public.freeform_fields_type_groups
     ADD CONSTRAINT freeform_fields_type_groups_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: freeform_form_merge_batches freeform_form_merge_batches_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.freeform_form_merge_batches
+    ADD CONSTRAINT freeform_form_merge_batches_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: freeform_form_merges freeform_form_merges_pkey; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.freeform_form_merges
+    ADD CONSTRAINT freeform_form_merges_pkey PRIMARY KEY (id);
 
 
 --
@@ -27300,6 +27536,55 @@ CREATE UNIQUE INDEX "formId_handle" ON public.freeform_notification_templates US
 
 
 --
+-- Name: freeform_activity_category_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX freeform_activity_category_id_idx ON public.freeform_activity USING btree (category, id);
+
+
+--
+-- Name: freeform_activity_dateCreated_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "freeform_activity_dateCreated_id_idx" ON public.freeform_activity USING btree ("dateCreated", id);
+
+
+--
+-- Name: freeform_activity_event_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX freeform_activity_event_id_idx ON public.freeform_activity USING btree (event, id);
+
+
+--
+-- Name: freeform_activity_formId_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "freeform_activity_formId_id_idx" ON public.freeform_activity USING btree ("formId", id);
+
+
+--
+-- Name: freeform_activity_level_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX freeform_activity_level_id_idx ON public.freeform_activity USING btree (level, id);
+
+
+--
+-- Name: freeform_activity_resolvedAt_level_dateCreated_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "freeform_activity_resolvedAt_level_dateCreated_idx" ON public.freeform_activity USING btree ("resolvedAt", level, "dateCreated");
+
+
+--
+-- Name: freeform_activity_submissionId_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "freeform_activity_submissionId_id_idx" ON public.freeform_activity USING btree ("submissionId", id);
+
+
+--
 -- Name: freeform_crm_fields_type_idx; Type: INDEX; Schema: public; Owner: -
 --
 
@@ -27311,6 +27596,34 @@ CREATE INDEX freeform_crm_fields_type_idx ON public.freeform_crm_fields USING bt
 --
 
 CREATE UNIQUE INDEX freeform_feeds_hash_unq_idx ON public.freeform_feeds USING btree (hash);
+
+
+--
+-- Name: freeform_form_merge_batches_mergeId_throughId_unq_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX "freeform_form_merge_batches_mergeId_throughId_unq_idx" ON public.freeform_form_merge_batches USING btree ("mergeId", "throughId");
+
+
+--
+-- Name: freeform_form_merges_sourceId_status_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "freeform_form_merges_sourceId_status_idx" ON public.freeform_form_merges USING btree ("sourceId", status);
+
+
+--
+-- Name: freeform_form_merges_targetId_status_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "freeform_form_merges_targetId_status_idx" ON public.freeform_form_merges USING btree ("targetId", status);
+
+
+--
+-- Name: freeform_form_merges_userId_id_idx; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE INDEX "freeform_form_merges_userId_id_idx" ON public.freeform_form_merges USING btree ("userId", id);
 
 
 --
@@ -29431,6 +29744,14 @@ ALTER TABLE ONLY public.freeform_feed_messages
 
 
 --
+-- Name: freeform_form_merge_batches freeform_form_merge_batches_mergeId_fk; Type: FK CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.freeform_form_merge_batches
+    ADD CONSTRAINT "freeform_form_merge_batches_mergeId_fk" FOREIGN KEY ("mergeId") REFERENCES public.freeform_form_merges(id) ON DELETE CASCADE;
+
+
+--
 -- Name: freeform_forms freeform_forms_createdByUserId_fk; Type: FK CONSTRAINT; Schema: public; Owner: -
 --
 
@@ -29810,4 +30131,5 @@ ALTER TABLE ONLY public.widgets
 -- PostgreSQL database dump complete
 --
 
-\unrestrict qXPsovVS4Xaji7JZlHO00aklAmT261QrHgu34fvbHc3Oq1ZTeiSJLwMYg5xbNUn
+\unrestrict G7u3EepB0NoITEqeVs2tKwHcux5GVtgrYnTJatfmdL2Jk1dWV2mqHjMzxZgmb8k
+
