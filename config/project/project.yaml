@@ -1,4 +1,4 @@
-dateModified: 1795554607
+dateModified: 1795627846
 elementSources:
   craft\elements\Asset:
     -
@@ -247,9 +247,9 @@ fs:
       region: $AWS_REGION
       secret: ''
       storageClass: ''
-      subfolder: ''
+      subfolder: uploads
     type: craft\awss3\Fs
-    url: '@uploads'
+    url: $S3_BASE_URL
   runtime:
     hasUrls: false
     name: Runtime

@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict uDzwcvSXFOh9X3ucLNB14S6iSxlUW1pi1ofsMMcu7R6dr1e5cCe6ofu3pEJzIB1
+\restrict qXPsovVS4Xaji7JZlHO00aklAmT261QrHgu34fvbHc3Oq1ZTeiSJLwMYg5xbNUn
 
 -- Dumped from database version 13.21 (Debian 13.21-1.pgdg120+1)
 -- Dumped by pg_dump version 13.23 (Debian 13.23-2.pgdg13+2)
@@ -15107,7 +15107,7 @@ COPY public.imagetransforms (id, name, handle, mode, "position", width, height, 
 --
 
 COPY public.info (id, version, "schemaVersion", maintenance, "fieldVersion", "dateCreated", "dateUpdated", uid, "configVersion") FROM stdin;
-1	5.12.3	5.12.0.2	f	3@dbsgibjfaa	2019-11-25 23:37:04	2026-11-24 21:10:08	b11a290b-ac19-4da8-84ec-fb6620253195	ajkyxvgzwlie
+1	5.12.3	5.12.0.2	f	3@dbsgibjfaa	2019-11-25 23:37:04	2026-11-25 17:30:46	b11a290b-ac19-4da8-84ec-fb6620253195	fjfpfhqietqf
 \.
 
 
@@ -16174,23 +16174,6 @@ fs.disk.name	"Disk"
 fs.disk.settings.path	"@webroot/uploads"
 fs.disk.type	"craft\\\\fs\\\\Local"
 fs.disk.url	"@uploads"
-fs.remote.hasUrls	true
-fs.remote.name	"Remote Storage"
-fs.remote.settings.addSubfolderToRootUrl	true
-fs.remote.settings.autoFocalPoint	false
-fs.remote.settings.bucket	"$S3_BUCKET"
-fs.remote.settings.bucketSelectionMode	"manual"
-fs.remote.settings.cfDistributionId	""
-fs.remote.settings.cfPrefix	""
-fs.remote.settings.expires	""
-fs.remote.settings.keyId	""
-fs.remote.settings.makeUploadsPublic	true
-fs.remote.settings.region	"$AWS_REGION"
-fs.remote.settings.secret	""
-fs.remote.settings.storageClass	""
-fs.remote.settings.subfolder	""
-fs.remote.type	"craft\\\\awss3\\\\Fs"
-fs.remote.url	"@uploads"
 sections.9d1ed50c-2239-4171-8b5a-ab121973301f.handle	"home"
 sections.9d1ed50c-2239-4171-8b5a-ab121973301f.maxAuthors	1
 sections.9d1ed50c-2239-4171-8b5a-ab121973301f.minAuthors	1
@@ -16435,7 +16418,6 @@ entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.1.elements.0.elementCondition	null
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.1.elements.0.elementEditCondition	null
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.1.elements.0.fieldUid	"c8da1bd9-67c9-402f-8a95-aeaec337e207"
-dateModified	1795554607
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.1.elements.0.handle	null
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.1.elements.0.instructions	null
 entryTypes.0b3ab84a-728c-4dfa-b505-ee524b9631d9.fieldLayouts.e1fad73a-2e23-4fa8-8f33-5037fe6b6d76.tabs.1.elements.0.label	null
@@ -17660,6 +17642,7 @@ entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.4.userCondition	null
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.dateAdded	"2025-11-19T21:21:41+00:00"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.elementCondition	null
+dateModified	1795627846
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.type	"craft\\\\fieldlayoutelements\\\\HorizontalRule"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.uid	"a1296ebc-2185-480d-bdad-93c9d4d99dba"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.fieldLayouts.6f1b2935-dba4-460d-be70-b29a7aa0aa60.tabs.0.elements.5.userCondition	null
@@ -17712,6 +17695,7 @@ entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.titleTranslationKeyFormat	null
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.titleTranslationMethod	"site"
 entryTypes.a4b1ac77-02b4-4121-91b4-8d3754b290d4.uiLabelFormat	"{title}"
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.allowLineBreaksInTitles	false
+fs.remote.hasUrls	true
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.fieldLayouts.e80a0f08-da8a-4d90-98bc-ca1a1cd3376f.cardThumbAlignment	"end"
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.fieldLayouts.e80a0f08-da8a-4d90-98bc-ca1a1cd3376f.tabs.0.elementCondition	null
 entryTypes.bd9a6c80-1abe-4747-bb3e-f5e376171eb0.fieldLayouts.e80a0f08-da8a-4d90-98bc-ca1a1cd3376f.tabs.0.elements.0.autocapitalize	true
@@ -18074,6 +18058,7 @@ entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.3.elementEditCondition	null
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.3.fieldUid	"59eb8fe2-8081-44bc-82ee-b7bc5f91c4ec"
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.3.handle	null
+fs.remote.name	"Remote Storage"
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.3.instructions	null
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.3.label	null
 entryTypes.f4cfbdf3-fa41-42c6-99f5-d0efefc2e406.fieldLayouts.f2d9b3bb-59ca-48fc-b355-3cb128ae9dd8.tabs.0.elements.3.oldFieldUid	null
@@ -19803,6 +19788,21 @@ fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.translationKeyFormat	null
 fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.translationMethod	"none"
 fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.type	"craft\\\\ckeditor\\\\Field"
 fields.aa1aa6b7-0e81-4b68-8694-ed5f543f38bc.warning	null
+fs.remote.settings.addSubfolderToRootUrl	true
+fs.remote.settings.autoFocalPoint	false
+fs.remote.settings.bucket	"$S3_BUCKET"
+fs.remote.settings.bucketSelectionMode	"manual"
+fs.remote.settings.cfDistributionId	""
+fs.remote.settings.cfPrefix	""
+fs.remote.settings.expires	""
+fs.remote.settings.keyId	""
+fs.remote.settings.makeUploadsPublic	true
+fs.remote.settings.region	"$AWS_REGION"
+fs.remote.settings.secret	""
+fs.remote.settings.storageClass	""
+fs.remote.settings.subfolder	"uploads"
+fs.remote.type	"craft\\\\awss3\\\\Fs"
+fs.remote.url	"$S3_BASE_URL"
 \.
 
 
@@ -25186,7 +25186,7 @@ COPY public.userpreferences ("userId", preferences) FROM stdin;
 COPY public.users (id, username, "photoId", "firstName", "lastName", email, password, admin, locked, suspended, pending, "lastLoginDate", "lastLoginAttemptIp", "invalidLoginWindowStart", "invalidLoginCount", "lastInvalidLoginDate", "lockoutDate", "hasDashboard", "verificationCode", "verificationCodeIssuedDate", "unverifiedEmail", "passwordResetRequired", "lastPasswordChangeDate", "dateCreated", "dateUpdated", active, "fullName", "affiliatedSiteId") FROM stdin;
 324	veronica@europa.museum	330	Veronica		veronica@europa.museum	$2y$13$rnEbbQzZ6n9Fu7Q6FMcUJeZbHoi5v0SMMI1pBDetwNyYIYWqKhPXq	f	f	f	f	2021-06-18 13:35:37	\N	\N	\N	\N	\N	t	\N	\N	\N	f	2021-06-11 15:49:08	2020-01-18 00:34:26	2022-03-22 18:24:56	t	Veronica	\N
 13134	editor@craftcms.com	\N	Editor	\N	editor@craftcms.com	\N	f	f	f	f	\N	\N	\N	\N	\N	\N	f	\N	\N	\N	f	\N	2022-03-04 01:20:55	2026-11-05 22:05:44	t	Editor	\N
-879	admin@craftcms.com	\N	Admin	\N	admin@craftcms.com	$2y$13$YCoey.N4EHuKvmrwQD7QZuI5ejpmIKc5H1qnjG4cOoiVgOto028Y2	t	f	f	f	2026-11-24 20:53:55	\N	\N	\N	2026-11-24 20:53:52	\N	t	\N	\N	\N	f	2025-11-21 23:45:09	2021-06-24 18:15:09	2026-11-24 20:53:55	t	Admin	\N
+879	admin@craftcms.com	\N	Admin	\N	admin@craftcms.com	$2y$13$YCoey.N4EHuKvmrwQD7QZuI5ejpmIKc5H1qnjG4cOoiVgOto028Y2	t	f	f	f	2026-11-25 16:47:19	\N	\N	\N	2026-11-24 20:53:52	\N	t	\N	\N	\N	f	2025-11-21 23:45:09	2021-06-24 18:15:09	2026-11-25 16:47:19	t	Admin	\N
 \.
 
 
@@ -25705,7 +25705,7 @@ SELECT pg_catalog.setval('public.guide_organizers_id_seq', 1, true);
 -- Name: imagetransformindex_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.imagetransformindex_id_seq', 205, true);
+SELECT pg_catalog.setval('public.imagetransformindex_id_seq', 206, true);
 
 
 --
@@ -25740,7 +25740,7 @@ SELECT pg_catalog.setval('public.plugins_id_seq', 26, true);
 -- Name: queue_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.queue_id_seq', 38059, true);
+SELECT pg_catalog.setval('public.queue_id_seq', 38062, true);
 
 
 --
@@ -25796,7 +25796,7 @@ SELECT pg_catalog.setval('public.seomatic_metabundles_id_seq', 18, true);
 -- Name: sessions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.sessions_id_seq', 85, true);
+SELECT pg_catalog.setval('public.sessions_id_seq', 87, true);
 
 
 --
@@ -29809,5 +29809,5 @@ ALTER TABLE ONLY public.widgets
 -- PostgreSQL database dump complete
 --
 
-\unrestrict uDzwcvSXFOh9X3ucLNB14S6iSxlUW1pi1ofsMMcu7R6dr1e5cCe6ofu3pEJzIB1
+\unrestrict qXPsovVS4Xaji7JZlHO00aklAmT261QrHgu34fvbHc3Oq1ZTeiSJLwMYg5xbNUn
 
